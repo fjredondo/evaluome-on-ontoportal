@@ -1,9 +1,4 @@
 #! /bin/bash
-# set -euo pipefail
-# -e and -o pipefail will make the script exit
-#    in case of command failure (or piped command failure)
-# -u will exit in case a variable is undefined
-#    (in you case, if the header is invalid)
 
 {
     IFS=, read -r -a header
