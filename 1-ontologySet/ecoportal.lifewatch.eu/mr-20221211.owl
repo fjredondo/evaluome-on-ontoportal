@@ -1,0 +1,283 @@
+@prefix mr: <http://marineregions.org/ns/ontology#> .
+@prefix mrt: <http://marineregions.org/ns/placetypes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+<http://marineregions.org/ns/ontology>
+  a owl:Ontology ;
+  foaf:homepage         <https://marineregions.org/ontology/documentation.html> ;
+  rdfs:label            "The Marine Regions Gazetteer Ontology"@en ;
+  rdfs:comment          "The Marine Regions Gazetteer ontology provides definitions for the classes and properties used in the [Marine Regions](//marineregions.org) gazetteer."@en ;
+  dc:publisher     <https://www.vliz.be/> ;
+  dc:issued        "2021-03-12"^^xsd:date ;
+  dc:modified      "2021-12-01"^^xsd:date ;
+  dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
+  dc:contributor                                                       
+    [
+        schema:name         "Harm Delva" ;
+        schema:identifier   <https://orcid.org/0000-0001-8272-0754> ;
+        schema:email        <mailto:harm.delva@ugent.be> ;
+        schema:affiliation  <https://idlab.technology/> ;
+    ],                                                        
+    [   schema:name         "Marc Portier" ;
+        schema:identifier   <https://orcid.org/0000-0002-9648-6484> ;
+        schema:email        <mailto:marc.portier@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ,                                                      
+    [   schema:name         "Britt Lonneville" ;
+        schema:identifier   <https://orcid.org/0000-0002-5839-9005> ;
+        schema:email        <mailto:britt.lonneville@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ,                                                      
+    [   schema:name         "Laurian Van Maldeghem" ;
+        schema:identifier   <https://orcid.org/0000-0003-0663-5907> ;
+        schema:email        <mailto:laurian.van.maldeghem@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ,                                                      
+    [   schema:name         "Bart Vanhoorne" ;
+        schema:identifier   <https://orcid.org/0000-0002-6642-4725> ;
+        schema:email        <mailto:bart.vanhoorne@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ,                                                      
+    [   schema:name         "Dias Bakeev" ;
+        schema:email        <mailto:dias.bakeev@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ,                                                      
+    [   schema:name         "Lennert Schepers" ;
+        schema:identifier   <https://orcid.org/0000-0002-6145-8248> ;
+        schema:email        <mailto:lennert.schepers@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ,                                                      
+    [   schema:name         "Lennert Tyberghein" ;
+        schema:identifier   <https://orcid.org/0000-0003-0577-1691> ;
+        schema:email        <mailto:lennert.tyberghein@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ;
+  dc:creator                                                       
+    [
+        schema:name         "Marine Regions Data Management team" ;
+        schema:identifier   <https://www.marineregions.org/editors.php> ;
+        schema:email        <mailto:info@marineregions.org> ;
+	schema:affiliation  <https://www.vliz.be/> ;
+    ] ;   
+  vann:preferredNamespacePrefix "mr" ;
+  vann:preferredNamespaceUri    "http://marineregions.org/ontology#" .
+
+<https://www.vliz.be/>
+  a schema:Organization ;
+  schema:name   "Vlaams Instituut voor de Zee"@nl ;
+  schema:name   "Flanders Marine Institute"@en ;
+  schema:url    <https://www.vliz.be/> .
+
+mr:Feature
+  a owl:Class ;
+  rdfs:isDefinedBy  <http://marineregions.org/ns/ontology> ;
+  rdfs:comment      "A named spatial spatial region or location."@en ;
+  rdfs:label        "Feature"@en ;
+  rdfs:subClassOf   dc:Location, skos:Concept  ;
+  rdfs:seeAlso      schema:Place .
+
+mr:MRGeoObject
+  a owl:Class ;
+  rdfs:isDefinedBy  <http://marineregions.org/ns/ontology> ;
+  rdfs:comment "A feature described in the Marine Regions database, uniquely identified by its Marine Regions Geographic Identifier (MRGID)."@en ;
+  rdfs:label "Marine Regions Geo Object"@en ;
+  rdfs:subClassOf mr:Feature, [
+    a owl:Restriction ;
+    owl:cardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onProperty mr:mrgid
+  ], [
+    a owl:Restriction ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onProperty skos:prefLabel
+  ], [
+    a owl:Restriction ;
+    owl:onProperty rdf:type ;
+    owl:someValuesFrom mrt:PlaceType
+  ], [
+    a owl:Restriction ;
+    owl:onProperty rdfs:isDefinedBy ;
+    owl:hasValue <http://marineregions.org>
+  ]  .
+
+mr:mrgid
+  a                     owl:DatatypeProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Marine Regions Geographic Identifier (MRGID)"@en ;
+  rdfs:subPropertyOf    dc:identifier ;
+  rdfs:domain           mr:Feature ;
+  rdfs:range            xsd:nonNegativeInteger .
+
+mr:hasGeometry
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Based on the ISA Programme's Location Core Vocabulary, with the range restricted to Simple Features objects.\nMultiple geometries may be provided, in which case every geometry is considered to be independent from each other.\nAs independent geometries, they can be visualized on top of each other, or they can be merged into one GeometryCollection."@en ;
+  rdfs:label            "Has geometry"@en ;
+  rdfs:subPropertyOf    <http://www.w3.org/ns/locn#geometry> ;
+  rdfs:domain           mr:Feature ;
+  rdfs:range            <http://www.opengis.net/ont/sf#Geometry> .
+
+mr:inContextOf
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Context"@en ;
+  rdfs:subPropertyOf    skos:scopeNote ;
+  rdfs:domain           mr:Feature  .
+
+mr:isRelatedTo
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Indicates that two features are semantically related to each other. Subproperties can make this more concrete."@en ;
+  rdfs:label            "Is related to"@en ;
+  rdfs:subPropertyOf    skos:semanticRelation ;
+  rdfs:domain           mr:Feature ;
+  rdfs:range            mr:Feature . 
+
+mr:isPartOf
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Indicates a child-parent relation between two features that (a) share any portion of space (geometrical intersection), or (b) have a child-parent relation on a conceptual level (e.g. the Belgian Exclusive Economic Zone is part of Belgium, even though there is no geometrical intersection)."@en ;
+  rdfs:label            "Is part of"@en ;
+  rdfs:subPropertyOf    skos:broader, mr:isRelatedTo ;
+  owl:inverseof         mr:contains .
+
+mr:contains
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Indicates a parent-child relation between two features that (a) share any portion of space (geometrical intersection), or (b) have a parent-child relation on a conceptual level (e.g. Belgium contains the Belgian Exclusive Economic Zone, even though there is no geometrical intersection)."@en ;
+  rdfs:label            "Contains"@en ;
+  rdfs:subPropertyOf    skos:narrower, mr:isRelatedTo ;
+  owl:inverseOf         mr:isPartOf .
+
+mr:isAdministrativePartOf
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Is administrative part of"@en ;
+  rdfs:subPropertyOf    skos:broader, mr:isRelatedTo ;
+  owl:inverseOf         mr:hasAdministrativePart .
+
+mr:hasAdministrativePart
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Has administrative part"@en ;
+  rdfs:subPropertyOf    skos:narrower, mr:isRelatedTo ;
+  owl:inverseOf         mr:isAdministrativePartOf .
+
+mr:isPartlyPartOf
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Indicates a child-parent relation between two features that share any portion of space (geometrical intersection). The child has this relation with at least one other parent."@en ;
+  rdfs:label            "Is partly part of"@en ;
+  rdfs:subPropertyOf    skos:broader, mr:isRelatedTo ;
+  owl:inverseOf         mr:partlyContains .
+
+mr:partlyContains
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Indicates a parent-child relation between two features that share any portion of space (geometrical intersection). The child has this relation with at least one other parent."@en ;
+  rdfs:label            "Partly contains"@en ;
+  rdfs:subPropertyOf    skos:narrower, mr:isRelatedTo ;
+  owl:inverseOf         mr:isPartlyPartOf .
+
+mr:flowsInto
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Flows into"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:hasTributary .
+
+mr:hasTributary
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Has tributary"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:flowsInto .
+
+mr:risesIn
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:comment          "Indicates that a body of water has its source in another GeoObject."@en ;
+  rdfs:label            "Rises in"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:containsSourceOf .
+
+mr:containsSourceOf
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Contains source of"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:risesIn .
+
+mr:flowsThrough
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Flows through"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:containsWatercourse .
+
+mr:containsWatercourse
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Contains watercourse"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:flowsThrough .
+
+mr:isReplacedBy
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Is replaced by"@en ;
+  rdfs:comment          "Indicates that this feature is deprecated in favor of another."@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:replaces .
+
+mr:replaces
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Replaces"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:isReplacedBy .
+
+mr:isInfluencedBy
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Is influenced by"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:influenced .
+
+mr:influences
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Influences"@en ;
+  rdfs:comment          "Indicates that one feature influences another. For example, a drift is influenced by a water mass or current. This water mass or current determines the sedimentation, erosion and movements of these sediments."@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:isInfluencedBy .
+
+mr:isAdjacentTo
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Is adjacent to"@en ;
+  rdfs:subPropertyOf    skos:related, mr:isRelatedTo .
+
+mr:isPreferredAlternativeOf
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Is preferred alternative of"@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:hasPreferredAlternative .
+
+mr:hasPreferredAlternative
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <http://marineregions.org/ns/ontology> ;
+  rdfs:label            "Has preferred alternative"@en ;
+  rdfs:comment          "Unless there is a strong preference for this feature, it is recommended to use the other feature."@en ;
+  rdfs:subPropertyOf    mr:isRelatedTo ;
+  owl:inverseOf         mr:isPreferredAlternativeOf .

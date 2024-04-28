@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+	<!ENTITY dc "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY gfbio "http://terminologies.gfbio.org/terms/" >
+]>
+
+<rdf:RDF xmlns="http://terminologies.gfbio.org/terms/RecordBasis"
+     xml:base="http://terminologies.gfbio.org/terms/RecordBasis"
+	 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:gfbio="http://terminologies.gfbio.org/terms/"
+     xmlns:dc="http://purl.org/dc/terms/">
+	<owl:Ontology rdf:about="http://terminologies.gfbio.org/terms/RecordBasis">
+        <rdfs:label>GFBio Agreed Vocabulary for RecordBasis</rdfs:label>
+		<owl:versionInfo>Version 2.0</owl:versionInfo>
+        <dc:contributor>Dagmar Triebel</dc:contributor>
+        <dc:contributor>Robert Huber</dc:contributor>
+		<rdfs:comment></rdfs:comment>
+		<dc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+		<owl:versionIRI rdf:resource="http://terminologies.gfbio.org/terms/recordbasis/2016-07-04/recordbasis.owl"/>
+    </owl:Ontology>
+	
+	
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+     <!-- http://terminologies.gfbio.org/terms/RecordBasis/PreservedSpecimen -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/PreservedSpecimen" >
+		<rdfs:label xml:lang="en">Preserved Specimen</rdfs:label>
+		<rdfs:label xml:lang="de">Konserviertes Exemplar</rdfs:label>
+		<rdfs:label xml:lang="fr">Spécimen préservé</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a preserved specimen (not living)</rdfs:comment>
+		<owl:sameAs>http://rs.tdwg.org/dwc/terms/PreservedSpecimen</owl:sameAs>
+    </owl:Class>
+			
+
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/FossilSpecimen -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/FossilSpecimen" >
+		<rdfs:label xml:lang="en">Fossil</rdfs:label>
+		<rdfs:label xml:lang="de">Fossil</rdfs:label>
+		<rdfs:label xml:lang="fr">Spécimen fossile</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a preserved specimen that is a fossil</rdfs:comment>
+		<owl:sameAs>http://rs.tdwg.org/dwc/terms/FossilSpecimen</owl:sameAs>
+    </owl:Class>
+	 
+
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/LivingSpecimen -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/LivingSpecimen" >
+		<rdfs:label xml:lang="en">Living Specimen</rdfs:label>
+		<rdfs:label xml:lang="de">Lebendes Exemplar</rdfs:label>
+		<rdfs:label xml:lang="fr">Spécimen vivant</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a specimen which is alive (not preserved)</rdfs:comment>	
+		<owl:sameAs>http://rs.tdwg.org/dwc/terms/LivingSpecimen</owl:sameAs>
+    </owl:Class>
+	
+
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/MineralSpecimen -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/MineralSpecimen" >
+		<rdfs:label xml:lang="en">Mineral Specimen</rdfs:label>
+		<rdfs:label xml:lang="de">Mineral</rdfs:label>
+		<rdfs:label xml:lang="fr">Minéral</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a preserved specimen which is a mineral</rdfs:comment>
+	</owl:Class>
+	 
+		 
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/EarthScienceSpecimen -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/EarthScienceSpecimen" >
+		<rdfs:label xml:lang="en">Earth Science Specimen</rdfs:label>
+		<rdfs:label xml:lang="de">Geowissenschaftliches Exemplar</rdfs:label>
+		<rdfs:label xml:lang="fr">Spécimen des sciences de la terre</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a geo-scientific object which is no pure mineral, rock or fossil specimen (but a mixture), or a geo-scientific specimen with unknown trait</rdfs:comment>
+	</owl:Class>
+
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/HumanObservation -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/HumanObservation" >
+		<rdfs:label xml:lang="en">Human Observation</rdfs:label>
+		<rdfs:label xml:lang="de">Menschliche Beobachtung</rdfs:label>
+		<rdfs:label xml:lang="fr">Observation humaines</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing an output of a human observation process</rdfs:comment>
+		<owl:sameAs>http://rs.tdwg.org/dwc/terms/HumanObservation </owl:sameAs>
+    </owl:Class>
+
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/MachineObservation -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/MachineObservation" >
+		<rdfs:label xml:lang="en">Machine Observation</rdfs:label>
+		<rdfs:label xml:lang="de">GerÃ¤te-Beobachtung</rdfs:label>
+		<rdfs:label xml:lang="fr">Observation machine</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing an output of a machine observation process</rdfs:comment>
+		<owl:sameAs>http://rs.tdwg.org/dwc/terms/MachineObservation</owl:sameAs>
+    </owl:Class>
+
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/AbsenceObservation -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/AbsenceObservation" >
+		<rdfs:label xml:lang="en">Absence Observation</rdfs:label>
+		<rdfs:label xml:lang="de">Nichtvorkommen</rdfs:label>
+		<rdfs:label xml:lang="fr">Absence</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing an output of an observation process with indication of the absence of an observation</rdfs:comment>
+	</owl:Class>
+
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/Literature -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/Literature" >
+		<rdfs:label xml:lang="en">Literature</rdfs:label>
+		<rdfs:label xml:lang="de">Literature</rdfs:label>
+		<rdfs:label xml:lang="fr">Littérature</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing an output of a literature research</rdfs:comment>
+		<owl:sameAs>http://purl.org/dc/terms/BibliographicResource</owl:sameAs>
+    </owl:Class>
+	
+		
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/DrawingOrPhotograph -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/DrawingOrPhotograph" >
+		<rdfs:label xml:lang="en">DrawingOrPhotograph</rdfs:label>
+		<rdfs:label xml:lang="de">Zeichnung oder Fotografie</rdfs:label>
+		<rdfs:label xml:lang="fr">Dessin ou photograpie</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a static visual representation (digital or physical)</rdfs:comment>
+		<owl:sameAs>http://purl.org/dc/dcmitype/StillImage</owl:sameAs>
+    </owl:Class>
+	
+
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/PreservedSpecimen -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/MaterialSample" >
+		<rdfs:label xml:lang="en">MaterialSample</rdfs:label>
+		<rdfs:label xml:lang="de">Materialprobe</rdfs:label>
+		<rdfs:label xml:lang="fr">échantillon</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing the physical result of a sampling (or subsampling) event (sample either preserved or destructively processed)</rdfs:comment>
+		<owl:sameAs>http://rs.tdwg.org/dwc/terms/MaterialSample</owl:sameAs>
+    </owl:Class>
+	
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/MultimediaObject -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/MultimediaObject" >
+		<rdfs:label xml:lang="en">MultimediaObject</rdfs:label>
+		<rdfs:label xml:lang="de">Multimediaobjekt</rdfs:label>
+		<rdfs:label xml:lang="fr">Object multimédia</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a multimedia representation (digital or physical)</rdfs:comment>
+	</owl:Class>
+	
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/Unknown -->
+	
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/Unknown" >
+		<rdfs:label xml:lang="en">Unknown</rdfs:label>
+		<rdfs:label xml:lang="de">Unbekannt</rdfs:label>
+		<rdfs:label xml:lang="fr">Inconnu</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record where the indication (basis) of the record is unknown </rdfs:comment>
+	</owl:Class>
+	
+	
+	<!-- http://terminologies.gfbio.org/terms/RecordBasis/OtherSpecimen -->
+
+	<owl:Class rdf:about="http://terminologies.gfbio.org/terms/RecordBasis/OtherSpecimen" >
+		<rdfs:label xml:lang="en">OtherSpecimen</rdfs:label>
+		<rdfs:label xml:lang="de">Andere Exemplar</rdfs:label>
+		<rdfs:label xml:lang="fr">Autre spécimen</rdfs:label>
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A record describing a specimen which is not indicated as preserved, living, fossil or mineral</rdfs:comment>
+	</owl:Class>	
+
+</rdf:RDF>
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
