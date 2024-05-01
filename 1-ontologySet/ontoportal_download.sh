@@ -33,7 +33,7 @@ rm -f "${download_err}"
     IFS=, read -r -a header
 
     while IFS=, read -r "${header[@]}" ; do
-        repo="https://data.${Repository}"
+        repo="https://${Repository}"
         auth="Authorization: apikey token=${APIKey}"
 	rm -rf "${folder}/${Repository}"
 	mkdir "${folder}/${Repository}"
