@@ -1,0 +1,1135 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:qualityValue-bca14c53-70e3-4007-894e-78b78f60adcd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c9aef4d-074f-45c8-ab95-e7474d21cab8 ;
+        res:hasLiteralValue    "422.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3992ae00-6555-42a9-9c81-147efc558452 .
+
+oquo:evaluation-adf2cbd6-96dc-497b-8e1b-46af8456c38a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-f9864560-aee9-405e-ac5e-e98b4da63531 ;
+        time:hasTime              oquo:instant-09f27341-1473-4dcb-bfd5-3ebe3c00652b ;
+        oquo:hasObservation       oquo:observation-580b2c51-6234-4f43-9e70-c135c8bf7b3c .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-116b1149-428e-4352-b9c1-778907e60eaf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-41afa888-681b-4be0-a99a-5bf510337f47 ;
+        time:hasTime              oquo:instant-2696862d-20fc-4e9f-8117-b4ed5ee6b6eb ;
+        oquo:hasObservation       oquo:observation-8675535b-0ee9-45c0-92e2-cfcff71327a2 .
+
+oquo:observation-4c7de3e5-50d2-4ad2-8b0b-d16aa2879c14
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a4715a92-1395-44a0-aeb5-0997fd30345d ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-2ad58e63-9a71-4798-adcc-67deb4764cd2 .
+
+oquo:instant-3964cd02-3a87-4cf6-a777-87cb141398fc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:09.296Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-999c6690-6e7c-4620-9d87-884988aaea58
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-5de28bf4-3698-4d28-ba13-8a3f917d51ad ;
+        time:hasTime              oquo:instant-a61420ff-caa8-4a14-91ef-b8a584f9d610 ;
+        oquo:hasObservation       oquo:observation-11d669ad-5567-4a47-aec0-67d2ee7dc378 .
+
+oquo:evaluation-cb6a7d6f-5f67-416f-8abb-14f7bcd9177c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-3c32a5f2-b6e4-4e73-a0ef-a139f9e63fe8 ;
+        time:hasTime              oquo:instant-e2bc60b6-716c-47c4-bcb4-ce4df2ad7261 ;
+        oquo:hasObservation       oquo:observation-506b45cc-2778-45e2-ad98-70e5be330072 .
+
+oquo:metric-11e3b4d9-4d3e-4032-8fdc-bba39a12014d
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-52887013-44e1-4060-a11d-4bd1b27d0d8c ;
+        oboe:measurementFor  oquo:observation-e3bf86e8-98ff-41be-8ef8-d708e85f5235 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-f5b0c589-c0ef-4c3b-b483-9096b2637a75
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.924Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-3db077bf-5673-47e3-8cd2-821df052af98
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-beacda4e-8603-491c-907a-2124f436e1b9 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-a4eb6aee-e749-4121-9303-30975665f42b .
+
+oquo:observation-93481b30-aa89-4b64-8461-379e1c44050f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f098fc81-9ecd-4fe6-866d-e2040ba1be77 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-ff87f3f4-576d-45c1-af29-3350efe8c4bc .
+
+oquo:qualityValue-41afa888-681b-4be0-a99a-5bf510337f47
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2e337f20-8e17-41d9-ac92-2208b0d4d454 ;
+        res:hasLiteralValue    "0.16129032258064516"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-116b1149-428e-4352-b9c1-778907e60eaf .
+
+oquo:evaluation-b2dced92-c3e2-4e97-8564-dfe4ba6a3be3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-52887013-44e1-4060-a11d-4bd1b27d0d8c ;
+        time:hasTime              oquo:instant-a1c48627-e3d6-490d-a657-21540a4303b4 ;
+        oquo:hasObservation       oquo:observation-e3bf86e8-98ff-41be-8ef8-d708e85f5235 .
+
+oquo:instant-7538d3c7-ccaa-4c57-9c2e-3ad4ae5e1264
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.241Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-5de28bf4-3698-4d28-ba13-8a3f917d51ad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7e5c9f04-f63d-4ebc-8263-f1b4b442bb1b ;
+        res:hasLiteralValue    "0.017391304347826087"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-999c6690-6e7c-4620-9d87-884988aaea58 .
+
+oquo:metric-b546d145-cc38-4719-881f-3cda7a6cb7c1
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-e5c4940d-f2c0-4fbf-9244-8a82e5d7f9bd ;
+        oboe:measurementFor  oquo:observation-aef8e452-690c-4a9e-b012-532d6b57a803 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-5bddeae8-c7a1-41da-a384-18dcd74ee003
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-8c994dd5-3bb9-498f-8017-fb19e237e301 ;
+        time:hasTime              oquo:instant-abd55138-b69c-49a6-8d6f-9a754dbab709 ;
+        oquo:hasObservation       oquo:observation-965cc67d-f666-4d42-a1ee-72e4a30776f9 .
+
+oquo:evaluation-dd3967f2-d3e5-47cd-91c6-ad1871b1ff1a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-f5f9289c-7c15-423a-a867-2e797dac172b ;
+        time:hasTime              oquo:instant-523124ff-0ce2-4a40-8f43-5aef75c63d23 ;
+        oquo:hasObservation       oquo:observation-8c7ff960-0763-49e1-bc22-c0cc1d22d414 .
+
+oquo:observation-965cc67d-f666-4d42-a1ee-72e4a30776f9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-97f6841e-b71c-4663-94ff-73d9d487d5b0 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-abd55138-b69c-49a6-8d6f-9a754dbab709 .
+
+oquo:instant-9fa96e98-a7a8-4e26-ba2e-42331667b723
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.236Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-2ad58e63-9a71-4798-adcc-67deb4764cd2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.784Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-393995d3-3b12-4f86-95d4-e016f06839c6
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-49863dd5-cce2-4e84-82e8-3f53a6142e7e ;
+        oboe:measurementFor  oquo:observation-871d6cf7-df05-4c8b-8c8e-d0821d0a66eb ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:instant-3520ac61-7307-405f-ba72-11a8b90748c7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.664Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-80098e7e-e468-4f3f-beb7-7e4d9329a6a6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:11.875Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9f908910-ee90-4431-8529-bb7e0b6d8468
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cfa3c64a-1ad7-4f2b-9c6d-48866e52939a ;
+        res:hasLiteralValue    "1.0213270142180095"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f681b238-e97e-4716-a5dd-8989bf6fa370 .
+
+oquo:metric-768afac7-e5b1-4395-bde3-70a0656b8700
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-57e20ce2-af56-4cc9-9594-22d69083b1b7 ;
+        oboe:measurementFor  oquo:observation-804bb7ad-0b30-4531-baa3-756b69b8e2b0 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-b7eb35a7-88e1-48f7-920d-8e012015c2a0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.458Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-982f6f7c-268e-4130-b5f6-f4fefd577e8f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f4cece8d-2074-4e9a-9d4b-4433eb1f50cd ;
+        res:hasLiteralValue    "0.5555555555555556"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8250f9f6-54d7-4b51-8d92-ba2fe6f29d3c .
+
+oquo:instant-c03b6af8-0716-4387-99a9-20198c041a7d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.66Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-802c9ee5-05f3-4865-9487-6c584871eb27
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-79ab3889-da61-4d90-9e51-2ef27b2d7ec9 ;
+        oboe:measurementFor  oquo:observation-b900a3c8-9ddb-46fe-a56e-413d78b3e85f ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-005ecaf0-f44b-4374-a3de-ea20d7e7a6d7
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-dd9483e3-c325-4167-af60-d98ce6cccb7a ;
+        oboe:measurementFor  oquo:observation-efeaf26f-a110-4240-9db9-cadb7982d9f7 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:observation-8675535b-0ee9-45c0-92e2-cfcff71327a2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2e337f20-8e17-41d9-ac92-2208b0d4d454 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-2696862d-20fc-4e9f-8117-b4ed5ee6b6eb .
+
+oquo:instant-14d91721-e440-40b4-8b68-7efa8c9d8b98
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.958Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-4abe0caa-5a14-4438-883e-381991169c68
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-dd9483e3-c325-4167-af60-d98ce6cccb7a ;
+        time:hasTime              oquo:instant-720bca6c-6209-45b0-9b9b-32d6d5b24170 ;
+        oquo:hasObservation       oquo:observation-efeaf26f-a110-4240-9db9-cadb7982d9f7 .
+
+oquo:instant-8e29da94-c0e4-48ac-ba15-8a6536b1e5a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-57e20ce2-af56-4cc9-9594-22d69083b1b7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-768afac7-e5b1-4395-bde3-70a0656b8700 ;
+        res:hasLiteralValue    "0.7777777777777778"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6ffe8f72-3764-445e-91fc-0e41f073b68d .
+
+oquo:evaluation-bc694b32-bb0d-43fc-934b-be217acf68bf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-87123a22-ad10-4d15-960c-b13b771b5d19 ;
+        time:hasTime              oquo:instant-212dc6ad-1f84-458e-8cbb-db3f6bb6bb52 ;
+        oquo:hasObservation       oquo:observation-e36c89e4-d8c5-461a-a6a1-33f682c4f957 .
+
+oquo:qualityValue-865c792f-c280-47cb-97ba-3a3e94dcd178
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-15270aac-0066-4a87-b634-d4b19ead3d29 ;
+        res:hasLiteralValue    "0.002369668246445498"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-11a9a140-ee61-4089-8a7d-1d69251819b6 .
+
+oquo:evaluation-f9498756-8f41-4b4f-a28a-b747b56e20e2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-96a4b8c1-fc36-4117-9221-17ae393b61de ;
+        time:hasTime              oquo:instant-8e29da94-c0e4-48ac-ba15-8a6536b1e5a7 ;
+        oquo:hasObservation       oquo:observation-478a2a69-b7f4-4e03-95b5-653bb17e37c5 .
+
+oquo:evaluation-a0bf53ac-47ce-4653-9f3e-458f27eb6046
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-e5c4940d-f2c0-4fbf-9244-8a82e5d7f9bd ;
+        time:hasTime              oquo:instant-14d91721-e440-40b4-8b68-7efa8c9d8b98 ;
+        oquo:hasObservation       oquo:observation-aef8e452-690c-4a9e-b012-532d6b57a803 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-42f6a42b-7adf-46f8-b03d-c8a74b155c8e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e576943f-c2cc-4777-a5f5-bb28c827cde6 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-9eb9d67d-7c00-4aca-8223-35716cc1fbda .
+
+oquo:observation-efeaf26f-a110-4240-9db9-cadb7982d9f7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-005ecaf0-f44b-4374-a3de-ea20d7e7a6d7 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-720bca6c-6209-45b0-9b9b-32d6d5b24170 .
+
+oquo:evaluation-11a73beb-9bfd-4136-8988-e88f7d12a135
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-5253ef64-8b70-4a49-8e5a-ac2e82301014 ;
+        time:hasTime              oquo:instant-c9ea0f4d-4462-44b7-af20-1ca5cf61c1d4 ;
+        oquo:hasObservation       oquo:observation-da4184db-e008-426f-a236-8e2c681620f2 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-b900a3c8-9ddb-46fe-a56e-413d78b3e85f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-802c9ee5-05f3-4865-9487-6c584871eb27 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-a98f3572-ead8-4ebb-91f0-e12097c16c85 .
+
+oquo:evaluation-33b7c11f-ea28-4044-915d-93029e20032d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-090928ca-6064-481b-8f31-38009e2c15ff ;
+        time:hasTime              oquo:instant-a4eb6aee-e749-4121-9303-30975665f42b ;
+        oquo:hasObservation       oquo:observation-3db077bf-5673-47e3-8cd2-821df052af98 .
+
+oquo:qualityValue-8c994dd5-3bb9-498f-8017-fb19e237e301
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-97f6841e-b71c-4663-94ff-73d9d487d5b0 ;
+        res:hasLiteralValue    "0.9976303317535545"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5bddeae8-c7a1-41da-a384-18dcd74ee003 .
+
+oquo:observation-1ae99af9-e9c4-4d13-b218-505c145941cb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-404e2b8d-d4e9-465a-9ccd-5ce4dfb54c9a ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-a7310986-c93c-44a3-9314-2176b3891e80 .
+
+oquo:metric-cfa3c64a-1ad7-4f2b-9c6d-48866e52939a
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-9f908910-ee90-4431-8529-bb7e0b6d8468 ;
+        oboe:measurementFor  oquo:observation-147399fe-c2c8-4ec3-a320-2f210bd5ee5e ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-20a536c1-2c77-4bb0-99e5-7b33445cb21d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:11.86Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-871d6cf7-df05-4c8b-8c8e-d0821d0a66eb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-393995d3-3b12-4f86-95d4-e016f06839c6 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-7538d3c7-ccaa-4c57-9c2e-3ad4ae5e1264 .
+
+oquo:observation-350aaadb-ec24-4b09-9ce0-8ae5a1bbc262
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e2b43445-06e7-4700-8267-8dd8ead7b3e1 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-b7eb35a7-88e1-48f7-920d-8e012015c2a0 .
+
+oquo:metric-2e337f20-8e17-41d9-ac92-2208b0d4d454
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-41afa888-681b-4be0-a99a-5bf510337f47 ;
+        oboe:measurementFor  oquo:observation-8675535b-0ee9-45c0-92e2-cfcff71327a2 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:observation-5cfc178d-d72a-42f9-ad23-3ce21133b64e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b646859a-25fe-458a-b123-8ec87d4aee55 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-3964cd02-3a87-4cf6-a777-87cb141398fc .
+
+oquo:observation-11d669ad-5567-4a47-aec0-67d2ee7dc378
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7e5c9f04-f63d-4ebc-8263-f1b4b442bb1b ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-a61420ff-caa8-4a14-91ef-b8a584f9d610 .
+
+oquo:evaluation-36f486a8-09f8-499e-9e32-f6bfef7d9531
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-d73dd2b7-98fe-4be5-b4c0-ed420e69051a ;
+        time:hasTime              oquo:instant-84f72a8d-96c1-4af2-87b9-b18afcb9f0e2 ;
+        oquo:hasObservation       oquo:observation-31091481-785e-42e1-bda4-e3d078aefda7 .
+
+oquo:metric-df1119a1-6c4a-416a-b691-3eb0e4b6f2f7
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-f5f9289c-7c15-423a-a867-2e797dac172b ;
+        oboe:measurementFor  oquo:observation-8c7ff960-0763-49e1-bc22-c0cc1d22d414 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-a13460ab-9306-4a40-96ba-05d3fd6318c9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:09.605Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-08180d96-5a73-4676-afea-e107c051c04a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a2937714-f930-4f62-84ee-82f1808d1121 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9765b4d3-f880-4ccf-ad1d-8fe259ab57c7 .
+
+oquo:qualityValue-852fa291-33cf-4168-ad9a-295b95af7fff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e576943f-c2cc-4777-a5f5-bb28c827cde6 ;
+        res:hasLiteralValue    "0.1391304347826087"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-37264706-9f13-4aa7-8141-854da7292e95 .
+
+oquo:observation-9c1eadf0-5818-4a3d-9f1e-330a3b7254cd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6b264660-8506-4e87-ac15-94d42069b0c2 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-c03b6af8-0716-4387-99a9-20198c041a7d .
+
+<http://infoneer.txstate.edu/ontology/MSDL>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-d4af86ab-29cc-49f1-87c0-1d649c4c1a4c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-ea7ec6ff-4bed-4748-9a64-5244d99d5094 ;
+        time:hasTime              oquo:instant-3964cd02-3a87-4cf6-a777-87cb141398fc ;
+        oquo:hasObservation       oquo:observation-5cfc178d-d72a-42f9-ad23-3ce21133b64e .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:observation-e3bf86e8-98ff-41be-8ef8-d708e85f5235
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-11e3b4d9-4d3e-4032-8fdc-bba39a12014d ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-a1c48627-e3d6-490d-a657-21540a4303b4 .
+
+oquo:instant-a98f3572-ead8-4ebb-91f0-e12097c16c85
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.709Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a61420ff-caa8-4a14-91ef-b8a584f9d610
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ec56b967-0ab3-48bd-a44e-6a465c9f92dd
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-f9864560-aee9-405e-ac5e-e98b4da63531 ;
+        oboe:measurementFor  oquo:observation-580b2c51-6234-4f43-9e70-c135c8bf7b3c ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-9ee1e850-183e-44d5-9107-574a867ce482
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f4cece8d-2074-4e9a-9d4b-4433eb1f50cd ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-990d8804-d8d0-41b1-a678-274ecaa51c8f .
+
+oquo:metric-15270aac-0066-4a87-b634-d4b19ead3d29
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-865c792f-c280-47cb-97ba-3a3e94dcd178 ;
+        oboe:measurementFor  oquo:observation-23530d95-1659-40d4-81cb-46b8fd853cd6 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:evaluation-3992ae00-6555-42a9-9c81-147efc558452
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-bca14c53-70e3-4007-894e-78b78f60adcd ;
+        time:hasTime              oquo:instant-20a536c1-2c77-4bb0-99e5-7b33445cb21d ;
+        oquo:hasObservation       oquo:observation-95062892-a2a5-4e4f-a5bf-4f75af7459cd .
+
+oquo:qualityValue-87123a22-ad10-4d15-960c-b13b771b5d19
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e7eed592-8724-409a-85cb-9cdcfdb00805 ;
+        res:hasLiteralValue    "0.002369668246445498"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bc694b32-bb0d-43fc-934b-be217acf68bf .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-abd55138-b69c-49a6-8d6f-9a754dbab709
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.851Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-11a9a140-ee61-4089-8a7d-1d69251819b6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-865c792f-c280-47cb-97ba-3a3e94dcd178 ;
+        time:hasTime              oquo:instant-a13460ab-9306-4a40-96ba-05d3fd6318c9 ;
+        oquo:hasObservation       oquo:observation-23530d95-1659-40d4-81cb-46b8fd853cd6 .
+
+oquo:instant-990d8804-d8d0-41b1-a678-274ecaa51c8f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.95Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-52887013-44e1-4060-a11d-4bd1b27d0d8c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-11e3b4d9-4d3e-4032-8fdc-bba39a12014d ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b2dced92-c3e2-4e97-8564-dfe4ba6a3be3 .
+
+oquo:instant-c9ea0f4d-4462-44b7-af20-1ca5cf61c1d4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.211Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7e5c9f04-f63d-4ebc-8263-f1b4b442bb1b
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-5de28bf4-3698-4d28-ba13-8a3f917d51ad ;
+        oboe:measurementFor  oquo:observation-11d669ad-5567-4a47-aec0-67d2ee7dc378 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-68007ff7-5097-44f7-85c3-0b9a1ac7f4a4
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-85e7ce81-b2fd-4aae-aa77-526cd4f4fdc9 ;
+        oboe:measurementFor  oquo:observation-594ca8fa-3301-4509-ad11-7243906df7c8 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-e36c89e4-d8c5-461a-a6a1-33f682c4f957
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e7eed592-8724-409a-85cb-9cdcfdb00805 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-212dc6ad-1f84-458e-8cbb-db3f6bb6bb52 .
+
+oquo:observation-147399fe-c2c8-4ec3-a320-2f210bd5ee5e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cfa3c64a-1ad7-4f2b-9c6d-48866e52939a ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-80098e7e-e468-4f3f-beb7-7e4d9329a6a6 .
+
+oquo:instant-720bca6c-6209-45b0-9b9b-32d6d5b24170
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.49Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-2989140a-e7d5-46cb-b5bd-1a8b0b2063b7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-97c96bcb-e3ef-428c-b080-5075575e18c8 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-2f2f7b30-3c6f-4129-bc40-475746579eeb .
+
+oquo:metric-224cabf4-b678-4f6b-9137-b92ea8d1d0b7
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-3c32a5f2-b6e4-4e73-a0ef-a139f9e63fe8 ;
+        oboe:measurementFor  oquo:observation-506b45cc-2778-45e2-ad98-70e5be330072 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-9eb9d67d-7c00-4aca-8223-35716cc1fbda
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.674Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8250f9f6-54d7-4b51-8d92-ba2fe6f29d3c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-982f6f7c-268e-4130-b5f6-f4fefd577e8f ;
+        time:hasTime              oquo:instant-990d8804-d8d0-41b1-a678-274ecaa51c8f ;
+        oquo:hasObservation       oquo:observation-9ee1e850-183e-44d5-9107-574a867ce482 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-37264706-9f13-4aa7-8141-854da7292e95
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-852fa291-33cf-4168-ad9a-295b95af7fff ;
+        time:hasTime              oquo:instant-9eb9d67d-7c00-4aca-8223-35716cc1fbda ;
+        oquo:hasObservation       oquo:observation-42f6a42b-7adf-46f8-b03d-c8a74b155c8e .
+
+oquo:observation-804bb7ad-0b30-4531-baa3-756b69b8e2b0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-768afac7-e5b1-4395-bde3-70a0656b8700 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-9fa96e98-a7a8-4e26-ba2e-42331667b723 .
+
+oquo:metric-beacda4e-8603-491c-907a-2124f436e1b9
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-090928ca-6064-481b-8f31-38009e2c15ff ;
+        oboe:measurementFor  oquo:observation-3db077bf-5673-47e3-8cd2-821df052af98 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:instant-212dc6ad-1f84-458e-8cbb-db3f6bb6bb52
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:09.597Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-aef8e452-690c-4a9e-b012-532d6b57a803
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b546d145-cc38-4719-881f-3cda7a6cb7c1 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-14d91721-e440-40b4-8b68-7efa8c9d8b98 .
+
+oquo:metric-f4cece8d-2074-4e9a-9d4b-4433eb1f50cd
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-982f6f7c-268e-4130-b5f6-f4fefd577e8f ;
+        oboe:measurementFor  oquo:observation-9ee1e850-183e-44d5-9107-574a867ce482 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-a7310986-c93c-44a3-9314-2176b3891e80
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:09.243Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-f098fc81-9ecd-4fe6-866d-e2040ba1be77
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-50c2b16a-4c05-4586-9734-d2bb70dcf82b ;
+        oboe:measurementFor  oquo:observation-93481b30-aa89-4b64-8461-379e1c44050f ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:qualityValue-d83241cf-0e85-4057-9464-6653d16668d4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e2b43445-06e7-4700-8267-8dd8ead7b3e1 ;
+        res:hasLiteralValue    "0.03225806451612903"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6a0d76ba-0dad-470f-a027-8dd1b922c555 .
+
+oquo:qualityValue-6d0cf064-aa5f-489a-90aa-830082946954
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-404e2b8d-d4e9-465a-9ccd-5ce4dfb54c9a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2113e9b8-8c98-446c-bc00-d9f6c00241c3 .
+
+oquo:metric-a4715a92-1395-44a0-aeb5-0997fd30345d
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-515bdea1-e446-4498-92ff-7cfe70401216 ;
+        oboe:measurementFor  oquo:observation-4c7de3e5-50d2-4ad2-8b0b-d16aa2879c14 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-e5c4940d-f2c0-4fbf-9244-8a82e5d7f9bd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b546d145-cc38-4719-881f-3cda7a6cb7c1 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a0bf53ac-47ce-4653-9f3e-458f27eb6046 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-96a4b8c1-fc36-4117-9221-17ae393b61de
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7471878f-3f66-409b-918f-cefeeff096af ;
+        res:hasLiteralValue    "0.3333333333333333"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f9498756-8f41-4b4f-a28a-b747b56e20e2 .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-b646859a-25fe-458a-b123-8ec87d4aee55
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-ea7ec6ff-4bed-4748-9a64-5244d99d5094 ;
+        oboe:measurementFor  oquo:observation-5cfc178d-d72a-42f9-ad23-3ce21133b64e ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:qualityValue-85e7ce81-b2fd-4aae-aa77-526cd4f4fdc9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-68007ff7-5097-44f7-85c3-0b9a1ac7f4a4 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-675e8dd9-fcbe-4bfa-9581-2f90e302a879 .
+
+oquo:evaluation-6ffe8f72-3764-445e-91fc-0e41f073b68d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-57e20ce2-af56-4cc9-9594-22d69083b1b7 ;
+        time:hasTime              oquo:instant-9fa96e98-a7a8-4e26-ba2e-42331667b723 ;
+        oquo:hasObservation       oquo:observation-804bb7ad-0b30-4531-baa3-756b69b8e2b0 .
+
+oquo:evaluation-b3841832-5755-450f-b962-9918b78758e8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-2aa94c1c-c09e-4b88-a0a0-8ac866957ef6 ;
+        time:hasTime              oquo:instant-2f2f7b30-3c6f-4129-bc40-475746579eeb ;
+        oquo:hasObservation       oquo:observation-2989140a-e7d5-46cb-b5bd-1a8b0b2063b7 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:qualityValue-04e75908-8ccd-4272-bed9-d17f3ad6c374
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-48f4574b-9891-4010-92c3-bc434aaaba25 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a4af16d2-b560-48d6-9f0c-1bc6becfc976 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-10446cdb-f77a-4965-98be-4c604496681d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-515bdea1-e446-4498-92ff-7cfe70401216 ;
+        time:hasTime              oquo:instant-2ad58e63-9a71-4798-adcc-67deb4764cd2 ;
+        oquo:hasObservation       oquo:observation-4c7de3e5-50d2-4ad2-8b0b-d16aa2879c14 .
+
+oquo:evaluation-675e8dd9-fcbe-4bfa-9581-2f90e302a879
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-85e7ce81-b2fd-4aae-aa77-526cd4f4fdc9 ;
+        time:hasTime              oquo:instant-f5b0c589-c0ef-4c3b-b483-9096b2637a75 ;
+        oquo:hasObservation       oquo:observation-594ca8fa-3301-4509-ad11-7243906df7c8 .
+
+oquo:metric-e576943f-c2cc-4777-a5f5-bb28c827cde6
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-852fa291-33cf-4168-ad9a-295b95af7fff ;
+        oboe:measurementFor  oquo:observation-42f6a42b-7adf-46f8-b03d-c8a74b155c8e ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-090928ca-6064-481b-8f31-38009e2c15ff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-beacda4e-8603-491c-907a-2124f436e1b9 ;
+        res:hasLiteralValue    "0.17061611374407584"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-33b7c11f-ea28-4044-915d-93029e20032d .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-31091481-785e-42e1-bda4-e3d078aefda7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-19da3e45-7061-4560-b97f-9b03dd6c56f6 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-84f72a8d-96c1-4af2-87b9-b18afcb9f0e2 .
+
+oquo:qualityValue-49863dd5-cce2-4e84-82e8-3f53a6142e7e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-393995d3-3b12-4f86-95d4-e016f06839c6 ;
+        res:hasLiteralValue    "1.017391304347826"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5ad79007-b3f2-40ec-b10f-aac0aea1f0fc .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-6172d1b0-77b6-449b-a70e-964cb719f743
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5253ef64-8b70-4a49-8e5a-ac2e82301014 ;
+        oboe:measurementFor  oquo:observation-da4184db-e008-426f-a236-8e2c681620f2 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:evaluation-f681b238-e97e-4716-a5dd-8989bf6fa370
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-9f908910-ee90-4431-8529-bb7e0b6d8468 ;
+        time:hasTime              oquo:instant-80098e7e-e468-4f3f-beb7-7e4d9329a6a6 ;
+        oquo:hasObservation       oquo:observation-147399fe-c2c8-4ec3-a320-2f210bd5ee5e .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-da4184db-e008-426f-a236-8e2c681620f2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6172d1b0-77b6-449b-a70e-964cb719f743 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-c9ea0f4d-4462-44b7-af20-1ca5cf61c1d4 .
+
+oquo:observation-506b45cc-2778-45e2-ad98-70e5be330072
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-224cabf4-b678-4f6b-9137-b92ea8d1d0b7 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-e2bc60b6-716c-47c4-bcb4-ce4df2ad7261 .
+
+oquo:instant-e2bc60b6-716c-47c4-bcb4-ce4df2ad7261
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.905Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-2aa94c1c-c09e-4b88-a0a0-8ac866957ef6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-97c96bcb-e3ef-428c-b080-5075575e18c8 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b3841832-5755-450f-b962-9918b78758e8 .
+
+oquo:metric-e7eed592-8724-409a-85cb-9cdcfdb00805
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-87123a22-ad10-4d15-960c-b13b771b5d19 ;
+        oboe:measurementFor  oquo:observation-e36c89e4-d8c5-461a-a6a1-33f682c4f957 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-48f4574b-9891-4010-92c3-bc434aaaba25
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-04e75908-8ccd-4272-bed9-d17f3ad6c374 ;
+        oboe:measurementFor  oquo:observation-c83a597d-efa2-4f9d-9060-9f574e6bbf15 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:instant-e0ef8f98-6164-4a17-9419-283116cecee9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.508Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1fd53739-f5b6-49f1-805c-540923fc153d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-6eb534e3-ee9e-4aa2-97b2-64408fed53fe ;
+        time:hasTime              oquo:instant-c03b6af8-0716-4387-99a9-20198c041a7d ;
+        oquo:hasObservation       oquo:observation-9c1eadf0-5818-4a3d-9f1e-330a3b7254cd .
+
+oquo:instant-a1c48627-e3d6-490d-a657-21540a4303b4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.239Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-580b2c51-6234-4f43-9e70-c135c8bf7b3c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ec56b967-0ab3-48bd-a44e-6a465c9f92dd ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-09f27341-1473-4dcb-bfd5-3ebe3c00652b .
+
+oquo:metric-7471878f-3f66-409b-918f-cefeeff096af
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-96a4b8c1-fc36-4117-9221-17ae393b61de ;
+        oboe:measurementFor  oquo:observation-478a2a69-b7f4-4e03-95b5-653bb17e37c5 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-8c7ff960-0763-49e1-bc22-c0cc1d22d414
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-df1119a1-6c4a-416a-b691-3eb0e4b6f2f7 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-523124ff-0ce2-4a40-8f43-5aef75c63d23 .
+
+oquo:qualityValue-79ab3889-da61-4d90-9e51-2ef27b2d7ec9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-802c9ee5-05f3-4865-9487-6c584871eb27 ;
+        res:hasLiteralValue    "0.002369668246445498"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-48e79b98-5acf-4e1c-8d3e-749a347b9e3a .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-2f2f7b30-3c6f-4129-bc40-475746579eeb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.925Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-6b264660-8506-4e87-ac15-94d42069b0c2
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6eb534e3-ee9e-4aa2-97b2-64408fed53fe ;
+        oboe:measurementFor  oquo:observation-9c1eadf0-5818-4a3d-9f1e-330a3b7254cd ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-97c96bcb-e3ef-428c-b080-5075575e18c8
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-2aa94c1c-c09e-4b88-a0a0-8ac866957ef6 ;
+        oboe:measurementFor  oquo:observation-2989140a-e7d5-46cb-b5bd-1a8b0b2063b7 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-ea7ec6ff-4bed-4748-9a64-5244d99d5094
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b646859a-25fe-458a-b123-8ec87d4aee55 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d4af86ab-29cc-49f1-87c0-1d649c4c1a4c .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-a2937714-f930-4f62-84ee-82f1808d1121
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-08180d96-5a73-4676-afea-e107c051c04a ;
+        oboe:measurementFor  oquo:observation-3a693bcf-0f4f-40a1-b88b-0bada6ee32dd ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-a4af16d2-b560-48d6-9f0c-1bc6becfc976
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-04e75908-8ccd-4272-bed9-d17f3ad6c374 ;
+        time:hasTime              oquo:instant-3520ac61-7307-405f-ba72-11a8b90748c7 ;
+        oquo:hasObservation       oquo:observation-c83a597d-efa2-4f9d-9060-9f574e6bbf15 .
+
+oquo:observation-95062892-a2a5-4e4f-a5bf-4f75af7459cd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c9aef4d-074f-45c8-ab95-e7474d21cab8 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-20a536c1-2c77-4bb0-99e5-7b33445cb21d .
+
+oquo:qualityValue-5253ef64-8b70-4a49-8e5a-ac2e82301014
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6172d1b0-77b6-449b-a70e-964cb719f743 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-11a73beb-9bfd-4136-8988-e88f7d12a135 .
+
+oquo:qualityValue-f5f9289c-7c15-423a-a867-2e797dac172b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-df1119a1-6c4a-416a-b691-3eb0e4b6f2f7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dd3967f2-d3e5-47cd-91c6-ad1871b1ff1a .
+
+oquo:metric-1c9aef4d-074f-45c8-ab95-e7474d21cab8
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-bca14c53-70e3-4007-894e-78b78f60adcd ;
+        oboe:measurementFor  oquo:observation-95062892-a2a5-4e4f-a5bf-4f75af7459cd ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:metric-e2b43445-06e7-4700-8267-8dd8ead7b3e1
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d83241cf-0e85-4057-9464-6653d16668d4 ;
+        oboe:measurementFor  oquo:observation-350aaadb-ec24-4b09-9ce0-8ae5a1bbc262 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:qualityValue-f9864560-aee9-405e-ac5e-e98b4da63531
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ec56b967-0ab3-48bd-a44e-6a465c9f92dd ;
+        res:hasLiteralValue    "0.9652173913043478"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-adf2cbd6-96dc-497b-8e1b-46af8456c38a .
+
+oquo:observation-3a693bcf-0f4f-40a1-b88b-0bada6ee32dd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a2937714-f930-4f62-84ee-82f1808d1121 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-e0ef8f98-6164-4a17-9419-283116cecee9 .
+
+oquo:instant-523124ff-0ce2-4a40-8f43-5aef75c63d23
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.923Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-97f6841e-b71c-4663-94ff-73d9d487d5b0
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-8c994dd5-3bb9-498f-8017-fb19e237e301 ;
+        oboe:measurementFor  oquo:observation-965cc67d-f666-4d42-a1ee-72e4a30776f9 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-9765b4d3-f880-4ccf-ad1d-8fe259ab57c7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-08180d96-5a73-4676-afea-e107c051c04a ;
+        time:hasTime              oquo:instant-e0ef8f98-6164-4a17-9419-283116cecee9 ;
+        oquo:hasObservation       oquo:observation-3a693bcf-0f4f-40a1-b88b-0bada6ee32dd .
+
+oquo:evaluation-b1494d12-c40b-4bc4-96f0-feef67779cb5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-50c2b16a-4c05-4586-9734-d2bb70dcf82b ;
+        time:hasTime              oquo:instant-ff87f3f4-576d-45c1-af29-3350efe8c4bc ;
+        oquo:hasObservation       oquo:observation-93481b30-aa89-4b64-8461-379e1c44050f .
+
+oquo:instant-09f27341-1473-4dcb-bfd5-3ebe3c00652b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.915Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-404e2b8d-d4e9-465a-9ccd-5ce4dfb54c9a
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-6d0cf064-aa5f-489a-90aa-830082946954 ;
+        oboe:measurementFor  oquo:observation-1ae99af9-e9c4-4d13-b218-505c145941cb ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:qualityValue-d73dd2b7-98fe-4be5-b4c0-ed420e69051a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-19da3e45-7061-4560-b97f-9b03dd6c56f6 ;
+        res:hasLiteralValue    "0.034782608695652174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-36f486a8-09f8-499e-9e32-f6bfef7d9531 .
+
+oquo:metric-19da3e45-7061-4560-b97f-9b03dd6c56f6
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d73dd2b7-98fe-4be5-b4c0-ed420e69051a ;
+        oboe:measurementFor  oquo:observation-31091481-785e-42e1-bda4-e3d078aefda7 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-ff87f3f4-576d-45c1-af29-3350efe8c4bc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-2696862d-20fc-4e9f-8117-b4ed5ee6b6eb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.635Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-23530d95-1659-40d4-81cb-46b8fd853cd6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-15270aac-0066-4a87-b634-d4b19ead3d29 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-a13460ab-9306-4a40-96ba-05d3fd6318c9 .
+
+oquo:instant-a4eb6aee-e749-4121-9303-30975665f42b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.536Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-6eb534e3-ee9e-4aa2-97b2-64408fed53fe
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6b264660-8506-4e87-ac15-94d42069b0c2 ;
+        res:hasLiteralValue    "0.4444444444444444"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1fd53739-f5b6-49f1-805c-540923fc153d .
+
+oquo:observation-594ca8fa-3301-4509-ad11-7243906df7c8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-68007ff7-5097-44f7-85c3-0b9a1ac7f4a4 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-f5b0c589-c0ef-4c3b-b483-9096b2637a75 .
+
+oquo:evaluation-48e79b98-5acf-4e1c-8d3e-749a347b9e3a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-79ab3889-da61-4d90-9e51-2ef27b2d7ec9 ;
+        time:hasTime              oquo:instant-a98f3572-ead8-4ebb-91f0-e12097c16c85 ;
+        oquo:hasObservation       oquo:observation-b900a3c8-9ddb-46fe-a56e-413d78b3e85f .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-3c32a5f2-b6e4-4e73-a0ef-a139f9e63fe8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-224cabf4-b678-4f6b-9137-b92ea8d1d0b7 ;
+        res:hasLiteralValue    "0.8782608695652174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb6a7d6f-5f67-416f-8abb-14f7bcd9177c .
+
+oquo:evaluation-6a0d76ba-0dad-470f-a027-8dd1b922c555
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-d83241cf-0e85-4057-9464-6653d16668d4 ;
+        time:hasTime              oquo:instant-b7eb35a7-88e1-48f7-920d-8e012015c2a0 ;
+        oquo:hasObservation       oquo:observation-350aaadb-ec24-4b09-9ce0-8ae5a1bbc262 .
+
+oquo:observation-478a2a69-b7f4-4e03-95b5-653bb17e37c5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7471878f-3f66-409b-918f-cefeeff096af ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-8e29da94-c0e4-48ac-ba15-8a6536b1e5a7 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-c83a597d-efa2-4f9d-9060-9f574e6bbf15
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-48f4574b-9891-4010-92c3-bc434aaaba25 ;
+        oboe:ofEntity        <http://infoneer.txstate.edu/ontology/MSDL> ;
+        time:hasTime         oquo:instant-3520ac61-7307-405f-ba72-11a8b90748c7 .
+
+oquo:qualityValue-50c2b16a-4c05-4586-9734-d2bb70dcf82b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f098fc81-9ecd-4fe6-866d-e2040ba1be77 ;
+        res:hasLiteralValue    "0.002369668246445498"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b1494d12-c40b-4bc4-96f0-feef67779cb5 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-5ad79007-b3f2-40ec-b10f-aac0aea1f0fc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-49863dd5-cce2-4e84-82e8-3f53a6142e7e ;
+        time:hasTime              oquo:instant-7538d3c7-ccaa-4c57-9c2e-3ad4ae5e1264 ;
+        oquo:hasObservation       oquo:observation-871d6cf7-df05-4c8b-8c8e-d0821d0a66eb .
+
+oquo:instant-84f72a8d-96c1-4af2-87b9-b18afcb9f0e2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:39:12.516Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-dd9483e3-c325-4167-af60-d98ce6cccb7a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-005ecaf0-f44b-4374-a3de-ea20d7e7a6d7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4abe0caa-5a14-4438-883e-381991169c68 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-515bdea1-e446-4498-92ff-7cfe70401216
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a4715a92-1395-44a0-aeb5-0997fd30345d ;
+        res:hasLiteralValue    "0.8412322274881516"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-10446cdb-f77a-4965-98be-4c604496681d .
+
+oquo:evaluation-2113e9b8-8c98-446c-bc00-d9f6c00241c3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:inputData             <http://infoneer.txstate.edu/ontology/MSDL> ;
+        res:producedQualityValue  oquo:qualityValue-6d0cf064-aa5f-489a-90aa-830082946954 ;
+        time:hasTime              oquo:instant-a7310986-c93c-44a3-9314-2176b3891e80 ;
+        oquo:hasObservation       oquo:observation-1ae99af9-e9c4-4d13-b218-505c145941cb .

@@ -1,0 +1,168 @@
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/mdo-full-20210415-owl__mdo-full.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mdo-full__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mdo-full__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 233 msec
+Building Neo4j graph from ontology model...
+Graph builded in 2609 msec
+Number of nodes: 39
+Number of relationships: 68
+[1/31] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 13593 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mdo-full__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mdo-full__oquare.ttl".
+Finish. Execution Time = 27332 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/pmdco-20230524-owl__pmdco-core.ttl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/pmdco__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/pmdco__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 2330 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/mm-20211019-owl__materialsmine.ttl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mm__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mm__oquare.ttl
+org.semanticweb.owlapi.model.OWLRuntimeException: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:92)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:366)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:298)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:775)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:788)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:180)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Caused by: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1712)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:89)
+	... 14 more
+Caused by: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1264)
+	at org.coode.owlapi.rdfxml.parser.TPImportsHandler.handleTriple(TPImportsHandler.java:89)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.handleStreaming(OWLRDFConsumer.java:1750)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1709)
+	... 15 more
+Caused by: org.semanticweb.owlapi.io.OWLOntologyCreationIOException: www.nanopub.org
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:214)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:749)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1224)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1257)
+	... 18 more
+Caused by: java.net.UnknownHostException: www.nanopub.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at org.semanticweb.owlapi.io.AbstractOWLParser.getInputStream(AbstractOWLParser.java:130)
+	at org.semanticweb.owlapi.io.AbstractOWLParser.getInputSource(AbstractOWLParser.java:227)
+	at org.coode.owlapi.rdfxml.parser.RDFXMLParser.parse(RDFXMLParser.java:118)
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	... 22 more
+Error: "org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.nanopub.org/nschema#> Cause: www.nanopub.org".
+Finish. Execution Time = 14847 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/mambo-20240504-owl__mambo.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mambo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/mambo__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 584 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/amontology-20210415-owl__AMOntology-vFinal1.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/amontology__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/amontology__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 585 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/nmrrvocab-20210415-skos__NMRRVocab20171102.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/nmrrvocab__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/nmrrvocab__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 83 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1787 msec
+Number of nodes: 4
+Number of relationships: 4
+[1/2] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 5703 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/nmrrvocab__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/nmrrvocab__oquare.ttl".
+Finish. Execution Time = 19302 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/vimmp_ontologies-20210825-owl__combined-vimmp-ontologies.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/vimmp_ontologies__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/vimmp_ontologies__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+java.lang.IllegalArgumentException: Non-simple property '<https://purl.vimmp.eu/semantics/viso/viso-general.ttl#has_part>' or its inverse appears in the cardinality restriction 'ObjectMinCardinality(2 <https://purl.vimmp.eu/semantics/viso/viso-general.ttl#has_part> <https://purl.vimmp.eu/semantics/viso/viso-atomistic-mesoscopic.ttl#structureless_object>)'.
+	at org.semanticweb.HermiT.structural.ObjectPropertyInclusionManager.rewriteAxioms(ObjectPropertyInclusionManager.java:110)
+	at org.semanticweb.HermiT.structural.OWLClausification.preprocessAndClausify(OWLClausification.java:150)
+	at org.semanticweb.HermiT.Reasoner.loadOntology(Reasoner.java:221)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:212)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:175)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:23)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Non-simple property '<https://purl.vimmp.eu/semantics/viso/viso-general.ttl#has_part>' or its inverse appears in the cardinality restriction 'ObjectMinCardinality(2 <https://purl.vimmp.eu/semantics/viso/viso-general.ttl#has_part> <https://purl.vimmp.eu/semantics/viso/viso-atomistic-mesoscopic.ttl#structureless_object>)'.".
+Finish. Execution Time = 4328 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/rest.matportal.org/lpbfo-20221013-owl__LPBFO.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/lpbfo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/rest.matportal.org/lpbfo__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 7017 msec

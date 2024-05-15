@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-123c40e5-2d22-44a0-b839-95547c297a6e
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-f57181fc-452a-4d7e-8a97-14ba5cffd46b ;
+        oboe:measurementFor  oquo:observation-92d4c906-6a16-4786-b6c5-953947247d37 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-1ee6e8ab-060d-478d-9e78-cd2296490360
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3dfa4ef6-cfdc-4a18-811b-a851c27028ed ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b614918f-82b6-47ef-9d6a-40b77865e5a5 .
+
+oquo:instant-72a59b46-5c35-4407-981d-6e5113eadf04
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.353Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-4c4eeb52-1abc-4865-a43f-0e9a722084c4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8bd36b7a-efa4-4cb9-8bd7-a3f0d55a8435 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-3af44194-c3e3-455d-b1ff-f6a8cadebb53 .
+
+oquo:metric-25abd9b2-13a4-41ce-9bda-8e602eec44d3
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-fccbb557-00ce-49fe-bc70-bdfc91d0984b ;
+        oboe:measurementFor  oquo:observation-32be56f4-731a-4c43-840d-fa6d07ec14b4 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:evaluation-981aaa3d-8e96-4f0d-9ff7-ab573bc14f99
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-43923a41-cbcc-450d-b532-2981797a8eeb ;
+        time:hasTime              oquo:instant-a83937df-52dd-41eb-be44-409450f6675f ;
+        oquo:hasObservation       oquo:observation-a7ce25ca-9123-4305-add1-a297be25a218 .
+
+oquo:qualityValue-9ccb3644-8d98-4e58-b4cd-a702b382c9e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bca4e429-7519-4aeb-b350-62b68d814cd8 ;
+        res:hasLiteralValue    "0.12962962962962962"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b60698ec-3e6f-435f-9cab-f6862fd3b86a .
+
+oquo:evaluation-edf5614c-b116-4bff-bfe7-1443b44f8da6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-f9da6c16-ad98-45e2-9948-b4b5d3acb1ee ;
+        time:hasTime              oquo:instant-a85e21d1-78d8-40a9-9757-6be82ecbba39 ;
+        oquo:hasObservation       oquo:observation-ce6a0e73-fb41-4b34-a64b-d779a71749fe .
+
+oquo:metric-8e1bd34a-d0ec-4506-bafd-e5cca309b1d3
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-9e8d9dff-af2a-4eb8-a4b2-ae133947239b ;
+        oboe:measurementFor  oquo:observation-a92d6a78-e8ad-4a58-b287-e735bc10c685 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-f9da6c16-ad98-45e2-9948-b4b5d3acb1ee
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9a87303f-2e32-41c6-acca-7f93d3973176 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-edf5614c-b116-4bff-bfe7-1443b44f8da6 .
+
+oquo:evaluation-cb815c29-aa90-4a0c-b1df-bf0d10a915bd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-33b01cd1-2dc2-4c75-aa47-e2e4fdf77ba5 ;
+        time:hasTime              oquo:instant-2b98b139-befd-4861-8a17-d9e9c044c9d9 ;
+        oquo:hasObservation       oquo:observation-cffcc4b4-3dea-4e66-ac56-705198939413 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-6efc097b-f4ed-43f9-8c03-cb1763fafd19
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-7762bc2e-8a06-40f3-95a7-facc161c8090 ;
+        oboe:measurementFor  oquo:observation-938995ff-8b93-4d85-a279-17bf67a44d81 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:qualityValue-c634a200-c087-482b-baeb-d332f9bc841a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-edfe6f9f-e011-48d5-bb3e-2f755ea0d461 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8ec3c270-03a5-4095-9d49-31a01a05f89d .
+
+oquo:observation-e0863ca5-c57c-4807-9699-e317816b6552
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-90d91d59-0d83-4947-aeac-b7b194ebef01 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-a3cc4b01-f449-446b-9b74-282056cd91d7 .
+
+oquo:evaluation-f1dc1d81-db57-4d45-aaaa-ac914e5a6101
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-38b8b060-8a63-409d-9a65-eccb994f6750 ;
+        time:hasTime              oquo:instant-ffa3cfae-c705-41f5-acdf-d9b1929bc2de ;
+        oquo:hasObservation       oquo:observation-940ddb2b-955b-490d-9cae-dea742afa235 .
+
+oquo:qualityValue-fa366c31-def1-4c08-8805-d44d2fe74edc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8bd36b7a-efa4-4cb9-8bd7-a3f0d55a8435 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a0b3588f-baf3-40e7-98b1-7fce61ddb7f1 .
+
+oquo:metric-90d91d59-0d83-4947-aeac-b7b194ebef01
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3006cd98-ce4c-44c3-b211-30e5e5fb4034 ;
+        oboe:measurementFor  oquo:observation-e0863ca5-c57c-4807-9699-e317816b6552 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-dab241b7-703d-4e4d-92cc-10f046317c13
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-ce486ced-3d00-4e9b-974a-767f424b66f9 ;
+        time:hasTime              oquo:instant-2f4d4641-060f-44a0-87a5-bca09d67cf4d ;
+        oquo:hasObservation       oquo:observation-07b644cb-c33d-4954-81ef-8eb1ab8246d2 .
+
+oquo:metric-3dfa4ef6-cfdc-4a18-811b-a851c27028ed
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-1ee6e8ab-060d-478d-9e78-cd2296490360 ;
+        oboe:measurementFor  oquo:observation-fc99dd80-dfb7-4f0d-92d0-b92e897c17b3 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:metric-9a87303f-2e32-41c6-acca-7f93d3973176
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-f9da6c16-ad98-45e2-9948-b4b5d3acb1ee ;
+        oboe:measurementFor  oquo:observation-ce6a0e73-fb41-4b34-a64b-d779a71749fe ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:instant-2b98b139-befd-4861-8a17-d9e9c044c9d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:17.329Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-bb3c1cff-7c9b-499c-93bf-9908f43512ed
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-df1b021c-d388-48ce-a326-8db970b8fad5 ;
+        oboe:measurementFor  oquo:observation-34dffcbe-6f2d-460f-a509-64b8346ae1cd ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-93d39803-5f23-476c-8d66-9884b65c85bb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.375Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-0888fe4f-19f9-4848-8eb7-cc36c1c062cf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-75225190-3855-4680-863b-f40184f41387 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-91be0ad8-2cf5-48db-8cc3-2f77b904519e .
+
+oquo:evaluation-ed93284d-0bde-4c28-9980-8d9bf58a41e4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-ad39ffa8-6044-420b-abd5-b2c211ff607a ;
+        time:hasTime              oquo:instant-6eb548db-bb94-449c-8b68-abee02990651 ;
+        oquo:hasObservation       oquo:observation-f09bbb73-a622-48b1-bcb6-6fe27d5e8134 .
+
+oquo:evaluation-336fd9a0-307c-4632-9b01-43e11b947856
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-6f5ef099-d98a-469c-90fc-17531f6befc5 ;
+        time:hasTime              oquo:instant-91be0ad8-2cf5-48db-8cc3-2f77b904519e ;
+        oquo:hasObservation       oquo:observation-0888fe4f-19f9-4848-8eb7-cc36c1c062cf .
+
+oquo:evaluation-5068ee96-250f-4668-9909-ffaf6591b298
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-fb3a0de6-168d-4deb-b65f-8a9a0c6c036a ;
+        time:hasTime              oquo:instant-82a4a4a3-0263-4945-80c3-ef3c25a01976 ;
+        oquo:hasObservation       oquo:observation-52b563eb-62d5-48d0-9d95-fa3743e8ef82 .
+
+oquo:metric-cc3d977e-45b9-4163-8344-d5e82cd27331
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ee408500-e375-4eec-a669-24203288c370 ;
+        oboe:measurementFor  oquo:observation-f8c97f09-6bd4-4c98-97b7-e11d01ec013d ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-4c3b2a0b-4a9b-49fa-b353-dd9fdbd845c4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-62c121d2-ffa2-4138-8a83-2aacfad4b816 ;
+        res:hasLiteralValue    "0.7916666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-56d04279-679b-4122-845c-36b3f3ccfba1 .
+
+oquo:qualityValue-38b8b060-8a63-409d-9a65-eccb994f6750
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8e1c4105-de4d-43a2-80aa-74efed4b8627 ;
+        res:hasLiteralValue    "0.6421052631578947"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f1dc1d81-db57-4d45-aaaa-ac914e5a6101 .
+
+oquo:observation-788d9964-93f4-4446-9f22-ad7f980943ee
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-23c43295-da78-4398-bb74-62b13a7fceba ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-39cac7c3-3bbe-4488-8f95-0bb84088abd2 .
+
+oquo:qualityValue-9e8d9dff-af2a-4eb8-a4b2-ae133947239b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8e1bd34a-d0ec-4506-bafd-e5cca309b1d3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8625cf04-6831-4657-9e56-885c50250534 .
+
+oquo:evaluation-5679ff85-dad8-4934-8b4b-94e112c5da41
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-0fa2c87c-8db6-4b3a-aefa-1d25b26e6a1e ;
+        time:hasTime              oquo:instant-8c83cb99-c507-4f08-9dea-ff795a01899a ;
+        oquo:hasObservation       oquo:observation-d750baf1-b356-4386-b0ab-0f4432ff1f6c .
+
+oquo:observation-938995ff-8b93-4d85-a279-17bf67a44d81
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6efc097b-f4ed-43f9-8c03-cb1763fafd19 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-72a59b46-5c35-4407-981d-6e5113eadf04 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-4fcf9690-6e4a-47ee-add9-d1b2eae9f1c1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-266483cb-63b8-4fbf-a682-102008d86d6e ;
+        time:hasTime              oquo:instant-ef2b7821-c7a6-4960-9309-341d2419a3e5 ;
+        oquo:hasObservation       oquo:observation-a1cf5417-8c77-4b98-a0d6-cd867129c49f .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-2ae6b868-1be2-454c-af8e-60709d06c34a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-58de3259-5940-4271-a8d2-dbb9fea73bb6 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fed4ec5b-bc4f-4099-8645-b36d55c38a0d .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-7762bc2e-8a06-40f3-95a7-facc161c8090
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6efc097b-f4ed-43f9-8c03-cb1763fafd19 ;
+        res:hasLiteralValue    "96.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f84bf865-fc54-4a1a-821c-403329689ba0 .
+
+oquo:instant-a85e21d1-78d8-40a9-9757-6be82ecbba39
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:17.425Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-ce6a0e73-fb41-4b34-a64b-d779a71749fe
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9a87303f-2e32-41c6-acca-7f93d3973176 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-a85e21d1-78d8-40a9-9757-6be82ecbba39 .
+
+oquo:evaluation-811458aa-dfd0-44c2-b27e-e49731dcf2c7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-9dc61b5a-a04a-4d06-803e-421bbfcca0b1 ;
+        time:hasTime              oquo:instant-f2fc7ae3-f9ee-4b94-8938-50dfb35cda51 ;
+        oquo:hasObservation       oquo:observation-1126aa7f-5a4e-4357-8be7-0802fce726d0 .
+
+oquo:qualityValue-ce486ced-3d00-4e9b-974a-767f424b66f9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-14f18166-e80a-45f9-b66a-3cafae92209b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dab241b7-703d-4e4d-92cc-10f046317c13 .
+
+oquo:qualityValue-761a47d7-7388-433c-912d-c2ebdbc98eb0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-42bfc7d9-c30d-4bbc-9ace-584f85e00a11 ;
+        res:hasLiteralValue    "0.35789473684210527"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-54a64e92-9603-426c-979b-6feacc9be26a .
+
+oquo:qualityValue-0fa2c87c-8db6-4b3a-aefa-1d25b26e6a1e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-79b78bd6-e397-474c-84d2-15903de29039 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5679ff85-dad8-4934-8b4b-94e112c5da41 .
+
+oquo:evaluation-bdf32e26-3974-48df-b865-2e70dfc25cca
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-b6ca8c6c-7fbe-4948-850c-71a62c2a0ecf ;
+        time:hasTime              oquo:instant-5f597156-bc93-4916-b849-f22cd54eef18 ;
+        oquo:hasObservation       oquo:observation-cdd832a3-21ab-4818-919a-8e364c982e92 .
+
+oquo:observation-fc99dd80-dfb7-4f0d-92d0-b92e897c17b3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3dfa4ef6-cfdc-4a18-811b-a851c27028ed ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-72d9268b-0c1e-446a-b8c6-5513051c958a .
+
+oquo:qualityValue-fb3a0de6-168d-4deb-b65f-8a9a0c6c036a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4af8b1d2-bae2-4eb1-97ea-737d9dc80ca9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5068ee96-250f-4668-9909-ffaf6591b298 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:evaluation-92474a19-59ca-44c4-a2a7-08b4209c5a7f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-6daf94e8-1f2c-44df-983e-fb9b1ef161a2 ;
+        time:hasTime              oquo:instant-81ec01a4-23cd-4b63-a56e-47425bd22e97 ;
+        oquo:hasObservation       oquo:observation-0f3590d1-11b7-4f5a-936f-f46dd12376bf .
+
+oquo:instant-4b464151-a446-4cae-b822-de92d5d431df
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.628Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-54a64e92-9603-426c-979b-6feacc9be26a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-761a47d7-7388-433c-912d-c2ebdbc98eb0 ;
+        time:hasTime              oquo:instant-e7f2b6ac-11fd-41ce-a763-72c57ea387f1 ;
+        oquo:hasObservation       oquo:observation-44a7af61-f806-47dd-9110-33980c78a02e .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-4af8b1d2-bae2-4eb1-97ea-737d9dc80ca9
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-fb3a0de6-168d-4deb-b65f-8a9a0c6c036a ;
+        oboe:measurementFor  oquo:observation-52b563eb-62d5-48d0-9d95-fa3743e8ef82 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-d6f0fa6c-8dfd-49d7-b440-f45a796dbde6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bd3bf5cb-4cbb-49d2-8ea5-d32ca24a2ee2 ;
+        res:hasLiteralValue    "0.3333333333333333"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ada0dd9c-4263-4d8e-ae2e-1a12c37aa4fa .
+
+oquo:instant-4c9afb93-e520-410c-aa26-7d1550d206cd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.631Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-edfe6f9f-e011-48d5-bb3e-2f755ea0d461
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-c634a200-c087-482b-baeb-d332f9bc841a ;
+        oboe:measurementFor  oquo:observation-f6be2099-6fa1-4dba-b2ee-5d297e585458 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:instant-bab6effb-e208-4848-ba5c-3de9de5c0f88
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.63Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f6be2099-6fa1-4dba-b2ee-5d297e585458
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-edfe6f9f-e011-48d5-bb3e-2f755ea0d461 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-785040a1-ea70-482c-9e7c-03a506e63524 .
+
+oquo:metric-f04071df-fd2a-478c-a3b9-10bf08a5850a
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ad39ffa8-6044-420b-abd5-b2c211ff607a ;
+        oboe:measurementFor  oquo:observation-f09bbb73-a622-48b1-bcb6-6fe27d5e8134 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:instant-81ec01a4-23cd-4b63-a56e-47425bd22e97
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.47Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-df1b021c-d388-48ce-a326-8db970b8fad5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bb3c1cff-7c9b-499c-93bf-9908f43512ed ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0ad6d564-dccb-4a99-a0b7-3fe2ac85762e .
+
+oquo:evaluation-78977f62-3105-41bf-9870-605386dc190d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-14c5e4f6-3847-4aec-a01e-f79a4d7dec5c ;
+        time:hasTime              oquo:instant-aa53f897-3a33-45b5-ab6d-acc49da9c01f ;
+        oquo:hasObservation       oquo:observation-28a16c35-3189-4876-b802-8556c260cbbf .
+
+oquo:observation-f3a56b40-8a51-449d-9c85-684267d17de5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bd3bf5cb-4cbb-49d2-8ea5-d32ca24a2ee2 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-d64b3b93-b43d-4f52-b658-f830ba337cab .
+
+oquo:qualityValue-16d86794-c25d-49fd-ad3e-af2c89cc9d22
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-40a11d92-5a16-44fa-94a0-8560c2a0ba9b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2cb7ea4c-1bdf-4dc8-b443-775cb2a46a52 .
+
+oquo:instant-2f4d4641-060f-44a0-87a5-bca09d67cf4d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.571Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-14f18166-e80a-45f9-b66a-3cafae92209b
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ce486ced-3d00-4e9b-974a-767f424b66f9 ;
+        oboe:measurementFor  oquo:observation-07b644cb-c33d-4954-81ef-8eb1ab8246d2 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-bd3bf5cb-4cbb-49d2-8ea5-d32ca24a2ee2
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-d6f0fa6c-8dfd-49d7-b440-f45a796dbde6 ;
+        oboe:measurementFor  oquo:observation-f3a56b40-8a51-449d-9c85-684267d17de5 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-aa53f897-3a33-45b5-ab6d-acc49da9c01f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.551Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-fccbb557-00ce-49fe-bc70-bdfc91d0984b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-25abd9b2-13a4-41ce-9bda-8e602eec44d3 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dc8a62de-575a-42c4-b5d2-328012336df6 .
+
+oquo:evaluation-f9d2a94f-49b1-482d-8218-8cd5e9ec5fdd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-0200d71f-7ea1-4b15-b94f-8c1bdabf83fb ;
+        time:hasTime              oquo:instant-4b464151-a446-4cae-b822-de92d5d431df ;
+        oquo:hasObservation       oquo:observation-101f365c-d65c-4d8d-b88f-4e726062da86 .
+
+oquo:metric-661a5a66-40ea-4796-9e2e-ea6ca0a8da1d
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-bb28f9a9-2e51-4ba6-9d23-4ba20d7b3667 ;
+        oboe:measurementFor  oquo:observation-a8a95b7f-d1d2-4c40-8b03-6d137a61af2d ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:instant-f2fc7ae3-f9ee-4b94-8938-50dfb35cda51
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.387Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-42bfc7d9-c30d-4bbc-9ace-584f85e00a11
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-761a47d7-7388-433c-912d-c2ebdbc98eb0 ;
+        oboe:measurementFor  oquo:observation-44a7af61-f806-47dd-9110-33980c78a02e ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-9dc61b5a-a04a-4d06-803e-421bbfcca0b1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f5051798-cff9-431e-998c-ea06994bc2d3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-811458aa-dfd0-44c2-b27e-e49731dcf2c7 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a0b3588f-baf3-40e7-98b1-7fce61ddb7f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-fa366c31-def1-4c08-8805-d44d2fe74edc ;
+        time:hasTime              oquo:instant-3af44194-c3e3-455d-b1ff-f6a8cadebb53 ;
+        oquo:hasObservation       oquo:observation-4c4eeb52-1abc-4865-a43f-0e9a722084c4 .
+
+oquo:evaluation-56d04279-679b-4122-845c-36b3f3ccfba1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-4c3b2a0b-4a9b-49fa-b353-dd9fdbd845c4 ;
+        time:hasTime              oquo:instant-4c9afb93-e520-410c-aa26-7d1550d206cd ;
+        oquo:hasObservation       oquo:observation-a7d57314-f844-41e7-ab7d-0ab24c525d00 .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-6f5ef099-d98a-469c-90fc-17531f6befc5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-75225190-3855-4680-863b-f40184f41387 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-336fd9a0-307c-4632-9b01-43e11b947856 .
+
+oquo:observation-a7d57314-f844-41e7-ab7d-0ab24c525d00
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-62c121d2-ffa2-4138-8a83-2aacfad4b816 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-4c9afb93-e520-410c-aa26-7d1550d206cd .
+
+oquo:qualityValue-bb28f9a9-2e51-4ba6-9d23-4ba20d7b3667
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-661a5a66-40ea-4796-9e2e-ea6ca0a8da1d ;
+        res:hasLiteralValue    "0.042105263157894736"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5e9603cb-d222-4935-a18a-e92d7b3bf259 .
+
+oquo:instant-39cac7c3-3bbe-4488-8f95-0bb84088abd2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.392Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f8c97f09-6bd4-4c98-97b7-e11d01ec013d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cc3d977e-45b9-4163-8344-d5e82cd27331 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-1d6e40c4-2b8b-4d7a-94c4-6b55c055e42b .
+
+oquo:qualityValue-7f4e8d60-8e2f-41d8-8368-681f43440922
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-23c43295-da78-4398-bb74-62b13a7fceba ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b84cd16c-3fa7-4719-9753-1ea6b2141544 .
+
+oquo:evaluation-c3ff98ba-ac52-42a1-844c-cf8685a21777
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-f57181fc-452a-4d7e-8a97-14ba5cffd46b ;
+        time:hasTime              oquo:instant-7c592911-59e3-46b2-8973-7588bc40a84f ;
+        oquo:hasObservation       oquo:observation-92d4c906-6a16-4786-b6c5-953947247d37 .
+
+oquo:observation-92d4c906-6a16-4786-b6c5-953947247d37
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-123c40e5-2d22-44a0-b839-95547c297a6e ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-7c592911-59e3-46b2-8973-7588bc40a84f .
+
+oquo:evaluation-2cb7ea4c-1bdf-4dc8-b443-775cb2a46a52
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-16d86794-c25d-49fd-ad3e-af2c89cc9d22 ;
+        time:hasTime              oquo:instant-008d2153-a1dd-4156-b26f-99978bfa8a62 ;
+        oquo:hasObservation       oquo:observation-669571ea-355b-4ad1-933a-4324c52ccac2 .
+
+oquo:evaluation-8625cf04-6831-4657-9e56-885c50250534
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-9e8d9dff-af2a-4eb8-a4b2-ae133947239b ;
+        time:hasTime              oquo:instant-d1eddf8d-50b7-4520-8580-e683a79177a9 ;
+        oquo:hasObservation       oquo:observation-a92d6a78-e8ad-4a58-b287-e735bc10c685 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-62c121d2-ffa2-4138-8a83-2aacfad4b816
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4c3b2a0b-4a9b-49fa-b353-dd9fdbd845c4 ;
+        oboe:measurementFor  oquo:observation-a7d57314-f844-41e7-ab7d-0ab24c525d00 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-32be56f4-731a-4c43-840d-fa6d07ec14b4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-25abd9b2-13a4-41ce-9bda-8e602eec44d3 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-7cd47680-5d7a-44d8-a5ff-f5be6d8b8e0c .
+
+oquo:metric-5cf50dfa-3286-42ed-b54e-7a75d5e6e3c4
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-33b01cd1-2dc2-4c75-aa47-e2e4fdf77ba5 ;
+        oboe:measurementFor  oquo:observation-cffcc4b4-3dea-4e66-ac56-705198939413 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:qualityValue-f57181fc-452a-4d7e-8a97-14ba5cffd46b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-123c40e5-2d22-44a0-b839-95547c297a6e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c3ff98ba-ac52-42a1-844c-cf8685a21777 .
+
+oquo:evaluation-0ad6d564-dccb-4a99-a0b7-3fe2ac85762e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-df1b021c-d388-48ce-a326-8db970b8fad5 ;
+        time:hasTime              oquo:instant-1c9fcae4-7a87-43eb-ae4a-bc1aea360587 ;
+        oquo:hasObservation       oquo:observation-34dffcbe-6f2d-460f-a509-64b8346ae1cd .
+
+oquo:metric-23c43295-da78-4398-bb74-62b13a7fceba
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7f4e8d60-8e2f-41d8-8368-681f43440922 ;
+        oboe:measurementFor  oquo:observation-788d9964-93f4-4446-9f22-ad7f980943ee ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-0804bf78-a95c-4213-9af2-21455a24f957
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-6b70f260-11e5-4a32-8a32-d47e19839d31 ;
+        time:hasTime              oquo:instant-37d69245-7618-4b7c-902a-b7f8cbf73468 ;
+        oquo:hasObservation       oquo:observation-bcbe8add-3c52-458b-ad0e-58f1bf17bccb .
+
+oquo:qualityValue-ee408500-e375-4eec-a669-24203288c370
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cc3d977e-45b9-4163-8344-d5e82cd27331 ;
+        res:hasLiteralValue    "0.6666666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-60288065-c2ef-4b96-813b-5354008f6175 .
+
+oquo:observation-101f365c-d65c-4d8d-b88f-4e726062da86
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c632bef0-6b1b-4378-bc41-89c6860ec5a9 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-4b464151-a446-4cae-b822-de92d5d431df .
+
+oquo:observation-f09bbb73-a622-48b1-bcb6-6fe27d5e8134
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f04071df-fd2a-478c-a3b9-10bf08a5850a ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-6eb548db-bb94-449c-8b68-abee02990651 .
+
+oquo:observation-e4b0162f-b9ac-4d35-a44d-ed3061647273
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bca4e429-7519-4aeb-b350-62b68d814cd8 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-04c2b9f6-f7f4-4811-8260-5d3ab8476044 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-28a16c35-3189-4876-b802-8556c260cbbf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a4facaf9-f151-46e7-b186-d1900d281143 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-aa53f897-3a33-45b5-ab6d-acc49da9c01f .
+
+oquo:observation-d750baf1-b356-4386-b0ab-0f4432ff1f6c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-79b78bd6-e397-474c-84d2-15903de29039 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-8c83cb99-c507-4f08-9dea-ff795a01899a .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-b6ca8c6c-7fbe-4948-850c-71a62c2a0ecf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fb8b0408-581b-4f31-ac11-9aee45d4f145 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bdf32e26-3974-48df-b865-2e70dfc25cca .
+
+oquo:metric-bca4e429-7519-4aeb-b350-62b68d814cd8
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9ccb3644-8d98-4e58-b4cd-a702b382c9e6 ;
+        oboe:measurementFor  oquo:observation-e4b0162f-b9ac-4d35-a44d-ed3061647273 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:instant-1d6e40c4-2b8b-4d7a-94c4-6b55c055e42b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.55Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:evaluation-fed4ec5b-bc4f-4099-8645-b36d55c38a0d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-2ae6b868-1be2-454c-af8e-60709d06c34a ;
+        time:hasTime              oquo:instant-bab6effb-e208-4848-ba5c-3de9de5c0f88 ;
+        oquo:hasObservation       oquo:observation-92b0a2a5-7445-4c38-b4ba-d5e39f2a250b .
+
+oquo:observation-0f3590d1-11b7-4f5a-936f-f46dd12376bf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-802a4220-0d34-4f4f-a178-63c72a1efb04 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-81ec01a4-23cd-4b63-a56e-47425bd22e97 .
+
+oquo:instant-ef2b7821-c7a6-4960-9309-341d2419a3e5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.622Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5e9603cb-d222-4935-a18a-e92d7b3bf259
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-bb28f9a9-2e51-4ba6-9d23-4ba20d7b3667 ;
+        time:hasTime              oquo:instant-93d39803-5f23-476c-8d66-9884b65c85bb ;
+        oquo:hasObservation       oquo:observation-a8a95b7f-d1d2-4c40-8b03-6d137a61af2d .
+
+oquo:instant-6eb548db-bb94-449c-8b68-abee02990651
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.609Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-dc8a62de-575a-42c4-b5d2-328012336df6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-fccbb557-00ce-49fe-bc70-bdfc91d0984b ;
+        time:hasTime              oquo:instant-7cd47680-5d7a-44d8-a5ff-f5be6d8b8e0c ;
+        oquo:hasObservation       oquo:observation-32be56f4-731a-4c43-840d-fa6d07ec14b4 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-33b01cd1-2dc2-4c75-aa47-e2e4fdf77ba5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5cf50dfa-3286-42ed-b54e-7a75d5e6e3c4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb815c29-aa90-4a0c-b1df-bf0d10a915bd .
+
+oquo:observation-bcbe8add-3c52-458b-ad0e-58f1bf17bccb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-56c24de2-03d0-4ad9-a17b-ae798bddf808 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-37d69245-7618-4b7c-902a-b7f8cbf73468 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-56c24de2-03d0-4ad9-a17b-ae798bddf808
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6b70f260-11e5-4a32-8a32-d47e19839d31 ;
+        oboe:measurementFor  oquo:observation-bcbe8add-3c52-458b-ad0e-58f1bf17bccb ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-6b70f260-11e5-4a32-8a32-d47e19839d31
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-56c24de2-03d0-4ad9-a17b-ae798bddf808 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0804bf78-a95c-4213-9af2-21455a24f957 .
+
+oquo:observation-a1cf5417-8c77-4b98-a0d6-cd867129c49f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9d36719e-dbbd-4058-8e46-f6554f50fe5b ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-ef2b7821-c7a6-4960-9309-341d2419a3e5 .
+
+oquo:instant-008d2153-a1dd-4156-b26f-99978bfa8a62
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.444Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-82a4a4a3-0263-4945-80c3-ef3c25a01976
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:17.473Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b614918f-82b6-47ef-9d6a-40b77865e5a5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-1ee6e8ab-060d-478d-9e78-cd2296490360 ;
+        time:hasTime              oquo:instant-72d9268b-0c1e-446a-b8c6-5513051c958a ;
+        oquo:hasObservation       oquo:observation-fc99dd80-dfb7-4f0d-92d0-b92e897c17b3 .
+
+oquo:instant-7cd47680-5d7a-44d8-a5ff-f5be6d8b8e0c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:17.521Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-07b644cb-c33d-4954-81ef-8eb1ab8246d2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-14f18166-e80a-45f9-b66a-3cafae92209b ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-2f4d4641-060f-44a0-87a5-bca09d67cf4d .
+
+oquo:metric-40a11d92-5a16-44fa-94a0-8560c2a0ba9b
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-16d86794-c25d-49fd-ad3e-af2c89cc9d22 ;
+        oboe:measurementFor  oquo:observation-669571ea-355b-4ad1-933a-4324c52ccac2 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:observation-92b0a2a5-7445-4c38-b4ba-d5e39f2a250b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-58de3259-5940-4271-a8d2-dbb9fea73bb6 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-bab6effb-e208-4848-ba5c-3de9de5c0f88 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-ada0dd9c-4263-4d8e-ae2e-1a12c37aa4fa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-d6f0fa6c-8dfd-49d7-b440-f45a796dbde6 ;
+        time:hasTime              oquo:instant-d64b3b93-b43d-4f52-b658-f830ba337cab ;
+        oquo:hasObservation       oquo:observation-f3a56b40-8a51-449d-9c85-684267d17de5 .
+
+oquo:evaluation-f84bf865-fc54-4a1a-821c-403329689ba0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-7762bc2e-8a06-40f3-95a7-facc161c8090 ;
+        time:hasTime              oquo:instant-72a59b46-5c35-4407-981d-6e5113eadf04 ;
+        oquo:hasObservation       oquo:observation-938995ff-8b93-4d85-a279-17bf67a44d81 .
+
+oquo:evaluation-42e1e7c8-db43-4aa4-93e6-a8ff83650ed3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-3006cd98-ce4c-44c3-b211-30e5e5fb4034 ;
+        time:hasTime              oquo:instant-a3cc4b01-f449-446b-9b74-282056cd91d7 ;
+        oquo:hasObservation       oquo:observation-e0863ca5-c57c-4807-9699-e317816b6552 .
+
+oquo:instant-37d69245-7618-4b7c-902a-b7f8cbf73468
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.524Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-52b563eb-62d5-48d0-9d95-fa3743e8ef82
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4af8b1d2-bae2-4eb1-97ea-737d9dc80ca9 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-82a4a4a3-0263-4945-80c3-ef3c25a01976 .
+
+oquo:instant-e7f2b6ac-11fd-41ce-a763-72c57ea387f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.565Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-a8a95b7f-d1d2-4c40-8b03-6d137a61af2d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-661a5a66-40ea-4796-9e2e-ea6ca0a8da1d ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-93d39803-5f23-476c-8d66-9884b65c85bb .
+
+oquo:instant-d1eddf8d-50b7-4520-8580-e683a79177a9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.637Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-91be0ad8-2cf5-48db-8cc3-2f77b904519e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.395Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-14c5e4f6-3847-4aec-a01e-f79a4d7dec5c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a4facaf9-f151-46e7-b186-d1900d281143 ;
+        res:hasLiteralValue    "0.20833333333333334"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-78977f62-3105-41bf-9870-605386dc190d .
+
+oquo:metric-775789d4-2027-4306-b763-368af7aca67a
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-43923a41-cbcc-450d-b532-2981797a8eeb ;
+        oboe:measurementFor  oquo:observation-a7ce25ca-9123-4305-add1-a297be25a218 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-fb8b0408-581b-4f31-ac11-9aee45d4f145
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-b6ca8c6c-7fbe-4948-850c-71a62c2a0ecf ;
+        oboe:measurementFor  oquo:observation-cdd832a3-21ab-4818-919a-8e364c982e92 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-cffcc4b4-3dea-4e66-ac56-705198939413
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5cf50dfa-3286-42ed-b54e-7a75d5e6e3c4 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-2b98b139-befd-4861-8a17-d9e9c044c9d9 .
+
+oquo:observation-a92d6a78-e8ad-4a58-b287-e735bc10c685
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8e1bd34a-d0ec-4506-bafd-e5cca309b1d3 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-d1eddf8d-50b7-4520-8580-e683a79177a9 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-8c83cb99-c507-4f08-9dea-ff795a01899a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.259Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-1126aa7f-5a4e-4357-8be7-0802fce726d0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f5051798-cff9-431e-998c-ea06994bc2d3 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-f2fc7ae3-f9ee-4b94-8938-50dfb35cda51 .
+
+oquo:qualityValue-266483cb-63b8-4fbf-a682-102008d86d6e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9d36719e-dbbd-4058-8e46-f6554f50fe5b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4fcf9690-6e4a-47ee-add9-d1b2eae9f1c1 .
+
+oquo:instant-04c2b9f6-f7f4-4811-8260-5d3ab8476044
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.547Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-cdd832a3-21ab-4818-919a-8e364c982e92
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fb8b0408-581b-4f31-ac11-9aee45d4f145 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-5f597156-bc93-4916-b849-f22cd54eef18 .
+
+oquo:observation-34dffcbe-6f2d-460f-a509-64b8346ae1cd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bb3c1cff-7c9b-499c-93bf-9908f43512ed ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-1c9fcae4-7a87-43eb-ae4a-bc1aea360587 .
+
+oquo:instant-3af44194-c3e3-455d-b1ff-f6a8cadebb53
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.553Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-3006cd98-ce4c-44c3-b211-30e5e5fb4034
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-90d91d59-0d83-4947-aeac-b7b194ebef01 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-42e1e7c8-db43-4aa4-93e6-a8ff83650ed3 .
+
+oquo:metric-8e1c4105-de4d-43a2-80aa-74efed4b8627
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-38b8b060-8a63-409d-9a65-eccb994f6750 ;
+        oboe:measurementFor  oquo:observation-940ddb2b-955b-490d-9cae-dea742afa235 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:observation-669571ea-355b-4ad1-933a-4324c52ccac2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-40a11d92-5a16-44fa-94a0-8560c2a0ba9b ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-008d2153-a1dd-4156-b26f-99978bfa8a62 .
+
+oquo:instant-72d9268b-0c1e-446a-b8c6-5513051c958a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.634Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a4facaf9-f151-46e7-b186-d1900d281143
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-14c5e4f6-3847-4aec-a01e-f79a4d7dec5c ;
+        oboe:measurementFor  oquo:observation-28a16c35-3189-4876-b802-8556c260cbbf ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-1c9fcae4-7a87-43eb-ae4a-bc1aea360587
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.462Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a3cc4b01-f449-446b-9b74-282056cd91d7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.414Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-79b78bd6-e397-474c-84d2-15903de29039
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-0fa2c87c-8db6-4b3a-aefa-1d25b26e6a1e ;
+        oboe:measurementFor  oquo:observation-d750baf1-b356-4386-b0ab-0f4432ff1f6c ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:instant-5f597156-bc93-4916-b849-f22cd54eef18
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.633Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-f5051798-cff9-431e-998c-ea06994bc2d3
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9dc61b5a-a04a-4d06-803e-421bbfcca0b1 ;
+        oboe:measurementFor  oquo:observation-1126aa7f-5a4e-4357-8be7-0802fce726d0 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:evaluation-b84cd16c-3fa7-4719-9753-1ea6b2141544
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-7f4e8d60-8e2f-41d8-8368-681f43440922 ;
+        time:hasTime              oquo:instant-39cac7c3-3bbe-4488-8f95-0bb84088abd2 ;
+        oquo:hasObservation       oquo:observation-788d9964-93f4-4446-9f22-ad7f980943ee .
+
+oquo:observation-a7ce25ca-9123-4305-add1-a297be25a218
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-775789d4-2027-4306-b763-368af7aca67a ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-a83937df-52dd-41eb-be44-409450f6675f .
+
+oquo:metric-802a4220-0d34-4f4f-a178-63c72a1efb04
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6daf94e8-1f2c-44df-983e-fb9b1ef161a2 ;
+        oboe:measurementFor  oquo:observation-0f3590d1-11b7-4f5a-936f-f46dd12376bf ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-8bd36b7a-efa4-4cb9-8bd7-a3f0d55a8435
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fa366c31-def1-4c08-8805-d44d2fe74edc ;
+        oboe:measurementFor  oquo:observation-4c4eeb52-1abc-4865-a43f-0e9a722084c4 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-6daf94e8-1f2c-44df-983e-fb9b1ef161a2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-802a4220-0d34-4f4f-a178-63c72a1efb04 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-92474a19-59ca-44c4-a2a7-08b4209c5a7f .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-75225190-3855-4680-863b-f40184f41387
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6f5ef099-d98a-469c-90fc-17531f6befc5 ;
+        oboe:measurementFor  oquo:observation-0888fe4f-19f9-4848-8eb7-cc36c1c062cf ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-c632bef0-6b1b-4378-bc41-89c6860ec5a9
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-0200d71f-7ea1-4b15-b94f-8c1bdabf83fb ;
+        oboe:measurementFor  oquo:observation-101f365c-d65c-4d8d-b88f-4e726062da86 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-9d36719e-dbbd-4058-8e46-f6554f50fe5b
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-266483cb-63b8-4fbf-a682-102008d86d6e ;
+        oboe:measurementFor  oquo:observation-a1cf5417-8c77-4b98-a0d6-cd867129c49f ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-ad39ffa8-6044-420b-abd5-b2c211ff607a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f04071df-fd2a-478c-a3b9-10bf08a5850a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ed93284d-0bde-4c28-9980-8d9bf58a41e4 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-44a7af61-f806-47dd-9110-33980c78a02e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-42bfc7d9-c30d-4bbc-9ace-584f85e00a11 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-e7f2b6ac-11fd-41ce-a763-72c57ea387f1 .
+
+oquo:instant-a83937df-52dd-41eb-be44-409450f6675f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.556Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7c592911-59e3-46b2-8973-7588bc40a84f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:17.477Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-43923a41-cbcc-450d-b532-2981797a8eeb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-775789d4-2027-4306-b763-368af7aca67a ;
+        res:hasLiteralValue    "0.9578947368421052"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-981aaa3d-8e96-4f0d-9ff7-ab573bc14f99 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-940ddb2b-955b-490d-9cae-dea742afa235
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8e1c4105-de4d-43a2-80aa-74efed4b8627 ;
+        oboe:ofEntity        <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        time:hasTime         oquo:instant-ffa3cfae-c705-41f5-acdf-d9b1929bc2de .
+
+oquo:qualityValue-0200d71f-7ea1-4b15-b94f-8c1bdabf83fb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c632bef0-6b1b-4378-bc41-89c6860ec5a9 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f9d2a94f-49b1-482d-8218-8cd5e9ec5fdd .
+
+oquo:evaluation-60288065-c2ef-4b96-813b-5354008f6175
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-ee408500-e375-4eec-a669-24203288c370 ;
+        time:hasTime              oquo:instant-1d6e40c4-2b8b-4d7a-94c4-6b55c055e42b ;
+        oquo:hasObservation       oquo:observation-f8c97f09-6bd4-4c98-97b7-e11d01ec013d .
+
+oquo:instant-785040a1-ea70-482c-9e7c-03a506e63524
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.419Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-d64b3b93-b43d-4f52-b658-f830ba337cab
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.635Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8ec3c270-03a5-4095-9d49-31a01a05f89d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-c634a200-c087-482b-baeb-d332f9bc841a ;
+        time:hasTime              oquo:instant-785040a1-ea70-482c-9e7c-03a506e63524 ;
+        oquo:hasObservation       oquo:observation-f6be2099-6fa1-4dba-b2ee-5d297e585458 .
+
+oquo:instant-ffa3cfae-c705-41f5-acdf-d9b1929bc2de
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:35:18.543Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b60698ec-3e6f-435f-9cab-f6862fd3b86a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:inputData             <http://www.semanticweb.org/usmanahmed/ontologies/2018/4/untitled-ontology-7> ;
+        res:producedQualityValue  oquo:qualityValue-9ccb3644-8d98-4e58-b4cd-a702b382c9e6 ;
+        time:hasTime              oquo:instant-04c2b9f6-f7f4-4811-8260-5d3ab8476044 ;
+        oquo:hasObservation       oquo:observation-e4b0162f-b9ac-4d35-a44d-ed3061647273 .
+
+oquo:metric-58de3259-5940-4271-a8d2-dbb9fea73bb6
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-2ae6b868-1be2-454c-af8e-60709d06c34a ;
+        oboe:measurementFor  oquo:observation-92b0a2a5-7445-4c38-b4ba-d5e39f2a250b ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .

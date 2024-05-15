@@ -1,0 +1,163 @@
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/pato-20240329-owl__pato.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pato__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pato__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at org.semanticweb.HermiT.tableau.TupleIndex$TrieNodeManager.newTrieNode(TupleIndex.java:272)
+	at org.semanticweb.HermiT.tableau.TupleIndex.getChildNodeAddIfNecessary(TupleIndex.java:150)
+	at org.semanticweb.HermiT.tableau.TupleIndex.addTuple(TupleIndex.java:60)
+	at org.semanticweb.HermiT.tableau.ExtensionTableWithTupleIndexes.addTuple(ExtensionTableWithTupleIndexes.java:57)
+	at org.semanticweb.HermiT.tableau.ExtensionManager.addAssertion(ExtensionManager.java:367)
+	at org.semanticweb.HermiT.tableau.DLClauseEvaluator$DeriveUnaryFact.execute(DLClauseEvaluator.java:561)
+	at org.semanticweb.HermiT.tableau.DLClauseEvaluator.evaluate(DLClauseEvaluator.java:85)
+	at org.semanticweb.HermiT.tableau.HyperresolutionManager.applyDLClauses(HyperresolutionManager.java:247)
+	at org.semanticweb.HermiT.tableau.Tableau.doIteration(Tableau.java:418)
+	at org.semanticweb.HermiT.tableau.Tableau.runCalculus(Tableau.java:382)
+	at org.semanticweb.HermiT.tableau.Tableau.isSatisfiable(Tableau.java:310)
+	at org.semanticweb.HermiT.tableau.Tableau.isSatisfiable(Tableau.java:260)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.buildModelForConcept(QuasiOrderClassification.java:192)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.updateSubsumptionsUsingLeafNodeStrategy(QuasiOrderClassification.java:153)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.buildHierarchy(QuasiOrderClassification.java:85)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.classify(QuasiOrderClassification.java:79)
+	at org.semanticweb.HermiT.Reasoner.classifyAtomicConcepts(Reasoner.java:2052)
+	at org.semanticweb.HermiT.Reasoner.classifyClasses(Reasoner.java:735)
+	at org.semanticweb.HermiT.Reasoner.precomputeInferences(Reasoner.java:562)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:28)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/bohlmann-20231106-owl__bohlmann.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 7050 msec
+Building Neo4j graph from ontology model...
+Graph builded in 652464 msec
+Number of nodes: 53763
+Number of relationships: 106643
+[1/52882] Searching paths from leaves (maxDepth=8)...Last 1000 leaves path seaches finished in 14452 msec. NumberOfPaths: 1000, AggregatedOfPathLength: 2725Free mem./Max. mem.: 9.782321689029533Last 1000 leaves path seaches finished in 7138 msec. NumberOfPaths: 2000, AggregatedOfPathLength: 5358Free mem./Max. mem.: 3.9880508556962013Last 1000 leaves path seaches finished in 5690 msec. NumberOfPaths: 3000, AggregatedOfPathLength: 7810Free mem./Max. mem.: 14.983614658315977Last 1000 leaves path seaches finished in 5337 msec. NumberOfPaths: 4000, AggregatedOfPathLength: 10716Free mem./Max. mem.: 9.242432874937851Last 1000 leaves path seaches finished in 5134 msec. NumberOfPaths: 5000, AggregatedOfPathLength: 13484Free mem./Max. mem.: 16.465898603200912Last 1000 leaves path seaches finished in 4993 msec. NumberOfPaths: 6000, AggregatedOfPathLength: 16580Free mem./Max. mem.: 10.736731936534245Last 1000 leaves path seaches finished in 5128 msec. NumberOfPaths: 7000, AggregatedOfPathLength: 19780Free mem./Max. mem.: 5.040101458628973Last 1000 leaves path seaches finished in 4685 msec. NumberOfPaths: 8000, AggregatedOfPathLength: 22863Free mem./Max. mem.: 11.40694661686818Last 1000 leaves path seaches finished in 4842 msec. NumberOfPaths: 9000, AggregatedOfPathLength: 25896Free mem./Max. mem.: 5.7428841168681775Last 1000 leaves path seaches finished in 4337 msec. NumberOfPaths: 10000, AggregatedOfPathLength: 28636Free mem./Max. mem.: 11.37679039190213Last 1000 leaves path seaches finished in 3508 msec. NumberOfPaths: 11000, AggregatedOfPathLength: 31469Free mem./Max. mem.: 5.680159913996855Last 1000 leaves path seaches finished in 3798 msec. NumberOfPaths: 12000, AggregatedOfPathLength: 34079Free mem./Max. mem.: 10.715769231319427Last 1000 leaves path seaches finished in 4478 msec. NumberOfPaths: 13000, AggregatedOfPathLength: 36877Free mem./Max. mem.: 5.0517067313194275Last 1000 leaves path seaches finished in 4270 msec. NumberOfPaths: 14000, AggregatedOfPathLength: 39532Free mem./Max. mem.: 9.563299516836803Last 1000 leaves path seaches finished in 4091 msec. NumberOfPaths: 15000, AggregatedOfPathLength: 42390Free mem./Max. mem.: 13.362976163625717Last 1000 leaves path seaches finished in 3975 msec. NumberOfPaths: 16000, AggregatedOfPathLength: 45348Free mem./Max. mem.: 7.666345685720444Last 1000 leaves path seaches finished in 4654 msec. NumberOfPaths: 17000, AggregatedOfPathLength: 48099Free mem./Max. mem.: 10.93359390894572Last 1000 leaves path seaches finished in 3401 msec. NumberOfPaths: 18000, AggregatedOfPathLength: 50697Free mem./Max. mem.: 5.236995220184326Last 1000 leaves path seaches finished in 3953 msec. NumberOfPaths: 19000, AggregatedOfPathLength: 53287Free mem./Max. mem.: 7.96472355723381Last 1000 leaves path seaches finished in 4494 msec. NumberOfPaths: 20000, AggregatedOfPathLength: 56024Free mem./Max. mem.: 10.2516974012057Last 1000 leaves path seaches finished in 4921 msec. NumberOfPaths: 21000, AggregatedOfPathLength: 58677Free mem./Max. mem.: 4.555098712444305Last 1000 leaves path seaches finished in 4248 msec. NumberOfPaths: 22000, AggregatedOfPathLength: 60971Free mem./Max. mem.: 6.291947700083256Last 1000 leaves path seaches finished in 3629 msec. NumberOfPaths: 23000, AggregatedOfPathLength: 63085Free mem./Max. mem.: 8.024565503001213Last 1000 leaves path seaches finished in 4358 msec. NumberOfPaths: 24000, AggregatedOfPathLength: 65406Free mem./Max. mem.: 9.35606335600217Last 1000 leaves path seaches finished in 4025 msec. NumberOfPaths: 25000, AggregatedOfPathLength: 67879Free mem./Max. mem.: 3.692000856002172Last 1000 leaves path seaches finished in 3767 msec. NumberOfPaths: 26000, AggregatedOfPathLength: 70233Free mem./Max. mem.: 4.859080476065477Last 1000 leaves path seaches finished in 5227 msec. NumberOfPaths: 27000, AggregatedOfPathLength: 72675Free mem./Max. mem.: 6.446576118469238Last 1000 leaves path seaches finished in 4815 msec. NumberOfPaths: 28000, AggregatedOfPathLength: 75320Free mem./Max. mem.: 7.028871153791745Last 1000 leaves path seaches finished in 3607 msec. NumberOfPaths: 29000, AggregatedOfPathLength: 77874Free mem./Max. mem.: 7.778858952224255Last 1000 leaves path seaches finished in 4227 msec. NumberOfPaths: 30000, AggregatedOfPathLength: 80697Free mem./Max. mem.: 8.10511155674855Last 1000 leaves path seaches finished in 4187 msec. NumberOfPaths: 31000, AggregatedOfPathLength: 83911Free mem./Max. mem.: 8.091039458910625Last 1000 leaves path seaches finished in 3651 msec. NumberOfPaths: 32000, AggregatedOfPathLength: 86920Free mem./Max. mem.: 7.795541485150655Last 1000 leaves path seaches finished in 3775 msec. NumberOfPaths: 33000, AggregatedOfPathLength: 89959Free mem./Max. mem.: 7.064078251520793Last 1000 leaves path seaches finished in 3653 msec. NumberOfPaths: 34000, AggregatedOfPathLength: 92820Free mem./Max. mem.: 6.105740865071615Last 1000 leaves path seaches finished in 5148 msec. NumberOfPaths: 35000, AggregatedOfPathLength: 95518Free mem./Max. mem.: 9.933768026530743Last 1000 leaves path seaches finished in 3994 msec. NumberOfPaths: 36000, AggregatedOfPathLength: 98176Free mem./Max. mem.: 9.029517819484074Last 1000 leaves path seaches finished in 4278 msec. NumberOfPaths: 37000, AggregatedOfPathLength: 100367Free mem./Max. mem.: 11.1621489127477Last 1000 leaves path seaches finished in 3709 msec. NumberOfPaths: 38000, AggregatedOfPathLength: 102907Free mem./Max. mem.: 5.498086412747702Last 1000 leaves path seaches finished in 3522 msec. NumberOfPaths: 39000, AggregatedOfPathLength: 105498Free mem./Max. mem.: 7.147001226743062Last 1000 leaves path seaches finished in 4591 msec. NumberOfPaths: 40000, AggregatedOfPathLength: 108100Free mem./Max. mem.: 8.236615732312202Last 1000 leaves path seaches finished in 3740 msec. NumberOfPaths: 41000, AggregatedOfPathLength: 111270Free mem./Max. mem.: 8.97950679063797Last 1000 leaves path seaches finished in 3467 msec. NumberOfPaths: 42000, AggregatedOfPathLength: 114043Free mem./Max. mem.: 9.364042927821476Last 1000 leaves path seaches finished in 3577 msec. NumberOfPaths: 43000, AggregatedOfPathLength: 116768Free mem./Max. mem.: 9.316883484522503Last 1000 leaves path seaches finished in 3531 msec. NumberOfPaths: 44000, AggregatedOfPathLength: 119654Free mem./Max. mem.: 8.901531125108402Last 1000 leaves path seaches finished in 4715 msec. NumberOfPaths: 45000, AggregatedOfPathLength: 122475Free mem./Max. mem.: 15.070629554490248Last 1000 leaves path seaches finished in 3746 msec. NumberOfPaths: 46000, AggregatedOfPathLength: 125596Free mem./Max. mem.: 9.375307895243168Last 1000 leaves path seaches finished in 3496 msec. NumberOfPaths: 47000, AggregatedOfPathLength: 128194Free mem./Max. mem.: 13.260169451435408Last 1000 leaves path seaches finished in 3347 msec. NumberOfPaths: 48000, AggregatedOfPathLength: 131082Free mem./Max. mem.: 7.563538973530133Last 1000 leaves path seaches finished in 3707 msec. NumberOfPaths: 49000, AggregatedOfPathLength: 133555Free mem./Max. mem.: 10.94678056736787Last 1000 leaves path seaches finished in 4055 msec. NumberOfPaths: 50000, AggregatedOfPathLength: 136167Free mem./Max. mem.: 5.250181878606478Last 1000 leaves path seaches finished in 3942 msec. NumberOfPaths: 51000, AggregatedOfPathLength: 138760Free mem./Max. mem.: 8.04084489742915Last 1000 leaves path seaches finished in 3677 msec. NumberOfPaths: 52000, AggregatedOfPathLength: 141351Free mem./Max. mem.: 10.223358248670895Oquare metrics calculated in 922757 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.ttl".
+Finish. Execution Time = 933764 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/recordbasis-20230511-owl__recordbasis.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 51 msec
+Building Neo4j graph from ontology model...
+Graph builded in 2253 msec
+Number of nodes: 16
+Number of relationships: 28
+[1/14] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 5797 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.ttl".
+Finish. Execution Time = 19193 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/i-adopt-20230624-owl__i-adopt.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 45 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1893 msec
+Number of nodes: 6
+Number of relationships: 8
+[1/4] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 5231 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.ttl".
+Finish. Execution Time = 17690 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/pto-20230801-owl__to-basic.obo --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 534 msec
+Building Neo4j graph from ontology model...
+Graph builded in 25213 msec
+Number of nodes: 1669
+Number of relationships: 3068
+[1/1148] Searching paths from leaves (maxDepth=26)...Last 1000 leaves path seaches finished in 13697 msec. NumberOfPaths: 1351, AggregatedOfPathLength: 9591Free mem./Max. mem.: 7.032470218837261Oquare metrics calculated in 43266 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.ttl".
+Finish. Execution Time = 59625 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/geonames-20230901-owl__geonames-ontology-v3.3.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/geonames__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/geonames__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 2500 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/envo-20240217-owl__envo.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/envo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/envo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying

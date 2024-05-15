@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-cedbab6b-ec4b-4954-82f2-06f9ed59fb16
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-041f7450-1ce5-4254-98db-f49d171dd87f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-58badfd8-01fe-4a54-bc20-4653c77cbf19 .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-374f5036-f48b-457a-834a-ca72c0d4c895
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9e6e977b-a5ff-4b6f-bb38-61b9478c4bf3 ;
+        oboe:measurementFor  oquo:observation-97646b28-3b35-4811-bffb-38321142d95e ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-e73c5b8b-276b-47d6-8c88-c097d96325a9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.178Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-07e0c228-8f20-4198-ba90-8400a35166ea
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e96666d4-77b6-4331-b3d8-53312a9ddf24 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7943c770-7769-46be-8c25-7c56ae03d78d .
+
+oquo:observation-5e8eb214-77fe-40cf-9576-67fba98556f2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e96666d4-77b6-4331-b3d8-53312a9ddf24 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-e2843837-5609-4498-944a-5c2ac70ad8d3 .
+
+oquo:metric-ebed74be-b50f-4227-b6fd-b42e41c37daf
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-ecef9c8f-70be-4148-a0d0-a8730224ebd6 ;
+        oboe:measurementFor  oquo:observation-98360550-97d7-4fd4-b4c0-253b667d93ea ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-95614c62-0469-41e1-9990-d3700953a954
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-541968f0-3a13-437a-b3d5-3a3fbf1ac0c5 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-4405269e-f7bf-4f77-9dbb-ee4c257e9d1e .
+
+oquo:metric-e96666d4-77b6-4331-b3d8-53312a9ddf24
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-07e0c228-8f20-4198-ba90-8400a35166ea ;
+        oboe:measurementFor  oquo:observation-5e8eb214-77fe-40cf-9576-67fba98556f2 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-1d1d551f-08e4-4aed-be5d-d9bc426902aa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.983Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d0aa10f0-4428-4cf4-a521-90e6e9795343
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.152Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-c176d3cf-1e24-4227-817f-87692899a505
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-6532988b-7987-4060-b775-64c58493f356 ;
+        time:hasTime              oquo:instant-c8085c39-930c-4846-b1d1-a621c9e35606 ;
+        oquo:hasObservation       oquo:observation-140075f8-f565-4456-a71c-2b32bf0566ce .
+
+oquo:qualityValue-6a347580-8780-43af-ae67-e74363729cc0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-541968f0-3a13-437a-b3d5-3a3fbf1ac0c5 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0d4f85a1-7645-4d4f-a2f9-1792e3d0b8d2 .
+
+oquo:evaluation-1859a89f-246a-4519-a426-86d279400f98
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-bf5de4b2-2f11-4292-bf9e-5c49fdc14493 ;
+        time:hasTime              oquo:instant-1d1d551f-08e4-4aed-be5d-d9bc426902aa ;
+        oquo:hasObservation       oquo:observation-ac10410c-0907-4ba1-ae6b-bedd5f47aa25 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-5e5409f4-a493-4777-b06f-d5533460aa4a
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-cab77cc3-5939-43e5-9861-4fc550b61eaa ;
+        oboe:measurementFor  oquo:observation-99c4c5ad-7140-45ea-aa19-fea14ef44a6d ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:evaluation-9c24f966-71dd-47f0-8248-5bcaa1b9ead6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-f20ef693-48c3-4d83-9474-433545af8c54 ;
+        time:hasTime              oquo:instant-2f629575-e017-4073-b109-310f06b27623 ;
+        oquo:hasObservation       oquo:observation-0dc2d7c7-9c27-4b5e-b336-cd21ae446b53 .
+
+oquo:instant-b483621e-f1a2-4907-9a9f-d14069d02b4b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.259Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-98360550-97d7-4fd4-b4c0-253b667d93ea
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ebed74be-b50f-4227-b6fd-b42e41c37daf ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-dfb632d0-ebe5-4e44-a50e-33893890e8b3 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-76eae35c-88d2-409b-8bbb-b6dc37fe3476
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-eb21f7bd-5305-4c46-8e4e-47c57da44ebf ;
+        time:hasTime              oquo:instant-a52029bc-4994-462d-a28a-2ebb51020089 ;
+        oquo:hasObservation       oquo:observation-2613f209-b0f5-45ba-b2e1-69c9357a5981 .
+
+oquo:observation-97646b28-3b35-4811-bffb-38321142d95e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-374f5036-f48b-457a-834a-ca72c0d4c895 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-63928fa0-6480-4b10-ac09-0671155d4ca3 .
+
+oquo:qualityValue-ada22850-e650-4c82-9236-89fae7daf196
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7dd15bd4-16f9-432e-a1c8-0bae5cd7aee4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3d89cf01-2bfd-4a3c-9f44-45550b07060d .
+
+oquo:instant-e2843837-5609-4498-944a-5c2ac70ad8d3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.175Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e79bd105-ef5b-400f-920e-d877c9df8355
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.144Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b9269730-1166-4a21-a9f2-60adf78224c2
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-0f70d225-9546-4778-8fe5-8024ea77c1a4 ;
+        oboe:measurementFor  oquo:observation-762b6162-57a1-468a-b4be-6e445ed8209f ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:metric-a44913b9-0864-4827-b5b4-85c1dbec2fa3
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ee10c144-92c6-4f50-a3c4-6d4cf0777a81 ;
+        oboe:measurementFor  oquo:observation-fda11d82-8517-454a-a1b0-818cd61fbbdf ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:qualityValue-36d23374-0c38-4660-a24b-beae0a32b4d8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3fd3db3f-93e1-43c7-8c20-d67ff64a3b73 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bbbc6433-3db9-422d-a072-3575a050e253 .
+
+oquo:observation-add0b691-13e4-482d-9dfa-dad657f5706e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e6be79eb-f453-4cf3-bcdb-c27d5341709e ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-f7d41766-eb64-4b0f-bc3d-3766e83b3659 .
+
+oquo:instant-98e93d2c-8d26-4c86-b551-e40302ed696c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.251Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-9f8fa4e5-01a2-4696-b80f-472777e715c3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-4489dea1-cdfb-4861-85c1-ee36941f42ed ;
+        time:hasTime              oquo:instant-d0aa10f0-4428-4cf4-a521-90e6e9795343 ;
+        oquo:hasObservation       oquo:observation-619952a8-92f8-4958-a1c1-378f15fd5625 .
+
+oquo:observation-807a22a7-08d7-4009-a3dd-1c73d70e1252
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bb1bfd1f-eadf-474f-bc95-49f0040b35e8 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-a1487727-979e-4875-98ac-30c410bc74b8 .
+
+oquo:instant-88bda950-ac26-4fcd-bbfb-fbf608bb448d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.148Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-2613f209-b0f5-45ba-b2e1-69c9357a5981
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-23c83200-b395-4cd9-b0dd-1f7ef6d760cf ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-a52029bc-4994-462d-a28a-2ebb51020089 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-7a0b0ba5-cda1-499f-bd9c-86f8468bb1f3
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-02d53fdb-93ab-429d-a172-29c89277f664 ;
+        oboe:measurementFor  oquo:observation-76765c38-58e9-4c57-a174-a47740b29ad1 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-cab77cc3-5939-43e5-9861-4fc550b61eaa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5e5409f4-a493-4777-b06f-d5533460aa4a ;
+        res:hasLiteralValue    "0.3888888888888889"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-947356a2-fb68-48ad-943b-fcde27974fd9 .
+
+oquo:evaluation-9edfbfac-b7b4-4231-beba-9071eb3251fc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-c6716615-9feb-4580-873f-002902037da2 ;
+        time:hasTime              oquo:instant-a1487727-979e-4875-98ac-30c410bc74b8 ;
+        oquo:hasObservation       oquo:observation-807a22a7-08d7-4009-a3dd-1c73d70e1252 .
+
+oquo:metric-0dde8c49-a2fb-4e72-ac78-02fc05fcfce2
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a67e1a17-1b65-480c-b549-ea13ad74b5ea ;
+        oboe:measurementFor  oquo:observation-3ce17573-5776-468a-86a6-36eef05a55f1 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-63928fa0-6480-4b10-ac09-0671155d4ca3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.884Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-b91e9c7b-8445-4d39-88df-33d5e4c4627b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.025Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-50fd2b9e-55dd-48e2-8f76-7032269c3362
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7dd15bd4-16f9-432e-a1c8-0bae5cd7aee4 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-e79bd105-ef5b-400f-920e-d877c9df8355 .
+
+oquo:evaluation-a4c49e0d-32ec-4912-adce-0faa59177157
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-e4303de2-5fdb-4de8-8993-21c5c0997ef7 ;
+        time:hasTime              oquo:instant-92c32dc0-a66d-472b-b984-40beb8ffd971 ;
+        oquo:hasObservation       oquo:observation-3e6f40a3-5e9f-4dc3-913e-3b60b028b455 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-8637866d-f912-4df3-ad84-ce1ba6179141
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bb46b5d6-303c-4c60-88eb-24b4781c495e ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-814c9803-7c2c-4ad9-9761-dc6d6e2d1e11 .
+
+oquo:evaluation-7833b074-eca9-464a-ac25-c0ef075bd7a1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-cc1dee14-7bd3-4a4b-80a7-256c3d101850 ;
+        time:hasTime              oquo:instant-e73c5b8b-276b-47d6-8c88-c097d96325a9 ;
+        oquo:hasObservation       oquo:observation-a78d1de8-dd5b-4442-932f-b55002629eee .
+
+oquo:instant-ebc22f4b-1936-489f-b9bf-da9c86a8ca7e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.113Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-4afc525b-abb7-4f13-96b8-9975c81e302e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5a48c13b-0f2c-4c0f-9a02-9f0ce418ba50 ;
+        res:hasLiteralValue    "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe6ec949-f168-4f10-acb3-8cb545322d4f .
+
+oquo:evaluation-fdfda30d-756e-4de6-8109-128f75b9d2f3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-8bb56cc1-3659-4d70-9fcd-aa99be1d76e5 ;
+        time:hasTime              oquo:instant-792b8f32-eb3a-4939-bff5-716edb7571f4 ;
+        oquo:hasObservation       oquo:observation-3095fcc2-652f-404c-b0a0-c5bd3c843f1b .
+
+oquo:evaluation-58badfd8-01fe-4a54-bc20-4653c77cbf19
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-cedbab6b-ec4b-4954-82f2-06f9ed59fb16 ;
+        time:hasTime              oquo:instant-fdf6d444-96a0-460a-9424-c25654a93765 ;
+        oquo:hasObservation       oquo:observation-d84b2b5d-bcdb-4983-a8f3-cdaf2d1241a8 .
+
+oquo:instant-92c32dc0-a66d-472b-b984-40beb8ffd971
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.688Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a67e1a17-1b65-480c-b549-ea13ad74b5ea
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0dde8c49-a2fb-4e72-ac78-02fc05fcfce2 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8193ed79-3bcc-403b-929c-7fd7a55b216d .
+
+oquo:observation-762b6162-57a1-468a-b4be-6e445ed8209f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9269730-1166-4a21-a9f2-60adf78224c2 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-d0b5e0d9-b594-452f-a2fe-de5967e580d8 .
+
+oquo:qualityValue-e454af3c-ae97-481d-9c44-4054543aec72
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a4984d0f-c5a0-438f-b0e7-c14781365806 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1d57ae4e-d0cc-4033-8aa1-ef8e86e39e05 .
+
+oquo:observation-0dc2d7c7-9c27-4b5e-b336-cd21ae446b53
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ddc1f7ca-2544-4426-b56d-c9411902d882 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-2f629575-e017-4073-b109-310f06b27623 .
+
+oquo:evaluation-1d57ae4e-d0cc-4033-8aa1-ef8e86e39e05
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-e454af3c-ae97-481d-9c44-4054543aec72 ;
+        time:hasTime              oquo:instant-c9903eb6-f728-4262-a057-a4a1ca088ae3 ;
+        oquo:hasObservation       oquo:observation-d23487ca-81c4-4d5a-9963-7edd864e33e7 .
+
+oquo:observation-140075f8-f565-4456-a71c-2b32bf0566ce
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fa446c5e-bf48-4f42-8a06-2cf04387d1d6 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-c8085c39-930c-4846-b1d1-a621c9e35606 .
+
+oquo:observation-ac10410c-0907-4ba1-ae6b-bedd5f47aa25
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a946731c-944d-4947-afc1-c356676d23cd ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-1d1d551f-08e4-4aed-be5d-d9bc426902aa .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:observation-d84b2b5d-bcdb-4983-a8f3-cdaf2d1241a8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-041f7450-1ce5-4254-98db-f49d171dd87f ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-fdf6d444-96a0-460a-9424-c25654a93765 .
+
+oquo:qualityValue-d6940a99-be42-4902-8ce1-b4896e1a31c5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e6be79eb-f453-4cf3-bcdb-c27d5341709e ;
+        res:hasLiteralValue    "0.6428571428571429"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-aa3551ad-13e7-40e3-b77b-98a60bb8b58e .
+
+oquo:instant-eb11ea7a-f5d9-458d-9049-0eba5b4c9873
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.211Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c6716615-9feb-4580-873f-002902037da2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bb1bfd1f-eadf-474f-bc95-49f0040b35e8 ;
+        res:hasLiteralValue    "0.3888888888888889"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9edfbfac-b7b4-4231-beba-9071eb3251fc .
+
+oquo:observation-8f76ad75-5e0c-4e5d-a57b-e78a7e498415
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5a48c13b-0f2c-4c0f-9a02-9f0ce418ba50 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-d807f8ae-774b-4c2b-b42f-a83f35418945 .
+
+oquo:observation-c8747eff-b3b0-407d-9f52-f7b63703fd15
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-aacfe1b7-5113-4e4b-a64c-5308fe7f9ba3 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-ebc22f4b-1936-489f-b9bf-da9c86a8ca7e .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ff350019-04bd-4c7d-b725-7f0f01264b54
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ed8a15bb-3ea0-480d-8840-2c13f3e66b05 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-0ad8a2e1-4521-4819-802a-0ddff6ba22db .
+
+oquo:instant-fdf6d444-96a0-460a-9424-c25654a93765
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-814c9803-7c2c-4ad9-9761-dc6d6e2d1e11
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.124Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-4b797077-dd17-413e-ac1a-da9dcc3f2916
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-5600afa2-6d7c-40dc-a3de-edbc6d9b2b3b ;
+        time:hasTime              oquo:instant-60114c17-e76e-4b31-952c-77b9b1be93c8 ;
+        oquo:hasObservation       oquo:observation-fd38d16c-a43d-4acd-9b97-f5f133e08acb .
+
+oquo:instant-b6d5379d-17a5-408f-9557-a4dde71c127e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.844Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-03cccfe0-af6c-479b-8ce4-a58ca6172bba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3287db35-209f-4fef-849f-b6d7bb71aeb9 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-88bda950-ac26-4fcd-bbfb-fbf608bb448d .
+
+oquo:qualityValue-e4303de2-5fdb-4de8-8993-21c5c0997ef7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1380297d-f4ef-49d0-98c6-4f77da94115e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a4c49e0d-32ec-4912-adce-0faa59177157 .
+
+oquo:metric-a946731c-944d-4947-afc1-c356676d23cd
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bf5de4b2-2f11-4292-bf9e-5c49fdc14493 ;
+        oboe:measurementFor  oquo:observation-ac10410c-0907-4ba1-ae6b-bedd5f47aa25 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-99c4c5ad-7140-45ea-aa19-fea14ef44a6d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5e5409f4-a493-4777-b06f-d5533460aa4a ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-eb11ea7a-f5d9-458d-9049-0eba5b4c9873 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-ee10c144-92c6-4f50-a3c4-6d4cf0777a81
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a44913b9-0864-4827-b5b4-85c1dbec2fa3 ;
+        res:hasLiteralValue    "0.6666666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c86896b7-1b47-4a11-bf0e-827887fbacf7 .
+
+oquo:metric-bb1bfd1f-eadf-474f-bc95-49f0040b35e8
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c6716615-9feb-4580-873f-002902037da2 ;
+        oboe:measurementFor  oquo:observation-807a22a7-08d7-4009-a3dd-1c73d70e1252 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-61e4e8f4-1369-43a5-9e3a-2e785e94610b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-67c50b35-4991-4f60-a3c3-15487872ee2c ;
+        res:hasLiteralValue    "0.8823529411764706"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6d4a86c6-80ce-4a27-aff3-f3d3a3fd805d .
+
+oquo:metric-c95dca24-af1a-4888-8e22-c3c35afe676b
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-929fb854-a4db-42cd-b416-e8f050c6f98c ;
+        oboe:measurementFor  oquo:observation-78700eb2-4354-4d96-8915-8da9455c1976 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-1380297d-f4ef-49d0-98c6-4f77da94115e
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-e4303de2-5fdb-4de8-8993-21c5c0997ef7 ;
+        oboe:measurementFor  oquo:observation-3e6f40a3-5e9f-4dc3-913e-3b60b028b455 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:qualityValue-0012791d-9d7d-47b9-83d9-793230909718
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-16fa7f13-756d-4fa4-b914-ce64e8bc878b ;
+        res:hasLiteralValue    "0.11764705882352941"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a6fd8b7a-9b66-4fb6-9eb9-753f6fee1b66 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-16fa7f13-756d-4fa4-b914-ce64e8bc878b
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0012791d-9d7d-47b9-83d9-793230909718 ;
+        oboe:measurementFor  oquo:observation-b5fcce2b-8920-4991-a6ed-dfd769fc87f9 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:observation-78700eb2-4354-4d96-8915-8da9455c1976
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c95dca24-af1a-4888-8e22-c3c35afe676b ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-f591b739-f372-4a6a-b151-f37b3acd2ca0 .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-4405269e-f7bf-4f77-9dbb-ee4c257e9d1e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.246Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-cc1dee14-7bd3-4a4b-80a7-256c3d101850
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-35199322-a16b-46be-86f1-7c74cf33f678 ;
+        res:hasLiteralValue    "1.0769230769230769"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7833b074-eca9-464a-ac25-c0ef075bd7a1 .
+
+oquo:metric-7dd15bd4-16f9-432e-a1c8-0bae5cd7aee4
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ada22850-e650-4c82-9236-89fae7daf196 ;
+        oboe:measurementFor  oquo:observation-50fd2b9e-55dd-48e2-8f76-7032269c3362 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:observation-b5fcce2b-8920-4991-a6ed-dfd769fc87f9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-16fa7f13-756d-4fa4-b914-ce64e8bc878b ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-8da0ac27-1544-405e-8ca4-01ea8871661a .
+
+oquo:metric-4bbf41f3-a7a0-4252-989c-bea50c93e608
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8bb56cc1-3659-4d70-9fcd-aa99be1d76e5 ;
+        oboe:measurementFor  oquo:observation-3095fcc2-652f-404c-b0a0-c5bd3c843f1b ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-6532988b-7987-4060-b775-64c58493f356
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fa446c5e-bf48-4f42-8a06-2cf04387d1d6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c176d3cf-1e24-4227-817f-87692899a505 .
+
+oquo:instant-8da0ac27-1544-405e-8ca4-01ea8871661a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.17Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-666f224f-9247-441d-b59a-5c567758f2ff
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-02d53fdb-93ab-429d-a172-29c89277f664 ;
+        time:hasTime              oquo:instant-b483621e-f1a2-4907-9a9f-d14069d02b4b ;
+        oquo:hasObservation       oquo:observation-76765c38-58e9-4c57-a174-a47740b29ad1 .
+
+oquo:metric-fa446c5e-bf48-4f42-8a06-2cf04387d1d6
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-6532988b-7987-4060-b775-64c58493f356 ;
+        oboe:measurementFor  oquo:observation-140075f8-f565-4456-a71c-2b32bf0566ce ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-fda11d82-8517-454a-a1b0-818cd61fbbdf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a44913b9-0864-4827-b5b4-85c1dbec2fa3 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-b6d5379d-17a5-408f-9557-a4dde71c127e .
+
+oquo:evaluation-df129d0f-3129-4826-b637-14fbad780324
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-5bc55c69-a671-4f63-a7ff-cdafa801e9f3 ;
+        time:hasTime              oquo:instant-814c9803-7c2c-4ad9-9761-dc6d6e2d1e11 ;
+        oquo:hasObservation       oquo:observation-8637866d-f912-4df3-ad84-ce1ba6179141 .
+
+oquo:qualityValue-5600afa2-6d7c-40dc-a3de-edbc6d9b2b3b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-04d35f59-b99a-44cd-a69e-42e717e8cd07 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4b797077-dd17-413e-ac1a-da9dcc3f2916 .
+
+oquo:metric-68907236-cca4-460f-b173-246b86b920b4
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-ed675557-6f1c-4fa3-b2c0-9a89709eacb0 ;
+        oboe:measurementFor  oquo:observation-725e4647-5eca-4cb5-9abf-f4546b1d92db ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-dfb632d0-ebe5-4e44-a50e-33893890e8b3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.828Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-06bd7590-6180-4291-b188-c2654acc0e67
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-aacfe1b7-5113-4e4b-a64c-5308fe7f9ba3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6d95ea80-e3b5-4508-8c95-cbfa2711082a .
+
+oquo:instant-c9903eb6-f728-4262-a057-a4a1ca088ae3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.121Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8b72514a-1bf1-4b5b-81ee-92f3accab67f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-9e6e977b-a5ff-4b6f-bb38-61b9478c4bf3 ;
+        time:hasTime              oquo:instant-63928fa0-6480-4b10-ac09-0671155d4ca3 ;
+        oquo:hasObservation       oquo:observation-97646b28-3b35-4811-bffb-38321142d95e .
+
+oquo:metric-3fd3db3f-93e1-43c7-8c20-d67ff64a3b73
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-36d23374-0c38-4660-a24b-beae0a32b4d8 ;
+        oboe:measurementFor  oquo:observation-52fb47f3-24c7-4ad8-908f-907f5ab4122e ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:observation-fd38d16c-a43d-4acd-9b97-f5f133e08acb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-04d35f59-b99a-44cd-a69e-42e717e8cd07 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-60114c17-e76e-4b31-952c-77b9b1be93c8 .
+
+oquo:instant-d807f8ae-774b-4c2b-b42f-a83f35418945
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.163Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-541968f0-3a13-437a-b3d5-3a3fbf1ac0c5
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-6a347580-8780-43af-ae67-e74363729cc0 ;
+        oboe:measurementFor  oquo:observation-95614c62-0469-41e1-9990-d3700953a954 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-041f7450-1ce5-4254-98db-f49d171dd87f
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cedbab6b-ec4b-4954-82f2-06f9ed59fb16 ;
+        oboe:measurementFor  oquo:observation-d84b2b5d-bcdb-4983-a8f3-cdaf2d1241a8 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-2fb231f9-e549-40de-80bf-fe1e1d41c091
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-3aeb857e-2c58-4133-9bba-f491c7d0e374 ;
+        time:hasTime              oquo:instant-5c17af18-fdee-4120-809c-76890ddf774d ;
+        oquo:hasObservation       oquo:observation-cff7619d-a20d-4590-a0e9-c46e419c2953 .
+
+oquo:evaluation-0d4f85a1-7645-4d4f-a2f9-1792e3d0b8d2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-6a347580-8780-43af-ae67-e74363729cc0 ;
+        time:hasTime              oquo:instant-4405269e-f7bf-4f77-9dbb-ee4c257e9d1e ;
+        oquo:hasObservation       oquo:observation-95614c62-0469-41e1-9990-d3700953a954 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-5bc55c69-a671-4f63-a7ff-cdafa801e9f3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bb46b5d6-303c-4c60-88eb-24b4781c495e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-df129d0f-3129-4826-b637-14fbad780324 .
+
+oquo:instant-f591b739-f372-4a6a-b151-f37b3acd2ca0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.239Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-947356a2-fb68-48ad-943b-fcde27974fd9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-cab77cc3-5939-43e5-9861-4fc550b61eaa ;
+        time:hasTime              oquo:instant-eb11ea7a-f5d9-458d-9049-0eba5b4c9873 ;
+        oquo:hasObservation       oquo:observation-99c4c5ad-7140-45ea-aa19-fea14ef44a6d .
+
+oquo:instant-a1487727-979e-4875-98ac-30c410bc74b8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.23Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-929fb854-a4db-42cd-b416-e8f050c6f98c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c95dca24-af1a-4888-8e22-c3c35afe676b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6630ad17-991d-428e-b96a-461ce5b073bc .
+
+oquo:evaluation-fe6ec949-f168-4f10-acb3-8cb545322d4f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-4afc525b-abb7-4f13-96b8-9975c81e302e ;
+        time:hasTime              oquo:instant-d807f8ae-774b-4c2b-b42f-a83f35418945 ;
+        oquo:hasObservation       oquo:observation-8f76ad75-5e0c-4e5d-a57b-e78a7e498415 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-3d693a3c-2ebb-4012-beec-e7a8955702dc
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-3aeb857e-2c58-4133-9bba-f491c7d0e374 ;
+        oboe:measurementFor  oquo:observation-cff7619d-a20d-4590-a0e9-c46e419c2953 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-f7d41766-eb64-4b0f-bc3d-3766e83b3659
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.256Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-2f629575-e017-4073-b109-310f06b27623
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.138Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-77edd4f4-c1e4-43d9-93b5-48d93e2da3a6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-69d98892-ab4b-4c6a-9bf1-6b4d067ff650 ;
+        time:hasTime              oquo:instant-0ad8a2e1-4521-4819-802a-0ddff6ba22db ;
+        oquo:hasObservation       oquo:observation-ff350019-04bd-4c7d-b725-7f0f01264b54 .
+
+oquo:observation-3095fcc2-652f-404c-b0a0-c5bd3c843f1b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4bbf41f3-a7a0-4252-989c-bea50c93e608 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-792b8f32-eb3a-4939-bff5-716edb7571f4 .
+
+oquo:instant-0ad8a2e1-4521-4819-802a-0ddff6ba22db
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.054Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-ed675557-6f1c-4fa3-b2c0-9a89709eacb0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-68907236-cca4-460f-b173-246b86b920b4 ;
+        res:hasLiteralValue    "0.8823529411764706"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f01d857e-b58f-4c27-8018-587262f0dee7 .
+
+oquo:qualityValue-f20ef693-48c3-4d83-9474-433545af8c54
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ddc1f7ca-2544-4426-b56d-c9411902d882 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9c24f966-71dd-47f0-8248-5bcaa1b9ead6 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-aa3551ad-13e7-40e3-b77b-98a60bb8b58e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-d6940a99-be42-4902-8ce1-b4896e1a31c5 ;
+        time:hasTime              oquo:instant-f7d41766-eb64-4b0f-bc3d-3766e83b3659 ;
+        oquo:hasObservation       oquo:observation-add0b691-13e4-482d-9dfa-dad657f5706e .
+
+oquo:metric-5a48c13b-0f2c-4c0f-9a02-9f0ce418ba50
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4afc525b-abb7-4f13-96b8-9975c81e302e ;
+        oboe:measurementFor  oquo:observation-8f76ad75-5e0c-4e5d-a57b-e78a7e498415 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-3287db35-209f-4fef-849f-b6d7bb71aeb9
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-fea82a22-d18d-4b5a-9d24-33b14b96fcaf ;
+        oboe:measurementFor  oquo:observation-03cccfe0-af6c-479b-8ce4-a58ca6172bba ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:observation-619952a8-92f8-4958-a1c1-378f15fd5625
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d5aa899e-1167-49a8-8e6a-a486cf17701c ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-d0aa10f0-4428-4cf4-a521-90e6e9795343 .
+
+oquo:qualityValue-69d98892-ab4b-4c6a-9bf1-6b4d067ff650
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ed8a15bb-3ea0-480d-8840-2c13f3e66b05 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-77edd4f4-c1e4-43d9-93b5-48d93e2da3a6 .
+
+oquo:evaluation-6630ad17-991d-428e-b96a-461ce5b073bc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-929fb854-a4db-42cd-b416-e8f050c6f98c ;
+        time:hasTime              oquo:instant-f591b739-f372-4a6a-b151-f37b3acd2ca0 ;
+        oquo:hasObservation       oquo:observation-78700eb2-4354-4d96-8915-8da9455c1976 .
+
+oquo:evaluation-f01d857e-b58f-4c27-8018-587262f0dee7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-ed675557-6f1c-4fa3-b2c0-9a89709eacb0 ;
+        time:hasTime              oquo:instant-98e93d2c-8d26-4c86-b551-e40302ed696c ;
+        oquo:hasObservation       oquo:observation-725e4647-5eca-4cb5-9abf-f4546b1d92db .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a6fd8b7a-9b66-4fb6-9eb9-753f6fee1b66
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-0012791d-9d7d-47b9-83d9-793230909718 ;
+        time:hasTime              oquo:instant-8da0ac27-1544-405e-8ca4-01ea8871661a ;
+        oquo:hasObservation       oquo:observation-b5fcce2b-8920-4991-a6ed-dfd769fc87f9 .
+
+oquo:instant-792b8f32-eb3a-4939-bff5-716edb7571f4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.967Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-6d95ea80-e3b5-4508-8c95-cbfa2711082a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-06bd7590-6180-4291-b188-c2654acc0e67 ;
+        time:hasTime              oquo:instant-ebc22f4b-1936-489f-b9bf-da9c86a8ca7e ;
+        oquo:hasObservation       oquo:observation-c8747eff-b3b0-407d-9f52-f7b63703fd15 .
+
+oquo:qualityValue-bf5de4b2-2f11-4292-bf9e-5c49fdc14493
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a946731c-944d-4947-afc1-c356676d23cd ;
+        res:hasLiteralValue    "0.11764705882352941"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1859a89f-246a-4519-a426-86d279400f98 .
+
+oquo:qualityValue-9e6e977b-a5ff-4b6f-bb38-61b9478c4bf3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-374f5036-f48b-457a-834a-ca72c0d4c895 ;
+        res:hasLiteralValue    "0.45454545454545453"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8b72514a-1bf1-4b5b-81ee-92f3accab67f .
+
+oquo:metric-bb46b5d6-303c-4c60-88eb-24b4781c495e
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-5bc55c69-a671-4f63-a7ff-cdafa801e9f3 ;
+        oboe:measurementFor  oquo:observation-8637866d-f912-4df3-ad84-ce1ba6179141 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:instant-c24e98c6-f1f3-48bb-b9c2-7e4cdcd55ce5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.248Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-6d4a86c6-80ce-4a27-aff3-f3d3a3fd805d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-61e4e8f4-1369-43a5-9e3a-2e785e94610b ;
+        time:hasTime              oquo:instant-c24e98c6-f1f3-48bb-b9c2-7e4cdcd55ce5 ;
+        oquo:hasObservation       oquo:observation-ee57b83c-0d55-4592-89d1-f15369bc8ae3 .
+
+oquo:metric-ed8a15bb-3ea0-480d-8840-2c13f3e66b05
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-69d98892-ab4b-4c6a-9bf1-6b4d067ff650 ;
+        oboe:measurementFor  oquo:observation-ff350019-04bd-4c7d-b725-7f0f01264b54 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:evaluation-c86896b7-1b47-4a11-bf0e-827887fbacf7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-ee10c144-92c6-4f50-a3c4-6d4cf0777a81 ;
+        time:hasTime              oquo:instant-b6d5379d-17a5-408f-9557-a4dde71c127e ;
+        oquo:hasObservation       oquo:observation-fda11d82-8517-454a-a1b0-818cd61fbbdf .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-0f70d225-9546-4778-8fe5-8024ea77c1a4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9269730-1166-4a21-a9f2-60adf78224c2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e1971b50-4a78-49ad-9158-ae55a06168d0 .
+
+oquo:evaluation-3d89cf01-2bfd-4a3c-9f44-45550b07060d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-ada22850-e650-4c82-9236-89fae7daf196 ;
+        time:hasTime              oquo:instant-e79bd105-ef5b-400f-920e-d877c9df8355 ;
+        oquo:hasObservation       oquo:observation-50fd2b9e-55dd-48e2-8f76-7032269c3362 .
+
+oquo:observation-3e6f40a3-5e9f-4dc3-913e-3b60b028b455
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1380297d-f4ef-49d0-98c6-4f77da94115e ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-92c32dc0-a66d-472b-b984-40beb8ffd971 .
+
+<http://www.argodatamgt.org/argo-ontology#>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:instant-c8085c39-930c-4846-b1d1-a621c9e35606
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.243Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-e1971b50-4a78-49ad-9158-ae55a06168d0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-0f70d225-9546-4778-8fe5-8024ea77c1a4 ;
+        time:hasTime              oquo:instant-d0b5e0d9-b594-452f-a2fe-de5967e580d8 ;
+        oquo:hasObservation       oquo:observation-762b6162-57a1-468a-b4be-6e445ed8209f .
+
+oquo:evaluation-bbbc6433-3db9-422d-a072-3575a050e253
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-36d23374-0c38-4660-a24b-beae0a32b4d8 ;
+        time:hasTime              oquo:instant-b91e9c7b-8445-4d39-88df-33d5e4c4627b ;
+        oquo:hasObservation       oquo:observation-52fb47f3-24c7-4ad8-908f-907f5ab4122e .
+
+oquo:metric-a4984d0f-c5a0-438f-b0e7-c14781365806
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e454af3c-ae97-481d-9c44-4054543aec72 ;
+        oboe:measurementFor  oquo:observation-d23487ca-81c4-4d5a-9963-7edd864e33e7 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-e6be79eb-f453-4cf3-bcdb-c27d5341709e
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d6940a99-be42-4902-8ce1-b4896e1a31c5 ;
+        oboe:measurementFor  oquo:observation-add0b691-13e4-482d-9dfa-dad657f5706e ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:instant-5c17af18-fdee-4120-809c-76890ddf774d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.254Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-67c50b35-4991-4f60-a3c3-15487872ee2c
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-61e4e8f4-1369-43a5-9e3a-2e785e94610b ;
+        oboe:measurementFor  oquo:observation-ee57b83c-0d55-4592-89d1-f15369bc8ae3 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-725e4647-5eca-4cb5-9abf-f4546b1d92db
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-68907236-cca4-460f-b173-246b86b920b4 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-98e93d2c-8d26-4c86-b551-e40302ed696c .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-23c83200-b395-4cd9-b0dd-1f7ef6d760cf
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-eb21f7bd-5305-4c46-8e4e-47c57da44ebf ;
+        oboe:measurementFor  oquo:observation-2613f209-b0f5-45ba-b2e1-69c9357a5981 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-eb21f7bd-5305-4c46-8e4e-47c57da44ebf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-23c83200-b395-4cd9-b0dd-1f7ef6d760cf ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-76eae35c-88d2-409b-8bbb-b6dc37fe3476 .
+
+oquo:observation-cff7619d-a20d-4590-a0e9-c46e419c2953
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3d693a3c-2ebb-4012-beec-e7a8955702dc ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-5c17af18-fdee-4120-809c-76890ddf774d .
+
+oquo:qualityValue-fea82a22-d18d-4b5a-9d24-33b14b96fcaf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3287db35-209f-4fef-849f-b6d7bb71aeb9 ;
+        res:hasLiteralValue    "0.9444444444444444"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb38039b-c021-4986-b07a-2038f7a15fc3 .
+
+oquo:metric-d5aa899e-1167-49a8-8e6a-a486cf17701c
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4489dea1-cdfb-4861-85c1-ee36941f42ed ;
+        oboe:measurementFor  oquo:observation-619952a8-92f8-4958-a1c1-378f15fd5625 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:evaluation-8193ed79-3bcc-403b-929c-7fd7a55b216d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-a67e1a17-1b65-480c-b549-ea13ad74b5ea ;
+        time:hasTime              oquo:instant-2f23354d-12bc-4f23-b617-15588bf8b27d ;
+        oquo:hasObservation       oquo:observation-3ce17573-5776-468a-86a6-36eef05a55f1 .
+
+oquo:metric-04d35f59-b99a-44cd-a69e-42e717e8cd07
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-5600afa2-6d7c-40dc-a3de-edbc6d9b2b3b ;
+        oboe:measurementFor  oquo:observation-fd38d16c-a43d-4acd-9b97-f5f133e08acb ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:instant-60114c17-e76e-4b31-952c-77b9b1be93c8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.233Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ddc1f7ca-2544-4426-b56d-c9411902d882
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-f20ef693-48c3-4d83-9474-433545af8c54 ;
+        oboe:measurementFor  oquo:observation-0dc2d7c7-9c27-4b5e-b336-cd21ae446b53 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:metric-aacfe1b7-5113-4e4b-a64c-5308fe7f9ba3
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-06bd7590-6180-4291-b188-c2654acc0e67 ;
+        oboe:measurementFor  oquo:observation-c8747eff-b3b0-407d-9f52-f7b63703fd15 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:observation-ee57b83c-0d55-4592-89d1-f15369bc8ae3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-67c50b35-4991-4f60-a3c3-15487872ee2c ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-c24e98c6-f1f3-48bb-b9c2-7e4cdcd55ce5 .
+
+oquo:instant-2f23354d-12bc-4f23-b617-15588bf8b27d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:28.261Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-35199322-a16b-46be-86f1-7c74cf33f678
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cc1dee14-7bd3-4a4b-80a7-256c3d101850 ;
+        oboe:measurementFor  oquo:observation-a78d1de8-dd5b-4442-932f-b55002629eee ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:instant-a52029bc-4994-462d-a28a-2ebb51020089
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.161Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-3ce17573-5776-468a-86a6-36eef05a55f1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0dde8c49-a2fb-4e72-ac78-02fc05fcfce2 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-2f23354d-12bc-4f23-b617-15588bf8b27d .
+
+oquo:observation-d23487ca-81c4-4d5a-9963-7edd864e33e7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a4984d0f-c5a0-438f-b0e7-c14781365806 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-c9903eb6-f728-4262-a057-a4a1ca088ae3 .
+
+oquo:observation-a78d1de8-dd5b-4442-932f-b55002629eee
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-35199322-a16b-46be-86f1-7c74cf33f678 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-e73c5b8b-276b-47d6-8c88-c097d96325a9 .
+
+oquo:instant-d0b5e0d9-b594-452f-a2fe-de5967e580d8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:59:27.17Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-7943c770-7769-46be-8c25-7c56ae03d78d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-07e0c228-8f20-4198-ba90-8400a35166ea ;
+        time:hasTime              oquo:instant-e2843837-5609-4498-944a-5c2ac70ad8d3 ;
+        oquo:hasObservation       oquo:observation-5e8eb214-77fe-40cf-9576-67fba98556f2 .
+
+oquo:observation-52fb47f3-24c7-4ad8-908f-907f5ab4122e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3fd3db3f-93e1-43c7-8c20-d67ff64a3b73 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-b91e9c7b-8445-4d39-88df-33d5e4c4627b .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-4489dea1-cdfb-4861-85c1-ee36941f42ed
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d5aa899e-1167-49a8-8e6a-a486cf17701c ;
+        res:hasLiteralValue    "0.5227272727272727"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9f8fa4e5-01a2-4696-b80f-472777e715c3 .
+
+oquo:qualityValue-8bb56cc1-3659-4d70-9fcd-aa99be1d76e5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4bbf41f3-a7a0-4252-989c-bea50c93e608 ;
+        res:hasLiteralValue    "0.35714285714285715"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fdfda30d-756e-4de6-8109-128f75b9d2f3 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-cb38039b-c021-4986-b07a-2038f7a15fc3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-fea82a22-d18d-4b5a-9d24-33b14b96fcaf ;
+        time:hasTime              oquo:instant-88bda950-ac26-4fcd-bbfb-fbf608bb448d ;
+        oquo:hasObservation       oquo:observation-03cccfe0-af6c-479b-8ce4-a58ca6172bba .
+
+oquo:qualityValue-ecef9c8f-70be-4148-a0d0-a8730224ebd6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ebed74be-b50f-4227-b6fd-b42e41c37daf ;
+        res:hasLiteralValue    "18.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fcce8340-27fd-48ab-a524-df49680cc1e4 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-fcce8340-27fd-48ab-a524-df49680cc1e4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.argodatamgt.org/argo-ontology#> ;
+        res:inputData             <http://www.argodatamgt.org/argo-ontology#> ;
+        res:producedQualityValue  oquo:qualityValue-ecef9c8f-70be-4148-a0d0-a8730224ebd6 ;
+        time:hasTime              oquo:instant-dfb632d0-ebe5-4e44-a50e-33893890e8b3 ;
+        oquo:hasObservation       oquo:observation-98360550-97d7-4fd4-b4c0-253b667d93ea .
+
+oquo:observation-76765c38-58e9-4c57-a174-a47740b29ad1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7a0b0ba5-cda1-499f-bd9c-86f8468bb1f3 ;
+        oboe:ofEntity        <http://www.argodatamgt.org/argo-ontology#> ;
+        time:hasTime         oquo:instant-b483621e-f1a2-4907-9a9f-d14069d02b4b .
+
+oquo:qualityValue-3aeb857e-2c58-4133-9bba-f491c7d0e374
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3d693a3c-2ebb-4012-beec-e7a8955702dc ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2fb231f9-e549-40de-80bf-fe1e1d41c091 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-02d53fdb-93ab-429d-a172-29c89277f664
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7a0b0ba5-cda1-499f-bd9c-86f8468bb1f3 ;
+        res:hasLiteralValue    "0.6428571428571429"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-666f224f-9247-441d-b59a-5c567758f2ff .

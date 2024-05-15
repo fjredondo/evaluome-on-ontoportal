@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-d6d31fd4-714e-4ac9-a622-77b3eebe832d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-92cf8bdd-4441-42dc-a6fc-2d17cbfa04d8 ;
+        time:hasTime              oquo:instant-79e58cf0-f2e4-43d7-96f6-590ffb23688c ;
+        oquo:hasObservation       oquo:observation-1c98a66f-cf6c-400f-9590-7cad65597af4 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-bb6b6e85-d28f-4266-969b-a0ade6e2637c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e4b59ce5-9e9f-4ec1-a86f-0c3cc5868c6f ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e49e5af-8731-4d19-b8ae-ee9d6db9f9a6 .
+
+oquo:observation-c9af344d-debe-4f48-9974-bab800b9208e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3c7ff365-a1d9-406a-ab96-39fadfecd2fd ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-51f13636-d2db-49ac-a93c-829598fdc2ad .
+
+oquo:evaluation-289324a4-d523-4b96-a33c-71e04ea428c1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-7ed338ee-7c68-405d-b5e8-18b681a0b173 ;
+        time:hasTime              oquo:instant-e7153d83-2425-4e42-b54f-e31f1b3d495b ;
+        oquo:hasObservation       oquo:observation-18752b28-99ab-4707-a56a-4357e309613f .
+
+oquo:metric-9b794b71-7f4c-4454-80cb-053e1fd8b8b6
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-8b5c0aba-0894-4f0f-a465-6672cf26f7c4 ;
+        oboe:measurementFor  oquo:observation-ef9e577b-36c6-4e85-ad1b-cdfac91daea1 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-26546320-0dd1-4008-b5b6-c2f3639dc935
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1a44f546-2da3-42eb-b3b8-7d2e5f6b97f9 ;
+        oboe:measurementFor  oquo:observation-0e51ef19-b24e-4fc2-80b2-b1c5f5761e82 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-3c7ff365-a1d9-406a-ab96-39fadfecd2fd
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-d75eae37-c279-4bf6-9ec0-80090e570500 ;
+        oboe:measurementFor  oquo:observation-c9af344d-debe-4f48-9974-bab800b9208e ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:metric-6d58da69-02c0-479d-b88d-90142c83f1d8
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-17c57c68-5166-4525-9434-b3ba1905c4d2 ;
+        oboe:measurementFor  oquo:observation-fafb57d4-3c7c-4991-a342-f913785cb1e4 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:observation-18752b28-99ab-4707-a56a-4357e309613f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8d50e0e5-106e-4601-9b31-2d8d24d89965 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-e7153d83-2425-4e42-b54f-e31f1b3d495b .
+
+oquo:evaluation-fe3449e8-3574-465f-871a-fefce776e962
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-3bc3d799-659e-4bb1-9426-600845468816 ;
+        time:hasTime              oquo:instant-47059100-b419-448a-81d8-d7def98cc9d6 ;
+        oquo:hasObservation       oquo:observation-bc3f5809-ffa5-4119-a726-ce3dc54d1573 .
+
+oquo:evaluation-615f9246-eaeb-4f9e-82ad-a9a5255011ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-f71d505b-8852-4cac-81b7-1d0f94660bde ;
+        time:hasTime              oquo:instant-105ee685-5ddf-42ef-985f-d202f37ace89 ;
+        oquo:hasObservation       oquo:observation-f46a569d-2f1c-4b7e-ac62-1a215752393c .
+
+oquo:instant-4e7a156e-e90c-48df-9cfc-89de29aca46d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.571Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-16a0e6a6-2a5d-4728-aa46-19ee74eb4e3e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.592Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-79e58cf0-f2e4-43d7-96f6-590ffb23688c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:44.056Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-51f13636-d2db-49ac-a93c-829598fdc2ad
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.483Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9e90fd60-55bb-4106-9999-017cd9286417
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-3ec065ad-01c8-4a84-9b03-77babe66964a ;
+        oboe:measurementFor  oquo:observation-98c5ad6c-b9fc-4eba-8ce3-114689c51de2 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-e502ad53-8d48-478e-b917-49a04089b606
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-7c5852da-b1a6-48d8-a19d-7692ccf2f26e ;
+        oboe:measurementFor  oquo:observation-6196dbf0-03af-4cb4-a4cc-1c58d18111d4 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-d8ef694d-2b26-4f65-a43c-5d11f089e183
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-841e4ffc-0599-460b-aabf-a0ce78e07464 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-fc18cfb7-d836-498f-9817-edc540fe5f2b .
+
+oquo:instant-5afcbcd5-240f-4f41-a039-b3ac52fcba25
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-532fcdca-0ee6-496b-bf92-31881c0bdab0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-179c63f2-42e9-49b5-adf8-8322d42cb0ba ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-9ed48b4e-d39f-4a7f-8716-8e5fdcf52cf0 .
+
+oquo:observation-819ed405-9559-4468-9fea-d41129fab112
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-09208f89-4bea-4829-a79c-3a7300141834 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-f64dc35a-037d-4a3c-9ee8-df7ecb058fe1 .
+
+oquo:qualityValue-0643fc3f-5aab-4c02-a49c-4c4ce7421d1e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3ba60dbd-689d-4de5-9a61-2e05bbeaf109 ;
+        res:hasLiteralValue    "0.74375"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3dd8794a-c67e-42e8-9c4b-239afc36f6ce .
+
+oquo:metric-1c03e0d6-4e0f-44cb-8f6b-a980970519b0
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8e074819-a4d7-497b-8524-704398847e3f ;
+        oboe:measurementFor  oquo:observation-608f03d1-a352-483f-b9f3-e2c1a2040f8b ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-8e074819-a4d7-497b-8524-704398847e3f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c03e0d6-4e0f-44cb-8f6b-a980970519b0 ;
+        res:hasLiteralValue    "0.375"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f1eca101-160a-4137-9292-9896c7ea3994 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-f64dc35a-037d-4a3c-9ee8-df7ecb058fe1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.471Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-28c49dfc-5894-4e7f-89fc-f79ee6d31979
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-fe537243-b6fe-4eba-9e8a-9a1e7303d695 ;
+        time:hasTime              oquo:instant-f76258d4-589f-4e47-89fd-7c21469222d7 ;
+        oquo:hasObservation       oquo:observation-c175e72c-1a1b-44b4-8c84-370a2db8e684 .
+
+oquo:metric-53de5f8f-2358-4ecd-bc2d-d98c26620b53
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3de1d258-0f7d-44f7-903a-6a35953d6000 ;
+        oboe:measurementFor  oquo:observation-c48b117f-aa05-4e57-b124-fce2f84594a3 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-5604c5fe-d397-4df5-abff-78bf572759a8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-179c63f2-42e9-49b5-adf8-8322d42cb0ba ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0a5fbbac-2c76-49ae-85e5-4586651718da .
+
+oquo:metric-b212e28e-c0d8-4f05-af97-dcbf9d20140d
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-3bc3d799-659e-4bb1-9426-600845468816 ;
+        oboe:measurementFor  oquo:observation-bc3f5809-ffa5-4119-a726-ce3dc54d1573 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:observation-98c5ad6c-b9fc-4eba-8ce3-114689c51de2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9e90fd60-55bb-4106-9999-017cd9286417 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-b279ef9c-e7b7-4df6-8677-06d7a500916d .
+
+oquo:evaluation-6834d77b-5737-4901-a6ca-4f401c815589
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-cb2a94d4-46dd-4cb4-bd9e-8723b30bd3a2 ;
+        time:hasTime              oquo:instant-127d183a-4a99-4e40-bf4d-69493991793a ;
+        oquo:hasObservation       oquo:observation-f5f95d88-4e7f-4036-9cde-223aeea5f80d .
+
+oquo:instant-dd7ed825-000b-4ff6-8088-7dbd0ecfaa41
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.36Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f71d505b-8852-4cac-81b7-1d0f94660bde
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3913ebc9-a7e3-42cc-9f2c-289767cc16a5 ;
+        res:hasLiteralValue    "0.041666666666666664"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-615f9246-eaeb-4f9e-82ad-a9a5255011ce .
+
+oquo:metric-90591afe-9319-4492-b3c7-769a84172907
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cb2a94d4-46dd-4cb4-bd9e-8723b30bd3a2 ;
+        oboe:measurementFor  oquo:observation-f5f95d88-4e7f-4036-9cde-223aeea5f80d ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:observation-d0c9ded9-f259-4de0-b1b0-98359fdfada3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ff11eddd-bbf1-4a54-baed-1e3c85ba1269 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-8d0484db-5f00-4a8f-9cba-f6fdb610f408 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-7b6c5e21-c1bf-4e9b-9541-c037587e5014
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-959ac8f8-10a5-443a-bf9e-32d1e62c7bf3 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-5afcbcd5-240f-4f41-a039-b3ac52fcba25 .
+
+oquo:qualityValue-7ed338ee-7c68-405d-b5e8-18b681a0b173
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8d50e0e5-106e-4601-9b31-2d8d24d89965 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-289324a4-d523-4b96-a33c-71e04ea428c1 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-9d8a92e2-4449-4522-977b-4265638c2998
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-d75eae37-c279-4bf6-9ec0-80090e570500 ;
+        time:hasTime              oquo:instant-51f13636-d2db-49ac-a93c-829598fdc2ad ;
+        oquo:hasObservation       oquo:observation-c9af344d-debe-4f48-9974-bab800b9208e .
+
+oquo:evaluation-d7503e64-7fb9-4440-b732-8107aacaa400
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-49c1a21b-6c8d-4831-9c8b-be44b6081eba ;
+        time:hasTime              oquo:instant-15d97081-4d34-49f2-9b1f-2e29a6929ffe ;
+        oquo:hasObservation       oquo:observation-1162fa16-a081-470d-8df4-2ba5ea7e1915 .
+
+oquo:evaluation-0a5fbbac-2c76-49ae-85e5-4586651718da
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-5604c5fe-d397-4df5-abff-78bf572759a8 ;
+        time:hasTime              oquo:instant-9ed48b4e-d39f-4a7f-8716-8e5fdcf52cf0 ;
+        oquo:hasObservation       oquo:observation-532fcdca-0ee6-496b-bf92-31881c0bdab0 .
+
+oquo:instant-61f444d5-7740-4516-832f-3ea3f638a8df
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.375Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-c9f68056-cd8f-4796-912a-86e3c816c1c0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-959ac8f8-10a5-443a-bf9e-32d1e62c7bf3 ;
+        res:hasLiteralValue    "0.625"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-667dcb20-6095-4b76-b912-fac9e617be28 .
+
+oquo:qualityValue-e2dbc473-dddc-4eaa-8d62-c38cf676aa39
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-128c0cdb-37e2-4930-bc2c-034c0c91af8c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1d9240c3-182f-4792-9903-42cd8d0ce737 .
+
+oquo:evaluation-9222e4f0-b0cf-4f49-a60a-798dc6ff0fa5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-c03dd1c6-29f0-44e6-9f39-5256c0c9ab43 ;
+        time:hasTime              oquo:instant-e054f4cc-605e-4507-b35a-257adc3a3c12 ;
+        oquo:hasObservation       oquo:observation-993fccc7-f13a-40e8-8fff-55b836c96092 .
+
+oquo:observation-f2e82281-0723-47fd-9a4e-87fa66440738
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3ba60dbd-689d-4de5-9a61-2e05bbeaf109 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-4c6152ea-57ef-43e3-a260-6b2265ac8b91 .
+
+oquo:instant-fb86a7a1-42ad-49a6-9160-10d79dc7186f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:44.581Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-608f03d1-a352-483f-b9f3-e2c1a2040f8b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c03e0d6-4e0f-44cb-8f6b-a980970519b0 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-dd7ed825-000b-4ff6-8088-7dbd0ecfaa41 .
+
+oquo:observation-1162fa16-a081-470d-8df4-2ba5ea7e1915
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f94cc9ed-37f1-4389-b00c-e753d830e629 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-15d97081-4d34-49f2-9b1f-2e29a6929ffe .
+
+oquo:instant-b4b30f2d-0ebd-462e-a9f8-df96fd4f55ac
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.57Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-96a283ac-68d8-445c-b87a-d3adbd41cce4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-325cdf73-6fed-4737-ab23-ad78a7cab217 ;
+        time:hasTime              oquo:instant-4d2adf22-f389-4d80-918b-65bc8466cb3a ;
+        oquo:hasObservation       oquo:observation-45157665-1285-4a3c-9705-9f7852d8cfed .
+
+oquo:evaluation-3e49e5af-8731-4d19-b8ae-ee9d6db9f9a6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-bb6b6e85-d28f-4266-969b-a0ade6e2637c ;
+        time:hasTime              oquo:instant-6d81d78a-4932-4342-9116-86211c5762a7 ;
+        oquo:hasObservation       oquo:observation-a4310a76-5ab7-41f1-b5c6-aaacc3eb4aba .
+
+oquo:evaluation-19c0cdf8-a5d2-4866-8795-23c7fdcee3d1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-17c57c68-5166-4525-9434-b3ba1905c4d2 ;
+        time:hasTime              oquo:instant-86da632a-8eaa-48d1-8762-15ce74f384bd ;
+        oquo:hasObservation       oquo:observation-fafb57d4-3c7c-4991-a342-f913785cb1e4 .
+
+oquo:instant-e7153d83-2425-4e42-b54f-e31f1b3d495b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.589Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-8d0484db-5f00-4a8f-9cba-f6fdb610f408
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.3Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:instant-47059100-b419-448a-81d8-d7def98cc9d6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.048Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1dc57a0e-f32d-4963-8650-d170827df81b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-3de1d258-0f7d-44f7-903a-6a35953d6000 ;
+        time:hasTime              oquo:instant-2b69b69a-d702-43aa-a8af-774ca15780cc ;
+        oquo:hasObservation       oquo:observation-c48b117f-aa05-4e57-b124-fce2f84594a3 .
+
+oquo:qualityValue-8bb44830-213c-4e30-98b7-f6492a4b9c61
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-81a64126-c1f7-4e8f-a00e-0aa6076e4e6f ;
+        res:hasLiteralValue    "0.02631578947368421"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6f9d7def-ea5d-412b-9ff3-9ea1e9f7c048 .
+
+oquo:observation-0e51ef19-b24e-4fc2-80b2-b1c5f5761e82
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-26546320-0dd1-4008-b5b6-c2f3639dc935 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-6b6388e6-f01a-457a-a224-e76d4cf5a2e5 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-1569d568-51bf-4088-a7df-8ccce30f9eb5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c8c8f883-d1d7-44ab-91b9-b32a37029bbf ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4f4098c2-7329-4de8-949e-bf6257aa06bb .
+
+oquo:instant-e054f4cc-605e-4507-b35a-257adc3a3c12
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:44.17Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f47ba79e-ea32-4b0b-a063-ae0beb2e2fce
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ad115d53-0069-47d3-b084-33d83cc8d28c ;
+        res:hasLiteralValue    "0.5454545454545454"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d57bd591-58c0-4e23-955b-6045e01535a3 .
+
+oquo:metric-0a74b13a-8756-4b0f-aace-00e1af8a6b11
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-d8cc5bb6-4d53-43a2-91a9-2b35fe9511cf ;
+        oboe:measurementFor  oquo:observation-f9a6e5cc-9f47-48ef-9fc8-0f7abe9290e8 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:observation-ef9e577b-36c6-4e85-ad1b-cdfac91daea1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9b794b71-7f4c-4454-80cb-053e1fd8b8b6 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-9282b5b5-9c2b-42db-bcb6-b9bf8a91e293 .
+
+oquo:observation-bc3f5809-ffa5-4119-a726-ce3dc54d1573
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b212e28e-c0d8-4f05-af97-dcbf9d20140d ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-47059100-b419-448a-81d8-d7def98cc9d6 .
+
+oquo:instant-aebfaf91-44b0-4377-b806-765a72d0f0e8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:44.718Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3dd8794a-c67e-42e8-9c4b-239afc36f6ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-0643fc3f-5aab-4c02-a49c-4c4ce7421d1e ;
+        time:hasTime              oquo:instant-4c6152ea-57ef-43e3-a260-6b2265ac8b91 ;
+        oquo:hasObservation       oquo:observation-f2e82281-0723-47fd-9a4e-87fa66440738 .
+
+oquo:qualityValue-fe537243-b6fe-4eba-9e8a-9a1e7303d695
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3118dcaa-5804-44ee-bc24-67c31f77be4a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-28c49dfc-5894-4e7f-89fc-f79ee6d31979 .
+
+oquo:metric-3118dcaa-5804-44ee-bc24-67c31f77be4a
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fe537243-b6fe-4eba-9e8a-9a1e7303d695 ;
+        oboe:measurementFor  oquo:observation-c175e72c-1a1b-44b4-8c84-370a2db8e684 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-325cdf73-6fed-4737-ab23-ad78a7cab217
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-68d53935-11c1-48d7-8f1d-9c6139245556 ;
+        res:hasLiteralValue    "0.47708333333333336"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-96a283ac-68d8-445c-b87a-d3adbd41cce4 .
+
+oquo:evaluation-88529625-91b4-4a4f-8d90-cfca674e3c0f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-7a26e76e-590d-4d4d-b803-cefe2ff10d7a ;
+        time:hasTime              oquo:instant-fc18cfb7-d836-498f-9817-edc540fe5f2b ;
+        oquo:hasObservation       oquo:observation-d8ef694d-2b26-4f65-a43c-5d11f089e183 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-b2b893df-a0d1-4485-989b-726c8594308a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ad115d53-0069-47d3-b084-33d83cc8d28c ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-10b665cc-9ea4-42d8-a2b6-baee10be0bc2 .
+
+oquo:metric-3ba60dbd-689d-4de5-9a61-2e05bbeaf109
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-0643fc3f-5aab-4c02-a49c-4c4ce7421d1e ;
+        oboe:measurementFor  oquo:observation-f2e82281-0723-47fd-9a4e-87fa66440738 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-3ec065ad-01c8-4a84-9b03-77babe66964a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9e90fd60-55bb-4106-9999-017cd9286417 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fc8f58ed-2810-4149-a1aa-f6975e37d04a .
+
+oquo:observation-f46a569d-2f1c-4b7e-ac62-1a215752393c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3913ebc9-a7e3-42cc-9f2c-289767cc16a5 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-105ee685-5ddf-42ef-985f-d202f37ace89 .
+
+oquo:observation-79de8e9d-58a4-4146-a1eb-ba24095a1c27
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0f8be262-d657-4460-9930-03f73529cc65 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-34ddcc8e-1f34-45dd-b547-9d5b1be39248 .
+
+oquo:qualityValue-7a26e76e-590d-4d4d-b803-cefe2ff10d7a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-841e4ffc-0599-460b-aabf-a0ce78e07464 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-88529625-91b4-4a4f-8d90-cfca674e3c0f .
+
+oquo:instant-4d2adf22-f389-4d80-918b-65bc8466cb3a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.407Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-3bc3d799-659e-4bb1-9426-600845468816
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b212e28e-c0d8-4f05-af97-dcbf9d20140d ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe3449e8-3574-465f-871a-fefce776e962 .
+
+oquo:qualityValue-acb42312-4f19-4cca-8a01-36444d261f09
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ff11eddd-bbf1-4a54-baed-1e3c85ba1269 ;
+        res:hasLiteralValue    "0.9583333333333334"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d311e149-d894-41b9-996a-bb2541ee4d05 .
+
+oquo:metric-128c0cdb-37e2-4930-bc2c-034c0c91af8c
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-e2dbc473-dddc-4eaa-8d62-c38cf676aa39 ;
+        oboe:measurementFor  oquo:observation-3a313b52-ab4e-4ee8-8a76-99fbb99b63e1 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:instant-2b69b69a-d702-43aa-a8af-774ca15780cc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.403Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-49c1a21b-6c8d-4831-9c8b-be44b6081eba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f94cc9ed-37f1-4389-b00c-e753d830e629 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d7503e64-7fb9-4440-b732-8107aacaa400 .
+
+oquo:metric-97650621-0bd7-4ee9-9c74-8595e545786a
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-c03dd1c6-29f0-44e6-9f39-5256c0c9ab43 ;
+        oboe:measurementFor  oquo:observation-993fccc7-f13a-40e8-8fff-55b836c96092 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a5468656-5c79-4dc1-af7a-af272527aedf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-6173540e-a9a0-45e6-ab75-6305b6e4d6a2 ;
+        time:hasTime              oquo:instant-16a0e6a6-2a5d-4728-aa46-19ee74eb4e3e ;
+        oquo:hasObservation       oquo:observation-c2450b58-f3ce-49dc-a762-8f5858dbba3f .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-f2903ef4-681c-45e5-9d12-85bdac39973c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0f8be262-d657-4460-9930-03f73529cc65 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-25909329-c212-4847-91c6-73a5d715ede4 .
+
+oquo:evaluation-fc8f58ed-2810-4149-a1aa-f6975e37d04a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-3ec065ad-01c8-4a84-9b03-77babe66964a ;
+        time:hasTime              oquo:instant-b279ef9c-e7b7-4df6-8677-06d7a500916d ;
+        oquo:hasObservation       oquo:observation-98c5ad6c-b9fc-4eba-8ce3-114689c51de2 .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-4f4098c2-7329-4de8-949e-bf6257aa06bb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-1569d568-51bf-4088-a7df-8ccce30f9eb5 ;
+        time:hasTime              oquo:instant-4e7a156e-e90c-48df-9cfc-89de29aca46d ;
+        oquo:hasObservation       oquo:observation-46bc3f9f-22fd-403a-8965-60be7d9a79b9 .
+
+oquo:qualityValue-1a44f546-2da3-42eb-b3b8-7d2e5f6b97f9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-26546320-0dd1-4008-b5b6-c2f3639dc935 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-26de0b85-5529-43d2-a937-219a5c8db6e6 .
+
+oquo:evaluation-6f9d7def-ea5d-412b-9ff3-9ea1e9f7c048
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-8bb44830-213c-4e30-98b7-f6492a4b9c61 ;
+        time:hasTime              oquo:instant-aebfaf91-44b0-4377-b806-765a72d0f0e8 ;
+        oquo:hasObservation       oquo:observation-d50f98e8-fb25-47be-bf5e-f7851ca7896d .
+
+oquo:metric-5ed45dc1-0c5e-431a-9721-ed9f09707c83
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-6173540e-a9a0-45e6-ab75-6305b6e4d6a2 ;
+        oboe:measurementFor  oquo:observation-c2450b58-f3ce-49dc-a762-8f5858dbba3f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-d57bd591-58c0-4e23-955b-6045e01535a3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-f47ba79e-ea32-4b0b-a063-ae0beb2e2fce ;
+        time:hasTime              oquo:instant-10b665cc-9ea4-42d8-a2b6-baee10be0bc2 ;
+        oquo:hasObservation       oquo:observation-b2b893df-a0d1-4485-989b-726c8594308a .
+
+oquo:qualityValue-24a9d666-655e-425d-b521-3390aff1fe4c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cc758eb9-9b75-4171-8727-6e7e7e16ad15 ;
+        res:hasLiteralValue    "0.0020833333333333333"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7f20e917-6553-400f-98fd-f490a0c8d7c8 .
+
+oquo:evaluation-667dcb20-6095-4b76-b912-fac9e617be28
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-c9f68056-cd8f-4796-912a-86e3c816c1c0 ;
+        time:hasTime              oquo:instant-5afcbcd5-240f-4f41-a039-b3ac52fcba25 ;
+        oquo:hasObservation       oquo:observation-7b6c5e21-c1bf-4e9b-9541-c037587e5014 .
+
+oquo:metric-959ac8f8-10a5-443a-bf9e-32d1e62c7bf3
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-c9f68056-cd8f-4796-912a-86e3c816c1c0 ;
+        oboe:measurementFor  oquo:observation-7b6c5e21-c1bf-4e9b-9541-c037587e5014 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-3a313b52-ab4e-4ee8-8a76-99fbb99b63e1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-128c0cdb-37e2-4930-bc2c-034c0c91af8c ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-b4b30f2d-0ebd-462e-a9f8-df96fd4f55ac .
+
+oquo:qualityValue-7c5852da-b1a6-48d8-a19d-7692ccf2f26e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e502ad53-8d48-478e-b917-49a04089b606 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5f3d9f7c-fada-4b66-9d2e-8e0e4beb7ec2 .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-d50f98e8-fb25-47be-bf5e-f7851ca7896d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-81a64126-c1f7-4e8f-a00e-0aa6076e4e6f ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-aebfaf91-44b0-4377-b806-765a72d0f0e8 .
+
+oquo:metric-ad115d53-0069-47d3-b084-33d83cc8d28c
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f47ba79e-ea32-4b0b-a063-ae0beb2e2fce ;
+        oboe:measurementFor  oquo:observation-b2b893df-a0d1-4485-989b-726c8594308a ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:metric-cc758eb9-9b75-4171-8727-6e7e7e16ad15
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-24a9d666-655e-425d-b521-3390aff1fe4c ;
+        oboe:measurementFor  oquo:observation-a9331f8f-ad13-448d-821e-6ba7a73e3876 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:metric-81a64126-c1f7-4e8f-a00e-0aa6076e4e6f
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-8bb44830-213c-4e30-98b7-f6492a4b9c61 ;
+        oboe:measurementFor  oquo:observation-d50f98e8-fb25-47be-bf5e-f7851ca7896d ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-f9a6e5cc-9f47-48ef-9fc8-0f7abe9290e8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0a74b13a-8756-4b0f-aace-00e1af8a6b11 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-61f444d5-7740-4516-832f-3ea3f638a8df .
+
+oquo:instant-fc18cfb7-d836-498f-9817-edc540fe5f2b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.572Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f5f95d88-4e7f-4036-9cde-223aeea5f80d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-90591afe-9319-4492-b3c7-769a84172907 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-127d183a-4a99-4e40-bf4d-69493991793a .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-d58dcd78-89e9-4e1d-9dbc-7842ab51cabe
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.292Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-34ddcc8e-1f34-45dd-b547-9d5b1be39248
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.406Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-54c6347f-b37f-452e-9ab9-69d2feebf627
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f1fef604-af79-4135-9652-0f1d56600918 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-4862ccba-1162-45d5-a585-14a220135825 .
+
+oquo:qualityValue-d8cc5bb6-4d53-43a2-91a9-2b35fe9511cf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0a74b13a-8756-4b0f-aace-00e1af8a6b11 ;
+        res:hasLiteralValue    "0.27291666666666664"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-aa46eecc-c341-4bef-bb14-ce5718d0fb2f .
+
+oquo:evaluation-26de0b85-5529-43d2-a937-219a5c8db6e6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-1a44f546-2da3-42eb-b3b8-7d2e5f6b97f9 ;
+        time:hasTime              oquo:instant-6b6388e6-f01a-457a-a224-e76d4cf5a2e5 ;
+        oquo:hasObservation       oquo:observation-0e51ef19-b24e-4fc2-80b2-b1c5f5761e82 .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-6196dbf0-03af-4cb4-a4cc-1c58d18111d4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e502ad53-8d48-478e-b917-49a04089b606 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-a08ab12d-4c71-41b5-895e-806c23f16bc7 .
+
+oquo:instant-b279ef9c-e7b7-4df6-8677-06d7a500916d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.593Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-c48b117f-aa05-4e57-b124-fce2f84594a3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-53de5f8f-2358-4ecd-bc2d-d98c26620b53 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-2b69b69a-d702-43aa-a8af-774ca15780cc .
+
+oquo:instant-a08ab12d-4c71-41b5-895e-806c23f16bc7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.573Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-10b665cc-9ea4-42d8-a2b6-baee10be0bc2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.35Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-6d81d78a-4932-4342-9116-86211c5762a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.473Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d0f60c6d-6fc0-4774-bba3-65198ea613c9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-8b5c0aba-0894-4f0f-a465-6672cf26f7c4 ;
+        time:hasTime              oquo:instant-9282b5b5-9c2b-42db-bcb6-b9bf8a91e293 ;
+        oquo:hasObservation       oquo:observation-ef9e577b-36c6-4e85-ad1b-cdfac91daea1 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-9282b5b5-9c2b-42db-bcb6-b9bf8a91e293
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.588Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-25909329-c212-4847-91c6-73a5d715ede4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-f2903ef4-681c-45e5-9d12-85bdac39973c ;
+        time:hasTime              oquo:instant-34ddcc8e-1f34-45dd-b547-9d5b1be39248 ;
+        oquo:hasObservation       oquo:observation-79de8e9d-58a4-4146-a1eb-ba24095a1c27 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-f1eca101-160a-4137-9292-9896c7ea3994
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-8e074819-a4d7-497b-8524-704398847e3f ;
+        time:hasTime              oquo:instant-dd7ed825-000b-4ff6-8088-7dbd0ecfaa41 ;
+        oquo:hasObservation       oquo:observation-608f03d1-a352-483f-b9f3-e2c1a2040f8b .
+
+oquo:instant-127d183a-4a99-4e40-bf4d-69493991793a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.402Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c175e72c-1a1b-44b4-8c84-370a2db8e684
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3118dcaa-5804-44ee-bc24-67c31f77be4a ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-f76258d4-589f-4e47-89fd-7c21469222d7 .
+
+oquo:metric-c8c8f883-d1d7-44ab-91b9-b32a37029bbf
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-1569d568-51bf-4088-a7df-8ccce30f9eb5 ;
+        oboe:measurementFor  oquo:observation-46bc3f9f-22fd-403a-8965-60be7d9a79b9 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-3913ebc9-a7e3-42cc-9f2c-289767cc16a5
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-f71d505b-8852-4cac-81b7-1d0f94660bde ;
+        oboe:measurementFor  oquo:observation-f46a569d-2f1c-4b7e-ac62-1a215752393c ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+<https://cropontology.org/rdf/>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:qualityValue-5d083949-4e5a-42ac-a4b3-edef912ca3fd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-db96eef3-7c4d-4aa4-823a-d45508e0675d ;
+        res:hasLiteralValue    "480.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-06364572-a479-40dc-950e-e52a26fdd183 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7f20e917-6553-400f-98fd-f490a0c8d7c8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-24a9d666-655e-425d-b521-3390aff1fe4c ;
+        time:hasTime              oquo:instant-fb86a7a1-42ad-49a6-9160-10d79dc7186f ;
+        oquo:hasObservation       oquo:observation-a9331f8f-ad13-448d-821e-6ba7a73e3876 .
+
+oquo:instant-86da632a-8eaa-48d1-8762-15ce74f384bd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.404Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-542ebe0a-d0fc-47e6-90f0-405a74ff457c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-db96eef3-7c4d-4aa4-823a-d45508e0675d ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-d58dcd78-89e9-4e1d-9dbc-7842ab51cabe .
+
+oquo:qualityValue-8b5c0aba-0894-4f0f-a465-6672cf26f7c4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9b794b71-7f4c-4454-80cb-053e1fd8b8b6 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d0f60c6d-6fc0-4774-bba3-65198ea613c9 .
+
+oquo:evaluation-5937d6c0-77d0-44b8-b0f5-427b4cf8d5ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-ad0ab2ae-03c3-416e-b572-c3a65e24abf2 ;
+        time:hasTime              oquo:instant-4862ccba-1162-45d5-a585-14a220135825 ;
+        oquo:hasObservation       oquo:observation-54c6347f-b37f-452e-9ab9-69d2feebf627 .
+
+oquo:metric-ff11eddd-bbf1-4a54-baed-1e3c85ba1269
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-acb42312-4f19-4cca-8a01-36444d261f09 ;
+        oboe:measurementFor  oquo:observation-d0c9ded9-f259-4de0-b1b0-98359fdfada3 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-d311e149-d894-41b9-996a-bb2541ee4d05
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-acb42312-4f19-4cca-8a01-36444d261f09 ;
+        time:hasTime              oquo:instant-8d0484db-5f00-4a8f-9cba-f6fdb610f408 ;
+        oquo:hasObservation       oquo:observation-d0c9ded9-f259-4de0-b1b0-98359fdfada3 .
+
+oquo:metric-68d53935-11c1-48d7-8f1d-9c6139245556
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-325cdf73-6fed-4737-ab23-ad78a7cab217 ;
+        oboe:measurementFor  oquo:observation-45157665-1285-4a3c-9705-9f7852d8cfed ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:instant-f76258d4-589f-4e47-89fd-7c21469222d7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.474Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-9ed48b4e-d39f-4a7f-8716-8e5fdcf52cf0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.364Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-0f8be262-d657-4460-9930-03f73529cc65
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f2903ef4-681c-45e5-9d12-85bdac39973c ;
+        oboe:measurementFor  oquo:observation-79de8e9d-58a4-4146-a1eb-ba24095a1c27 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-105ee685-5ddf-42ef-985f-d202f37ace89
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.475Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-6173540e-a9a0-45e6-ab75-6305b6e4d6a2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5ed45dc1-0c5e-431a-9721-ed9f09707c83 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a5468656-5c79-4dc1-af7a-af272527aedf .
+
+oquo:metric-e4b59ce5-9e9f-4ec1-a86f-0c3cc5868c6f
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bb6b6e85-d28f-4266-969b-a0ade6e2637c ;
+        oboe:measurementFor  oquo:observation-a4310a76-5ab7-41f1-b5c6-aaacc3eb4aba ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-cb2a94d4-46dd-4cb4-bd9e-8723b30bd3a2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-90591afe-9319-4492-b3c7-769a84172907 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6834d77b-5737-4901-a6ca-4f401c815589 .
+
+oquo:evaluation-06364572-a479-40dc-950e-e52a26fdd183
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-5d083949-4e5a-42ac-a4b3-edef912ca3fd ;
+        time:hasTime              oquo:instant-d58dcd78-89e9-4e1d-9dbc-7842ab51cabe ;
+        oquo:hasObservation       oquo:observation-542ebe0a-d0fc-47e6-90f0-405a74ff457c .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4862ccba-1162-45d5-a585-14a220135825
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:44.578Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c03dd1c6-29f0-44e6-9f39-5256c0c9ab43
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-97650621-0bd7-4ee9-9c74-8595e545786a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9222e4f0-b0cf-4f49-a60a-798dc6ff0fa5 .
+
+oquo:instant-6b6388e6-f01a-457a-a224-e76d4cf5a2e5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.366Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-db96eef3-7c4d-4aa4-823a-d45508e0675d
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-5d083949-4e5a-42ac-a4b3-edef912ca3fd ;
+        oboe:measurementFor  oquo:observation-542ebe0a-d0fc-47e6-90f0-405a74ff457c ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-a9331f8f-ad13-448d-821e-6ba7a73e3876
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cc758eb9-9b75-4171-8727-6e7e7e16ad15 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-fb86a7a1-42ad-49a6-9160-10d79dc7186f .
+
+oquo:metric-2724163f-281b-40d0-8728-4d935ee3a798
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-92cf8bdd-4441-42dc-a6fc-2d17cbfa04d8 ;
+        oboe:measurementFor  oquo:observation-1c98a66f-cf6c-400f-9590-7cad65597af4 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:evaluation-1d9240c3-182f-4792-9903-42cd8d0ce737
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-e2dbc473-dddc-4eaa-8d62-c38cf676aa39 ;
+        time:hasTime              oquo:instant-b4b30f2d-0ebd-462e-a9f8-df96fd4f55ac ;
+        oquo:hasObservation       oquo:observation-3a313b52-ab4e-4ee8-8a76-99fbb99b63e1 .
+
+oquo:qualityValue-ad0ab2ae-03c3-416e-b572-c3a65e24abf2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f1fef604-af79-4135-9652-0f1d56600918 ;
+        res:hasLiteralValue    "0.00625"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5937d6c0-77d0-44b8-b0f5-427b4cf8d5ce .
+
+oquo:observation-fafb57d4-3c7c-4991-a342-f913785cb1e4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6d58da69-02c0-479d-b88d-90142c83f1d8 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-86da632a-8eaa-48d1-8762-15ce74f384bd .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4c6152ea-57ef-43e3-a260-6b2265ac8b91
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.555Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c2450b58-f3ce-49dc-a762-8f5858dbba3f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5ed45dc1-0c5e-431a-9721-ed9f09707c83 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-16a0e6a6-2a5d-4728-aa46-19ee74eb4e3e .
+
+oquo:observation-45157665-1285-4a3c-9705-9f7852d8cfed
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-68d53935-11c1-48d7-8f1d-9c6139245556 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-4d2adf22-f389-4d80-918b-65bc8466cb3a .
+
+oquo:metric-179c63f2-42e9-49b5-adf8-8322d42cb0ba
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5604c5fe-d397-4df5-abff-78bf572759a8 ;
+        oboe:measurementFor  oquo:observation-532fcdca-0ee6-496b-bf92-31881c0bdab0 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:metric-f94cc9ed-37f1-4389-b00c-e753d830e629
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-49c1a21b-6c8d-4831-9c8b-be44b6081eba ;
+        oboe:measurementFor  oquo:observation-1162fa16-a081-470d-8df4-2ba5ea7e1915 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-7af7436d-a78a-41c8-8ea5-22e23b834f67
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-09208f89-4bea-4829-a79c-3a7300141834 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-50df7068-5a83-4805-94c2-9baa8f487d7d .
+
+oquo:qualityValue-d75eae37-c279-4bf6-9ec0-80090e570500
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3c7ff365-a1d9-406a-ab96-39fadfecd2fd ;
+        res:hasLiteralValue    "0.5229166666666667"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9d8a92e2-4449-4522-977b-4265638c2998 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-50df7068-5a83-4805-94c2-9baa8f487d7d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-7af7436d-a78a-41c8-8ea5-22e23b834f67 ;
+        time:hasTime              oquo:instant-f64dc35a-037d-4a3c-9ee8-df7ecb058fe1 ;
+        oquo:hasObservation       oquo:observation-819ed405-9559-4468-9fea-d41129fab112 .
+
+oquo:qualityValue-3de1d258-0f7d-44f7-903a-6a35953d6000
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-53de5f8f-2358-4ecd-bc2d-d98c26620b53 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1dc57a0e-f32d-4963-8650-d170827df81b .
+
+oquo:observation-a4310a76-5ab7-41f1-b5c6-aaacc3eb4aba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e4b59ce5-9e9f-4ec1-a86f-0c3cc5868c6f ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-6d81d78a-4932-4342-9116-86211c5762a7 .
+
+oquo:qualityValue-17c57c68-5166-4525-9434-b3ba1905c4d2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6d58da69-02c0-479d-b88d-90142c83f1d8 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-19c0cdf8-a5d2-4866-8795-23c7fdcee3d1 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-5f3d9f7c-fada-4b66-9d2e-8e0e4beb7ec2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-7c5852da-b1a6-48d8-a19d-7692ccf2f26e ;
+        time:hasTime              oquo:instant-a08ab12d-4c71-41b5-895e-806c23f16bc7 ;
+        oquo:hasObservation       oquo:observation-6196dbf0-03af-4cb4-a4cc-1c58d18111d4 .
+
+oquo:observation-1c98a66f-cf6c-400f-9590-7cad65597af4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2724163f-281b-40d0-8728-4d935ee3a798 ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-79e58cf0-f2e4-43d7-96f6-590ffb23688c .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-09208f89-4bea-4829-a79c-3a7300141834
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7af7436d-a78a-41c8-8ea5-22e23b834f67 ;
+        oboe:measurementFor  oquo:observation-819ed405-9559-4468-9fea-d41129fab112 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:observation-993fccc7-f13a-40e8-8fff-55b836c96092
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-97650621-0bd7-4ee9-9c74-8595e545786a ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-e054f4cc-605e-4507-b35a-257adc3a3c12 .
+
+oquo:observation-46bc3f9f-22fd-403a-8965-60be7d9a79b9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c8c8f883-d1d7-44ab-91b9-b32a37029bbf ;
+        oboe:ofEntity        <https://cropontology.org/rdf/> ;
+        time:hasTime         oquo:instant-4e7a156e-e90c-48df-9cfc-89de29aca46d .
+
+oquo:instant-15d97081-4d34-49f2-9b1f-2e29a6929ffe
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T02:27:46.472Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-841e4ffc-0599-460b-aabf-a0ce78e07464
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-7a26e76e-590d-4d4d-b803-cefe2ff10d7a ;
+        oboe:measurementFor  oquo:observation-d8ef694d-2b26-4f65-a43c-5d11f089e183 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-f1fef604-af79-4135-9652-0f1d56600918
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ad0ab2ae-03c3-416e-b572-c3a65e24abf2 ;
+        oboe:measurementFor  oquo:observation-54c6347f-b37f-452e-9ab9-69d2feebf627 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-92cf8bdd-4441-42dc-a6fc-2d17cbfa04d8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2724163f-281b-40d0-8728-4d935ee3a798 ;
+        res:hasLiteralValue    "3.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d6d31fd4-714e-4ac9-a622-77b3eebe832d .
+
+oquo:evaluation-aa46eecc-c341-4bef-bb14-ce5718d0fb2f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://cropontology.org/rdf/> ;
+        res:inputData             <https://cropontology.org/rdf/> ;
+        res:producedQualityValue  oquo:qualityValue-d8cc5bb6-4d53-43a2-91a9-2b35fe9511cf ;
+        time:hasTime              oquo:instant-61f444d5-7740-4516-832f-3ea3f638a8df ;
+        oquo:hasObservation       oquo:observation-f9a6e5cc-9f47-48ef-9fc8-0f7abe9290e8 .
+
+oquo:metric-8d50e0e5-106e-4601-9b31-2d8d24d89965
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-7ed338ee-7c68-405d-b5e8-18b681a0b173 ;
+        oboe:measurementFor  oquo:observation-18752b28-99ab-4707-a56a-4357e309613f ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .

@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-f571d249-dbd6-4c25-99e4-b7df3678fbb0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.634Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1a564b58-ec7d-4238-ba73-42413e358e57
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-b2e23c60-2d82-44e7-9c81-f030b19a8d93 ;
+        time:hasTime              oquo:instant-13ccd55a-52df-459d-a92b-d529b5771627 ;
+        oquo:hasObservation       oquo:observation-fd40e93b-356f-48f4-9411-bd9b7427db9f .
+
+oquo:instant-8335f040-944a-4c63-b78e-f32e01ac7e22
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.134Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-313c5758-3847-4b4f-9f1b-6084fe31a17e
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-da03bcdf-aff6-4e78-80b8-ae4bbdcec338 ;
+        oboe:measurementFor  oquo:observation-70aecc2a-d066-4156-b323-b8aadbde89d9 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:metric-7e01829d-82fb-4266-894d-adb2d878f67b
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-bcd00366-de53-46ce-8639-fbebebdf4c88 ;
+        oboe:measurementFor  oquo:observation-9c46853e-4738-462c-83bb-c967f5e5b6f9 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-c1ee2ab9-8556-458f-b89b-f4c3f05a94fd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.001Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-d136ddba-e4eb-499e-93d2-7d40abf23659
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-85d6ed40-7aa4-4571-a7d5-d3e3e70a7ede ;
+        oboe:measurementFor  oquo:observation-6d5fe15f-3cdd-4823-813f-37a0800a1409 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-1c826cee-2ff3-44e1-ab56-393c4ec735aa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.028Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b2544fe6-0140-43fa-bd5a-86793847cbbd
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-6c1404be-7c46-4e65-b971-c8fc6139c25a ;
+        oboe:measurementFor  oquo:observation-d952b969-d96a-42b2-9c6f-2fd38448dc10 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:instant-8c9dc64b-8426-4c93-bdf4-a20610e24e43
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.087Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f3f02113-1a13-4391-ae91-a61dcb7728b1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f3a7a673-05b8-40bb-8d2c-5cc66ded8f72 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-f571d249-dbd6-4c25-99e4-b7df3678fbb0 .
+
+oquo:instant-3fc62ed1-a9c4-41e8-b5d8-8b68350f8497
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.812Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-469a43c3-b960-47ca-804e-774509a1194f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6c5bdd2c-7c6c-4986-88c1-54f068548545 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-8c9dc64b-8426-4c93-bdf4-a20610e24e43 .
+
+oquo:metric-bcb3e2e0-d3da-4745-bdd9-bfeb3448a52a
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-5f21f4ff-25f3-4fa8-849c-4aa2d0edd6aa ;
+        oboe:measurementFor  oquo:observation-8a59f22c-ce57-4683-af2e-e69e4bbbe61f ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-15f8df90-4029-4223-bc12-dd1c09b2ec70
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fb45a5e0-1496-4049-83ff-abf4b65f2143 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-a749f4a4-e648-4874-a57d-9c3dfba49c53 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-9e3bec1d-b92c-4ba2-8b54-e2323a409ae3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-ce3e1a58-b01a-452f-95e6-843c1d1c226a ;
+        time:hasTime              oquo:instant-7d0e2b3e-2eee-4309-8f3e-7adeeed59b8a ;
+        oquo:hasObservation       oquo:observation-2eeb6749-a1da-45eb-8ecb-a8312c1d7b73 .
+
+oquo:metric-4d8287da-0f8c-4cf4-b5a6-75ce504b87e4
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-0448d877-70c7-4a49-bd3e-2d6d2e0094f9 ;
+        oboe:measurementFor  oquo:observation-9d575204-8d0b-4a7a-904f-f7743af21829 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:evaluation-a8dab60b-ff58-482b-8dfb-e4345c28940e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-3edeb3c1-0f74-4334-aabe-fc427129b66c ;
+        time:hasTime              oquo:instant-657d6d12-b3f5-4d02-aa27-d1db8bacd326 ;
+        oquo:hasObservation       oquo:observation-abdcc5a1-2080-4814-8544-40bcf99bcf2b .
+
+oquo:observation-ad55e235-6ff7-4537-ab83-6317904cb1f9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-45a80b61-e138-4979-ae86-436712b1c95d ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-1c826cee-2ff3-44e1-ab56-393c4ec735aa .
+
+oquo:instant-a51932f3-f441-4617-8ee4-f7ed2e26efa0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.06Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7d0e2b3e-2eee-4309-8f3e-7adeeed59b8a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.933Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6076f731-fc0a-4ed7-98d8-dbf1baeb7ccd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-73aed097-11c6-42d3-ad81-0cc50162f5f9 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-88a696d5-0d23-4fa1-a7ef-52a0d5c45860 .
+
+oquo:observation-4c8e6340-5def-446d-8456-d0d46d9624a9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ec8e9e5c-25ae-4954-89c9-9e0eff92ec95 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-961ae59c-b3ff-42e1-8efe-b694129e564e .
+
+oquo:evaluation-13dd82e8-dd9a-4e41-9efc-87ac540efd10
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-f241decb-b79b-493e-aece-16320455c6bc ;
+        time:hasTime              oquo:instant-855c4a3a-2ae6-49c8-8586-fe621a6d2da3 ;
+        oquo:hasObservation       oquo:observation-a48e1fdb-ad4e-493c-ad61-123ee7174cf1 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-da03bcdf-aff6-4e78-80b8-ae4bbdcec338
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-313c5758-3847-4b4f-9f1b-6084fe31a17e ;
+        res:hasLiteralValue    "1.2745098039215685"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-968aae5d-f073-4911-8adb-ab42814e3ef5 .
+
+oquo:evaluation-408483cb-f88e-48da-9c9f-2f6bc2ff91e9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-84d3db3e-be07-49f6-bacf-f38fb56f53ff ;
+        time:hasTime              oquo:instant-8335f040-944a-4c63-b78e-f32e01ac7e22 ;
+        oquo:hasObservation       oquo:observation-ca3977fa-6ade-42ba-bfc0-06909c7a206a .
+
+oquo:observation-fd40e93b-356f-48f4-9411-bd9b7427db9f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c7a7bfd4-2729-49a6-8518-ed42a83e1646 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-13ccd55a-52df-459d-a92b-d529b5771627 .
+
+oquo:observation-19e78c8e-d224-4300-84e4-7dee10776c74
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0f310bbe-3ce9-4f35-b3f5-b4217b5f9ed5 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-6c7598f4-d45c-4570-a0e4-c1c0fa888d64 .
+
+oquo:observation-d952b969-d96a-42b2-9c6f-2fd38448dc10
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b2544fe6-0140-43fa-bd5a-86793847cbbd ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-fda43d54-4748-4197-b141-217b8a281523 .
+
+oquo:evaluation-f87ac9ce-ef67-4daa-bed4-d13820b68c7f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-bc3605c9-3ffa-4efa-a521-d6bc0e8e6349 ;
+        time:hasTime              oquo:instant-6c7598f4-d45c-4570-a0e4-c1c0fa888d64 ;
+        oquo:hasObservation       oquo:observation-19e78c8e-d224-4300-84e4-7dee10776c74 .
+
+oquo:metric-b9572466-5b39-4e52-b325-19f8f3e33199
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-11376901-555f-465d-a58b-c50246ebd70b ;
+        oboe:measurementFor  oquo:observation-abc1b75e-980f-48be-93e6-8a097565fea0 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:observation-ca3977fa-6ade-42ba-bfc0-06909c7a206a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-59b209d7-2be2-4e48-949e-a509172189de ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-8335f040-944a-4c63-b78e-f32e01ac7e22 .
+
+oquo:instant-a749f4a4-e648-4874-a57d-9c3dfba49c53
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.131Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-05c1c19b-7f14-4889-a54e-86f4abf77674
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.076Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-2551b43c-3618-4c8e-9f0b-43a4c6ea60b4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-bcd00366-de53-46ce-8639-fbebebdf4c88 ;
+        time:hasTime              oquo:instant-b41ad68e-ed22-429d-b34d-c9df855c10d1 ;
+        oquo:hasObservation       oquo:observation-9c46853e-4738-462c-83bb-c967f5e5b6f9 .
+
+oquo:qualityValue-5f21f4ff-25f3-4fa8-849c-4aa2d0edd6aa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bcb3e2e0-d3da-4745-bdd9-bfeb3448a52a ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d797e466-3766-49cd-8e26-9fe8303552fe .
+
+oquo:metric-f3a7a673-05b8-40bb-8d2c-5cc66ded8f72
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-b7f59cab-82e7-49f2-a5ce-1538d91b530b ;
+        oboe:measurementFor  oquo:observation-f3f02113-1a13-4391-ae91-a61dcb7728b1 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:observation-9c46853e-4738-462c-83bb-c967f5e5b6f9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7e01829d-82fb-4266-894d-adb2d878f67b ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-b41ad68e-ed22-429d-b34d-c9df855c10d1 .
+
+oquo:qualityValue-a2ab5299-4180-46a0-98d1-dfe1f8d46b2f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9d44d7b-a05d-4933-8124-82e0e985d1e7 ;
+        res:hasLiteralValue    "0.9743589743589743"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-db203265-6723-4509-9f43-d17852eb5af6 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-db203265-6723-4509-9f43-d17852eb5af6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-a2ab5299-4180-46a0-98d1-dfe1f8d46b2f ;
+        time:hasTime              oquo:instant-a625b08a-d6e6-4081-9f5f-5cb31a9c2f3d ;
+        oquo:hasObservation       oquo:observation-4410b425-6f4b-45ba-9ee0-254060747318 .
+
+oquo:metric-6c5bdd2c-7c6c-4986-88c1-54f068548545
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-58421dd7-c037-4e6b-b0d8-fb7a2b5ee930 ;
+        oboe:measurementFor  oquo:observation-469a43c3-b960-47ca-804e-774509a1194f ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-0448d877-70c7-4a49-bd3e-2d6d2e0094f9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4d8287da-0f8c-4cf4-b5a6-75ce504b87e4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d0ac680e-3d95-46a4-a288-84c621f006ef .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-73aed097-11c6-42d3-ad81-0cc50162f5f9
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-84dce598-395c-48c5-ad45-08cf83777817 ;
+        oboe:measurementFor  oquo:observation-6076f731-fc0a-4ed7-98d8-dbf1baeb7ccd ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-13ccd55a-52df-459d-a92b-d529b5771627
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.108Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-3edeb3c1-0f74-4334-aabe-fc427129b66c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c9893e71-b82c-44e4-8881-067d7553f588 ;
+        res:hasLiteralValue    "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a8dab60b-ff58-482b-8dfb-e4345c28940e .
+
+oquo:qualityValue-b7f59cab-82e7-49f2-a5ce-1538d91b530b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f3a7a673-05b8-40bb-8d2c-5cc66ded8f72 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f7ff6308-d57d-4e10-8afe-f816afdc3c47 .
+
+oquo:evaluation-e1705e95-4773-49e9-ab26-54576ab25349
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-6f995c39-7955-453c-b2b1-6d1bfe8ba492 ;
+        time:hasTime              oquo:instant-8d7e39e8-06c6-49c8-abd8-e6805ab2a6cb ;
+        oquo:hasObservation       oquo:observation-57535d5e-0ae0-4516-8861-6ccc5eb28d95 .
+
+oquo:evaluation-d797e466-3766-49cd-8e26-9fe8303552fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-5f21f4ff-25f3-4fa8-849c-4aa2d0edd6aa ;
+        time:hasTime              oquo:instant-bdbc954b-7590-4f26-b999-3b376e3e69a5 ;
+        oquo:hasObservation       oquo:observation-8a59f22c-ce57-4683-af2e-e69e4bbbe61f .
+
+oquo:qualityValue-85d6ed40-7aa4-4571-a7d5-d3e3e70a7ede
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d136ddba-e4eb-499e-93d2-7d40abf23659 ;
+        res:hasLiteralValue    "0.02564102564102564"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6542fabe-1ee0-4823-b3b3-190aaa39af7e .
+
+oquo:evaluation-d0ac680e-3d95-46a4-a288-84c621f006ef
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-0448d877-70c7-4a49-bd3e-2d6d2e0094f9 ;
+        time:hasTime              oquo:instant-be2b6b77-cbf9-42ee-a20d-e5783a8b2a54 ;
+        oquo:hasObservation       oquo:observation-9d575204-8d0b-4a7a-904f-f7743af21829 .
+
+oquo:evaluation-6542fabe-1ee0-4823-b3b3-190aaa39af7e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-85d6ed40-7aa4-4571-a7d5-d3e3e70a7ede ;
+        time:hasTime              oquo:instant-c1ee2ab9-8556-458f-b89b-f4c3f05a94fd ;
+        oquo:hasObservation       oquo:observation-6d5fe15f-3cdd-4823-813f-37a0800a1409 .
+
+oquo:observation-4410b425-6f4b-45ba-9ee0-254060747318
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9d44d7b-a05d-4933-8124-82e0e985d1e7 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-a625b08a-d6e6-4081-9f5f-5cb31a9c2f3d .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-11376901-555f-465d-a58b-c50246ebd70b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9572466-5b39-4e52-b325-19f8f3e33199 ;
+        res:hasLiteralValue    "1.2173913043478262"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e22e1a00-a031-47fa-af56-255b10b5f6f3 .
+
+oquo:qualityValue-5e1bf5f4-240c-4f9a-94f0-e54a3aad271f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9f613bce-e423-4002-9002-12902f7fea8e ;
+        res:hasLiteralValue    "0.03260869565217391"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c17ba6db-f340-438a-9bfd-a6574a732be9 .
+
+oquo:metric-c3254e82-fb11-4c07-8ebf-8a35756ca7e9
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6cff1b86-0bd9-4fa1-a292-3e1fcf456074 ;
+        oboe:measurementFor  oquo:observation-ce49c507-a0b8-4518-86db-14be33b0a705 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-0eab3cc1-6e6d-4c88-a301-e3b03b0d6660
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5ff853fc-3e26-446c-97d7-110ba6184ff5 ;
+        res:hasLiteralValue    "0.043478260869565216"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9618ff11-03c8-47a5-a915-cec61b89bb79 .
+
+oquo:evaluation-e22e1a00-a031-47fa-af56-255b10b5f6f3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-11376901-555f-465d-a58b-c50246ebd70b ;
+        time:hasTime              oquo:instant-ac86b2c6-57f5-494f-9abb-481ec2ac825e ;
+        oquo:hasObservation       oquo:observation-abc1b75e-980f-48be-93e6-8a097565fea0 .
+
+oquo:qualityValue-a547fc4b-2af2-4843-9fa8-8325dfdc9c93
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-152cc112-4d33-4a0b-b9f4-665384758501 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e927caf0-7b48-446b-85c5-5be52bc2c9b6 .
+
+oquo:qualityValue-f241decb-b79b-493e-aece-16320455c6bc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8091faa5-018a-48af-816b-11deb7243aa3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-13dd82e8-dd9a-4e41-9efc-87ac540efd10 .
+
+oquo:instant-a625b08a-d6e6-4081-9f5f-5cb31a9c2f3d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.118Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-5cd256d8-f650-48d7-bbe3-330de797d559
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:17.606Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-55dff277-fb1e-4172-b51a-f16a3f6c9bc7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-91a7d778-e58f-4a38-b3f4-62b0faf1c0a7 ;
+        time:hasTime              oquo:instant-1c826cee-2ff3-44e1-ab56-393c4ec735aa ;
+        oquo:hasObservation       oquo:observation-ad55e235-6ff7-4537-ab83-6317904cb1f9 .
+
+oquo:metric-40ba7c86-7225-4fd5-b7db-4c218e768fe6
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-43b42dd4-5995-408a-89fc-4c0f017239b9 ;
+        oboe:measurementFor  oquo:observation-f87e8ece-3097-40c4-9220-6af0166c9869 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-c70c3af1-9253-49bc-a237-ebd245bf7b45
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-58421dd7-c037-4e6b-b0d8-fb7a2b5ee930 ;
+        time:hasTime              oquo:instant-8c9dc64b-8426-4c93-bdf4-a20610e24e43 ;
+        oquo:hasObservation       oquo:observation-469a43c3-b960-47ca-804e-774509a1194f .
+
+oquo:metric-3d0b7c3f-b505-4e15-8dac-b9fac81162b3
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-e4b05593-4d8e-43fe-9d92-0cc57a90e8a1 ;
+        oboe:measurementFor  oquo:observation-543b7b49-7476-45ad-9ccb-d980911a6ae0 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:qualityValue-d4c2d7d0-c3e5-490a-9d82-08bdcfc26d78
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f193c842-5a53-494d-b72e-dfb1197d01ff ;
+        res:hasLiteralValue    "3.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-304e2694-26c9-480b-b85b-e8ca8a86560c .
+
+oquo:evaluation-304e2694-26c9-480b-b85b-e8ca8a86560c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-d4c2d7d0-c3e5-490a-9d82-08bdcfc26d78 ;
+        time:hasTime              oquo:instant-5cd256d8-f650-48d7-bbe3-330de797d559 ;
+        oquo:hasObservation       oquo:observation-698aba18-eeaf-47ca-97ee-7cba891253b9 .
+
+oquo:evaluation-e927caf0-7b48-446b-85c5-5be52bc2c9b6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-a547fc4b-2af2-4843-9fa8-8325dfdc9c93 ;
+        time:hasTime              oquo:instant-5eb3028d-ed1b-485d-87b4-0730026e96ce ;
+        oquo:hasObservation       oquo:observation-d68c88b5-fc25-4325-884e-6a64b5de3de2 .
+
+oquo:evaluation-b79a3813-5c1e-47e5-8107-9492ab166c15
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-8b91c1c4-1e74-4951-97ac-18dfeacc77a4 ;
+        time:hasTime              oquo:instant-c79dd5d3-17b4-4164-91c2-4365a533f5be ;
+        oquo:hasObservation       oquo:observation-873e9441-f39b-4cb9-b379-b6f459803e1a .
+
+oquo:observation-abc1b75e-980f-48be-93e6-8a097565fea0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9572466-5b39-4e52-b325-19f8f3e33199 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-ac86b2c6-57f5-494f-9abb-481ec2ac825e .
+
+oquo:observation-c0606e7d-c822-4742-9d0b-41e3db9f8075
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-13dfd5cc-71d8-4a16-8def-a7ee5a0bcfbc ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-4a651d93-7581-4441-84e1-2a5d206ac97a .
+
+oquo:qualityValue-ea095f76-c5db-48f5-83dd-ccd0376d9644
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ec8e9e5c-25ae-4954-89c9-9e0eff92ec95 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-623376fc-9f92-4d7b-83ed-63a9e950442c .
+
+oquo:instant-bdbc954b-7590-4f26-b999-3b376e3e69a5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:17.741Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f87e8ece-3097-40c4-9220-6af0166c9869
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-40ba7c86-7225-4fd5-b7db-4c218e768fe6 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-2d579286-578d-4cf9-9a17-312b4b67ff1f .
+
+oquo:evaluation-5a0bbe65-4c3a-4692-a9c1-63798faea450
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-12a8a4d8-66f6-41eb-8797-efda3b0cfa8c ;
+        time:hasTime              oquo:instant-4a651d93-7581-4441-84e1-2a5d206ac97a ;
+        oquo:hasObservation       oquo:observation-c0606e7d-c822-4742-9d0b-41e3db9f8075 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-f51dc1e3-96ab-42aa-8e05-1e0ebee5df30
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.874Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4a651d93-7581-4441-84e1-2a5d206ac97a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.99Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-30b33b2a-be1e-4c64-920b-6b9ea1330327
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-b9fb6f57-0b10-446f-80ed-5ec630f84e75 ;
+        time:hasTime              oquo:instant-4527672e-ee58-4e98-b401-4aa244baac05 ;
+        oquo:hasObservation       oquo:observation-b508dfd5-1937-4586-8917-6d8f7e557536 .
+
+oquo:observation-b508dfd5-1937-4586-8917-6d8f7e557536
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7d078a7e-363d-44cd-b4d6-dd6b27d62e79 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-4527672e-ee58-4e98-b401-4aa244baac05 .
+
+oquo:evaluation-f96c2945-7cad-4174-8bec-f6ab8fdaf0c0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-efe999d0-b7b6-483e-ae93-a11a67ed1440 ;
+        time:hasTime              oquo:instant-3601b538-615e-47d6-85f0-acf480755ff0 ;
+        oquo:hasObservation       oquo:observation-d58aa176-27f6-40be-83ee-6284347d3078 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-6c1404be-7c46-4e65-b971-c8fc6139c25a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b2544fe6-0140-43fa-bd5a-86793847cbbd ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f89e5d99-a985-47d5-a825-20ced14279ad .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7d078a7e-363d-44cd-b4d6-dd6b27d62e79
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b9fb6f57-0b10-446f-80ed-5ec630f84e75 ;
+        oboe:measurementFor  oquo:observation-b508dfd5-1937-4586-8917-6d8f7e557536 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-9e22254a-1af4-4752-8a6c-e05e028bc1e6
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-4f625853-ee95-45aa-8822-08448a64fe47 ;
+        oboe:measurementFor  oquo:observation-6ecb75a8-13d3-4008-82fd-4f99ecf54763 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:evaluation-197789d0-fc53-4c09-a547-4b5941067c9d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-cd48c308-c012-49fb-9ceb-f3213de2a9a4 ;
+        time:hasTime              oquo:instant-05c1c19b-7f14-4889-a54e-86f4abf77674 ;
+        oquo:hasObservation       oquo:observation-3e033296-1596-4bed-85bc-29a984c1f9ed .
+
+oquo:instant-8d7e39e8-06c6-49c8-abd8-e6805ab2a6cb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.903Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-873e9441-f39b-4cb9-b379-b6f459803e1a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-edb0b238-2da9-48dc-b56c-831af426de4b ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-c79dd5d3-17b4-4164-91c2-4365a533f5be .
+
+oquo:evaluation-c17ba6db-f340-438a-9bfd-a6574a732be9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-5e1bf5f4-240c-4f9a-94f0-e54a3aad271f ;
+        time:hasTime              oquo:instant-0a4481eb-5f38-4b9d-a691-be04ec089d06 ;
+        oquo:hasObservation       oquo:observation-72786cbc-cbcf-4391-83b7-31922b1599eb .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-8b91c1c4-1e74-4951-97ac-18dfeacc77a4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-edb0b238-2da9-48dc-b56c-831af426de4b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b79a3813-5c1e-47e5-8107-9492ab166c15 .
+
+oquo:metric-626cd2c0-6f73-4b5b-a206-c0274c646cb4
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6f995c39-7955-453c-b2b1-6d1bfe8ba492 ;
+        oboe:measurementFor  oquo:observation-57535d5e-0ae0-4516-8861-6ccc5eb28d95 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-91a7d778-e58f-4a38-b3f4-62b0faf1c0a7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-45a80b61-e138-4979-ae86-436712b1c95d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-55dff277-fb1e-4172-b51a-f16a3f6c9bc7 .
+
+oquo:qualityValue-e4b05593-4d8e-43fe-9d92-0cc57a90e8a1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3d0b7c3f-b505-4e15-8dac-b9fac81162b3 ;
+        res:hasLiteralValue    "92.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2994f863-2c7d-46ac-a329-6d4603ebf58a .
+
+oquo:instant-5eb3028d-ed1b-485d-87b4-0730026e96ce
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.128Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-72786cbc-cbcf-4391-83b7-31922b1599eb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9f613bce-e423-4002-9002-12902f7fea8e ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-0a4481eb-5f38-4b9d-a691-be04ec089d06 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-56bcc83a-8681-4496-a53d-0ea35f5fdd2b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.026Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6ecb75a8-13d3-4008-82fd-4f99ecf54763
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9e22254a-1af4-4752-8a6c-e05e028bc1e6 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-a51932f3-f441-4617-8ee4-f7ed2e26efa0 .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-698aba18-eeaf-47ca-97ee-7cba891253b9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f193c842-5a53-494d-b72e-dfb1197d01ff ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-5cd256d8-f650-48d7-bbe3-330de797d559 .
+
+oquo:evaluation-2994f863-2c7d-46ac-a329-6d4603ebf58a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-e4b05593-4d8e-43fe-9d92-0cc57a90e8a1 ;
+        time:hasTime              oquo:instant-3fc62ed1-a9c4-41e8-b5d8-8b68350f8497 ;
+        oquo:hasObservation       oquo:observation-543b7b49-7476-45ad-9ccb-d980911a6ae0 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-152cc112-4d33-4a0b-b9f4-665384758501
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-a547fc4b-2af2-4843-9fa8-8325dfdc9c93 ;
+        oboe:measurementFor  oquo:observation-d68c88b5-fc25-4325-884e-6a64b5de3de2 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-6d5fe15f-3cdd-4823-813f-37a0800a1409
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d136ddba-e4eb-499e-93d2-7d40abf23659 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-c1ee2ab9-8556-458f-b89b-f4c3f05a94fd .
+
+oquo:metric-edb0b238-2da9-48dc-b56c-831af426de4b
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-8b91c1c4-1e74-4951-97ac-18dfeacc77a4 ;
+        oboe:measurementFor  oquo:observation-873e9441-f39b-4cb9-b379-b6f459803e1a ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:instant-c79dd5d3-17b4-4164-91c2-4365a533f5be
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:17.632Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9f613bce-e423-4002-9002-12902f7fea8e
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-5e1bf5f4-240c-4f9a-94f0-e54a3aad271f ;
+        oboe:measurementFor  oquo:observation-72786cbc-cbcf-4391-83b7-31922b1599eb ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:evaluation-f89e5d99-a985-47d5-a825-20ced14279ad
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-6c1404be-7c46-4e65-b971-c8fc6139c25a ;
+        time:hasTime              oquo:instant-fda43d54-4748-4197-b141-217b8a281523 ;
+        oquo:hasObservation       oquo:observation-d952b969-d96a-42b2-9c6f-2fd38448dc10 .
+
+oquo:observation-abdcc5a1-2080-4814-8544-40bcf99bcf2b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c9893e71-b82c-44e4-8881-067d7553f588 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-657d6d12-b3f5-4d02-aa27-d1db8bacd326 .
+
+oquo:qualityValue-b2e23c60-2d82-44e7-9c81-f030b19a8d93
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c7a7bfd4-2729-49a6-8518-ed42a83e1646 ;
+        res:hasLiteralValue    "0.6410256410256411"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1a564b58-ec7d-4238-ba73-42413e358e57 .
+
+oquo:instant-b41ad68e-ed22-429d-b34d-c9df855c10d1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.011Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-59b209d7-2be2-4e48-949e-a509172189de
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-84d3db3e-be07-49f6-bacf-f38fb56f53ff ;
+        oboe:measurementFor  oquo:observation-ca3977fa-6ade-42ba-bfc0-06909c7a206a ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-6f995c39-7955-453c-b2b1-6d1bfe8ba492
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-626cd2c0-6f73-4b5b-a206-c0274c646cb4 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e1705e95-4773-49e9-ab26-54576ab25349 .
+
+oquo:observation-d68c88b5-fc25-4325-884e-6a64b5de3de2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-152cc112-4d33-4a0b-b9f4-665384758501 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-5eb3028d-ed1b-485d-87b4-0730026e96ce .
+
+oquo:metric-ec8e9e5c-25ae-4954-89c9-9e0eff92ec95
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ea095f76-c5db-48f5-83dd-ccd0376d9644 ;
+        oboe:measurementFor  oquo:observation-4c8e6340-5def-446d-8456-d0d46d9624a9 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-a9edd0ee-1bcf-4a20-bdf1-cf29c8f4f1fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-43b42dd4-5995-408a-89fc-4c0f017239b9 ;
+        time:hasTime              oquo:instant-2d579286-578d-4cf9-9a17-312b4b67ff1f ;
+        oquo:hasObservation       oquo:observation-f87e8ece-3097-40c4-9220-6af0166c9869 .
+
+oquo:metric-c9893e71-b82c-44e4-8881-067d7553f588
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3edeb3c1-0f74-4334-aabe-fc427129b66c ;
+        oboe:measurementFor  oquo:observation-abdcc5a1-2080-4814-8544-40bcf99bcf2b ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-84dce598-395c-48c5-ad45-08cf83777817
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-73aed097-11c6-42d3-ad81-0cc50162f5f9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-56abfab0-8d31-4767-b717-289f4a5d43b2 .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-3601b538-615e-47d6-85f0-acf480755ff0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.925Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-84d3db3e-be07-49f6-bacf-f38fb56f53ff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-59b209d7-2be2-4e48-949e-a509172189de ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-408483cb-f88e-48da-9c9f-2f6bc2ff91e9 .
+
+oquo:qualityValue-6cff1b86-0bd9-4fa1-a292-3e1fcf456074
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c3254e82-fb11-4c07-8ebf-8a35756ca7e9 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ce60abae-88aa-422a-8955-320e78bc657a .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-6946c674-1d8f-4a3c-b770-171150d147f2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-aabece7d-003b-4079-821a-d06ce13d2daf ;
+        time:hasTime              oquo:instant-a749f4a4-e648-4874-a57d-9c3dfba49c53 ;
+        oquo:hasObservation       oquo:observation-15f8df90-4029-4223-bc12-dd1c09b2ec70 .
+
+oquo:observation-d58aa176-27f6-40be-83ee-6284347d3078
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f33f7158-e744-4ab9-9db8-eac0306ab3e6 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-3601b538-615e-47d6-85f0-acf480755ff0 .
+
+<https://spec.industrialontologies.org/ontology/202301/core/Core/>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-968aae5d-f073-4911-8adb-ab42814e3ef5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-da03bcdf-aff6-4e78-80b8-ae4bbdcec338 ;
+        time:hasTime              oquo:instant-f51dc1e3-96ab-42aa-8e05-1e0ebee5df30 ;
+        oquo:hasObservation       oquo:observation-70aecc2a-d066-4156-b323-b8aadbde89d9 .
+
+oquo:metric-8091faa5-018a-48af-816b-11deb7243aa3
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-f241decb-b79b-493e-aece-16320455c6bc ;
+        oboe:measurementFor  oquo:observation-a48e1fdb-ad4e-493c-ad61-123ee7174cf1 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-fb45a5e0-1496-4049-83ff-abf4b65f2143
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-aabece7d-003b-4079-821a-d06ce13d2daf ;
+        oboe:measurementFor  oquo:observation-15f8df90-4029-4223-bc12-dd1c09b2ec70 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-543b7b49-7476-45ad-9ccb-d980911a6ae0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3d0b7c3f-b505-4e15-8dac-b9fac81162b3 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-3fc62ed1-a9c4-41e8-b5d8-8b68350f8497 .
+
+oquo:qualityValue-bc3605c9-3ffa-4efa-a521-d6bc0e8e6349
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0f310bbe-3ce9-4f35-b3f5-b4217b5f9ed5 ;
+        res:hasLiteralValue    "0.358974358974359"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f87ac9ce-ef67-4daa-bed4-d13820b68c7f .
+
+oquo:observation-a48e1fdb-ad4e-493c-ad61-123ee7174cf1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8091faa5-018a-48af-816b-11deb7243aa3 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-855c4a3a-2ae6-49c8-8586-fe621a6d2da3 .
+
+oquo:evaluation-f7ff6308-d57d-4e10-8afe-f816afdc3c47
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-b7f59cab-82e7-49f2-a5ce-1538d91b530b ;
+        time:hasTime              oquo:instant-f571d249-dbd6-4c25-99e4-b7df3678fbb0 ;
+        oquo:hasObservation       oquo:observation-f3f02113-1a13-4391-ae91-a61dcb7728b1 .
+
+oquo:observation-2eeb6749-a1da-45eb-8ecb-a8312c1d7b73
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7a013a8c-71a7-4827-bff7-801c48267632 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-7d0e2b3e-2eee-4309-8f3e-7adeeed59b8a .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-88a696d5-0d23-4fa1-a7ef-52a0d5c45860
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.124Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-70aecc2a-d066-4156-b323-b8aadbde89d9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-313c5758-3847-4b4f-9f1b-6084fe31a17e ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-f51dc1e3-96ab-42aa-8e05-1e0ebee5df30 .
+
+oquo:instant-657d6d12-b3f5-4d02-aa27-d1db8bacd326
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.02Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1e1bf004-9e3c-4680-9d3e-51b7d5cebb37
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.961Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-fda43d54-4748-4197-b141-217b8a281523
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:17.702Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-ce49c507-a0b8-4518-86db-14be33b0a705
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c3254e82-fb11-4c07-8ebf-8a35756ca7e9 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-56bcc83a-8681-4496-a53d-0ea35f5fdd2b .
+
+oquo:qualityValue-b9fb6f57-0b10-446f-80ed-5ec630f84e75
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7d078a7e-363d-44cd-b4d6-dd6b27d62e79 ;
+        res:hasLiteralValue    "0.0196078431372549"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-30b33b2a-be1e-4c64-920b-6b9ea1330327 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-2d579286-578d-4cf9-9a17-312b4b67ff1f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.995Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-efe999d0-b7b6-483e-ae93-a11a67ed1440
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f33f7158-e744-4ab9-9db8-eac0306ab3e6 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f96c2945-7cad-4174-8bec-f6ab8fdaf0c0 .
+
+oquo:observation-3e033296-1596-4bed-85bc-29a984c1f9ed
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e855c3b7-2d91-40ec-8f6d-df37b13dfe0a ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-05c1c19b-7f14-4889-a54e-86f4abf77674 .
+
+oquo:observation-9d575204-8d0b-4a7a-904f-f7743af21829
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4d8287da-0f8c-4cf4-b5a6-75ce504b87e4 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-be2b6b77-cbf9-42ee-a20d-e5783a8b2a54 .
+
+oquo:observation-57535d5e-0ae0-4516-8861-6ccc5eb28d95
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-626cd2c0-6f73-4b5b-a206-c0274c646cb4 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-8d7e39e8-06c6-49c8-abd8-e6805ab2a6cb .
+
+oquo:instant-0a4481eb-5f38-4b9d-a691-be04ec089d06
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:17.697Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-ce3e1a58-b01a-452f-95e6-843c1d1c226a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7a013a8c-71a7-4827-bff7-801c48267632 ;
+        res:hasLiteralValue    "1.358974358974359"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9e3bec1d-b92c-4ba2-8b54-e2323a409ae3 .
+
+oquo:metric-7a013a8c-71a7-4827-bff7-801c48267632
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ce3e1a58-b01a-452f-95e6-843c1d1c226a ;
+        oboe:measurementFor  oquo:observation-2eeb6749-a1da-45eb-8ecb-a8312c1d7b73 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-623376fc-9f92-4d7b-83ed-63a9e950442c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-ea095f76-c5db-48f5-83dd-ccd0376d9644 ;
+        time:hasTime              oquo:instant-961ae59c-b3ff-42e1-8efe-b694129e564e ;
+        oquo:hasObservation       oquo:observation-4c8e6340-5def-446d-8456-d0d46d9624a9 .
+
+oquo:qualityValue-12a8a4d8-66f6-41eb-8797-efda3b0cfa8c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-13dfd5cc-71d8-4a16-8def-a7ee5a0bcfbc ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5a0bbe65-4c3a-4692-a9c1-63798faea450 .
+
+oquo:evaluation-9618ff11-03c8-47a5-a915-cec61b89bb79
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-0eab3cc1-6e6d-4c88-a301-e3b03b0d6660 ;
+        time:hasTime              oquo:instant-1e1bf004-9e3c-4680-9d3e-51b7d5cebb37 ;
+        oquo:hasObservation       oquo:observation-e647b9af-7cc8-4ef3-9ff6-e8d3d9dff434 .
+
+oquo:metric-13dfd5cc-71d8-4a16-8def-a7ee5a0bcfbc
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-12a8a4d8-66f6-41eb-8797-efda3b0cfa8c ;
+        oboe:measurementFor  oquo:observation-c0606e7d-c822-4742-9d0b-41e3db9f8075 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-4f625853-ee95-45aa-8822-08448a64fe47
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9e22254a-1af4-4752-8a6c-e05e028bc1e6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-598941b9-1082-4c52-99e3-79c84109739d .
+
+oquo:instant-be2b6b77-cbf9-42ee-a20d-e5783a8b2a54
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.1Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e647b9af-7cc8-4ef3-9ff6-e8d3d9dff434
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5ff853fc-3e26-446c-97d7-110ba6184ff5 ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-1e1bf004-9e3c-4680-9d3e-51b7d5cebb37 .
+
+oquo:metric-0f310bbe-3ce9-4f35-b3f5-b4217b5f9ed5
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bc3605c9-3ffa-4efa-a521-d6bc0e8e6349 ;
+        oboe:measurementFor  oquo:observation-19e78c8e-d224-4300-84e4-7dee10776c74 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b9d44d7b-a05d-4933-8124-82e0e985d1e7
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a2ab5299-4180-46a0-98d1-dfe1f8d46b2f ;
+        oboe:measurementFor  oquo:observation-4410b425-6f4b-45ba-9ee0-254060747318 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-bcd00366-de53-46ce-8639-fbebebdf4c88
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7e01829d-82fb-4266-894d-adb2d878f67b ;
+        res:hasLiteralValue    "0.21739130434782608"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2551b43c-3618-4c8e-9f0b-43a4c6ea60b4 .
+
+oquo:qualityValue-aabece7d-003b-4079-821a-d06ce13d2daf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fb45a5e0-1496-4049-83ff-abf4b65f2143 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6946c674-1d8f-4a3c-b770-171150d147f2 .
+
+oquo:metric-f33f7158-e744-4ab9-9db8-eac0306ab3e6
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-efe999d0-b7b6-483e-ae93-a11a67ed1440 ;
+        oboe:measurementFor  oquo:observation-d58aa176-27f6-40be-83ee-6284347d3078 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:metric-5ff853fc-3e26-446c-97d7-110ba6184ff5
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-0eab3cc1-6e6d-4c88-a301-e3b03b0d6660 ;
+        oboe:measurementFor  oquo:observation-e647b9af-7cc8-4ef3-9ff6-e8d3d9dff434 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:instant-4527672e-ee58-4e98-b401-4aa244baac05
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.973Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-598941b9-1082-4c52-99e3-79c84109739d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-4f625853-ee95-45aa-8822-08448a64fe47 ;
+        time:hasTime              oquo:instant-a51932f3-f441-4617-8ee4-f7ed2e26efa0 ;
+        oquo:hasObservation       oquo:observation-6ecb75a8-13d3-4008-82fd-4f99ecf54763 .
+
+oquo:evaluation-ce60abae-88aa-422a-8955-320e78bc657a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-6cff1b86-0bd9-4fa1-a292-3e1fcf456074 ;
+        time:hasTime              oquo:instant-56bcc83a-8681-4496-a53d-0ea35f5fdd2b ;
+        oquo:hasObservation       oquo:observation-ce49c507-a0b8-4518-86db-14be33b0a705 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-c7a7bfd4-2729-49a6-8518-ed42a83e1646
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-b2e23c60-2d82-44e7-9c81-f030b19a8d93 ;
+        oboe:measurementFor  oquo:observation-fd40e93b-356f-48f4-9411-bd9b7427db9f ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-43b42dd4-5995-408a-89fc-4c0f017239b9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-40ba7c86-7225-4fd5-b7db-4c218e768fe6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a9edd0ee-1bcf-4a20-bdf1-cf29c8f4f1fe .
+
+oquo:metric-45a80b61-e138-4979-ae86-436712b1c95d
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-91a7d778-e58f-4a38-b3f4-62b0faf1c0a7 ;
+        oboe:measurementFor  oquo:observation-ad55e235-6ff7-4537-ab83-6317904cb1f9 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:instant-855c4a3a-2ae6-49c8-8586-fe621a6d2da3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.125Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-8a59f22c-ce57-4683-af2e-e69e4bbbe61f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bcb3e2e0-d3da-4745-bdd9-bfeb3448a52a ;
+        oboe:ofEntity        <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        time:hasTime         oquo:instant-bdbc954b-7590-4f26-b999-3b376e3e69a5 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-961ae59c-b3ff-42e1-8efe-b694129e564e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.126Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-56abfab0-8d31-4767-b717-289f4a5d43b2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:inputData             <https://spec.industrialontologies.org/ontology/202301/core/Core/> ;
+        res:producedQualityValue  oquo:qualityValue-84dce598-395c-48c5-ad45-08cf83777817 ;
+        time:hasTime              oquo:instant-88a696d5-0d23-4fa1-a7ef-52a0d5c45860 ;
+        oquo:hasObservation       oquo:observation-6076f731-fc0a-4ed7-98d8-dbf1baeb7ccd .
+
+oquo:metric-f193c842-5a53-494d-b72e-dfb1197d01ff
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-d4c2d7d0-c3e5-490a-9d82-08bdcfc26d78 ;
+        oboe:measurementFor  oquo:observation-698aba18-eeaf-47ca-97ee-7cba891253b9 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:instant-6c7598f4-d45c-4570-a0e4-c1c0fa888d64
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:19.03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-e855c3b7-2d91-40ec-8f6d-df37b13dfe0a
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-cd48c308-c012-49fb-9ceb-f3213de2a9a4 ;
+        oboe:measurementFor  oquo:observation-3e033296-1596-4bed-85bc-29a984c1f9ed ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-cd48c308-c012-49fb-9ceb-f3213de2a9a4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e855c3b7-2d91-40ec-8f6d-df37b13dfe0a ;
+        res:hasLiteralValue    "0.782608695652174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-197789d0-fc53-4c09-a547-4b5941067c9d .
+
+oquo:qualityValue-58421dd7-c037-4e6b-b0d8-fb7a2b5ee930
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6c5bdd2c-7c6c-4986-88c1-54f068548545 ;
+        res:hasLiteralValue    "0.9565217391304348"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c70c3af1-9253-49bc-a237-ebd245bf7b45 .
+
+oquo:instant-ac86b2c6-57f5-494f-9abb-481ec2ac825e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:40:18.817Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .

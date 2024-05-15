@@ -1,0 +1,1519 @@
+workDir = data.biodivportal.gfbio.org
+/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/output created.
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/pato-20240329-owl__pato.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pato__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pato__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at org.semanticweb.HermiT.tableau.TupleIndex$TrieNodeManager.newTrieNode(TupleIndex.java:272)
+	at org.semanticweb.HermiT.tableau.TupleIndex.getChildNodeAddIfNecessary(TupleIndex.java:150)
+	at org.semanticweb.HermiT.tableau.TupleIndex.addTuple(TupleIndex.java:60)
+	at org.semanticweb.HermiT.tableau.ExtensionTableWithTupleIndexes.addTuple(ExtensionTableWithTupleIndexes.java:57)
+	at org.semanticweb.HermiT.tableau.ExtensionManager.addAssertion(ExtensionManager.java:367)
+	at org.semanticweb.HermiT.tableau.DLClauseEvaluator$DeriveUnaryFact.execute(DLClauseEvaluator.java:561)
+	at org.semanticweb.HermiT.tableau.DLClauseEvaluator.evaluate(DLClauseEvaluator.java:85)
+	at org.semanticweb.HermiT.tableau.HyperresolutionManager.applyDLClauses(HyperresolutionManager.java:247)
+	at org.semanticweb.HermiT.tableau.Tableau.doIteration(Tableau.java:418)
+	at org.semanticweb.HermiT.tableau.Tableau.runCalculus(Tableau.java:382)
+	at org.semanticweb.HermiT.tableau.Tableau.isSatisfiable(Tableau.java:310)
+	at org.semanticweb.HermiT.tableau.Tableau.isSatisfiable(Tableau.java:260)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.buildModelForConcept(QuasiOrderClassification.java:192)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.updateSubsumptionsUsingLeafNodeStrategy(QuasiOrderClassification.java:153)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.buildHierarchy(QuasiOrderClassification.java:85)
+	at org.semanticweb.HermiT.hierarchy.QuasiOrderClassification.classify(QuasiOrderClassification.java:79)
+	at org.semanticweb.HermiT.Reasoner.classifyAtomicConcepts(Reasoner.java:2052)
+	at org.semanticweb.HermiT.Reasoner.classifyClasses(Reasoner.java:735)
+	at org.semanticweb.HermiT.Reasoner.precomputeInferences(Reasoner.java:562)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:28)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+may 15, 2024 3:22:56 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Obtaining metrics to calculate
+may 15, 2024 3:22:57 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Metrics obtained
+may 15, 2024 3:22:57 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Loading pato-20240329-owl__pato.owl
+may 15, 2024 3:23:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN:  pato-20240329-owl__pato.owl loaded
+may 15, 2024 3:23:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:08 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:08 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:10 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:10 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:12 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:12 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:14 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:14 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0090068 (positive regulation of cell cycle process)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051302 (regulation of cell division)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000146 (negative regulation of cell motility)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1904375 (regulation of protein localization to cell periphery)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070003 (small basket cell morphology)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070013 (spiny stellate cell morphology)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0003379 (establishment of cell polarity involved in gastrulation cell migration)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0010948 (negative regulation of cell cycle process)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0045786 (negative regulation of cell cycle)
+may 15, 2024 3:23:19 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0010648 (negative regulation of cell communication)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0008219 (cell death)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0043069 (negative regulation of programmed cell death)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0030336 (negative regulation of cell migration)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0086070 (SA node cell to atrial cardiac muscle cell communication)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0045931 (positive regulation of mitotic cell cycle)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0008283 (cell population proliferation)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0086068 (Purkinje myocyte to ventricular cardiac muscle cell communication)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0086065 (cell communication involved in cardiac conduction)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0150146 (cell junction disassembly)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PR_P13595 (neural cell adhesion molecule 1 (mouse))
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0010647 (positive regulation of cell communication)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070011 (chandelier cell morphology)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0043067 (regulation of programmed cell death)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051726 (regulation of cell cycle)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PR_000001023 (neural cell adhesion molecule NCAM)
+may 15, 2024 3:23:20 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0021799 (cerebral cortex radially oriented cell migration)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0001775 (cell activation)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1901888 (regulation of cell junction assembly)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0010006 (cell morphology)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PR_000001024 (neural cell adhesion molecule 1)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070027 (bitufted dendrite cell morphology)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0032878 (regulation of establishment or maintenance of cell polarity)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070005 (nest basket cell morphology)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0007113 (endomitotic cell cycle)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0010646 (regulation of cell communication)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051445 (regulation of meiotic cell cycle)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/UBERON_0005162 (multi cell part structure)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0007346 (regulation of mitotic cell cycle)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0061351 (neural precursor cell proliferation)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0009786 (regulation of asymmetric cell division)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0050866 (negative regulation of cell activation)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1902414 (protein localization to cell junction)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051781 (positive regulation of cell division)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0048870 (cell motility)
+may 15, 2024 3:23:21 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000177 (regulation of neural precursor cell proliferation)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0001667 (ameboidal-type cell migration)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0030010 (establishment of cell polarity)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070012 (bitufted cell morphology)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0050867 (positive regulation of cell activation)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0022402 (cell cycle process)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000496 (negative regulation of cell proliferation involved in compound eye morphogenesis)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1904376 (negative regulation of protein localization to cell periphery)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0008356 (asymmetric cell division)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0007163 (establishment or maintenance of cell polarity)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0010564 (regulation of cell cycle process)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0001539 (cilium or flagellum-dependent cell motility)
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PR_Q64314 (hematopoietic progenitor cell antigen CD34 (mouse))
+may 15, 2024 3:23:22 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0030335 (positive regulation of cell migration)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070062 (bistratified dendrite cell morphology)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051446 (positive regulation of meiotic cell cycle)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0045769 (negative regulation of asymmetric cell division)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0086067 (AV node cell to bundle of His cell communication)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1901890 (positive regulation of cell junction assembly)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000147 (positive regulation of cell motility)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0035736 (cell proliferation involved in compound eye morphogenesis)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0030334 (regulation of cell migration)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0043068 (positive regulation of programmed cell death)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0042127 (regulation of cell population proliferation)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0045930 (negative regulation of mitotic cell cycle)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070002 (basket cell morphology)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PR_000001022 (neural cell adhesion molecule)
+may 15, 2024 3:23:23 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0021814 (cell motility involved in cerebral cortex radial glia guided migration)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051301 (cell division)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000179 (positive regulation of neural precursor cell proliferation)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0030054 (cell junction)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000495 (regulation of cell proliferation involved in compound eye morphogenesis)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051447 (negative regulation of meiotic cell cycle)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070063 (monostratified dendrite cell morphology)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0003365 (establishment of cell polarity involved in ameboidal cell migration)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0007049 (cell cycle)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1903047 (mitotic cell cycle process)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0086027 (AV node cell to bundle of His cell signaling)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0086018 (SA node cell to atrial cardiac muscle cell signaling)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0034329 (cell junction assembly)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0016477 (cell migration)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1903046 (meiotic cell cycle process)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0045770 (positive regulation of asymmetric cell division)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0008284 (positive regulation of cell population proliferation)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/PATO_0070004 (large basket cell morphology)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1904377 (positive regulation of protein localization to cell periphery)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000178 (negative regulation of neural precursor cell proliferation)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000114 (regulation of establishment of cell polarity)
+may 15, 2024 3:23:24 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0008285 (negative regulation of cell population proliferation)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000497 (positive regulation of cell proliferation involved in compound eye morphogenesis)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1990778 (protein localization to cell periphery)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0012501 (programmed cell death)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0034330 (cell junction organization)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/UBERON_0011585 (cell condensation)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_1901889 (negative regulation of cell junction assembly)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0045787 (positive regulation of cell cycle)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_2000145 (regulation of cell motility)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0051782 (negative regulation of cell division)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0071944 (cell periphery)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0007154 (cell communication)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.metrics.LexicallySuggestLogicallyDefineMetric calculate
+INFORMACIÓN: http://purl.obolibrary.org/obo/CL_0000000 (cell) not related with http://purl.obolibrary.org/obo/GO_0050865 (regulation of cell activation)
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:25 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0007009 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000850 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000738 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000376 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023079 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000362 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000361 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000478 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000479 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000514 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000513 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000515 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023092 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023094 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023093 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0008002 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023095 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000766 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000765 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000402 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000527 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000526 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0008017 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023066 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000542 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000300 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000540 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0008028 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0008025 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023077 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000547 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000549 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000550 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002610 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000675 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000552 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0009000 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0008031 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023168 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000558 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000556 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002612 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000311 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000310 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002620 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000303 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000306 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000562 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000307 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000309 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000070 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:28 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0010012 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000691 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0010021 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0010022 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000339 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002521 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000103 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000101 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000100 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0010017 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0011001 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000107 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000104 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000108 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000598 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000232 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000595 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000047 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000068 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000067 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000117 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000066 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000063 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002421 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002422 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002664 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4033050 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000365 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000122 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0011022 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0011021 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000128 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4033018 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000005 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000032 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002547 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002548 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002553 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002676 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000029 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000136 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002551 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000025 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0012001 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000138 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002557 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000042 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000023 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0011027 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4023111 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_2000013 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000029 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000042 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002333 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000031 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000030 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000397 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_3000004 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0009097 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000049 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000058 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000057 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000056 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000051 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002363 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002240 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002494 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002372 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_4030029 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0000099 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002068 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002072 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002073 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000410 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002087 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1000409 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0002086 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0005000 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_1001609 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.metrics.SystematicNamingMetric calculate
+INFORMACIÓN: The class http://purl.obolibrary.org/obo/CL_0005024 is subclass of http://purl.obolibrary.org/obo/CL_0000000 but there are no lexical regularities in common.
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for pato-20240329-owl__pato.owl	-Done
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for pato-20240329-owl__pato.owl	-Calculating
+may 15, 2024 3:23:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for pato-20240329-owl__pato.owl	-Done
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/bohlmann-20231106-owl__bohlmann.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 7050 msec
+Building Neo4j graph from ontology model...
+Graph builded in 652464 msec
+Number of nodes: 53763
+Number of relationships: 106643
+[1/52882] Searching paths from leaves (maxDepth=8)...Last 1000 leaves path seaches finished in 14452 msec. NumberOfPaths: 1000, AggregatedOfPathLength: 2725Free mem./Max. mem.: 9.782321689029533Last 1000 leaves path seaches finished in 7138 msec. NumberOfPaths: 2000, AggregatedOfPathLength: 5358Free mem./Max. mem.: 3.9880508556962013Last 1000 leaves path seaches finished in 5690 msec. NumberOfPaths: 3000, AggregatedOfPathLength: 7810Free mem./Max. mem.: 14.983614658315977Last 1000 leaves path seaches finished in 5337 msec. NumberOfPaths: 4000, AggregatedOfPathLength: 10716Free mem./Max. mem.: 9.242432874937851Last 1000 leaves path seaches finished in 5134 msec. NumberOfPaths: 5000, AggregatedOfPathLength: 13484Free mem./Max. mem.: 16.465898603200912Last 1000 leaves path seaches finished in 4993 msec. NumberOfPaths: 6000, AggregatedOfPathLength: 16580Free mem./Max. mem.: 10.736731936534245Last 1000 leaves path seaches finished in 5128 msec. NumberOfPaths: 7000, AggregatedOfPathLength: 19780Free mem./Max. mem.: 5.040101458628973Last 1000 leaves path seaches finished in 4685 msec. NumberOfPaths: 8000, AggregatedOfPathLength: 22863Free mem./Max. mem.: 11.40694661686818Last 1000 leaves path seaches finished in 4842 msec. NumberOfPaths: 9000, AggregatedOfPathLength: 25896Free mem./Max. mem.: 5.7428841168681775Last 1000 leaves path seaches finished in 4337 msec. NumberOfPaths: 10000, AggregatedOfPathLength: 28636Free mem./Max. mem.: 11.37679039190213Last 1000 leaves path seaches finished in 3508 msec. NumberOfPaths: 11000, AggregatedOfPathLength: 31469Free mem./Max. mem.: 5.680159913996855Last 1000 leaves path seaches finished in 3798 msec. NumberOfPaths: 12000, AggregatedOfPathLength: 34079Free mem./Max. mem.: 10.715769231319427Last 1000 leaves path seaches finished in 4478 msec. NumberOfPaths: 13000, AggregatedOfPathLength: 36877Free mem./Max. mem.: 5.0517067313194275Last 1000 leaves path seaches finished in 4270 msec. NumberOfPaths: 14000, AggregatedOfPathLength: 39532Free mem./Max. mem.: 9.563299516836803Last 1000 leaves path seaches finished in 4091 msec. NumberOfPaths: 15000, AggregatedOfPathLength: 42390Free mem./Max. mem.: 13.362976163625717Last 1000 leaves path seaches finished in 3975 msec. NumberOfPaths: 16000, AggregatedOfPathLength: 45348Free mem./Max. mem.: 7.666345685720444Last 1000 leaves path seaches finished in 4654 msec. NumberOfPaths: 17000, AggregatedOfPathLength: 48099Free mem./Max. mem.: 10.93359390894572Last 1000 leaves path seaches finished in 3401 msec. NumberOfPaths: 18000, AggregatedOfPathLength: 50697Free mem./Max. mem.: 5.236995220184326Last 1000 leaves path seaches finished in 3953 msec. NumberOfPaths: 19000, AggregatedOfPathLength: 53287Free mem./Max. mem.: 7.96472355723381Last 1000 leaves path seaches finished in 4494 msec. NumberOfPaths: 20000, AggregatedOfPathLength: 56024Free mem./Max. mem.: 10.2516974012057Last 1000 leaves path seaches finished in 4921 msec. NumberOfPaths: 21000, AggregatedOfPathLength: 58677Free mem./Max. mem.: 4.555098712444305Last 1000 leaves path seaches finished in 4248 msec. NumberOfPaths: 22000, AggregatedOfPathLength: 60971Free mem./Max. mem.: 6.291947700083256Last 1000 leaves path seaches finished in 3629 msec. NumberOfPaths: 23000, AggregatedOfPathLength: 63085Free mem./Max. mem.: 8.024565503001213Last 1000 leaves path seaches finished in 4358 msec. NumberOfPaths: 24000, AggregatedOfPathLength: 65406Free mem./Max. mem.: 9.35606335600217Last 1000 leaves path seaches finished in 4025 msec. NumberOfPaths: 25000, AggregatedOfPathLength: 67879Free mem./Max. mem.: 3.692000856002172Last 1000 leaves path seaches finished in 3767 msec. NumberOfPaths: 26000, AggregatedOfPathLength: 70233Free mem./Max. mem.: 4.859080476065477Last 1000 leaves path seaches finished in 5227 msec. NumberOfPaths: 27000, AggregatedOfPathLength: 72675Free mem./Max. mem.: 6.446576118469238Last 1000 leaves path seaches finished in 4815 msec. NumberOfPaths: 28000, AggregatedOfPathLength: 75320Free mem./Max. mem.: 7.028871153791745Last 1000 leaves path seaches finished in 3607 msec. NumberOfPaths: 29000, AggregatedOfPathLength: 77874Free mem./Max. mem.: 7.778858952224255Last 1000 leaves path seaches finished in 4227 msec. NumberOfPaths: 30000, AggregatedOfPathLength: 80697Free mem./Max. mem.: 8.10511155674855Last 1000 leaves path seaches finished in 4187 msec. NumberOfPaths: 31000, AggregatedOfPathLength: 83911Free mem./Max. mem.: 8.091039458910625Last 1000 leaves path seaches finished in 3651 msec. NumberOfPaths: 32000, AggregatedOfPathLength: 86920Free mem./Max. mem.: 7.795541485150655Last 1000 leaves path seaches finished in 3775 msec. NumberOfPaths: 33000, AggregatedOfPathLength: 89959Free mem./Max. mem.: 7.064078251520793Last 1000 leaves path seaches finished in 3653 msec. NumberOfPaths: 34000, AggregatedOfPathLength: 92820Free mem./Max. mem.: 6.105740865071615Last 1000 leaves path seaches finished in 5148 msec. NumberOfPaths: 35000, AggregatedOfPathLength: 95518Free mem./Max. mem.: 9.933768026530743Last 1000 leaves path seaches finished in 3994 msec. NumberOfPaths: 36000, AggregatedOfPathLength: 98176Free mem./Max. mem.: 9.029517819484074Last 1000 leaves path seaches finished in 4278 msec. NumberOfPaths: 37000, AggregatedOfPathLength: 100367Free mem./Max. mem.: 11.1621489127477Last 1000 leaves path seaches finished in 3709 msec. NumberOfPaths: 38000, AggregatedOfPathLength: 102907Free mem./Max. mem.: 5.498086412747702Last 1000 leaves path seaches finished in 3522 msec. NumberOfPaths: 39000, AggregatedOfPathLength: 105498Free mem./Max. mem.: 7.147001226743062Last 1000 leaves path seaches finished in 4591 msec. NumberOfPaths: 40000, AggregatedOfPathLength: 108100Free mem./Max. mem.: 8.236615732312202Last 1000 leaves path seaches finished in 3740 msec. NumberOfPaths: 41000, AggregatedOfPathLength: 111270Free mem./Max. mem.: 8.97950679063797Last 1000 leaves path seaches finished in 3467 msec. NumberOfPaths: 42000, AggregatedOfPathLength: 114043Free mem./Max. mem.: 9.364042927821476Last 1000 leaves path seaches finished in 3577 msec. NumberOfPaths: 43000, AggregatedOfPathLength: 116768Free mem./Max. mem.: 9.316883484522503Last 1000 leaves path seaches finished in 3531 msec. NumberOfPaths: 44000, AggregatedOfPathLength: 119654Free mem./Max. mem.: 8.901531125108402Last 1000 leaves path seaches finished in 4715 msec. NumberOfPaths: 45000, AggregatedOfPathLength: 122475Free mem./Max. mem.: 15.070629554490248Last 1000 leaves path seaches finished in 3746 msec. NumberOfPaths: 46000, AggregatedOfPathLength: 125596Free mem./Max. mem.: 9.375307895243168Last 1000 leaves path seaches finished in 3496 msec. NumberOfPaths: 47000, AggregatedOfPathLength: 128194Free mem./Max. mem.: 13.260169451435408Last 1000 leaves path seaches finished in 3347 msec. NumberOfPaths: 48000, AggregatedOfPathLength: 131082Free mem./Max. mem.: 7.563538973530133Last 1000 leaves path seaches finished in 3707 msec. NumberOfPaths: 49000, AggregatedOfPathLength: 133555Free mem./Max. mem.: 10.94678056736787Last 1000 leaves path seaches finished in 4055 msec. NumberOfPaths: 50000, AggregatedOfPathLength: 136167Free mem./Max. mem.: 5.250181878606478Last 1000 leaves path seaches finished in 3942 msec. NumberOfPaths: 51000, AggregatedOfPathLength: 138760Free mem./Max. mem.: 8.04084489742915Last 1000 leaves path seaches finished in 3677 msec. NumberOfPaths: 52000, AggregatedOfPathLength: 141351Free mem./Max. mem.: 10.223358248670895Oquare metrics calculated in 922757 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/bohlmann__oquare.ttl".
+Finish. Execution Time = 933764 msec
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+may 15, 2024 3:39:07 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Obtaining metrics to calculate
+may 15, 2024 3:39:07 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Metrics obtained
+may 15, 2024 3:39:08 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Loading bohlmann-20231106-owl__bohlmann.owl
+may 15, 2024 3:39:24 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN:  bohlmann-20231106-owl__bohlmann.owl loaded
+may 15, 2024 3:39:24 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:28 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:28 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:30 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:31 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:31 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:34 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:34 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:36 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:36 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:36 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:36 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:37 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:38 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:39 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:40 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:40 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:40 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:40 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for bohlmann-20231106-owl__bohlmann.owl	-Done
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Calculating
+may 15, 2024 3:39:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for bohlmann-20231106-owl__bohlmann.owl	-Done
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/recordbasis-20230511-owl__recordbasis.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 51 msec
+Building Neo4j graph from ontology model...
+Graph builded in 2253 msec
+Number of nodes: 16
+Number of relationships: 28
+[1/14] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 5797 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/recordbasis__oquare.ttl".
+Finish. Execution Time = 19193 msec
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+may 15, 2024 3:40:03 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Obtaining metrics to calculate
+may 15, 2024 3:40:03 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Metrics obtained
+may 15, 2024 3:40:03 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Loading recordbasis-20230511-owl__recordbasis.owl
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN:  recordbasis-20230511-owl__recordbasis.owl loaded
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:04 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for recordbasis-20230511-owl__recordbasis.owl	-Done
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Calculating
+may 15, 2024 3:40:05 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for recordbasis-20230511-owl__recordbasis.owl	-Done
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/i-adopt-20230624-owl__i-adopt.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 45 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1893 msec
+Number of nodes: 6
+Number of relationships: 8
+[1/4] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 5231 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/i-adopt__oquare.ttl".
+Finish. Execution Time = 17690 msec
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+may 15, 2024 3:40:25 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Obtaining metrics to calculate
+may 15, 2024 3:40:25 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Metrics obtained
+may 15, 2024 3:40:25 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Loading i-adopt-20230624-owl__i-adopt.owl
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN:  i-adopt-20230624-owl__i-adopt.owl loaded
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:26 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for i-adopt-20230624-owl__i-adopt.owl	-Done
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Calculating
+may 15, 2024 3:40:27 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for i-adopt-20230624-owl__i-adopt.owl	-Done
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/pto-20230801-owl__to-basic.obo --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 534 msec
+Building Neo4j graph from ontology model...
+Graph builded in 25213 msec
+Number of nodes: 1669
+Number of relationships: 3068
+[1/1148] Searching paths from leaves (maxDepth=26)...Last 1000 leaves path seaches finished in 13697 msec. NumberOfPaths: 1351, AggregatedOfPathLength: 9591Free mem./Max. mem.: 7.032470218837261Oquare metrics calculated in 43266 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/pto__oquare.ttl".
+Finish. Execution Time = 59625 msec
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+may 15, 2024 3:41:28 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Obtaining metrics to calculate
+may 15, 2024 3:41:29 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Metrics obtained
+may 15, 2024 3:41:29 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Loading pto-20230801-owl__to-basic.obo
+may 15, 2024 3:41:32 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN:  pto-20230801-owl__to-basic.obo loaded
+may 15, 2024 3:41:32 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:32 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:32 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:33 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:33 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:33 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:33 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:33 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:33 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:34 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:34 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for pto-20230801-owl__to-basic.obo	-Done
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for pto-20230801-owl__to-basic.obo	-Calculating
+may 15, 2024 3:41:35 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for pto-20230801-owl__to-basic.obo	-Done
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/geonames-20230901-owl__geonames-ontology-v3.3.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/geonames__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/geonames__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 2500 msec
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+may 15, 2024 3:41:40 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Obtaining metrics to calculate
+may 15, 2024 3:41:40 A. M. es.um.dis.tecnomod.huron.main.Huron getMetricsToCalculate
+INFORMACIÓN: Metrics obtained
+may 15, 2024 3:41:41 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Loading geonames-20230901-owl__geonames-ontology-v3.3.rdf
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN:  geonames-20230901-owl__geonames-ontology-v3.3.rdf loaded
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of lexical regularities classes for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularities per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexical regularity class percentage for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:45 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Lexically suggest logically define for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Systematic naming for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Number of classes for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per annotation property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per data property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Names per object property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per annotation property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per data property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Synonyms per object property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per class for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per annotation property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per data property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Descriptions per object property for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: Classes with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: ObjectProperties with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: DataProperties with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no name for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no description for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Calculating
+may 15, 2024 3:41:46 A. M. es.um.dis.tecnomod.huron.tasks.MetricCalculationTask call
+INFORMACIÓN: AnnotationProperties with no synonym for geonames-20230901-owl__geonames-ontology-v3.3.rdf	-Done
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.biodivportal.gfbio.org/envo-20240217-owl__envo.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/envo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.biodivportal.gfbio.org/envo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying

@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:instant-8b8aa21d-6ff9-4a36-b97e-324a8db17a08
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.078Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-0fefa5d3-c435-425d-8e20-a366c8c12ec4
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-cc455ae0-48aa-4ab5-8825-9ca5f20b70ff ;
+        oboe:measurementFor  oquo:observation-c87acc22-5a5e-458d-bae0-6f0320de18aa ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-8c380752-7776-4e8b-81a2-ab1702f4e9c6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-89554f28-fcf6-4487-a231-db619daf8fcd ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-8b8aa21d-6ff9-4a36-b97e-324a8db17a08 .
+
+oquo:evaluation-730acc24-feeb-4ca2-b117-2684be8e0d02
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-40cbab08-09dd-44e9-9f1a-84c1704c9edc ;
+        time:hasTime              oquo:instant-f8cfb69d-33ce-4d8a-9ff1-7234d31e4956 ;
+        oquo:hasObservation       oquo:observation-ca2378e7-c0b0-4585-93b6-3dd266789ce8 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-ce919700-6eea-468d-ba97-4e3bd6a47ffb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d84c8bf7-fbec-4716-a8a8-aba90916fd2f ;
+        res:hasLiteralValue    "0.038461538461538464"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67dcd624-66b5-427e-a88b-86174c622226 .
+
+oquo:instant-fcd715c0-a804-477f-b9b8-5c4ce564c56f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.068Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-c19b7d75-f3bf-4c2b-a4bf-38ca3bd00de0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-45d242b1-ff2c-4862-8f89-cf61e9aebd36 ;
+        time:hasTime              oquo:instant-8061b5a2-73c1-42dc-b6a8-0dd0839aaf51 ;
+        oquo:hasObservation       oquo:observation-cabe5f56-c610-4335-9b98-e95ed081bfc2 .
+
+oquo:evaluation-a09ee571-618d-45d2-bec5-1107cfdf2415
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f9aab71f-7f32-498a-9494-206056b2ea01 ;
+        time:hasTime              oquo:instant-2324f6f5-7078-4b7f-a93d-b3b095733714 ;
+        oquo:hasObservation       oquo:observation-211f6fda-87ee-488d-94bd-43adf70de818 .
+
+oquo:metric-563c3ced-08c6-4c18-95c8-488ec5b4b49d
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2e9f5bb2-f32c-4746-9a55-56533cd9536e ;
+        oboe:measurementFor  oquo:observation-2c9acce8-ae37-4016-b80c-f06211930faa ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:qualityValue-01e6e142-e474-4083-991b-34ce70cf16f2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-939ba2e8-2d21-4564-80c2-3d9165d3c938 ;
+        res:hasLiteralValue    "0.7272727272727273"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8d873237-979a-4feb-82a9-d2c398a9a604 .
+
+oquo:instant-7936c4ed-5821-49f1-b974-3e9f3b7523a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.104Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8aa05bcd-5bd6-4bc3-9d62-652e7915f6dd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2531562e-db4f-4185-b8ed-c9b08acecdca ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-70b14003-e262-4516-b0eb-0e72b87f643b .
+
+oquo:qualityValue-6bf1fc2a-832c-427f-871a-6021d67d3ec9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2abfd3fa-8c18-4688-9207-3782a28ed6f3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7ea591b7-8d9b-401b-8a64-cca7a1dfbf00 .
+
+oquo:instant-5b3832d4-b304-4428-96c8-c9e7129048a6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.973Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-2229acc1-bce0-46b3-a0b3-73aacfba8a95
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3de6ca32-212a-4d6c-8b85-51e4613e9a63 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-7936c4ed-5821-49f1-b974-3e9f3b7523a7 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-c6ef25d0-fa91-4fb1-8236-9eec4e97d1ff
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5b806dbc-9885-4e48-8ce2-9b1ea87d66cf ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-b48347a7-d8a8-4902-9ce4-fc13e2c7a0d4 .
+
+oquo:observation-aff2a4ea-64df-45f9-ab36-8aa21c181694
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fb80cfe2-b474-443e-920f-e46b1504b126 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-96d2c602-144c-4c63-9cf7-24e6dc919206 .
+
+oquo:metric-89554f28-fcf6-4487-a231-db619daf8fcd
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-25efe7dc-3ec7-4693-87a7-c044c9d6f06f ;
+        oboe:measurementFor  oquo:observation-8c380752-7776-4e8b-81a2-ab1702f4e9c6 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-df4dbb74-ec0e-4d1d-8436-57045e3efcb9
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8eb56b3d-cd47-4b6e-a621-f2348c634373 ;
+        oboe:measurementFor  oquo:observation-bf129bf1-112e-4528-8255-db06f0c3feb6 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-cc455ae0-48aa-4ab5-8825-9ca5f20b70ff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0fefa5d3-c435-425d-8e20-a366c8c12ec4 ;
+        res:hasLiteralValue    "0.05128205128205128"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2112b841-fce8-4df5-a4bf-7020da834d83 .
+
+oquo:instant-1984feaa-9c46-45eb-96d3-60309863aa3b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.106Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d2ec4ba0-4a66-421e-896d-00c2a0115e38
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.887Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-211f6fda-87ee-488d-94bd-43adf70de818
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7702fb3b-b090-4a4e-a7a4-aa3cd7c8da22 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-2324f6f5-7078-4b7f-a93d-b3b095733714 .
+
+oquo:instant-4e8253ff-be10-4eb1-a83f-59d45715d7c5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.101Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4c71fcee-e2fe-4216-98d2-f51886299ccd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.791Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-60699ca3-43a4-4b06-9862-a93396650d0f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8eb56b3d-cd47-4b6e-a621-f2348c634373 ;
+        time:hasTime              oquo:instant-8586026e-ddfb-4a76-9445-a39c03b23909 ;
+        oquo:hasObservation       oquo:observation-bf129bf1-112e-4528-8255-db06f0c3feb6 .
+
+oquo:qualityValue-2e9f5bb2-f32c-4746-9a55-56533cd9536e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-563c3ced-08c6-4c18-95c8-488ec5b4b49d ;
+        res:hasLiteralValue    "0.031578947368421054"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0649876e-fc6a-4dfa-b972-fd049fe19394 .
+
+oquo:qualityValue-c1409c08-27cd-4878-87f4-f2f0cd5cbb6a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a39e2c07-1b0c-4c5f-bd75-4e5269bc3363 ;
+        res:hasLiteralValue    "0.7578947368421053"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fa1e7f94-c1c9-47d6-99ff-db3d160f7749 .
+
+oquo:qualityValue-e2dd93c0-de3f-4f17-afdd-0225301dd0ab
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-18c35185-4dfe-4b89-87be-fe9949dabd36 ;
+        res:hasLiteralValue    "1.8974358974358974"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-15cd8503-a0a4-4fad-84e8-470a25e16517 .
+
+oquo:observation-b6c1d9d6-d31d-4b32-80b6-af643b678a0c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d59fb0b3-471f-4b61-83f0-3a1c7baa0294 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-108beff6-c558-40d9-b385-312e2519facd .
+
+oquo:evaluation-a8fef51a-b589-4c74-8536-cd88b80e558c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3095237a-f7bc-4b6b-b6ff-48e5fdd11400 ;
+        time:hasTime              oquo:instant-af186175-cd8b-4f0c-8dd4-62af13ef19df ;
+        oquo:hasObservation       oquo:observation-9163e011-57f3-441d-a11e-ade35e0f04b6 .
+
+oquo:observation-9163e011-57f3-441d-a11e-ade35e0f04b6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c1559346-5f0e-4cdc-aa57-b23e49b0a172 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-af186175-cd8b-4f0c-8dd4-62af13ef19df .
+
+oquo:metric-b887638b-7173-4069-9dc0-25febaa008ce
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-aaf93bb5-20b6-4454-badf-206d486d7ccb ;
+        oboe:measurementFor  oquo:observation-26461b54-4bbd-4e0a-9956-61213d325a72 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-238aa0ec-9384-4b58-a0d3-4d0f3f86829d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2531562e-db4f-4185-b8ed-c9b08acecdca ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-d2ec4ba0-4a66-421e-896d-00c2a0115e38 .
+
+oquo:evaluation-f485c1d8-e2ae-44ba-bcb8-42a49891515f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-cd839519-55b0-4c83-9479-4a9d9169c186 ;
+        time:hasTime              oquo:instant-5b3832d4-b304-4428-96c8-c9e7129048a6 ;
+        oquo:hasObservation       oquo:observation-55c63dd9-4cfd-4df8-98b4-d1878996375d .
+
+<http://www.aidimme.es/FurnitureSectorOntology.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:metric-2abfd3fa-8c18-4688-9207-3782a28ed6f3
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-6bf1fc2a-832c-427f-871a-6021d67d3ec9 ;
+        oboe:measurementFor  oquo:observation-3f6418c3-b714-40c6-9b66-f55206b06759 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-5a85c55a-947b-4d24-8078-ef1cee642edc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d59fb0b3-471f-4b61-83f0-3a1c7baa0294 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-17c56879-b238-4166-9a43-95cee08d9205 .
+
+oquo:instant-efedad62-51c8-49ed-84e0-cfc835544116
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.09Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-a2a4296d-ac73-4250-aa94-d4cec9fcb831
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.108Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a5b5d73d-433e-4afa-b6f0-6945eb50e00d
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-cfc950c0-5bbf-486b-aa6a-4c6619425f6f ;
+        oboe:measurementFor  oquo:observation-1a8f751b-75ca-491b-8213-a7f9882607ba ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-04c179c7-40eb-415e-971c-74cfd7392b80
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-939ba2e8-2d21-4564-80c2-3d9165d3c938 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-a2a4296d-ac73-4250-aa94-d4cec9fcb831 .
+
+oquo:observation-ac4322af-4bdf-4c45-aae2-2f2d8f48808b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f7f6ecba-203a-4777-8862-560a2df8b35c ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-aa16ca72-7355-4e02-83d4-08a5563db530 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-bb2f183f-57a0-4112-a623-d8c80d1b69b7
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-40cbab08-09dd-44e9-9f1a-84c1704c9edc ;
+        oboe:measurementFor  oquo:observation-ca2378e7-c0b0-4585-93b6-3dd266789ce8 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:observation-2bc941e3-adfe-4bf2-bdcb-459500081306
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d84c8bf7-fbec-4716-a8a8-aba90916fd2f ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-a216d984-669b-4b17-8bf3-9a6e93bacd6d .
+
+oquo:metric-7702fb3b-b090-4a4e-a7a4-aa3cd7c8da22
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-f9aab71f-7f32-498a-9494-206056b2ea01 ;
+        oboe:measurementFor  oquo:observation-211f6fda-87ee-488d-94bd-43adf70de818 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:instant-e7b51f44-bc23-4571-8785-bbc5ddf1d957
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.852Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-33440826-5378-4419-a2e8-c114aa662c30
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fb80cfe2-b474-443e-920f-e46b1504b126 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cd56ebeb-13be-4fce-823c-ffe217b03315 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-ce36d335-3ebf-4568-a538-48620e5c6acb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3de6ca32-212a-4d6c-8b85-51e4613e9a63 ;
+        res:hasLiteralValue    "0.968421052631579"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-29972de7-439c-47b3-a6af-82254a86a3b4 .
+
+oquo:metric-0e7b42e5-6a22-43c9-b68b-5c45110171d6
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c04fa197-2dbb-4cb9-ba43-3b7e8b1337f4 ;
+        oboe:measurementFor  oquo:observation-2950c16b-1449-4d70-8466-48a56386930d ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:observation-cabe5f56-c610-4335-9b98-e95ed081bfc2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7ce33e7e-deef-4cd1-a5e8-3e64e5ef5a51 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-8061b5a2-73c1-42dc-b6a8-0dd0839aaf51 .
+
+oquo:qualityValue-9f36f786-4dbb-41db-85af-73df72404884
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d660c239-001a-4af6-aacc-e1630f2ddb73 ;
+        res:hasLiteralValue    "1.988558352402746"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb45c266-4001-44b4-8cea-a265dc9311f6 .
+
+oquo:qualityValue-25efe7dc-3ec7-4693-87a7-c044c9d6f06f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-89554f28-fcf6-4487-a231-db619daf8fcd ;
+        res:hasLiteralValue    "0.9743589743589743"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-face3551-8713-4a06-8c7c-bfb1f87b67d6 .
+
+oquo:qualityValue-78bf1a3f-8666-4600-be64-487c9b32eae8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-02ac557b-5d1f-48c1-a7f4-63b278d560d2 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0477bf02-af93-4ca3-a778-94bdabf04d1d .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-cfc950c0-5bbf-486b-aa6a-4c6619425f6f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a5b5d73d-433e-4afa-b6f0-6945eb50e00d ;
+        res:hasLiteralValue    "0.021052631578947368"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-59d43877-8c23-407d-b6d1-7655e6cba44e .
+
+oquo:qualityValue-3095237a-f7bc-4b6b-b6ff-48e5fdd11400
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c1559346-5f0e-4cdc-aa57-b23e49b0a172 ;
+        res:hasLiteralValue    "0.4842105263157895"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a8fef51a-b589-4c74-8536-cd88b80e558c .
+
+oquo:evaluation-f4d910f2-de2e-4867-8633-e0062e987f1d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ed272588-ddeb-4f59-ad94-e0c8ccfe5061 ;
+        time:hasTime              oquo:instant-4c71fcee-e2fe-4216-98d2-f51886299ccd ;
+        oquo:hasObservation       oquo:observation-bd53eb94-7d8e-48e6-a65c-2a6667795f40 .
+
+oquo:qualityValue-564a21a4-7c28-41dc-8bb8-e1573f52d3a3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f7f6ecba-203a-4777-8862-560a2df8b35c ;
+        res:hasLiteralValue    "0.03260869565217391"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a19b6978-536b-47ef-a5a3-d795fd3cfaf9 .
+
+oquo:observation-2950c16b-1449-4d70-8466-48a56386930d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0e7b42e5-6a22-43c9-b68b-5c45110171d6 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-20f85667-5fad-45b9-b76b-f72386c4eef8 .
+
+oquo:evaluation-67e0dff8-e133-4e22-b824-f852108fbc0c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-aaf93bb5-20b6-4454-badf-206d486d7ccb ;
+        time:hasTime              oquo:instant-11af72cf-8c62-4211-baa8-dc1a12c533d5 ;
+        oquo:hasObservation       oquo:observation-26461b54-4bbd-4e0a-9956-61213d325a72 .
+
+oquo:observation-bd53eb94-7d8e-48e6-a65c-2a6667795f40
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c0783501-072b-4337-b531-6dd77c28b659 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-4c71fcee-e2fe-4216-98d2-f51886299ccd .
+
+oquo:metric-d59fb0b3-471f-4b61-83f0-3a1c7baa0294
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-5a85c55a-947b-4d24-8078-ef1cee642edc ;
+        oboe:measurementFor  oquo:observation-b6c1d9d6-d31d-4b32-80b6-af643b678a0c ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:qualityValue-ed272588-ddeb-4f59-ad94-e0c8ccfe5061
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c0783501-072b-4337-b531-6dd77c28b659 ;
+        res:hasLiteralValue    "875.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f4d910f2-de2e-4867-8633-e0062e987f1d .
+
+oquo:observation-7e6d216d-4f83-4eaa-9c43-459b19d7ebfa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-60e5478c-71ae-4a60-a218-cfbd7e304299 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-8a441438-6640-4db0-b03d-963dac62d3cb .
+
+oquo:metric-c1559346-5f0e-4cdc-aa57-b23e49b0a172
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3095237a-f7bc-4b6b-b6ff-48e5fdd11400 ;
+        oboe:measurementFor  oquo:observation-9163e011-57f3-441d-a11e-ade35e0f04b6 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-aaf93bb5-20b6-4454-badf-206d486d7ccb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b887638b-7173-4069-9dc0-25febaa008ce ;
+        res:hasLiteralValue    "1.815217391304348"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67e0dff8-e133-4e22-b824-f852108fbc0c .
+
+oquo:metric-47fa05d5-55c2-4868-a2fc-270a3952b4bf
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-151b7af9-8c2e-4268-a234-6a6ad2ac904f ;
+        oboe:measurementFor  oquo:observation-48b5db26-d58b-488f-bb15-a967758f3a62 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7ea591b7-8d9b-401b-8a64-cca7a1dfbf00
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-6bf1fc2a-832c-427f-871a-6021d67d3ec9 ;
+        time:hasTime              oquo:instant-1984feaa-9c46-45eb-96d3-60309863aa3b ;
+        oquo:hasObservation       oquo:observation-3f6418c3-b714-40c6-9b66-f55206b06759 .
+
+oquo:observation-26461b54-4bbd-4e0a-9956-61213d325a72
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b887638b-7173-4069-9dc0-25febaa008ce ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-11af72cf-8c62-4211-baa8-dc1a12c533d5 .
+
+oquo:instant-20f85667-5fad-45b9-b76b-f72386c4eef8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.839Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c87acc22-5a5e-458d-bae0-6f0320de18aa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0fefa5d3-c435-425d-8e20-a366c8c12ec4 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-369ef225-9a94-4b37-b7c4-b5e307dbff15 .
+
+oquo:evaluation-0477bf02-af93-4ca3-a778-94bdabf04d1d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-78bf1a3f-8666-4600-be64-487c9b32eae8 ;
+        time:hasTime              oquo:instant-67fbe1fb-07c3-4f48-bc66-cd42f59a9120 ;
+        oquo:hasObservation       oquo:observation-161ac789-d310-4829-8668-3d89f50109ea .
+
+oquo:observation-2c9acce8-ae37-4016-b80c-f06211930faa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-563c3ced-08c6-4c18-95c8-488ec5b4b49d ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-51666b3f-79b4-4140-add9-135a2b156df8 .
+
+oquo:instant-0bac8cf0-288b-4304-a4be-20d16a5bce6d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.841Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-939ba2e8-2d21-4564-80c2-3d9165d3c938
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-01e6e142-e474-4083-991b-34ce70cf16f2 ;
+        oboe:measurementFor  oquo:observation-04c179c7-40eb-415e-971c-74cfd7392b80 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-3f6418c3-b714-40c6-9b66-f55206b06759
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2abfd3fa-8c18-4688-9207-3782a28ed6f3 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-1984feaa-9c46-45eb-96d3-60309863aa3b .
+
+oquo:instant-8a441438-6640-4db0-b03d-963dac62d3cb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.109Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-8061b5a2-73c1-42dc-b6a8-0dd0839aaf51
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.043Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-17c56879-b238-4166-9a43-95cee08d9205
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5a85c55a-947b-4d24-8078-ef1cee642edc ;
+        time:hasTime              oquo:instant-108beff6-c558-40d9-b385-312e2519facd ;
+        oquo:hasObservation       oquo:observation-b6c1d9d6-d31d-4b32-80b6-af643b678a0c .
+
+oquo:instant-8586026e-ddfb-4a76-9445-a39c03b23909
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:31:59.073Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-69bd1e76-7555-41f8-8b3a-ffd275d7b101
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-18c35185-4dfe-4b89-87be-fe9949dabd36 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-16da54cf-71a0-41ca-9a9d-37352e44d7cd .
+
+oquo:metric-f7f6ecba-203a-4777-8862-560a2df8b35c
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-564a21a4-7c28-41dc-8bb8-e1573f52d3a3 ;
+        oboe:measurementFor  oquo:observation-ac4322af-4bdf-4c45-aae2-2f2d8f48808b ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-45d242b1-ff2c-4862-8f89-cf61e9aebd36
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7ce33e7e-deef-4cd1-a5e8-3e64e5ef5a51 ;
+        res:hasLiteralValue    "0.8947368421052632"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c19b7d75-f3bf-4c2b-a4bf-38ca3bd00de0 .
+
+oquo:instant-96d2c602-144c-4c63-9cf7-24e6dc919206
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:31:58.453Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-8d873237-979a-4feb-82a9-d2c398a9a604
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-01e6e142-e474-4083-991b-34ce70cf16f2 ;
+        time:hasTime              oquo:instant-a2a4296d-ac73-4250-aa94-d4cec9fcb831 ;
+        oquo:hasObservation       oquo:observation-04c179c7-40eb-415e-971c-74cfd7392b80 .
+
+oquo:evaluation-f52d1910-1ca5-4ba9-a9a1-40381792b67c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3ff8b0dd-125c-4f9c-bd00-652ab46c846c ;
+        time:hasTime              oquo:instant-a0fbdf25-e2a8-456a-a2ba-c4700e02e039 ;
+        oquo:hasObservation       oquo:observation-c77b9d66-487e-41f9-9867-9ff2efc3c99d .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-e06e2e0d-6de5-4b35-97a6-d49b51666a80
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-7b65d242-b28b-47fa-8643-9579246f4e2e ;
+        oboe:measurementFor  oquo:observation-bec467a3-dd96-45fa-86aa-6dbd3dce1f03 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-ca2378e7-c0b0-4585-93b6-3dd266789ce8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bb2f183f-57a0-4112-a623-d8c80d1b69b7 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-f8cfb69d-33ce-4d8a-9ff1-7234d31e4956 .
+
+oquo:instant-89e39979-08b8-423c-bc10-04c57ac6a58c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.91Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:instant-f8cfb69d-33ce-4d8a-9ff1-7234d31e4956
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.939Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-6d17b4eb-73a1-44c8-abf5-1d60647dcfb1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-60e5478c-71ae-4a60-a218-cfbd7e304299 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c848b59c-80bc-4547-a500-2110a1fa377d .
+
+oquo:metric-fb466a0e-6189-4e1d-b1a2-d6c0a04f0a89
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-cd839519-55b0-4c83-9479-4a9d9169c186 ;
+        oboe:measurementFor  oquo:observation-55c63dd9-4cfd-4df8-98b4-d1878996375d ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:instant-b7594841-1075-4bc7-a0f0-94ade67d9380
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.794Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-29972de7-439c-47b3-a6af-82254a86a3b4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ce36d335-3ebf-4568-a538-48620e5c6acb ;
+        time:hasTime              oquo:instant-7936c4ed-5821-49f1-b974-3e9f3b7523a7 ;
+        oquo:hasObservation       oquo:observation-2229acc1-bce0-46b3-a0b3-73aacfba8a95 .
+
+oquo:evaluation-face3551-8713-4a06-8c7c-bfb1f87b67d6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-25efe7dc-3ec7-4693-87a7-c044c9d6f06f ;
+        time:hasTime              oquo:instant-8b8aa21d-6ff9-4a36-b97e-324a8db17a08 ;
+        oquo:hasObservation       oquo:observation-8c380752-7776-4e8b-81a2-ab1702f4e9c6 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-3ff8b0dd-125c-4f9c-bd00-652ab46c846c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ae659c6a-b3f6-497b-acb9-365e8c5d89ee ;
+        res:hasLiteralValue    "0.2139588100686499"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f52d1910-1ca5-4ba9-a9a1-40381792b67c .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a19b6978-536b-47ef-a5a3-d795fd3cfaf9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-564a21a4-7c28-41dc-8bb8-e1573f52d3a3 ;
+        time:hasTime              oquo:instant-aa16ca72-7355-4e02-83d4-08a5563db530 ;
+        oquo:hasObservation       oquo:observation-ac4322af-4bdf-4c45-aae2-2f2d8f48808b .
+
+oquo:instant-67fbe1fb-07c3-4f48-bc66-cd42f59a9120
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.214Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8eb56b3d-cd47-4b6e-a621-f2348c634373
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-df4dbb74-ec0e-4d1d-8436-57045e3efcb9 ;
+        res:hasLiteralValue    "0.0011441647597254005"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-60699ca3-43a4-4b06-9862-a93396650d0f .
+
+oquo:evaluation-59d43877-8c23-407d-b6d1-7655e6cba44e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-cfc950c0-5bbf-486b-aa6a-4c6619425f6f ;
+        time:hasTime              oquo:instant-efedad62-51c8-49ed-84e0-cfc835544116 ;
+        oquo:hasObservation       oquo:observation-1a8f751b-75ca-491b-8213-a7f9882607ba .
+
+oquo:qualityValue-7b65d242-b28b-47fa-8643-9579246f4e2e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e06e2e0d-6de5-4b35-97a6-d49b51666a80 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-700a4bb1-60be-4de0-8a07-18570f89214c .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-c848b59c-80bc-4547-a500-2110a1fa377d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-6d17b4eb-73a1-44c8-abf5-1d60647dcfb1 ;
+        time:hasTime              oquo:instant-8a441438-6640-4db0-b03d-963dac62d3cb ;
+        oquo:hasObservation       oquo:observation-7e6d216d-4f83-4eaa-9c43-459b19d7ebfa .
+
+oquo:evaluation-67dcd624-66b5-427e-a88b-86174c622226
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ce919700-6eea-468d-ba97-4e3bd6a47ffb ;
+        time:hasTime              oquo:instant-a216d984-669b-4b17-8bf3-9a6e93bacd6d ;
+        oquo:hasObservation       oquo:observation-2bc941e3-adfe-4bf2-bdcb-459500081306 .
+
+oquo:observation-55c63dd9-4cfd-4df8-98b4-d1878996375d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fb466a0e-6189-4e1d-b1a2-d6c0a04f0a89 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-5b3832d4-b304-4428-96c8-c9e7129048a6 .
+
+oquo:instant-2324f6f5-7078-4b7f-a93d-b3b095733714
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:31:58.56Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-7ce33e7e-deef-4cd1-a5e8-3e64e5ef5a51
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-45d242b1-ff2c-4862-8f89-cf61e9aebd36 ;
+        oboe:measurementFor  oquo:observation-cabe5f56-c610-4335-9b98-e95ed081bfc2 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-c06a6464-917a-4a9c-9ce5-3edda65864ca
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-aa062d11-9176-4f17-ae90-0ca94b72a00c ;
+        res:hasLiteralValue    "0.5217391304347826"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b8f9dc27-85c0-4b29-8450-9b5ce2a3934c .
+
+oquo:observation-e930cfc4-83a3-4030-9a0e-c6340a7222d4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a39e2c07-1b0c-4c5f-bd75-4e5269bc3363 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-4e8253ff-be10-4eb1-a83f-59d45715d7c5 .
+
+oquo:instant-369ef225-9a94-4b37-b7c4-b5e307dbff15
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:01.057Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-cb45c266-4001-44b4-8cea-a265dc9311f6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9f36f786-4dbb-41db-85af-73df72404884 ;
+        time:hasTime              oquo:instant-b7594841-1075-4bc7-a0f0-94ade67d9380 ;
+        oquo:hasObservation       oquo:observation-706a7fd3-1b58-43d5-82c3-547048cf4338 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-359ff5f4-283c-4664-82ef-56f5ac642d7a
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-58742c94-aa9d-4397-a0fa-97d9163d65d6 ;
+        oboe:measurementFor  oquo:observation-145870a4-e598-4e6d-8599-9d31630d4931 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:evaluation-d19c4706-b2cc-460d-a4ab-7b1af32ef0d5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2543c2c6-4388-45f1-aa63-132d0332b250 ;
+        time:hasTime              oquo:instant-fcd715c0-a804-477f-b9b8-5c4ce564c56f ;
+        oquo:hasObservation       oquo:observation-65a5ac5d-945a-44bb-8b63-d26800da191c .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-c04fa197-2dbb-4cb9-ba43-3b7e8b1337f4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0e7b42e5-6a22-43c9-b68b-5c45110171d6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-83297e95-0350-4c46-9136-5bfd7710e2cc .
+
+oquo:evaluation-70b14003-e262-4516-b0eb-0e72b87f643b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8aa05bcd-5bd6-4bc3-9d62-652e7915f6dd ;
+        time:hasTime              oquo:instant-d2ec4ba0-4a66-421e-896d-00c2a0115e38 ;
+        oquo:hasObservation       oquo:observation-238aa0ec-9384-4b58-a0d3-4d0f3f86829d .
+
+oquo:instant-a216d984-669b-4b17-8bf3-9a6e93bacd6d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.893Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-81ae4ae2-84e0-4ad8-b3e3-8812e3beed38
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7ad14583-874e-44b0-ba72-837f25099cbd ;
+        oboe:measurementFor  oquo:observation-664192e1-e344-4928-8dbf-55e3cce574ec ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-cd839519-55b0-4c83-9479-4a9d9169c186
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fb466a0e-6189-4e1d-b1a2-d6c0a04f0a89 ;
+        res:hasLiteralValue    "0.8100686498855835"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f485c1d8-e2ae-44ba-bcb8-42a49891515f .
+
+oquo:metric-d660c239-001a-4af6-aacc-e1630f2ddb73
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-9f36f786-4dbb-41db-85af-73df72404884 ;
+        oboe:measurementFor  oquo:observation-706a7fd3-1b58-43d5-82c3-547048cf4338 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-cd56ebeb-13be-4fce-823c-ffe217b03315
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-33440826-5378-4419-a2e8-c114aa662c30 ;
+        time:hasTime              oquo:instant-96d2c602-144c-4c63-9cf7-24e6dc919206 ;
+        oquo:hasObservation       oquo:observation-aff2a4ea-64df-45f9-ab36-8aa21c181694 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-49f9555e-a971-4809-9dc2-4a49c40fb65e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-18c35185-4dfe-4b89-87be-fe9949dabd36
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e2dd93c0-de3f-4f17-afdd-0225301dd0ab ;
+        oboe:measurementFor  oquo:observation-69bd1e76-7555-41f8-8b3a-ffd275d7b101 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-3de6ca32-212a-4d6c-8b85-51e4613e9a63
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ce36d335-3ebf-4568-a538-48620e5c6acb ;
+        oboe:measurementFor  oquo:observation-2229acc1-bce0-46b3-a0b3-73aacfba8a95 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-151b7af9-8c2e-4268-a234-6a6ad2ac904f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-47fa05d5-55c2-4868-a2fc-270a3952b4bf ;
+        res:hasLiteralValue    "0.13386727688787187"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d2b145d8-adbe-44cb-956d-e42b08de8b8b .
+
+oquo:instant-51666b3f-79b4-4140-add9-135a2b156df8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.89Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-1a8f751b-75ca-491b-8213-a7f9882607ba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a5b5d73d-433e-4afa-b6f0-6945eb50e00d ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-efedad62-51c8-49ed-84e0-cfc835544116 .
+
+oquo:metric-2531562e-db4f-4185-b8ed-c9b08acecdca
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8aa05bcd-5bd6-4bc3-9d62-652e7915f6dd ;
+        oboe:measurementFor  oquo:observation-238aa0ec-9384-4b58-a0d3-4d0f3f86829d ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:observation-bf129bf1-112e-4528-8255-db06f0c3feb6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-df4dbb74-ec0e-4d1d-8436-57045e3efcb9 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-8586026e-ddfb-4a76-9445-a39c03b23909 .
+
+oquo:metric-d84c8bf7-fbec-4716-a8a8-aba90916fd2f
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ce919700-6eea-468d-ba97-4e3bd6a47ffb ;
+        oboe:measurementFor  oquo:observation-2bc941e3-adfe-4bf2-bdcb-459500081306 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-a0fbdf25-e2a8-456a-a2ba-c4700e02e039
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.895Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-11af72cf-8c62-4211-baa8-dc1a12c533d5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.829Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-aa062d11-9176-4f17-ae90-0ca94b72a00c
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c06a6464-917a-4a9c-9ce5-3edda65864ca ;
+        oboe:measurementFor  oquo:observation-d942aa71-d32f-4052-9ed0-3305ad9c2649 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:observation-bec467a3-dd96-45fa-86aa-6dbd3dce1f03
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e06e2e0d-6de5-4b35-97a6-d49b51666a80 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-65cad018-2793-40ba-963c-06cc4c5090ac .
+
+oquo:qualityValue-7ad14583-874e-44b0-ba72-837f25099cbd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-81ae4ae2-84e0-4ad8-b3e3-8812e3beed38 ;
+        res:hasLiteralValue    "1.9578947368421054"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-052b54e2-1af2-4ae1-8527-3e188d2bbf40 .
+
+oquo:observation-d942aa71-d32f-4052-9ed0-3305ad9c2649
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-aa062d11-9176-4f17-ae90-0ca94b72a00c ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-89e39979-08b8-423c-bc10-04c57ac6a58c .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-0649876e-fc6a-4dfa-b972-fd049fe19394
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2e9f5bb2-f32c-4746-9a55-56533cd9536e ;
+        time:hasTime              oquo:instant-51666b3f-79b4-4140-add9-135a2b156df8 ;
+        oquo:hasObservation       oquo:observation-2c9acce8-ae37-4016-b80c-f06211930faa .
+
+oquo:instant-b48347a7-d8a8-4902-9ce4-fc13e2c7a0d4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.917Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-2543c2c6-4388-45f1-aa63-132d0332b250
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1d6fcc3d-abe0-49d4-935b-36e7470de8f4 ;
+        res:hasLiteralValue    "0.717948717948718"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d19c4706-b2cc-460d-a4ab-7b1af32ef0d5 .
+
+oquo:evaluation-83297e95-0350-4c46-9136-5bfd7710e2cc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c04fa197-2dbb-4cb9-ba43-3b7e8b1337f4 ;
+        time:hasTime              oquo:instant-20f85667-5fad-45b9-b76b-f72386c4eef8 ;
+        oquo:hasObservation       oquo:observation-2950c16b-1449-4d70-8466-48a56386930d .
+
+oquo:instant-af186175-cd8b-4f0c-8dd4-62af13ef19df
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.92Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ae659c6a-b3f6-497b-acb9-365e8c5d89ee
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-3ff8b0dd-125c-4f9c-bd00-652ab46c846c ;
+        oboe:measurementFor  oquo:observation-c77b9d66-487e-41f9-9867-9ff2efc3c99d ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:instant-65cad018-2793-40ba-963c-06cc4c5090ac
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:31:59.263Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-16da54cf-71a0-41ca-9a9d-37352e44d7cd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.849Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-161ac789-d310-4829-8668-3d89f50109ea
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-02ac557b-5d1f-48c1-a7f4-63b278d560d2 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-67fbe1fb-07c3-4f48-bc66-cd42f59a9120 .
+
+oquo:evaluation-15cd8503-a0a4-4fad-84e8-470a25e16517
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e2dd93c0-de3f-4f17-afdd-0225301dd0ab ;
+        time:hasTime              oquo:instant-16da54cf-71a0-41ca-9a9d-37352e44d7cd ;
+        oquo:hasObservation       oquo:observation-69bd1e76-7555-41f8-8b3a-ffd275d7b101 .
+
+oquo:evaluation-b8f9dc27-85c0-4b29-8450-9b5ce2a3934c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c06a6464-917a-4a9c-9ce5-3edda65864ca ;
+        time:hasTime              oquo:instant-89e39979-08b8-423c-bc10-04c57ac6a58c ;
+        oquo:hasObservation       oquo:observation-d942aa71-d32f-4052-9ed0-3305ad9c2649 .
+
+oquo:qualityValue-40cbab08-09dd-44e9-9f1a-84c1704c9edc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bb2f183f-57a0-4112-a623-d8c80d1b69b7 ;
+        res:hasLiteralValue    "0.5641025641025641"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-730acc24-feeb-4ca2-b117-2684be8e0d02 .
+
+oquo:observation-65a5ac5d-945a-44bb-8b63-d26800da191c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1d6fcc3d-abe0-49d4-935b-36e7470de8f4 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-fcd715c0-a804-477f-b9b8-5c4ce564c56f .
+
+oquo:evaluation-d2b145d8-adbe-44cb-956d-e42b08de8b8b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-151b7af9-8c2e-4268-a234-6a6ad2ac904f ;
+        time:hasTime              oquo:instant-e7b51f44-bc23-4571-8785-bbc5ddf1d957 ;
+        oquo:hasObservation       oquo:observation-48b5db26-d58b-488f-bb15-a967758f3a62 .
+
+oquo:metric-fb80cfe2-b474-443e-920f-e46b1504b126
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-33440826-5378-4419-a2e8-c114aa662c30 ;
+        oboe:measurementFor  oquo:observation-aff2a4ea-64df-45f9-ab36-8aa21c181694 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-aa16ca72-7355-4e02-83d4-08a5563db530
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:32:00.862Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-fa1e7f94-c1c9-47d6-99ff-db3d160f7749
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c1409c08-27cd-4878-87f4-f2f0cd5cbb6a ;
+        time:hasTime              oquo:instant-4e8253ff-be10-4eb1-a83f-59d45715d7c5 ;
+        oquo:hasObservation       oquo:observation-e930cfc4-83a3-4030-9a0e-c6340a7222d4 .
+
+oquo:qualityValue-f9aab71f-7f32-498a-9494-206056b2ea01
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7702fb3b-b090-4a4e-a7a4-aa3cd7c8da22 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a09ee571-618d-45d2-bec5-1107cfdf2415 .
+
+oquo:metric-1d6fcc3d-abe0-49d4-935b-36e7470de8f4
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-2543c2c6-4388-45f1-aa63-132d0332b250 ;
+        oboe:measurementFor  oquo:observation-65a5ac5d-945a-44bb-8b63-d26800da191c ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-02ac557b-5d1f-48c1-a7f4-63b278d560d2
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-78bf1a3f-8666-4600-be64-487c9b32eae8 ;
+        oboe:measurementFor  oquo:observation-161ac789-d310-4829-8668-3d89f50109ea ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-c0783501-072b-4337-b531-6dd77c28b659
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-ed272588-ddeb-4f59-ad94-e0c8ccfe5061 ;
+        oboe:measurementFor  oquo:observation-bd53eb94-7d8e-48e6-a65c-2a6667795f40 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-48b5db26-d58b-488f-bb15-a967758f3a62
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-47fa05d5-55c2-4868-a2fc-270a3952b4bf ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-e7b51f44-bc23-4571-8785-bbc5ddf1d957 .
+
+oquo:observation-664192e1-e344-4928-8dbf-55e3cce574ec
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-81ae4ae2-84e0-4ad8-b3e3-8812e3beed38 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-0bac8cf0-288b-4304-a4be-20d16a5bce6d .
+
+oquo:observation-145870a4-e598-4e6d-8599-9d31630d4931
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-359ff5f4-283c-4664-82ef-56f5ac642d7a ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-49f9555e-a971-4809-9dc2-4a49c40fb65e .
+
+oquo:evaluation-5c20c3dc-f052-4602-8e08-f1300fd18c96
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-58742c94-aa9d-4397-a0fa-97d9163d65d6 ;
+        time:hasTime              oquo:instant-49f9555e-a971-4809-9dc2-4a49c40fb65e ;
+        oquo:hasObservation       oquo:observation-145870a4-e598-4e6d-8599-9d31630d4931 .
+
+oquo:evaluation-07d3c8c7-58cd-4aea-8fc9-17a427b3dda0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-42e53600-1ef8-483a-860c-cdd558424df0 ;
+        time:hasTime              oquo:instant-b48347a7-d8a8-4902-9ce4-fc13e2c7a0d4 ;
+        oquo:hasObservation       oquo:observation-c6ef25d0-fa91-4fb1-8236-9eec4e97d1ff .
+
+oquo:observation-c77b9d66-487e-41f9-9867-9ff2efc3c99d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ae659c6a-b3f6-497b-acb9-365e8c5d89ee ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-a0fbdf25-e2a8-456a-a2ba-c4700e02e039 .
+
+oquo:instant-108beff6-c558-40d9-b385-312e2519facd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:31:59.077Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-5b806dbc-9885-4e48-8ce2-9b1ea87d66cf
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-42e53600-1ef8-483a-860c-cdd558424df0 ;
+        oboe:measurementFor  oquo:observation-c6ef25d0-fa91-4fb1-8236-9eec4e97d1ff ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-60e5478c-71ae-4a60-a218-cfbd7e304299
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-6d17b4eb-73a1-44c8-abf5-1d60647dcfb1 ;
+        oboe:measurementFor  oquo:observation-7e6d216d-4f83-4eaa-9c43-459b19d7ebfa ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-052b54e2-1af2-4ae1-8527-3e188d2bbf40
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7ad14583-874e-44b0-ba72-837f25099cbd ;
+        time:hasTime              oquo:instant-0bac8cf0-288b-4304-a4be-20d16a5bce6d ;
+        oquo:hasObservation       oquo:observation-664192e1-e344-4928-8dbf-55e3cce574ec .
+
+oquo:metric-a39e2c07-1b0c-4c5f-bd75-4e5269bc3363
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c1409c08-27cd-4878-87f4-f2f0cd5cbb6a ;
+        oboe:measurementFor  oquo:observation-e930cfc4-83a3-4030-9a0e-c6340a7222d4 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-2112b841-fce8-4df5-a4bf-7020da834d83
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-cc455ae0-48aa-4ab5-8825-9ca5f20b70ff ;
+        time:hasTime              oquo:instant-369ef225-9a94-4b37-b7c4-b5e307dbff15 ;
+        oquo:hasObservation       oquo:observation-c87acc22-5a5e-458d-bae0-6f0320de18aa .
+
+oquo:qualityValue-58742c94-aa9d-4397-a0fa-97d9163d65d6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-359ff5f4-283c-4664-82ef-56f5ac642d7a ;
+        res:hasLiteralValue    "0.005720823798627002"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5c20c3dc-f052-4602-8e08-f1300fd18c96 .
+
+oquo:observation-706a7fd3-1b58-43d5-82c3-547048cf4338
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d660c239-001a-4af6-aacc-e1630f2ddb73 ;
+        oboe:ofEntity        <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        time:hasTime         oquo:instant-b7594841-1075-4bc7-a0f0-94ade67d9380 .
+
+oquo:qualityValue-42e53600-1ef8-483a-860c-cdd558424df0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5b806dbc-9885-4e48-8ce2-9b1ea87d66cf ;
+        res:hasLiteralValue    "0.5454545454545454"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-07d3c8c7-58cd-4aea-8fc9-17a427b3dda0 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-700a4bb1-60be-4de0-8a07-18570f89214c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:inputData             <http://www.aidimme.es/FurnitureSectorOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7b65d242-b28b-47fa-8643-9579246f4e2e ;
+        time:hasTime              oquo:instant-65cad018-2793-40ba-963c-06cc4c5090ac ;
+        oquo:hasObservation       oquo:observation-bec467a3-dd96-45fa-86aa-6dbd3dce1f03 .

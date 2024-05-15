@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-6d74fdd8-088d-4b6d-a0a5-0f3c30e78435
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-feadffa6-59ea-48c1-bf4d-aa967612abcf ;
+        time:hasTime              oquo:instant-569eb163-c683-4731-8cf6-0e29cad57aa7 ;
+        oquo:hasObservation       oquo:observation-8879de80-5350-4307-ba8d-af3ae1207744 .
+
+oquo:evaluation-e002a299-f23b-4025-91fd-67fdf773682b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-774fbc8c-22d6-457f-b85d-be31d817a04e ;
+        time:hasTime              oquo:instant-1f8fffee-4d8c-47de-b7a8-2d2f27f93a57 ;
+        oquo:hasObservation       oquo:observation-1b5fa40b-b984-4904-8692-20b474bb6ea9 .
+
+oquo:qualityValue-dc508b6f-f9db-44a9-ae7b-3ddfbe178e9a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d0dae7e4-8ae3-40d3-94df-cdcfb45f9524 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f9cc39f8-0b96-44b2-afe4-f1060e297ba9 .
+
+oquo:metric-66d59a25-168b-469c-a9ee-d71ec72feb11
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-e77af6b9-f0f6-4aaf-ae9f-f25a2207ede4 ;
+        oboe:measurementFor  oquo:observation-fcb05060-2115-4ea6-bbe1-d88adf9cc3d4 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-b543f051-d479-4ac8-ae11-7ab95fe1eadb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-12469942-8eda-4750-825a-4054c9fb1fa4 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-db9ba2ae-d089-4138-a0b9-4dedbc1e6cec .
+
+oquo:qualityValue-dc947720-e6a7-40c3-a424-0c1e6441e2e3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8639a715-94ef-4438-a061-36c77820b1c8 ;
+        res:hasLiteralValue    "0.7115384615384616"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-849de829-a223-4a66-aedc-76b7676f0faa .
+
+<https://w3id.org/i40/sto/iot/0.1/concerns/>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:instant-569eb163-c683-4731-8cf6-0e29cad57aa7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.983Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-229c1b0b-2ee2-415d-aa9d-05d076fb9c73
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8639a715-94ef-4438-a061-36c77820b1c8 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-1a209451-62ff-4b0d-b499-14a071f97cd5 .
+
+oquo:qualityValue-1fc41301-03e5-4bbd-b3bb-46fafec3dcde
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-36034f61-478f-4a28-93f6-b181f8c88754 ;
+        res:hasLiteralValue    "0.9722222222222222"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f399e079-e2c6-4a6a-b15f-5a0d1d5c7aca .
+
+oquo:metric-69d94588-c779-4e03-88a0-4d73137fd415
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-c2456956-ff67-4190-bb6f-37ed98ebc3c4 ;
+        oboe:measurementFor  oquo:observation-14b49e3f-34dd-45a2-9c25-f4d0cf9b18e0 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:qualityValue-feadffa6-59ea-48c1-bf4d-aa967612abcf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8271c61b-cef4-4d3c-b39b-d9d531382b11 ;
+        res:hasLiteralValue    "0.2978723404255319"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6d74fdd8-088d-4b6d-a0a5-0f3c30e78435 .
+
+oquo:instant-7b5c8235-3c42-406a-ae12-6f0050d7abfc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:10.71Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-5de3eb7e-b683-490e-a9d2-75e94aeba17c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-9999a85c-7553-4795-bcf7-f1960a6badf5 ;
+        time:hasTime              oquo:instant-eccd490c-cfb9-4ce7-b12c-cf8464a7c8dc ;
+        oquo:hasObservation       oquo:observation-25a2373d-670a-40d9-bb17-cefbe91ef064 .
+
+oquo:observation-6195509c-0660-47e2-ae72-fc2184f8df18
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0c24aeda-6f58-44ab-a707-0c293caf0b3e ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-5b746746-2680-4a96-b699-90f9de74b15f .
+
+oquo:evaluation-d7706259-5cf3-485b-a980-55c7849241df
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-d6e9cd09-7b9f-4509-9672-19acb286b452 ;
+        time:hasTime              oquo:instant-e1dc0e2e-e45e-49b8-9704-43bc5db8e4e0 ;
+        oquo:hasObservation       oquo:observation-14ff171b-f0bc-4c9e-876e-57d3928a886d .
+
+oquo:observation-191f9ce7-8373-4081-b840-968eadded987
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d3984ba3-6744-4395-8455-fa2adda0192a ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-5c687d01-53a6-479d-ab81-cdc6b0033312 .
+
+oquo:instant-5b746746-2680-4a96-b699-90f9de74b15f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-ad90fdfb-fec4-492e-8122-8a614e82f60e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-36034f61-478f-4a28-93f6-b181f8c88754 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-b9d9608b-ef80-4b11-ae91-7a776c44c946 .
+
+oquo:instant-5c687d01-53a6-479d-ab81-cdc6b0033312
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.827Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c2456956-ff67-4190-bb6f-37ed98ebc3c4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-69d94588-c779-4e03-88a0-4d73137fd415 ;
+        res:hasLiteralValue    "0.013888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d8583dd2-f0c0-493d-a0c0-fc678526b57f .
+
+oquo:qualityValue-b36b0f4e-5c80-4100-aa6f-a36ebd72b05c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a61aced6-0bd5-4977-ba4f-ef1911182be0 ;
+        res:hasLiteralValue    "0.013888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fc930bb2-6b77-48ff-8b2a-2055f748d523 .
+
+oquo:qualityValue-1a834db4-97c5-4612-a220-1fcb7c2fda01
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d3984ba3-6744-4395-8455-fa2adda0192a ;
+        res:hasLiteralValue    "0.9047619047619048"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ef9fdecd-2b03-416f-a7ba-6582cdc42d8d .
+
+oquo:instant-fdcc6bdf-765f-49b4-9eb7-043491ef424b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.032Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-99579e1e-0629-454c-84df-8223e1a404c6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f57ddb06-9110-4bed-871c-97065e9a8a1d ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-4f56d300-3161-4f90-8d7c-16d30ad4cf5f .
+
+oquo:instant-78704f0e-3a6e-49d3-888b-a73e57a09cf5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.743Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d6d1d820-9c62-4252-ab0f-568a82d21b94
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.997Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-0cbace9e-5d5a-47ba-a007-b6b692c7c08f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6c96f49b-376b-4780-a578-ed79c574b5cf ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e1c73aaa-76e1-4215-9f0b-39e27911fbbd .
+
+oquo:observation-846415fb-383b-43a6-b9cf-b97d85f9e4a0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2952c134-800d-46c7-8100-e9c7bdcb22d2 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e7bc899e-2284-4345-937c-07b2032f12f1 .
+
+oquo:qualityValue-337f444b-024a-4080-b4be-aeb19e20fc8f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0c24aeda-6f58-44ab-a707-0c293caf0b3e ;
+        res:hasLiteralValue    "0.009615384615384616"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f5464e12-774e-4626-aa19-f4bd78b3c659 .
+
+oquo:qualityValue-62486c9b-01eb-4eb0-9a68-6553b8d56e46
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f6ca4453-0618-43b1-83a2-0fb2ae89728c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4bf6c297-9fb9-48cd-84b2-aa984d95333f .
+
+oquo:evaluation-d8583dd2-f0c0-493d-a0c0-fc678526b57f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-c2456956-ff67-4190-bb6f-37ed98ebc3c4 ;
+        time:hasTime              oquo:instant-3604bd6b-05cb-44da-bf2a-60086faee734 ;
+        oquo:hasObservation       oquo:observation-14b49e3f-34dd-45a2-9c25-f4d0cf9b18e0 .
+
+oquo:evaluation-4bf6c297-9fb9-48cd-84b2-aa984d95333f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-62486c9b-01eb-4eb0-9a68-6553b8d56e46 ;
+        time:hasTime              oquo:instant-d71d20da-a818-4d8a-91e6-cf6aefeef8ba ;
+        oquo:hasObservation       oquo:observation-ce80e81c-a489-43b2-855d-52cba92e972d .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-236fcc34-f312-4aaf-965b-1c45d7e49809
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f1cdaf49-c29a-4c67-ba99-757163d47bae ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-c10c50b4-33b9-4830-8dfc-264a64d1ce37 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-5f3ab779-906b-4192-8a26-9e1bdf6cd0e9
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-9999a85c-7553-4795-bcf7-f1960a6badf5 ;
+        oboe:measurementFor  oquo:observation-25a2373d-670a-40d9-bb17-cefbe91ef064 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-14ff171b-f0bc-4c9e-876e-57d3928a886d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-00476638-8775-4c09-babd-ecf09e12597c ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e1dc0e2e-e45e-49b8-9704-43bc5db8e4e0 .
+
+oquo:qualityValue-e77af6b9-f0f6-4aaf-ae9f-f25a2207ede4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-66d59a25-168b-469c-a9ee-d71ec72feb11 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c2b13d51-e8f7-4df3-a445-f89bb3aaa8ce .
+
+oquo:instant-1f8fffee-4d8c-47de-b7a8-2d2f27f93a57
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:10.522Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-fd333642-41ee-4197-b8bc-bbafbca38aad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7a161e75-4dea-408b-b14c-103d48dec500 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0ffca569-5633-4a1c-bc80-de7278c2cde1 .
+
+oquo:evaluation-ef9fdecd-2b03-416f-a7ba-6582cdc42d8d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-1a834db4-97c5-4612-a220-1fcb7c2fda01 ;
+        time:hasTime              oquo:instant-5c687d01-53a6-479d-ab81-cdc6b0033312 ;
+        oquo:hasObservation       oquo:observation-191f9ce7-8373-4081-b840-968eadded987 .
+
+oquo:qualityValue-968f4bce-c786-471e-8fd6-76d4141031f8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6e117c2a-9523-4fb6-8aec-41949d354dc6 ;
+        res:hasLiteralValue    "0.2222222222222222"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0751cb40-2350-4e9e-a745-278f9a84d0f1 .
+
+oquo:evaluation-e6378cfc-333c-439d-9d4e-1e1e60187cdf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-f8ba8e0d-079d-4c70-94b3-597bb72d043a ;
+        time:hasTime              oquo:instant-e7bc899e-2284-4345-937c-07b2032f12f1 ;
+        oquo:hasObservation       oquo:observation-846415fb-383b-43a6-b9cf-b97d85f9e4a0 .
+
+oquo:observation-de8ef402-f449-484f-99ea-3bde9dff48b5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5b9e6d14-edeb-4d07-8c63-3f66acb704a0 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-0d5c6f5d-b374-43f4-946e-f927612965c4 .
+
+oquo:metric-deb60a03-7379-4128-a9b6-e5b7d92a247a
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-9a5d7552-4f6a-4f97-b580-0ca8634430e6 ;
+        oboe:measurementFor  oquo:observation-f69b29e0-3bc2-4864-9c1b-92fe3aff2b79 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-9999a85c-7553-4795-bcf7-f1960a6badf5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5f3ab779-906b-4192-8a26-9e1bdf6cd0e9 ;
+        res:hasLiteralValue    "0.723404255319149"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5de3eb7e-b683-490e-a9d2-75e94aeba17c .
+
+oquo:qualityValue-9099160f-9da7-4b59-90a6-db131b0bdc85
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9c40c6a9-01c3-421c-aa0b-f164e418f7ab ;
+        res:hasLiteralValue    "0.574468085106383"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9d609bb4-a969-4bbb-922d-6fded8ff6219 .
+
+oquo:evaluation-0751cb40-2350-4e9e-a745-278f9a84d0f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-968f4bce-c786-471e-8fd6-76d4141031f8 ;
+        time:hasTime              oquo:instant-fdcc6bdf-765f-49b4-9eb7-043491ef424b ;
+        oquo:hasObservation       oquo:observation-c00d5a25-e888-47d4-af22-4f045a600140 .
+
+oquo:evaluation-849de829-a223-4a66-aedc-76b7676f0faa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-dc947720-e6a7-40c3-a424-0c1e6441e2e3 ;
+        time:hasTime              oquo:instant-1a209451-62ff-4b0d-b499-14a071f97cd5 ;
+        oquo:hasObservation       oquo:observation-229c1b0b-2ee2-415d-aa9d-05d076fb9c73 .
+
+oquo:qualityValue-399f0fc9-1f1c-49d8-8dcd-bd07c0329bb1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9731aac7-8b34-423f-a0ad-98fa35594617 ;
+        res:hasLiteralValue    "0.44680851063829785"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ce59af9d-cf33-433e-ba5f-be2db97c86ee .
+
+oquo:evaluation-2b4054e3-1b95-463c-b88c-0127eb071ae4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-44daec69-ef4c-46c1-8a7c-d382918626b4 ;
+        time:hasTime              oquo:instant-a740708e-1869-48a1-9d77-622cb1d71830 ;
+        oquo:hasObservation       oquo:observation-e4923e41-b01b-4053-8d82-a445e46664ba .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-8639a715-94ef-4438-a061-36c77820b1c8
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-dc947720-e6a7-40c3-a424-0c1e6441e2e3 ;
+        oboe:measurementFor  oquo:observation-229c1b0b-2ee2-415d-aa9d-05d076fb9c73 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-e1dc0e2e-e45e-49b8-9704-43bc5db8e4e0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.024Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-f6ca4453-0618-43b1-83a2-0fb2ae89728c
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-62486c9b-01eb-4eb0-9a68-6553b8d56e46 ;
+        oboe:measurementFor  oquo:observation-ce80e81c-a489-43b2-855d-52cba92e972d ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-96f456ac-7790-43e9-922c-6d6420bbef73
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-46664f84-d064-4934-8ac8-32060ae543d0 ;
+        time:hasTime              oquo:instant-db9ba2ae-d089-4138-a0b9-4dedbc1e6cec ;
+        oquo:hasObservation       oquo:observation-b543f051-d479-4ac8-ae11-7ab95fe1eadb .
+
+oquo:evaluation-0ffca569-5633-4a1c-bc80-de7278c2cde1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-fd333642-41ee-4197-b8bc-bbafbca38aad ;
+        time:hasTime              oquo:instant-7b5c8235-3c42-406a-ae12-6f0050d7abfc ;
+        oquo:hasObservation       oquo:observation-febf3c93-2fed-4fcb-9db0-eb10c9dc5cd7 .
+
+oquo:qualityValue-8a647ca7-eadb-4113-a837-51b77d96cce9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d60024f6-5969-4975-ad69-ff4b6d57592c ;
+        res:hasLiteralValue    "73.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-12e2ff7e-6b86-443b-b235-11bc0055116a .
+
+oquo:observation-ce80e81c-a489-43b2-855d-52cba92e972d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f6ca4453-0618-43b1-83a2-0fb2ae89728c ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-d71d20da-a818-4d8a-91e6-cf6aefeef8ba .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-8271c61b-cef4-4d3c-b39b-d9d531382b11
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-feadffa6-59ea-48c1-bf4d-aa967612abcf ;
+        oboe:measurementFor  oquo:observation-8879de80-5350-4307-ba8d-af3ae1207744 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-9d609bb4-a969-4bbb-922d-6fded8ff6219
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-9099160f-9da7-4b59-90a6-db131b0bdc85 ;
+        time:hasTime              oquo:instant-e4de16d5-9662-45cd-99b0-19334cf904f1 ;
+        oquo:hasObservation       oquo:observation-d3f92c52-d38a-49d4-a4c0-499f67b447b9 .
+
+oquo:metric-12469942-8eda-4750-825a-4054c9fb1fa4
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-46664f84-d064-4934-8ac8-32060ae543d0 ;
+        oboe:measurementFor  oquo:observation-b543f051-d479-4ac8-ae11-7ab95fe1eadb ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:observation-febf3c93-2fed-4fcb-9db0-eb10c9dc5cd7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7a161e75-4dea-408b-b14c-103d48dec500 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-7b5c8235-3c42-406a-ae12-6f0050d7abfc .
+
+oquo:instant-3604bd6b-05cb-44da-bf2a-60086faee734
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:10.675Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8fb854c7-7069-4d56-9f8a-13fb866fc9c0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-a7cf311d-6b3e-4ba0-9ed4-ff5e4afa1a45 ;
+        time:hasTime              oquo:instant-4f56d300-3161-4f90-8d7c-16d30ad4cf5f ;
+        oquo:hasObservation       oquo:observation-99579e1e-0629-454c-84df-8223e1a404c6 .
+
+oquo:instant-0d5c6f5d-b374-43f4-946e-f927612965c4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:10.536Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-f5464e12-774e-4626-aa19-f4bd78b3c659
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-337f444b-024a-4080-b4be-aeb19e20fc8f ;
+        time:hasTime              oquo:instant-5b746746-2680-4a96-b699-90f9de74b15f ;
+        oquo:hasObservation       oquo:observation-6195509c-0660-47e2-ae72-fc2184f8df18 .
+
+oquo:observation-56eedb02-2d14-4a6a-927d-9d25b14e8074
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dc3bfc6b-d1af-4a76-9b9d-28a18ec1a773 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e0c046c1-1397-4509-960f-e79c5f97c518 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-c10c50b4-33b9-4830-8dfc-264a64d1ce37
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.125Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-8b98c09e-8221-4e6e-a3e6-d1bd1d15b795
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c8adc93-ac6a-4d87-8900-cab92b363e62 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-3075255e-56ec-467d-980a-75e9990d636c .
+
+oquo:instant-3075255e-56ec-467d-980a-75e9990d636c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-53f13041-6cf9-4a56-8527-28cca751a442
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0cb8089a-37f8-4179-900c-6d17f4569917 ;
+        res:hasLiteralValue    "0.9047619047619048"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8a68c928-e618-4f48-8d56-a7eb18945fc6 .
+
+oquo:metric-d60024f6-5969-4975-ad69-ff4b6d57592c
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-8a647ca7-eadb-4113-a837-51b77d96cce9 ;
+        oboe:measurementFor  oquo:observation-91930a8e-1f9d-42a0-b54e-3f4f89b15869 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:evaluation-f9cc39f8-0b96-44b2-afe4-f1060e297ba9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-dc508b6f-f9db-44a9-ae7b-3ddfbe178e9a ;
+        time:hasTime              oquo:instant-09046d82-19b9-41eb-9cdc-196f1ca2d836 ;
+        oquo:hasObservation       oquo:observation-e960d3d3-6186-479f-8d61-c0ca1dfb7a8c .
+
+oquo:observation-14b49e3f-34dd-45a2-9c25-f4d0cf9b18e0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-69d94588-c779-4e03-88a0-4d73137fd415 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-3604bd6b-05cb-44da-bf2a-60086faee734 .
+
+oquo:observation-db7e9681-e71b-4f70-b2dc-5dafd6f3913b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3b0445a3-a3bf-4418-8b1d-2657646a8ce6 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-f5fe6604-d065-4d52-81c9-e39a60ccabe9 .
+
+oquo:instant-db9ba2ae-d089-4138-a0b9-4dedbc1e6cec
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.856Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9c40c6a9-01c3-421c-aa0b-f164e418f7ab
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-9099160f-9da7-4b59-90a6-db131b0bdc85 ;
+        oboe:measurementFor  oquo:observation-d3f92c52-d38a-49d4-a4c0-499f67b447b9 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:instant-493699b1-abe5-4592-b6c0-4815e43434f6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.876Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-c7f64c7e-808e-426c-a0f6-a93d660bf122
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-96c6e0af-ad69-4880-b6c3-33ab7db0202c ;
+        time:hasTime              oquo:instant-f5fe6604-d065-4d52-81c9-e39a60ccabe9 ;
+        oquo:hasObservation       oquo:observation-db7e9681-e71b-4f70-b2dc-5dafd6f3913b .
+
+oquo:qualityValue-08e6e3c0-85d2-4bbd-a5ec-c9738b298a42
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4b134d39-a4da-452c-b9fd-8b20f18a6493 ;
+        res:hasLiteralValue    "0.013888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-49cb899a-5b7a-4b7d-aa1b-376eb829f210 .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a67b0ba8-dadf-422e-9dab-37339c298956
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-148ab186-2e17-4b40-bdc5-cdd4be924da1 ;
+        time:hasTime              oquo:instant-e0c046c1-1397-4509-960f-e79c5f97c518 ;
+        oquo:hasObservation       oquo:observation-56eedb02-2d14-4a6a-927d-9d25b14e8074 .
+
+oquo:metric-5b9e6d14-edeb-4d07-8c63-3f66acb704a0
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-841a0e55-af9c-4774-81b5-dfb86d58f709 ;
+        oboe:measurementFor  oquo:observation-de8ef402-f449-484f-99ea-3bde9dff48b5 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-d71d20da-a818-4d8a-91e6-cf6aefeef8ba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.921Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-ad5d8826-61eb-481d-a163-7c5aa7af1dc4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4b134d39-a4da-452c-b9fd-8b20f18a6493 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-5f9cbbca-49c7-4843-836f-7e59e43a2d3c .
+
+oquo:instant-ad92296a-2b73-473b-80dc-205347724536
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.251Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fb896f05-d62f-4552-8abc-cab116c4b2d0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-dd1317c0-0e45-4e03-8f57-e9241cf88df5 ;
+        time:hasTime              oquo:instant-c10c50b4-33b9-4830-8dfc-264a64d1ce37 ;
+        oquo:hasObservation       oquo:observation-236fcc34-f312-4aaf-965b-1c45d7e49809 .
+
+oquo:metric-d3984ba3-6744-4395-8455-fa2adda0192a
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1a834db4-97c5-4612-a220-1fcb7c2fda01 ;
+        oboe:measurementFor  oquo:observation-191f9ce7-8373-4081-b840-968eadded987 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:evaluation-8a68c928-e618-4f48-8d56-a7eb18945fc6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-53f13041-6cf9-4a56-8527-28cca751a442 ;
+        time:hasTime              oquo:instant-e527c286-073b-4e32-9935-3834b1c3320e ;
+        oquo:hasObservation       oquo:observation-ca4e755b-2586-4759-b62d-de3e1a7017f5 .
+
+oquo:instant-eccd490c-cfb9-4ce7-b12c-cf8464a7c8dc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.12Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-25a2373d-670a-40d9-bb17-cefbe91ef064
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5f3ab779-906b-4192-8a26-9e1bdf6cd0e9 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-eccd490c-cfb9-4ce7-b12c-cf8464a7c8dc .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-e4923e41-b01b-4053-8d82-a445e46664ba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b67f87ad-cdd1-49b4-bdfb-32bdb94b8fb2 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-a740708e-1869-48a1-9d77-622cb1d71830 .
+
+oquo:qualityValue-e6a980ea-7c2e-4ec6-bf95-d793ffc16f63
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4e5cbe3b-0069-4379-b663-47721d3bfdb1 ;
+        res:hasLiteralValue    "0.625"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1b10c20e-ff5c-41b4-9134-dc63e2b7d9c3 .
+
+oquo:instant-e1c73aaa-76e1-4215-9f0b-39e27911fbbd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-5f9cbbca-49c7-4843-836f-7e59e43a2d3c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:10.673Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-e7bc899e-2284-4345-937c-07b2032f12f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.947Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-fceb860b-0d5d-46ff-8728-79d9702f8b5c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9731aac7-8b34-423f-a0ad-98fa35594617 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-55389d89-1d41-4ad2-8c42-3a9c702aab04 .
+
+oquo:metric-f1cdaf49-c29a-4c67-ba99-757163d47bae
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-dd1317c0-0e45-4e03-8f57-e9241cf88df5 ;
+        oboe:measurementFor  oquo:observation-236fcc34-f312-4aaf-965b-1c45d7e49809 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-c00d5a25-e888-47d4-af22-4f045a600140
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6e117c2a-9523-4fb6-8aec-41949d354dc6 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-fdcc6bdf-765f-49b4-9eb7-043491ef424b .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-49cb899a-5b7a-4b7d-aa1b-376eb829f210
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-08e6e3c0-85d2-4bbd-a5ec-c9738b298a42 ;
+        time:hasTime              oquo:instant-5f9cbbca-49c7-4843-836f-7e59e43a2d3c ;
+        oquo:hasObservation       oquo:observation-ad5d8826-61eb-481d-a163-7c5aa7af1dc4 .
+
+oquo:evaluation-230335f9-9d29-41c3-8192-99dea37bdac9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-8eff64ea-b98d-4886-ab4c-335b350e394c ;
+        time:hasTime              oquo:instant-e1c73aaa-76e1-4215-9f0b-39e27911fbbd ;
+        oquo:hasObservation       oquo:observation-0cbace9e-5d5a-47ba-a007-b6b692c7c08f .
+
+oquo:observation-ca4e755b-2586-4759-b62d-de3e1a7017f5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0cb8089a-37f8-4179-900c-6d17f4569917 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e527c286-073b-4e32-9935-3834b1c3320e .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-4e5cbe3b-0069-4379-b663-47721d3bfdb1
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e6a980ea-7c2e-4ec6-bf95-d793ffc16f63 ;
+        oboe:measurementFor  oquo:observation-c823557c-f38d-4c86-894c-28e736280173 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:observation-91930a8e-1f9d-42a0-b54e-3f4f89b15869
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d60024f6-5969-4975-ad69-ff4b6d57592c ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-78704f0e-3a6e-49d3-888b-a73e57a09cf5 .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-e960d3d3-6186-479f-8d61-c0ca1dfb7a8c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d0dae7e4-8ae3-40d3-94df-cdcfb45f9524 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-09046d82-19b9-41eb-9cdc-196f1ca2d836 .
+
+oquo:observation-4892ba52-ce3e-45c4-8f95-793fdc1256ae
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a61aced6-0bd5-4977-ba4f-ef1911182be0 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-493699b1-abe5-4592-b6c0-4815e43434f6 .
+
+oquo:instant-f5fe6604-d065-4d52-81c9-e39a60ccabe9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.069Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-6a417d9b-1f77-4302-9356-306cead2a96f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.964Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fc930bb2-6b77-48ff-8b2a-2055f748d523
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-b36b0f4e-5c80-4100-aa6f-a36ebd72b05c ;
+        time:hasTime              oquo:instant-493699b1-abe5-4592-b6c0-4815e43434f6 ;
+        oquo:hasObservation       oquo:observation-4892ba52-ce3e-45c4-8f95-793fdc1256ae .
+
+oquo:observation-0e5ddfe8-5d5a-41a2-8e12-abbd21f6767f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-51a5ed5d-e605-44d3-b391-9e692356b104 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-09d5ad9c-b32a-4e04-a835-0bacfb67aa2c .
+
+oquo:evaluation-820f588d-15b9-4eb1-8843-7fd087e2cb30
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-14f8e36f-4184-405b-8415-026b9de99f4e ;
+        time:hasTime              oquo:instant-3075255e-56ec-467d-980a-75e9990d636c ;
+        oquo:hasObservation       oquo:observation-8b98c09e-8221-4e6e-a3e6-d1bd1d15b795 .
+
+oquo:qualityValue-148ab186-2e17-4b40-bdc5-cdd4be924da1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dc3bfc6b-d1af-4a76-9b9d-28a18ec1a773 ;
+        res:hasLiteralValue    "0.3194444444444444"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a67b0ba8-dadf-422e-9dab-37339c298956 .
+
+oquo:qualityValue-14f8e36f-4184-405b-8415-026b9de99f4e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c8adc93-ac6a-4d87-8900-cab92b363e62 ;
+        res:hasLiteralValue    "0.09523809523809523"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-820f588d-15b9-4eb1-8843-7fd087e2cb30 .
+
+oquo:metric-6c96f49b-376b-4780-a578-ed79c574b5cf
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8eff64ea-b98d-4886-ab4c-335b350e394c ;
+        oboe:measurementFor  oquo:observation-0cbace9e-5d5a-47ba-a007-b6b692c7c08f ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-1b10c20e-ff5c-41b4-9134-dc63e2b7d9c3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-e6a980ea-7c2e-4ec6-bf95-d793ffc16f63 ;
+        time:hasTime              oquo:instant-6a417d9b-1f77-4302-9356-306cead2a96f ;
+        oquo:hasObservation       oquo:observation-c823557c-f38d-4c86-894c-28e736280173 .
+
+oquo:metric-d0dae7e4-8ae3-40d3-94df-cdcfb45f9524
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-dc508b6f-f9db-44a9-ae7b-3ddfbe178e9a ;
+        oboe:measurementFor  oquo:observation-e960d3d3-6186-479f-8d61-c0ca1dfb7a8c ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-f399e079-e2c6-4a6a-b15f-5a0d1d5c7aca
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-1fc41301-03e5-4bbd-b3bb-46fafec3dcde ;
+        time:hasTime              oquo:instant-b9d9608b-ef80-4b11-ae91-7a776c44c946 ;
+        oquo:hasObservation       oquo:observation-ad90fdfb-fec4-492e-8122-8a614e82f60e .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-a7cf311d-6b3e-4ba0-9ed4-ff5e4afa1a45
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f57ddb06-9110-4bed-871c-97065e9a8a1d ;
+        res:hasLiteralValue    "0.7361111111111112"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8fb854c7-7069-4d56-9f8a-13fb866fc9c0 .
+
+oquo:evaluation-12e2ff7e-6b86-443b-b235-11bc0055116a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-8a647ca7-eadb-4113-a837-51b77d96cce9 ;
+        time:hasTime              oquo:instant-78704f0e-3a6e-49d3-888b-a73e57a09cf5 ;
+        oquo:hasObservation       oquo:observation-91930a8e-1f9d-42a0-b54e-3f4f89b15869 .
+
+oquo:evaluation-ce59af9d-cf33-433e-ba5f-be2db97c86ee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-399f0fc9-1f1c-49d8-8dcd-bd07c0329bb1 ;
+        time:hasTime              oquo:instant-55389d89-1d41-4ad2-8c42-3a9c702aab04 ;
+        oquo:hasObservation       oquo:observation-fceb860b-0d5d-46ff-8728-79d9702f8b5c .
+
+oquo:instant-09046d82-19b9-41eb-9cdc-196f1ca2d836
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.074Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-dd1317c0-0e45-4e03-8f57-e9241cf88df5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f1cdaf49-c29a-4c67-ba99-757163d47bae ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fb896f05-d62f-4552-8abc-cab116c4b2d0 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-841a0e55-af9c-4774-81b5-dfb86d58f709
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5b9e6d14-edeb-4d07-8c63-3f66acb704a0 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ce072203-c315-457f-929c-9c30a1d15ec4 .
+
+oquo:metric-f57ddb06-9110-4bed-871c-97065e9a8a1d
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-a7cf311d-6b3e-4ba0-9ed4-ff5e4afa1a45 ;
+        oboe:measurementFor  oquo:observation-99579e1e-0629-454c-84df-8223e1a404c6 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:instant-09d5ad9c-b32a-4e04-a835-0bacfb67aa2c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.018Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-317eef9f-4ce3-4163-95c1-1b53c37c8c02
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-c0dc51f7-0d6b-4045-9f21-094ce58b81ad ;
+        time:hasTime              oquo:instant-09d5ad9c-b32a-4e04-a835-0bacfb67aa2c ;
+        oquo:hasObservation       oquo:observation-0e5ddfe8-5d5a-41a2-8e12-abbd21f6767f .
+
+oquo:evaluation-c2b13d51-e8f7-4df3-a445-f89bb3aaa8ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-e77af6b9-f0f6-4aaf-ae9f-f25a2207ede4 ;
+        time:hasTime              oquo:instant-ad92296a-2b73-473b-80dc-205347724536 ;
+        oquo:hasObservation       oquo:observation-fcb05060-2115-4ea6-bbe1-d88adf9cc3d4 .
+
+oquo:qualityValue-f8ba8e0d-079d-4c70-94b3-597bb72d043a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2952c134-800d-46c7-8100-e9c7bdcb22d2 ;
+        res:hasLiteralValue    "0.027777777777777776"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e6378cfc-333c-439d-9d4e-1e1e60187cdf .
+
+oquo:qualityValue-9f9d17e8-474f-4f08-878f-2b1bbdf1310f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-54c1e175-02cd-48cc-bf89-a5651d37c33f ;
+        res:hasLiteralValue    "0.8888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-77b4fa95-0808-4138-8339-7307dc6a1205 .
+
+oquo:instant-b9d9608b-ef80-4b11-ae91-7a776c44c946
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.044Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-5a58860c-50f4-44d0-b48b-3896e0c582c2
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-774fbc8c-22d6-457f-b85d-be31d817a04e ;
+        oboe:measurementFor  oquo:observation-1b5fa40b-b984-4904-8692-20b474bb6ea9 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:instant-e527c286-073b-4e32-9935-3834b1c3320e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4f56d300-3161-4f90-8d7c-16d30ad4cf5f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.747Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e869cee2-f692-4479-94ef-51394a0eb598
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.007Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a740708e-1869-48a1-9d77-622cb1d71830
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.93Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-6e117c2a-9523-4fb6-8aec-41949d354dc6
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-968f4bce-c786-471e-8fd6-76d4141031f8 ;
+        oboe:measurementFor  oquo:observation-c00d5a25-e888-47d4-af22-4f045a600140 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-1b5fa40b-b984-4904-8692-20b474bb6ea9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5a58860c-50f4-44d0-b48b-3896e0c582c2 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-1f8fffee-4d8c-47de-b7a8-2d2f27f93a57 .
+
+oquo:qualityValue-c0dc51f7-0d6b-4045-9f21-094ce58b81ad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-51a5ed5d-e605-44d3-b391-9e692356b104 ;
+        res:hasLiteralValue    "0.9861111111111112"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-317eef9f-4ce3-4163-95c1-1b53c37c8c02 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-f69b29e0-3bc2-4864-9c1b-92fe3aff2b79
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-deb60a03-7379-4128-a9b6-e5b7d92a247a ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e869cee2-f692-4479-94ef-51394a0eb598 .
+
+oquo:metric-00476638-8775-4c09-babd-ecf09e12597c
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d6e9cd09-7b9f-4509-9672-19acb286b452 ;
+        oboe:measurementFor  oquo:observation-14ff171b-f0bc-4c9e-876e-57d3928a886d ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-36034f61-478f-4a28-93f6-b181f8c88754
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-1fc41301-03e5-4bbd-b3bb-46fafec3dcde ;
+        oboe:measurementFor  oquo:observation-ad90fdfb-fec4-492e-8122-8a614e82f60e ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-7a161e75-4dea-408b-b14c-103d48dec500
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-fd333642-41ee-4197-b8bc-bbafbca38aad ;
+        oboe:measurementFor  oquo:observation-febf3c93-2fed-4fcb-9db0-eb10c9dc5cd7 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:qualityValue-46664f84-d064-4934-8ac8-32060ae543d0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-12469942-8eda-4750-825a-4054c9fb1fa4 ;
+        res:hasLiteralValue    "0.9444444444444444"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-96f456ac-7790-43e9-922c-6d6420bbef73 .
+
+oquo:metric-0c24aeda-6f58-44ab-a707-0c293caf0b3e
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-337f444b-024a-4080-b4be-aeb19e20fc8f ;
+        oboe:measurementFor  oquo:observation-6195509c-0660-47e2-ae72-fc2184f8df18 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:metric-dc3bfc6b-d1af-4a76-9b9d-28a18ec1a773
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-148ab186-2e17-4b40-bdc5-cdd4be924da1 ;
+        oboe:measurementFor  oquo:observation-56eedb02-2d14-4a6a-927d-9d25b14e8074 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:qualityValue-44daec69-ef4c-46c1-8a7c-d382918626b4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b67f87ad-cdd1-49b4-bdfb-32bdb94b8fb2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2b4054e3-1b95-463c-b88c-0127eb071ae4 .
+
+oquo:instant-e0c046c1-1397-4509-960f-e79c5f97c518
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.001Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-54c1e175-02cd-48cc-bf89-a5651d37c33f
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9f9d17e8-474f-4f08-878f-2b1bbdf1310f ;
+        oboe:measurementFor  oquo:observation-0814b209-72e6-4f52-915a-5d7f387c2e7d ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:metric-a61aced6-0bd5-4977-ba4f-ef1911182be0
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-b36b0f4e-5c80-4100-aa6f-a36ebd72b05c ;
+        oboe:measurementFor  oquo:observation-4892ba52-ce3e-45c4-8f95-793fdc1256ae ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-9731aac7-8b34-423f-a0ad-98fa35594617
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-399f0fc9-1f1c-49d8-8dcd-bd07c0329bb1 ;
+        oboe:measurementFor  oquo:observation-fceb860b-0d5d-46ff-8728-79d9702f8b5c ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-e4de16d5-9662-45cd-99b0-19334cf904f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:13.112Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-0cb8089a-37f8-4179-900c-6d17f4569917
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-53f13041-6cf9-4a56-8527-28cca751a442 ;
+        oboe:measurementFor  oquo:observation-ca4e755b-2586-4759-b62d-de3e1a7017f5 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-d6e9cd09-7b9f-4509-9672-19acb286b452
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-00476638-8775-4c09-babd-ecf09e12597c ;
+        res:hasLiteralValue    "0.1388888888888889"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d7706259-5cf3-485b-a980-55c7849241df .
+
+oquo:metric-1c8adc93-ac6a-4d87-8900-cab92b363e62
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-14f8e36f-4184-405b-8415-026b9de99f4e ;
+        oboe:measurementFor  oquo:observation-8b98c09e-8221-4e6e-a3e6-d1bd1d15b795 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-774fbc8c-22d6-457f-b85d-be31d817a04e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5a58860c-50f4-44d0-b48b-3896e0c582c2 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e002a299-f23b-4025-91fd-67fdf773682b .
+
+oquo:metric-b67f87ad-cdd1-49b4-bdfb-32bdb94b8fb2
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-44daec69-ef4c-46c1-8a7c-d382918626b4 ;
+        oboe:measurementFor  oquo:observation-e4923e41-b01b-4053-8d82-a445e46664ba ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-4b134d39-a4da-452c-b9fd-8b20f18a6493
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-08e6e3c0-85d2-4bbd-a5ec-c9738b298a42 ;
+        oboe:measurementFor  oquo:observation-ad5d8826-61eb-481d-a163-7c5aa7af1dc4 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-2952c134-800d-46c7-8100-e9c7bdcb22d2
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f8ba8e0d-079d-4c70-94b3-597bb72d043a ;
+        oboe:measurementFor  oquo:observation-846415fb-383b-43a6-b9cf-b97d85f9e4a0 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:observation-c823557c-f38d-4c86-894c-28e736280173
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4e5cbe3b-0069-4379-b663-47721d3bfdb1 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-6a417d9b-1f77-4302-9356-306cead2a96f .
+
+oquo:observation-fcb05060-2115-4ea6-bbe1-d88adf9cc3d4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-66d59a25-168b-469c-a9ee-d71ec72feb11 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-ad92296a-2b73-473b-80dc-205347724536 .
+
+oquo:metric-3b0445a3-a3bf-4418-8b1d-2657646a8ce6
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-96c6e0af-ad69-4880-b6c3-33ab7db0202c ;
+        oboe:measurementFor  oquo:observation-db7e9681-e71b-4f70-b2dc-5dafd6f3913b ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-d3f92c52-d38a-49d4-a4c0-499f67b447b9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9c40c6a9-01c3-421c-aa0b-f164e418f7ab ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-e4de16d5-9662-45cd-99b0-19334cf904f1 .
+
+oquo:metric-51a5ed5d-e605-44d3-b391-9e692356b104
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-c0dc51f7-0d6b-4045-9f21-094ce58b81ad ;
+        oboe:measurementFor  oquo:observation-0e5ddfe8-5d5a-41a2-8e12-abbd21f6767f ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:observation-0814b209-72e6-4f52-915a-5d7f387c2e7d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-54c1e175-02cd-48cc-bf89-a5651d37c33f ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-d6d1d820-9c62-4252-ab0f-568a82d21b94 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-8eff64ea-b98d-4886-ab4c-335b350e394c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6c96f49b-376b-4780-a578-ed79c574b5cf ;
+        res:hasLiteralValue    "0.625"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-230335f9-9d29-41c3-8192-99dea37bdac9 .
+
+oquo:observation-8879de80-5350-4307-ba8d-af3ae1207744
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8271c61b-cef4-4d3c-b39b-d9d531382b11 ;
+        oboe:ofEntity        <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        time:hasTime         oquo:instant-569eb163-c683-4731-8cf6-0e29cad57aa7 .
+
+oquo:qualityValue-9a5d7552-4f6a-4f97-b580-0ca8634430e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-deb60a03-7379-4128-a9b6-e5b7d92a247a ;
+        res:hasLiteralValue    "0.5416666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d8f8077a-6e6e-4b18-bc05-8b62145a48aa .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-ce072203-c315-457f-929c-9c30a1d15ec4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-841a0e55-af9c-4774-81b5-dfb86d58f709 ;
+        time:hasTime              oquo:instant-0d5c6f5d-b374-43f4-946e-f927612965c4 ;
+        oquo:hasObservation       oquo:observation-de8ef402-f449-484f-99ea-3bde9dff48b5 .
+
+oquo:qualityValue-96c6e0af-ad69-4880-b6c3-33ab7db0202c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3b0445a3-a3bf-4418-8b1d-2657646a8ce6 ;
+        res:hasLiteralValue    "0.14285714285714285"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c7f64c7e-808e-426c-a0f6-a93d660bf122 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-1a209451-62ff-4b0d-b499-14a071f97cd5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.763Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-55389d89-1d41-4ad2-8c42-3a9c702aab04
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T00:37:12.819Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d8f8077a-6e6e-4b18-bc05-8b62145a48aa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-9a5d7552-4f6a-4f97-b580-0ca8634430e6 ;
+        time:hasTime              oquo:instant-e869cee2-f692-4479-94ef-51394a0eb598 ;
+        oquo:hasObservation       oquo:observation-f69b29e0-3bc2-4864-9c1b-92fe3aff2b79 .
+
+oquo:evaluation-77b4fa95-0808-4138-8339-7307dc6a1205
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:inputData             <https://w3id.org/i40/sto/iot/0.1/concerns/> ;
+        res:producedQualityValue  oquo:qualityValue-9f9d17e8-474f-4f08-878f-2b1bbdf1310f ;
+        time:hasTime              oquo:instant-d6d1d820-9c62-4252-ab0f-568a82d21b94 ;
+        oquo:hasObservation       oquo:observation-0814b209-72e6-4f52-915a-5d7f387c2e7d .

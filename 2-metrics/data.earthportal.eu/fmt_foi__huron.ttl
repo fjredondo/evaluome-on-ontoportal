@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-ab0960ce-5bc7-42a7-811c-eeb1a0b3e16f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f654d91f-6dae-48ba-a89a-00e8dd2dcc28 ;
+        res:hasLiteralValue    "0.1111111111111111"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3f98452b-b465-4bf3-a7c3-89f4f2987ad9 .
+
+oquo:instant-2a5393c0-fb45-40c0-b08d-72a10d1f21b5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.051Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-65cd1e60-2148-4ca1-b6c1-ef43c4c6bc00
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-6f31002b-a5c4-4b68-b08d-ce7a4c486885 ;
+        oboe:measurementFor  oquo:observation-c66fd205-2259-4b39-84ed-b4e731b5126d ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-eb36af28-9e85-4d28-93bb-4cce888a1f43
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f654d91f-6dae-48ba-a89a-00e8dd2dcc28 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-a95245d3-fee7-4921-8fce-7d10d0a20197 .
+
+oquo:instant-0525fccc-3d1e-4f7b-8d6f-8b62e3be2b83
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.991Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<https://service.poleterresolide.fr/voc/FOI>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-89d48c7d-1a5f-4103-9183-5239c27cbd41
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-b214c8da-3d18-44ff-914e-e603c8a6054c ;
+        time:hasTime              oquo:instant-db8ff7fa-c581-4196-9565-9a85045c6c69 ;
+        oquo:hasObservation       oquo:observation-a013578f-a028-403e-bcd1-20b58afa5784 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-29912934-2f3f-4f37-be42-0c4c4693194d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1da68ebb-3595-48cd-b82c-e947f0e2f9c4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0fd0b440-09ba-403e-afa5-73d654fb733e .
+
+oquo:instant-0fbbc184-2d3a-4bfb-8bf9-ecd41b014cc1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.866Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-43f961b1-a292-4b7d-a0a9-dffe83ef1f71
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f05a9790-01a1-4692-8141-ad21a2015619 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-45be39ee-6606-4ad1-9700-a7916d22eb89 .
+
+oquo:observation-fe19aea9-2c71-4f58-91dd-663326c291cc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4993bd0c-cd6b-4e47-b6a8-f62e86807fa9 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-7cc04cd5-fcdf-4db1-9d68-176def080ace .
+
+oquo:metric-5bb6d0b5-9e4b-4305-95f1-8e36022bb2af
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-e1cde47a-2bd8-4389-9f70-e01421dfbee1 ;
+        oboe:measurementFor  oquo:observation-6256d456-a572-4366-9925-73080b809ec5 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-61e26d47-d473-4617-9766-607ae4bb2346
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-cd0ed72f-5a25-4e5d-aa9f-e79e37ee19e6 ;
+        time:hasTime              oquo:instant-7bc06b56-4ed5-45e3-8028-fc5429c450b1 ;
+        oquo:hasObservation       oquo:observation-1922d459-29b9-45ba-b372-10af69c8e94e .
+
+oquo:qualityValue-fb987650-a914-470d-a6cd-e7d8c7b87f23
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9045192-85c6-4b70-a40b-c34b497ea653 ;
+        res:hasLiteralValue    "0.1111111111111111"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ce0c66bc-2d9f-4caf-a8b3-915f81960049 .
+
+oquo:evaluation-0fd0b440-09ba-403e-afa5-73d654fb733e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-29912934-2f3f-4f37-be42-0c4c4693194d ;
+        time:hasTime              oquo:instant-dd726867-a8bf-4902-ac98-3da629610088 ;
+        oquo:hasObservation       oquo:observation-21ebbb80-4f87-4611-acb7-7172030714c3 .
+
+oquo:qualityValue-c3034b5c-772a-4408-a389-26f17c61cd23
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c7b85e9-17bb-4708-9329-67419aff63ad ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e1f1c39a-c837-4cd0-8463-32c084e9963c .
+
+oquo:observation-eb574c35-c141-4e4e-9ea3-dd551630e536
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c7b85e9-17bb-4708-9329-67419aff63ad ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-fa63b607-4646-4dbd-92c0-ef519c140103 .
+
+oquo:observation-2f5d3a73-9f60-4230-901b-3e9bc51294ef
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4b6642b4-f20e-42be-a183-2d59b91ef10e ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-0fbbc184-2d3a-4bfb-8bf9-ecd41b014cc1 .
+
+oquo:observation-a6a1d1ce-9bfb-4aab-9985-758cd76f0fe1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9045192-85c6-4b70-a40b-c34b497ea653 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-db6f035c-3272-43be-9a59-5803129e5c41 .
+
+oquo:evaluation-3ff961a7-545c-4b24-b881-88d80ab94f1d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-0e7e9856-1eda-4a36-81af-c8d9d789963f ;
+        time:hasTime              oquo:instant-01bee9d6-0939-4546-a8c1-d69ffb99120c ;
+        oquo:hasObservation       oquo:observation-14954681-b602-451b-8d96-60b29bb570c0 .
+
+oquo:observation-c66fd205-2259-4b39-84ed-b4e731b5126d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-65cd1e60-2148-4ca1-b6c1-ef43c4c6bc00 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-41635334-aeb2-4d4c-aeb1-bd1cf4d338d3 .
+
+oquo:evaluation-81453978-24b2-479b-b245-01f214d65907
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-c6bfb767-24f4-4012-aa1c-032a4016a402 ;
+        time:hasTime              oquo:instant-7cc04cd5-fcdf-4db1-9d68-176def080ace ;
+        oquo:hasObservation       oquo:observation-fe19aea9-2c71-4f58-91dd-663326c291cc .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-72343e51-bcac-4bc7-8a62-c5c14712c03f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ea9574e6-c8d4-4976-a1e5-4c958921c0b6 ;
+        res:hasLiteralValue    "0.6666666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-60e00d6e-f65b-48fe-87ba-467e0e425313 .
+
+oquo:metric-f615ab27-bac1-48fe-b9a5-9df110102148
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-3a80f85d-9c66-4fea-812b-33fb148dd6c4 ;
+        oboe:measurementFor  oquo:observation-b2c34416-69a5-484f-96b4-a714351a1890 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:observation-a4fa19cb-de5e-4293-9758-87740c98196e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ea9574e6-c8d4-4976-a1e5-4c958921c0b6 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-afce2ff2-cd2b-4bc1-8a7c-0e06020195ce .
+
+oquo:evaluation-38061fe5-420e-4a67-9b55-63d02134fa2e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-4859d745-f21d-450d-9607-6af86e1b58e2 ;
+        time:hasTime              oquo:instant-2a5393c0-fb45-40c0-b08d-72a10d1f21b5 ;
+        oquo:hasObservation       oquo:observation-2970b667-1aa2-4e6a-9f81-6a97e5e66f9e .
+
+oquo:instant-41635334-aeb2-4d4c-aeb1-bd1cf4d338d3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.931Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1da68ebb-3595-48cd-b82c-e947f0e2f9c4
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-29912934-2f3f-4f37-be42-0c4c4693194d ;
+        oboe:measurementFor  oquo:observation-21ebbb80-4f87-4611-acb7-7172030714c3 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:metric-b9045192-85c6-4b70-a40b-c34b497ea653
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fb987650-a914-470d-a6cd-e7d8c7b87f23 ;
+        oboe:measurementFor  oquo:observation-a6a1d1ce-9bfb-4aab-9985-758cd76f0fe1 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-fa63b607-4646-4dbd-92c0-ef519c140103
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.281Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-bbeb9d88-b19b-4a41-9aa4-6124237e142f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.072Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-d07cdbe0-8d48-4474-82ad-8f59a597c9d8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-aa4c76dd-82ba-4ec1-bc0c-c1b71a4b3c76 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c0163507-24b9-4cb4-a604-7121dc86898f .
+
+oquo:instant-84abe1b3-bf1a-43a7-9a29-323a2be1aa1c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.976Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-e98ae655-cce3-4d72-9533-8ee229c86945
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4b6642b4-f20e-42be-a183-2d59b91ef10e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-50a20ccc-16e8-442f-a7eb-5eb6378635e1 .
+
+oquo:observation-302d7e16-edf8-4bf8-bc6b-b4065453c13e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0c4794b8-ab17-43be-99b2-e6c117e46428 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-ce1cdee9-f587-4380-b441-359e43d318bd .
+
+oquo:observation-2970b667-1aa2-4e6a-9f81-6a97e5e66f9e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e9482f4e-cebf-4a7b-8927-10c591717956 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-2a5393c0-fb45-40c0-b08d-72a10d1f21b5 .
+
+oquo:observation-b2c34416-69a5-484f-96b4-a714351a1890
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f615ab27-bac1-48fe-b9a5-9df110102148 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-d726dc90-2c04-45b4-8611-392208e33e7c .
+
+oquo:qualityValue-c6bfb767-24f4-4012-aa1c-032a4016a402
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4993bd0c-cd6b-4e47-b6a8-f62e86807fa9 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-81453978-24b2-479b-b245-01f214d65907 .
+
+oquo:instant-59779ac5-bac9-4fa7-a313-39d79e954373
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.039Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-ce1cdee9-f587-4380-b441-359e43d318bd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.044Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-27c777d8-63bc-4220-b9b9-515adf1589d8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.041Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-a013578f-a028-403e-bcd1-20b58afa5784
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-05f54133-38a3-48c7-b3cb-40427b7c07a5 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-db8ff7fa-c581-4196-9565-9a85045c6c69 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-d5c05f2f-b92a-4076-81f8-8afb51986a51
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-e29dd515-a68a-4e69-a984-24fa729706ef ;
+        oboe:measurementFor  oquo:observation-d2e8193d-cdb9-45d6-9c51-c0dfb47a1215 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-cfa853a5-1d04-41b6-8c6f-db7128d6f86b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-54b47f2e-1708-4c25-a7c2-f2c98b9df07e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-92e0aee0-53ec-43c1-8674-36292338b2fc .
+
+oquo:metric-53aad810-c960-462d-a538-6232a6144751
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0e7e9856-1eda-4a36-81af-c8d9d789963f ;
+        oboe:measurementFor  oquo:observation-14954681-b602-451b-8d96-60b29bb570c0 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:metric-54b47f2e-1708-4c25-a7c2-f2c98b9df07e
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cfa853a5-1d04-41b6-8c6f-db7128d6f86b ;
+        oboe:measurementFor  oquo:observation-c15fb83e-c3ca-4dcf-a8c0-6441ca730393 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-91052ebc-6746-4040-9d63-359ab34a330b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0904bdd0-8044-4176-bfe7-f70b1fba624b ;
+        res:hasLiteralValue    "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ad30c035-be3f-4013-84f4-f340bad45e6f .
+
+oquo:observation-056c753d-a7da-4c1a-9350-55f9de297585
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2663fb00-6ae9-4a7b-8b66-ddc812125f6f ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-5e85daf0-42b7-4a03-b931-fcf9e65d1dd9 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-6b789403-1c95-4092-8570-6ed574aed7ed
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4fe44954-5a1d-45b0-b15c-3b461f579b1a ;
+        oboe:measurementFor  oquo:observation-02b017e2-432a-454a-82f6-3004315ccb05 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:evaluation-ad30c035-be3f-4013-84f4-f340bad45e6f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-91052ebc-6746-4040-9d63-359ab34a330b ;
+        time:hasTime              oquo:instant-1e3e19f8-cc8c-490b-9d08-815540b576f9 ;
+        oquo:hasObservation       oquo:observation-04c190d3-c7ec-44b3-ad72-75765dc49d2f .
+
+oquo:qualityValue-ceeaf70e-8f49-4dd8-a9b0-1728ee5338c9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c29f23ba-da86-42df-9f82-70139311d1c5 ;
+        res:hasLiteralValue    "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bfd0ccb7-e910-4728-867f-93d54c8aa5ec .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:evaluation-a6106423-590c-4f36-8915-7b68e515d531
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-e3ac0c03-fb6b-4d34-b349-ac623493b74d ;
+        time:hasTime              oquo:instant-0525fccc-3d1e-4f7b-8d6f-8b62e3be2b83 ;
+        oquo:hasObservation       oquo:observation-2a944252-d2a8-4cec-b952-c1fe7aa99b34 .
+
+oquo:metric-0c4794b8-ab17-43be-99b2-e6c117e46428
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-1ff28d4e-7bbe-49b0-8e96-2616cc163e27 ;
+        oboe:measurementFor  oquo:observation-302d7e16-edf8-4bf8-bc6b-b4065453c13e ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-1c7b85e9-17bb-4708-9329-67419aff63ad
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-c3034b5c-772a-4408-a389-26f17c61cd23 ;
+        oboe:measurementFor  oquo:observation-eb574c35-c141-4e4e-9ea3-dd551630e536 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:observation-1922d459-29b9-45ba-b372-10af69c8e94e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c34331b9-ff2c-4acb-b68b-167d164e70e0 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-7bc06b56-4ed5-45e3-8028-fc5429c450b1 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7099cf91-dde8-4ad8-a6f7-9cbe98948a39
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-51a83fa6-94d7-424b-bccf-3dfeae59dcf3 ;
+        time:hasTime              oquo:instant-232d1370-c71e-44fa-a841-4e0680d30631 ;
+        oquo:hasObservation       oquo:observation-85b0b364-dbff-4e59-927a-a1a23656dfdc .
+
+oquo:instant-7c14a1e6-6a61-4f57-bb61-f9a31e0bdf46
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.026Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-d9e8304d-98d4-4ed9-b9f4-5d1cbbad161e
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-0c86fe84-8660-4da4-8ebe-2e56bae7aa65 ;
+        oboe:measurementFor  oquo:observation-7fc160f0-8e3f-40f1-b3bc-33eca79670f2 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:observation-bb1d97da-469c-4102-8789-ac58cf7ce8bf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b414240f-74ef-4d70-a9d9-ba9b7c9dce79 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-54b58a6b-42a3-408b-9d7b-b4bb5916755b .
+
+oquo:metric-5d02066d-37ff-419f-a600-90167332919a
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e3ac0c03-fb6b-4d34-b349-ac623493b74d ;
+        oboe:measurementFor  oquo:observation-2a944252-d2a8-4cec-b952-c1fe7aa99b34 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:instant-a95245d3-fee7-4921-8fce-7d10d0a20197
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.97Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7bc06b56-4ed5-45e3-8028-fc5429c450b1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-47a40e89-c46f-43a1-a66e-93d6647b5645
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-87a352c0-6060-4ea2-88ab-efcf93132db5 ;
+        oboe:measurementFor  oquo:observation-e08051c8-4692-4f03-92d8-9f95ef35fd59 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:observation-d2e8193d-cdb9-45d6-9c51-c0dfb47a1215
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d5c05f2f-b92a-4076-81f8-8afb51986a51 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-61662929-ec17-4f72-b66e-6095c57e72a1 .
+
+oquo:evaluation-cb13e194-2e68-4f8f-98eb-313357207ea1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-1565190a-51d6-43fe-bd17-7427c6aa3bd2 ;
+        time:hasTime              oquo:instant-16536529-ad1c-42c4-8149-839c1dc51e82 ;
+        oquo:hasObservation       oquo:observation-401c21f7-d7a4-40cc-bd23-3eb83093c754 .
+
+oquo:qualityValue-87a352c0-6060-4ea2-88ab-efcf93132db5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-47a40e89-c46f-43a1-a66e-93d6647b5645 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7faefc83-acde-412c-983e-190ab305ef36 .
+
+oquo:qualityValue-02ecea50-01ec-499a-94ec-86b6a91fef42
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e41f54e3-3e47-4511-856e-a65eedde23ec ;
+        res:hasLiteralValue    "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-41c9cc07-fc70-4490-9e86-2f50a3803906 .
+
+oquo:observation-d54d0273-30d1-458e-9fd1-7b89d707ea5d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f05a9790-01a1-4692-8141-ad21a2015619 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-47416807-b6a9-4117-9d3d-acc4662f64e9 .
+
+oquo:observation-d902cf12-72ac-4090-b4c2-f9ab1307243f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-851666a3-ccf0-47f7-9a47-722481b5d482 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-bbeb9d88-b19b-4a41-9aa4-6124237e142f .
+
+oquo:qualityValue-89f48d8e-82bd-4c73-b420-b826e8f078b3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-31bec507-9492-4378-88c3-334f11c93603 ;
+        res:hasLiteralValue    "0.1111111111111111"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f7a818b6-270b-4c5b-ba0a-115d88d5792c .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-4aaa5f6f-5fb4-4509-85a0-d116decfa161
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-1ff28d4e-7bbe-49b0-8e96-2616cc163e27 ;
+        time:hasTime              oquo:instant-ce1cdee9-f587-4380-b441-359e43d318bd ;
+        oquo:hasObservation       oquo:observation-302d7e16-edf8-4bf8-bc6b-b4065453c13e .
+
+oquo:qualityValue-51a83fa6-94d7-424b-bccf-3dfeae59dcf3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-42868cbb-42da-4100-a1b4-3152000511ce ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7099cf91-dde8-4ad8-a6f7-9cbe98948a39 .
+
+oquo:instant-613e60e7-1d1a-4f21-b4f7-0d51d2533b46
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.034Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-05f54133-38a3-48c7-b3cb-40427b7c07a5
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b214c8da-3d18-44ff-914e-e603c8a6054c ;
+        oboe:measurementFor  oquo:observation-a013578f-a028-403e-bcd1-20b58afa5784 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-4993bd0c-cd6b-4e47-b6a8-f62e86807fa9
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c6bfb767-24f4-4012-aa1c-032a4016a402 ;
+        oboe:measurementFor  oquo:observation-fe19aea9-2c71-4f58-91dd-663326c291cc ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-b414240f-74ef-4d70-a9d9-ba9b7c9dce79
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a5414eaa-6576-459f-89e4-b66598dd40c0 ;
+        oboe:measurementFor  oquo:observation-bb1d97da-469c-4102-8789-ac58cf7ce8bf ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-2663fb00-6ae9-4a7b-8b66-ddc812125f6f
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f4e151f0-b73a-40c8-aae1-943f9ab0aa2e ;
+        oboe:measurementFor  oquo:observation-056c753d-a7da-4c1a-9350-55f9de297585 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-a5414eaa-6576-459f-89e4-b66598dd40c0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b414240f-74ef-4d70-a9d9-ba9b7c9dce79 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-01751f30-6a63-4656-bf86-9ce4b7ac2bee .
+
+oquo:evaluation-bfd0ccb7-e910-4728-867f-93d54c8aa5ec
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-ceeaf70e-8f49-4dd8-a9b0-1728ee5338c9 ;
+        time:hasTime              oquo:instant-7c14a1e6-6a61-4f57-bb61-f9a31e0bdf46 ;
+        oquo:hasObservation       oquo:observation-029d0c4f-e900-481c-a9a5-ccde2a11f5b5 .
+
+oquo:qualityValue-e3ac0c03-fb6b-4d34-b349-ac623493b74d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5d02066d-37ff-419f-a600-90167332919a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a6106423-590c-4f36-8915-7b68e515d531 .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-6256d456-a572-4366-9925-73080b809ec5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5bb6d0b5-9e4b-4305-95f1-8e36022bb2af ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-27c777d8-63bc-4220-b9b9-515adf1589d8 .
+
+oquo:observation-85b0b364-dbff-4e59-927a-a1a23656dfdc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-42868cbb-42da-4100-a1b4-3152000511ce ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-232d1370-c71e-44fa-a841-4e0680d30631 .
+
+oquo:instant-1e3e19f8-cc8c-490b-9d08-815540b576f9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.031Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-851666a3-ccf0-47f7-9a47-722481b5d482
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-0c7f69ab-b685-462a-91cd-5c5c4d2473ea ;
+        oboe:measurementFor  oquo:observation-d902cf12-72ac-4090-b4c2-f9ab1307243f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-b2c04724-458d-4234-8eb4-0d71f52bad2a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-0c86fe84-8660-4da4-8ebe-2e56bae7aa65 ;
+        time:hasTime              oquo:instant-4c9a98a6-1297-4921-bf38-a7ac9849f146 ;
+        oquo:hasObservation       oquo:observation-7fc160f0-8e3f-40f1-b3bc-33eca79670f2 .
+
+oquo:metric-aa4c76dd-82ba-4ec1-bc0c-c1b71a4b3c76
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d07cdbe0-8d48-4474-82ad-8f59a597c9d8 ;
+        oboe:measurementFor  oquo:observation-ee86d3f8-cbd3-428f-88c9-1f9d842b8170 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:instant-5e85daf0-42b7-4a03-b931-fcf9e65d1dd9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.005Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3f98452b-b465-4bf3-a7c3-89f4f2987ad9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-ab0960ce-5bc7-42a7-811c-eeb1a0b3e16f ;
+        time:hasTime              oquo:instant-a95245d3-fee7-4921-8fce-7d10d0a20197 ;
+        oquo:hasObservation       oquo:observation-eb36af28-9e85-4d28-93bb-4cce888a1f43 .
+
+oquo:instant-b897c0a4-124c-4601-9402-ad43604b683c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.024Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b214c8da-3d18-44ff-914e-e603c8a6054c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-05f54133-38a3-48c7-b3cb-40427b7c07a5 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-89d48c7d-1a5f-4103-9183-5239c27cbd41 .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-0904bdd0-8044-4176-bfe7-f70b1fba624b
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-91052ebc-6746-4040-9d63-359ab34a330b ;
+        oboe:measurementFor  oquo:observation-04c190d3-c7ec-44b3-ad72-75765dc49d2f ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-01751f30-6a63-4656-bf86-9ce4b7ac2bee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-a5414eaa-6576-459f-89e4-b66598dd40c0 ;
+        time:hasTime              oquo:instant-54b58a6b-42a3-408b-9d7b-b4bb5916755b ;
+        oquo:hasObservation       oquo:observation-bb1d97da-469c-4102-8789-ac58cf7ce8bf .
+
+oquo:instant-61662929-ec17-4f72-b66e-6095c57e72a1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.069Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-45be39ee-6606-4ad1-9700-a7916d22eb89
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-43f961b1-a292-4b7d-a0a9-dffe83ef1f71 ;
+        time:hasTime              oquo:instant-47416807-b6a9-4117-9d3d-acc4662f64e9 ;
+        oquo:hasObservation       oquo:observation-d54d0273-30d1-458e-9fd1-7b89d707ea5d .
+
+oquo:metric-e9482f4e-cebf-4a7b-8927-10c591717956
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-4859d745-f21d-450d-9607-6af86e1b58e2 ;
+        oboe:measurementFor  oquo:observation-2970b667-1aa2-4e6a-9f81-6a97e5e66f9e ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-4b859574-a5fd-4bdc-9679-94608d24d98e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-6f31002b-a5c4-4b68-b08d-ce7a4c486885 ;
+        time:hasTime              oquo:instant-41635334-aeb2-4d4c-aeb1-bd1cf4d338d3 ;
+        oquo:hasObservation       oquo:observation-c66fd205-2259-4b39-84ed-b4e731b5126d .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-f654d91f-6dae-48ba-a89a-00e8dd2dcc28
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ab0960ce-5bc7-42a7-811c-eeb1a0b3e16f ;
+        oboe:measurementFor  oquo:observation-eb36af28-9e85-4d28-93bb-4cce888a1f43 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-c0163507-24b9-4cb4-a604-7121dc86898f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-d07cdbe0-8d48-4474-82ad-8f59a597c9d8 ;
+        time:hasTime              oquo:instant-59779ac5-bac9-4fa7-a313-39d79e954373 ;
+        oquo:hasObservation       oquo:observation-ee86d3f8-cbd3-428f-88c9-1f9d842b8170 .
+
+oquo:qualityValue-f4e151f0-b73a-40c8-aae1-943f9ab0aa2e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2663fb00-6ae9-4a7b-8b66-ddc812125f6f ;
+        res:hasLiteralValue    "0.1111111111111111"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-977f8856-a0c0-4b07-b4ce-226e65df2f07 .
+
+oquo:evaluation-3af3865d-6ccd-4871-a1e5-cd7b1a09ca78
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-e29dd515-a68a-4e69-a984-24fa729706ef ;
+        time:hasTime              oquo:instant-61662929-ec17-4f72-b66e-6095c57e72a1 ;
+        oquo:hasObservation       oquo:observation-d2e8193d-cdb9-45d6-9c51-c0dfb47a1215 .
+
+oquo:instant-d726dc90-2c04-45b4-8611-392208e33e7c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.342Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-e41f54e3-3e47-4511-856e-a65eedde23ec
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-02ecea50-01ec-499a-94ec-86b6a91fef42 ;
+        oboe:measurementFor  oquo:observation-4cb5fd5a-3818-40fd-96b9-c0fec03c1981 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:qualityValue-6f31002b-a5c4-4b68-b08d-ce7a4c486885
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-65cd1e60-2148-4ca1-b6c1-ef43c4c6bc00 ;
+        res:hasLiteralValue    "6.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4b859574-a5fd-4bdc-9679-94608d24d98e .
+
+oquo:observation-04c190d3-c7ec-44b3-ad72-75765dc49d2f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0904bdd0-8044-4176-bfe7-f70b1fba624b ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-1e3e19f8-cc8c-490b-9d08-815540b576f9 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-e08051c8-4692-4f03-92d8-9f95ef35fd59
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-47a40e89-c46f-43a1-a66e-93d6647b5645 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-613e60e7-1d1a-4f21-b4f7-0d51d2533b46 .
+
+oquo:metric-62e292dc-4ac9-4cc3-894c-68c92afdbd39
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1345bc1a-e935-475f-a175-1cc9c4d920be ;
+        oboe:measurementFor  oquo:observation-e2494db7-f01a-4b2a-8a5f-9ff5dc679acb ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-c15fb83e-c3ca-4dcf-a8c0-6441ca730393
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-54b47f2e-1708-4c25-a7c2-f2c98b9df07e ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-9e8de807-c126-44fc-9a8b-4783e8f15fd6 .
+
+oquo:observation-2a944252-d2a8-4cec-b952-c1fe7aa99b34
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5d02066d-37ff-419f-a600-90167332919a ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-0525fccc-3d1e-4f7b-8d6f-8b62e3be2b83 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-ee86d3f8-cbd3-428f-88c9-1f9d842b8170
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-aa4c76dd-82ba-4ec1-bc0c-c1b71a4b3c76 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-59779ac5-bac9-4fa7-a313-39d79e954373 .
+
+oquo:evaluation-e1f1c39a-c837-4cd0-8463-32c084e9963c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-c3034b5c-772a-4408-a389-26f17c61cd23 ;
+        time:hasTime              oquo:instant-fa63b607-4646-4dbd-92c0-ef519c140103 ;
+        oquo:hasObservation       oquo:observation-eb574c35-c141-4e4e-9ea3-dd551630e536 .
+
+oquo:observation-ca7e325b-c9dc-4b2c-b014-f5ca0efd4fa2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-31bec507-9492-4378-88c3-334f11c93603 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-826fe077-b282-4038-9c03-56a04b39ddba .
+
+oquo:metric-c29f23ba-da86-42df-9f82-70139311d1c5
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ceeaf70e-8f49-4dd8-a9b0-1728ee5338c9 ;
+        oboe:measurementFor  oquo:observation-029d0c4f-e900-481c-a9a5-ccde2a11f5b5 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-4859d745-f21d-450d-9607-6af86e1b58e2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e9482f4e-cebf-4a7b-8927-10c591717956 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-38061fe5-420e-4a67-9b55-63d02134fa2e .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b6ae8795-c368-4ee2-bad2-baa2328d2834
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-cc2696cd-e7e5-4e84-8d42-e764a7a78020 ;
+        oboe:measurementFor  oquo:observation-8008f154-6816-487d-a39f-348514f78ce3 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:qualityValue-4fe44954-5a1d-45b0-b15c-3b461f579b1a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6b789403-1c95-4092-8570-6ed574aed7ed ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3c831a6d-7e6a-46ed-957e-0c9a2e6eef71 .
+
+oquo:qualityValue-e1cde47a-2bd8-4389-9f70-e01421dfbee1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5bb6d0b5-9e4b-4305-95f1-8e36022bb2af ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-21dd26a7-84dc-4dff-954e-c6e48239fbc7 .
+
+oquo:observation-02b017e2-432a-454a-82f6-3004315ccb05
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6b789403-1c95-4092-8570-6ed574aed7ed ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-b897c0a4-124c-4601-9402-ad43604b683c .
+
+oquo:observation-4cb5fd5a-3818-40fd-96b9-c0fec03c1981
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e41f54e3-3e47-4511-856e-a65eedde23ec ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-5d79e177-d1f4-4d93-a21c-29b04c70e232 .
+
+oquo:evaluation-81c70f63-ef0e-489e-9f86-474722e1cb74
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-0c7f69ab-b685-462a-91cd-5c5c4d2473ea ;
+        time:hasTime              oquo:instant-bbeb9d88-b19b-4a41-9aa4-6124237e142f ;
+        oquo:hasObservation       oquo:observation-d902cf12-72ac-4090-b4c2-f9ab1307243f .
+
+oquo:qualityValue-1565190a-51d6-43fe-bd17-7427c6aa3bd2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b5006217-e09d-4c4d-bee1-743b4c78b743 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb13e194-2e68-4f8f-98eb-313357207ea1 .
+
+oquo:evaluation-41c9cc07-fc70-4490-9e86-2f50a3803906
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-02ecea50-01ec-499a-94ec-86b6a91fef42 ;
+        time:hasTime              oquo:instant-5d79e177-d1f4-4d93-a21c-29b04c70e232 ;
+        oquo:hasObservation       oquo:observation-4cb5fd5a-3818-40fd-96b9-c0fec03c1981 .
+
+oquo:metric-f05a9790-01a1-4692-8141-ad21a2015619
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-43f961b1-a292-4b7d-a0a9-dffe83ef1f71 ;
+        oboe:measurementFor  oquo:observation-d54d0273-30d1-458e-9fd1-7b89d707ea5d ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-ea9574e6-c8d4-4976-a1e5-4c958921c0b6
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-72343e51-bcac-4bc7-8a62-c5c14712c03f ;
+        oboe:measurementFor  oquo:observation-a4fa19cb-de5e-4293-9758-87740c98196e ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:evaluation-da8e1463-181a-4d7b-a18a-159f97f4775f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-cc2696cd-e7e5-4e84-8d42-e764a7a78020 ;
+        time:hasTime              oquo:instant-191bbb6f-80d0-4662-bdae-6e344ced7dad ;
+        oquo:hasObservation       oquo:observation-8008f154-6816-487d-a39f-348514f78ce3 .
+
+oquo:instant-db6f035c-3272-43be-9a59-5803129e5c41
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.011Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-31bec507-9492-4378-88c3-334f11c93603
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-89f48d8e-82bd-4c73-b420-b826e8f078b3 ;
+        oboe:measurementFor  oquo:observation-ca7e325b-c9dc-4b2c-b014-f5ca0efd4fa2 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:observation-21ebbb80-4f87-4611-acb7-7172030714c3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1da68ebb-3595-48cd-b82c-e947f0e2f9c4 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-dd726867-a8bf-4902-ac98-3da629610088 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b5006217-e09d-4c4d-bee1-743b4c78b743
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-1565190a-51d6-43fe-bd17-7427c6aa3bd2 ;
+        oboe:measurementFor  oquo:observation-401c21f7-d7a4-40cc-bd23-3eb83093c754 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-191bbb6f-80d0-4662-bdae-6e344ced7dad
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.374Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-cd0ed72f-5a25-4e5d-aa9f-e79e37ee19e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c34331b9-ff2c-4acb-b68b-167d164e70e0 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-61e26d47-d473-4617-9766-607ae4bb2346 .
+
+oquo:instant-47416807-b6a9-4117-9d3d-acc4662f64e9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.296Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-7fc160f0-8e3f-40f1-b3bc-33eca79670f2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d9e8304d-98d4-4ed9-b9f4-5d1cbbad161e ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-4c9a98a6-1297-4921-bf38-a7ac9849f146 .
+
+oquo:instant-4c9a98a6-1297-4921-bf38-a7ac9849f146
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.331Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-60e00d6e-f65b-48fe-87ba-467e0e425313
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-72343e51-bcac-4bc7-8a62-c5c14712c03f ;
+        time:hasTime              oquo:instant-afce2ff2-cd2b-4bc1-8a7c-0e06020195ce ;
+        oquo:hasObservation       oquo:observation-a4fa19cb-de5e-4293-9758-87740c98196e .
+
+oquo:observation-401c21f7-d7a4-40cc-bd23-3eb83093c754
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b5006217-e09d-4c4d-bee1-743b4c78b743 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-16536529-ad1c-42c4-8149-839c1dc51e82 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-01bee9d6-0939-4546-a8c1-d69ffb99120c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-21dd26a7-84dc-4dff-954e-c6e48239fbc7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-e1cde47a-2bd8-4389-9f70-e01421dfbee1 ;
+        time:hasTime              oquo:instant-27c777d8-63bc-4220-b9b9-515adf1589d8 ;
+        oquo:hasObservation       oquo:observation-6256d456-a572-4366-9925-73080b809ec5 .
+
+oquo:observation-e2494db7-f01a-4b2a-8a5f-9ff5dc679acb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-62e292dc-4ac9-4cc3-894c-68c92afdbd39 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-84abe1b3-bf1a-43a7-9a29-323a2be1aa1c .
+
+oquo:instant-232d1370-c71e-44fa-a841-4e0680d30631
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.077Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-42868cbb-42da-4100-a1b4-3152000511ce
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-51a83fa6-94d7-424b-bccf-3dfeae59dcf3 ;
+        oboe:measurementFor  oquo:observation-85b0b364-dbff-4e59-927a-a1a23656dfdc ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-3a80f85d-9c66-4fea-812b-33fb148dd6c4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f615ab27-bac1-48fe-b9a5-9df110102148 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67df0fcf-b7d5-4d23-b4a5-235e2a3f0ff5 .
+
+oquo:qualityValue-0e7e9856-1eda-4a36-81af-c8d9d789963f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-53aad810-c960-462d-a538-6232a6144751 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3ff961a7-545c-4b24-b881-88d80ab94f1d .
+
+oquo:instant-5d79e177-d1f4-4d93-a21c-29b04c70e232
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.932Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-4b6642b4-f20e-42be-a183-2d59b91ef10e
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-e98ae655-cce3-4d72-9533-8ee229c86945 ;
+        oboe:measurementFor  oquo:observation-2f5d3a73-9f60-4230-901b-3e9bc51294ef ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:qualityValue-1345bc1a-e935-475f-a175-1cc9c4d920be
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-62e292dc-4ac9-4cc3-894c-68c92afdbd39 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b771dc98-dfc0-4155-b97b-cac6b6563c39 .
+
+oquo:metric-c34331b9-ff2c-4acb-b68b-167d164e70e0
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cd0ed72f-5a25-4e5d-aa9f-e79e37ee19e6 ;
+        oboe:measurementFor  oquo:observation-1922d459-29b9-45ba-b372-10af69c8e94e ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:evaluation-92e0aee0-53ec-43c1-8674-36292338b2fc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-cfa853a5-1d04-41b6-8c6f-db7128d6f86b ;
+        time:hasTime              oquo:instant-9e8de807-c126-44fc-9a8b-4783e8f15fd6 ;
+        oquo:hasObservation       oquo:observation-c15fb83e-c3ca-4dcf-a8c0-6441ca730393 .
+
+oquo:qualityValue-0c7f69ab-b685-462a-91cd-5c5c4d2473ea
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-851666a3-ccf0-47f7-9a47-722481b5d482 ;
+        res:hasLiteralValue    "0.8888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-81c70f63-ef0e-489e-9f86-474722e1cb74 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-cc2696cd-e7e5-4e84-8d42-e764a7a78020
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b6ae8795-c368-4ee2-bad2-baa2328d2834 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-da8e1463-181a-4d7b-a18a-159f97f4775f .
+
+oquo:evaluation-b771dc98-dfc0-4155-b97b-cac6b6563c39
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-1345bc1a-e935-475f-a175-1cc9c4d920be ;
+        time:hasTime              oquo:instant-84abe1b3-bf1a-43a7-9a29-323a2be1aa1c ;
+        oquo:hasObservation       oquo:observation-e2494db7-f01a-4b2a-8a5f-9ff5dc679acb .
+
+oquo:observation-14954681-b602-451b-8d96-60b29bb570c0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-53aad810-c960-462d-a538-6232a6144751 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-01bee9d6-0939-4546-a8c1-d69ffb99120c .
+
+oquo:qualityValue-1ff28d4e-7bbe-49b0-8e96-2616cc163e27
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0c4794b8-ab17-43be-99b2-e6c117e46428 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4aaa5f6f-5fb4-4509-85a0-d116decfa161 .
+
+oquo:evaluation-977f8856-a0c0-4b07-b4ce-226e65df2f07
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-f4e151f0-b73a-40c8-aae1-943f9ab0aa2e ;
+        time:hasTime              oquo:instant-5e85daf0-42b7-4a03-b931-fcf9e65d1dd9 ;
+        oquo:hasObservation       oquo:observation-056c753d-a7da-4c1a-9350-55f9de297585 .
+
+oquo:qualityValue-e29dd515-a68a-4e69-a984-24fa729706ef
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d5c05f2f-b92a-4076-81f8-8afb51986a51 ;
+        res:hasLiteralValue    "0.8888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3af3865d-6ccd-4871-a1e5-cd7b1a09ca78 .
+
+oquo:qualityValue-0c86fe84-8660-4da4-8ebe-2e56bae7aa65
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d9e8304d-98d4-4ed9-b9f4-5d1cbbad161e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b2c04724-458d-4234-8eb4-0d71f52bad2a .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-67df0fcf-b7d5-4d23-b4a5-235e2a3f0ff5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-3a80f85d-9c66-4fea-812b-33fb148dd6c4 ;
+        time:hasTime              oquo:instant-d726dc90-2c04-45b4-8611-392208e33e7c ;
+        oquo:hasObservation       oquo:observation-b2c34416-69a5-484f-96b4-a714351a1890 .
+
+oquo:instant-9e8de807-c126-44fc-9a8b-4783e8f15fd6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.002Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ce0c66bc-2d9f-4caf-a8b3-915f81960049
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-fb987650-a914-470d-a6cd-e7d8c7b87f23 ;
+        time:hasTime              oquo:instant-db6f035c-3272-43be-9a59-5803129e5c41 ;
+        oquo:hasObservation       oquo:observation-a6a1d1ce-9bfb-4aab-9985-758cd76f0fe1 .
+
+oquo:instant-16536529-ad1c-42c4-8149-839c1dc51e82
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.043Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-3c831a6d-7e6a-46ed-957e-0c9a2e6eef71
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-4fe44954-5a1d-45b0-b15c-3b461f579b1a ;
+        time:hasTime              oquo:instant-b897c0a4-124c-4601-9402-ad43604b683c ;
+        oquo:hasObservation       oquo:observation-02b017e2-432a-454a-82f6-3004315ccb05 .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-db8ff7fa-c581-4196-9565-9a85045c6c69
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.978Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-dd726867-a8bf-4902-ac98-3da629610088
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.988Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-afce2ff2-cd2b-4bc1-8a7c-0e06020195ce
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.003Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-54b58a6b-42a3-408b-9d7b-b4bb5916755b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15.042Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-826fe077-b282-4038-9c03-56a04b39ddba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:14.94Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-f7a818b6-270b-4c5b-ba0a-115d88d5792c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-89f48d8e-82bd-4c73-b420-b826e8f078b3 ;
+        time:hasTime              oquo:instant-826fe077-b282-4038-9c03-56a04b39ddba ;
+        oquo:hasObservation       oquo:observation-ca7e325b-c9dc-4b2c-b014-f5ca0efd4fa2 .
+
+oquo:observation-029d0c4f-e900-481c-a9a5-ccde2a11f5b5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c29f23ba-da86-42df-9f82-70139311d1c5 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-7c14a1e6-6a61-4f57-bb61-f9a31e0bdf46 .
+
+oquo:evaluation-7faefc83-acde-412c-983e-190ab305ef36
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-87a352c0-6060-4ea2-88ab-efcf93132db5 ;
+        time:hasTime              oquo:instant-613e60e7-1d1a-4f21-b4f7-0d51d2533b46 ;
+        oquo:hasObservation       oquo:observation-e08051c8-4692-4f03-92d8-9f95ef35fd59 .
+
+oquo:evaluation-50a20ccc-16e8-442f-a7eb-5eb6378635e1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://service.poleterresolide.fr/voc/FOI> ;
+        res:inputData             <https://service.poleterresolide.fr/voc/FOI> ;
+        res:producedQualityValue  oquo:qualityValue-e98ae655-cce3-4d72-9533-8ee229c86945 ;
+        time:hasTime              oquo:instant-0fbbc184-2d3a-4bfb-8bf9-ecd41b014cc1 ;
+        oquo:hasObservation       oquo:observation-2f5d3a73-9f60-4230-901b-3e9bc51294ef .
+
+oquo:instant-7cc04cd5-fcdf-4db1-9d68-176def080ace
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T03:00:15Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-8008f154-6816-487d-a39f-348514f78ce3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b6ae8795-c368-4ee2-bad2-baa2328d2834 ;
+        oboe:ofEntity        <https://service.poleterresolide.fr/voc/FOI> ;
+        time:hasTime         oquo:instant-191bbb6f-80d0-4662-bdae-6e344ced7dad .
