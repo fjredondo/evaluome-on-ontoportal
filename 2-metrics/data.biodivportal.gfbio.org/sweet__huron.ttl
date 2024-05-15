@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:qualityValue-51020a3a-3a07-4009-8692-d5115ac44eac
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-69bbc7ea-18bd-47ee-a963-139535e2ae41 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2e5d97d0-e32b-49a5-b277-279507f08843 .
+
+oquo:qualityValue-60fbcbba-ebf6-48b8-b68c-e918884a12e5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-19c1bce3-6ae7-4810-b672-a2f6823c5474 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3f5df38a-4618-492e-baaa-5ffffbab1aaa .
+
+oquo:instant-d7ad7d2b-b643-43a7-874a-a600f1889e26
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.824Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-040a2968-f734-4116-893a-1d53d117ad44
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8619c029-be2f-4f01-9336-3c6a38b8c9eb ;
+        oboe:measurementFor  oquo:observation-81c4d87c-968c-4240-8c54-e512ed5c27dc ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-a3a44913-1b51-45d2-9170-85825d582665
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-794be73f-3e80-4a24-808b-7201aff52618 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-073b0b0a-36de-4af7-9b29-b5018180a0f4 .
+
+oquo:metric-c5a7dffa-5758-473c-a297-4086c49475ff
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a1fe0d7e-9f25-4e91-8693-1e2e2bac2d20 ;
+        oboe:measurementFor  oquo:observation-283d8fdc-ba1d-4c4c-8d0c-c02d2571641f ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-238594b5-7776-4d1b-8443-f226f7ce92c7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-753f3917-1238-48b6-bfab-1e4930213f1a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a9ddf0a6-a745-485f-9eb9-5d848c4e1cce .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-794be73f-3e80-4a24-808b-7201aff52618
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-85490be4-8be1-4aaa-ba0b-fd785011f0d3 ;
+        oboe:measurementFor  oquo:observation-a3a44913-1b51-45d2-9170-85825d582665 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-2e5d97d0-e32b-49a5-b277-279507f08843
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-51020a3a-3a07-4009-8692-d5115ac44eac ;
+        time:hasTime              oquo:instant-b50b430f-38bb-4e6b-b82c-9828d5414f45 ;
+        oquo:hasObservation       oquo:observation-1ddc8aa4-cd9f-49ff-9f56-2818312fb3f0 .
+
+oquo:instant-406b0993-f3c4-4f9e-9de6-ec483c9043d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.148Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3e696a81-c4e1-441d-8df6-b539dec6aace
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-36c5efe9-4482-4aa5-9bdf-f7ce12a3d2fe ;
+        time:hasTime              oquo:instant-79672d55-399c-4fd9-af74-f408194811a5 ;
+        oquo:hasObservation       oquo:observation-bee90f83-f6cf-4af4-ac1d-5065a2fb7c8b .
+
+oquo:instant-d04dfb42-0a8d-4a27-84bb-39ba7c140c93
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.359Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-8e05f825-3846-468a-aab7-1d8c7e2c59d5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.85Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-4b349c89-5a79-4579-85fa-bad2aaec7d72
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9157bb11-60bb-4f65-b153-926e60f6154a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-64a62cbd-56f2-4bc3-8ff1-ff90ee0c0273 .
+
+oquo:metric-a1796907-8d4d-412b-9f54-b9efae3339ee
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-f676ad7a-f40c-49f9-b597-5c4f3339ade5 ;
+        oboe:measurementFor  oquo:observation-08ca8506-8ae6-4057-9cde-1ba1d5bdb066 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:observation-e9767a7e-0865-40a8-8221-30c13ac0b792
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f445b8ba-24c5-468c-b831-a7ecc6980400 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-13b86c15-774a-4517-b043-8f1b33ff734b .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-c39ca9e9-dfdd-4a03-8194-dc75fb163546
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e6e6feb8-0aa0-4a0d-a081-a36113d5c9ab ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5d164c63-a826-4707-ae0c-fc223c886b40 .
+
+oquo:evaluation-d6ebe288-7590-40f5-9780-f547d4747418
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-f5e07908-8bab-4bb4-949b-acf65d857da9 ;
+        time:hasTime              oquo:instant-250ff4b8-0136-4eb8-a103-78a1feadfa8b ;
+        oquo:hasObservation       oquo:observation-eeed1a47-e1a2-4c1c-b6a5-2f830d4d64f8 .
+
+oquo:evaluation-fa1073f9-fdfe-4b46-ac59-395b3da08b43
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-33ba6030-9ed2-4476-af53-b63695ae2c47 ;
+        time:hasTime              oquo:instant-8f5182a8-79d8-4ac4-b00f-f4a4b26f981b ;
+        oquo:hasObservation       oquo:observation-2f58968b-e2f1-46f1-8dc7-5154e7e5d2a5 .
+
+oquo:instant-52f2d9ff-1353-4beb-a6b6-c79451860ecd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.36Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-13b86c15-774a-4517-b043-8f1b33ff734b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.358Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-2d585c39-9a9a-4f74-90c0-203ca041f0da
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c0200a9c-e4e1-4c9f-bae3-2474273db8d8 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e48aaab0-62ae-4ae9-960f-3bc70acee3e6 .
+
+oquo:metric-7b73b6cb-9906-4eeb-b585-c77a7fa521f0
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-33ba6030-9ed2-4476-af53-b63695ae2c47 ;
+        oboe:measurementFor  oquo:observation-2f58968b-e2f1-46f1-8dc7-5154e7e5d2a5 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-f445b8ba-24c5-468c-b831-a7ecc6980400
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-365430f4-a555-403a-bd90-585a2bbb3afa ;
+        oboe:measurementFor  oquo:observation-e9767a7e-0865-40a8-8221-30c13ac0b792 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-a1a1c572-1962-49a0-886b-1f4052bfa507
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-a1fe0d7e-9f25-4e91-8693-1e2e2bac2d20 ;
+        time:hasTime              oquo:instant-e3b99ca6-7e4b-48d1-aa5a-b5ebec7ba1a7 ;
+        oquo:hasObservation       oquo:observation-283d8fdc-ba1d-4c4c-8d0c-c02d2571641f .
+
+oquo:observation-5af9d960-1294-448b-9f09-adabd81d0b4e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8a3fce6e-2d69-4afd-8cee-a60d248d67cd ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-fb7f1691-6083-44b7-8692-38403efc0306 .
+
+oquo:qualityValue-8c469782-e622-4520-9887-6250bd5a212f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1835bad5-1ba9-4f9b-9bb7-ffe766be7113 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2ae2b349-1ccd-46ab-bad7-bb048418833f .
+
+oquo:metric-70b8384d-dc48-4c5f-ab17-fdf323f49f40
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f10086cf-0998-4cd1-a63d-55ec84d4817e ;
+        oboe:measurementFor  oquo:observation-a460d6a6-3fdc-48ed-a4c6-7ea4340fdf8f ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:instant-3bc0a555-efe1-433f-a7fd-058f3d300fac
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:26.171Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-b50b430f-38bb-4e6b-b82c-9828d5414f45
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-052a0045-dcf1-40dc-903c-330992bddf99
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.798Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5e60fe6f-dc2e-4554-a2fa-17670b968e9d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-23f7b864-5ebe-4698-9d52-811edd7f315b ;
+        time:hasTime              oquo:instant-52f2d9ff-1353-4beb-a6b6-c79451860ecd ;
+        oquo:hasObservation       oquo:observation-1d9ebbda-7a6b-4872-8502-2c3017f493cd .
+
+oquo:observation-b9db0158-ee5a-4dfc-b973-7d86014ff3c2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bc701e0d-4020-4d6d-84b3-bc87e876b19a ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-d7ad7d2b-b643-43a7-874a-a600f1889e26 .
+
+oquo:observation-8f4b56e6-0adc-4644-bf80-cc5d5e567019
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-74f88013-3f2b-4459-ae21-1b92db7c5fe7 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-d8b758b2-f370-44b5-a06c-57ac5178bd42 .
+
+oquo:evaluation-8822c796-62d9-4988-94d7-4bac7f512a94
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-0b60cf2b-1015-4951-8ad7-9f108ffe8eea ;
+        time:hasTime              oquo:instant-243606ab-84b5-4afb-a105-befce7497c97 ;
+        oquo:hasObservation       oquo:observation-ff3fcb06-b58f-4381-b673-825200714337 .
+
+oquo:observation-527d80f6-eccf-486f-99f1-bbfea5852e34
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e6e6feb8-0aa0-4a0d-a081-a36113d5c9ab ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-9e506968-1c82-4128-a338-cb0dbee72254 .
+
+oquo:qualityValue-b6803886-0664-425a-b97b-e0bf37f52ece
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6627e8d4-35d1-486e-8d46-83bf6ffdea30 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cd37850b-d6cd-426b-b490-013934ba87e1 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-c5cf0871-c729-4024-b1d1-966ca46fcef2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0d0be0a8-c520-48c5-aacc-afb2060dc13e ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-ae70f7b0-861b-4c5f-85e6-7e7c137233f4 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-d08ee07a-4ac2-4814-9483-d55a85f5050c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-2e4135ba-41da-4056-b9ac-40949f409ea0 ;
+        time:hasTime              oquo:instant-d04dfb42-0a8d-4a27-84bb-39ba7c140c93 ;
+        oquo:hasObservation       oquo:observation-20c1f94f-c993-4159-9ab0-f515cef734d1 .
+
+oquo:observation-0307e413-14d0-4082-b506-54e905138b2b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f79ccfc6-0f5a-4b4e-8063-8250501e7fac ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-ae3ee18b-6660-4ed6-a3ce-59502cf9ffd6 .
+
+oquo:metric-0d0d322e-2c7a-4758-ac2c-006994fd9f47
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-6d6f1462-4d93-4dd0-a60d-9d65e981fb30 ;
+        oboe:measurementFor  oquo:observation-ee09c6a9-aac3-4614-befb-034c87576432 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-b0053353-8b45-4400-a4e0-02cca0927aa3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.865Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-a9ddf0a6-a745-485f-9eb9-5d848c4e1cce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-238594b5-7776-4d1b-8443-f226f7ce92c7 ;
+        time:hasTime              oquo:instant-3bc0a555-efe1-433f-a7fd-058f3d300fac ;
+        oquo:hasObservation       oquo:observation-f1b22fc4-ec5c-4bd0-a368-a770ec49b42e .
+
+oquo:evaluation-1e10ef22-5eac-4707-84a7-4d10fb8af2dc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-6d6f1462-4d93-4dd0-a60d-9d65e981fb30 ;
+        time:hasTime              oquo:instant-b0053353-8b45-4400-a4e0-02cca0927aa3 ;
+        oquo:hasObservation       oquo:observation-ee09c6a9-aac3-4614-befb-034c87576432 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:evaluation-cd37850b-d6cd-426b-b490-013934ba87e1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-b6803886-0664-425a-b97b-e0bf37f52ece ;
+        time:hasTime              oquo:instant-bb47a507-71cf-4d8d-828b-a73f108b2ff5 ;
+        oquo:hasObservation       oquo:observation-e9e006b6-4449-4e01-8969-b27f337be875 .
+
+oquo:observation-523430ab-1b19-47c2-823a-1e2ae3c4383a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1835bad5-1ba9-4f9b-9bb7-ffe766be7113 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-87ffa7d8-1a91-45ae-9fa9-2524944db84d .
+
+oquo:observation-32253b4a-2c4c-491a-9b34-87178270480e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b0dc317b-4a2c-4000-8500-b93059e1c51a ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-406b0993-f3c4-4f9e-9de6-ec483c9043d9 .
+
+oquo:qualityValue-f10086cf-0998-4cd1-a63d-55ec84d4817e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-70b8384d-dc48-4c5f-ab17-fdf323f49f40 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-17ac145a-2a95-4b0f-923f-61165cad7d8c .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-c0200a9c-e4e1-4c9f-bae3-2474273db8d8
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-2d585c39-9a9a-4f74-90c0-203ca041f0da ;
+        oboe:measurementFor  oquo:observation-e7e0a701-da4d-4cf8-abf3-89c761eb3763 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:metric-e6babe9a-d90a-4ae3-9d6b-0385e328735b
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-78b00653-265a-407b-b44c-e0213e348994 ;
+        oboe:measurementFor  oquo:observation-755fc2df-1d74-467b-ab5f-233693354e6b ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:observation-eed57b94-509a-4630-99bf-071e0f3b46c5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9157bb11-60bb-4f65-b153-926e60f6154a ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-d302f8ce-1092-42cc-b518-e28fefdcc175 .
+
+oquo:observation-81c4d87c-968c-4240-8c54-e512ed5c27dc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-040a2968-f734-4116-893a-1d53d117ad44 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-4ee50454-6f71-4f2d-88ae-48f8dc9883e7 .
+
+oquo:metric-c767da35-4eb5-408a-878c-5e807b7346e7
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0b60cf2b-1015-4951-8ad7-9f108ffe8eea ;
+        oboe:measurementFor  oquo:observation-ff3fcb06-b58f-4381-b673-825200714337 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:instant-8f5182a8-79d8-4ac4-b00f-f4a4b26f981b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.602Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-591f30ee-400a-4281-ba89-16d7dee41c66
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-620bdfac-e796-40a9-9f97-793b45dc7d28 ;
+        oboe:measurementFor  oquo:observation-f3eb5481-8db5-4a48-9d64-c6514b2da591 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-e3b99ca6-7e4b-48d1-aa5a-b5ebec7ba1a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.818Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f025a54e-591d-4667-9fe7-b6fc9bda9901
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4a5190cf-bfe1-408e-a0aa-d55de6bc0178 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-826843dd-42ce-4185-a8a4-462bc2532f7f .
+
+oquo:evaluation-7eec423e-1ca7-40bd-abc7-f2b33cc41b02
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-85490be4-8be1-4aaa-ba0b-fd785011f0d3 ;
+        time:hasTime              oquo:instant-073b0b0a-36de-4af7-9b29-b5018180a0f4 ;
+        oquo:hasObservation       oquo:observation-a3a44913-1b51-45d2-9170-85825d582665 .
+
+oquo:evaluation-2ae2b349-1ccd-46ab-bad7-bb048418833f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-8c469782-e622-4520-9887-6250bd5a212f ;
+        time:hasTime              oquo:instant-87ffa7d8-1a91-45ae-9fa9-2524944db84d ;
+        oquo:hasObservation       oquo:observation-523430ab-1b19-47c2-823a-1e2ae3c4383a .
+
+oquo:observation-98b94133-e231-489a-b9fe-014192c53200
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1f931287-5039-48ea-a489-37df1b6a7b95 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-6575ca3c-dc0d-419e-a4a3-ef9ba0e0843c .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-9b8503de-d169-45ee-8547-ba2d6d805eac
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-b154897d-7569-494a-adb3-048e478a6818 ;
+        time:hasTime              oquo:instant-ccbb68aa-235e-4d75-80c8-79595c23bb78 ;
+        oquo:hasObservation       oquo:observation-3aee8737-0267-47ed-a624-a633844ce2c5 .
+
+oquo:metric-82a01a1b-a8be-4315-98c4-475e9d148aeb
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-36c5efe9-4482-4aa5-9bdf-f7ce12a3d2fe ;
+        oboe:measurementFor  oquo:observation-bee90f83-f6cf-4af4-ac1d-5065a2fb7c8b ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-5b60c058-ea69-4e42-b08a-db53b7224648
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-74f88013-3f2b-4459-ae21-1b92db7c5fe7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c0615a18-8ead-4119-a912-108763933978 .
+
+oquo:metric-753f3917-1238-48b6-bfab-1e4930213f1a
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-238594b5-7776-4d1b-8443-f226f7ce92c7 ;
+        oboe:measurementFor  oquo:observation-f1b22fc4-ec5c-4bd0-a368-a770ec49b42e ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:evaluation-e48aaab0-62ae-4ae9-960f-3bc70acee3e6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-2d585c39-9a9a-4f74-90c0-203ca041f0da ;
+        time:hasTime              oquo:instant-75f66c29-eeb2-49ac-82ba-92013be12665 ;
+        oquo:hasObservation       oquo:observation-e7e0a701-da4d-4cf8-abf3-89c761eb3763 .
+
+oquo:evaluation-00cdfd8f-01a8-490e-8ac0-ac08cf0a87ac
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-365430f4-a555-403a-bd90-585a2bbb3afa ;
+        time:hasTime              oquo:instant-13b86c15-774a-4517-b043-8f1b33ff734b ;
+        oquo:hasObservation       oquo:observation-e9767a7e-0865-40a8-8221-30c13ac0b792 .
+
+oquo:observation-755fc2df-1d74-467b-ab5f-233693354e6b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e6babe9a-d90a-4ae3-9d6b-0385e328735b ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-052a0045-dcf1-40dc-903c-330992bddf99 .
+
+oquo:metric-6627e8d4-35d1-486e-8d46-83bf6ffdea30
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-b6803886-0664-425a-b97b-e0bf37f52ece ;
+        oboe:measurementFor  oquo:observation-e9e006b6-4449-4e01-8969-b27f337be875 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:qualityValue-a8908219-4760-4131-8608-ce660c50d1f6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f79ccfc6-0f5a-4b4e-8063-8250501e7fac ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ccb6e5a9-cd6f-4a78-8077-86ba51e26768 .
+
+oquo:qualityValue-a1fe0d7e-9f25-4e91-8693-1e2e2bac2d20
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c5a7dffa-5758-473c-a297-4086c49475ff ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a1a1c572-1962-49a0-886b-1f4052bfa507 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-9e506968-1c82-4128-a338-cb0dbee72254
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:27.722Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-9d2b3af2-3091-4ee5-9e89-81867ab07cf6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b0dc317b-4a2c-4000-8500-b93059e1c51a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-50364c24-b0ef-47ab-889b-43bf23221f26 .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-ae70f7b0-861b-4c5f-85e6-7e7c137233f4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.605Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-0d0be0a8-c520-48c5-aacc-afb2060dc13e
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e703d825-4ee7-4267-8d92-dcb102b47483 ;
+        oboe:measurementFor  oquo:observation-c5cf0871-c729-4024-b1d1-966ca46fcef2 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:evaluation-ab76ce74-d0da-4c00-9283-6af6d0950c05
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-8619c029-be2f-4f01-9336-3c6a38b8c9eb ;
+        time:hasTime              oquo:instant-4ee50454-6f71-4f2d-88ae-48f8dc9883e7 ;
+        oquo:hasObservation       oquo:observation-81c4d87c-968c-4240-8c54-e512ed5c27dc .
+
+oquo:qualityValue-b154897d-7569-494a-adb3-048e478a6818
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d3fa7404-cf16-41a9-ba76-49eb8cd96136 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9b8503de-d169-45ee-8547-ba2d6d805eac .
+
+oquo:instant-bb47a507-71cf-4d8d-828b-a73f108b2ff5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.143Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c8ca2753-a57c-495e-b2c8-739ee2736b66
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a14b1673-fb2a-4b27-a121-fa609fe00abc ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-885f2b2d-76a2-4497-8f82-f17ebd7d7830 .
+
+oquo:qualityValue-e703d825-4ee7-4267-8d92-dcb102b47483
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0d0be0a8-c520-48c5-aacc-afb2060dc13e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7f86227b-d993-43e8-a73b-4082231ebf28 .
+
+oquo:metric-1f931287-5039-48ea-a489-37df1b6a7b95
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f9c6c365-7eaa-48cb-abbc-39343077331d ;
+        oboe:measurementFor  oquo:observation-98b94133-e231-489a-b9fe-014192c53200 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-20c1f94f-c993-4159-9ab0-f515cef734d1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ba46f334-248c-4cf5-a13b-67a4f5a687cc ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-d04dfb42-0a8d-4a27-84bb-39ba7c140c93 .
+
+oquo:metric-24cacd83-abb3-4bd1-8634-43070a753b6e
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-23f7b864-5ebe-4698-9d52-811edd7f315b ;
+        oboe:measurementFor  oquo:observation-1d9ebbda-7a6b-4872-8502-2c3017f493cd ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:qualityValue-78b00653-265a-407b-b44c-e0213e348994
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e6babe9a-d90a-4ae3-9d6b-0385e328735b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5101279f-199d-4523-86cf-363305542348 .
+
+oquo:metric-bf7f2ffa-ad57-49eb-8779-3da0fa9a7e18
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f5e07908-8bab-4bb4-949b-acf65d857da9 ;
+        oboe:measurementFor  oquo:observation-eeed1a47-e1a2-4c1c-b6a5-2f830d4d64f8 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-e6e6feb8-0aa0-4a0d-a081-a36113d5c9ab
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-c39ca9e9-dfdd-4a03-8194-dc75fb163546 ;
+        oboe:measurementFor  oquo:observation-527d80f6-eccf-486f-99f1-bbfea5852e34 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-64a62cbd-56f2-4bc3-8ff1-ff90ee0c0273
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-4b349c89-5a79-4579-85fa-bad2aaec7d72 ;
+        time:hasTime              oquo:instant-d302f8ce-1092-42cc-b518-e28fefdcc175 ;
+        oquo:hasObservation       oquo:observation-eed57b94-509a-4630-99bf-071e0f3b46c5 .
+
+oquo:observation-cb2a8445-ac32-4df0-bf7b-2e55d53391e3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4a5190cf-bfe1-408e-a0aa-d55de6bc0178 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-76ff52f4-c53c-4d0e-a87b-22191374d3c3 .
+
+oquo:evaluation-ccb6e5a9-cd6f-4a78-8077-86ba51e26768
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-a8908219-4760-4131-8608-ce660c50d1f6 ;
+        time:hasTime              oquo:instant-ae3ee18b-6660-4ed6-a3ce-59502cf9ffd6 ;
+        oquo:hasObservation       oquo:observation-0307e413-14d0-4082-b506-54e905138b2b .
+
+oquo:observation-eeed1a47-e1a2-4c1c-b6a5-2f830d4d64f8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bf7f2ffa-ad57-49eb-8779-3da0fa9a7e18 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-250ff4b8-0136-4eb8-a103-78a1feadfa8b .
+
+oquo:observation-bee90f83-f6cf-4af4-ac1d-5065a2fb7c8b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-82a01a1b-a8be-4315-98c4-475e9d148aeb ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-79672d55-399c-4fd9-af74-f408194811a5 .
+
+oquo:observation-1ddc8aa4-cd9f-49ff-9f56-2818312fb3f0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-69bbc7ea-18bd-47ee-a963-139535e2ae41 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-b50b430f-38bb-4e6b-b82c-9828d5414f45 .
+
+oquo:observation-1d9ebbda-7a6b-4872-8502-2c3017f493cd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-24cacd83-abb3-4bd1-8634-43070a753b6e ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-52f2d9ff-1353-4beb-a6b6-c79451860ecd .
+
+oquo:qualityValue-365430f4-a555-403a-bd90-585a2bbb3afa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f445b8ba-24c5-468c-b831-a7ecc6980400 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-00cdfd8f-01a8-490e-8ac0-ac08cf0a87ac .
+
+oquo:instant-d302f8ce-1092-42cc-b518-e28fefdcc175
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.701Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-9157bb11-60bb-4f65-b153-926e60f6154a
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4b349c89-5a79-4579-85fa-bad2aaec7d72 ;
+        oboe:measurementFor  oquo:observation-eed57b94-509a-4630-99bf-071e0f3b46c5 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-74f88013-3f2b-4459-ae21-1b92db7c5fe7
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-5b60c058-ea69-4e42-b08a-db53b7224648 ;
+        oboe:measurementFor  oquo:observation-8f4b56e6-0adc-4644-bf80-cc5d5e567019 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-cd937977-dfb1-4473-95c1-8610b2cc11da
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-d3ffbee3-4b51-4a59-9d24-a3c34398acc4 ;
+        time:hasTime              oquo:instant-fb7f1691-6083-44b7-8692-38403efc0306 ;
+        oquo:hasObservation       oquo:observation-5af9d960-1294-448b-9f09-adabd81d0b4e .
+
+oquo:instant-073b0b0a-36de-4af7-9b29-b5018180a0f4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.298Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-36c5efe9-4482-4aa5-9bdf-f7ce12a3d2fe
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-82a01a1b-a8be-4315-98c4-475e9d148aeb ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e696a81-c4e1-441d-8df6-b539dec6aace .
+
+oquo:evaluation-3f5df38a-4618-492e-baaa-5ffffbab1aaa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-60fbcbba-ebf6-48b8-b68c-e918884a12e5 ;
+        time:hasTime              oquo:instant-8e05f825-3846-468a-aab7-1d8c7e2c59d5 ;
+        oquo:hasObservation       oquo:observation-79c2c04f-2251-4836-a949-9b38d670e233 .
+
+oquo:metric-f79ccfc6-0f5a-4b4e-8063-8250501e7fac
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-a8908219-4760-4131-8608-ce660c50d1f6 ;
+        oboe:measurementFor  oquo:observation-0307e413-14d0-4082-b506-54e905138b2b ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-2f58968b-e2f1-46f1-8dc7-5154e7e5d2a5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7b73b6cb-9906-4eeb-b585-c77a7fa521f0 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-8f5182a8-79d8-4ac4-b00f-f4a4b26f981b .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:instant-ae3ee18b-6660-4ed6-a3ce-59502cf9ffd6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:26.199Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4ee50454-6f71-4f2d-88ae-48f8dc9883e7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.146Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e9e006b6-4449-4e01-8969-b27f337be875
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6627e8d4-35d1-486e-8d46-83bf6ffdea30 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-bb47a507-71cf-4d8d-828b-a73f108b2ff5 .
+
+oquo:qualityValue-2e4135ba-41da-4056-b9ac-40949f409ea0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ba46f334-248c-4cf5-a13b-67a4f5a687cc ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d08ee07a-4ac2-4814-9483-d55a85f5050c .
+
+oquo:evaluation-50364c24-b0ef-47ab-889b-43bf23221f26
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-9d2b3af2-3091-4ee5-9e89-81867ab07cf6 ;
+        time:hasTime              oquo:instant-406b0993-f3c4-4f9e-9de6-ec483c9043d9 ;
+        oquo:hasObservation       oquo:observation-32253b4a-2c4c-491a-9b34-87178270480e .
+
+oquo:observation-7b728fee-9025-46cc-a2ce-2387aa3d7f3e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cc9dd5dc-c844-4376-805c-42ef00c57610 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-f8dd5c6b-40a6-4a14-afc4-99ff0590b2e1 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-76ff52f4-c53c-4d0e-a87b-22191374d3c3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.597Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-cc9dd5dc-c844-4376-805c-42ef00c57610
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-2b33d8ea-edc5-4768-bb4e-45c90ff29fe9 ;
+        oboe:measurementFor  oquo:observation-7b728fee-9025-46cc-a2ce-2387aa3d7f3e ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:evaluation-dbc7822f-c5e3-4d34-86c8-7561bb95f49c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-f676ad7a-f40c-49f9-b597-5c4f3339ade5 ;
+        time:hasTime              oquo:instant-8a3313e6-4208-4fa4-920c-b48f3f99a0b2 ;
+        oquo:hasObservation       oquo:observation-08ca8506-8ae6-4057-9cde-1ba1d5bdb066 .
+
+oquo:observation-79c2c04f-2251-4836-a949-9b38d670e233
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-19c1bce3-6ae7-4810-b672-a2f6823c5474 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-8e05f825-3846-468a-aab7-1d8c7e2c59d5 .
+
+oquo:metric-1835bad5-1ba9-4f9b-9bb7-ffe766be7113
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-8c469782-e622-4520-9887-6250bd5a212f ;
+        oboe:measurementFor  oquo:observation-523430ab-1b19-47c2-823a-1e2ae3c4383a ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-885f2b2d-76a2-4497-8f82-f17ebd7d7830
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-c8ca2753-a57c-495e-b2c8-739ee2736b66 ;
+        time:hasTime              oquo:instant-a6ff68be-bb12-440c-b008-46440a82f807 ;
+        oquo:hasObservation       oquo:observation-295cbd03-1822-4954-9f9d-45ce535efb62 .
+
+oquo:qualityValue-2b33d8ea-edc5-4768-bb4e-45c90ff29fe9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cc9dd5dc-c844-4376-805c-42ef00c57610 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-260e7e9f-1640-46d7-adab-f1cf7c7c9efb .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-ba46f334-248c-4cf5-a13b-67a4f5a687cc
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-2e4135ba-41da-4056-b9ac-40949f409ea0 ;
+        oboe:measurementFor  oquo:observation-20c1f94f-c993-4159-9ab0-f515cef734d1 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:instant-75f66c29-eeb2-49ac-82ba-92013be12665
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.855Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-17ac145a-2a95-4b0f-923f-61165cad7d8c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-f10086cf-0998-4cd1-a63d-55ec84d4817e ;
+        time:hasTime              oquo:instant-23a8d6be-f47d-45bb-931c-e13c28036f89 ;
+        oquo:hasObservation       oquo:observation-a460d6a6-3fdc-48ed-a4c6-7ea4340fdf8f .
+
+oquo:evaluation-8192673e-4d21-49b7-9988-4055de6d3019
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-620bdfac-e796-40a9-9f97-793b45dc7d28 ;
+        time:hasTime              oquo:instant-1bf4578b-0a54-4b43-9334-0400eb8a2596 ;
+        oquo:hasObservation       oquo:observation-f3eb5481-8db5-4a48-9d64-c6514b2da591 .
+
+oquo:metric-bc701e0d-4020-4d6d-84b3-bc87e876b19a
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d341a603-67a7-4fac-ae14-65d9468a1ea0 ;
+        oboe:measurementFor  oquo:observation-b9db0158-ee5a-4dfc-b973-7d86014ff3c2 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ee09c6a9-aac3-4614-befb-034c87576432
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0d0d322e-2c7a-4758-ac2c-006994fd9f47 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-b0053353-8b45-4400-a4e0-02cca0927aa3 .
+
+oquo:observation-f3eb5481-8db5-4a48-9d64-c6514b2da591
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-591f30ee-400a-4281-ba89-16d7dee41c66 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-1bf4578b-0a54-4b43-9334-0400eb8a2596 .
+
+oquo:observation-ff3fcb06-b58f-4381-b673-825200714337
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c767da35-4eb5-408a-878c-5e807b7346e7 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-243606ab-84b5-4afb-a105-befce7497c97 .
+
+oquo:instant-fb7f1691-6083-44b7-8692-38403efc0306
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.768Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-8c28d9e0-1bf4-46fa-83b2-6115b3f727dc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-f9c6c365-7eaa-48cb-abbc-39343077331d ;
+        time:hasTime              oquo:instant-6575ca3c-dc0d-419e-a4a3-ef9ba0e0843c ;
+        oquo:hasObservation       oquo:observation-98b94133-e231-489a-b9fe-014192c53200 .
+
+oquo:instant-a6ff68be-bb12-440c-b008-46440a82f807
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.867Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-23a8d6be-f47d-45bb-931c-e13c28036f89
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.479Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-23f7b864-5ebe-4698-9d52-811edd7f315b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-24cacd83-abb3-4bd1-8634-43070a753b6e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5e60fe6f-dc2e-4554-a2fa-17670b968e9d .
+
+oquo:observation-a460d6a6-3fdc-48ed-a4c6-7ea4340fdf8f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-70b8384d-dc48-4c5f-ab17-fdf323f49f40 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-23a8d6be-f47d-45bb-931c-e13c28036f89 .
+
+oquo:instant-f8dd5c6b-40a6-4a14-afc4-99ff0590b2e1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:26.108Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-243606ab-84b5-4afb-a105-befce7497c97
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.778Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-620bdfac-e796-40a9-9f97-793b45dc7d28
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-591f30ee-400a-4281-ba89-16d7dee41c66 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8192673e-4d21-49b7-9988-4055de6d3019 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-4a5190cf-bfe1-408e-a0aa-d55de6bc0178
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f025a54e-591d-4667-9fe7-b6fc9bda9901 ;
+        oboe:measurementFor  oquo:observation-cb2a8445-ac32-4df0-bf7b-2e55d53391e3 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-d341a603-67a7-4fac-ae14-65d9468a1ea0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bc701e0d-4020-4d6d-84b3-bc87e876b19a ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8d207309-583d-4cdc-b39a-f6abba7de573 .
+
+oquo:metric-69bbc7ea-18bd-47ee-a963-139535e2ae41
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-51020a3a-3a07-4009-8692-d5115ac44eac ;
+        oboe:measurementFor  oquo:observation-1ddc8aa4-cd9f-49ff-9f56-2818312fb3f0 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-d3ffbee3-4b51-4a59-9d24-a3c34398acc4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8a3fce6e-2d69-4afd-8cee-a60d248d67cd ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cd937977-dfb1-4473-95c1-8610b2cc11da .
+
+oquo:qualityValue-f676ad7a-f40c-49f9-b597-5c4f3339ade5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a1796907-8d4d-412b-9f54-b9efae3339ee ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dbc7822f-c5e3-4d34-86c8-7561bb95f49c .
+
+oquo:instant-79672d55-399c-4fd9-af74-f408194811a5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.861Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-0b60cf2b-1015-4951-8ad7-9f108ffe8eea
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c767da35-4eb5-408a-878c-5e807b7346e7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8822c796-62d9-4988-94d7-4bac7f512a94 .
+
+oquo:instant-ccbb68aa-235e-4d75-80c8-79595c23bb78
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:26.19Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-85490be4-8be1-4aaa-ba0b-fd785011f0d3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-794be73f-3e80-4a24-808b-7201aff52618 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7eec423e-1ca7-40bd-abc7-f2b33cc41b02 .
+
+oquo:observation-e7e0a701-da4d-4cf8-abf3-89c761eb3763
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c0200a9c-e4e1-4c9f-bae3-2474273db8d8 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-75f66c29-eeb2-49ac-82ba-92013be12665 .
+
+oquo:metric-a14b1673-fb2a-4b27-a121-fa609fe00abc
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-c8ca2753-a57c-495e-b2c8-739ee2736b66 ;
+        oboe:measurementFor  oquo:observation-295cbd03-1822-4954-9f9d-45ce535efb62 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-8a3313e6-4208-4fa4-920c-b48f3f99a0b2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:26.194Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-d3fa7404-cf16-41a9-ba76-49eb8cd96136
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-b154897d-7569-494a-adb3-048e478a6818 ;
+        oboe:measurementFor  oquo:observation-3aee8737-0267-47ed-a624-a633844ce2c5 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-19c1bce3-6ae7-4810-b672-a2f6823c5474
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-60fbcbba-ebf6-48b8-b68c-e918884a12e5 ;
+        oboe:measurementFor  oquo:observation-79c2c04f-2251-4836-a949-9b38d670e233 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-260e7e9f-1640-46d7-adab-f1cf7c7c9efb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-2b33d8ea-edc5-4768-bb4e-45c90ff29fe9 ;
+        time:hasTime              oquo:instant-f8dd5c6b-40a6-4a14-afc4-99ff0590b2e1 ;
+        oquo:hasObservation       oquo:observation-7b728fee-9025-46cc-a2ce-2387aa3d7f3e .
+
+oquo:instant-d8b758b2-f370-44b5-a06c-57ac5178bd42
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.806Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8619c029-be2f-4f01-9336-3c6a38b8c9eb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-040a2968-f734-4116-893a-1d53d117ad44 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ab76ce74-d0da-4c00-9283-6af6d0950c05 .
+
+oquo:evaluation-c0615a18-8ead-4119-a912-108763933978
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-5b60c058-ea69-4e42-b08a-db53b7224648 ;
+        time:hasTime              oquo:instant-d8b758b2-f370-44b5-a06c-57ac5178bd42 ;
+        oquo:hasObservation       oquo:observation-8f4b56e6-0adc-4644-bf80-cc5d5e567019 .
+
+oquo:evaluation-7f86227b-d993-43e8-a73b-4082231ebf28
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-e703d825-4ee7-4267-8d92-dcb102b47483 ;
+        time:hasTime              oquo:instant-ae70f7b0-861b-4c5f-85e6-7e7c137233f4 ;
+        oquo:hasObservation       oquo:observation-c5cf0871-c729-4024-b1d1-966ca46fcef2 .
+
+oquo:qualityValue-33ba6030-9ed2-4476-af53-b63695ae2c47
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7b73b6cb-9906-4eeb-b585-c77a7fa521f0 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fa1073f9-fdfe-4b46-ac59-395b3da08b43 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-250ff4b8-0136-4eb8-a103-78a1feadfa8b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.591Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-826843dd-42ce-4185-a8a4-462bc2532f7f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-f025a54e-591d-4667-9fe7-b6fc9bda9901 ;
+        time:hasTime              oquo:instant-76ff52f4-c53c-4d0e-a87b-22191374d3c3 ;
+        oquo:hasObservation       oquo:observation-cb2a8445-ac32-4df0-bf7b-2e55d53391e3 .
+
+oquo:qualityValue-6d6f1462-4d93-4dd0-a60d-9d65e981fb30
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0d0d322e-2c7a-4758-ac2c-006994fd9f47 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1e10ef22-5eac-4707-84a7-4d10fb8af2dc .
+
+oquo:metric-b0dc317b-4a2c-4000-8500-b93059e1c51a
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9d2b3af2-3091-4ee5-9e89-81867ab07cf6 ;
+        oboe:measurementFor  oquo:observation-32253b4a-2c4c-491a-9b34-87178270480e ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+<http://sweetontology.net/sweetAll>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-5101279f-199d-4523-86cf-363305542348
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-78b00653-265a-407b-b44c-e0213e348994 ;
+        time:hasTime              oquo:instant-052a0045-dcf1-40dc-903c-330992bddf99 ;
+        oquo:hasObservation       oquo:observation-755fc2df-1d74-467b-ab5f-233693354e6b .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-08ca8506-8ae6-4057-9cde-1ba1d5bdb066
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a1796907-8d4d-412b-9f54-b9efae3339ee ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-8a3313e6-4208-4fa4-920c-b48f3f99a0b2 .
+
+oquo:instant-6575ca3c-dc0d-419e-a4a3-ef9ba0e0843c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.357Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8d207309-583d-4cdc-b39a-f6abba7de573
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-d341a603-67a7-4fac-ae14-65d9468a1ea0 ;
+        time:hasTime              oquo:instant-d7ad7d2b-b643-43a7-874a-a600f1889e26 ;
+        oquo:hasObservation       oquo:observation-b9db0158-ee5a-4dfc-b973-7d86014ff3c2 .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-283d8fdc-ba1d-4c4c-8d0c-c02d2571641f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c5a7dffa-5758-473c-a297-4086c49475ff ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-e3b99ca6-7e4b-48d1-aa5a-b5ebec7ba1a7 .
+
+oquo:qualityValue-f9c6c365-7eaa-48cb-abbc-39343077331d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1f931287-5039-48ea-a489-37df1b6a7b95 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8c28d9e0-1bf4-46fa-83b2-6115b3f727dc .
+
+oquo:qualityValue-f5e07908-8bab-4bb4-949b-acf65d857da9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bf7f2ffa-ad57-49eb-8779-3da0fa9a7e18 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d6ebe288-7590-40f5-9780-f547d4747418 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-295cbd03-1822-4954-9f9d-45ce535efb62
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a14b1673-fb2a-4b27-a121-fa609fe00abc ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-a6ff68be-bb12-440c-b008-46440a82f807 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-8a3fce6e-2d69-4afd-8cee-a60d248d67cd
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d3ffbee3-4b51-4a59-9d24-a3c34398acc4 ;
+        oboe:measurementFor  oquo:observation-5af9d960-1294-448b-9f09-adabd81d0b4e ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:observation-3aee8737-0267-47ed-a624-a633844ce2c5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d3fa7404-cf16-41a9-ba76-49eb8cd96136 ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-ccbb68aa-235e-4d75-80c8-79595c23bb78 .
+
+oquo:instant-1bf4578b-0a54-4b43-9334-0400eb8a2596
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:28.838Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5d164c63-a826-4707-ae0c-fc223c886b40
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweetontology.net/sweetAll> ;
+        res:inputData             <http://sweetontology.net/sweetAll> ;
+        res:producedQualityValue  oquo:qualityValue-c39ca9e9-dfdd-4a03-8194-dc75fb163546 ;
+        time:hasTime              oquo:instant-9e506968-1c82-4128-a338-cb0dbee72254 ;
+        oquo:hasObservation       oquo:observation-527d80f6-eccf-486f-99f1-bbfea5852e34 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-f1b22fc4-ec5c-4bd0-a368-a770ec49b42e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-753f3917-1238-48b6-bfab-1e4930213f1a ;
+        oboe:ofEntity        <http://sweetontology.net/sweetAll> ;
+        time:hasTime         oquo:instant-3bc0a555-efe1-433f-a7fd-058f3d300fac .
+
+oquo:instant-87ffa7d8-1a91-45ae-9fa9-2524944db84d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:16:29.084Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

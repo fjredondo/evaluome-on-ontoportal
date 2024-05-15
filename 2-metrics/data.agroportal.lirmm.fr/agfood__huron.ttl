@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:metric-c27fb244-2b37-4e60-b544-bbca32fa3352
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-520447a8-4a85-40c0-8437-2b0ab352c942 ;
+        oboe:measurementFor  oquo:observation-bc1ac010-28b7-409d-a1b3-bb60ac908267 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-f62bcb3d-20c7-4ebe-85cf-0bb8b03702e0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-6473ddb2-2600-4e9d-8e66-40774890b100 ;
+        time:hasTime              oquo:instant-c835cc3a-6a52-4ce7-bab6-cc1b1e903c38 ;
+        oquo:hasObservation       oquo:observation-d8e266b3-faec-463d-84b4-63284bbe2bb8 .
+
+oquo:metric-d5cd98fe-2879-4b16-9506-b770ab70a65f
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4128ebda-2572-4a04-871d-c4130542edfc ;
+        oboe:measurementFor  oquo:observation-39ecd87f-82bd-4afb-9493-00c3ade32bfa ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:qualityValue-2b8eab0d-a1e6-4a5c-bad4-9ba1a219648b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-910883b2-060b-4902-9e02-175b7be51d77 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-50e5e962-7824-4672-81fd-a0761b83b33c .
+
+oquo:instant-e0e673f9-8283-4d62-b187-4e35ac9c2f63
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.671Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7c2f3a74-f5ea-4ce6-b5cf-6e8d00500b0d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.66Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d99b1c0b-0b8b-4b34-8e55-18f399528b4c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-2e60c85d-745c-473e-a35e-99ee9988cc15 ;
+        time:hasTime              oquo:instant-cf17ba1d-77d0-4fe3-8a05-2d3c09a51f3c ;
+        oquo:hasObservation       oquo:observation-093ca70c-e417-4dc7-a91f-3fd92864722e .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-7f8366cd-7b58-44b8-988b-2b2e6897f95e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ddef0479-8922-4b08-af5d-e2653bdbf780 ;
+        res:hasLiteralValue    "4.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-61cfb790-38d8-4a27-a41f-585a559acace .
+
+oquo:observation-c067ebb5-11a8-4866-baa3-1bbb121401cf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0b6ca51e-de08-49cd-b85a-a4954dd8285b ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-a0273429-3bc2-4e8a-8d1a-bee9521c2e58 .
+
+oquo:instant-f9dea88d-3052-4ceb-9344-54c094b6b83d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.662Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7451060f-9aeb-44ea-a4d9-01fc56fd94d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.668Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-50e5e962-7824-4672-81fd-a0761b83b33c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-2b8eab0d-a1e6-4a5c-bad4-9ba1a219648b ;
+        time:hasTime              oquo:instant-20786e7c-055b-4f18-a7ae-7d68bbe6d660 ;
+        oquo:hasObservation       oquo:observation-0b67b391-fbc2-4890-b9af-79524a3910e0 .
+
+oquo:metric-052c07da-2dce-4122-b7ff-1160ea7417cc
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bf41354d-cca0-495a-9da9-5e21d794cba6 ;
+        oboe:measurementFor  oquo:observation-9a437ee3-788f-491b-97de-6d8da59898c7 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:observation-5734fa59-62f1-49e2-993d-7001039769d6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d65959a1-d977-4c36-81ec-8d2a0539c8fb ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-1b8c6692-ae59-4a5f-bfb5-254de891835a .
+
+oquo:observation-72f78dd8-f9ad-4c4a-a76d-67ef44ff4836
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6744a0bd-cd1a-476d-930d-145f7ce6b503 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-e0e673f9-8283-4d62-b187-4e35ac9c2f63 .
+
+oquo:instant-149e090c-cbc4-4762-b799-afb4203bec21
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.609Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-43b87fbd-4a05-4b2b-b271-77f960a2ac67
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-472b86af-d3fd-4680-8e30-6cb01ba586c6 ;
+        time:hasTime              oquo:instant-ee3c2e43-363f-448f-82c7-958438235259 ;
+        oquo:hasObservation       oquo:observation-2f5d0d77-0b50-4d6c-a1b6-04aa9af52a9c .
+
+oquo:evaluation-910f5d81-efff-4ddd-9aee-c5aae9792c98
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-08cc4453-e9f1-42da-a073-139d9cc2c7cf ;
+        time:hasTime              oquo:instant-fca3792d-3d41-47e2-8ac2-7c8f0eb44f38 ;
+        oquo:hasObservation       oquo:observation-aa7f3a3e-4e2b-497b-8ce1-14ed31fa5fd8 .
+
+oquo:metric-9ad83c86-fa0a-4dd4-a936-ea6358adfd1d
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-e75ff956-022c-4a7a-a706-88b1d463b1fc ;
+        oboe:measurementFor  oquo:observation-d81b449c-3952-4175-8bfc-a8898a5a193b ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-a0f7bc95-302d-4484-b2cb-fc18b2a886c0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8d32ac84-550e-4c23-8c46-48560037effa ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-27e5a510-c28f-45ac-b45b-1340d7f1bf1c .
+
+oquo:qualityValue-d10df847-ae63-4838-9a08-e6649a252a12
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-333abe99-6e10-46c3-95d9-4f3938af9e33 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0b770056-3dfe-4d8e-97b6-e77861d891e5 .
+
+oquo:instant-fca3792d-3d41-47e2-8ac2-7c8f0eb44f38
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.671Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-d954f520-3565-4e12-92c0-660124f09de3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-004457d8-1d35-4217-911c-a179f8738495 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-f34d2fa6-5007-49d7-b95a-00a1b387a0b2 .
+
+oquo:instant-6ad10bc2-8fb7-4d66-8b05-fb753f3cfb08
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:57.792Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-61cfb790-38d8-4a27-a41f-585a559acace
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-7f8366cd-7b58-44b8-988b-2b2e6897f95e ;
+        time:hasTime              oquo:instant-c9131375-d081-478a-bfa8-01f2588cbb23 ;
+        oquo:hasObservation       oquo:observation-f6c8efb5-07a6-4be4-9798-cf27d8ff209e .
+
+oquo:observation-2f5d0d77-0b50-4d6c-a1b6-04aa9af52a9c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e3543de6-226b-4b84-99ee-2922657b038a ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-ee3c2e43-363f-448f-82c7-958438235259 .
+
+oquo:observation-58d3b305-c530-4c16-8e10-f08c4a1100e4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c1410437-d81f-463e-9ce3-dc9a78933737 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-4f617c7a-d768-4f9e-8f10-a643d876ac6c .
+
+oquo:observation-c65c9541-53e0-423a-a51c-a9941c69df59
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8d7e1e3d-b01a-4960-8324-563a99837ab7 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-6ad10bc2-8fb7-4d66-8b05-fb753f3cfb08 .
+
+oquo:observation-c802a788-6dab-4eb6-afff-8bca34aa7ae3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e2c2e29f-44c5-4fac-a4ea-35b62732a832 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-7c2f3a74-f5ea-4ce6-b5cf-6e8d00500b0d .
+
+oquo:metric-54c39def-c6f1-4340-b5fe-4f4a8428b388
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-040f06f6-1b61-48b4-ba1c-db12b5f3b91d ;
+        oboe:measurementFor  oquo:observation-b63c7991-0d27-4ddd-86f7-80aa97926115 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-c835cc3a-6a52-4ce7-bab6-cc1b1e903c38
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.574Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-87b29de7-5b51-4c6e-93f0-ed842b370e89
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.666Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-ee3c2e43-363f-448f-82c7-958438235259
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.466Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-738fe762-e4ca-42c0-84e0-36db4cbc8fc1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cd0b049a-a61f-4325-938a-bafa01cde7b6 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-d1a3a0a2-3428-4cc9-bb86-d20e88831bc3 .
+
+oquo:instant-c9131375-d081-478a-bfa8-01f2588cbb23
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.545Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-9a437ee3-788f-491b-97de-6d8da59898c7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-052c07da-2dce-4122-b7ff-1160ea7417cc ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-d2c3abe4-1751-4a0a-92bc-176da580e1ec .
+
+oquo:instant-0be5c9a2-7a99-4ec2-84f7-4cbaccc8b61e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.601Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-54db814c-eee3-4637-8709-d6f727b3f54c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-602acf68-7528-4c47-8ccc-be201d2a0744 ;
+        time:hasTime              oquo:instant-f9dea88d-3052-4ceb-9344-54c094b6b83d ;
+        oquo:hasObservation       oquo:observation-9a5d21b0-d6a4-400a-98aa-a6ce873e130f .
+
+oquo:evaluation-f8678de0-0c0d-47ff-9633-75e6cbfc77cb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-f0fd1e4b-7a52-407e-bec4-6065410b1472 ;
+        time:hasTime              oquo:instant-a0273429-3bc2-4e8a-8d1a-bee9521c2e58 ;
+        oquo:hasObservation       oquo:observation-c067ebb5-11a8-4866-baa3-1bbb121401cf .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-b63c7991-0d27-4ddd-86f7-80aa97926115
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-54c39def-c6f1-4340-b5fe-4f4a8428b388 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-214e9914-e2a8-4cb8-9fce-fade3a4ba68c .
+
+oquo:evaluation-426784cb-015c-4da6-b642-d0d0e0676e6f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-4128ebda-2572-4a04-871d-c4130542edfc ;
+        time:hasTime              oquo:instant-6e1cd035-8e93-4876-a6d3-db5dadf59467 ;
+        oquo:hasObservation       oquo:observation-39ecd87f-82bd-4afb-9493-00c3ade32bfa .
+
+oquo:metric-910883b2-060b-4902-9e02-175b7be51d77
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-2b8eab0d-a1e6-4a5c-bad4-9ba1a219648b ;
+        oboe:measurementFor  oquo:observation-0b67b391-fbc2-4890-b9af-79524a3910e0 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-214e9914-e2a8-4cb8-9fce-fade3a4ba68c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.667Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-551754ca-4da8-4841-aba1-c133e249dc8a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2cc8b6b0-3a6e-4fe5-9ec2-92afb1d96335 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7160ff81-5acd-4542-a891-18bff07e1063 .
+
+oquo:qualityValue-29ff26b6-8c83-43d5-ad92-ae38d52ff4c0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4434fc5d-a1a4-45e1-8ba9-90d49bf4634f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1cbbc279-1aef-4d8e-8c9e-874f5faf08af .
+
+oquo:qualityValue-f0fd1e4b-7a52-407e-bec4-6065410b1472
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0b6ca51e-de08-49cd-b85a-a4954dd8285b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f8678de0-0c0d-47ff-9633-75e6cbfc77cb .
+
+oquo:observation-76975cbf-e7a0-41bf-8dcb-54b37235c2c9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4434fc5d-a1a4-45e1-8ba9-90d49bf4634f ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-e0162fe0-2e2e-4ff6-ab2c-1431c50657be .
+
+oquo:observation-48a1c75e-97dd-4e97-a4be-3a82e897f14d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b21269b4-0933-4184-80ec-ea873e7a46f2 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-1073e6a3-0dc9-49ff-b6c7-81f3c80a3bd8 .
+
+oquo:evaluation-485b0113-aa39-4622-bfa8-0433fe89843c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-040f06f6-1b61-48b4-ba1c-db12b5f3b91d ;
+        time:hasTime              oquo:instant-214e9914-e2a8-4cb8-9fce-fade3a4ba68c ;
+        oquo:hasObservation       oquo:observation-b63c7991-0d27-4ddd-86f7-80aa97926115 .
+
+oquo:qualityValue-4161e01c-f856-4913-94d8-9b4c2bcbca37
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b21269b4-0933-4184-80ec-ea873e7a46f2 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b1a53b0f-61c8-486c-b5ce-edbcb6fa2efe .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-e313d175-9a2d-4076-8ea3-25dd918675c5
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-9cabab4b-76d7-41ca-b7da-c446718d7045 ;
+        oboe:measurementFor  oquo:observation-9d4376ad-383a-47e9-bd36-735683787e1b ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:evaluation-690057b3-aa5c-4901-8369-40c6dbc7fed2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-520447a8-4a85-40c0-8437-2b0ab352c942 ;
+        time:hasTime              oquo:instant-35a29a36-eb8f-4dcd-aca4-dfb89ec85a15 ;
+        oquo:hasObservation       oquo:observation-bc1ac010-28b7-409d-a1b3-bb60ac908267 .
+
+oquo:metric-e6392bb3-b9c0-41a5-8fdd-07eb189349d7
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2e60c85d-745c-473e-a35e-99ee9988cc15 ;
+        oboe:measurementFor  oquo:observation-093ca70c-e417-4dc7-a91f-3fd92864722e ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:metric-4434fc5d-a1a4-45e1-8ba9-90d49bf4634f
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-29ff26b6-8c83-43d5-ad92-ae38d52ff4c0 ;
+        oboe:measurementFor  oquo:observation-76975cbf-e7a0-41bf-8dcb-54b37235c2c9 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-e466ce0e-41ff-4096-9828-4655274c1865
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-333abe99-6e10-46c3-95d9-4f3938af9e33 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-77064290-e65b-4509-9957-bc7bc6ed90a1 .
+
+oquo:qualityValue-cc8d3b79-f801-46cf-afdc-a16cd29d3b9f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-71123e1a-24e4-49ed-a0ba-ebb5d5aacc29 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f4a45451-ff5a-4734-b005-5f9750c54f6b .
+
+oquo:instant-a319ad44-d73f-4ef3-8a46-2f69cdb032d3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:57.749Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-b637230e-6b6a-430f-86c4-3423a58be4b8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9bb84b93-45fd-4d44-86fc-69f2a01304ab ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-1e747f7c-8229-4d49-a8df-764a73b570bf .
+
+oquo:metric-71123e1a-24e4-49ed-a0ba-ebb5d5aacc29
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cc8d3b79-f801-46cf-afdc-a16cd29d3b9f ;
+        oboe:measurementFor  oquo:observation-cf734279-6c6c-4e80-82de-c075f8b0aeaf ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-b2339831-6ad6-4942-89d6-895e0e2b39cb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4e2a0c66-cffb-4fcb-8bc7-06606e11f785 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-243aba75-2421-4297-8981-7339cc6615a1 .
+
+oquo:observation-d8e266b3-faec-463d-84b4-63284bbe2bb8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e6c1b7a8-f249-4dfb-a4cc-d96dc1ff31e3 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-c835cc3a-6a52-4ce7-bab6-cc1b1e903c38 .
+
+oquo:instant-1b8c6692-ae59-4a5f-bfb5-254de891835a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.656Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-864c3331-e3f9-4918-833d-7725aae98922
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-46129999-f1e4-48f2-b6b6-1fd76a8d8093 ;
+        oboe:measurementFor  oquo:observation-945d3ad6-347f-4551-9622-c961f95c9591 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-d65959a1-d977-4c36-81ec-8d2a0539c8fb
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c4d7e5fd-cf7e-446c-ac39-eca77830e02a ;
+        oboe:measurementFor  oquo:observation-5734fa59-62f1-49e2-993d-7001039769d6 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-46129999-f1e4-48f2-b6b6-1fd76a8d8093
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-864c3331-e3f9-4918-833d-7725aae98922 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f7161775-a37f-40a7-ba86-2686e7e01253 .
+
+oquo:evaluation-0b770056-3dfe-4d8e-97b6-e77861d891e5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-d10df847-ae63-4838-9a08-e6649a252a12 ;
+        time:hasTime              oquo:instant-77064290-e65b-4509-9957-bc7bc6ed90a1 ;
+        oquo:hasObservation       oquo:observation-e466ce0e-41ff-4096-9828-4655274c1865 .
+
+oquo:metric-0b6ca51e-de08-49cd-b85a-a4954dd8285b
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-f0fd1e4b-7a52-407e-bec4-6065410b1472 ;
+        oboe:measurementFor  oquo:observation-c067ebb5-11a8-4866-baa3-1bbb121401cf ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-d1a3a0a2-3428-4cc9-bb86-d20e88831bc3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.674Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-e3543de6-226b-4b84-99ee-2922657b038a
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-472b86af-d3fd-4680-8e30-6cb01ba586c6 ;
+        oboe:measurementFor  oquo:observation-2f5d0d77-0b50-4d6c-a1b6-04aa9af52a9c ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:qualityValue-e75ff956-022c-4a7a-a706-88b1d463b1fc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9ad83c86-fa0a-4dd4-a936-ea6358adfd1d ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dc8e2cb3-57f6-4243-a4bb-d7be5fc49f25 .
+
+oquo:metric-4e2a0c66-cffb-4fcb-8bc7-06606e11f785
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b2339831-6ad6-4942-89d6-895e0e2b39cb ;
+        oboe:measurementFor  oquo:observation-d3931cd7-4a40-46e3-ab14-28374d0cd391 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-d3ac0138-6cb5-4d57-a17b-22bcab049fff
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-01235e33-2374-4d6b-bbf7-00e4341d362d ;
+        time:hasTime              oquo:instant-1e747f7c-8229-4d49-a8df-764a73b570bf ;
+        oquo:hasObservation       oquo:observation-b637230e-6b6a-430f-86c4-3423a58be4b8 .
+
+oquo:qualityValue-2e60c85d-745c-473e-a35e-99ee9988cc15
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e6392bb3-b9c0-41a5-8fdd-07eb189349d7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d99b1c0b-0b8b-4b34-8e55-18f399528b4c .
+
+oquo:metric-67b16de8-2242-4c16-9ccc-1e7a46686161
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-09053c5a-eee4-49b1-b0b6-a9e199371bed ;
+        oboe:measurementFor  oquo:observation-e7922566-8f90-46fd-a443-8b0f4ba5822d ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-9cabab4b-76d7-41ca-b7da-c446718d7045
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e313d175-9a2d-4076-8ea3-25dd918675c5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-51bb7f73-3a1b-48ac-b007-7c4bf6b8e5ff .
+
+oquo:instant-cf17ba1d-77d0-4fe3-8a05-2d3c09a51f3c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.635Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-463addfb-d797-4aa1-bf3e-4d2796137fe2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-bf41354d-cca0-495a-9da9-5e21d794cba6 ;
+        time:hasTime              oquo:instant-d2c3abe4-1751-4a0a-92bc-176da580e1ec ;
+        oquo:hasObservation       oquo:observation-9a437ee3-788f-491b-97de-6d8da59898c7 .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-9bb84b93-45fd-4d44-86fc-69f2a01304ab
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-01235e33-2374-4d6b-bbf7-00e4341d362d ;
+        oboe:measurementFor  oquo:observation-b637230e-6b6a-430f-86c4-3423a58be4b8 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:qualityValue-9829bf28-be0d-42ad-aa7b-e9f343878297
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e2c2e29f-44c5-4fac-a4ea-35b62732a832 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2cbd4ec2-fda3-4569-af2e-be86adf0fd96 .
+
+oquo:evaluation-5dfb4e73-68c1-4d2e-9cb9-b91e6ab1a369
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-5d115427-dfa0-4caf-a9fb-fc3a8b189bf8 ;
+        time:hasTime              oquo:instant-7e46d125-119e-4a40-b5ae-c35e77abab83 ;
+        oquo:hasObservation       oquo:observation-3e554df5-448c-4b17-a492-b4c24ac65ba0 .
+
+oquo:metric-e2c2e29f-44c5-4fac-a4ea-35b62732a832
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-9829bf28-be0d-42ad-aa7b-e9f343878297 ;
+        oboe:measurementFor  oquo:observation-c802a788-6dab-4eb6-afff-8bca34aa7ae3 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:observation-9a5d21b0-d6a4-400a-98aa-a6ce873e130f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7feddb5b-93e9-4698-a088-4cc15183248a ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-f9dea88d-3052-4ceb-9344-54c094b6b83d .
+
+oquo:qualityValue-01235e33-2374-4d6b-bbf7-00e4341d362d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9bb84b93-45fd-4d44-86fc-69f2a01304ab ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d3ac0138-6cb5-4d57-a17b-22bcab049fff .
+
+oquo:metric-004457d8-1d35-4217-911c-a179f8738495
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f605c7de-7778-451f-b9b4-b555ce41d950 ;
+        oboe:measurementFor  oquo:observation-d954f520-3565-4e12-92c0-660124f09de3 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-fa7a4cdc-180d-4639-a025-2c226bd2bd11
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-f605c7de-7778-451f-b9b4-b555ce41d950 ;
+        time:hasTime              oquo:instant-f34d2fa6-5007-49d7-b95a-00a1b387a0b2 ;
+        oquo:hasObservation       oquo:observation-d954f520-3565-4e12-92c0-660124f09de3 .
+
+oquo:evaluation-b1a53b0f-61c8-486c-b5ce-edbcb6fa2efe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-4161e01c-f856-4913-94d8-9b4c2bcbca37 ;
+        time:hasTime              oquo:instant-1073e6a3-0dc9-49ff-b6c7-81f3c80a3bd8 ;
+        oquo:hasObservation       oquo:observation-48a1c75e-97dd-4e97-a4be-3a82e897f14d .
+
+oquo:observation-97919784-8317-449e-a3f7-90a9c92b11bc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-df08ba0b-2ec2-48cb-9bff-b7d05a0102d1 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-a564d04f-fd8b-4a51-a8be-ae8f86689b94 .
+
+oquo:qualityValue-4128ebda-2572-4a04-871d-c4130542edfc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d5cd98fe-2879-4b16-9506-b770ab70a65f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-426784cb-015c-4da6-b642-d0d0e0676e6f .
+
+oquo:instant-e0162fe0-2e2e-4ff6-ab2c-1431c50657be
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.633Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-a564d04f-fd8b-4a51-a8be-ae8f86689b94
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:57.543Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-2cc8b6b0-3a6e-4fe5-9ec2-92afb1d96335
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-551754ca-4da8-4841-aba1-c133e249dc8a ;
+        oboe:measurementFor  oquo:observation-8943c888-4bea-4d12-85cd-8bdc9c71b48b ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-2f65af81-2e3d-4726-9181-4a17f1961378
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5d115427-dfa0-4caf-a9fb-fc3a8b189bf8 ;
+        oboe:measurementFor  oquo:observation-3e554df5-448c-4b17-a492-b4c24ac65ba0 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-056862be-79d4-43a0-8b03-9ea38cc803eb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cd0b049a-a61f-4325-938a-bafa01cde7b6 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7bfb569c-5ef0-4b12-8b3c-27f59e5d138a .
+
+oquo:observation-cf734279-6c6c-4e80-82de-c075f8b0aeaf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-71123e1a-24e4-49ed-a0ba-ebb5d5aacc29 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-0be5c9a2-7a99-4ec2-84f7-4cbaccc8b61e .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-cd0b049a-a61f-4325-938a-bafa01cde7b6
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-056862be-79d4-43a0-8b03-9ea38cc803eb ;
+        oboe:measurementFor  oquo:observation-738fe762-e4ca-42c0-84e0-36db4cbc8fc1 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-07aeacd0-7841-4afe-9307-a72163f90fa4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-c3525faf-ca28-4d3c-a5ea-aa3e1566fe87 ;
+        time:hasTime              oquo:instant-e0e673f9-8283-4d62-b187-4e35ac9c2f63 ;
+        oquo:hasObservation       oquo:observation-72f78dd8-f9ad-4c4a-a76d-67ef44ff4836 .
+
+oquo:instant-f34d2fa6-5007-49d7-b95a-00a1b387a0b2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.618Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b21269b4-0933-4184-80ec-ea873e7a46f2
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4161e01c-f856-4913-94d8-9b4c2bcbca37 ;
+        oboe:measurementFor  oquo:observation-48a1c75e-97dd-4e97-a4be-3a82e897f14d ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:qualityValue-09053c5a-eee4-49b1-b0b6-a9e199371bed
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-67b16de8-2242-4c16-9ccc-1e7a46686161 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-aee542a0-22dd-4917-bc31-be4595f69c41 .
+
+oquo:qualityValue-040f06f6-1b61-48b4-ba1c-db12b5f3b91d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-54c39def-c6f1-4340-b5fe-4f4a8428b388 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-485b0113-aa39-4622-bfa8-0433fe89843c .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-8943c888-4bea-4d12-85cd-8bdc9c71b48b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2cc8b6b0-3a6e-4fe5-9ec2-92afb1d96335 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-87b29de7-5b51-4c6e-93f0-ed842b370e89 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-d3931cd7-4a40-46e3-ab14-28374d0cd391
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4e2a0c66-cffb-4fcb-8bc7-06606e11f785 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-a504faaf-072a-456d-9d56-fdd41e6e5ee8 .
+
+oquo:metric-df08ba0b-2ec2-48cb-9bff-b7d05a0102d1
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-866e19ea-12f3-43aa-b50f-bf8ea5c1083f ;
+        oboe:measurementFor  oquo:observation-97919784-8317-449e-a3f7-90a9c92b11bc ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:observation-aa7f3a3e-4e2b-497b-8ce1-14ed31fa5fd8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ee879917-15c1-4f15-85bb-087e9ca7c99b ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-fca3792d-3d41-47e2-8ac2-7c8f0eb44f38 .
+
+oquo:evaluation-dc8e2cb3-57f6-4243-a4bb-d7be5fc49f25
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-e75ff956-022c-4a7a-a706-88b1d463b1fc ;
+        time:hasTime              oquo:instant-7451060f-9aeb-44ea-a4d9-01fc56fd94d9 ;
+        oquo:hasObservation       oquo:observation-d81b449c-3952-4175-8bfc-a8898a5a193b .
+
+oquo:instant-a0273429-3bc2-4e8a-8d1a-bee9521c2e58
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.669Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1b12eafe-104a-4b71-9045-af4b513782f5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-0cb0c420-6332-454f-bc48-6c72e97c60c0 ;
+        time:hasTime              oquo:instant-4f617c7a-d768-4f9e-8f10-a643d876ac6c ;
+        oquo:hasObservation       oquo:observation-58d3b305-c530-4c16-8e10-f08c4a1100e4 .
+
+oquo:metric-8d32ac84-550e-4c23-8c46-48560037effa
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-de9b94e2-c92c-4b66-af21-5098f5f7e068 ;
+        oboe:measurementFor  oquo:observation-a0f7bc95-302d-4484-b2cb-fc18b2a886c0 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-602acf68-7528-4c47-8ccc-be201d2a0744
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7feddb5b-93e9-4698-a088-4cc15183248a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-54db814c-eee3-4637-8709-d6f727b3f54c .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-c4d7e5fd-cf7e-446c-ac39-eca77830e02a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d65959a1-d977-4c36-81ec-8d2a0539c8fb ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b13a5bb8-2783-4a1e-bff3-dc1c3b7e6c5c .
+
+oquo:instant-a504faaf-072a-456d-9d56-fdd41e6e5ee8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.591Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-bf41354d-cca0-495a-9da9-5e21d794cba6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-052c07da-2dce-4122-b7ff-1160ea7417cc ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-463addfb-d797-4aa1-bf3e-4d2796137fe2 .
+
+oquo:metric-ddef0479-8922-4b08-af5d-e2653bdbf780
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-7f8366cd-7b58-44b8-988b-2b2e6897f95e ;
+        oboe:measurementFor  oquo:observation-f6c8efb5-07a6-4be4-9798-cf27d8ff209e ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:instant-7e46d125-119e-4a40-b5ae-c35e77abab83
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.639Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-2cbd4ec2-fda3-4569-af2e-be86adf0fd96
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-9829bf28-be0d-42ad-aa7b-e9f343878297 ;
+        time:hasTime              oquo:instant-7c2f3a74-f5ea-4ce6-b5cf-6e8d00500b0d ;
+        oquo:hasObservation       oquo:observation-c802a788-6dab-4eb6-afff-8bca34aa7ae3 .
+
+oquo:observation-945d3ad6-347f-4551-9622-c961f95c9591
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-864c3331-e3f9-4918-833d-7725aae98922 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-a319ad44-d73f-4ef3-8a46-2f69cdb032d3 .
+
+oquo:evaluation-da575ef3-7e20-4761-829c-1723ab4456ef
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-0604c695-254b-47d8-9813-23289ef84356 ;
+        time:hasTime              oquo:instant-6ad10bc2-8fb7-4d66-8b05-fb753f3cfb08 ;
+        oquo:hasObservation       oquo:observation-c65c9541-53e0-423a-a51c-a9941c69df59 .
+
+oquo:qualityValue-08cc4453-e9f1-42da-a073-139d9cc2c7cf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ee879917-15c1-4f15-85bb-087e9ca7c99b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-910f5d81-efff-4ddd-9aee-c5aae9792c98 .
+
+oquo:metric-333abe99-6e10-46c3-95d9-4f3938af9e33
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-d10df847-ae63-4838-9a08-e6649a252a12 ;
+        oboe:measurementFor  oquo:observation-e466ce0e-41ff-4096-9828-4655274c1865 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:evaluation-51bb7f73-3a1b-48ac-b007-7c4bf6b8e5ff
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-9cabab4b-76d7-41ca-b7da-c446718d7045 ;
+        time:hasTime              oquo:instant-149e090c-cbc4-4762-b799-afb4203bec21 ;
+        oquo:hasObservation       oquo:observation-9d4376ad-383a-47e9-bd36-735683787e1b .
+
+oquo:qualityValue-0604c695-254b-47d8-9813-23289ef84356
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8d7e1e3d-b01a-4960-8324-563a99837ab7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-da575ef3-7e20-4761-829c-1723ab4456ef .
+
+oquo:evaluation-7bfb569c-5ef0-4b12-8b3c-27f59e5d138a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-056862be-79d4-43a0-8b03-9ea38cc803eb ;
+        time:hasTime              oquo:instant-d1a3a0a2-3428-4cc9-bb86-d20e88831bc3 ;
+        oquo:hasObservation       oquo:observation-738fe762-e4ca-42c0-84e0-36db4cbc8fc1 .
+
+oquo:qualityValue-de9b94e2-c92c-4b66-af21-5098f5f7e068
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8d32ac84-550e-4c23-8c46-48560037effa ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-333c4958-34fd-4048-a6c5-5c47f280d3b5 .
+
+<http://data.loterre.fr/ark:/67375/Q1W>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-5d115427-dfa0-4caf-a9fb-fc3a8b189bf8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2f65af81-2e3d-4726-9181-4a17f1961378 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5dfb4e73-68c1-4d2e-9cb9-b91e6ab1a369 .
+
+oquo:instant-1073e6a3-0dc9-49ff-b6c7-81f3c80a3bd8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.607Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-20786e7c-055b-4f18-a7ae-7d68bbe6d660
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:57.727Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-d81b449c-3952-4175-8bfc-a8898a5a193b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9ad83c86-fa0a-4dd4-a936-ea6358adfd1d ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-7451060f-9aeb-44ea-a4d9-01fc56fd94d9 .
+
+oquo:observation-39ecd87f-82bd-4afb-9493-00c3ade32bfa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d5cd98fe-2879-4b16-9506-b770ab70a65f ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-6e1cd035-8e93-4876-a6d3-db5dadf59467 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-0cb0c420-6332-454f-bc48-6c72e97c60c0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c1410437-d81f-463e-9ce3-dc9a78933737 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1b12eafe-104a-4b71-9045-af4b513782f5 .
+
+oquo:instant-bef67dc3-f517-4235-ba8b-21ea55720425
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.677Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1cbbc279-1aef-4d8e-8c9e-874f5faf08af
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-29ff26b6-8c83-43d5-ad92-ae38d52ff4c0 ;
+        time:hasTime              oquo:instant-e0162fe0-2e2e-4ff6-ab2c-1431c50657be ;
+        oquo:hasObservation       oquo:observation-76975cbf-e7a0-41bf-8dcb-54b37235c2c9 .
+
+oquo:qualityValue-472b86af-d3fd-4680-8e30-6cb01ba586c6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e3543de6-226b-4b84-99ee-2922657b038a ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-43b87fbd-4a05-4b2b-b271-77f960a2ac67 .
+
+oquo:evaluation-f4a45451-ff5a-4734-b005-5f9750c54f6b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-cc8d3b79-f801-46cf-afdc-a16cd29d3b9f ;
+        time:hasTime              oquo:instant-0be5c9a2-7a99-4ec2-84f7-4cbaccc8b61e ;
+        oquo:hasObservation       oquo:observation-cf734279-6c6c-4e80-82de-c075f8b0aeaf .
+
+oquo:evaluation-b13a5bb8-2783-4a1e-bff3-dc1c3b7e6c5c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-c4d7e5fd-cf7e-446c-ac39-eca77830e02a ;
+        time:hasTime              oquo:instant-1b8c6692-ae59-4a5f-bfb5-254de891835a ;
+        oquo:hasObservation       oquo:observation-5734fa59-62f1-49e2-993d-7001039769d6 .
+
+oquo:observation-093ca70c-e417-4dc7-a91f-3fd92864722e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e6392bb3-b9c0-41a5-8fdd-07eb189349d7 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-cf17ba1d-77d0-4fe3-8a05-2d3c09a51f3c .
+
+oquo:instant-22f185ad-e371-44d8-b93e-824bfec0949b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.637Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-0b67b391-fbc2-4890-b9af-79524a3910e0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-910883b2-060b-4902-9e02-175b7be51d77 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-20786e7c-055b-4f18-a7ae-7d68bbe6d660 .
+
+oquo:qualityValue-6473ddb2-2600-4e9d-8e66-40774890b100
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e6c1b7a8-f249-4dfb-a4cc-d96dc1ff31e3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f62bcb3d-20c7-4ebe-85cf-0bb8b03702e0 .
+
+oquo:observation-3e554df5-448c-4b17-a492-b4c24ac65ba0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2f65af81-2e3d-4726-9181-4a17f1961378 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-7e46d125-119e-4a40-b5ae-c35e77abab83 .
+
+oquo:evaluation-f7161775-a37f-40a7-ba86-2686e7e01253
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-46129999-f1e4-48f2-b6b6-1fd76a8d8093 ;
+        time:hasTime              oquo:instant-a319ad44-d73f-4ef3-8a46-2f69cdb032d3 ;
+        oquo:hasObservation       oquo:observation-945d3ad6-347f-4551-9622-c961f95c9591 .
+
+oquo:instant-77064290-e65b-4509-9957-bc7bc6ed90a1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.664Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-f2a66fbd-7e23-4887-ac65-8b6666c3f4a4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-866e19ea-12f3-43aa-b50f-bf8ea5c1083f ;
+        time:hasTime              oquo:instant-a564d04f-fd8b-4a51-a8be-ae8f86689b94 ;
+        oquo:hasObservation       oquo:observation-97919784-8317-449e-a3f7-90a9c92b11bc .
+
+oquo:evaluation-aee542a0-22dd-4917-bc31-be4595f69c41
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-09053c5a-eee4-49b1-b0b6-a9e199371bed ;
+        time:hasTime              oquo:instant-bef67dc3-f517-4235-ba8b-21ea55720425 ;
+        oquo:hasObservation       oquo:observation-e7922566-8f90-46fd-a443-8b0f4ba5822d .
+
+oquo:metric-c1410437-d81f-463e-9ce3-dc9a78933737
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0cb0c420-6332-454f-bc48-6c72e97c60c0 ;
+        oboe:measurementFor  oquo:observation-58d3b305-c530-4c16-8e10-f08c4a1100e4 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-ee879917-15c1-4f15-85bb-087e9ca7c99b
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-08cc4453-e9f1-42da-a073-139d9cc2c7cf ;
+        oboe:measurementFor  oquo:observation-aa7f3a3e-4e2b-497b-8ce1-14ed31fa5fd8 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-4f617c7a-d768-4f9e-8f10-a643d876ac6c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.625Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-e6c1b7a8-f249-4dfb-a4cc-d96dc1ff31e3
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-6473ddb2-2600-4e9d-8e66-40774890b100 ;
+        oboe:measurementFor  oquo:observation-d8e266b3-faec-463d-84b4-63284bbe2bb8 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-333c4958-34fd-4048-a6c5-5c47f280d3b5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-de9b94e2-c92c-4b66-af21-5098f5f7e068 ;
+        time:hasTime              oquo:instant-27e5a510-c28f-45ac-b45b-1340d7f1bf1c ;
+        oquo:hasObservation       oquo:observation-a0f7bc95-302d-4484-b2cb-fc18b2a886c0 .
+
+oquo:observation-e7922566-8f90-46fd-a443-8b0f4ba5822d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-67b16de8-2242-4c16-9ccc-1e7a46686161 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-bef67dc3-f517-4235-ba8b-21ea55720425 .
+
+oquo:observation-e9741912-8036-4a32-b065-69927eca76e6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ae087bfc-b78d-43de-9dec-744010a7a57c ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-22f185ad-e371-44d8-b93e-824bfec0949b .
+
+oquo:instant-1e747f7c-8229-4d49-a8df-764a73b570bf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:57.752Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-27e5a510-c28f-45ac-b45b-1340d7f1bf1c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.665Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-0b8ed159-aa1f-4b5e-a851-a3135c7b3f54
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ae087bfc-b78d-43de-9dec-744010a7a57c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1c2c5fef-6e2b-4c4e-9d7f-f3f01d7b2ce0 .
+
+oquo:observation-f6c8efb5-07a6-4be4-9798-cf27d8ff209e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ddef0479-8922-4b08-af5d-e2653bdbf780 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-c9131375-d081-478a-bfa8-01f2588cbb23 .
+
+oquo:metric-6744a0bd-cd1a-476d-930d-145f7ce6b503
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-c3525faf-ca28-4d3c-a5ea-aa3e1566fe87 ;
+        oboe:measurementFor  oquo:observation-72f78dd8-f9ad-4c4a-a76d-67ef44ff4836 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:instant-6e1cd035-8e93-4876-a6d3-db5dadf59467
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.582Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-bc1ac010-28b7-409d-a1b3-bb60ac908267
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c27fb244-2b37-4e60-b544-bbca32fa3352 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-35a29a36-eb8f-4dcd-aca4-dfb89ec85a15 .
+
+oquo:qualityValue-f605c7de-7778-451f-b9b4-b555ce41d950
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-004457d8-1d35-4217-911c-a179f8738495 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fa7a4cdc-180d-4639-a025-2c226bd2bd11 .
+
+oquo:metric-ae087bfc-b78d-43de-9dec-744010a7a57c
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0b8ed159-aa1f-4b5e-a851-a3135c7b3f54 ;
+        oboe:measurementFor  oquo:observation-e9741912-8036-4a32-b065-69927eca76e6 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-7160ff81-5acd-4542-a891-18bff07e1063
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-551754ca-4da8-4841-aba1-c133e249dc8a ;
+        time:hasTime              oquo:instant-87b29de7-5b51-4c6e-93f0-ed842b370e89 ;
+        oquo:hasObservation       oquo:observation-8943c888-4bea-4d12-85cd-8bdc9c71b48b .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-520447a8-4a85-40c0-8437-2b0ab352c942
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c27fb244-2b37-4e60-b544-bbca32fa3352 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-690057b3-aa5c-4901-8369-40c6dbc7fed2 .
+
+oquo:metric-8d7e1e3d-b01a-4960-8324-563a99837ab7
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-0604c695-254b-47d8-9813-23289ef84356 ;
+        oboe:measurementFor  oquo:observation-c65c9541-53e0-423a-a51c-a9941c69df59 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-d2c3abe4-1751-4a0a-92bc-176da580e1ec
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.631Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-243aba75-2421-4297-8981-7339cc6615a1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-b2339831-6ad6-4942-89d6-895e0e2b39cb ;
+        time:hasTime              oquo:instant-a504faaf-072a-456d-9d56-fdd41e6e5ee8 ;
+        oquo:hasObservation       oquo:observation-d3931cd7-4a40-46e3-ab14-28374d0cd391 .
+
+oquo:observation-9d4376ad-383a-47e9-bd36-735683787e1b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e313d175-9a2d-4076-8ea3-25dd918675c5 ;
+        oboe:ofEntity        <http://data.loterre.fr/ark:/67375/Q1W> ;
+        time:hasTime         oquo:instant-149e090c-cbc4-4762-b799-afb4203bec21 .
+
+oquo:instant-35a29a36-eb8f-4dcd-aca4-dfb89ec85a15
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T10:11:58.622Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c3525faf-ca28-4d3c-a5ea-aa3e1566fe87
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6744a0bd-cd1a-476d-930d-145f7ce6b503 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-07aeacd0-7841-4afe-9307-a72163f90fa4 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7feddb5b-93e9-4698-a088-4cc15183248a
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-602acf68-7528-4c47-8ccc-be201d2a0744 ;
+        oboe:measurementFor  oquo:observation-9a5d21b0-d6a4-400a-98aa-a6ce873e130f ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-866e19ea-12f3-43aa-b50f-bf8ea5c1083f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-df08ba0b-2ec2-48cb-9bff-b7d05a0102d1 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f2a66fbd-7e23-4887-ac65-8b6666c3f4a4 .
+
+oquo:evaluation-1c2c5fef-6e2b-4c4e-9d7f-f3f01d7b2ce0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:inputData             <http://data.loterre.fr/ark:/67375/Q1W> ;
+        res:producedQualityValue  oquo:qualityValue-0b8ed159-aa1f-4b5e-a851-a3135c7b3f54 ;
+        time:hasTime              oquo:instant-22f185ad-e371-44d8-b93e-824bfec0949b ;
+        oquo:hasObservation       oquo:observation-e9741912-8036-4a32-b065-69927eca76e6 .
