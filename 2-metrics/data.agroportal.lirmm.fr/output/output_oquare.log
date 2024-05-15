@@ -1874,3 +1874,1849 @@ object property hierarchy
 same individuals
 Running Hermit reasoner
 Classifying
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/seont-20240503-owl__seont-full.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/seont__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/seont__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+java.lang.IllegalArgumentException: Non-simple property '<http://purl.obolibrary.org/obo/RO_0000057>' or its inverse appears in the cardinality restriction 'ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/AGRO_00000325>)'.
+	at org.semanticweb.HermiT.structural.ObjectPropertyInclusionManager.rewriteAxioms(ObjectPropertyInclusionManager.java:110)
+	at org.semanticweb.HermiT.structural.OWLClausification.preprocessAndClausify(OWLClausification.java:150)
+	at org.semanticweb.HermiT.Reasoner.loadOntology(Reasoner.java:221)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:212)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:175)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:23)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Non-simple property '<http://purl.obolibrary.org/obo/RO_0000057>' or its inverse appears in the cardinality restriction 'ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/AGRO_00000325>)'.".
+Finish. Execution Time = 3049 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/infrarisk-20210211-owl__infrarisk.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/infrarisk__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/infrarisk__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+org.semanticweb.HermiT.datatypes.UnsupportedDatatypeException: HermiT supports all and only the datatypes of the OWL 2 datatype map, see 
+http://www.w3.org/TR/owl2-syntax/#Datatype_Maps. 
+The datatype 'http://www.w3.org/2001/XMLSchema#time' is not part of the OWL 2 datatype map and 
+no custom datatype definition is given; 
+therefore, HermiT cannot handle this datatype.
+	at org.semanticweb.HermiT.datatypes.DatatypeRegistry.getDatatypeHandlerFor(DatatypeRegistry.java:76)
+	at org.semanticweb.HermiT.datatypes.DatatypeRegistry.getDatatypeHandlerFor(DatatypeRegistry.java:82)
+	at org.semanticweb.HermiT.datatypes.DatatypeRegistry.validateDatatypeRestriction(DatatypeRegistry.java:101)
+	at org.semanticweb.HermiT.structural.OWLClausification$DataRangeConverter.visit(OWLClausification.java:776)
+	at uk.ac.manchester.cs.owl.owlapi.OWLDatatypeImpl.accept(OWLDatatypeImpl.java:320)
+	at org.semanticweb.HermiT.structural.OWLClausification$DataRangeConverter.convertDataRange(OWLClausification.java:763)
+	at org.semanticweb.HermiT.structural.OWLClausification$NormalizedAxiomClausifier.visit(OWLClausification.java:608)
+	at uk.ac.manchester.cs.owl.owlapi.OWLDataAllValuesFromImpl.accept(OWLDataAllValuesFromImpl.java:94)
+	at org.semanticweb.HermiT.structural.OWLClausification.clausify(OWLClausification.java:216)
+	at org.semanticweb.HermiT.structural.OWLClausification.preprocessAndClausify(OWLClausification.java:154)
+	at org.semanticweb.HermiT.Reasoner.loadOntology(Reasoner.java:221)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:212)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:175)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:23)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "HermiT supports all and only the datatypes of the OWL 2 datatype map, see 
+http://www.w3.org/TR/owl2-syntax/#Datatype_Maps. 
+The datatype 'http://www.w3.org/2001/XMLSchema#time' is not part of the OWL 2 datatype map and 
+no custom datatype definition is given; 
+therefore, HermiT cannot handle this datatype.".
+Finish. Execution Time = 826 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/po-20240418-owl__po.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/po__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/po__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 845438 msec
+Building Neo4j graph from ontology model...
+Graph builded in 27289 msec
+Number of nodes: 2027
+Number of relationships: 3728
+[1/1486] Searching paths from leaves (maxDepth=24)...Last 1000 leaves path seaches finished in 12456 msec. NumberOfPaths: 1487, AggregatedOfPathLength: 11816Free mem./Max. mem.: 7.498490748306115Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/co_371-20240502-owl__rdf.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_371__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_371__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 447 msec
+Building Neo4j graph from ontology model...
+Graph builded in 11971 msec
+Number of nodes: 827
+Number of relationships: 1599
+[1/774] Searching paths from leaves (maxDepth=8)...Oquare metrics calculated in 23271 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_371__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_371__oquare.ttl".
+Finish. Execution Time = 37668 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/clc-20181001-skos__corine.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/clc__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/clc__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 16 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1318 msec
+Number of nodes: 4
+Number of relationships: 4
+[1/2] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 3524 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/clc__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/clc__oquare.ttl".
+Finish. Execution Time = 15245 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/vt-20240424-owl__vt.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/vt__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/vt__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 862 msec
+Building Neo4j graph from ontology model...
+Graph builded in 45246 msec
+Number of nodes: 3887
+Number of relationships: 6968
+[1/2430] Searching paths from leaves (maxDepth=30)...Last 1000 leaves path seaches finished in 13006 msec. NumberOfPaths: 2344, AggregatedOfPathLength: 21044Free mem./Max. mem.: 5.754744509855906Last 1000 leaves path seaches finished in 5972 msec. NumberOfPaths: 4431, AggregatedOfPathLength: 38988Free mem./Max. mem.: 4.828683411081633Oquare metrics calculated in 71574 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/vt__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/vt__oquare.ttl".
+Finish. Execution Time = 87444 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/c3po-20230227-owl__crop-planning-production-process-ontology.xml --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/c3po__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/c3po__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 448 msec
+Building Neo4j graph from ontology model...
+Graph builded in 4680 msec
+Number of nodes: 182
+Number of relationships: 317
+[1/136] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 16018 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/c3po__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/c3po__oquare.ttl".
+Finish. Execution Time = 31309 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/aao-20240416-owl__aao-ver-4-06.ttl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/aao__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/aao__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 558 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/milkoligo-20231018-skos__MilkOligoThesaurus-HoloOLIGO-dec2023.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/milkoligo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/milkoligo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 28 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1594 msec
+Number of nodes: 2
+Number of relationships: 1
+[1/1] Searching paths from leaves (maxDepth=2)...java.lang.NullPointerException: Cannot invoke "org.neo4j.graphdb.Path.nodes()" because "this.deepestPath" is null
+	at oquare.owlapi.metrics.basic.InferredMaxDepthOfOntologyClasses.getDeepestPath(InferredMaxDepthOfOntologyClasses.java:25)
+	at oquare.OquareBasicMetrics_OwlApi.getProfundidadMaxima(OquareBasicMetrics_OwlApi.java:612)
+	at oquare.OquareMetrics.getDITOnto(OquareMetrics.java:37)
+	at oquare.CopyOfOquareMetrics.getDITOnto(CopyOfOquareMetrics.java:139)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.scaleOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:102)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:66)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.neo4j.graphdb.Path.nodes()" because "this.deepestPath" is null".
+Finish. Execution Time = 4248 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/gfvo-20200630-owl__gfvo-bioportal.xml --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/gfvo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/gfvo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 279 msec
+Building Neo4j graph from ontology model...
+Graph builded in 3716 msec
+Number of nodes: 104
+Number of relationships: 167
+[1/65] Searching paths from leaves (maxDepth=14)...Oquare metrics calculated in 9462 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/gfvo__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/gfvo__oquare.ttl".
+Finish. Execution Time = 22085 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/so-20240411-owl__so.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/so__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/so__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 712 msec
+Building Neo4j graph from ontology model...
+Graph builded in 35391 msec
+Number of nodes: 2736
+Number of relationships: 4924
+[1/2082] Searching paths from leaves (maxDepth=28)...Last 1000 leaves path seaches finished in 12137 msec. NumberOfPaths: 1109, AggregatedOfPathLength: 7020Free mem./Max. mem.: 5.323815656205019Last 1000 leaves path seaches finished in 7363 msec. NumberOfPaths: 2291, AggregatedOfPathLength: 14848Free mem./Max. mem.: 4.563009738922119Oquare metrics calculated in 61872 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/so__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/so__oquare.ttl".
+Finish. Execution Time = 77952 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/co_341-20220104-owl__owl.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_341__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_341__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 247 msec
+Building Neo4j graph from ontology model...
+Graph builded in 6652 msec
+Number of nodes: 323
+Number of relationships: 608
+[1/287] Searching paths from leaves (maxDepth=8)...Oquare metrics calculated in 13501 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_341__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_341__oquare.ttl".
+Finish. Execution Time = 26646 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/foodex2-20200424-skos__FoodEx2-version-AP.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/foodex2__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/foodex2__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 15117 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1573 msec
+Number of nodes: 12
+Number of relationships: 19
+[1/9] Searching paths from leaves (maxDepth=4)...Oquare metrics calculated in 60385 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/foodex2__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/foodex2__oquare.ttl".
+Finish. Execution Time = 69897 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/polapgen_barley-20200514-owl__owl.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/polapgen_barley__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/polapgen_barley__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 298 msec
+Building Neo4j graph from ontology model...
+Graph builded in 8529 msec
+Number of nodes: 465
+Number of relationships: 919
+[1/456] Searching paths from leaves (maxDepth=6)...Oquare metrics calculated in 18580 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/polapgen_barley__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/polapgen_barley__oquare.ttl".
+Finish. Execution Time = 29884 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/po2-20190603-owl__PO2-V2.ttl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/po2__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/po2__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+The ontology has unsatisfiable classes so we stop the Oquare metrics calculation
+	Unsatisfiable class: <http://www.w3.org/ns/sosa/Result>
+	Unsatisfiable class: <http://opendata.inra.fr/PO2/QualitativeValue>
+	Unsatisfiable class: owl:Nothing
+	Unsatisfiable class: <http://qudt.org/schema/qudt/QuantityValue>
+um.owlapiextension.reasoning.ReasonerException: 4 unsatisfiable classes were found.
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:37)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "4 unsatisfiable classes were found.".
+Finish. Execution Time = 1761 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/sdgio-20180811-owl__sdgio.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sdgio__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sdgio__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/xeo-20150623-obo__XEO-v1-6-v1.6-no-Instance.obo --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/xeo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/xeo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 115 msec
+Building Neo4j graph from ontology model...
+Graph builded in 4763 msec
+Number of nodes: 146
+Number of relationships: 244
+[1/100] Searching paths from leaves (maxDepth=12)...Oquare metrics calculated in 10292 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/xeo__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/xeo__oquare.ttl".
+Finish. Execution Time = 24391 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/ncbitaxon-20230827-owl__NCBITAXON.ttl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/ncbitaxon__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/ncbitaxon__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 6140 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/oeso-core-20220825-owl__oeso-core.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/oeso-core__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/oeso-core__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+org.semanticweb.HermiT.datatypes.UnsupportedDatatypeException: HermiT supports all and only the datatypes of the OWL 2 datatype map, see 
+http://www.w3.org/TR/owl2-syntax/#Datatype_Maps. 
+The datatype 'http://www.w3.org/2001/XMLSchema#date' is not part of the OWL 2 datatype map and 
+no custom datatype definition is given; 
+therefore, HermiT cannot handle this datatype.
+	at org.semanticweb.HermiT.datatypes.DatatypeRegistry.getDatatypeHandlerFor(DatatypeRegistry.java:76)
+	at org.semanticweb.HermiT.datatypes.DatatypeRegistry.getDatatypeHandlerFor(DatatypeRegistry.java:82)
+	at org.semanticweb.HermiT.datatypes.DatatypeRegistry.validateDatatypeRestriction(DatatypeRegistry.java:101)
+	at org.semanticweb.HermiT.structural.OWLClausification$DataRangeConverter.visit(OWLClausification.java:776)
+	at uk.ac.manchester.cs.owl.owlapi.OWLDatatypeImpl.accept(OWLDatatypeImpl.java:320)
+	at org.semanticweb.HermiT.structural.OWLClausification$DataRangeConverter.convertDataRange(OWLClausification.java:763)
+	at org.semanticweb.HermiT.structural.OWLClausification$NormalizedAxiomClausifier.visit(OWLClausification.java:639)
+	at uk.ac.manchester.cs.owl.owlapi.OWLDataMaxCardinalityImpl.accept(OWLDataMaxCardinalityImpl.java:80)
+	at org.semanticweb.HermiT.structural.OWLClausification.clausify(OWLClausification.java:216)
+	at org.semanticweb.HermiT.structural.OWLClausification.preprocessAndClausify(OWLClausification.java:154)
+	at org.semanticweb.HermiT.Reasoner.loadOntology(Reasoner.java:221)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:212)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:175)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:23)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "HermiT supports all and only the datatypes of the OWL 2 datatype map, see 
+http://www.w3.org/TR/owl2-syntax/#Datatype_Maps. 
+The datatype 'http://www.w3.org/2001/XMLSchema#date' is not part of the OWL 2 datatype map and 
+no custom datatype definition is given; 
+therefore, HermiT cannot handle this datatype.".
+Finish. Execution Time = 1164 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/co_339-20220104-owl__owl.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_339__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_339__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 356 msec
+Building Neo4j graph from ontology model...
+Graph builded in 7397 msec
+Number of nodes: 405
+Number of relationships: 763
+[1/360] Searching paths from leaves (maxDepth=8)...Oquare metrics calculated in 16089 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_339__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_339__oquare.ttl".
+Finish. Execution Time = 29073 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/asfa-20230712-skos__asfa.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/asfa__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/asfa__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 10936 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/agrovoc-20240503-skos__agrovoc-lod.nt --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/agrovoc__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/agrovoc__oquare.ttl
+org.semanticweb.owlapi.model.OWLRuntimeException: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:92)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:358)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:289)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:775)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:788)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:180)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Caused by: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1712)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:89)
+	... 14 more
+Caused by: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1264)
+	at org.coode.owlapi.rdfxml.parser.TPImportsHandler.handleTriple(TPImportsHandler.java:89)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.handleStreaming(OWLRDFConsumer.java:1750)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1709)
+	... 15 more
+Caused by: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1264)
+	at org.coode.owlapi.rdfxml.parser.TPImportsHandler.handleTriple(TPImportsHandler.java:89)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.handleStreaming(OWLRDFConsumer.java:1750)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1709)
+	at org.semanticweb.owlapi.rdf.syntax.RDFParser.statementWithResourceValue(RDFParser.java:468)
+	at org.semanticweb.owlapi.rdf.syntax.RDFParser$EmptyPropertyElement.startElement(RDFParser.java:907)
+	at org.semanticweb.owlapi.rdf.syntax.RDFParser$PropertyElementList.startElement(RDFParser.java:800)
+	at org.semanticweb.owlapi.rdf.syntax.RDFParser.startElement(RDFParser.java:208)
+	at org.coode.owlapi.rdfxml.parser.RDFXMLParser$1.startElement(RDFXMLParser.java:91)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at java.xml/javax.xml.parsers.SAXParser.parse(SAXParser.java:394)
+	at org.semanticweb.owlapi.rdf.syntax.RDFParser.parse(RDFParser.java:135)
+	at org.coode.owlapi.rdfxml.parser.RDFXMLParser.parse(RDFXMLParser.java:119)
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:749)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1224)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1257)
+	... 18 more
+Caused by: org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:236)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:749)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1224)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1257)
+	... 44 more
+Error: "org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://aims.fao.org/aos/agrontology> Cause: Could not load imported ontology: <http://purl.org/dc/elements/1.1/> Cause: Problem parsing http://purl.org/dc/elements/1.1/
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.semanticweb.owlapi.rdf.syntax.RDFParserException: [line=2:column=7] Expecting rdf:RDF element.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://purl.org/dc/elements/1.1/; lineNumber: 9; columnNumber: 3; The element type "p" must be terminated by the matching end-tag "</p>".
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "< "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 0.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 1, column 16.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " ">" "<!DOCTYPE HTML> "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered '<!DOCTYPE HTML>' at line 1 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 1)
+
+".
+Finish. Execution Time = 36958 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/caso-20210226-owl__caso.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/caso__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/caso__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 117 msec
+Building Neo4j graph from ontology model...
+Graph builded in 2107 msec
+Number of nodes: 28
+Number of relationships: 44
+[1/17] Searching paths from leaves (maxDepth=6)...Oquare metrics calculated in 6561 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/caso__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/caso__oquare.ttl".
+Finish. Execution Time = 19488 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/sosa-20180813-owl__sosa.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sosa__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sosa__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 179 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1934 msec
+Number of nodes: 18
+Number of relationships: 32
+[1/16] Searching paths from leaves (maxDepth=2)...Oquare metrics calculated in 6011 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sosa__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sosa__oquare.ttl".
+Finish. Execution Time = 18518 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/bohlmann-20240429-owl__bohlmann.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/bohlmann__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/bohlmann__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 5338 msec
+Building Neo4j graph from ontology model...
+Graph builded in 563939 msec
+Number of nodes: 53763
+Number of relationships: 106643
+[1/52882] Searching paths from leaves (maxDepth=8)...Last 1000 leaves path seaches finished in 12207 msec. NumberOfPaths: 1000, AggregatedOfPathLength: 2725Free mem./Max. mem.: 6.688083149492741Last 1000 leaves path seaches finished in 6420 msec. NumberOfPaths: 2000, AggregatedOfPathLength: 5358Free mem./Max. mem.: 0.9263485049208006Last 1000 leaves path seaches finished in 5177 msec. NumberOfPaths: 3000, AggregatedOfPathLength: 7810Free mem./Max. mem.: 10.10451925297578Last 1000 leaves path seaches finished in 4276 msec. NumberOfPaths: 4000, AggregatedOfPathLength: 10716Free mem./Max. mem.: 4.397594494124254Last 1000 leaves path seaches finished in 4124 msec. NumberOfPaths: 5000, AggregatedOfPathLength: 13484Free mem./Max. mem.: 9.542297137280304Last 1000 leaves path seaches finished in 4123 msec. NumberOfPaths: 6000, AggregatedOfPathLength: 16580Free mem./Max. mem.: 3.8782346372803054Last 1000 leaves path seaches finished in 3927 msec. NumberOfPaths: 7000, AggregatedOfPathLength: 19780Free mem./Max. mem.: 8.247285212079685Last 1000 leaves path seaches finished in 3533 msec. NumberOfPaths: 8000, AggregatedOfPathLength: 22863Free mem./Max. mem.: 11.766926323374111Last 1000 leaves path seaches finished in 3066 msec. NumberOfPaths: 9000, AggregatedOfPathLength: 25896Free mem./Max. mem.: 6.102863823374113Last 1000 leaves path seaches finished in 3021 msec. NumberOfPaths: 10000, AggregatedOfPathLength: 28636Free mem./Max. mem.: 9.132993221282959Last 1000 leaves path seaches finished in 3177 msec. NumberOfPaths: 11000, AggregatedOfPathLength: 31469Free mem./Max. mem.: 3.501466910044352Last 1000 leaves path seaches finished in 3117 msec. NumberOfPaths: 12000, AggregatedOfPathLength: 34079Free mem./Max. mem.: 6.066130846738815Last 1000 leaves path seaches finished in 3683 msec. NumberOfPaths: 13000, AggregatedOfPathLength: 36877Free mem./Max. mem.: 8.047182237108547Last 1000 leaves path seaches finished in 3532 msec. NumberOfPaths: 14000, AggregatedOfPathLength: 39532Free mem./Max. mem.: 9.552398075660069Last 1000 leaves path seaches finished in 2883 msec. NumberOfPaths: 15000, AggregatedOfPathLength: 42390Free mem./Max. mem.: 3.88833557566007Last 1000 leaves path seaches finished in 3073 msec. NumberOfPaths: 16000, AggregatedOfPathLength: 45348Free mem./Max. mem.: 5.004241069157919Last 1000 leaves path seaches finished in 3102 msec. NumberOfPaths: 17000, AggregatedOfPathLength: 48099Free mem./Max. mem.: 5.764581138888994Last 1000 leaves path seaches finished in 3313 msec. NumberOfPaths: 18000, AggregatedOfPathLength: 50697Free mem./Max. mem.: 6.055163964629173Last 1000 leaves path seaches finished in 3971 msec. NumberOfPaths: 19000, AggregatedOfPathLength: 53287Free mem./Max. mem.: 6.348792773981889Last 1000 leaves path seaches finished in 3350 msec. NumberOfPaths: 20000, AggregatedOfPathLength: 56024Free mem./Max. mem.: 6.233776484926542Last 1000 leaves path seaches finished in 3187 msec. NumberOfPaths: 21000, AggregatedOfPathLength: 58677Free mem./Max. mem.: 6.143579073250294Last 1000 leaves path seaches finished in 3535 msec. NumberOfPaths: 22000, AggregatedOfPathLength: 60971Free mem./Max. mem.: 6.72464482486248Last 1000 leaves path seaches finished in 2980 msec. NumberOfPaths: 23000, AggregatedOfPathLength: 63085Free mem./Max. mem.: 6.1173322300116215Last 1000 leaves path seaches finished in 3224 msec. NumberOfPaths: 24000, AggregatedOfPathLength: 65406Free mem./Max. mem.: 5.963630477587381Last 1000 leaves path seaches finished in 3156 msec. NumberOfPaths: 25000, AggregatedOfPathLength: 67879Free mem./Max. mem.: 5.499755094448725Last 1000 leaves path seaches finished in 3605 msec. NumberOfPaths: 26000, AggregatedOfPathLength: 70233Free mem./Max. mem.: 4.684384539723396Last 1000 leaves path seaches finished in 3235 msec. NumberOfPaths: 27000, AggregatedOfPathLength: 72675Free mem./Max. mem.: 3.5373635590076447Last 1000 leaves path seaches finished in 4078 msec. NumberOfPaths: 28000, AggregatedOfPathLength: 75320Free mem./Max. mem.: 9.854002669453621Last 1000 leaves path seaches finished in 3138 msec. NumberOfPaths: 29000, AggregatedOfPathLength: 77874Free mem./Max. mem.: 4.210766529043516Last 1000 leaves path seaches finished in 3193 msec. NumberOfPaths: 30000, AggregatedOfPathLength: 80697Free mem./Max. mem.: 4.963075121243795Last 1000 leaves path seaches finished in 3007 msec. NumberOfPaths: 31000, AggregatedOfPathLength: 83911Free mem./Max. mem.: 5.309612614413103Last 1000 leaves path seaches finished in 3139 msec. NumberOfPaths: 32000, AggregatedOfPathLength: 86920Free mem./Max. mem.: 5.283574759960175Last 1000 leaves path seaches finished in 3271 msec. NumberOfPaths: 33000, AggregatedOfPathLength: 89959Free mem./Max. mem.: 4.988963032762209Last 1000 leaves path seaches finished in 3239 msec. NumberOfPaths: 34000, AggregatedOfPathLength: 92820Free mem./Max. mem.: 4.29652581612269Last 1000 leaves path seaches finished in 3967 msec. NumberOfPaths: 35000, AggregatedOfPathLength: 95518Free mem./Max. mem.: 12.158789485692978Last 1000 leaves path seaches finished in 3946 msec. NumberOfPaths: 36000, AggregatedOfPathLength: 98176Free mem./Max. mem.: 7.297905534505844Last 1000 leaves path seaches finished in 3493 msec. NumberOfPaths: 37000, AggregatedOfPathLength: 100367Free mem./Max. mem.: 9.582970539728802Last 1000 leaves path seaches finished in 2832 msec. NumberOfPaths: 38000, AggregatedOfPathLength: 102907Free mem./Max. mem.: 11.320642630259197Last 1000 leaves path seaches finished in 3160 msec. NumberOfPaths: 39000, AggregatedOfPathLength: 105498Free mem./Max. mem.: 5.656580130259195Last 1000 leaves path seaches finished in 3350 msec. NumberOfPaths: 40000, AggregatedOfPathLength: 108100Free mem./Max. mem.: 6.947420040766398Last 1000 leaves path seaches finished in 3024 msec. NumberOfPaths: 41000, AggregatedOfPathLength: 111270Free mem./Max. mem.: 7.8239499280850096Last 1000 leaves path seaches finished in 3161 msec. NumberOfPaths: 42000, AggregatedOfPathLength: 114043Free mem./Max. mem.: 8.275021736820538Last 1000 leaves path seaches finished in 2931 msec. NumberOfPaths: 43000, AggregatedOfPathLength: 116768Free mem./Max. mem.: 8.302631850043934Last 1000 leaves path seaches finished in 3367 msec. NumberOfPaths: 44000, AggregatedOfPathLength: 119654Free mem./Max. mem.: 14.026348541180292Last 1000 leaves path seaches finished in 4191 msec. NumberOfPaths: 45000, AggregatedOfPathLength: 122475Free mem./Max. mem.: 13.892203321059545Last 1000 leaves path seaches finished in 3452 msec. NumberOfPaths: 46000, AggregatedOfPathLength: 125596Free mem./Max. mem.: 8.228140386442345Last 1000 leaves path seaches finished in 3590 msec. NumberOfPaths: 47000, AggregatedOfPathLength: 128194Free mem./Max. mem.: 12.02628177901109Last 1000 leaves path seaches finished in 3649 msec. NumberOfPaths: 48000, AggregatedOfPathLength: 131082Free mem./Max. mem.: 6.394787256916364Last 1000 leaves path seaches finished in 3359 msec. NumberOfPaths: 49000, AggregatedOfPathLength: 133555Free mem./Max. mem.: 9.65276627490918Last 1000 leaves path seaches finished in 3070 msec. NumberOfPaths: 50000, AggregatedOfPathLength: 136167Free mem./Max. mem.: 12.285843243201573Last 1000 leaves path seaches finished in 3150 msec. NumberOfPaths: 51000, AggregatedOfPathLength: 138760Free mem./Max. mem.: 6.654300416509311Last 1000 leaves path seaches finished in 3126 msec. NumberOfPaths: 52000, AggregatedOfPathLength: 141351Free mem./Max. mem.: 8.764044816295307Oquare metrics calculated in 790719 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/bohlmann__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/bohlmann__oquare.ttl".
+Finish. Execution Time = 800805 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/envo-20240217-owl__envo.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/envo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/envo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/efo-20240415-owl__efo.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/efo__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/efo__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 369923 msec
+Building Neo4j graph from ontology model...
+Graph builded in 542320 msec
+Number of nodes: 54937
+Number of relationships: 117937
+[1/46879] Searching paths from leaves (maxDepth=42)...Last 1000 leaves path seaches finished in 11924 msec. NumberOfPaths: 4091, AggregatedOfPathLength: 39764Free mem./Max. mem.: 7.057484798133373Last 1000 leaves path seaches finished in 6283 msec. NumberOfPaths: 7619, AggregatedOfPathLength: 72886Free mem./Max. mem.: 12.34973135093848Last 1000 leaves path seaches finished in 4996 msec. NumberOfPaths: 12128, AggregatedOfPathLength: 118479Free mem./Max. mem.: 6.118334146837393Last 1000 leaves path seaches finished in 4429 msec. NumberOfPaths: 14901, AggregatedOfPathLength: 143352Free mem./Max. mem.: 10.288286209106445Last 1000 leaves path seaches finished in 3740 msec. NumberOfPaths: 16826, AggregatedOfPathLength: 157343Free mem./Max. mem.: 4.461479187011719Last 1000 leaves path seaches finished in 3820 msec. NumberOfPaths: 19128, AggregatedOfPathLength: 175002Free mem./Max. mem.: 7.932804276545842Last 1000 leaves path seaches finished in 3642 msec. NumberOfPaths: 21456, AggregatedOfPathLength: 192893Free mem./Max. mem.: 10.465975602467854Last 1000 leaves path seaches finished in 3882 msec. NumberOfPaths: 25352, AggregatedOfPathLength: 231821Free mem./Max. mem.: 4.378720124562582Last 1000 leaves path seaches finished in 3474 msec. NumberOfPaths: 27491, AggregatedOfPathLength: 248554Free mem./Max. mem.: 6.471256911754608Last 1000 leaves path seaches finished in 3228 msec. NumberOfPaths: 30118, AggregatedOfPathLength: 269802Free mem./Max. mem.: 7.95587853839Last 1000 leaves path seaches finished in 2995 msec. NumberOfPaths: 33728, AggregatedOfPathLength: 303375Free mem./Max. mem.: 8.9304909730951Last 1000 leaves path seaches finished in 3279 msec. NumberOfPaths: 38641, AggregatedOfPathLength: 354390Free mem./Max. mem.: 9.365132823586464Last 1000 leaves path seaches finished in 3326 msec. NumberOfPaths: 41137, AggregatedOfPathLength: 375187Free mem./Max. mem.: 3.4406536569197974Last 1000 leaves path seaches finished in 3292 msec. NumberOfPaths: 44103, AggregatedOfPathLength: 400355Free mem./Max. mem.: 3.753388673067093Last 1000 leaves path seaches finished in 3463 msec. NumberOfPaths: 47720, AggregatedOfPathLength: 435631Free mem./Max. mem.: 3.603865827123324Last 1000 leaves path seaches finished in 3443 msec. NumberOfPaths: 52482, AggregatedOfPathLength: 485832Free mem./Max. mem.: 8.148321757713955Last 1000 leaves path seaches finished in 3191 msec. NumberOfPaths: 55334, AggregatedOfPathLength: 511644Free mem./Max. mem.: 7.155244300762813Last 1000 leaves path seaches finished in 3117 msec. NumberOfPaths: 58406, AggregatedOfPathLength: 538449Free mem./Max. mem.: 5.864776236315569Last 1000 leaves path seaches finished in 3418 msec. NumberOfPaths: 61323, AggregatedOfPathLength: 563921Free mem./Max. mem.: 4.332273577650389Last 1000 leaves path seaches finished in 3292 msec. NumberOfPaths: 63555, AggregatedOfPathLength: 580715Free mem./Max. mem.: 6.548944612344106Last 1000 leaves path seaches finished in 3364 msec. NumberOfPaths: 66340, AggregatedOfPathLength: 604748Free mem./Max. mem.: 4.34719460705916Last 1000 leaves path seaches finished in 3196 msec. NumberOfPaths: 69191, AggregatedOfPathLength: 629613Free mem./Max. mem.: 5.102982620398203Last 1000 leaves path seaches finished in 3476 msec. NumberOfPaths: 72503, AggregatedOfPathLength: 663199Free mem./Max. mem.: 5.158463617165884Last 1000 leaves path seaches finished in 3098 msec. NumberOfPaths: 75499, AggregatedOfPathLength: 690221Free mem./Max. mem.: 4.489683484037718Last 1000 leaves path seaches finished in 3210 msec. NumberOfPaths: 77960, AggregatedOfPathLength: 709579Free mem./Max. mem.: 3.431740403175354Last 1000 leaves path seaches finished in 3226 msec. NumberOfPaths: 81015, AggregatedOfPathLength: 734434Free mem./Max. mem.: 3.6173868303497634Last 1000 leaves path seaches finished in 3060 msec. NumberOfPaths: 83637, AggregatedOfPathLength: 755202Free mem./Max. mem.: 2.836150924364726Last 1000 leaves path seaches finished in 3138 msec. NumberOfPaths: 86618, AggregatedOfPathLength: 780025Free mem./Max. mem.: 2.44822936753432Last 1000 leaves path seaches finished in 3390 msec. NumberOfPaths: 89590, AggregatedOfPathLength: 804759Free mem./Max. mem.: 2.7198654909928637Last 1000 leaves path seaches finished in 3335 msec. NumberOfPaths: 92383, AggregatedOfPathLength: 827918Free mem./Max. mem.: 2.237992050747077Last 1000 leaves path seaches finished in 3256 msec. NumberOfPaths: 94889, AggregatedOfPathLength: 848044Free mem./Max. mem.: 2.212807660301526Last 1000 leaves path seaches finished in 3850 msec. NumberOfPaths: 97365, AggregatedOfPathLength: 868125Free mem./Max. mem.: 10.669964117308457Last 1000 leaves path seaches finished in 4417 msec. NumberOfPaths: 101161, AggregatedOfPathLength: 904577Free mem./Max. mem.: 4.615276617308458Last 1000 leaves path seaches finished in 3759 msec. NumberOfPaths: 104240, AggregatedOfPathLength: 931267Free mem./Max. mem.: 6.5214138478040695Last 1000 leaves path seaches finished in 3762 msec. NumberOfPaths: 107348, AggregatedOfPathLength: 957979Free mem./Max. mem.: 7.9397496456901235Last 1000 leaves path seaches finished in 3511 msec. NumberOfPaths: 111759, AggregatedOfPathLength: 1003148Free mem./Max. mem.: 8.735445141792297Last 1000 leaves path seaches finished in 3238 msec. NumberOfPaths: 115593, AggregatedOfPathLength: 1041275Free mem./Max. mem.: 9.2739333709081Last 1000 leaves path seaches finished in 3289 msec. NumberOfPaths: 118906, AggregatedOfPathLength: 1073835Free mem./Max. mem.: 9.444383283456165Last 1000 leaves path seaches finished in 3579 msec. NumberOfPaths: 121869, AggregatedOfPathLength: 1100017Free mem./Max. mem.: 9.348774018387001Last 1000 leaves path seaches finished in 3334 msec. NumberOfPaths: 124849, AggregatedOfPathLength: 1127848Free mem./Max. mem.: 8.962489664554596Last 1000 leaves path seaches finished in 2942 msec. NumberOfPaths: 126973, AggregatedOfPathLength: 1144325Free mem./Max. mem.: 8.229619761308033Last 1000 leaves path seaches finished in 3264 msec. NumberOfPaths: 129252, AggregatedOfPathLength: 1162500Free mem./Max. mem.: 7.245285560687383Last 1000 leaves path seaches finished in 2922 msec. NumberOfPaths: 131621, AggregatedOfPathLength: 1181191Free mem./Max. mem.: 5.997981131076813Last 1000 leaves path seaches finished in 3194 msec. NumberOfPaths: 133637, AggregatedOfPathLength: 1196097Free mem./Max. mem.: 4.433750671645006Last 1000 leaves path seaches finished in 3100 msec. NumberOfPaths: 135815, AggregatedOfPathLength: 1212546Free mem./Max. mem.: 6.461174041032791Last 1000 leaves path seaches finished in 3083 msec. NumberOfPaths: 138694, AggregatedOfPathLength: 1238875Free mem./Max. mem.: 4.091599894066652Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/co_335-20220104-owl__owl.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_335__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_335__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 468 msec
+Building Neo4j graph from ontology model...
+Graph builded in 14527 msec
+Number of nodes: 957
+Number of relationships: 1839
+[1/884] Searching paths from leaves (maxDepth=8)...Oquare metrics calculated in 27913 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_335__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_335__oquare.ttl".
+Finish. Execution Time = 44837 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/co_367-20240502-owl__rdf.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_367__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_367__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 126 msec
+Building Neo4j graph from ontology model...
+Graph builded in 4472 msec
+Number of nodes: 168
+Number of relationships: 316
+[1/150] Searching paths from leaves (maxDepth=6)...Oquare metrics calculated in 11164 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_367__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_367__oquare.ttl".
+Finish. Execution Time = 24499 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/ro-20240502-owl__ro.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/ro__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/ro__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/soy-20201212-obo__Soy10.2.4 --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/soy__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/soy__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 474 msec
+Building Neo4j graph from ontology model...
+Graph builded in 29752 msec
+Number of nodes: 2310
+Number of relationships: 4264
+[1/1953] Searching paths from leaves (maxDepth=18)...Last 1000 leaves path seaches finished in 13006 msec. NumberOfPaths: 1001, AggregatedOfPathLength: 6301Free mem./Max. mem.: 6.250455789268017Oquare metrics calculated in 52764 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/soy__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/soy__oquare.ttl".
+Finish. Execution Time = 69205 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/transmat-20190704-owl__TRANSMAT.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/transmat__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/transmat__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+java.lang.IllegalArgumentException: Error: Parsed DisjointClasses(<http://opendata.inra.fr/resources/hSC9z#matrix_aging_relation>). A DisjointClasses axiom in OWL 2 DL must have at least two classes as parameters. 
+	at org.semanticweb.HermiT.structural.OWLNormalization$AxiomVisitor.visit(OWLNormalization.java:470)
+	at uk.ac.manchester.cs.owl.owlapi.OWLDisjointClassesAxiomImpl.accept(OWLDisjointClassesAxiomImpl.java:92)
+	at org.semanticweb.HermiT.structural.OWLNormalization.processAxioms(OWLNormalization.java:164)
+	at org.semanticweb.HermiT.structural.OWLNormalization.processOntology(OWLNormalization.java:159)
+	at org.semanticweb.HermiT.structural.OWLClausification.preprocessAndClausify(OWLClausification.java:142)
+	at org.semanticweb.HermiT.Reasoner.loadOntology(Reasoner.java:221)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:212)
+	at org.semanticweb.HermiT.Reasoner.<init>(Reasoner.java:175)
+	at um.owlapiextension.reasoning.MyHermitReasoner.<init>(MyHermitReasoner.java:23)
+	at um.owlapiextension.reasoning.MyReasonerFactory.createDefaultReasoner(MyReasonerFactory.java:16)
+	at oquare.OquareBasicMetrics_OwlApi.<init>(OquareBasicMetrics_OwlApi.java:153)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.calculateOquareMetrics(OquareCharacteristicsAndSubcharacteristics.java:77)
+	at oquare.OquareCharacteristicsAndSubcharacteristics.<init>(OquareCharacteristicsAndSubcharacteristics.java:63)
+	at um.oquare.beans.OquareGen.createObject(OquareGen.java:51)
+	at um.oquare.versions.tools.CalculateOquareMetrics.getOquareMetrics(CalculateOquareMetrics.java:19)
+	at um.cmd.RunOquare.run(RunOquare.java:123)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Error: Parsed DisjointClasses(<http://opendata.inra.fr/resources/hSC9z#matrix_aging_relation>). A DisjointClasses axiom in OWL 2 DL must have at least two classes as parameters. ".
+Finish. Execution Time = 1540 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/ons-20230911-owl__ons-release-v1.1.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/ons__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/ons__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 1656 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/landvoc-20211223-skos__LandVoc-concepts.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/landvoc__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/landvoc__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 8588 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/foodie-20200722-owl__foodie.ttl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/foodie__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/foodie__oquare.ttl
+org.semanticweb.owlapi.model.OWLRuntimeException: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:92)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObject(TurtleParser.java:383)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseObjectList(TurtleParser.java:366)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parsePredicateObjectList(TurtleParser.java:298)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseTriples(TurtleParser.java:175)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseStatement(TurtleParser.java:168)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleParser.parseDocument(TurtleParser.java:120)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.TurtleOntologyParser.parse(TurtleOntologyParser.java:100)
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:206)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:775)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntologyFromOntologyDocument(OWLOntologyManagerImpl.java:788)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:180)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Caused by: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1712)
+	at uk.ac.manchester.cs.owl.owlapi.turtle.parser.OWLRDFConsumerAdapter.handleTriple(OWLRDFConsumerAdapter.java:89)
+	... 14 more
+Caused by: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1264)
+	at org.coode.owlapi.rdfxml.parser.TPImportsHandler.handleTriple(TPImportsHandler.java:89)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.handleStreaming(OWLRDFConsumer.java:1750)
+	at org.coode.owlapi.rdfxml.parser.OWLRDFConsumer.statementWithResourceValue(OWLRDFConsumer.java:1709)
+	... 15 more
+Caused by: org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+	at uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory.loadOWLOntology(ParsableOWLOntologyFactory.java:236)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:829)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadOntology(OWLOntologyManagerImpl.java:749)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.loadImports(OWLOntologyManagerImpl.java:1224)
+	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1257)
+	... 18 more
+Error: "org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+
+org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://www.opengis.net/ont/geosparql> Cause: Problem parsing http://www.opengis.net/ont/geosparql
+Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
+The following parsers were tried:
+1) RDFXMLParser
+2) OWLXMLParser
+3) OWLFunctionalSyntaxOWLParser
+4) TurtleOntologyParser
+5) OWLOBOParser
+6) KRSS2OWLParser
+7) ManchesterOWLSyntaxOntologyParser
+
+
+Detailed logs:
+--------------------------------------------------------------------------------
+Parser: RDFXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLXMLParser
+org.xml.sax.SAXParseException; systemId: http://www.opengis.net/ont/geosparql; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+
+--------------------------------------------------------------------------------
+Parser: OWLFunctionalSyntaxOWLParser
+Encountered " <ERROR> "# "" at line 1, column 1.
+Was expecting:
+    "Ontology" ...
+     (Line 0)
+
+--------------------------------------------------------------------------------
+Parser: TurtleOntologyParser
+uk.ac.manchester.cs.owl.owlapi.turtle.parser.ParseException: Encountered "" at line 1, column 1.
+Was expecting one of:
+    
+
+--------------------------------------------------------------------------------
+Parser: OWLOBOParser
+org.coode.owlapi.obo.parser.TokenMgrError: Lexical error at line 26, column 12.  Encountered: "\n" (10), after : ""
+
+--------------------------------------------------------------------------------
+Parser: KRSS2OWLParser
+de.uulm.ecs.ai.owlapi.krssparser.ParseException: Encountered " <NAME> "# "" at line 1, column 1.
+Was expecting:
+    <EOF> 
+    
+
+--------------------------------------------------------------------------------
+Parser: ManchesterOWLSyntaxOntologyParser
+Encountered 'BASE <http://www.opengis.net/ont/geosparql>' at line 3 column 1.  Expected either 'Ontology:' or 'Prefix:' (Line 3)
+
+".
+Finish. Execution Time = 5008 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/nalt-20230207-skos__nalt-full-2024-02-19-rdf.rdf --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/nalt__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/nalt__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 5504 msec
+Building Neo4j graph from ontology model...
+Graph builded in 1868 msec
+Number of nodes: 11
+Number of relationships: 17
+[1/8] Searching paths from leaves (maxDepth=4)...Oquare metrics calculated in 41558 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/nalt__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/nalt__oquare.ttl".
+Finish. Execution Time = 52310 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/pr-20240217-owl__pro-reasoned.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/pr__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/pr__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/co_340-20220104-owl__owl.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_340__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_340__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 399 msec
+Building Neo4j graph from ontology model...
+Graph builded in 16237 msec
+Number of nodes: 1080
+Number of relationships: 2066
+[1/988] Searching paths from leaves (maxDepth=8)...Oquare metrics calculated in 30988 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_340__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/co_340__oquare.ttl".
+Finish. Execution Time = 47050 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/oba-20240410-owl__oba.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/oba__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/oba__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/inia-rdm-20181116-owl__ontology.xml --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/inia-rdm__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/inia-rdm__oquare.ttl
+java.lang.NullPointerException: Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null
+	at um.cmd.RunOquare.getOntologyIRI(RunOquare.java:218)
+	at um.cmd.RunOquare.getOvdi(RunOquare.java:186)
+	at um.cmd.RunOquare.run(RunOquare.java:112)
+	at um.cmd.RunOquare.main(RunOquare.java:42)
+Error: "Cannot invoke "org.semanticweb.owlapi.model.OWLOntology.getOntologyID()" because "ontology" is null".
+Finish. Execution Time = 3608 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/peao-20200630-owl__PlantExperimentalAssayOntology.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/peao__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/peao__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 683 msec
+Building Neo4j graph from ontology model...
+Graph builded in 28019 msec
+Number of nodes: 2299
+Number of relationships: 4257
+[1/1660] Searching paths from leaves (maxDepth=12)...Last 1000 leaves path seaches finished in 12276 msec. NumberOfPaths: 1547, AggregatedOfPathLength: 8102Free mem./Max. mem.: 7.480115691820781Oquare metrics calculated in 51624 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/peao__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/peao__oquare.ttl".
+Finish. Execution Time = 65870 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/sio-20230326-owl__sio.owl --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sio__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sio__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 178048 msec
+Building Neo4j graph from ontology model...
+Graph builded in 20076 msec
+Number of nodes: 1585
+Number of relationships: 2670
+[1/1055] Searching paths from leaves (maxDepth=28)...Last 1000 leaves path seaches finished in 11198 msec. NumberOfPaths: 1084, AggregatedOfPathLength: 7387Free mem./Max. mem.: 8.212589907149475Oquare metrics calculated in 299757 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sio__oquare.xml".
+Node=<https://purl.archive.org/oquo#NumberOfClassesMetricScale>
+  Path=<http://purl.org/net/QualityModel#hasRankigFunction>
+  Message: minCount[1]: Invalid cardinality: expected min 1: Got count = 0
+Results in rdf saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/sio__oquare.ttl".
+Finish. Execution Time = 315389 msec
+Calculate OQuare metrics  --ontology /home/jredondo/datos-jredondo/1-ontologySet/download/data.agroportal.lirmm.fr/use-20180125-obo__Use-V2.obo --outputFileXML /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/use__oquare.xml --outputFileRDF /home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/use__oquare.ttl
+Inferece options:
+class assertions
+class hierarchy
+data property assertions
+data property hierarchy
+different individuals
+disjoint classes
+object property assertions
+object property hierarchy
+same individuals
+Running Hermit reasoner
+Classifying
+Classifying time in 28 msec
+Building Neo4j graph from ontology model...
+Graph builded in 3030 msec
+Number of nodes: 68
+Number of relationships: 116
+[1/50] Searching paths from leaves (maxDepth=10)...Oquare metrics calculated in 7353 msec.
+Results in xml saved in: "/home/jredondo/datos-jredondo/2-metrics/data.agroportal.lirmm.fr/use__oquare.xml".

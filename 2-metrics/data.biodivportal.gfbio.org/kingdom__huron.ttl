@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:instant-1710e3ac-37f6-4eac-9496-2625630c5093
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:34.546Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-d9154a10-f58e-46bb-ad21-111843789484
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-78f240dc-dbdf-40de-a1b2-33f395f4ab33 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f5a5ef25-5dd3-42ed-8bc7-71653eadb949 .
+
+oquo:metric-29ba782c-e1d1-4091-bc7d-de788cd74f53
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-068f8457-2c19-4532-ab81-4e9b9b485127 ;
+        oboe:measurementFor  oquo:observation-d19a0db5-a753-4b03-9216-0f51d9c096c8 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-9cfa46e7-e4d9-41b2-94af-18051d3001f0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3967f941-2be6-48bc-befd-9f7dbca3ea4b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-be78c37e-33a3-4327-ba57-1c5e8f607f1b .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-14543757-8743-4a20-b785-148bbf1d492a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f2919894-d638-4251-84c9-b5314c095d21 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-137321d2-5a13-4057-9038-4e89a9f122a1 .
+
+oquo:instant-9d4abccb-6cf6-4a7d-bac5-9d5dc71b8282
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.115Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-c284d4a8-94f8-4592-bb58-4da1c777aa7e
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-9bbefb8e-2796-4224-9237-b4a68e9daa11 ;
+        oboe:measurementFor  oquo:observation-56a42356-5d75-4a3d-a2b5-471643ebc41c ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-80f97bd1-0af5-4310-b7e6-a1b3987f4662
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f2919894-d638-4251-84c9-b5314c095d21 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-46ab0664-7b62-469f-b12d-1068c991baf5 .
+
+oquo:metric-f7b3c30b-c264-4b5c-a28e-ad05a4e3604a
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-3ef220b7-f5ba-4e15-8ad6-c7cba94bf2bf ;
+        oboe:measurementFor  oquo:observation-50969025-23ac-4b3b-9b78-14ebcc95b9bd ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-8f4a7c71-b4b0-4d62-9b37-9fc7a08c1f55
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ff2de962-5f81-422f-b69a-6008b9d41f5e ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-c68c71fd-3921-4c06-97ee-6e5bda41ae1c .
+
+oquo:observation-a37d91cc-1b55-4091-af84-e146093b4784
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fec7da4d-19cd-4819-aa50-3e77d308b57c ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-9d4abccb-6cf6-4a7d-bac5-9d5dc71b8282 .
+
+oquo:metric-b0d16df8-677a-4043-9f22-7b7befcc770d
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-76165e74-7d5b-448e-9d82-cfbb7b047d58 ;
+        oboe:measurementFor  oquo:observation-5d36581d-fc23-41dc-82a3-3d0802e3eb0f ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-2da520a7-bdfe-490c-9968-087cefb9c287
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4d7a3a05-6729-466f-bcc9-b9ddebcae651 ;
+        time:hasTime              oquo:instant-3feb4f3c-1aad-4f2e-9bc7-897351a870a7 ;
+        oquo:hasObservation       oquo:observation-dfec26d3-a976-4842-a789-40ada6ee630b .
+
+oquo:metric-fec7da4d-19cd-4819-aa50-3e77d308b57c
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b6d53e57-c57d-47cc-b475-0bd2b53daf06 ;
+        oboe:measurementFor  oquo:observation-a37d91cc-1b55-4091-af84-e146093b4784 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-d3738df6-e80c-4fed-96dd-189bd22d9b7b
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-8d1c7e1f-3156-4329-a66d-7ed10322c10c ;
+        oboe:measurementFor  oquo:observation-7738cd3c-8e1a-4633-b330-7043bc3a1113 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:qualityValue-90ed13c3-6579-4fa5-9064-6faaca53ef4f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f7432aaa-4c01-40b3-bf22-c3c9db16d566 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7ca998d7-ad4a-4d9b-9547-c202dbde1d4c .
+
+oquo:evaluation-be78c37e-33a3-4327-ba57-1c5e8f607f1b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9cfa46e7-e4d9-41b2-94af-18051d3001f0 ;
+        time:hasTime              oquo:instant-76b008fe-5d1e-4c2e-aee4-d124dcee1a56 ;
+        oquo:hasObservation       oquo:observation-c00f76be-32c0-4b3f-ac3d-697e6b1aa171 .
+
+oquo:observation-0d41b18c-229b-4f88-bf57-d94fa990a5a1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1616d6d2-a9b7-41b0-9350-659dfd0fe6f0 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-16cee699-aac2-4540-ab26-8f3e731ce6c2 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-d71a1943-95d2-43a6-ba8a-a8f246e62107
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0d5041ee-08dc-4b37-9b49-8f35fad9f319 ;
+        time:hasTime              oquo:instant-4c69ab6c-4db5-4ce5-a4d6-919cc6aee84c ;
+        oquo:hasObservation       oquo:observation-63516d1e-83ef-4fea-bfba-d078cbf6553a .
+
+oquo:metric-49ff7d2d-4a3d-4d24-a666-3e6d9dab8688
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-1b18dbf4-c775-4d08-a698-1ef4c64507fb ;
+        oboe:measurementFor  oquo:observation-ced46c26-6e81-4096-a0cc-162ac8ca23bc ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-c8d2556c-5efa-4285-a311-02f9f7520fad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e7184322-4725-468c-b3f7-6c6604f01c95 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe6e75ef-8805-4560-bb2f-566212d1c208 .
+
+oquo:observation-68ef3410-d90a-43fa-8c73-92f0f3d61b96
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9ee71a3-c8f4-4b9b-80d8-abdf9e28b99d ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-0b9bf760-675e-41e3-999b-dacf6d48d4f1 .
+
+oquo:instant-d630d2ed-2116-4fb7-88f9-b4f0c08a2250
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.112Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-a2b976b9-dbd9-4716-b6af-530ebab6048e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-74b4e97c-04ff-4292-94b5-cbff4f5c64bd ;
+        time:hasTime              oquo:instant-895b48ed-3d59-42bd-b970-56f64e54748f ;
+        oquo:hasObservation       oquo:observation-6f56ba56-a7c5-4441-9a8b-5bfbd4b9eede .
+
+oquo:metric-f2919894-d638-4251-84c9-b5314c095d21
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-80f97bd1-0af5-4310-b7e6-a1b3987f4662 ;
+        oboe:measurementFor  oquo:observation-14543757-8743-4a20-b785-148bbf1d492a ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:evaluation-6329c240-0b44-499d-add3-5b9afc02a119
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-fdc1ad2f-ce62-4db9-93f6-f9eaba35d677 ;
+        time:hasTime              oquo:instant-5d04b7f6-bb7f-4d7f-979f-8205c85a4445 ;
+        oquo:hasObservation       oquo:observation-38ab3660-b6be-45b4-897b-03b07ef74545 .
+
+oquo:qualityValue-f9aa2863-066a-491a-bf07-15f4fff8b50e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a6b227e7-ca54-4aab-902f-3f7463f499f2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9de1d6a2-a0ac-4d20-89d5-1eee66846b1d .
+
+oquo:evaluation-46ab0664-7b62-469f-b12d-1068c991baf5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-80f97bd1-0af5-4310-b7e6-a1b3987f4662 ;
+        time:hasTime              oquo:instant-137321d2-5a13-4057-9038-4e89a9f122a1 ;
+        oquo:hasObservation       oquo:observation-14543757-8743-4a20-b785-148bbf1d492a .
+
+oquo:evaluation-7ced967b-0ecb-4758-99b3-fdcb6b3a1513
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5e9a3ad8-f514-4bef-9aca-54ff94d0a725 ;
+        time:hasTime              oquo:instant-a703f3c4-75b0-438f-8f9e-3e29e0bb5bf4 ;
+        oquo:hasObservation       oquo:observation-130d633d-5f33-485a-9ebd-61c67ce59b97 .
+
+oquo:evaluation-6a009ed8-7b64-400c-b66c-71f07fb3a1fd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1060bd58-7353-46db-a98c-edf17a1344b6 ;
+        time:hasTime              oquo:instant-2608edec-98c7-4e19-b7a6-ddd82a0ee017 ;
+        oquo:hasObservation       oquo:observation-87a103cb-84ee-4a12-bde6-b72526786402 .
+
+oquo:qualityValue-8d1c7e1f-3156-4329-a66d-7ed10322c10c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d3738df6-e80c-4fed-96dd-189bd22d9b7b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7327f6d3-3a05-472d-b286-385018d5f212 .
+
+oquo:metric-0127de93-bcc7-4abc-af31-7ccf92a7fc18
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-b8571229-3dac-4266-8af2-1ce0aecdded6 ;
+        oboe:measurementFor  oquo:observation-0fba3bdd-6f2a-4e00-a4ee-52a1a612e956 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-9c6bdaf4-c0ad-4776-9d35-23fdebd07977
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-14f80989-fce5-4732-b3cc-0b09adb0cede ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-c7bb0a52-6211-4018-b40a-f621bc4fde4b .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-ca076a2f-53e8-4b1b-b437-367309d0ce5f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-32a58ca5-b24f-4671-855d-8d43a8b6bac7 ;
+        time:hasTime              oquo:instant-1e1b428c-c591-4047-aa6d-985511ddce8c ;
+        oquo:hasObservation       oquo:observation-e462de6a-29d2-4014-bb88-29b6b0f9ab55 .
+
+oquo:observation-d19a0db5-a753-4b03-9216-0f51d9c096c8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-29ba782c-e1d1-4091-bc7d-de788cd74f53 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-d630d2ed-2116-4fb7-88f9-b4f0c08a2250 .
+
+oquo:instant-8c8ac61a-46cf-47a7-88a2-1c476c61d276
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.117Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-30f6be6c-72d5-411a-af61-5179b2cdad23
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-30c6babc-6701-4db6-87d6-20014d99e5bb ;
+        time:hasTime              oquo:instant-16cee699-aac2-4540-ab26-8f3e731ce6c2 ;
+        oquo:hasObservation       oquo:observation-0d41b18c-229b-4f88-bf57-d94fa990a5a1 .
+
+oquo:qualityValue-8c8e519b-8cf0-4347-8592-8ee3f205ef23
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-14f80989-fce5-4732-b3cc-0b09adb0cede ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-95453afb-798e-498e-9149-985b08baf94a .
+
+oquo:instant-f93454bf-bc6c-473b-837a-01536080dc93
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.131Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-3feb4f3c-1aad-4f2e-9bc7-897351a870a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.075Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-22b8f87c-cda0-438c-af7a-965aef1daf84
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c21d89b3-4a28-4336-8745-f45f3bd1092e ;
+        time:hasTime              oquo:instant-dccac14c-7668-4391-ad6f-7835cfdbb483 ;
+        oquo:hasObservation       oquo:observation-0fd36443-3f8f-4bc9-8974-cef197c63e83 .
+
+oquo:instant-ebbb9d85-45c0-4574-82bf-0ad62724eb2c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.125Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ec2fba62-c3a7-4922-8123-1304c3acff25
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1b18dbf4-c775-4d08-a698-1ef4c64507fb ;
+        time:hasTime              oquo:instant-938b0bf1-5d44-46b7-9c4b-74d1535082eb ;
+        oquo:hasObservation       oquo:observation-ced46c26-6e81-4096-a0cc-162ac8ca23bc .
+
+oquo:instant-137321d2-5a13-4057-9038-4e89a9f122a1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.103Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-56a42356-5d75-4a3d-a2b5-471643ebc41c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c284d4a8-94f8-4592-bb58-4da1c777aa7e ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-8c8ac61a-46cf-47a7-88a2-1c476c61d276 .
+
+oquo:observation-58259bf3-e0a3-4589-9c19-b83aee2bf050
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e7184322-4725-468c-b3f7-6c6604f01c95 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-a1e6c4ca-6948-4fe7-9331-47a47ccecce0 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-5e9a3ad8-f514-4bef-9aca-54ff94d0a725
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-654d4850-3838-4daf-bb3d-8ceb8ca58f83 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7ced967b-0ecb-4758-99b3-fdcb6b3a1513 .
+
+oquo:observation-63516d1e-83ef-4fea-bfba-d078cbf6553a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3b19f70b-04de-4318-817b-e60f2f4e8881 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-4c69ab6c-4db5-4ce5-a4d6-919cc6aee84c .
+
+oquo:metric-0b76239e-8e89-4877-b5e8-725724e04610
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-3d4a3215-dafc-4fcb-a331-4e8f5f4f289d ;
+        oboe:measurementFor  oquo:observation-63bdb0cc-953d-4df4-82f3-682b1c2781bb ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-fe9f6bfe-0dde-4e33-9201-8e5c5a8201d6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e683c8d1-bd9b-4ca4-97c3-cc9daee26e18 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-ebbb9d85-45c0-4574-82bf-0ad62724eb2c .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-0675c193-4989-454a-8bd6-089e3bad3627
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f7432aaa-4c01-40b3-bf22-c3c9db16d566 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-65093b50-6dd3-40d3-87a1-0d79b784c75e .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-e86255b8-e1f3-4ebe-9979-64416e1888ee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-068f8457-2c19-4532-ab81-4e9b9b485127 ;
+        time:hasTime              oquo:instant-d630d2ed-2116-4fb7-88f9-b4f0c08a2250 ;
+        oquo:hasObservation       oquo:observation-d19a0db5-a753-4b03-9216-0f51d9c096c8 .
+
+oquo:qualityValue-068f8457-2c19-4532-ab81-4e9b9b485127
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-29ba782c-e1d1-4091-bc7d-de788cd74f53 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e86255b8-e1f3-4ebe-9979-64416e1888ee .
+
+oquo:observation-c00f76be-32c0-4b3f-ac3d-697e6b1aa171
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3967f941-2be6-48bc-befd-9f7dbca3ea4b ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-76b008fe-5d1e-4c2e-aee4-d124dcee1a56 .
+
+oquo:metric-e683c8d1-bd9b-4ca4-97c3-cc9daee26e18
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-cb3aed0a-9da4-4748-a873-eca446456049 ;
+        oboe:measurementFor  oquo:observation-fe9f6bfe-0dde-4e33-9201-8e5c5a8201d6 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-c7bb0a52-6211-4018-b40a-f621bc4fde4b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.086Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-0fba3bdd-6f2a-4e00-a4ee-52a1a612e956
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0127de93-bcc7-4abc-af31-7ccf92a7fc18 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-fa939470-6b9c-4c42-86c9-426f8a88192b .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+<http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:qualityValue-3d4a3215-dafc-4fcb-a331-4e8f5f4f289d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0b76239e-8e89-4877-b5e8-725724e04610 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4dfff636-f4a6-426e-8c4b-a9d21eacdc6b .
+
+oquo:instant-5d04b7f6-bb7f-4d7f-979f-8205c85a4445
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.015Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-59b6019f-73e8-49cd-a963-d15329fe67b6
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-df4fe747-2984-4030-b05f-c003f30b4f8a ;
+        oboe:measurementFor  oquo:observation-b6455fa9-d666-49c4-be89-af1c39dffbbb ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-c68c71fd-3921-4c06-97ee-6e5bda41ae1c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.051Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-b6d53e57-c57d-47cc-b475-0bd2b53daf06
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fec7da4d-19cd-4819-aa50-3e77d308b57c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-26b22ef0-ef86-4ab6-a4db-7ab27ee2f8d6 .
+
+oquo:metric-27fad3f5-ae7b-4198-a6b7-2eab923ffcfa
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-74b4e97c-04ff-4292-94b5-cbff4f5c64bd ;
+        oboe:measurementFor  oquo:observation-6f56ba56-a7c5-4441-9a8b-5bfbd4b9eede ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:evaluation-95453afb-798e-498e-9149-985b08baf94a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8c8e519b-8cf0-4347-8592-8ee3f205ef23 ;
+        time:hasTime              oquo:instant-c7bb0a52-6211-4018-b40a-f621bc4fde4b ;
+        oquo:hasObservation       oquo:observation-9c6bdaf4-c0ad-4776-9d35-23fdebd07977 .
+
+oquo:qualityValue-3e6d7c55-6961-4cec-a957-8515d4b3f07b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dd6546ee-a694-4cb2-a14b-c039fad563bb ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6c852e2e-8683-45d5-95b7-5cf7793b926e .
+
+oquo:instant-905ab48d-5cb2-45c6-bbd7-c3879767e181
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.104Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4c69ab6c-4db5-4ce5-a4d6-919cc6aee84c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.101Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-16cee699-aac2-4540-ab26-8f3e731ce6c2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:34.523Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-01c7429a-a21c-46eb-8861-dea34b0791a0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3ef220b7-f5ba-4e15-8ad6-c7cba94bf2bf ;
+        time:hasTime              oquo:instant-f93454bf-bc6c-473b-837a-01536080dc93 ;
+        oquo:hasObservation       oquo:observation-50969025-23ac-4b3b-9b78-14ebcc95b9bd .
+
+oquo:evaluation-33c6765d-cd3a-4bd7-871a-410c4318ab32
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-224857ad-5cd9-4c9b-991e-30567f3cae93 ;
+        time:hasTime              oquo:instant-0b9bf760-675e-41e3-999b-dacf6d48d4f1 ;
+        oquo:hasObservation       oquo:observation-68ef3410-d90a-43fa-8c73-92f0f3d61b96 .
+
+oquo:observation-0fd36443-3f8f-4bc9-8974-cef197c63e83
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9c54bc67-64f2-48b9-877e-22285c5b4659 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-dccac14c-7668-4391-ad6f-7835cfdbb483 .
+
+oquo:qualityValue-ee2eae55-1615-4313-998e-72f63723fd0a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c0b2d830-e65e-41f7-8867-b8ada5085b24 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-88c0f660-24e1-4d0a-802d-ff71dadd8abe .
+
+oquo:observation-a43a1d58-8d32-4c37-adef-1eb74f49aed7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ed4b13d2-2bb5-4ff3-916a-4e9b1434e65b ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-c4fe797a-1031-4dd4-97a3-2780b719487c .
+
+oquo:qualityValue-76165e74-7d5b-448e-9d82-cfbb7b047d58
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b0d16df8-677a-4043-9f22-7b7befcc770d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bd50d2aa-3704-4894-9514-a957ac8b0c48 .
+
+oquo:instant-15afb0ca-f9ae-4f25-ae90-23e8f8a46726
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.056Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-bcd661ee-5c9f-4b72-9eec-7d5b0cb8341f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.128Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-7738cd3c-8e1a-4633-b330-7043bc3a1113
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d3738df6-e80c-4fed-96dd-189bd22d9b7b ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-eb34be98-e1c1-4054-9942-d79cdbe12ce2 .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-895b48ed-3d59-42bd-b970-56f64e54748f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.119Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-38ab3660-b6be-45b4-897b-03b07ef74545
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-60fe4a47-d9e4-49ce-af8e-d708099741ce ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-5d04b7f6-bb7f-4d7f-979f-8205c85a4445 .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-df4fe747-2984-4030-b05f-c003f30b4f8a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-59b6019f-73e8-49cd-a963-d15329fe67b6 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-537e81c8-ed4a-455d-ad27-d2f268cb7a70 .
+
+oquo:evaluation-3306d69a-6d98-49dc-8d28-c83109d910f0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-fb27bc58-f032-4213-9779-82f536e6c022 ;
+        time:hasTime              oquo:instant-c4fe797a-1031-4dd4-97a3-2780b719487c ;
+        oquo:hasObservation       oquo:observation-a43a1d58-8d32-4c37-adef-1eb74f49aed7 .
+
+oquo:metric-f7432aaa-4c01-40b3-bf22-c3c9db16d566
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-90ed13c3-6579-4fa5-9064-6faaca53ef4f ;
+        oboe:measurementFor  oquo:observation-0675c193-4989-454a-8bd6-089e3bad3627 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-8065fcd6-4cdb-4a0e-83eb-3ccaf559e04b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9bbefb8e-2796-4224-9237-b4a68e9daa11 ;
+        time:hasTime              oquo:instant-8c8ac61a-46cf-47a7-88a2-1c476c61d276 ;
+        oquo:hasObservation       oquo:observation-56a42356-5d75-4a3d-a2b5-471643ebc41c .
+
+oquo:evaluation-fe6e75ef-8805-4560-bb2f-566212d1c208
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c8d2556c-5efa-4285-a311-02f9f7520fad ;
+        time:hasTime              oquo:instant-a1e6c4ca-6948-4fe7-9331-47a47ccecce0 ;
+        oquo:hasObservation       oquo:observation-58259bf3-e0a3-4589-9c19-b83aee2bf050 .
+
+oquo:qualityValue-07e16de3-c83f-4411-a4e1-97ab84e939d2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ff2de962-5f81-422f-b69a-6008b9d41f5e ;
+        res:hasLiteralValue    "10.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3f7f1af4-7511-443d-8bd5-93ff8f93449b .
+
+oquo:instant-2608edec-98c7-4e19-b7a6-ddd82a0ee017
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.078Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-4d7a3a05-6729-466f-bcc9-b9ddebcae651
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-04712033-6b7f-40a7-8b90-099ae2ad5010 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2da520a7-bdfe-490c-9968-087cefb9c287 .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-9de1d6a2-a0ac-4d20-89d5-1eee66846b1d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f9aa2863-066a-491a-bf07-15f4fff8b50e ;
+        time:hasTime              oquo:instant-5bd944d8-e9d1-472f-b326-e24b4e664384 ;
+        oquo:hasObservation       oquo:observation-ddf11baa-4393-42aa-af8a-48e621b76dbb .
+
+oquo:instant-65093b50-6dd3-40d3-87a1-0d79b784c75e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.134Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3e25b127-203b-43b5-a82c-7273ade0a902
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-cb3aed0a-9da4-4748-a873-eca446456049 ;
+        time:hasTime              oquo:instant-ebbb9d85-45c0-4574-82bf-0ad62724eb2c ;
+        oquo:hasObservation       oquo:observation-fe9f6bfe-0dde-4e33-9201-8e5c5a8201d6 .
+
+oquo:metric-ed4b13d2-2bb5-4ff3-916a-4e9b1434e65b
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-fb27bc58-f032-4213-9779-82f536e6c022 ;
+        oboe:measurementFor  oquo:observation-a43a1d58-8d32-4c37-adef-1eb74f49aed7 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:observation-b3675e32-bef2-4974-b08e-7e97c5ebb84b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-78f240dc-dbdf-40de-a1b2-33f395f4ab33 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-1710e3ac-37f6-4eac-9496-2625630c5093 .
+
+oquo:metric-60fe4a47-d9e4-49ce-af8e-d708099741ce
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-fdc1ad2f-ce62-4db9-93f6-f9eaba35d677 ;
+        oboe:measurementFor  oquo:observation-38ab3660-b6be-45b4-897b-03b07ef74545 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:evaluation-26b22ef0-ef86-4ab6-a4db-7ab27ee2f8d6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b6d53e57-c57d-47cc-b475-0bd2b53daf06 ;
+        time:hasTime              oquo:instant-9d4abccb-6cf6-4a7d-bac5-9d5dc71b8282 ;
+        oquo:hasObservation       oquo:observation-a37d91cc-1b55-4091-af84-e146093b4784 .
+
+oquo:metric-a6b227e7-ca54-4aab-902f-3f7463f499f2
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f9aa2863-066a-491a-bf07-15f4fff8b50e ;
+        oboe:measurementFor  oquo:observation-ddf11baa-4393-42aa-af8a-48e621b76dbb ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:observation-47a46d6c-4c29-4f00-b86e-1613b0dc15c5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c0b2d830-e65e-41f7-8867-b8ada5085b24 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-15afb0ca-f9ae-4f25-ae90-23e8f8a46726 .
+
+oquo:metric-78f240dc-dbdf-40de-a1b2-33f395f4ab33
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-d9154a10-f58e-46bb-ad21-111843789484 ;
+        oboe:measurementFor  oquo:observation-b3675e32-bef2-4974-b08e-7e97c5ebb84b ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:observation-63bdb0cc-953d-4df4-82f3-682b1c2781bb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0b76239e-8e89-4877-b5e8-725724e04610 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-bcd661ee-5c9f-4b72-9eec-7d5b0cb8341f .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-3f7f1af4-7511-443d-8bd5-93ff8f93449b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-07e16de3-c83f-4411-a4e1-97ab84e939d2 ;
+        time:hasTime              oquo:instant-c68c71fd-3921-4c06-97ee-6e5bda41ae1c ;
+        oquo:hasObservation       oquo:observation-8f4a7c71-b4b0-4d62-9b37-9fc7a08c1f55 .
+
+oquo:observation-ddf11baa-4393-42aa-af8a-48e621b76dbb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a6b227e7-ca54-4aab-902f-3f7463f499f2 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-5bd944d8-e9d1-472f-b326-e24b4e664384 .
+
+oquo:metric-654d4850-3838-4daf-bb3d-8ceb8ca58f83
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-5e9a3ad8-f514-4bef-9aca-54ff94d0a725 ;
+        oboe:measurementFor  oquo:observation-130d633d-5f33-485a-9ebd-61c67ce59b97 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:qualityValue-3ef220b7-f5ba-4e15-8ad6-c7cba94bf2bf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f7b3c30b-c264-4b5c-a28e-ad05a4e3604a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-01c7429a-a21c-46eb-8861-dea34b0791a0 .
+
+oquo:metric-57885b06-faa7-4de3-b6fb-6dd627325a2f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-32a58ca5-b24f-4671-855d-8d43a8b6bac7 ;
+        oboe:measurementFor  oquo:observation-e462de6a-29d2-4014-bb88-29b6b0f9ab55 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:instant-aa333565-bbe8-43cc-8b9b-a32388400517
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.13Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-50969025-23ac-4b3b-9b78-14ebcc95b9bd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f7b3c30b-c264-4b5c-a28e-ad05a4e3604a ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-f93454bf-bc6c-473b-837a-01536080dc93 .
+
+oquo:evaluation-bd50d2aa-3704-4894-9514-a957ac8b0c48
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-76165e74-7d5b-448e-9d82-cfbb7b047d58 ;
+        time:hasTime              oquo:instant-5feccf62-a1a4-4353-ab65-d243b68e5f7a ;
+        oquo:hasObservation       oquo:observation-5d36581d-fc23-41dc-82a3-3d0802e3eb0f .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-6c852e2e-8683-45d5-95b7-5cf7793b926e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3e6d7c55-6961-4cec-a957-8515d4b3f07b ;
+        time:hasTime              oquo:instant-e0fd443d-3c5e-4b82-9523-cc7e44c3046c ;
+        oquo:hasObservation       oquo:observation-c23a2263-709c-4acc-9938-ca6504864521 .
+
+oquo:instant-5bd944d8-e9d1-472f-b326-e24b4e664384
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.092Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-7b6fb020-ecfc-46af-a76c-74a6555558c9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b8571229-3dac-4266-8af2-1ce0aecdded6 ;
+        time:hasTime              oquo:instant-fa939470-6b9c-4c42-86c9-426f8a88192b ;
+        oquo:hasObservation       oquo:observation-0fba3bdd-6f2a-4e00-a4ee-52a1a612e956 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-c4fe797a-1031-4dd4-97a3-2780b719487c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:34.541Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ff2de962-5f81-422f-b69a-6008b9d41f5e
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-07e16de3-c83f-4411-a4e1-97ab84e939d2 ;
+        oboe:measurementFor  oquo:observation-8f4a7c71-b4b0-4d62-9b37-9fc7a08c1f55 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:qualityValue-32a58ca5-b24f-4671-855d-8d43a8b6bac7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-57885b06-faa7-4de3-b6fb-6dd627325a2f ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ca076a2f-53e8-4b1b-b437-367309d0ce5f .
+
+oquo:instant-5feccf62-a1a4-4353-ab65-d243b68e5f7a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.067Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-5d36581d-fc23-41dc-82a3-3d0802e3eb0f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b0d16df8-677a-4043-9f22-7b7befcc770d ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-5feccf62-a1a4-4353-ab65-d243b68e5f7a .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-3967f941-2be6-48bc-befd-9f7dbca3ea4b
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9cfa46e7-e4d9-41b2-94af-18051d3001f0 ;
+        oboe:measurementFor  oquo:observation-c00f76be-32c0-4b3f-ac3d-697e6b1aa171 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7327f6d3-3a05-472d-b286-385018d5f212
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8d1c7e1f-3156-4329-a66d-7ed10322c10c ;
+        time:hasTime              oquo:instant-eb34be98-e1c1-4054-9942-d79cdbe12ce2 ;
+        oquo:hasObservation       oquo:observation-7738cd3c-8e1a-4633-b330-7043bc3a1113 .
+
+oquo:qualityValue-0d5041ee-08dc-4b37-9b49-8f35fad9f319
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3b19f70b-04de-4318-817b-e60f2f4e8881 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d71a1943-95d2-43a6-ba8a-a8f246e62107 .
+
+oquo:observation-c23a2263-709c-4acc-9938-ca6504864521
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dd6546ee-a694-4cb2-a14b-c039fad563bb ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-e0fd443d-3c5e-4b82-9523-cc7e44c3046c .
+
+oquo:instant-eb34be98-e1c1-4054-9942-d79cdbe12ce2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:34.443Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b8571229-3dac-4266-8af2-1ce0aecdded6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0127de93-bcc7-4abc-af31-7ccf92a7fc18 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7b6fb020-ecfc-46af-a76c-74a6555558c9 .
+
+oquo:instant-a703f3c4-75b0-438f-8f9e-3e29e0bb5bf4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.123Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-fdc1ad2f-ce62-4db9-93f6-f9eaba35d677
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-60fe4a47-d9e4-49ce-af8e-d708099741ce ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6329c240-0b44-499d-add3-5b9afc02a119 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-a9e90cea-970a-4ee9-9db5-5f9e4a3122be
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-873ac0ee-b1f9-4549-b96b-f0bdd55bcee3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b0258eb5-21db-4dc9-af2d-e8b549eb62d3 .
+
+oquo:metric-9c54bc67-64f2-48b9-877e-22285c5b4659
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-c21d89b3-4a28-4336-8745-f45f3bd1092e ;
+        oboe:measurementFor  oquo:observation-0fd36443-3f8f-4bc9-8974-cef197c63e83 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:metric-873ac0ee-b1f9-4549-b96b-f0bdd55bcee3
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-a9e90cea-970a-4ee9-9db5-5f9e4a3122be ;
+        oboe:measurementFor  oquo:observation-f1577ecf-15df-400f-a483-13bbec8a3645 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:observation-dfec26d3-a976-4842-a789-40ada6ee630b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-04712033-6b7f-40a7-8b90-099ae2ad5010 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-3feb4f3c-1aad-4f2e-9bc7-897351a870a7 .
+
+oquo:qualityValue-74b4e97c-04ff-4292-94b5-cbff4f5c64bd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-27fad3f5-ae7b-4198-a6b7-2eab923ffcfa ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a2b976b9-dbd9-4716-b6af-530ebab6048e .
+
+oquo:qualityValue-c21d89b3-4a28-4336-8745-f45f3bd1092e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9c54bc67-64f2-48b9-877e-22285c5b4659 ;
+        res:hasLiteralValue    "3.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-22b8f87c-cda0-438c-af7a-965aef1daf84 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ced46c26-6e81-4096-a0cc-162ac8ca23bc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-49ff7d2d-4a3d-4d24-a666-3e6d9dab8688 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-938b0bf1-5d44-46b7-9c4b-74d1535082eb .
+
+oquo:qualityValue-fb27bc58-f032-4213-9779-82f536e6c022
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ed4b13d2-2bb5-4ff3-916a-4e9b1434e65b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3306d69a-6d98-49dc-8d28-c83109d910f0 .
+
+oquo:metric-ee7f0218-f342-4102-a740-00a303515736
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1060bd58-7353-46db-a98c-edf17a1344b6 ;
+        oboe:measurementFor  oquo:observation-87a103cb-84ee-4a12-bde6-b72526786402 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-0b9bf760-675e-41e3-999b-dacf6d48d4f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.111Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-c0b2d830-e65e-41f7-8867-b8ada5085b24
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ee2eae55-1615-4313-998e-72f63723fd0a ;
+        oboe:measurementFor  oquo:observation-47a46d6c-4c29-4f00-b86e-1613b0dc15c5 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-76b008fe-5d1e-4c2e-aee4-d124dcee1a56
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.114Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-130d633d-5f33-485a-9ebd-61c67ce59b97
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-654d4850-3838-4daf-bb3d-8ceb8ca58f83 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-a703f3c4-75b0-438f-8f9e-3e29e0bb5bf4 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-50cd53c0-152e-4483-842e-0f077db5c75b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9fcb6add-cddd-492e-a631-dc814902a109 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-16444a46-f809-4012-af26-c7ffa3889d54 .
+
+oquo:instant-e0fd443d-3c5e-4b82-9523-cc7e44c3046c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.137Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-88c0f660-24e1-4d0a-802d-ff71dadd8abe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ee2eae55-1615-4313-998e-72f63723fd0a ;
+        time:hasTime              oquo:instant-15afb0ca-f9ae-4f25-ae90-23e8f8a46726 ;
+        oquo:hasObservation       oquo:observation-47a46d6c-4c29-4f00-b86e-1613b0dc15c5 .
+
+oquo:observation-f1577ecf-15df-400f-a483-13bbec8a3645
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-873ac0ee-b1f9-4549-b96b-f0bdd55bcee3 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-905ab48d-5cb2-45c6-bbd7-c3879767e181 .
+
+oquo:evaluation-4dfff636-f4a6-426e-8c4b-a9d21eacdc6b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3d4a3215-dafc-4fcb-a331-4e8f5f4f289d ;
+        time:hasTime              oquo:instant-bcd661ee-5c9f-4b72-9eec-7d5b0cb8341f ;
+        oquo:hasObservation       oquo:observation-63bdb0cc-953d-4df4-82f3-682b1c2781bb .
+
+oquo:observation-6f56ba56-a7c5-4441-9a8b-5bfbd4b9eede
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-27fad3f5-ae7b-4198-a6b7-2eab923ffcfa ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-895b48ed-3d59-42bd-b970-56f64e54748f .
+
+oquo:evaluation-b0258eb5-21db-4dc9-af2d-e8b549eb62d3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a9e90cea-970a-4ee9-9db5-5f9e4a3122be ;
+        time:hasTime              oquo:instant-905ab48d-5cb2-45c6-bbd7-c3879767e181 ;
+        oquo:hasObservation       oquo:observation-f1577ecf-15df-400f-a483-13bbec8a3645 .
+
+oquo:instant-a1e6c4ca-6948-4fe7-9331-47a47ccecce0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.098Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-b6455fa9-d666-49c4-be89-af1c39dffbbb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-59b6019f-73e8-49cd-a963-d15329fe67b6 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-aa333565-bbe8-43cc-8b9b-a32388400517 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-f7af183b-bbc9-4a46-ba0e-b6383433d7f6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9fcb6add-cddd-492e-a631-dc814902a109 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f3e5075c-dfe7-41af-8585-6b0c43bd7070 .
+
+oquo:evaluation-537e81c8-ed4a-455d-ad27-d2f268cb7a70
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-df4fe747-2984-4030-b05f-c003f30b4f8a ;
+        time:hasTime              oquo:instant-aa333565-bbe8-43cc-8b9b-a32388400517 ;
+        oquo:hasObservation       oquo:observation-b6455fa9-d666-49c4-be89-af1c39dffbbb .
+
+oquo:observation-87a103cb-84ee-4a12-bde6-b72526786402
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ee7f0218-f342-4102-a740-00a303515736 ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-2608edec-98c7-4e19-b7a6-ddd82a0ee017 .
+
+oquo:metric-e7184322-4725-468c-b3f7-6c6604f01c95
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c8d2556c-5efa-4285-a311-02f9f7520fad ;
+        oboe:measurementFor  oquo:observation-58259bf3-e0a3-4589-9c19-b83aee2bf050 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-cb3aed0a-9da4-4748-a873-eca446456049
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e683c8d1-bd9b-4ca4-97c3-cc9daee26e18 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e25b127-203b-43b5-a82c-7273ade0a902 .
+
+oquo:metric-14f80989-fce5-4732-b3cc-0b09adb0cede
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8c8e519b-8cf0-4347-8592-8ee3f205ef23 ;
+        oboe:measurementFor  oquo:observation-9c6bdaf4-c0ad-4776-9d35-23fdebd07977 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:evaluation-f5a5ef25-5dd3-42ed-8bc7-71653eadb949
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-d9154a10-f58e-46bb-ad21-111843789484 ;
+        time:hasTime              oquo:instant-1710e3ac-37f6-4eac-9496-2625630c5093 ;
+        oquo:hasObservation       oquo:observation-b3675e32-bef2-4974-b08e-7e97c5ebb84b .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b9ee71a3-c8f4-4b9b-80d8-abdf9e28b99d
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-224857ad-5cd9-4c9b-991e-30567f3cae93 ;
+        oboe:measurementFor  oquo:observation-68ef3410-d90a-43fa-8c73-92f0f3d61b96 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-16444a46-f809-4012-af26-c7ffa3889d54
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.107Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9bbefb8e-2796-4224-9237-b4a68e9daa11
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c284d4a8-94f8-4592-bb58-4da1c777aa7e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8065fcd6-4cdb-4a0e-83eb-3ccaf559e04b .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-1060bd58-7353-46db-a98c-edf17a1344b6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ee7f0218-f342-4102-a740-00a303515736 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6a009ed8-7b64-400c-b66c-71f07fb3a1fd .
+
+oquo:metric-3b19f70b-04de-4318-817b-e60f2f4e8881
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0d5041ee-08dc-4b37-9b49-8f35fad9f319 ;
+        oboe:measurementFor  oquo:observation-63516d1e-83ef-4fea-bfba-d078cbf6553a ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-fa939470-6b9c-4c42-86c9-426f8a88192b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:34.57Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1e1b428c-c591-4047-aa6d-985511ddce8c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.122Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-e462de6a-29d2-4014-bb88-29b6b0f9ab55
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-57885b06-faa7-4de3-b6fb-6dd627325a2f ;
+        oboe:ofEntity        <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        time:hasTime         oquo:instant-1e1b428c-c591-4047-aa6d-985511ddce8c .
+
+oquo:metric-dd6546ee-a694-4cb2-a14b-c039fad563bb
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-3e6d7c55-6961-4cec-a957-8515d4b3f07b ;
+        oboe:measurementFor  oquo:observation-c23a2263-709c-4acc-9938-ca6504864521 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-04712033-6b7f-40a7-8b90-099ae2ad5010
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4d7a3a05-6729-466f-bcc9-b9ddebcae651 ;
+        oboe:measurementFor  oquo:observation-dfec26d3-a976-4842-a789-40ada6ee630b ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-224857ad-5cd9-4c9b-991e-30567f3cae93
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9ee71a3-c8f4-4b9b-80d8-abdf9e28b99d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-33c6765d-cd3a-4bd7-871a-410c4318ab32 .
+
+oquo:metric-9fcb6add-cddd-492e-a631-dc814902a109
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f7af183b-bbc9-4a46-ba0e-b6383433d7f6 ;
+        oboe:measurementFor  oquo:observation-50cd53c0-152e-4483-842e-0f077db5c75b ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:evaluation-f3e5075c-dfe7-41af-8585-6b0c43bd7070
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f7af183b-bbc9-4a46-ba0e-b6383433d7f6 ;
+        time:hasTime              oquo:instant-16444a46-f809-4012-af26-c7ffa3889d54 ;
+        oquo:hasObservation       oquo:observation-50cd53c0-152e-4483-842e-0f077db5c75b .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-30c6babc-6701-4db6-87d6-20014d99e5bb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1616d6d2-a9b7-41b0-9350-659dfd0fe6f0 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-30f6be6c-72d5-411a-af61-5179b2cdad23 .
+
+oquo:qualityValue-1b18dbf4-c775-4d08-a698-1ef4c64507fb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-49ff7d2d-4a3d-4d24-a666-3e6d9dab8688 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ec2fba62-c3a7-4922-8123-1304c3acff25 .
+
+oquo:evaluation-7ca998d7-ad4a-4d9b-9547-c202dbde1d4c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:inputData             <http://terminologies.gfbio.org/terms/kingdom/releases/1.0/kingdom.owl> ;
+        res:producedQualityValue  oquo:qualityValue-90ed13c3-6579-4fa5-9064-6faaca53ef4f ;
+        time:hasTime              oquo:instant-65093b50-6dd3-40d3-87a1-0d79b784c75e ;
+        oquo:hasObservation       oquo:observation-0675c193-4989-454a-8bd6-089e3bad3627 .
+
+oquo:instant-938b0bf1-5d44-46b7-9c4b-74d1535082eb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.124Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-dccac14c-7668-4391-ad6f-7835cfdbb483
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T11:31:35.053Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1616d6d2-a9b7-41b0-9350-659dfd0fe6f0
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-30c6babc-6701-4db6-87d6-20014d99e5bb ;
+        oboe:measurementFor  oquo:observation-0d41b18c-229b-4f88-bf57-d94fa990a5a1 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .

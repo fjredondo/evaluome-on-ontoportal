@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:metric-5332b23e-39c5-48aa-942c-f5c83aec30f4
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-d9a01f31-8d4d-4bf6-bd04-e33be7751186 ;
+        oboe:measurementFor  oquo:observation-8c5e1c19-f959-43a2-9b7d-632519850596 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-d4c8aa96-57dc-4bdc-a471-54eb155b8fe7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.566Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-9175cc4e-dac0-40c6-88b1-9b6c8b080fc2
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-594d1d71-d708-428f-8e69-341663d37846 ;
+        oboe:measurementFor  oquo:observation-733f1284-1708-4960-9d1b-35532b1c389e ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-41fb9dea-37dd-409b-9b9f-5de3df875601
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-43c0f86c-7721-4ae3-8d65-9cdffb4d8281 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-1c3924e5-a7c5-4312-b1ac-ee1441997359 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-211756e0-e682-405c-837f-7e90ed6f1b91
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-3c50500f-d916-40d6-8a71-1e0f6a1ce576 ;
+        oboe:measurementFor  oquo:observation-48105d9c-b5b8-4801-a171-9a2b257625ed ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:qualityValue-99692afd-b24e-4151-8882-503a7ffaedff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4a606e27-cb10-41be-84d6-8639b87a72aa ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d6943b89-fe3b-4deb-ad19-16cfcfcc8513 .
+
+oquo:instant-0b85ecf5-c9d1-43be-82bd-414e2e1ef2b1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.57Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-a9789db3-15ac-4448-bf20-6cc7bb9100bb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-9751995a-1ad6-479c-835c-d5268cdecf04 ;
+        time:hasTime              oquo:instant-69d10616-a4c8-45a9-8201-952250115c88 ;
+        oquo:hasObservation       oquo:observation-ae157e88-fb9c-4ae2-944b-fe32e25d6469 .
+
+oquo:metric-4a606e27-cb10-41be-84d6-8639b87a72aa
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-99692afd-b24e-4151-8882-503a7ffaedff ;
+        oboe:measurementFor  oquo:observation-5fc20e9b-85f5-4cfb-ad61-36e336e76580 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-0acdf230-b924-4cd6-83c3-112c5950aeee
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-e931d9cb-3481-45a2-9764-92ff3192fa8d ;
+        oboe:measurementFor  oquo:observation-5a884433-38ae-43cf-a296-7000626416a9 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:observation-f41789ca-9b45-4096-99ff-c28b159e0415
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-448519c7-fc43-4abd-b589-9074edfe4278 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-e19a4049-d5e2-4646-9bbc-28d5b33dc056 .
+
+oquo:qualityValue-2ee74202-d4ce-4eda-86db-e55c6861ac8c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8b034d24-7f3f-4c8c-83b1-f4ed1c2ba132 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d47afa62-43ec-4af2-a58b-cf9b34173074 .
+
+oquo:qualityValue-ed20d2da-18ab-4636-a708-eccd2263b35e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-61b4a92e-77ac-403b-a717-97c7b72d6ee3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d92bd616-f943-4594-a590-e001772d6198 .
+
+oquo:metric-a56b3a2a-611d-4b17-9262-3db8e6ef182c
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7981a8dc-aee9-4478-8eb8-82a5e695824e ;
+        oboe:measurementFor  oquo:observation-92243b9d-4237-47af-8a3a-7a7dc61ad409 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-b4f16564-f733-4af2-bd5e-10431baedd86
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-7c7df540-52e3-483a-89e4-a834718ef128 ;
+        time:hasTime              oquo:instant-bdd0c914-86a1-4921-ba68-2b674e64552f ;
+        oquo:hasObservation       oquo:observation-c47c58c5-98eb-4ffb-af7e-5a49864b5331 .
+
+oquo:metric-20b63cdc-12cb-4baa-a424-025957861b04
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b4319cf1-91ad-4c5b-8d78-39bfc3266244 ;
+        oboe:measurementFor  oquo:observation-7b275ea7-3d7d-4977-ac8b-d55074f8da8e ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:observation-6a7d98fc-59fe-4881-9e71-846610c68a2b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2b6b70ac-d838-4020-9473-577d0e9b21a7 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-b9078adb-4e60-4372-8433-9a6e8a98b98f .
+
+oquo:evaluation-0d64a6ec-07fd-4bcd-9f6e-82653f18c93b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-6a909929-e1fd-4828-8e7d-60f0859c0ed0 ;
+        time:hasTime              oquo:instant-8b59328b-db4f-471d-a6ba-7e4c0c12c05b ;
+        oquo:hasObservation       oquo:observation-158ae28e-1d15-46cf-a8f6-b22b77b2ed19 .
+
+oquo:observation-f4f14b01-cc5f-45ab-b9cc-a8d601a5e0e6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c667c90d-51cf-45b6-be52-b6733d7e6099 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-7ddc2758-5682-4ba0-a46e-88ade12feb7b .
+
+oquo:observation-c124b838-cb91-4834-be92-2e02bc364bc8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9178f7b3-8c5a-48a5-b915-8bb9e0ba13c0 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-bc50dd49-acdc-4543-b12f-4bc83bc1fedc .
+
+oquo:qualityValue-1669f3a0-0c33-4a90-b8fe-5c205603bfa5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c2085d69-be12-4e0f-bff1-173f25b2aec0 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-29a74c05-74e0-4990-8a51-148d97ea7843 .
+
+oquo:evaluation-8e768e61-b06a-42c7-baa1-c8c20617321a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-f4c8cdbb-9db0-472f-95ec-b3218798bc4f ;
+        time:hasTime              oquo:instant-bc50dd49-acdc-4543-b12f-4bc83bc1fedc ;
+        oquo:hasObservation       oquo:observation-c124b838-cb91-4834-be92-2e02bc364bc8 .
+
+oquo:evaluation-03b948b9-8188-4035-a975-270bca4987fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-cb5bbb2a-09dd-4ac1-aa65-457fc113b447 ;
+        time:hasTime              oquo:instant-d70cd36a-7f33-4867-b38c-28096ba9f58f ;
+        oquo:hasObservation       oquo:observation-d616dc17-70d7-4001-b601-f20996609071 .
+
+oquo:observation-c47c58c5-98eb-4ffb-af7e-5a49864b5331
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-53600d07-384c-4ea4-acfc-f8b196ae8fd4 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-bdd0c914-86a1-4921-ba68-2b674e64552f .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-43c0f86c-7721-4ae3-8d65-9cdffb4d8281
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ef8f9f73-f4a9-42ce-ac6c-2b2a6a1df6a5 ;
+        oboe:measurementFor  oquo:observation-41fb9dea-37dd-409b-9b9f-5de3df875601 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-feec85a3-55ec-461e-8683-c30a339c55ce
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4acbc95e-3ca6-4e78-ac77-91501100146a ;
+        oboe:measurementFor  oquo:observation-14d3da67-a56b-4979-8835-156e75a9dba7 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-626271b8-400b-4c96-af14-60f6b457e408
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5251787f-7a16-403d-9905-5646e24b36a4 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-79219e57-141d-4451-95ff-e7d9103a278d .
+
+oquo:evaluation-1738ee19-8dbe-4a55-a1fc-f3ee28b7e84f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-d9a01f31-8d4d-4bf6-bd04-e33be7751186 ;
+        time:hasTime              oquo:instant-3a530198-d496-4a1f-a4ac-9e49c6e8e3bd ;
+        oquo:hasObservation       oquo:observation-8c5e1c19-f959-43a2-9b7d-632519850596 .
+
+oquo:instant-4fb71963-2554-44d3-a76a-a396ca0ae951
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.528Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-5251787f-7a16-403d-9905-5646e24b36a4
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-33a531db-3d4d-4bb6-aacc-847690639111 ;
+        oboe:measurementFor  oquo:observation-626271b8-400b-4c96-af14-60f6b457e408 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-5a884433-38ae-43cf-a296-7000626416a9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0acdf230-b924-4cd6-83c3-112c5950aeee ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-a4237ab6-80c7-40b5-965b-8bc63a703fb8 .
+
+oquo:instant-3f8db75c-460c-4ee3-90d9-3ec27c9a23fe
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.562Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-09c74abf-1aeb-4b7c-8b2e-e7e685047cb3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b3670b23-dbd6-4136-a405-e9c81150bdb8 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e9d83c41-b209-44e7-956e-78a037843b58 .
+
+oquo:evaluation-5d3e990e-8d79-40a5-8674-e88a7b2c2b8d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-3143688d-b7a3-430b-b011-6398d2a669be ;
+        time:hasTime              oquo:instant-0b85ecf5-c9d1-43be-82bd-414e2e1ef2b1 ;
+        oquo:hasObservation       oquo:observation-9b9b04e4-6059-4cbb-b8e6-6f91a5985624 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-81bc587a-5caf-455b-a56c-18d58c053f5c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e2095726-7c13-4c6f-aea1-0c5cbbc1797a ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6c02ba79-2266-4c51-9c91-9336df0737fc .
+
+oquo:qualityValue-475931eb-af27-41be-8c6b-501d13994a12
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c667c90d-51cf-45b6-be52-b6733d7e6099 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9950e82d-e95f-4e65-997e-b26972253e19 .
+
+oquo:qualityValue-3c50500f-d916-40d6-8a71-1e0f6a1ce576
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-211756e0-e682-405c-837f-7e90ed6f1b91 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a730b053-f149-4ac9-a846-a389072f83d4 .
+
+oquo:qualityValue-74bd4b73-fe21-426f-ae57-1fa4f97a8005
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bce5cca8-498b-4b94-8da9-ad37292fc220 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-18e3a85c-49d9-43ca-a5a9-1cc50b267889 .
+
+oquo:instant-514a4305-9c69-4b27-934c-d5e02a8739a6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.556Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d6943b89-fe3b-4deb-ad19-16cfcfcc8513
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-99692afd-b24e-4151-8882-503a7ffaedff ;
+        time:hasTime              oquo:instant-562ad77c-11f7-4b42-b3b9-61043889565c ;
+        oquo:hasObservation       oquo:observation-5fc20e9b-85f5-4cfb-ad61-36e336e76580 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-b3670b23-dbd6-4136-a405-e9c81150bdb8
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-09c74abf-1aeb-4b7c-8b2e-e7e685047cb3 ;
+        oboe:measurementFor  oquo:observation-2c7161c5-180e-4f7b-ade9-016dfdbe4246 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:observation-59a82ad2-5b97-42ac-b918-d37eb307d6cb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8bc89650-c398-48d2-9132-33291c81204f ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-2139c2ea-1f5c-4a3a-b108-a7201d6fbd58 .
+
+oquo:evaluation-31705944-fe8c-4356-8f6c-421c4345b2d7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-a33b8f0c-c79b-42c2-8768-9ffc3ba83f5a ;
+        time:hasTime              oquo:instant-e65bfe85-8e1a-4a2a-97e2-2e8ad6a52aae ;
+        oquo:hasObservation       oquo:observation-9d1d60fe-7eb1-4b29-a8a3-421d0c23e4e9 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-db002fc0-dfaa-42c2-9068-d459d3ad3212
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.571Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-2eb7425f-80be-469d-ad0c-a3d68f6404fc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-448519c7-fc43-4abd-b589-9074edfe4278 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bd93dfc3-ad56-4b49-a609-b17feecd1569 .
+
+oquo:instant-562ad77c-11f7-4b42-b3b9-61043889565c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.516Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-79219e57-141d-4451-95ff-e7d9103a278d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.514Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-72135c68-c394-45b1-98c4-b555dc7458c2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4fe68823-1da6-40c6-aa50-b202d4198fa6 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-29a5bc10-ba16-47ca-9296-df78c233c118 .
+
+oquo:qualityValue-cb5bbb2a-09dd-4ac1-aa65-457fc113b447
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ad98a6dc-15fa-40f0-943d-fb0e4ede51c9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-03b948b9-8188-4035-a975-270bca4987fe .
+
+oquo:evaluation-18e3a85c-49d9-43ca-a5a9-1cc50b267889
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-74bd4b73-fe21-426f-ae57-1fa4f97a8005 ;
+        time:hasTime              oquo:instant-4fb71963-2554-44d3-a76a-a396ca0ae951 ;
+        oquo:hasObservation       oquo:observation-20ca8db7-2ced-4c79-b643-a75fea4d1000 .
+
+oquo:metric-a65846c0-bab2-4f8a-9340-4b94e7c2b2d5
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fc89cc66-60e5-4c52-8be9-7562e0080497 ;
+        oboe:measurementFor  oquo:observation-0935eafa-07d8-4443-a636-8743328791db ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:qualityValue-4acbc95e-3ca6-4e78-ac77-91501100146a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-feec85a3-55ec-461e-8683-c30a339c55ce ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-188da370-ee84-4569-8cd2-78474200ff64 .
+
+oquo:evaluation-99d6b2cd-a6b5-416c-a9c3-6d8ba1ee297b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-e931d9cb-3481-45a2-9764-92ff3192fa8d ;
+        time:hasTime              oquo:instant-a4237ab6-80c7-40b5-965b-8bc63a703fb8 ;
+        oquo:hasObservation       oquo:observation-5a884433-38ae-43cf-a296-7000626416a9 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-9bc92af5-7ebb-4826-9dad-146e9904c3a3
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-9751995a-1ad6-479c-835c-d5268cdecf04 ;
+        oboe:measurementFor  oquo:observation-ae157e88-fb9c-4ae2-944b-fe32e25d6469 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:instant-e65bfe85-8e1a-4a2a-97e2-2e8ad6a52aae
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.629Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d70cd36a-7f33-4867-b38c-28096ba9f58f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.518Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-a730b053-f149-4ac9-a846-a389072f83d4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-3c50500f-d916-40d6-8a71-1e0f6a1ce576 ;
+        time:hasTime              oquo:instant-4b09b9de-6a94-4304-ad17-a7c7026d3438 ;
+        oquo:hasObservation       oquo:observation-48105d9c-b5b8-4801-a171-9a2b257625ed .
+
+oquo:instant-1c3924e5-a7c5-4312-b1ac-ee1441997359
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:11.833Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-e2095726-7c13-4c6f-aea1-0c5cbbc1797a
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-81bc587a-5caf-455b-a56c-18d58c053f5c ;
+        oboe:measurementFor  oquo:observation-8d984396-6bf2-46cb-995a-96114ff45208 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-6c02ba79-2266-4c51-9c91-9336df0737fc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-81bc587a-5caf-455b-a56c-18d58c053f5c ;
+        time:hasTime              oquo:instant-88b118e5-6088-41ef-a874-9199a24795e8 ;
+        oquo:hasObservation       oquo:observation-8d984396-6bf2-46cb-995a-96114ff45208 .
+
+oquo:instant-7ddc2758-5682-4ba0-a46e-88ade12feb7b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.567Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-f56989c2-c4a5-49d4-b4e8-d57c7607136a
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-3143688d-b7a3-430b-b011-6398d2a669be ;
+        oboe:measurementFor  oquo:observation-9b9b04e4-6059-4cbb-b8e6-6f91a5985624 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-8d984396-6bf2-46cb-995a-96114ff45208
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e2095726-7c13-4c6f-aea1-0c5cbbc1797a ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-88b118e5-6088-41ef-a874-9199a24795e8 .
+
+oquo:observation-c53f7296-3c50-4193-91df-436bd5a53df8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3cd3862d-452f-408f-977b-381413ab9380 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-a7f36eda-f283-460e-8017-10aa711b1612 .
+
+oquo:evaluation-e9d83c41-b209-44e7-956e-78a037843b58
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-09c74abf-1aeb-4b7c-8b2e-e7e685047cb3 ;
+        time:hasTime              oquo:instant-d4c8aa96-57dc-4bdc-a471-54eb155b8fe7 ;
+        oquo:hasObservation       oquo:observation-2c7161c5-180e-4f7b-ade9-016dfdbe4246 .
+
+oquo:observation-733f1284-1708-4960-9d1b-35532b1c389e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9175cc4e-dac0-40c6-88b1-9b6c8b080fc2 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-f8da9c9f-0c35-4d97-a930-28ce59cef451 .
+
+oquo:qualityValue-7c7df540-52e3-483a-89e4-a834718ef128
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-53600d07-384c-4ea4-acfc-f8b196ae8fd4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b4f16564-f733-4af2-bd5e-10431baedd86 .
+
+oquo:metric-f1b5489a-6a21-4963-9702-e293ef4c6ceb
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-6a909929-e1fd-4828-8e7d-60f0859c0ed0 ;
+        oboe:measurementFor  oquo:observation-158ae28e-1d15-46cf-a8f6-b22b77b2ed19 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-20ca8db7-2ced-4c79-b643-a75fea4d1000
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bce5cca8-498b-4b94-8da9-ad37292fc220 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-4fb71963-2554-44d3-a76a-a396ca0ae951 .
+
+oquo:instant-de59c811-01a4-4def-b31f-89d28b941d2c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.469Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-87adf7b8-089d-488e-8889-c229ef3e7f8e
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-59e94a29-a7dd-46b9-8517-7ba056cadef4 ;
+        oboe:measurementFor  oquo:observation-359ad13c-aa09-4a7c-8023-7f39156f5a69 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-e931d9cb-3481-45a2-9764-92ff3192fa8d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0acdf230-b924-4cd6-83c3-112c5950aeee ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-99d6b2cd-a6b5-416c-a9c3-6d8ba1ee297b .
+
+oquo:evaluation-cc311ec1-28f6-4d67-b9f4-6e9a20c35ac4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-594d1d71-d708-428f-8e69-341663d37846 ;
+        time:hasTime              oquo:instant-f8da9c9f-0c35-4d97-a930-28ce59cef451 ;
+        oquo:hasObservation       oquo:observation-733f1284-1708-4960-9d1b-35532b1c389e .
+
+oquo:instant-2b4c802c-61d1-4ac4-927f-057a42b829d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.55Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-af52be45-5f92-473b-8bdd-69c026d7eb0c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3cd3862d-452f-408f-977b-381413ab9380 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-510340c8-ef80-4d11-9402-e831b9146cf9 .
+
+oquo:qualityValue-90136cd2-6f4c-496b-b205-576a25c7d924
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ae5337bf-26a7-4d13-b368-3481ad8d2791 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-553e63e1-9318-4eb9-bf5b-2973e9f41f78 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-6bcc348d-00f9-4e13-b202-82e5c56698e1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-c0deef11-67ee-47f9-ae0b-723333773665 ;
+        time:hasTime              oquo:instant-b9078adb-4e60-4372-8433-9a6e8a98b98f ;
+        oquo:hasObservation       oquo:observation-6a7d98fc-59fe-4881-9e71-846610c68a2b .
+
+oquo:evaluation-d92bd616-f943-4594-a590-e001772d6198
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-ed20d2da-18ab-4636-a708-eccd2263b35e ;
+        time:hasTime              oquo:instant-563afe42-9523-4fef-a5a4-8c10e50c1323 ;
+        oquo:hasObservation       oquo:observation-204c7518-f688-491e-ba29-3b9cd5eafc6c .
+
+oquo:metric-8bc89650-c398-48d2-9132-33291c81204f
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-dc0e7504-139d-4558-b49f-c906ecf0ae03 ;
+        oboe:measurementFor  oquo:observation-59a82ad2-5b97-42ac-b918-d37eb307d6cb ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-bc50dd49-acdc-4543-b12f-4bc83bc1fedc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.568Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-b9078adb-4e60-4372-8433-9a6e8a98b98f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.535Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e19a4049-d5e2-4646-9bbc-28d5b33dc056
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.347Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-9950e82d-e95f-4e65-997e-b26972253e19
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-475931eb-af27-41be-8c6b-501d13994a12 ;
+        time:hasTime              oquo:instant-7ddc2758-5682-4ba0-a46e-88ade12feb7b ;
+        oquo:hasObservation       oquo:observation-f4f14b01-cc5f-45ab-b9cc-a8d601a5e0e6 .
+
+oquo:qualityValue-33a531db-3d4d-4bb6-aacc-847690639111
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5251787f-7a16-403d-9905-5646e24b36a4 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-98377fa5-ea2b-47ae-a28a-8abe965ef287 .
+
+oquo:instant-ae1c6ce6-717d-481d-abae-7c9f7fb9f207
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.517Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f91443e4-d8d6-40da-9ed2-99d9c9596aec
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4fe68823-1da6-40c6-aa50-b202d4198fa6 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c4509415-615a-49f9-98db-31ffbb591e50 .
+
+<http://opendata.inrae.fr/holooligo/2.0>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-98377fa5-ea2b-47ae-a28a-8abe965ef287
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-33a531db-3d4d-4bb6-aacc-847690639111 ;
+        time:hasTime              oquo:instant-79219e57-141d-4451-95ff-e7d9103a278d ;
+        oquo:hasObservation       oquo:observation-626271b8-400b-4c96-af14-60f6b457e408 .
+
+oquo:metric-c667c90d-51cf-45b6-be52-b6733d7e6099
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-475931eb-af27-41be-8c6b-501d13994a12 ;
+        oboe:measurementFor  oquo:observation-f4f14b01-cc5f-45ab-b9cc-a8d601a5e0e6 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-ef8f9f73-f4a9-42ce-ac6c-2b2a6a1df6a5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-43c0f86c-7721-4ae3-8d65-9cdffb4d8281 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-17990f9f-4a0c-4045-bbc4-dbabd940a50c .
+
+oquo:instant-90fa9a25-a814-45e5-a64b-d975e5910243
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-2c7161c5-180e-4f7b-ade9-016dfdbe4246
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b3670b23-dbd6-4136-a405-e9c81150bdb8 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-d4c8aa96-57dc-4bdc-a471-54eb155b8fe7 .
+
+oquo:observation-48105d9c-b5b8-4801-a171-9a2b257625ed
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-211756e0-e682-405c-837f-7e90ed6f1b91 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-4b09b9de-6a94-4304-ad17-a7c7026d3438 .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-8b59328b-db4f-471d-a6ba-7e4c0c12c05b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.573Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-c2085d69-be12-4e0f-bff1-173f25b2aec0
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-1669f3a0-0c33-4a90-b8fe-5c205603bfa5 ;
+        oboe:measurementFor  oquo:observation-5c02d82e-57c5-4c6a-a2b1-d7145aff0052 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:qualityValue-b4319cf1-91ad-4c5b-8d78-39bfc3266244
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-20b63cdc-12cb-4baa-a424-025957861b04 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-51c19711-736b-4285-b803-862108545bbe .
+
+oquo:instant-4b09b9de-6a94-4304-ad17-a7c7026d3438
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:11.838Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9751995a-1ad6-479c-835c-d5268cdecf04
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9bc92af5-7ebb-4826-9dad-146e9904c3a3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a9789db3-15ac-4448-bf20-6cc7bb9100bb .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-a05b2ed0-5ec6-499a-a320-c7de673f0538
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-dc0e7504-139d-4558-b49f-c906ecf0ae03 ;
+        time:hasTime              oquo:instant-2139c2ea-1f5c-4a3a-b108-a7201d6fbd58 ;
+        oquo:hasObservation       oquo:observation-59a82ad2-5b97-42ac-b918-d37eb307d6cb .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-9b9b04e4-6059-4cbb-b8e6-6f91a5985624
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f56989c2-c4a5-49d4-b4e8-d57c7607136a ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-0b85ecf5-c9d1-43be-82bd-414e2e1ef2b1 .
+
+oquo:qualityValue-e113bb32-5e2c-4ea0-a73f-4888902cb444
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-17eca24f-01fa-4ced-b739-9b97c90a4275 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fee2b789-afd8-40ac-a0f9-628354675016 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:qualityValue-6a909929-e1fd-4828-8e7d-60f0859c0ed0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f1b5489a-6a21-4963-9702-e293ef4c6ceb ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0d64a6ec-07fd-4bcd-9f6e-82653f18c93b .
+
+oquo:observation-7a2f474c-4130-42f3-a242-4725630f37b0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8b034d24-7f3f-4c8c-83b1-f4ed1c2ba132 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-3f8db75c-460c-4ee3-90d9-3ec27c9a23fe .
+
+oquo:qualityValue-f4c8cdbb-9db0-472f-95ec-b3218798bc4f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9178f7b3-8c5a-48a5-b915-8bb9e0ba13c0 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8e768e61-b06a-42c7-baa1-c8c20617321a .
+
+oquo:instant-69d10616-a4c8-45a9-8201-952250115c88
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.563Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-448519c7-fc43-4abd-b589-9074edfe4278
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-2eb7425f-80be-469d-ad0c-a3d68f6404fc ;
+        oboe:measurementFor  oquo:observation-f41789ca-9b45-4096-99ff-c28b159e0415 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-188da370-ee84-4569-8cd2-78474200ff64
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-4acbc95e-3ca6-4e78-ac77-91501100146a ;
+        time:hasTime              oquo:instant-db002fc0-dfaa-42c2-9068-d459d3ad3212 ;
+        oquo:hasObservation       oquo:observation-14d3da67-a56b-4979-8835-156e75a9dba7 .
+
+oquo:qualityValue-fc89cc66-60e5-4c52-8be9-7562e0080497
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a65846c0-bab2-4f8a-9340-4b94e7c2b2d5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-004c0b39-2e55-4a8c-870f-ddbb72d49f10 .
+
+oquo:instant-f85a1cda-aa91-4b89-a0f8-9658a2f3b3cc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:11.83Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-c4509415-615a-49f9-98db-31ffbb591e50
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-f91443e4-d8d6-40da-9ed2-99d9c9596aec ;
+        time:hasTime              oquo:instant-29a5bc10-ba16-47ca-9296-df78c233c118 ;
+        oquo:hasObservation       oquo:observation-72135c68-c394-45b1-98c4-b555dc7458c2 .
+
+oquo:observation-e5f800d9-8f77-4829-a870-b9dd8bed5de5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-17eca24f-01fa-4ced-b739-9b97c90a4275 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-f85a1cda-aa91-4b89-a0f8-9658a2f3b3cc .
+
+oquo:instant-a4237ab6-80c7-40b5-965b-8bc63a703fb8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:11.784Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-bd93dfc3-ad56-4b49-a609-b17feecd1569
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-2eb7425f-80be-469d-ad0c-a3d68f6404fc ;
+        time:hasTime              oquo:instant-e19a4049-d5e2-4646-9bbc-28d5b33dc056 ;
+        oquo:hasObservation       oquo:observation-f41789ca-9b45-4096-99ff-c28b159e0415 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-a7f36eda-f283-460e-8017-10aa711b1612
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.536Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-8c5e1c19-f959-43a2-9b7d-632519850596
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5332b23e-39c5-48aa-942c-f5c83aec30f4 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-3a530198-d496-4a1f-a4ac-9e49c6e8e3bd .
+
+oquo:observation-ae157e88-fb9c-4ae2-944b-fe32e25d6469
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9bc92af5-7ebb-4826-9dad-146e9904c3a3 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-69d10616-a4c8-45a9-8201-952250115c88 .
+
+oquo:metric-ae5337bf-26a7-4d13-b368-3481ad8d2791
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-90136cd2-6f4c-496b-b205-576a25c7d924 ;
+        oboe:measurementFor  oquo:observation-ca4ca43c-0975-4276-92ae-6a1913b63355 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-f8da9c9f-0c35-4d97-a930-28ce59cef451
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.443Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-158ae28e-1d15-46cf-a8f6-b22b77b2ed19
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f1b5489a-6a21-4963-9702-e293ef4c6ceb ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-8b59328b-db4f-471d-a6ba-7e4c0c12c05b .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-c8318954-b228-4b19-ac0d-cd75161240ec
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a33b8f0c-c79b-42c2-8768-9ffc3ba83f5a ;
+        oboe:measurementFor  oquo:observation-9d1d60fe-7eb1-4b29-a8a3-421d0c23e4e9 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-14d3da67-a56b-4979-8835-156e75a9dba7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-feec85a3-55ec-461e-8683-c30a339c55ce ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-db002fc0-dfaa-42c2-9068-d459d3ad3212 .
+
+oquo:instant-88b118e5-6088-41ef-a874-9199a24795e8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.569Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-61b4a92e-77ac-403b-a717-97c7b72d6ee3
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ed20d2da-18ab-4636-a708-eccd2263b35e ;
+        oboe:measurementFor  oquo:observation-204c7518-f688-491e-ba29-3b9cd5eafc6c ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-553e63e1-9318-4eb9-bf5b-2973e9f41f78
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-90136cd2-6f4c-496b-b205-576a25c7d924 ;
+        time:hasTime              oquo:instant-90fa9a25-a814-45e5-a64b-d975e5910243 ;
+        oquo:hasObservation       oquo:observation-ca4ca43c-0975-4276-92ae-6a1913b63355 .
+
+oquo:evaluation-2427efc5-26c8-4820-834e-0a122789bb21
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-7981a8dc-aee9-4478-8eb8-82a5e695824e ;
+        time:hasTime              oquo:instant-514a4305-9c69-4b27-934c-d5e02a8739a6 ;
+        oquo:hasObservation       oquo:observation-92243b9d-4237-47af-8a3a-7a7dc61ad409 .
+
+oquo:metric-4fe68823-1da6-40c6-aa50-b202d4198fa6
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-f91443e4-d8d6-40da-9ed2-99d9c9596aec ;
+        oboe:measurementFor  oquo:observation-72135c68-c394-45b1-98c4-b555dc7458c2 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-29a74c05-74e0-4990-8a51-148d97ea7843
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-1669f3a0-0c33-4a90-b8fe-5c205603bfa5 ;
+        time:hasTime              oquo:instant-ae1c6ce6-717d-481d-abae-7c9f7fb9f207 ;
+        oquo:hasObservation       oquo:observation-5c02d82e-57c5-4c6a-a2b1-d7145aff0052 .
+
+oquo:observation-0935eafa-07d8-4443-a636-8743328791db
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a65846c0-bab2-4f8a-9340-4b94e7c2b2d5 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-de59c811-01a4-4def-b31f-89d28b941d2c .
+
+oquo:evaluation-004c0b39-2e55-4a8c-870f-ddbb72d49f10
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-fc89cc66-60e5-4c52-8be9-7562e0080497 ;
+        time:hasTime              oquo:instant-de59c811-01a4-4def-b31f-89d28b941d2c ;
+        oquo:hasObservation       oquo:observation-0935eafa-07d8-4443-a636-8743328791db .
+
+oquo:observation-ca4ca43c-0975-4276-92ae-6a1913b63355
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ae5337bf-26a7-4d13-b368-3481ad8d2791 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-90fa9a25-a814-45e5-a64b-d975e5910243 .
+
+oquo:observation-359ad13c-aa09-4a7c-8023-7f39156f5a69
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-87adf7b8-089d-488e-8889-c229ef3e7f8e ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-ad6eafb2-649a-4b09-a09c-898c1ce97f08 .
+
+oquo:observation-a2745c30-8d3d-4ab9-b3a2-693c3a60f71b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6a79ee16-a8a1-4668-9cc0-366d86cf14e7 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-01d5cfeb-a4cf-41d0-85d4-2b1a2ea0d556 .
+
+oquo:qualityValue-7981a8dc-aee9-4478-8eb8-82a5e695824e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a56b3a2a-611d-4b17-9262-3db8e6ef182c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2427efc5-26c8-4820-834e-0a122789bb21 .
+
+oquo:evaluation-51c19711-736b-4285-b803-862108545bbe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-b4319cf1-91ad-4c5b-8d78-39bfc3266244 ;
+        time:hasTime              oquo:instant-2b4c802c-61d1-4ac4-927f-057a42b829d9 ;
+        oquo:hasObservation       oquo:observation-7b275ea7-3d7d-4977-ac8b-d55074f8da8e .
+
+oquo:qualityValue-a33b8f0c-c79b-42c2-8768-9ffc3ba83f5a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c8318954-b228-4b19-ac0d-cd75161240ec ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-31705944-fe8c-4356-8f6c-421c4345b2d7 .
+
+oquo:metric-6a79ee16-a8a1-4668-9cc0-366d86cf14e7
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-3173ee83-1a6b-4010-9e2c-d2fa9063491f ;
+        oboe:measurementFor  oquo:observation-a2745c30-8d3d-4ab9-b3a2-693c3a60f71b ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:metric-53600d07-384c-4ea4-acfc-f8b196ae8fd4
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-7c7df540-52e3-483a-89e4-a834718ef128 ;
+        oboe:measurementFor  oquo:observation-c47c58c5-98eb-4ffb-af7e-5a49864b5331 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:instant-3a530198-d496-4a1f-a4ac-9e49c6e8e3bd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.572Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-7b275ea7-3d7d-4977-ac8b-d55074f8da8e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-20b63cdc-12cb-4baa-a424-025957861b04 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-2b4c802c-61d1-4ac4-927f-057a42b829d9 .
+
+oquo:evaluation-17990f9f-4a0c-4045-bbc4-dbabd940a50c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-ef8f9f73-f4a9-42ce-ac6c-2b2a6a1df6a5 ;
+        time:hasTime              oquo:instant-1c3924e5-a7c5-4312-b1ac-ee1441997359 ;
+        oquo:hasObservation       oquo:observation-41fb9dea-37dd-409b-9b9f-5de3df875601 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-17eca24f-01fa-4ced-b739-9b97c90a4275
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-e113bb32-5e2c-4ea0-a73f-4888902cb444 ;
+        oboe:measurementFor  oquo:observation-e5f800d9-8f77-4829-a870-b9dd8bed5de5 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:metric-8b034d24-7f3f-4c8c-83b1-f4ed1c2ba132
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2ee74202-d4ce-4eda-86db-e55c6861ac8c ;
+        oboe:measurementFor  oquo:observation-7a2f474c-4130-42f3-a242-4725630f37b0 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:metric-3cd3862d-452f-408f-977b-381413ab9380
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-af52be45-5f92-473b-8bdd-69c026d7eb0c ;
+        oboe:measurementFor  oquo:observation-c53f7296-3c50-4193-91df-436bd5a53df8 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-563afe42-9523-4fef-a5a4-8c10e50c1323
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.448Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-5fc20e9b-85f5-4cfb-ad61-36e336e76580
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4a606e27-cb10-41be-84d6-8639b87a72aa ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-562ad77c-11f7-4b42-b3b9-61043889565c .
+
+oquo:metric-ad98a6dc-15fa-40f0-943d-fb0e4ede51c9
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cb5bbb2a-09dd-4ac1-aa65-457fc113b447 ;
+        oboe:measurementFor  oquo:observation-d616dc17-70d7-4001-b601-f20996609071 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:evaluation-d47afa62-43ec-4af2-a58b-cf9b34173074
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-2ee74202-d4ce-4eda-86db-e55c6861ac8c ;
+        time:hasTime              oquo:instant-3f8db75c-460c-4ee3-90d9-3ec27c9a23fe ;
+        oquo:hasObservation       oquo:observation-7a2f474c-4130-42f3-a242-4725630f37b0 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-bdd0c914-86a1-4921-ba68-2b674e64552f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:11.835Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fee2b789-afd8-40ac-a0f9-628354675016
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-e113bb32-5e2c-4ea0-a73f-4888902cb444 ;
+        time:hasTime              oquo:instant-f85a1cda-aa91-4b89-a0f8-9658a2f3b3cc ;
+        oquo:hasObservation       oquo:observation-e5f800d9-8f77-4829-a870-b9dd8bed5de5 .
+
+oquo:instant-01d5cfeb-a4cf-41d0-85d4-2b1a2ea0d556
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.538Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-204c7518-f688-491e-ba29-3b9cd5eafc6c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-61b4a92e-77ac-403b-a717-97c7b72d6ee3 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-563afe42-9523-4fef-a5a4-8c10e50c1323 .
+
+oquo:qualityValue-d9a01f31-8d4d-4bf6-bd04-e33be7751186
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5332b23e-39c5-48aa-942c-f5c83aec30f4 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1738ee19-8dbe-4a55-a1fc-f3ee28b7e84f .
+
+oquo:qualityValue-594d1d71-d708-428f-8e69-341663d37846
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9175cc4e-dac0-40c6-88b1-9b6c8b080fc2 ;
+        res:hasLiteralValue    "2.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cc311ec1-28f6-4d67-b9f4-6e9a20c35ac4 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-dc0e7504-139d-4558-b49f-c906ecf0ae03
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8bc89650-c398-48d2-9132-33291c81204f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a05b2ed0-5ec6-499a-a320-c7de673f0538 .
+
+oquo:metric-9178f7b3-8c5a-48a5-b915-8bb9e0ba13c0
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-f4c8cdbb-9db0-472f-95ec-b3218798bc4f ;
+        oboe:measurementFor  oquo:observation-c124b838-cb91-4834-be92-2e02bc364bc8 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-59e94a29-a7dd-46b9-8517-7ba056cadef4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-87adf7b8-089d-488e-8889-c229ef3e7f8e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-171b3ea5-8560-4f5f-843e-6e0da5eceb89 .
+
+oquo:observation-5c02d82e-57c5-4c6a-a2b1-d7145aff0052
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c2085d69-be12-4e0f-bff1-173f25b2aec0 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-ae1c6ce6-717d-481d-abae-7c9f7fb9f207 .
+
+oquo:qualityValue-3173ee83-1a6b-4010-9e2c-d2fa9063491f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6a79ee16-a8a1-4668-9cc0-366d86cf14e7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ea34f236-e0a9-4ac8-b176-3296c86814d6 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-29a5bc10-ba16-47ca-9296-df78c233c118
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.565Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-3143688d-b7a3-430b-b011-6398d2a669be
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f56989c2-c4a5-49d4-b4e8-d57c7607136a ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5d3e990e-8d79-40a5-8674-e88a7b2c2b8d .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-9d1d60fe-7eb1-4b29-a8a3-421d0c23e4e9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c8318954-b228-4b19-ac0d-cd75161240ec ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-e65bfe85-8e1a-4a2a-97e2-2e8ad6a52aae .
+
+oquo:qualityValue-c0deef11-67ee-47f9-ae0b-723333773665
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2b6b70ac-d838-4020-9473-577d0e9b21a7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6bcc348d-00f9-4e13-b202-82e5c56698e1 .
+
+oquo:metric-2b6b70ac-d838-4020-9473-577d0e9b21a7
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c0deef11-67ee-47f9-ae0b-723333773665 ;
+        oboe:measurementFor  oquo:observation-6a7d98fc-59fe-4881-9e71-846610c68a2b ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-171b3ea5-8560-4f5f-843e-6e0da5eceb89
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-59e94a29-a7dd-46b9-8517-7ba056cadef4 ;
+        time:hasTime              oquo:instant-ad6eafb2-649a-4b09-a09c-898c1ce97f08 ;
+        oquo:hasObservation       oquo:observation-359ad13c-aa09-4a7c-8023-7f39156f5a69 .
+
+oquo:evaluation-510340c8-ef80-4d11-9402-e831b9146cf9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-af52be45-5f92-473b-8bdd-69c026d7eb0c ;
+        time:hasTime              oquo:instant-a7f36eda-f283-460e-8017-10aa711b1612 ;
+        oquo:hasObservation       oquo:observation-c53f7296-3c50-4193-91df-436bd5a53df8 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-ea34f236-e0a9-4ac8-b176-3296c86814d6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:inputData             <http://opendata.inrae.fr/holooligo/2.0> ;
+        res:producedQualityValue  oquo:qualityValue-3173ee83-1a6b-4010-9e2c-d2fa9063491f ;
+        time:hasTime              oquo:instant-01d5cfeb-a4cf-41d0-85d4-2b1a2ea0d556 ;
+        oquo:hasObservation       oquo:observation-a2745c30-8d3d-4ab9-b3a2-693c3a60f71b .
+
+oquo:instant-2139c2ea-1f5c-4a3a-b108-a7201d6fbd58
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.6Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-bce5cca8-498b-4b94-8da9-ad37292fc220
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-74bd4b73-fe21-426f-ae57-1fa4f97a8005 ;
+        oboe:measurementFor  oquo:observation-20ca8db7-2ced-4c79-b643-a75fea4d1000 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:instant-ad6eafb2-649a-4b09-a09c-898c1ce97f08
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T12:28:12.56Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-92243b9d-4237-47af-8a3a-7a7dc61ad409
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a56b3a2a-611d-4b17-9262-3db8e6ef182c ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-514a4305-9c69-4b27-934c-d5e02a8739a6 .
+
+oquo:observation-d616dc17-70d7-4001-b601-f20996609071
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ad98a6dc-15fa-40f0-943d-fb0e4ede51c9 ;
+        oboe:ofEntity        <http://opendata.inrae.fr/holooligo/2.0> ;
+        time:hasTime         oquo:instant-d70cd36a-7f33-4867-b38c-28096ba9f58f .
