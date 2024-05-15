@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:qualityValue-5d9407de-f9f0-4c69-ae2c-ed7ff0f4d20c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4f4f2d85-67cd-493e-958f-06dbee288fbb ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e6ed023-1a5c-4a18-91b8-3b0bab9fa782 .
+
+oquo:metric-0b26df1f-fa97-45f7-8db5-c3e637173be9
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-f709dff2-3612-42fc-9558-f5851d0bf0ec ;
+        oboe:measurementFor  oquo:observation-1ad018be-81a5-432d-97b0-d6f9a55da891 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-2714b75d-d332-44cd-ac8a-42387f011a67
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bc9ce5d0-2f94-4b12-8a44-96d06a463a36 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-ad93f4dc-acc7-4ded-b84a-4c5b9efdf0d5 .
+
+oquo:qualityValue-258b4998-23ac-4ee9-8cf2-e8b273314fd3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ad9b8b4b-57aa-4274-859f-4f692bf46f1e ;
+        res:hasLiteralValue    "0.2894736842105263"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fddb661e-a5aa-4cb8-80b9-fe0b550d150d .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-a32ef62e-0f37-4648-a399-8d8ce63ffe66
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c9c2e4fc-3df0-4f00-bf6a-43d62c62d843 ;
+        time:hasTime              oquo:instant-0a151b1c-12bd-4627-b170-83d3338550cc ;
+        oquo:hasObservation       oquo:observation-f2f4fa10-2569-48eb-9758-c327fbad9ddc .
+
+oquo:qualityValue-54264eff-4d17-4bf0-aa3b-f17cdb275904
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ec0fc289-a62f-42b8-a7b3-a059632c8309 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1d3409c1-32eb-4762-b40e-b1b19629d38a .
+
+oquo:instant-24906dd8-4baf-4f42-be84-20f8df21bf91
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.634Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-bc9ce5d0-2f94-4b12-8a44-96d06a463a36
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4267f38b-e11d-45cf-8bf0-0941692a9fe0 ;
+        oboe:measurementFor  oquo:observation-2714b75d-d332-44cd-ac8a-42387f011a67 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-e2697bbb-f225-4660-8820-cee8d34b2dc3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2a85a29b-d866-4997-bf19-e296018aa585 ;
+        res:hasLiteralValue    "0.009216589861751152"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-87ced8db-8f09-4222-8875-869f16d11e24 .
+
+oquo:evaluation-9aa2e86e-6704-4bea-964d-cb49dad4edd5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-64c8ba95-1168-406c-911f-3ed2f824ae3f ;
+        time:hasTime              oquo:instant-3f95f2c1-049c-4f5b-8ffe-bedccac23726 ;
+        oquo:hasObservation       oquo:observation-b8963364-f273-4185-9b86-6c27580c389b .
+
+oquo:instant-26f2291c-350f-40b1-8fce-349b57441371
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.069Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-398a03b0-b33f-4463-accc-5767c05edb1b
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-92bfdeaf-e2bf-4883-8bec-e4d1208f6b09 ;
+        oboe:measurementFor  oquo:observation-e6d7465f-fd4b-43ec-9235-8c4e357077d2 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-51e21580-6682-4565-b0eb-7f1dee71693e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.78Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f709dff2-3612-42fc-9558-f5851d0bf0ec
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0b26df1f-fa97-45f7-8db5-c3e637173be9 ;
+        res:hasLiteralValue    "1086.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ab9f1c24-6eaa-4f27-989a-aee02840d1a7 .
+
+oquo:instant-17cdf742-e0cd-4f42-b29a-0675b5062e25
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.868Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1c2510ba-b70e-4fe7-a05b-64c060e3c9b6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-92bfdeaf-e2bf-4883-8bec-e4d1208f6b09 ;
+        time:hasTime              oquo:instant-f178cd2f-080b-49f9-8fe1-69ce33905813 ;
+        oquo:hasObservation       oquo:observation-e6d7465f-fd4b-43ec-9235-8c4e357077d2 .
+
+oquo:observation-8ce8a9a3-33e4-46bf-9efa-d745bd2012eb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-375f8a19-d094-4bc6-bde1-bf061c203cde ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-4c854f61-ff36-4a2e-bf70-402dd51a92a7 .
+
+oquo:instant-59bab2af-83c7-4454-ac70-baa3b7b5d358
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.077Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-84e0ff37-7b8a-4e29-93ff-c82f4ce26487
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.873Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5f9636e6-bab9-4bb3-b461-266c355a8c63
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a0c13e86-8aed-4462-ab75-2e2a96610531 ;
+        time:hasTime              oquo:instant-35fcd501-9ea5-4a78-98e0-0e5969e7cb32 ;
+        oquo:hasObservation       oquo:observation-a0e81df6-13a4-4ea7-af14-81e35353b6c1 .
+
+oquo:observation-96c40457-910b-4364-8703-d27fe1aab272
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3994bc8f-d6f8-4828-9cd5-182ba5316b9a ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-020e94da-0e79-46d9-9169-2614e3e1a186 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-3247a27d-da0a-409d-b076-bb59363670f4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.079Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-5a08b4fb-be92-4912-aa77-d7b0b3f5add5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-459a30fa-8a09-45f5-bb3f-f26e4051a71c ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-b59f361a-c746-4889-acbc-cd92869f9e45 .
+
+oquo:qualityValue-f0420eff-9dcd-4e40-963b-d41cbe87831c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5dc9919e-9495-417a-ae5a-b90399f4f707 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2f44c8ba-b7bf-4905-ba6f-2183a9f11611 .
+
+oquo:observation-626d832a-2427-40b4-9841-89cfab1a95e4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-880724c5-2a56-407e-be73-9cf94d1fe1f5 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-c5a3e2dd-02a4-4700-b8f3-fbb69e7aa8cb .
+
+oquo:qualityValue-098221cd-bc8e-456b-b9bb-8891ddfb7adf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3994bc8f-d6f8-4828-9cd5-182ba5316b9a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a23c9daf-7260-4e27-b87b-1b407380b0df .
+
+oquo:qualityValue-64c8ba95-1168-406c-911f-3ed2f824ae3f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7e91c786-027b-48bb-b49d-4ef578dcc8dc ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9aa2e86e-6704-4bea-964d-cb49dad4edd5 .
+
+oquo:qualityValue-4267f38b-e11d-45cf-8bf0-0941692a9fe0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bc9ce5d0-2f94-4b12-8a44-96d06a463a36 ;
+        res:hasLiteralValue    "0.16129032258064516"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-df50af3a-f94d-46e6-a5f3-7b0c8dfbab72 .
+
+oquo:qualityValue-f9b81ce8-14e0-4bd3-9487-4d346d3021fe
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0efcefe2-703b-49d9-a489-77886963e649 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3c632886-6f8e-4ffd-802a-252a20c3840b .
+
+oquo:metric-ad9b8b4b-57aa-4274-859f-4f692bf46f1e
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-258b4998-23ac-4ee9-8cf2-e8b273314fd3 ;
+        oboe:measurementFor  oquo:observation-42f5ef0e-809a-427b-a83b-e021c175694f ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:metric-ee428604-af79-41e6-9652-929248d9e25d
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-145cefcf-591e-4ade-bc1f-123c4e03808e ;
+        oboe:measurementFor  oquo:observation-17a609b7-8dec-4399-bb10-8d78f9196cc2 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-82e787e5-7f29-402d-8a81-23d4c58683e5
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-9af424b1-35a1-4e4f-8c23-a95430cf9b42 ;
+        oboe:measurementFor  oquo:observation-eb27205a-b7ba-4b79-a7ff-e4bfed66fb29 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:metric-2a85a29b-d866-4997-bf19-e296018aa585
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-e2697bbb-f225-4660-8820-cee8d34b2dc3 ;
+        oboe:measurementFor  oquo:observation-62cf5588-1424-4b03-88e6-c2d27553ac3b ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:evaluation-e3831a06-5caa-4bdc-b7af-49914e6fe69c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-edb2e716-f502-4a70-9242-63c86b2750c6 ;
+        time:hasTime              oquo:instant-87fe787c-45c4-4dfc-a8e5-43de2d8a0fce ;
+        oquo:hasObservation       oquo:observation-95190629-91f1-44cf-95ac-bc110a01b238 .
+
+oquo:qualityValue-945d33bb-3697-47c3-b867-687c7d7977fe
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-748a855e-8dd1-48ac-ad3f-8e799c322f19 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1f0dfbaf-1e12-4d3d-8c97-722626ff2b38 .
+
+oquo:instant-020e94da-0e79-46d9-9169-2614e3e1a186
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.8Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-91058590-5fd2-4b2b-956a-e2caa2df8692
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.924Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-4ffa38c3-4694-42e0-9353-50103b555b83
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4f4f2d85-67cd-493e-958f-06dbee288fbb ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-585ba255-1030-4f0b-ac45-51c44035f014 .
+
+oquo:observation-a0748f16-1272-4deb-b7a2-c8f516d4fc92
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cd081608-d1dd-44f8-9526-147708594e92 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-af10d286-bb3e-4ec3-8a09-136587e8c01a .
+
+oquo:observation-bc240000-693b-4229-8804-e556ba795882
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-80cd5188-5e34-49fe-8afc-9d9c8ff31f36 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-17cdf742-e0cd-4f42-b29a-0675b5062e25 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-30ca1fb9-a582-4e8c-acb3-0039a0528e1a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.636Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-843f981c-add9-4d22-bf17-bcbb9da7dd45
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0efcefe2-703b-49d9-a489-77886963e649 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-e08a2fff-6907-46ca-a011-e8a869bd8128 .
+
+oquo:observation-5eea994a-db3e-434e-8b1f-bafb4debbe41
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0f52624b-95ce-41cc-9b46-7b484bb0e55d ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-51e21580-6682-4565-b0eb-7f1dee71693e .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-459a30fa-8a09-45f5-bb3f-f26e4051a71c
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-282be02b-b114-4582-af7a-56d56f46c488 ;
+        oboe:measurementFor  oquo:observation-5a08b4fb-be92-4912-aa77-d7b0b3f5add5 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:metric-8a2b28e9-e808-4d5c-8aa0-987e3f47f1ac
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-edb2e716-f502-4a70-9242-63c86b2750c6 ;
+        oboe:measurementFor  oquo:observation-95190629-91f1-44cf-95ac-bc110a01b238 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-3994bc8f-d6f8-4828-9cd5-182ba5316b9a
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-098221cd-bc8e-456b-b9bb-8891ddfb7adf ;
+        oboe:measurementFor  oquo:observation-96c40457-910b-4364-8703-d27fe1aab272 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:metric-80cd5188-5e34-49fe-8afc-9d9c8ff31f36
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-dc6f43a8-d95d-4d2c-89a0-ed77566baff2 ;
+        oboe:measurementFor  oquo:observation-bc240000-693b-4229-8804-e556ba795882 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:instant-9c31a0e1-99a4-4adf-8b35-0676902f5326
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.081Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1d7d8358-02b8-4162-97e4-f8849722e1f7
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-2cdffd8e-4cb0-4a45-b19c-a523662a1b76 ;
+        oboe:measurementFor  oquo:observation-79ab9160-ead7-43f7-ab93-f6c50c281fff ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-6341404c-e8d8-48b1-84f7-f2710cf7cc54
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9807e515-faf2-4744-bdba-b2969466417c ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-2f0b538a-3859-4a71-b48f-b9f3bcfcc8ee .
+
+oquo:observation-f3571e85-d4ed-4e96-b572-9defea300f44
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5dc9919e-9495-417a-ae5a-b90399f4f707 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-84e0ff37-7b8a-4e29-93ff-c82f4ce26487 .
+
+oquo:evaluation-3e6ed023-1a5c-4a18-91b8-3b0bab9fa782
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5d9407de-f9f0-4c69-ae2c-ed7ff0f4d20c ;
+        time:hasTime              oquo:instant-585ba255-1030-4f0b-ac45-51c44035f014 ;
+        oquo:hasObservation       oquo:observation-4ffa38c3-4694-42e0-9353-50103b555b83 .
+
+oquo:instant-52da7646-35b3-4b4e-8348-b6b702352622
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.804Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-edb2e716-f502-4a70-9242-63c86b2750c6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8a2b28e9-e808-4d5c-8aa0-987e3f47f1ac ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e3831a06-5caa-4bdc-b7af-49914e6fe69c .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:evaluation-f15798b7-5f61-485b-bc65-dfde3caf872b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ab5cff43-a970-4b63-be05-a1b04038854d ;
+        time:hasTime              oquo:instant-c5a3e2dd-02a4-4700-b8f3-fbb69e7aa8cb ;
+        oquo:hasObservation       oquo:observation-626d832a-2427-40b4-9841-89cfab1a95e4 .
+
+oquo:qualityValue-ced8cb67-7980-4552-b7c3-42899d40b664
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-065e295e-f81a-4a88-bc8c-43ab0005cef7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c2b8af45-13b6-4051-86bc-05edb96e0385 .
+
+oquo:evaluation-26f664a5-465a-4acf-b364-464776fb8cfb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-dc6f43a8-d95d-4d2c-89a0-ed77566baff2 ;
+        time:hasTime              oquo:instant-17cdf742-e0cd-4f42-b29a-0675b5062e25 ;
+        oquo:hasObservation       oquo:observation-bc240000-693b-4229-8804-e556ba795882 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-135bdf3d-5722-48d8-86f7-27b39b3b49a4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-375f8a19-d094-4bc6-bde1-bf061c203cde ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5b45f931-cd89-4823-ae99-0e2942b31e47 .
+
+oquo:qualityValue-1a8f5aa5-f921-45e9-bc47-b69439f4d80b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0f52624b-95ce-41cc-9b46-7b484bb0e55d ;
+        res:hasLiteralValue    "0.9113924050632911"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9e1c92a0-a8d4-49de-b65e-e2daf606dc68 .
+
+oquo:qualityValue-0134f026-931a-4cf8-8fa4-5fb9583f6d38
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cd081608-d1dd-44f8-9526-147708594e92 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f5acfff9-535b-43bb-a600-82f2b1d53959 .
+
+oquo:metric-9807e515-faf2-4744-bdba-b2969466417c
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-488301d2-d4eb-4f25-8e12-9fd02d821d6c ;
+        oboe:measurementFor  oquo:observation-6341404c-e8d8-48b1-84f7-f2710cf7cc54 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:evaluation-8ea8ff1a-1b87-4bb6-a511-cb21fdc0a171
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-49f265f1-7a3b-4d00-b9aa-ff9f1287813c ;
+        time:hasTime              oquo:instant-9c31a0e1-99a4-4adf-8b35-0676902f5326 ;
+        oquo:hasObservation       oquo:observation-fe13b310-4767-40c8-b8f0-638126f6e195 .
+
+oquo:metric-bfb77344-52cc-4254-ba06-b2f8ffb68e28
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-7d0f53c5-69e3-4d13-88ec-5ccf1f3aa618 ;
+        oboe:measurementFor  oquo:observation-f7630a3d-b3e6-4482-9fdd-232b43712526 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-585ba255-1030-4f0b-ac45-51c44035f014
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.074Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-35fcd501-9ea5-4a78-98e0-0e5969e7cb32
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.478Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1d3409c1-32eb-4762-b40e-b1b19629d38a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-54264eff-4d17-4bf0-aa3b-f17cdb275904 ;
+        time:hasTime              oquo:instant-91058590-5fd2-4b2b-956a-e2caa2df8692 ;
+        oquo:hasObservation       oquo:observation-891438b3-dee6-46cc-938b-cf8e2e09b917 .
+
+oquo:metric-5dc9919e-9495-417a-ae5a-b90399f4f707
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f0420eff-9dcd-4e40-963b-d41cbe87831c ;
+        oboe:measurementFor  oquo:observation-f3571e85-d4ed-4e96-b572-9defea300f44 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:instant-c5a3e2dd-02a4-4700-b8f3-fbb69e7aa8cb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:48.792Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f2f4fa10-2569-48eb-9758-c327fbad9ddc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7076fdaf-3ea5-45f2-b77e-b9a28332f0b5 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-0a151b1c-12bd-4627-b170-83d3338550cc .
+
+oquo:evaluation-1f0dfbaf-1e12-4d3d-8c97-722626ff2b38
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-945d33bb-3697-47c3-b867-687c7d7977fe ;
+        time:hasTime              oquo:instant-390db544-b832-4d07-847e-200622185ab7 ;
+        oquo:hasObservation       oquo:observation-24effcdf-7d34-4925-a08c-c06728a65aa4 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-337277f9-4b5c-4747-a47c-1fdc2f87aa6b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.071Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-dc6f43a8-d95d-4d2c-89a0-ed77566baff2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-80cd5188-5e34-49fe-8afc-9d9c8ff31f36 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-26f664a5-465a-4acf-b364-464776fb8cfb .
+
+oquo:metric-dd94cd40-eea9-49ec-adae-89f88d4c8acd
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-3e4c8840-c727-4513-8d0a-562f0607ace2 ;
+        oboe:measurementFor  oquo:observation-37deb107-313d-4d6b-8be1-ffeb3855047e ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-95190629-91f1-44cf-95ac-bc110a01b238
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8a2b28e9-e808-4d5c-8aa0-987e3f47f1ac ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-87fe787c-45c4-4dfc-a8e5-43de2d8a0fce .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-4d8eafcc-01cb-49a8-8680-e59ccd3a5af4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ea774b17-6720-46f1-842e-c04e04edb2fd ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-72c890e1-bcb6-4fdb-9465-58ebc00ea1eb .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-8b6fcb71-f953-4fce-b61c-6e3077cb7adf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-29f6ecfd-eb3d-467b-99b4-bd802b315fe9 ;
+        time:hasTime              oquo:instant-52da7646-35b3-4b4e-8348-b6b702352622 ;
+        oquo:hasObservation       oquo:observation-735a8e4e-d9b1-4901-ac6c-287136a78625 .
+
+oquo:evaluation-017bc8f5-df66-444a-95ab-996964c501e5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7d0f53c5-69e3-4d13-88ec-5ccf1f3aa618 ;
+        time:hasTime              oquo:instant-337277f9-4b5c-4747-a47c-1fdc2f87aa6b ;
+        oquo:hasObservation       oquo:observation-f7630a3d-b3e6-4482-9fdd-232b43712526 .
+
+oquo:evaluation-9dcf7879-7fed-43df-8bc7-ff999030df30
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1ccc6f08-4a40-4ac0-98c5-aa22cddb2608 ;
+        time:hasTime              oquo:instant-72c890e1-bcb6-4fdb-9465-58ebc00ea1eb ;
+        oquo:hasObservation       oquo:observation-4d8eafcc-01cb-49a8-8680-e59ccd3a5af4 .
+
+oquo:qualityValue-2cdffd8e-4cb0-4a45-b19c-a523662a1b76
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1d7d8358-02b8-4162-97e4-f8849722e1f7 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ec75ae05-7aff-4652-9f42-51407569938d .
+
+oquo:metric-7e91c786-027b-48bb-b49d-4ef578dcc8dc
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-64c8ba95-1168-406c-911f-3ed2f824ae3f ;
+        oboe:measurementFor  oquo:observation-b8963364-f273-4185-9b86-6c27580c389b ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:metric-4f4f2d85-67cd-493e-958f-06dbee288fbb
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-5d9407de-f9f0-4c69-ae2c-ed7ff0f4d20c ;
+        oboe:measurementFor  oquo:observation-4ffa38c3-4694-42e0-9353-50103b555b83 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-74c0aa7c-889e-4218-b61c-e293681b8a74
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3e4c8840-c727-4513-8d0a-562f0607ace2 ;
+        time:hasTime              oquo:instant-59bab2af-83c7-4454-ac70-baa3b7b5d358 ;
+        oquo:hasObservation       oquo:observation-37deb107-313d-4d6b-8be1-ffeb3855047e .
+
+oquo:evaluation-d0679494-9587-4559-8d6d-5d06f616c7fc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-282be02b-b114-4582-af7a-56d56f46c488 ;
+        time:hasTime              oquo:instant-b59f361a-c746-4889-acbc-cd92869f9e45 ;
+        oquo:hasObservation       oquo:observation-5a08b4fb-be92-4912-aa77-d7b0b3f5add5 .
+
+oquo:evaluation-df50af3a-f94d-46e6-a5f3-7b0c8dfbab72
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4267f38b-e11d-45cf-8bf0-0941692a9fe0 ;
+        time:hasTime              oquo:instant-ad93f4dc-acc7-4ded-b84a-4c5b9efdf0d5 ;
+        oquo:hasObservation       oquo:observation-2714b75d-d332-44cd-ac8a-42387f011a67 .
+
+oquo:observation-fe13b310-4767-40c8-b8f0-638126f6e195
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5bf7c4e6-0c05-415b-910f-69bda502a2b9 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-9c31a0e1-99a4-4adf-8b35-0676902f5326 .
+
+oquo:evaluation-a9cbd137-7b66-414d-b3b4-0b9b646ca0ad
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-05adc324-de79-43cf-a1b7-83564a781c95 ;
+        time:hasTime              oquo:instant-149e898c-d1f4-43fb-9fe1-c11ee6b2b27f ;
+        oquo:hasObservation       oquo:observation-1d905f2f-ed34-4dff-b1d1-1b5af3334cc3 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-048648ab-f848-4173-bb57-2e108dd4ba5b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.932Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fddb661e-a5aa-4cb8-80b9-fe0b550d150d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-258b4998-23ac-4ee9-8cf2-e8b273314fd3 ;
+        time:hasTime              oquo:instant-67b2dd1e-3f8d-4419-99d2-6d794bab9d6e ;
+        oquo:hasObservation       oquo:observation-42f5ef0e-809a-427b-a83b-e021c175694f .
+
+<http://www.cvrgrid.org/files/ECGOntologyv1.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:qualityValue-05adc324-de79-43cf-a1b7-83564a781c95
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-50a42700-2704-45d8-8f1c-1dcaab9958e7 ;
+        res:hasLiteralValue    "0.46835443037974683"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a9cbd137-7b66-414d-b3b4-0b9b646ca0ad .
+
+oquo:instant-2f0b538a-3859-4a71-b48f-b9f3bcfcc8ee
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:48.788Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-3e4c8840-c727-4513-8d0a-562f0607ace2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dd94cd40-eea9-49ec-adae-89f88d4c8acd ;
+        res:hasLiteralValue    "0.2647058823529412"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-74c0aa7c-889e-4218-b61c-e293681b8a74 .
+
+oquo:observation-f7630a3d-b3e6-4482-9fdd-232b43712526
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bfb77344-52cc-4254-ba06-b2f8ffb68e28 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-337277f9-4b5c-4747-a47c-1fdc2f87aa6b .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-a23c9daf-7260-4e27-b87b-1b407380b0df
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-098221cd-bc8e-456b-b9bb-8891ddfb7adf ;
+        time:hasTime              oquo:instant-020e94da-0e79-46d9-9169-2614e3e1a186 ;
+        oquo:hasObservation       oquo:observation-96c40457-910b-4364-8703-d27fe1aab272 .
+
+oquo:instant-e08a2fff-6907-46ca-a011-e8a869bd8128
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.821Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-32a4654c-e148-405d-a5b2-a22f20c2b7f5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-065e295e-f81a-4a88-bc8c-43ab0005cef7 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-26f2291c-350f-40b1-8fce-349b57441371 .
+
+oquo:qualityValue-145cefcf-591e-4ade-bc1f-123c4e03808e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ee428604-af79-41e6-9652-929248d9e25d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1863cbdc-48cf-4b0e-8064-f81eb85fdc4f .
+
+oquo:evaluation-ec75ae05-7aff-4652-9f42-51407569938d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2cdffd8e-4cb0-4a45-b19c-a523662a1b76 ;
+        time:hasTime              oquo:instant-3247a27d-da0a-409d-b076-bb59363670f4 ;
+        oquo:hasObservation       oquo:observation-79ab9160-ead7-43f7-ab93-f6c50c281fff .
+
+oquo:observation-eb27205a-b7ba-4b79-a7ff-e4bfed66fb29
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-82e787e5-7f29-402d-8a81-23d4c58683e5 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-34a50cc3-d1fc-41ae-8527-1d792d29ccf7 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-29f6ecfd-eb3d-467b-99b4-bd802b315fe9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-98f9ed4f-32f1-411d-8642-31e60f406468 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8b6fcb71-f953-4fce-b61c-6e3077cb7adf .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-f3f5754f-e858-45bc-a1ca-2f83b77b5bd1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-488301d2-d4eb-4f25-8e12-9fd02d821d6c ;
+        time:hasTime              oquo:instant-2f0b538a-3859-4a71-b48f-b9f3bcfcc8ee ;
+        oquo:hasObservation       oquo:observation-6341404c-e8d8-48b1-84f7-f2710cf7cc54 .
+
+oquo:instant-4c854f61-ff36-4a2e-bf70-402dd51a92a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.875Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-17a609b7-8dec-4399-bb10-8d78f9196cc2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ee428604-af79-41e6-9652-929248d9e25d ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-26ff988b-6fdc-451b-ae71-2bbb62fc6201 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-0f52624b-95ce-41cc-9b46-7b484bb0e55d
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1a8f5aa5-f921-45e9-bc47-b69439f4d80b ;
+        oboe:measurementFor  oquo:observation-5eea994a-db3e-434e-8b1f-bafb4debbe41 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-149e898c-d1f4-43fb-9fe1-c11ee6b2b27f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.919Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-34a50cc3-d1fc-41ae-8527-1d792d29ccf7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:48.583Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-2f44c8ba-b7bf-4905-ba6f-2183a9f11611
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f0420eff-9dcd-4e40-963b-d41cbe87831c ;
+        time:hasTime              oquo:instant-84e0ff37-7b8a-4e29-93ff-c82f4ce26487 ;
+        oquo:hasObservation       oquo:observation-f3571e85-d4ed-4e96-b572-9defea300f44 .
+
+oquo:metric-ec0fc289-a62f-42b8-a7b3-a059632c8309
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-54264eff-4d17-4bf0-aa3b-f17cdb275904 ;
+        oboe:measurementFor  oquo:observation-891438b3-dee6-46cc-938b-cf8e2e09b917 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-5bf7c4e6-0c05-415b-910f-69bda502a2b9
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-49f265f1-7a3b-4d00-b9aa-ff9f1287813c ;
+        oboe:measurementFor  oquo:observation-fe13b310-4767-40c8-b8f0-638126f6e195 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-92bfdeaf-e2bf-4883-8bec-e4d1208f6b09
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-398a03b0-b33f-4463-accc-5767c05edb1b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1c2510ba-b70e-4fe7-a05b-64c060e3c9b6 .
+
+oquo:instant-0a151b1c-12bd-4627-b170-83d3338550cc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.871Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1863cbdc-48cf-4b0e-8064-f81eb85fdc4f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-145cefcf-591e-4ade-bc1f-123c4e03808e ;
+        time:hasTime              oquo:instant-26ff988b-6fdc-451b-ae71-2bbb62fc6201 ;
+        oquo:hasObservation       oquo:observation-17a609b7-8dec-4399-bb10-8d78f9196cc2 .
+
+oquo:observation-1d905f2f-ed34-4dff-b1d1-1b5af3334cc3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-50a42700-2704-45d8-8f1c-1dcaab9958e7 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-149e898c-d1f4-43fb-9fe1-c11ee6b2b27f .
+
+oquo:metric-ba919f3b-fc42-426c-a8e1-cc20617eed4c
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-a0c13e86-8aed-4462-ab75-2e2a96610531 ;
+        oboe:measurementFor  oquo:observation-a0e81df6-13a4-4ea7-af14-81e35353b6c1 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:evaluation-87ced8db-8f09-4222-8875-869f16d11e24
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e2697bbb-f225-4660-8820-cee8d34b2dc3 ;
+        time:hasTime              oquo:instant-048648ab-f848-4173-bb57-2e108dd4ba5b ;
+        oquo:hasObservation       oquo:observation-62cf5588-1424-4b03-88e6-c2d27553ac3b .
+
+oquo:evaluation-ab9f1c24-6eaa-4f27-989a-aee02840d1a7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f709dff2-3612-42fc-9558-f5851d0bf0ec ;
+        time:hasTime              oquo:instant-24906dd8-4baf-4f42-be84-20f8df21bf91 ;
+        oquo:hasObservation       oquo:observation-1ad018be-81a5-432d-97b0-d6f9a55da891 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-37deb107-313d-4d6b-8be1-ffeb3855047e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dd94cd40-eea9-49ec-adae-89f88d4c8acd ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-59bab2af-83c7-4454-ac70-baa3b7b5d358 .
+
+oquo:qualityValue-1ccc6f08-4a40-4ac0-98c5-aa22cddb2608
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ea774b17-6720-46f1-842e-c04e04edb2fd ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9dcf7879-7fed-43df-8bc7-ff999030df30 .
+
+oquo:qualityValue-282be02b-b114-4582-af7a-56d56f46c488
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-459a30fa-8a09-45f5-bb3f-f26e4051a71c ;
+        res:hasLiteralValue    "0.7647058823529411"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d0679494-9587-4559-8d6d-5d06f616c7fc .
+
+oquo:observation-fdafe07b-ba23-460f-9594-598cc1e96f80
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f71fb095-8edd-425a-aa86-f743951cf8a1 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-37ede26c-19f5-489f-a9ba-a3298457b3cc .
+
+oquo:metric-cd081608-d1dd-44f8-9526-147708594e92
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-0134f026-931a-4cf8-8fa4-5fb9583f6d38 ;
+        oboe:measurementFor  oquo:observation-a0748f16-1272-4deb-b7a2-c8f516d4fc92 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:metric-ea774b17-6720-46f1-842e-c04e04edb2fd
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-1ccc6f08-4a40-4ac0-98c5-aa22cddb2608 ;
+        oboe:measurementFor  oquo:observation-4d8eafcc-01cb-49a8-8680-e59ccd3a5af4 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-735a8e4e-d9b1-4901-ac6c-287136a78625
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-98f9ed4f-32f1-411d-8642-31e60f406468 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-52da7646-35b3-4b4e-8348-b6b702352622 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-87fe787c-45c4-4dfc-a8e5-43de2d8a0fce
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:48.547Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-26ff988b-6fdc-451b-ae71-2bbb62fc6201
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.798Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-f71fb095-8edd-425a-aa86-f743951cf8a1
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-559a4d25-c50c-4158-a07b-253fc3dc6b64 ;
+        oboe:measurementFor  oquo:observation-fdafe07b-ba23-460f-9594-598cc1e96f80 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:metric-375f8a19-d094-4bc6-bde1-bf061c203cde
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-135bdf3d-5722-48d8-86f7-27b39b3b49a4 ;
+        oboe:measurementFor  oquo:observation-8ce8a9a3-33e4-46bf-9efa-d745bd2012eb ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:metric-065e295e-f81a-4a88-bc8c-43ab0005cef7
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ced8cb67-7980-4552-b7c3-42899d40b664 ;
+        oboe:measurementFor  oquo:observation-32a4654c-e148-405d-a5b2-a22f20c2b7f5 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-98f9ed4f-32f1-411d-8642-31e60f406468
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-29f6ecfd-eb3d-467b-99b4-bd802b315fe9 ;
+        oboe:measurementFor  oquo:observation-735a8e4e-d9b1-4901-ac6c-287136a78625 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-50a42700-2704-45d8-8f1c-1dcaab9958e7
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-05adc324-de79-43cf-a1b7-83564a781c95 ;
+        oboe:measurementFor  oquo:observation-1d905f2f-ed34-4dff-b1d1-1b5af3334cc3 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:metric-7076fdaf-3ea5-45f2-b77e-b9a28332f0b5
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c9c2e4fc-3df0-4f00-bf6a-43d62c62d843 ;
+        oboe:measurementFor  oquo:observation-f2f4fa10-2569-48eb-9758-c327fbad9ddc ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-4b680f6f-887d-4d26-ab2c-6fa0e1c0a7d0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f4d550ca-b325-4cd3-82bc-cb9cddcaf1e7 ;
+        res:hasLiteralValue    "0.9907834101382489"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5b88ea6f-4b45-46bd-ba2a-0101dcb9dada .
+
+oquo:qualityValue-ab5cff43-a970-4b63-be05-a1b04038854d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-880724c5-2a56-407e-be73-9cf94d1fe1f5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f15798b7-5f61-485b-bc65-dfde3caf872b .
+
+oquo:qualityValue-9af424b1-35a1-4e4f-8c23-a95430cf9b42
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-82e787e5-7f29-402d-8a81-23d4c58683e5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b32150bf-f74b-4175-a909-9bba0465cd57 .
+
+oquo:evaluation-5b45f931-cd89-4823-ae99-0e2942b31e47
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-135bdf3d-5722-48d8-86f7-27b39b3b49a4 ;
+        time:hasTime              oquo:instant-4c854f61-ff36-4a2e-bf70-402dd51a92a7 ;
+        oquo:hasObservation       oquo:observation-8ce8a9a3-33e4-46bf-9efa-d745bd2012eb .
+
+oquo:instant-b59f361a-c746-4889-acbc-cd92869f9e45
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.926Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b32150bf-f74b-4175-a909-9bba0465cd57
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9af424b1-35a1-4e4f-8c23-a95430cf9b42 ;
+        time:hasTime              oquo:instant-34a50cc3-d1fc-41ae-8527-1d792d29ccf7 ;
+        oquo:hasObservation       oquo:observation-eb27205a-b7ba-4b79-a7ff-e4bfed66fb29 .
+
+oquo:evaluation-7f6996a6-2646-4539-9d76-e5cf370132a0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-559a4d25-c50c-4158-a07b-253fc3dc6b64 ;
+        time:hasTime              oquo:instant-37ede26c-19f5-489f-a9ba-a3298457b3cc ;
+        oquo:hasObservation       oquo:observation-fdafe07b-ba23-460f-9594-598cc1e96f80 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-0efcefe2-703b-49d9-a489-77886963e649
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-f9b81ce8-14e0-4bd3-9487-4d346d3021fe ;
+        oboe:measurementFor  oquo:observation-843f981c-add9-4d22-bf17-bcbb9da7dd45 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:instant-390db544-b832-4d07-847e-200622185ab7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.083Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-79ab9160-ead7-43f7-ab93-f6c50c281fff
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1d7d8358-02b8-4162-97e4-f8849722e1f7 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-3247a27d-da0a-409d-b076-bb59363670f4 .
+
+oquo:observation-a0e81df6-13a4-4ea7-af14-81e35353b6c1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ba919f3b-fc42-426c-a8e1-cc20617eed4c ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-35fcd501-9ea5-4a78-98e0-0e5969e7cb32 .
+
+oquo:evaluation-f5acfff9-535b-43bb-a600-82f2b1d53959
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0134f026-931a-4cf8-8fa4-5fb9583f6d38 ;
+        time:hasTime              oquo:instant-af10d286-bb3e-4ec3-8a09-136587e8c01a ;
+        oquo:hasObservation       oquo:observation-a0748f16-1272-4deb-b7a2-c8f516d4fc92 .
+
+oquo:instant-37ede26c-19f5-489f-a9ba-a3298457b3cc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.876Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5b88ea6f-4b45-46bd-ba2a-0101dcb9dada
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4b680f6f-887d-4d26-ab2c-6fa0e1c0a7d0 ;
+        time:hasTime              oquo:instant-30ca1fb9-a582-4e8c-acb3-0039a0528e1a ;
+        oquo:hasObservation       oquo:observation-babc97f9-ba2a-4031-8218-afb07187c843 .
+
+oquo:observation-babc97f9-ba2a-4031-8218-afb07187c843
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f4d550ca-b325-4cd3-82bc-cb9cddcaf1e7 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-30ca1fb9-a582-4e8c-acb3-0039a0528e1a .
+
+oquo:observation-891438b3-dee6-46cc-938b-cf8e2e09b917
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ec0fc289-a62f-42b8-a7b3-a059632c8309 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-91058590-5fd2-4b2b-956a-e2caa2df8692 .
+
+oquo:evaluation-c2b8af45-13b6-4051-86bc-05edb96e0385
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ced8cb67-7980-4552-b7c3-42899d40b664 ;
+        time:hasTime              oquo:instant-26f2291c-350f-40b1-8fce-349b57441371 ;
+        oquo:hasObservation       oquo:observation-32a4654c-e148-405d-a5b2-a22f20c2b7f5 .
+
+oquo:evaluation-3c632886-6f8e-4ffd-802a-252a20c3840b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f9b81ce8-14e0-4bd3-9487-4d346d3021fe ;
+        time:hasTime              oquo:instant-e08a2fff-6907-46ca-a011-e8a869bd8128 ;
+        oquo:hasObservation       oquo:observation-843f981c-add9-4d22-bf17-bcbb9da7dd45 .
+
+oquo:qualityValue-c9c2e4fc-3df0-4f00-bf6a-43d62c62d843
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7076fdaf-3ea5-45f2-b77e-b9a28332f0b5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a32ef62e-0f37-4648-a399-8d8ce63ffe66 .
+
+oquo:instant-ad93f4dc-acc7-4ded-b84a-4c5b9efdf0d5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.011Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e6d7465f-fd4b-43ec-9235-8c4e357077d2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-398a03b0-b33f-4463-accc-5767c05edb1b ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-f178cd2f-080b-49f9-8fe1-69ce33905813 .
+
+oquo:observation-24effcdf-7d34-4925-a08c-c06728a65aa4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-748a855e-8dd1-48ac-ad3f-8e799c322f19 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-390db544-b832-4d07-847e-200622185ab7 .
+
+oquo:observation-42f5ef0e-809a-427b-a83b-e021c175694f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ad9b8b4b-57aa-4274-859f-4f692bf46f1e ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-67b2dd1e-3f8d-4419-99d2-6d794bab9d6e .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-62cf5588-1424-4b03-88e6-c2d27553ac3b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2a85a29b-d866-4997-bf19-e296018aa585 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-048648ab-f848-4173-bb57-2e108dd4ba5b .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-72c890e1-bcb6-4fdb-9465-58ebc00ea1eb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.084Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-1ad018be-81a5-432d-97b0-d6f9a55da891
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0b26df1f-fa97-45f7-8db5-c3e637173be9 ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-24906dd8-4baf-4f42-be84-20f8df21bf91 .
+
+oquo:instant-67b2dd1e-3f8d-4419-99d2-6d794bab9d6e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:49.929Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-f178cd2f-080b-49f9-8fe1-69ce33905813
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:48.845Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-488301d2-d4eb-4f25-8e12-9fd02d821d6c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9807e515-faf2-4744-bdba-b2969466417c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f3f5754f-e858-45bc-a1ca-2f83b77b5bd1 .
+
+oquo:metric-f4d550ca-b325-4cd3-82bc-cb9cddcaf1e7
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-4b680f6f-887d-4d26-ab2c-6fa0e1c0a7d0 ;
+        oboe:measurementFor  oquo:observation-babc97f9-ba2a-4031-8218-afb07187c843 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:qualityValue-559a4d25-c50c-4158-a07b-253fc3dc6b64
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f71fb095-8edd-425a-aa86-f743951cf8a1 ;
+        res:hasLiteralValue    "0.8497695852534562"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7f6996a6-2646-4539-9d76-e5cf370132a0 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-3f95f2c1-049c-4f5b-8ffe-bedccac23726
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.075Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a0c13e86-8aed-4462-ab75-2e2a96610531
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ba919f3b-fc42-426c-a8e1-cc20617eed4c ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5f9636e6-bab9-4bb3-b461-266c355a8c63 .
+
+oquo:instant-af10d286-bb3e-4ec3-8a09-136587e8c01a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T09:07:50.038Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-880724c5-2a56-407e-be73-9cf94d1fe1f5
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-ab5cff43-a970-4b63-be05-a1b04038854d ;
+        oboe:measurementFor  oquo:observation-626d832a-2427-40b4-9841-89cfab1a95e4 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:metric-748a855e-8dd1-48ac-ad3f-8e799c322f19
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-945d33bb-3697-47c3-b867-687c7d7977fe ;
+        oboe:measurementFor  oquo:observation-24effcdf-7d34-4925-a08c-c06728a65aa4 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-b8963364-f273-4185-9b86-6c27580c389b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7e91c786-027b-48bb-b49d-4ef578dcc8dc ;
+        oboe:ofEntity        <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        time:hasTime         oquo:instant-3f95f2c1-049c-4f5b-8ffe-bedccac23726 .
+
+oquo:qualityValue-49f265f1-7a3b-4d00-b9aa-ff9f1287813c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5bf7c4e6-0c05-415b-910f-69bda502a2b9 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8ea8ff1a-1b87-4bb6-a511-cb21fdc0a171 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-7d0f53c5-69e3-4d13-88ec-5ccf1f3aa618
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bfb77344-52cc-4254-ba06-b2f8ffb68e28 ;
+        res:hasLiteralValue    "0.7105263157894737"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-017bc8f5-df66-444a-95ab-996964c501e5 .
+
+oquo:evaluation-9e1c92a0-a8d4-49de-b65e-e2daf606dc68
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:inputData             <http://www.cvrgrid.org/files/ECGOntologyv1.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1a8f5aa5-f921-45e9-bc47-b69439f4d80b ;
+        time:hasTime              oquo:instant-51e21580-6682-4565-b0eb-7f1dee71693e ;
+        oquo:hasObservation       oquo:observation-5eea994a-db3e-434e-8b1f-bafb4debbe41 .

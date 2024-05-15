@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:qualityValue-a6609055-da58-4e20-9f50-305e82b84f01
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-897ed598-8c65-4bd6-8ce5-e3e2d4bfda5a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f7d8bfbd-1cd9-4aa4-bac4-e097a8666f61 .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-0c80000f-bedc-413d-84d5-bf1fb82d08ac
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6df98616-dbf5-4d6b-9bf4-648b5c4c5969 ;
+        res:hasLiteralValue    "0.8981481481481481"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-24c4e459-6da1-420f-937c-12ae9ec63f13 .
+
+oquo:observation-facfef31-1f4d-4ee3-ae31-fac1d1e5120d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d7d751f4-5ad9-4f54-8172-f8b0ebf61cbc ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-10d23442-04b1-4114-99b9-0e9931669814 .
+
+oquo:observation-d204791d-9582-48c5-bcd6-b5232b44000a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-df1a0143-1d43-445b-8ba3-748b36de998b ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-431742dc-9030-462d-871d-36fd236301b8 .
+
+oquo:metric-2ae6e9c8-ef2f-4ae8-b9dd-9804398b7675
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-0a776c18-db2d-451c-88e2-c20ca24790e8 ;
+        oboe:measurementFor  oquo:observation-0e6f09f7-0a42-48f7-ab51-7a30a6b0ec23 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-35dc88e4-b283-463e-bda9-7a7deef2b2cf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.263Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-6df98616-dbf5-4d6b-9bf4-648b5c4c5969
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0c80000f-bedc-413d-84d5-bf1fb82d08ac ;
+        oboe:measurementFor  oquo:observation-5056b726-4ec1-402f-9658-0732968ba6bd ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-ec8a0f74-1275-470e-804e-1230ca8377c9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.471Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-0adb64c1-1ec0-4e99-9bbe-07b10240b25b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e02fbdca-783a-42a3-8de7-fcf4c49f6f3b ;
+        time:hasTime              oquo:instant-625aa0d8-cc97-4c2f-9016-9689f43e0401 ;
+        oquo:hasObservation       oquo:observation-b53871fb-16cc-4e63-9c36-3c6ec0db48b4 .
+
+oquo:metric-3f851c3a-fbba-42ac-b07d-bf2b734eb2eb
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-20d572fa-1542-444f-a963-406f38d3e3c1 ;
+        oboe:measurementFor  oquo:observation-2c64268a-e842-45ac-ad82-47d1251f2e0b ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-a6ad670c-8ed8-40bf-99c7-8ded7986821a
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-fef06718-da93-41e4-80eb-7dd207e2b62d ;
+        oboe:measurementFor  oquo:observation-3b208178-7096-4dd4-9a6c-3a1b9c345df6 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-7cd725ae-b24d-4c23-a557-00374093b6b2
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-4c960beb-d74f-4358-958e-5c69d137366d ;
+        oboe:measurementFor  oquo:observation-b48f60b0-107c-4fb4-8993-f39b517b8139 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:evaluation-c54d8b21-c21a-4606-8a4b-437b2fd0598f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ce69c0b1-7c53-4c47-98d4-1ee1dbf2433d ;
+        time:hasTime              oquo:instant-77a31b26-864f-433e-9c9d-78b0b330cc46 ;
+        oquo:hasObservation       oquo:observation-8f424a56-271a-4843-85ed-423e83241f19 .
+
+oquo:instant-0fa4555c-4e0b-4bdd-a123-fff06550acc7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.614Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-5652995a-2e0c-4b87-adfd-d52ea76a8c08
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-428e9a2a-9e77-402f-84b2-1f96ac40f699 ;
+        oboe:measurementFor  oquo:observation-25355549-7ad0-4345-bd50-6a647909f4fc ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:evaluation-fcbe56ac-ac77-4125-b802-278afdcb53d9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-dcef3098-0b88-4dcb-ae7d-54edabf5731b ;
+        time:hasTime              oquo:instant-9ce789bc-4220-442f-9c35-48a6ef2906a6 ;
+        oquo:hasObservation       oquo:observation-9bc51f27-46d8-45ec-b2b6-338e5c083d32 .
+
+oquo:qualityValue-016bb834-d72b-4f72-9637-af14a11ab83a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-86d9c6b8-ddda-4b10-837d-47c8b8e1220f ;
+        res:hasLiteralValue    "0.8397790055248618"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e298014-a967-4638-a630-583189277b41 .
+
+oquo:instant-f9a04b8c-06ee-4df7-a043-9976508cfca2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.007Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-86d9c6b8-ddda-4b10-837d-47c8b8e1220f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-016bb834-d72b-4f72-9637-af14a11ab83a ;
+        oboe:measurementFor  oquo:observation-47b22255-eaad-4aeb-a757-01ffa115a9ed ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-f838b4ef-8b97-4476-aba8-be45590d9db2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c132a02b-fcae-4eb8-835a-91bf1c37e252 ;
+        time:hasTime              oquo:instant-0fa4555c-4e0b-4bdd-a123-fff06550acc7 ;
+        oquo:hasObservation       oquo:observation-de2dab69-02c4-4c53-9e30-4dde00197e07 .
+
+oquo:evaluation-f1dbc751-6f80-4da5-9515-2666ac80207a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a48aa69e-ac76-4c4c-9901-bab300efdc80 ;
+        time:hasTime              oquo:instant-ac30e9d8-ef4e-4ee4-94e4-e1ae0a4260b1 ;
+        oquo:hasObservation       oquo:observation-457ae4c1-1a1c-4499-bd54-fa82cc9de26b .
+
+oquo:instant-625aa0d8-cc97-4c2f-9016-9689f43e0401
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.692Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-2b0e00e9-f82d-47fc-b69b-d1638410e663
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-94a0b613-83f3-4bfe-8818-f561ef05481b ;
+        oboe:measurementFor  oquo:observation-1c2d972f-098f-467f-8353-0893737cf5b3 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:instant-326af856-e7ce-41c2-ab1b-480676a2f317
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.847Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-05706f56-1efc-4c33-a3ae-18d8868c7483
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e8395fd7-f044-49ff-b546-01d343009d5c ;
+        oboe:measurementFor  oquo:observation-541921bc-26d0-4c49-9714-d7613240fe80 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-fef06718-da93-41e4-80eb-7dd207e2b62d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a6ad670c-8ed8-40bf-99c7-8ded7986821a ;
+        res:hasLiteralValue    "0.4861878453038674"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e7e81f90-cbc2-486a-8921-108fe3ceacd8 .
+
+oquo:metric-bfee73f2-a513-45d0-98aa-eed71478f8ad
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-7881fa48-b9f5-4dad-bdfc-dc7cf9599a6f ;
+        oboe:measurementFor  oquo:observation-8fde9a2d-f563-4413-866b-9c349e1ff6d1 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:qualityValue-20d572fa-1542-444f-a963-406f38d3e3c1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3f851c3a-fbba-42ac-b07d-bf2b734eb2eb ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d1a26726-68be-41a9-8b62-55917ff7ea1b .
+
+oquo:evaluation-286ff8b2-f6b2-496f-9905-f919d0e7e681
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bf47c56d-838b-4360-b845-19e28012f04a ;
+        time:hasTime              oquo:instant-074197fd-1c93-4912-b219-fdc21d605cdc ;
+        oquo:hasObservation       oquo:observation-f42d2b2c-58d2-4623-94b4-1422e19360e0 .
+
+oquo:evaluation-784e99a5-009a-411c-a3b7-2bab75118d6c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-94a0b613-83f3-4bfe-8818-f561ef05481b ;
+        time:hasTime              oquo:instant-00440d0a-dc55-496c-99fb-f4ed9556d6b2 ;
+        oquo:hasObservation       oquo:observation-1c2d972f-098f-467f-8353-0893737cf5b3 .
+
+oquo:qualityValue-0f40ea88-7dc6-4ad5-89bc-a06e0a4ee94b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ad2587bc-1e27-418c-8efc-c345b99253bb ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-87e1ff4a-be1c-4669-afcb-2c2e137aac91 .
+
+oquo:qualityValue-a5f88e3c-5ae5-4d7e-9bf2-037af27c989f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-22aaa197-e330-47bf-9ec8-c7e4995405df ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-95663bed-5725-4d9a-aba0-86a14d196bde .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-705f1fef-ac15-42e4-9243-d9cb457e577e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d0a4be2b-e52f-4384-9f8a-5eda26046312 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-0c2ab220-09e1-48a8-9f72-b8c116333075 .
+
+oquo:instant-5f917607-67c2-419c-828d-ec6d4aa79fdc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-24c4e459-6da1-420f-937c-12ae9ec63f13
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0c80000f-bedc-413d-84d5-bf1fb82d08ac ;
+        time:hasTime              oquo:instant-ec8a0f74-1275-470e-804e-1230ca8377c9 ;
+        oquo:hasObservation       oquo:observation-5056b726-4ec1-402f-9658-0732968ba6bd .
+
+oquo:observation-541921bc-26d0-4c49-9714-d7613240fe80
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-05706f56-1efc-4c33-a3ae-18d8868c7483 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-9717ec7e-0678-492d-a3be-1b0c4936390b .
+
+oquo:observation-8fde9a2d-f563-4413-866b-9c349e1ff6d1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bfee73f2-a513-45d0-98aa-eed71478f8ad ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-0661a298-a16d-46e2-a6fb-66cfb4b2eef7 .
+
+oquo:observation-a830c4f6-ac23-4025-b291-369f7b8e9056
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-22aaa197-e330-47bf-9ec8-c7e4995405df ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-e69dcd4a-abb7-4b9d-bac4-2c8d6db1a9c6 .
+
+oquo:metric-d7d751f4-5ad9-4f54-8172-f8b0ebf61cbc
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5b8d931a-ff2d-42bc-912a-3343bd152864 ;
+        oboe:measurementFor  oquo:observation-facfef31-1f4d-4ee3-ae31-fac1d1e5120d ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:metric-6d1eacbf-189d-435c-999c-7cfd578ec606
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-dcef3098-0b88-4dcb-ae7d-54edabf5731b ;
+        oboe:measurementFor  oquo:observation-9bc51f27-46d8-45ec-b2b6-338e5c083d32 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:instant-47c32fef-25d5-47d7-af0d-555fe4d8a743
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.008Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-077af6af-819a-451b-a858-7cb7651bd3fb
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-12ed6952-04dc-4314-a04e-e95a47946e49 ;
+        oboe:measurementFor  oquo:observation-946d0c64-49a7-4a85-ac83-7c0033ea2d0f ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-488d2434-744e-4b19-ad49-cf958ffb980b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a5119ad7-2abc-4575-8916-bc65888eaf66 ;
+        time:hasTime              oquo:instant-66cdeaf7-2219-43be-a307-ce85bfe093a0 ;
+        oquo:hasObservation       oquo:observation-8710cae3-8cdc-4a9f-a455-577a78653877 .
+
+oquo:qualityValue-428e9a2a-9e77-402f-84b2-1f96ac40f699
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5652995a-2e0c-4b87-adfd-d52ea76a8c08 ;
+        res:hasLiteralValue    "0.6"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ec22aa67-092c-438a-8f4f-c82a98329cc0 .
+
+oquo:observation-8f424a56-271a-4843-85ed-423e83241f19
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e8af890c-526c-4d49-a1ec-bca34b0bd986 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-77a31b26-864f-433e-9c9d-78b0b330cc46 .
+
+oquo:qualityValue-8575d657-bf0d-4488-9dce-5fd2f5f1cc7c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-937cb365-931b-46ae-a8e0-f525c90339a6 ;
+        res:hasLiteralValue    "0.6955478539056251"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bc158e8f-edf2-43f2-a08e-81400f5a3630 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-0e6f09f7-0a42-48f7-ab51-7a30a6b0ec23
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2ae6e9c8-ef2f-4ae8-b9dd-9804398b7675 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-d15d0f33-c8a9-4699-9761-040f207881f7 .
+
+oquo:instant-ea93af50-75b3-4df3-951e-5f9c6b3a27e0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.621Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-563e4cc7-2a0b-4dc3-9fd5-7d17d35b9e4b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0a776c18-db2d-451c-88e2-c20ca24790e8 ;
+        time:hasTime              oquo:instant-d15d0f33-c8a9-4699-9761-040f207881f7 ;
+        oquo:hasObservation       oquo:observation-0e6f09f7-0a42-48f7-ab51-7a30a6b0ec23 .
+
+oquo:metric-1909d36f-bb36-42ab-b9a8-e3e5c538fd2c
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4eedc138-c503-4fda-930a-7a04e71e04d9 ;
+        oboe:measurementFor  oquo:observation-67dd5e7a-e61a-48a4-9a7f-732403b2b25f ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-0a776c18-db2d-451c-88e2-c20ca24790e8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2ae6e9c8-ef2f-4ae8-b9dd-9804398b7675 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-563e4cc7-2a0b-4dc3-9fd5-7d17d35b9e4b .
+
+oquo:instant-104e3531-d794-4b15-858c-64e3f4ab5fba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.479Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-97a4e571-f542-4059-95d4-5376ca3ddbd6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9089af6-ddd9-4bb4-b156-b25919832cb9 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-5f917607-67c2-419c-828d-ec6d4aa79fdc .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-ad2587bc-1e27-418c-8efc-c345b99253bb
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-0f40ea88-7dc6-4ad5-89bc-a06e0a4ee94b ;
+        oboe:measurementFor  oquo:observation-c07c1e68-b691-499f-8f23-20854ffe9718 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:observation-a8f719ae-703f-4799-b7a8-ad5e36711461
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-de6594d6-e47d-4730-83b6-40b118d4e2c1 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-f9a04b8c-06ee-4df7-a043-9976508cfca2 .
+
+oquo:metric-55279e45-a64f-476f-87e0-789ad1de971f
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-bf47c56d-838b-4360-b845-19e28012f04a ;
+        oboe:measurementFor  oquo:observation-f42d2b2c-58d2-4623-94b4-1422e19360e0 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-e87969cd-d7c4-4421-8aa3-21f1c074c0b5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b7874947-076d-445a-a292-f9bc2dd06ac6 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-35dc88e4-b283-463e-bda9-7a7deef2b2cf .
+
+oquo:metric-de6594d6-e47d-4730-83b6-40b118d4e2c1
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-42672593-9c50-4c6e-b996-a2ac4d935a19 ;
+        oboe:measurementFor  oquo:observation-a8f719ae-703f-4799-b7a8-ad5e36711461 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-3b208178-7096-4dd4-9a6c-3a1b9c345df6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a6ad670c-8ed8-40bf-99c7-8ded7986821a ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-564b4705-2602-4eac-8652-7a55dfe750c4 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b7874947-076d-445a-a292-f9bc2dd06ac6
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-df563571-75f3-4f42-afda-024f6e9285a8 ;
+        oboe:measurementFor  oquo:observation-e87969cd-d7c4-4421-8aa3-21f1c074c0b5 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-61936d33-1398-4368-8199-2dd281fb04ed
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-dcf3090f-3376-4de5-a758-57ae516fcb5b ;
+        time:hasTime              oquo:instant-10da362f-2cf9-4d04-b1e6-c3b3042321da ;
+        oquo:hasObservation       oquo:observation-a01a7bc2-78c5-4cf6-a6b8-a50460c75e3a .
+
+oquo:qualityValue-e02fbdca-783a-42a3-8de7-fcf4c49f6f3b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f5802442-1fe5-40f1-9cb6-ec49b71f92f4 ;
+        res:hasLiteralValue    "0.7407407407407407"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0adb64c1-1ec0-4e99-9bbe-07b10240b25b .
+
+oquo:observation-f42d2b2c-58d2-4623-94b4-1422e19360e0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-55279e45-a64f-476f-87e0-789ad1de971f ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-074197fd-1c93-4912-b219-fdc21d605cdc .
+
+oquo:metric-22aaa197-e330-47bf-9ec8-c7e4995405df
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-a5f88e3c-5ae5-4d7e-9bf2-037af27c989f ;
+        oboe:measurementFor  oquo:observation-a830c4f6-ac23-4025-b291-369f7b8e9056 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:qualityValue-a5119ad7-2abc-4575-8916-bc65888eaf66
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-803fbc20-dc49-4085-b531-da57a602f76c ;
+        res:hasLiteralValue    "0.14482758620689656"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-488d2434-744e-4b19-ad49-cf958ffb980b .
+
+oquo:evaluation-ea6849fd-0957-4b7c-94c4-a872e540f7f2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-42672593-9c50-4c6e-b996-a2ac4d935a19 ;
+        time:hasTime              oquo:instant-f9a04b8c-06ee-4df7-a043-9976508cfca2 ;
+        oquo:hasObservation       oquo:observation-a8f719ae-703f-4799-b7a8-ad5e36711461 .
+
+oquo:instant-10d23442-04b1-4114-99b9-0e9931669814
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.694Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-77a31b26-864f-433e-9c9d-78b0b330cc46
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:39.423Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-dcef3098-0b88-4dcb-ae7d-54edabf5731b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6d1eacbf-189d-435c-999c-7cfd578ec606 ;
+        res:hasLiteralValue    "0.9858704345507865"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fcbe56ac-ac77-4125-b802-278afdcb53d9 .
+
+oquo:evaluation-c57bd73f-c3b6-4258-9e13-d4b3a2957fb9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-df563571-75f3-4f42-afda-024f6e9285a8 ;
+        time:hasTime              oquo:instant-35dc88e4-b283-463e-bda9-7a7deef2b2cf ;
+        oquo:hasObservation       oquo:observation-e87969cd-d7c4-4421-8aa3-21f1c074c0b5 .
+
+oquo:evaluation-802195bd-5ad4-4496-90f1-d78e5d663e21
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7881fa48-b9f5-4dad-bdfc-dc7cf9599a6f ;
+        time:hasTime              oquo:instant-0661a298-a16d-46e2-a6fb-66cfb4b2eef7 ;
+        oquo:hasObservation       oquo:observation-8fde9a2d-f563-4413-866b-9c349e1ff6d1 .
+
+oquo:qualityValue-e2fd8874-6eb4-4f02-ab26-8d3052c98549
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-df1a0143-1d43-445b-8ba3-748b36de998b ;
+        res:hasLiteralValue    "0.9620689655172414"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a1271fcf-6ea3-46d3-a113-44a0dd9b20f2 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-3e298014-a967-4638-a630-583189277b41
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-016bb834-d72b-4f72-9637-af14a11ab83a ;
+        time:hasTime              oquo:instant-579a9ee2-c7f0-4c6f-9360-898e1306da98 ;
+        oquo:hasObservation       oquo:observation-47b22255-eaad-4aeb-a757-01ffa115a9ed .
+
+oquo:metric-f5802442-1fe5-40f1-9cb6-ec49b71f92f4
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e02fbdca-783a-42a3-8de7-fcf4c49f6f3b ;
+        oboe:measurementFor  oquo:observation-b53871fb-16cc-4e63-9c36-3c6ec0db48b4 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-badf29c5-0353-4a57-9ffa-f92aa9bd25c2
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-28c53c2d-7958-4fac-8cce-74bfc917da12 ;
+        oboe:measurementFor  oquo:observation-c07c76c0-0b58-47c8-85a8-f7814f9383a2 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-5ae2d695-2c81-408c-97d8-6b03f1ff4f50
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-937cb365-931b-46ae-a8e0-f525c90339a6 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-326af856-e7ce-41c2-ab1b-480676a2f317 .
+
+oquo:evaluation-ec22aa67-092c-438a-8f4f-c82a98329cc0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-428e9a2a-9e77-402f-84b2-1f96ac40f699 ;
+        time:hasTime              oquo:instant-a237e0bc-ef87-4eb9-a0a8-931f038857f9 ;
+        oquo:hasObservation       oquo:observation-25355549-7ad0-4345-bd50-6a647909f4fc .
+
+oquo:observation-94b5beeb-f6f5-4050-b69a-a7f695f6cf1b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-16331be4-9e58-4c8f-8ca9-9dbd903b0019 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-9477b11c-41a2-4b1a-93c1-4417ea905cc8 .
+
+oquo:instant-68780896-781c-4672-80db-9bac0c4fcdfc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.631Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-f495ae05-b3eb-4d21-ac3b-640538fe4745
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-70ee0c33-9993-40fc-98ca-f2ed2bd2a074 ;
+        time:hasTime              oquo:instant-44daf707-144b-4716-8f8f-737931a9b0ab ;
+        oquo:hasObservation       oquo:observation-76e9520e-7bf3-4408-b076-316c4d03a680 .
+
+oquo:qualityValue-42672593-9c50-4c6e-b996-a2ac4d935a19
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-de6594d6-e47d-4730-83b6-40b118d4e2c1 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ea6849fd-0957-4b7c-94c4-a872e540f7f2 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-bf2f9320-f130-40c2-898f-9bd1658b3dfa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5b8d931a-ff2d-42bc-912a-3343bd152864 ;
+        time:hasTime              oquo:instant-10d23442-04b1-4114-99b9-0e9931669814 ;
+        oquo:hasObservation       oquo:observation-facfef31-1f4d-4ee3-ae31-fac1d1e5120d .
+
+oquo:qualityValue-7881fa48-b9f5-4dad-bdfc-dc7cf9599a6f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bfee73f2-a513-45d0-98aa-eed71478f8ad ;
+        res:hasLiteralValue    "3752.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-802195bd-5ad4-4496-90f1-d78e5d663e21 .
+
+oquo:evaluation-21044fc5-916c-4292-9301-0c91f77ab56f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-de56af91-7acb-4005-9bbc-04fd99d87aa0 ;
+        time:hasTime              oquo:instant-81f94845-3893-4414-86d2-368855b96e7e ;
+        oquo:hasObservation       oquo:observation-b54e62ab-d54e-401a-9915-c1e524db3f0b .
+
+oquo:metric-9f97b4cf-03a0-4910-ae63-aeef172779b4
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-70ee0c33-9993-40fc-98ca-f2ed2bd2a074 ;
+        oboe:measurementFor  oquo:observation-76e9520e-7bf3-4408-b076-316c4d03a680 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:qualityValue-df563571-75f3-4f42-afda-024f6e9285a8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b7874947-076d-445a-a292-f9bc2dd06ac6 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c57bd73f-c3b6-4258-9e13-d4b3a2957fb9 .
+
+oquo:qualityValue-de56af91-7acb-4005-9bbc-04fd99d87aa0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7c3ed6d9-54e8-4dfc-9f54-7b6381598230 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-21044fc5-916c-4292-9301-0c91f77ab56f .
+
+oquo:instant-9717ec7e-0678-492d-a3be-1b0c4936390b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.696Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-074197fd-1c93-4912-b219-fdc21d605cdc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.036Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-a48aa69e-ac76-4c4c-9901-bab300efdc80
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cf463fb9-d356-4c68-99ee-8059cbc559af ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f1dbc751-6f80-4da5-9515-2666ac80207a .
+
+oquo:qualityValue-94a0b613-83f3-4bfe-8818-f561ef05481b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2b0e00e9-f82d-47fc-b69b-d1638410e663 ;
+        res:hasLiteralValue    "0.10185185185185185"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-784e99a5-009a-411c-a3b7-2bab75118d6c .
+
+oquo:metric-d0a4be2b-e52f-4384-9f8a-5eda26046312
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d3f2f88c-ffaa-402a-b46c-c158e7cc3f92 ;
+        oboe:measurementFor  oquo:observation-705f1fef-ac15-42e4-9243-d9cb457e577e ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-df1a0143-1d43-445b-8ba3-748b36de998b
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e2fd8874-6eb4-4f02-ab26-8d3052c98549 ;
+        oboe:measurementFor  oquo:observation-d204791d-9582-48c5-bcd6-b5232b44000a ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:qualityValue-70ee0c33-9993-40fc-98ca-f2ed2bd2a074
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9f97b4cf-03a0-4910-ae63-aeef172779b4 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f495ae05-b3eb-4d21-ac3b-640538fe4745 .
+
+oquo:instant-e69dcd4a-abb7-4b9d-bac4-2c8d6db1a9c6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:39.594Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-16331be4-9e58-4c8f-8ca9-9dbd903b0019
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-791d1e8b-6f1d-48bf-a683-1e384d9e596a ;
+        oboe:measurementFor  oquo:observation-94b5beeb-f6f5-4050-b69a-a7f695f6cf1b ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:metric-7c3ed6d9-54e8-4dfc-9f54-7b6381598230
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-de56af91-7acb-4005-9bbc-04fd99d87aa0 ;
+        oboe:measurementFor  oquo:observation-b54e62ab-d54e-401a-9915-c1e524db3f0b ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-5056b726-4ec1-402f-9658-0732968ba6bd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6df98616-dbf5-4d6b-9bf4-648b5c4c5969 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-ec8a0f74-1275-470e-804e-1230ca8377c9 .
+
+oquo:evaluation-a1271fcf-6ea3-46d3-a113-44a0dd9b20f2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e2fd8874-6eb4-4f02-ab26-8d3052c98549 ;
+        time:hasTime              oquo:instant-431742dc-9030-462d-871d-36fd236301b8 ;
+        oquo:hasObservation       oquo:observation-d204791d-9582-48c5-bcd6-b5232b44000a .
+
+oquo:instant-d15d0f33-c8a9-4699-9761-040f207881f7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.006Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-9477b11c-41a2-4b1a-93c1-4417ea905cc8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.497Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-95663bed-5725-4d9a-aba0-86a14d196bde
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a5f88e3c-5ae5-4d7e-9bf2-037af27c989f ;
+        time:hasTime              oquo:instant-e69dcd4a-abb7-4b9d-bac4-2c8d6db1a9c6 ;
+        oquo:hasObservation       oquo:observation-a830c4f6-ac23-4025-b291-369f7b8e9056 .
+
+oquo:qualityValue-4eedc138-c503-4fda-930a-7a04e71e04d9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1909d36f-bb36-42ab-b9a8-e3e5c538fd2c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8e2a2478-a1fe-473d-abf2-b59642eaaefd .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-e8af890c-526c-4d49-a1ec-bca34b0bd986
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ce69c0b1-7c53-4c47-98d4-1ee1dbf2433d ;
+        oboe:measurementFor  oquo:observation-8f424a56-271a-4843-85ed-423e83241f19 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-44daf707-144b-4716-8f8f-737931a9b0ab
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.488Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-e7e81f90-cbc2-486a-8921-108fe3ceacd8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-fef06718-da93-41e4-80eb-7dd207e2b62d ;
+        time:hasTime              oquo:instant-564b4705-2602-4eac-8652-7a55dfe750c4 ;
+        oquo:hasObservation       oquo:observation-3b208178-7096-4dd4-9a6c-3a1b9c345df6 .
+
+oquo:qualityValue-71f465c1-15aa-4ec6-901b-b7a2089fa06f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9089af6-ddd9-4bb4-b156-b25919832cb9 ;
+        res:hasLiteralValue    "0.02079445481205012"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-768c4a9e-9c4a-4708-8e8f-0da7728c0733 .
+
+oquo:qualityValue-c132a02b-fcae-4eb8-835a-91bf1c37e252
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d4ee8595-4b1d-4d7d-899b-2b738bbeaed4 ;
+        res:hasLiteralValue    "0.046296296296296294"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f838b4ef-8b97-4476-aba8-be45590d9db2 .
+
+oquo:observation-a01a7bc2-78c5-4cf6-a6b8-a50460c75e3a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c9a2789c-89a8-4074-8192-6a1ca5f5ffc9 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-10da362f-2cf9-4d04-b1e6-c3b3042321da .
+
+oquo:instant-81f94845-3893-4414-86d2-368855b96e7e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.965Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-76e9520e-7bf3-4408-b076-316c4d03a680
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9f97b4cf-03a0-4910-ae63-aeef172779b4 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-44daf707-144b-4716-8f8f-737931a9b0ab .
+
+oquo:instant-ac30e9d8-ef4e-4ee4-94e4-e1ae0a4260b1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:40.606Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-f7d8bfbd-1cd9-4aa4-bac4-e097a8666f61
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a6609055-da58-4e20-9f50-305e82b84f01 ;
+        time:hasTime              oquo:instant-ea93af50-75b3-4df3-951e-5f9c6b3a27e0 ;
+        oquo:hasObservation       oquo:observation-4a64fe02-d971-487b-8f61-17155862e80d .
+
+oquo:observation-67dd5e7a-e61a-48a4-9a7f-732403b2b25f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1909d36f-bb36-42ab-b9a8-e3e5c538fd2c ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-104e3531-d794-4b15-858c-64e3f4ab5fba .
+
+oquo:qualityValue-ce69c0b1-7c53-4c47-98d4-1ee1dbf2433d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e8af890c-526c-4d49-a1ec-bca34b0bd986 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c54d8b21-c21a-4606-8a4b-437b2fd0598f .
+
+oquo:instant-9ce789bc-4220-442f-9c35-48a6ef2906a6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.637Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-0c2ab220-09e1-48a8-9f72-b8c116333075
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.699Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-1c2d972f-098f-467f-8353-0893737cf5b3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2b0e00e9-f82d-47fc-b69b-d1638410e663 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-00440d0a-dc55-496c-99fb-f4ed9556d6b2 .
+
+oquo:instant-431742dc-9030-462d-871d-36fd236301b8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.452Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-b48f60b0-107c-4fb4-8993-f39b517b8139
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7cd725ae-b24d-4c23-a557-00374093b6b2 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-840f6c20-8628-4c49-91bc-27c2739fc0db .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-897ed598-8c65-4bd6-8ce5-e3e2d4bfda5a
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-a6609055-da58-4e20-9f50-305e82b84f01 ;
+        oboe:measurementFor  oquo:observation-4a64fe02-d971-487b-8f61-17155862e80d ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:observation-47b22255-eaad-4aeb-a757-01ffa115a9ed
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-86d9c6b8-ddda-4b10-837d-47c8b8e1220f ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-579a9ee2-c7f0-4c6f-9360-898e1306da98 .
+
+<https://im.njmu.edu.cn/CDMO/cdmo.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:qualityValue-791d1e8b-6f1d-48bf-a683-1e384d9e596a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-16331be4-9e58-4c8f-8ca9-9dbd903b0019 ;
+        res:hasLiteralValue    "0.39829378832311385"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-078811d1-3d51-47c9-877f-d45b505f5116 .
+
+oquo:evaluation-009a92e3-1b96-470c-b80c-15f968b4453b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-d3f2f88c-ffaa-402a-b46c-c158e7cc3f92 ;
+        time:hasTime              oquo:instant-0c2ab220-09e1-48a8-9f72-b8c116333075 ;
+        oquo:hasObservation       oquo:observation-705f1fef-ac15-42e4-9243-d9cb457e577e .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4c629137-168a-4ee3-a648-1da12f31e772
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:39.426Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-0661a298-a16d-46e2-a6fb-66cfb4b2eef7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.26Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-5112b668-8947-492a-aff2-0eb3b0a86f3a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.02Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5f480d23-4dfc-4fdb-8c77-0a1ebf3e5969
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-12ed6952-04dc-4314-a04e-e95a47946e49 ;
+        time:hasTime              oquo:instant-68780896-781c-4672-80db-9bac0c4fcdfc ;
+        oquo:hasObservation       oquo:observation-946d0c64-49a7-4a85-ac83-7c0033ea2d0f .
+
+oquo:qualityValue-dcf3090f-3376-4de5-a758-57ae516fcb5b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c9a2789c-89a8-4074-8192-6a1ca5f5ffc9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-61936d33-1398-4368-8199-2dd281fb04ed .
+
+oquo:instant-00440d0a-dc55-496c-99fb-f4ed9556d6b2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-768c4a9e-9c4a-4708-8e8f-0da7728c0733
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-71f465c1-15aa-4ec6-901b-b7a2089fa06f ;
+        time:hasTime              oquo:instant-5f917607-67c2-419c-828d-ec6d4aa79fdc ;
+        oquo:hasObservation       oquo:observation-97a4e571-f542-4059-95d4-5376ca3ddbd6 .
+
+oquo:observation-c07c76c0-0b58-47c8-85a8-f7814f9383a2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-badf29c5-0353-4a57-9ffa-f92aa9bd25c2 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-5112b668-8947-492a-aff2-0eb3b0a86f3a .
+
+oquo:observation-946d0c64-49a7-4a85-ac83-7c0033ea2d0f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-077af6af-819a-451b-a858-7cb7651bd3fb ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-68780896-781c-4672-80db-9bac0c4fcdfc .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-840f6c20-8628-4c49-91bc-27c2739fc0db
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:38.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-2c64268a-e842-45ac-ad82-47d1251f2e0b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3f851c3a-fbba-42ac-b07d-bf2b734eb2eb ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-47c32fef-25d5-47d7-af0d-555fe4d8a743 .
+
+oquo:qualityValue-bf47c56d-838b-4360-b845-19e28012f04a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-55279e45-a64f-476f-87e0-789ad1de971f ;
+        res:hasLiteralValue    "0.9537037037037037"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-286ff8b2-f6b2-496f-9905-f919d0e7e681 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-c9a2789c-89a8-4074-8192-6a1ca5f5ffc9
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-dcf3090f-3376-4de5-a758-57ae516fcb5b ;
+        oboe:measurementFor  oquo:observation-a01a7bc2-78c5-4cf6-a6b8-a50460c75e3a ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:observation-4a64fe02-d971-487b-8f61-17155862e80d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-897ed598-8c65-4bd6-8ce5-e3e2d4bfda5a ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-ea93af50-75b3-4df3-951e-5f9c6b3a27e0 .
+
+oquo:metric-b9089af6-ddd9-4bb4-b156-b25919832cb9
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-71f465c1-15aa-4ec6-901b-b7a2089fa06f ;
+        oboe:measurementFor  oquo:observation-97a4e571-f542-4059-95d4-5376ca3ddbd6 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-8e2a2478-a1fe-473d-abf2-b59642eaaefd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4eedc138-c503-4fda-930a-7a04e71e04d9 ;
+        time:hasTime              oquo:instant-104e3531-d794-4b15-858c-64e3f4ab5fba ;
+        oquo:hasObservation       oquo:observation-67dd5e7a-e61a-48a4-9a7f-732403b2b25f .
+
+oquo:evaluation-078811d1-3d51-47c9-877f-d45b505f5116
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-791d1e8b-6f1d-48bf-a683-1e384d9e596a ;
+        time:hasTime              oquo:instant-9477b11c-41a2-4b1a-93c1-4417ea905cc8 ;
+        oquo:hasObservation       oquo:observation-94b5beeb-f6f5-4050-b69a-a7f695f6cf1b .
+
+oquo:evaluation-22be9d44-58e5-46f5-bd58-b9c33f40e11f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e8395fd7-f044-49ff-b546-01d343009d5c ;
+        time:hasTime              oquo:instant-9717ec7e-0678-492d-a3be-1b0c4936390b ;
+        oquo:hasObservation       oquo:observation-541921bc-26d0-4c49-9714-d7613240fe80 .
+
+oquo:evaluation-87e1ff4a-be1c-4669-afcb-2c2e137aac91
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0f40ea88-7dc6-4ad5-89bc-a06e0a4ee94b ;
+        time:hasTime              oquo:instant-4c629137-168a-4ee3-a648-1da12f31e772 ;
+        oquo:hasObservation       oquo:observation-c07c1e68-b691-499f-8f23-20854ffe9718 .
+
+oquo:qualityValue-5b8d931a-ff2d-42bc-912a-3343bd152864
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d7d751f4-5ad9-4f54-8172-f8b0ebf61cbc ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bf2f9320-f130-40c2-898f-9bd1658b3dfa .
+
+oquo:instant-579a9ee2-c7f0-4c6f-9360-898e1306da98
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:42.002Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-de2dab69-02c4-4c53-9e30-4dde00197e07
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d4ee8595-4b1d-4d7d-899b-2b738bbeaed4 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-0fa4555c-4e0b-4bdd-a123-fff06550acc7 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a0fc6c7f-76dc-44cc-bb18-e42e30024393
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-28c53c2d-7958-4fac-8cce-74bfc917da12 ;
+        time:hasTime              oquo:instant-5112b668-8947-492a-aff2-0eb3b0a86f3a ;
+        oquo:hasObservation       oquo:observation-c07c76c0-0b58-47c8-85a8-f7814f9383a2 .
+
+oquo:qualityValue-e8395fd7-f044-49ff-b546-01d343009d5c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-05706f56-1efc-4c33-a3ae-18d8868c7483 ;
+        res:hasLiteralValue    "0.5138121546961326"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-22be9d44-58e5-46f5-bd58-b9c33f40e11f .
+
+oquo:metric-937cb365-931b-46ae-a8e0-f525c90339a6
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-8575d657-bf0d-4488-9dce-5fd2f5f1cc7c ;
+        oboe:measurementFor  oquo:observation-5ae2d695-2c81-408c-97d8-6b03f1ff4f50 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:observation-c07c1e68-b691-499f-8f23-20854ffe9718
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ad2587bc-1e27-418c-8efc-c345b99253bb ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-4c629137-168a-4ee3-a648-1da12f31e772 .
+
+oquo:evaluation-bc158e8f-edf2-43f2-a08e-81400f5a3630
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8575d657-bf0d-4488-9dce-5fd2f5f1cc7c ;
+        time:hasTime              oquo:instant-326af856-e7ce-41c2-ab1b-480676a2f317 ;
+        oquo:hasObservation       oquo:observation-5ae2d695-2c81-408c-97d8-6b03f1ff4f50 .
+
+oquo:instant-564b4705-2602-4eac-8652-7a55dfe750c4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-12ed6952-04dc-4314-a04e-e95a47946e49
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-077af6af-819a-451b-a858-7cb7651bd3fb ;
+        res:hasLiteralValue    "0.20441988950276244"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5f480d23-4dfc-4fdb-8c77-0a1ebf3e5969 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-10da362f-2cf9-4d04-b1e6-c3b3042321da
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:38.684Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-d4ee8595-4b1d-4d7d-899b-2b738bbeaed4
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c132a02b-fcae-4eb8-835a-91bf1c37e252 ;
+        oboe:measurementFor  oquo:observation-de2dab69-02c4-4c53-9e30-4dde00197e07 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:observation-8710cae3-8cdc-4a9f-a455-577a78653877
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-803fbc20-dc49-4085-b531-da57a602f76c ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-66cdeaf7-2219-43be-a307-ce85bfe093a0 .
+
+oquo:observation-9bc51f27-46d8-45ec-b2b6-338e5c083d32
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6d1eacbf-189d-435c-999c-7cfd578ec606 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-9ce789bc-4220-442f-9c35-48a6ef2906a6 .
+
+oquo:evaluation-e33daa60-1f83-458b-98f8-c29cfe6ae9a2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4c960beb-d74f-4358-958e-5c69d137366d ;
+        time:hasTime              oquo:instant-840f6c20-8628-4c49-91bc-27c2739fc0db ;
+        oquo:hasObservation       oquo:observation-b48f60b0-107c-4fb4-8993-f39b517b8139 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-66cdeaf7-2219-43be-a307-ce85bfe093a0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.605Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-b53871fb-16cc-4e63-9c36-3c6ec0db48b4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f5802442-1fe5-40f1-9cb6-ec49b71f92f4 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-625aa0d8-cc97-4c2f-9016-9689f43e0401 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-28c53c2d-7958-4fac-8cce-74bfc917da12
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-badf29c5-0353-4a57-9ffa-f92aa9bd25c2 ;
+        res:hasLiteralValue    "0.25925925925925924"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a0fc6c7f-76dc-44cc-bb18-e42e30024393 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-a237e0bc-ef87-4eb9-a0a8-931f038857f9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:21:41.686Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-803fbc20-dc49-4085-b531-da57a602f76c
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-a5119ad7-2abc-4575-8916-bc65888eaf66 ;
+        oboe:measurementFor  oquo:observation-8710cae3-8cdc-4a9f-a455-577a78653877 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:observation-457ae4c1-1a1c-4499-bd54-fa82cc9de26b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cf463fb9-d356-4c68-99ee-8059cbc559af ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-ac30e9d8-ef4e-4ee4-94e4-e1ae0a4260b1 .
+
+oquo:observation-b54e62ab-d54e-401a-9915-c1e524db3f0b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7c3ed6d9-54e8-4dfc-9f54-7b6381598230 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-81f94845-3893-4414-86d2-368855b96e7e .
+
+oquo:metric-cf463fb9-d356-4c68-99ee-8059cbc559af
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-a48aa69e-ac76-4c4c-9901-bab300efdc80 ;
+        oboe:measurementFor  oquo:observation-457ae4c1-1a1c-4499-bd54-fa82cc9de26b ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:evaluation-d1a26726-68be-41a9-8b62-55917ff7ea1b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:inputData             <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        res:producedQualityValue  oquo:qualityValue-20d572fa-1542-444f-a963-406f38d3e3c1 ;
+        time:hasTime              oquo:instant-47c32fef-25d5-47d7-af0d-555fe4d8a743 ;
+        oquo:hasObservation       oquo:observation-2c64268a-e842-45ac-ad82-47d1251f2e0b .
+
+oquo:qualityValue-d3f2f88c-ffaa-402a-b46c-c158e7cc3f92
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d0a4be2b-e52f-4384-9f8a-5eda26046312 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-009a92e3-1b96-470c-b80c-15f968b4453b .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-25355549-7ad0-4345-bd50-6a647909f4fc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5652995a-2e0c-4b87-adfd-d52ea76a8c08 ;
+        oboe:ofEntity        <https://im.njmu.edu.cn/CDMO/cdmo.owl> ;
+        time:hasTime         oquo:instant-a237e0bc-ef87-4eb9-a0a8-931f038857f9 .
+
+oquo:qualityValue-4c960beb-d74f-4358-958e-5c69d137366d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7cd725ae-b24d-4c23-a557-00374093b6b2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e33daa60-1f83-458b-98f8-c29cfe6ae9a2 .

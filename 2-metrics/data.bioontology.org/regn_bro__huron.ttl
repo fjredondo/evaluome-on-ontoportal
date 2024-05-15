@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-450192a0-76db-4ed3-824a-15afebbd5969
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.033Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-6649fe45-332c-4b78-a78c-ece9647e9fcc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.995Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-7b9c1d3d-f0ac-481c-98ca-4306fd6465a6
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4d6dac6e-8148-4036-9c00-3e2d2022ebb1 ;
+        oboe:measurementFor  oquo:observation-db9d8d6b-36a2-470c-94fe-da7746663d40 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:instant-088eb085-05cc-4339-8c52-ccbd5948eff0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.941Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-762d87d9-7c85-407e-9b68-2d0d35138c3e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5f56c720-05dd-4557-a9c7-9ddf9613bbcf ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-0fb6393f-7112-4625-95a5-1a42e0a5e7fc .
+
+oquo:instant-7411de3a-d59a-42b5-80ed-011dc8b69fa7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.877Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-56e4eedf-c920-4982-934f-364a8dcd76eb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f2c980cc-de46-4d18-b65e-dde8f3c9a8f6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-32eea7b3-180b-4eb0-8029-7555006e875e .
+
+oquo:metric-f2c980cc-de46-4d18-b65e-dde8f3c9a8f6
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-56e4eedf-c920-4982-934f-364a8dcd76eb ;
+        oboe:measurementFor  oquo:observation-4f0b21ec-b761-4b51-a447-f6d0654e3438 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:metric-b529cad1-00ff-4062-a4fd-a285ddc5aad7
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-404c0841-daf8-4d4e-bbae-29473ec22d32 ;
+        oboe:measurementFor  oquo:observation-6e5bd605-d07a-4023-b6d1-0af2cf2e5dbb ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:observation-52fd91ea-dc6a-4dcd-914e-7acb479423ce
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-130e4996-1677-47e5-8dc0-12c854e88a4d ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-a02ebd62-a280-4e2b-ad4b-41d404178e4e .
+
+oquo:evaluation-e1ff2db5-2806-4166-9c37-8b4834691a45
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4463f76f-96f9-45e9-9237-918b30598dc6 ;
+        time:hasTime              oquo:instant-1144e795-8cfc-4537-854c-5219b6844be6 ;
+        oquo:hasObservation       oquo:observation-fb333b9c-268a-44d4-8586-39211331b077 .
+
+oquo:observation-3978eaf0-0703-490d-9357-462154997ccd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7f100111-b564-4a16-8e98-54c6e49e72c5 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-2ebf30de-fb1a-4790-bd36-cd96da02e500 .
+
+oquo:observation-f1314b33-0c63-4c99-b655-2dc9b9f14674
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-812fe2fc-f2fd-4d35-ac1d-044e71b42fa6 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-a53cc113-08fa-40c4-bce4-fcf116df4e53 .
+
+oquo:observation-a29f91c2-31f6-4b02-9c0c-36b087c33b37
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0241b63d-0e82-4e4f-af0e-6db705725dd1 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-c310e7ca-2ff3-4025-a447-f2aa90461d94 .
+
+oquo:qualityValue-b3d30e30-84db-4b05-8e43-501e4cb37f06
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1658360c-d83e-4d9a-86b0-a068189030ef ;
+        res:hasLiteralValue    "0.0024813895781637717"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bc1afbf5-c4d9-4a9c-b61e-4c0fa50e42bb .
+
+oquo:instant-d61e273e-fcc9-4fd5-8ce8-eeac71438f4e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.952Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-4d5542ae-8e35-4720-8fbc-d13dedce2d4a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d7ba622b-4634-482e-a4d1-dc7ca8b6079f ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-a6a7de8e-e4a8-4dba-be64-d17a39f5158d .
+
+oquo:evaluation-1f0a201d-a637-401d-97ad-c6d078dc7324
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-83065a3a-e223-400e-ba7c-a608f3200b69 ;
+        time:hasTime              oquo:instant-a6a7de8e-e4a8-4dba-be64-d17a39f5158d ;
+        oquo:hasObservation       oquo:observation-4d5542ae-8e35-4720-8fbc-d13dedce2d4a .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-42bfac36-3dd2-43ca-bb9b-5e306c623e99
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-23cd5070-00ee-4991-b104-9e3d7854a8cd ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-d61e273e-fcc9-4fd5-8ce8-eeac71438f4e .
+
+oquo:evaluation-ec4ba274-2988-4bee-950b-c67bf3a77443
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ebc9ba12-0b46-42f5-a0e9-f81d44d5cb52 ;
+        time:hasTime              oquo:instant-6649fe45-332c-4b78-a78c-ece9647e9fcc ;
+        oquo:hasObservation       oquo:observation-cfc76299-d75a-474d-8ce2-4498ec8f6ea9 .
+
+oquo:qualityValue-3110d420-bc2a-4142-a418-70c4fc094497
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7e0f45ed-410e-4fde-9529-eafcf09d6e27 ;
+        res:hasLiteralValue    "0.8125"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-504ca043-fc3d-4615-b632-8921e611a4bf .
+
+oquo:metric-3b78036b-a778-4d67-853b-d385a560cbe3
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-1cf85cfc-acfb-4321-925a-fcb11f81f051 ;
+        oboe:measurementFor  oquo:observation-ca89d2cd-e3c2-44db-b5f3-9f25af4281d4 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:observation-ca89d2cd-e3c2-44db-b5f3-9f25af4281d4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3b78036b-a778-4d67-853b-d385a560cbe3 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-8d74de23-d3ad-4134-8545-99ea8e2551ad .
+
+oquo:qualityValue-3ab7fc82-5bfd-41c5-b90f-77d80bd4fe30
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5c531345-111a-4e82-be77-0df5a33fb40e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b9ee127f-c656-4167-ad75-8cec6f63d44e .
+
+oquo:qualityValue-4d6dac6e-8148-4036-9c00-3e2d2022ebb1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7b9c1d3d-f0ac-481c-98ca-4306fd6465a6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8e4c4fa7-2fb9-4137-b22e-6b188699b074 .
+
+oquo:metric-c121d9fc-3462-408f-8ebc-cc9d06389750
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0fd96d5a-c6a0-4c23-ac9c-e90faeb8d9b8 ;
+        oboe:measurementFor  oquo:observation-0f0ac382-7565-4c52-9daf-7a14239520bf ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-2e77996e-2cc1-46f3-a0f9-05371cd2c9e2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.75Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-678bd2e4-3768-4b79-b6ac-f2442cb35511
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-641db85e-b85a-40e7-9b62-b1262cfa36c7 ;
+        time:hasTime              oquo:instant-450192a0-76db-4ed3-824a-15afebbd5969 ;
+        oquo:hasObservation       oquo:observation-64e4343a-f871-48ff-b376-869a99165095 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-504ca043-fc3d-4615-b632-8921e611a4bf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3110d420-bc2a-4142-a418-70c4fc094497 ;
+        time:hasTime              oquo:instant-41adeda9-fb84-4896-b70f-01a24e2a8b18 ;
+        oquo:hasObservation       oquo:observation-e9717869-c587-43ac-a34a-51fad6ab9ec7 .
+
+oquo:metric-7e0f45ed-410e-4fde-9529-eafcf09d6e27
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-3110d420-bc2a-4142-a418-70c4fc094497 ;
+        oboe:measurementFor  oquo:observation-e9717869-c587-43ac-a34a-51fad6ab9ec7 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-ac6e863d-8c37-44d9-891d-d2aeb271ef80
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.91Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-f44ec82e-4a8b-4228-96de-bf174dd2fe2d
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-641db85e-b85a-40e7-9b62-b1262cfa36c7 ;
+        oboe:measurementFor  oquo:observation-64e4343a-f871-48ff-b376-869a99165095 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-e9717869-c587-43ac-a34a-51fad6ab9ec7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7e0f45ed-410e-4fde-9529-eafcf09d6e27 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-41adeda9-fb84-4896-b70f-01a24e2a8b18 .
+
+oquo:observation-aae49d5c-5596-4c67-9377-f8cbba1fa40d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-eb27b634-5d68-40b9-b51b-ad384231b25f ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-59019103-548e-4809-a085-a1406a4f8062 .
+
+oquo:instant-b5edce49-f9f6-49e0-8c2a-6a83b1bec674
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.989Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-991616cb-ac7b-4681-a666-17628f682adc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.888Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-db9d8d6b-36a2-470c-94fe-da7746663d40
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7b9c1d3d-f0ac-481c-98ca-4306fd6465a6 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-5890e52e-c001-4ed8-8640-8cbdea812480 .
+
+oquo:instant-88036fe9-95d7-4714-b753-947808642da7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:51.993Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-b058c55d-0762-48e3-a2d1-db6780315c60
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-17657899-6b99-41b6-a206-c20783d71c1d ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-88036fe9-95d7-4714-b753-947808642da7 .
+
+oquo:instant-d6bcf66a-2f91-4b9c-830c-00b6d0b365f5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.912Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-8387b55c-683f-4ffe-a885-43fb99ec513a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.663Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-0fb6393f-7112-4625-95a5-1a42e0a5e7fc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.906Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a53cc113-08fa-40c4-bce4-fcf116df4e53
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.747Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-ca85414e-793f-40d5-8c67-05d61c2b1f28
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7cefff9b-3b77-4db6-a45a-7f56cc31165f ;
+        res:hasLiteralValue    "0.6153846153846154"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0a502e7e-c0c0-4632-96c6-aafb1c6aa05d .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-0a502e7e-c0c0-4632-96c6-aafb1c6aa05d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ca85414e-793f-40d5-8c67-05d61c2b1f28 ;
+        time:hasTime              oquo:instant-b5edce49-f9f6-49e0-8c2a-6a83b1bec674 ;
+        oquo:hasObservation       oquo:observation-7485ec2c-5b9d-46e9-b9ec-a54213420552 .
+
+oquo:observation-7d7941d9-7384-4dc0-b4ce-ed45ebbc36cd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-325743a0-afa3-46ee-a394-f0c26f493634 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-50d84388-15be-43d8-bdb4-9b351f6831ed .
+
+oquo:metric-23cd5070-00ee-4991-b104-9e3d7854a8cd
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-695b9481-d27c-4b07-a1f3-1e47be196550 ;
+        oboe:measurementFor  oquo:observation-42bfac36-3dd2-43ca-bb9b-5e306c623e99 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-535bd4df-624d-4288-9729-8efde418c865
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9ab91f6d-07d5-41b1-b707-074b82a82cfe ;
+        res:hasLiteralValue    "0.9801488833746899"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-88a6b53e-b413-4e8a-be28-b0d161bb437c .
+
+oquo:observation-4f171f5a-7de1-4f9a-8fe0-a862ef9f1cbf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5c531345-111a-4e82-be77-0df5a33fb40e ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-279e35ff-b6a6-4abb-aabd-f5e425bb609a .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-ba00aead-1be9-46d9-9a25-1f93d67671c1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8198bf69-1c7a-43fe-bd91-75253d245128 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-429092e2-eabf-4aa7-b9f9-9fab8756d4dd .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-a5d81e71-c85e-42a7-8b24-9d4cab85d44a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-695b9481-d27c-4b07-a1f3-1e47be196550 ;
+        time:hasTime              oquo:instant-d61e273e-fcc9-4fd5-8ce8-eeac71438f4e ;
+        oquo:hasObservation       oquo:observation-42bfac36-3dd2-43ca-bb9b-5e306c623e99 .
+
+oquo:evaluation-2ae59433-1f22-4702-906a-ee5ce0b8845a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8e349bf8-e8c3-4238-aac6-9cbe6a3d5dd2 ;
+        time:hasTime              oquo:instant-2e77996e-2cc1-46f3-a0f9-05371cd2c9e2 ;
+        oquo:hasObservation       oquo:observation-dcc9d321-f12a-4baf-b1d4-cd0972b72e77 .
+
+oquo:observation-3808e55f-7628-4467-9727-eba037f9f8c0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1658360c-d83e-4d9a-86b0-a068189030ef ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-48a25ac5-4d32-4377-8d54-e801d5265642 .
+
+oquo:evaluation-1a53f3e5-b3c3-47aa-bad2-56756cba6b44
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3ac20cda-ae94-4680-a288-b95f7c183941 ;
+        time:hasTime              oquo:instant-a53cc113-08fa-40c4-bce4-fcf116df4e53 ;
+        oquo:hasObservation       oquo:observation-f1314b33-0c63-4c99-b655-2dc9b9f14674 .
+
+oquo:observation-fb333b9c-268a-44d4-8586-39211331b077
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-38765d8e-1c22-4869-9ac3-40dda2b65e36 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-1144e795-8cfc-4537-854c-5219b6844be6 .
+
+oquo:evaluation-8e4c4fa7-2fb9-4137-b22e-6b188699b074
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4d6dac6e-8148-4036-9c00-3e2d2022ebb1 ;
+        time:hasTime              oquo:instant-5890e52e-c001-4ed8-8640-8cbdea812480 ;
+        oquo:hasObservation       oquo:observation-db9d8d6b-36a2-470c-94fe-da7746663d40 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-695b9481-d27c-4b07-a1f3-1e47be196550
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-23cd5070-00ee-4991-b104-9e3d7854a8cd ;
+        res:hasLiteralValue    "0.9925558312655087"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a5d81e71-c85e-42a7-8b24-9d4cab85d44a .
+
+oquo:metric-7cefff9b-3b77-4db6-a45a-7f56cc31165f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-ca85414e-793f-40d5-8c67-05d61c2b1f28 ;
+        oboe:measurementFor  oquo:observation-7485ec2c-5b9d-46e9-b9ec-a54213420552 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-3ac20cda-ae94-4680-a288-b95f7c183941
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-812fe2fc-f2fd-4d35-ac1d-044e71b42fa6 ;
+        res:hasLiteralValue    "403.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1a53f3e5-b3c3-47aa-bad2-56756cba6b44 .
+
+oquo:observation-0f0ac382-7565-4c52-9daf-7a14239520bf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c121d9fc-3462-408f-8ebc-cc9d06389750 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-c84d94d1-c945-4eef-99b9-7e4bd4cdbdfc .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-d62394ec-1ea5-4b9e-af14-906931182c53
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9e207538-f7b0-409c-956e-304095f803c2 ;
+        oboe:measurementFor  oquo:observation-c34bff21-8132-428d-9808-1324274ab681 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:observation-c34bff21-8132-428d-9808-1324274ab681
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d62394ec-1ea5-4b9e-af14-906931182c53 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-d6bcf66a-2f91-4b9c-830c-00b6d0b365f5 .
+
+oquo:observation-17141e91-d1eb-4c3f-ac8c-e627d7a95065
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9ab91f6d-07d5-41b1-b707-074b82a82cfe ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-088eb085-05cc-4339-8c52-ccbd5948eff0 .
+
+oquo:instant-c84d94d1-c945-4eef-99b9-7e4bd4cdbdfc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.789Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-641db85e-b85a-40e7-9b62-b1262cfa36c7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f44ec82e-4a8b-4228-96de-bf174dd2fe2d ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-678bd2e4-3768-4b79-b6ac-f2442cb35511 .
+
+oquo:metric-eb27b634-5d68-40b9-b51b-ad384231b25f
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-02f099a5-a9b0-4c6b-82f4-5de2517598dc ;
+        oboe:measurementFor  oquo:observation-aae49d5c-5596-4c67-9377-f8cbba1fa40d ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:observation-33cd3cbd-2ecf-4beb-8118-d5ec67984bfb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4931da86-e570-437d-b810-5bbc46bef747 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-1e7db5c0-e713-429b-8fe9-1148d27e9ced .
+
+oquo:evaluation-d35c42f2-e5a8-4a66-9efb-042bf561d743
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-6b52f5b3-c1fb-402f-b2f2-1713fec26500 ;
+        time:hasTime              oquo:instant-41823188-5847-4d6d-8573-dadd33053a4d ;
+        oquo:hasObservation       oquo:observation-a479807e-4801-4cf7-9fc9-47458003f726 .
+
+oquo:evaluation-5cf0370f-c50e-4715-b223-a69f44fa0232
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2f800ac8-9c47-4a54-9096-26010e3d6df1 ;
+        time:hasTime              oquo:instant-8387b55c-683f-4ffe-a885-43fb99ec513a ;
+        oquo:hasObservation       oquo:observation-184bbe37-6515-4220-9599-9fdde335ab15 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-5dcfd722-6618-4c58-bb66-ad8d4abe93fa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-41c751c3-34d0-49b2-8776-94a75505536f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-85cdaac3-9676-4c78-8542-ec321080ec33 .
+
+oquo:metric-dc948e10-440e-4e89-8e58-434233811564
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-c2ea7744-c38f-4fa5-b63c-e18f445b734f ;
+        oboe:measurementFor  oquo:observation-8cc8d2b6-4b45-4441-9e76-b3988e2a14f6 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-5c38fd4c-a71a-4127-87eb-81ff930d4165
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ae4b7b98-6b8b-4962-bc10-a9c0238fcb03 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-7411de3a-d59a-42b5-80ed-011dc8b69fa7 .
+
+oquo:evaluation-bf3ef72c-5a73-4c43-abc5-1709ca287dff
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1f29479a-753d-4b3d-8fd4-3e2f5656ef60 ;
+        time:hasTime              oquo:instant-0fb6393f-7112-4625-95a5-1a42e0a5e7fc ;
+        oquo:hasObservation       oquo:observation-762d87d9-7c85-407e-9b68-2d0d35138c3e .
+
+oquo:qualityValue-52d54ba4-f85f-4955-99be-97a0c59e2580
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-298e2d28-b054-4ccf-8c33-88e3d021a3ee ;
+        res:hasLiteralValue    "0.20689655172413793"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8e3d7fd6-9e7f-40df-b8e2-cfe5ee0ef2cf .
+
+oquo:instant-59019103-548e-4809-a085-a1406a4f8062
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.895Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1144e795-8cfc-4537-854c-5219b6844be6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.826Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-0476f8af-44e8-42a2-9aaa-510e5b0514af
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-45f48329-bad6-4740-bfef-60ae7590433b ;
+        time:hasTime              oquo:instant-50d84388-15be-43d8-bdb4-9b351f6831ed ;
+        oquo:hasObservation       oquo:observation-7d7941d9-7384-4dc0-b4ce-ed45ebbc36cd .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-47b168ea-b31d-4cff-adff-2ea84555bead
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3b96c838-956f-460c-b71e-3357d72dbd7e ;
+        time:hasTime              oquo:instant-c310e7ca-2ff3-4025-a447-f2aa90461d94 ;
+        oquo:hasObservation       oquo:observation-a29f91c2-31f6-4b02-9c0c-36b087c33b37 .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7f100111-b564-4a16-8e98-54c6e49e72c5
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-356985c6-e292-4c85-a541-12f78fda6698 ;
+        oboe:measurementFor  oquo:observation-3978eaf0-0703-490d-9357-462154997ccd ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-17657899-6b99-41b6-a206-c20783d71c1d
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-35d38fe7-1758-411c-94bf-d4a32b217912 ;
+        oboe:measurementFor  oquo:observation-b058c55d-0762-48e3-a2d1-db6780315c60 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-48a25ac5-4d32-4377-8d54-e801d5265642
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.913Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-298e2d28-b054-4ccf-8c33-88e3d021a3ee
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-52d54ba4-f85f-4955-99be-97a0c59e2580 ;
+        oboe:measurementFor  oquo:observation-d8cafa51-af40-4a63-8fc0-b818014b0a4d ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:metric-4931da86-e570-437d-b810-5bbc46bef747
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-a8d269e9-b8a1-4c6e-8c24-5da59d3fc6d3 ;
+        oboe:measurementFor  oquo:observation-33cd3cbd-2ecf-4beb-8118-d5ec67984bfb ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-5c531345-111a-4e82-be77-0df5a33fb40e
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-3ab7fc82-5bfd-41c5-b90f-77d80bd4fe30 ;
+        oboe:measurementFor  oquo:observation-4f171f5a-7de1-4f9a-8fe0-a862ef9f1cbf ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:qualityValue-35d38fe7-1758-411c-94bf-d4a32b217912
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-17657899-6b99-41b6-a206-c20783d71c1d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-814431d2-54bf-456a-8118-d107f86f96e8 .
+
+oquo:qualityValue-1cf85cfc-acfb-4321-925a-fcb11f81f051
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3b78036b-a778-4d67-853b-d385a560cbe3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-285a6dd3-c17a-436f-86f0-c61ca6ad4ef5 .
+
+oquo:observation-ce615efc-a7b3-41d8-8764-33c599307472
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8198bf69-1c7a-43fe-bd91-75253d245128 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-75fdf91d-39fe-4c78-89a6-41c65f414313 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-8e3d7fd6-9e7f-40df-b8e2-cfe5ee0ef2cf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-52d54ba4-f85f-4955-99be-97a0c59e2580 ;
+        time:hasTime              oquo:instant-ac6e863d-8c37-44d9-891d-d2aeb271ef80 ;
+        oquo:hasObservation       oquo:observation-d8cafa51-af40-4a63-8fc0-b818014b0a4d .
+
+oquo:instant-48688ed6-67ca-4612-8560-8f86ae2c0f91
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.869Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-346c66cd-47d3-4ba3-b30c-e4e565563598
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a8d269e9-b8a1-4c6e-8c24-5da59d3fc6d3 ;
+        time:hasTime              oquo:instant-1e7db5c0-e713-429b-8fe9-1148d27e9ced ;
+        oquo:hasObservation       oquo:observation-33cd3cbd-2ecf-4beb-8118-d5ec67984bfb .
+
+<http://bioontology.org/ontologies/BiomedicalResources.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:instant-c8b88733-859c-4297-a3f0-502046e5a902
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:53Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1658360c-d83e-4d9a-86b0-a068189030ef
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b3d30e30-84db-4b05-8e43-501e4cb37f06 ;
+        oboe:measurementFor  oquo:observation-3808e55f-7628-4467-9727-eba037f9f8c0 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-afb118e3-5371-4e4e-94d0-84b2328e4028
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f2556a91-438d-4162-a1b2-c38a691e31e4 ;
+        time:hasTime              oquo:instant-7411de3a-d59a-42b5-80ed-011dc8b69fa7 ;
+        oquo:hasObservation       oquo:observation-5c38fd4c-a71a-4127-87eb-81ff930d4165 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:instant-41adeda9-fb84-4896-b70f-01a24e2a8b18
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.992Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-184bbe37-6515-4220-9599-9fdde335ab15
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-da43672f-4a04-4b13-89fd-b22b78562bd9 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-8387b55c-683f-4ffe-a885-43fb99ec513a .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-a26a57c2-a8f4-4752-a63e-c5c63e881f71
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4a3f983f-cbed-4005-b82e-63b19d0ee330 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-c8b88733-859c-4297-a3f0-502046e5a902 .
+
+oquo:metric-4a3f983f-cbed-4005-b82e-63b19d0ee330
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-eb1a76ba-42a7-4bbc-917d-b7476ff1cde6 ;
+        oboe:measurementFor  oquo:observation-a26a57c2-a8f4-4752-a63e-c5c63e881f71 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-85cdaac3-9676-4c78-8542-ec321080ec33
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5dcfd722-6618-4c58-bb66-ad8d4abe93fa ;
+        time:hasTime              oquo:instant-a7ca7fed-efb5-4f8a-9018-0b2ce703c1a1 ;
+        oquo:hasObservation       oquo:observation-a8dcbe1a-22b3-4fb4-ad7b-523e49f2abe8 .
+
+oquo:instant-c310e7ca-2ff3-4025-a447-f2aa90461d94
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.844Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8a2db6e9-de45-4077-89b7-130082ce731e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-130e4996-1677-47e5-8dc0-12c854e88a4d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d0368d12-3122-4b84-b660-29c7790e6ba4 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-2f800ac8-9c47-4a54-9096-26010e3d6df1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-da43672f-4a04-4b13-89fd-b22b78562bd9 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5cf0370f-c50e-4715-b223-a69f44fa0232 .
+
+oquo:instant-279e35ff-b6a6-4abb-aabd-f5e425bb609a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:51.925Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-130e4996-1677-47e5-8dc0-12c854e88a4d
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-8a2db6e9-de45-4077-89b7-130082ce731e ;
+        oboe:measurementFor  oquo:observation-52fd91ea-dc6a-4dcd-914e-7acb479423ce ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-8d74de23-d3ad-4134-8545-99ea8e2551ad
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:51.898Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f2556a91-438d-4162-a1b2-c38a691e31e4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ae4b7b98-6b8b-4962-bc10-a9c0238fcb03 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-afb118e3-5371-4e4e-94d0-84b2328e4028 .
+
+oquo:observation-cfc76299-d75a-474d-8ce2-4498ec8f6ea9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-77477bc8-5b1f-4579-88c1-c711943a18e8 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-6649fe45-332c-4b78-a78c-ece9647e9fcc .
+
+oquo:observation-64e4343a-f871-48ff-b376-869a99165095
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f44ec82e-4a8b-4228-96de-bf174dd2fe2d ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-450192a0-76db-4ed3-824a-15afebbd5969 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-ae4b7b98-6b8b-4962-bc10-a9c0238fcb03
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f2556a91-438d-4162-a1b2-c38a691e31e4 ;
+        oboe:measurementFor  oquo:observation-5c38fd4c-a71a-4127-87eb-81ff930d4165 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-24a51d5d-746a-40bf-b766-c335e8cce01b
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8e349bf8-e8c3-4238-aac6-9cbe6a3d5dd2 ;
+        oboe:measurementFor  oquo:observation-dcc9d321-f12a-4baf-b1d4-cd0972b72e77 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-6f624c60-5baa-4fa4-8bd2-a6a8e34f6436
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-404c0841-daf8-4d4e-bbae-29473ec22d32 ;
+        time:hasTime              oquo:instant-991616cb-ac7b-4681-a666-17628f682adc ;
+        oquo:hasObservation       oquo:observation-6e5bd605-d07a-4023-b6d1-0af2cf2e5dbb .
+
+oquo:evaluation-6ec73e9e-56f2-4bc0-9800-07ae4ff9f05f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-356985c6-e292-4c85-a541-12f78fda6698 ;
+        time:hasTime              oquo:instant-2ebf30de-fb1a-4790-bd36-cd96da02e500 ;
+        oquo:hasObservation       oquo:observation-3978eaf0-0703-490d-9357-462154997ccd .
+
+oquo:metric-da43672f-4a04-4b13-89fd-b22b78562bd9
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-2f800ac8-9c47-4a54-9096-26010e3d6df1 ;
+        oboe:measurementFor  oquo:observation-184bbe37-6515-4220-9599-9fdde335ab15 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:qualityValue-1f29479a-753d-4b3d-8fd4-3e2f5656ef60
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5f56c720-05dd-4557-a9c7-9ddf9613bbcf ;
+        res:hasLiteralValue    "0.375"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bf3ef72c-5a73-4c43-abc5-1709ca287dff .
+
+oquo:evaluation-88a6b53e-b413-4e8a-be28-b0d161bb437c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-535bd4df-624d-4288-9729-8efde418c865 ;
+        time:hasTime              oquo:instant-088eb085-05cc-4339-8c52-ccbd5948eff0 ;
+        oquo:hasObservation       oquo:observation-17141e91-d1eb-4c3f-ac8c-e627d7a95065 .
+
+oquo:instant-34c6ba57-061c-4551-89f8-7e3da2f038f0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.99Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-812fe2fc-f2fd-4d35-ac1d-044e71b42fa6
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-3ac20cda-ae94-4680-a288-b95f7c183941 ;
+        oboe:measurementFor  oquo:observation-f1314b33-0c63-4c99-b655-2dc9b9f14674 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:metric-77477bc8-5b1f-4579-88c1-c711943a18e8
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ebc9ba12-0b46-42f5-a0e9-f81d44d5cb52 ;
+        oboe:measurementFor  oquo:observation-cfc76299-d75a-474d-8ce2-4498ec8f6ea9 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-ebc9ba12-0b46-42f5-a0e9-f81d44d5cb52
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-77477bc8-5b1f-4579-88c1-c711943a18e8 ;
+        res:hasLiteralValue    "0.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ec4ba274-2988-4bee-950b-c67bf3a77443 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-6e5bd605-d07a-4023-b6d1-0af2cf2e5dbb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b529cad1-00ff-4062-a4fd-a285ddc5aad7 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-991616cb-ac7b-4681-a666-17628f682adc .
+
+oquo:instant-a7ca7fed-efb5-4f8a-9018-0b2ce703c1a1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.007Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-02f099a5-a9b0-4c6b-82f4-5de2517598dc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-eb27b634-5d68-40b9-b51b-ad384231b25f ;
+        res:hasLiteralValue    "0.019851116625310174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fee651a2-f4bf-46e2-9b21-0364c750b91f .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-a479807e-4801-4cf7-9fc9-47458003f726
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-054c5002-0428-4288-9495-92a238c7b56d ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-41823188-5847-4d6d-8573-dadd33053a4d .
+
+oquo:qualityValue-83065a3a-e223-400e-ba7c-a608f3200b69
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d7ba622b-4634-482e-a4d1-dc7ca8b6079f ;
+        res:hasLiteralValue    "0.7142857142857143"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1f0a201d-a637-401d-97ad-c6d078dc7324 .
+
+oquo:qualityValue-0fd96d5a-c6a0-4c23-ac9c-e90faeb8d9b8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c121d9fc-3462-408f-8ebc-cc9d06389750 ;
+        res:hasLiteralValue    "1.3928571428571428"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-40f51dc4-7c8e-4af6-be5f-4756065580d8 .
+
+oquo:instant-2ebf30de-fb1a-4790-bd36-cd96da02e500
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.822Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-356985c6-e292-4c85-a541-12f78fda6698
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7f100111-b564-4a16-8e98-54c6e49e72c5 ;
+        res:hasLiteralValue    "0.5714285714285714"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6ec73e9e-56f2-4bc0-9800-07ae4ff9f05f .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-6b52f5b3-c1fb-402f-b2f2-1713fec26500
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-054c5002-0428-4288-9495-92a238c7b56d ;
+        res:hasLiteralValue    "0.6428571428571429"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d35c42f2-e5a8-4a66-9efb-042bf561d743 .
+
+oquo:evaluation-429092e2-eabf-4aa7-b9f9-9fab8756d4dd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ba00aead-1be9-46d9-9a25-1f93d67671c1 ;
+        time:hasTime              oquo:instant-75fdf91d-39fe-4c78-89a6-41c65f414313 ;
+        oquo:hasObservation       oquo:observation-ce615efc-a7b3-41d8-8764-33c599307472 .
+
+oquo:qualityValue-404c0841-daf8-4d4e-bbae-29473ec22d32
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b529cad1-00ff-4062-a4fd-a285ddc5aad7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6f624c60-5baa-4fa4-8bd2-a6a8e34f6436 .
+
+oquo:qualityValue-3b96c838-956f-460c-b71e-3357d72dbd7e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0241b63d-0e82-4e4f-af0e-6db705725dd1 ;
+        res:hasLiteralValue    "1.6153846153846154"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-47b168ea-b31d-4cff-adff-2ea84555bead .
+
+oquo:metric-d7ba622b-4634-482e-a4d1-dc7ca8b6079f
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-83065a3a-e223-400e-ba7c-a608f3200b69 ;
+        oboe:measurementFor  oquo:observation-4d5542ae-8e35-4720-8fbc-d13dedce2d4a ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-32eea7b3-180b-4eb0-8029-7555006e875e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-56e4eedf-c920-4982-934f-364a8dcd76eb ;
+        time:hasTime              oquo:instant-48688ed6-67ca-4612-8560-8f86ae2c0f91 ;
+        oquo:hasObservation       oquo:observation-4f0b21ec-b761-4b51-a447-f6d0654e3438 .
+
+oquo:metric-325743a0-afa3-46ee-a394-f0c26f493634
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-45f48329-bad6-4740-bfef-60ae7590433b ;
+        oboe:measurementFor  oquo:observation-7d7941d9-7384-4dc0-b4ce-ed45ebbc36cd ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:metric-38765d8e-1c22-4869-9ac3-40dda2b65e36
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4463f76f-96f9-45e9-9237-918b30598dc6 ;
+        oboe:measurementFor  oquo:observation-fb333b9c-268a-44d4-8586-39211331b077 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:instant-41823188-5847-4d6d-8573-dadd33053a4d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-50d84388-15be-43d8-bdb4-9b351f6831ed
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.854Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a8d269e9-b8a1-4c6e-8c24-5da59d3fc6d3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4931da86-e570-437d-b810-5bbc46bef747 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-346c66cd-47d3-4ba3-b30c-e4e565563598 .
+
+oquo:evaluation-40f51dc4-7c8e-4af6-be5f-4756065580d8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0fd96d5a-c6a0-4c23-ac9c-e90faeb8d9b8 ;
+        time:hasTime              oquo:instant-c84d94d1-c945-4eef-99b9-7e4bd4cdbdfc ;
+        oquo:hasObservation       oquo:observation-0f0ac382-7565-4c52-9daf-7a14239520bf .
+
+oquo:qualityValue-8e349bf8-e8c3-4238-aac6-9cbe6a3d5dd2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-24a51d5d-746a-40bf-b766-c335e8cce01b ;
+        res:hasLiteralValue    "0.9975186104218362"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2ae59433-1f22-4702-906a-ee5ce0b8845a .
+
+oquo:evaluation-46d620fb-57d1-4585-93a0-696b90a556e7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c2ea7744-c38f-4fa5-b63c-e18f445b734f ;
+        time:hasTime              oquo:instant-34c6ba57-061c-4551-89f8-7e3da2f038f0 ;
+        oquo:hasObservation       oquo:observation-8cc8d2b6-4b45-4441-9e76-b3988e2a14f6 .
+
+oquo:evaluation-068814c5-a310-4a51-8812-89262b92e323
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9e207538-f7b0-409c-956e-304095f803c2 ;
+        time:hasTime              oquo:instant-d6bcf66a-2f91-4b9c-830c-00b6d0b365f5 ;
+        oquo:hasObservation       oquo:observation-c34bff21-8132-428d-9808-1324274ab681 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-4463f76f-96f9-45e9-9237-918b30598dc6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-38765d8e-1c22-4869-9ac3-40dda2b65e36 ;
+        res:hasLiteralValue    "1.6896551724137931"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e1ff2db5-2806-4166-9c37-8b4834691a45 .
+
+oquo:evaluation-b9ee127f-c656-4167-ad75-8cec6f63d44e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3ab7fc82-5bfd-41c5-b90f-77d80bd4fe30 ;
+        time:hasTime              oquo:instant-279e35ff-b6a6-4abb-aabd-f5e425bb609a ;
+        oquo:hasObservation       oquo:observation-4f171f5a-7de1-4f9a-8fe0-a862ef9f1cbf .
+
+oquo:qualityValue-eb1a76ba-42a7-4bbc-917d-b7476ff1cde6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4a3f983f-cbed-4005-b82e-63b19d0ee330 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7a5a3079-7345-49e9-ac3e-6866a3867090 .
+
+oquo:observation-8cc8d2b6-4b45-4441-9e76-b3988e2a14f6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dc948e10-440e-4e89-8e58-434233811564 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-34c6ba57-061c-4551-89f8-7e3da2f038f0 .
+
+oquo:evaluation-bc1afbf5-c4d9-4a9c-b61e-4c0fa50e42bb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b3d30e30-84db-4b05-8e43-501e4cb37f06 ;
+        time:hasTime              oquo:instant-48a25ac5-4d32-4377-8d54-e801d5265642 ;
+        oquo:hasObservation       oquo:observation-3808e55f-7628-4467-9727-eba037f9f8c0 .
+
+oquo:evaluation-285a6dd3-c17a-436f-86f0-c61ca6ad4ef5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1cf85cfc-acfb-4321-925a-fcb11f81f051 ;
+        time:hasTime              oquo:instant-8d74de23-d3ad-4134-8545-99ea8e2551ad ;
+        oquo:hasObservation       oquo:observation-ca89d2cd-e3c2-44db-b5f3-9f25af4281d4 .
+
+oquo:instant-1e7db5c0-e713-429b-8fe9-1148d27e9ced
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.986Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-054c5002-0428-4288-9495-92a238c7b56d
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-6b52f5b3-c1fb-402f-b2f2-1713fec26500 ;
+        oboe:measurementFor  oquo:observation-a479807e-4801-4cf7-9fc9-47458003f726 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-fee651a2-f4bf-46e2-9b21-0364c750b91f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-02f099a5-a9b0-4c6b-82f4-5de2517598dc ;
+        time:hasTime              oquo:instant-59019103-548e-4809-a085-a1406a4f8062 ;
+        oquo:hasObservation       oquo:observation-aae49d5c-5596-4c67-9377-f8cbba1fa40d .
+
+oquo:qualityValue-c2ea7744-c38f-4fa5-b63c-e18f445b734f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dc948e10-440e-4e89-8e58-434233811564 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-46d620fb-57d1-4585-93a0-696b90a556e7 .
+
+oquo:observation-7485ec2c-5b9d-46e9-b9ec-a54213420552
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7cefff9b-3b77-4db6-a45a-7f56cc31165f ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-b5edce49-f9f6-49e0-8c2a-6a83b1bec674 .
+
+oquo:metric-5f56c720-05dd-4557-a9c7-9ddf9613bbcf
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1f29479a-753d-4b3d-8fd4-3e2f5656ef60 ;
+        oboe:measurementFor  oquo:observation-762d87d9-7c85-407e-9b68-2d0d35138c3e ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:instant-a6a7de8e-e4a8-4dba-be64-d17a39f5158d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.909Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-45f48329-bad6-4740-bfef-60ae7590433b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-325743a0-afa3-46ee-a394-f0c26f493634 ;
+        res:hasLiteralValue    "0.007444168734491315"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0476f8af-44e8-42a2-9aaa-510e5b0514af .
+
+oquo:metric-8198bf69-1c7a-43fe-bd91-75253d245128
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ba00aead-1be9-46d9-9a25-1f93d67671c1 ;
+        oboe:measurementFor  oquo:observation-ce615efc-a7b3-41d8-8764-33c599307472 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:evaluation-d0368d12-3122-4b84-b660-29c7790e6ba4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8a2db6e9-de45-4077-89b7-130082ce731e ;
+        time:hasTime              oquo:instant-a02ebd62-a280-4e2b-ad4b-41d404178e4e ;
+        oquo:hasObservation       oquo:observation-52fd91ea-dc6a-4dcd-914e-7acb479423ce .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-75fdf91d-39fe-4c78-89a6-41c65f414313
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.991Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a02ebd62-a280-4e2b-ad4b-41d404178e4e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.994Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-7a5a3079-7345-49e9-ac3e-6866a3867090
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-eb1a76ba-42a7-4bbc-917d-b7476ff1cde6 ;
+        time:hasTime              oquo:instant-c8b88733-859c-4297-a3f0-502046e5a902 ;
+        oquo:hasObservation       oquo:observation-a26a57c2-a8f4-4752-a63e-c5c63e881f71 .
+
+oquo:instant-5890e52e-c001-4ed8-8640-8cbdea812480
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:02:52.866Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-0241b63d-0e82-4e4f-af0e-6db705725dd1
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3b96c838-956f-460c-b71e-3357d72dbd7e ;
+        oboe:measurementFor  oquo:observation-a29f91c2-31f6-4b02-9c0c-36b087c33b37 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-9ab91f6d-07d5-41b1-b707-074b82a82cfe
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-535bd4df-624d-4288-9729-8efde418c865 ;
+        oboe:measurementFor  oquo:observation-17141e91-d1eb-4c3f-ac8c-e627d7a95065 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-4f0b21ec-b761-4b51-a447-f6d0654e3438
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f2c980cc-de46-4d18-b65e-dde8f3c9a8f6 ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-48688ed6-67ca-4612-8560-8f86ae2c0f91 .
+
+oquo:evaluation-814431d2-54bf-456a-8118-d107f86f96e8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:inputData             <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        res:producedQualityValue  oquo:qualityValue-35d38fe7-1758-411c-94bf-d4a32b217912 ;
+        time:hasTime              oquo:instant-88036fe9-95d7-4714-b753-947808642da7 ;
+        oquo:hasObservation       oquo:observation-b058c55d-0762-48e3-a2d1-db6780315c60 .
+
+oquo:metric-41c751c3-34d0-49b2-8776-94a75505536f
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-5dcfd722-6618-4c58-bb66-ad8d4abe93fa ;
+        oboe:measurementFor  oquo:observation-a8dcbe1a-22b3-4fb4-ad7b-523e49f2abe8 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:qualityValue-9e207538-f7b0-409c-956e-304095f803c2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d62394ec-1ea5-4b9e-af14-906931182c53 ;
+        res:hasLiteralValue    "0.38461538461538464"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-068814c5-a310-4a51-8812-89262b92e323 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-dcc9d321-f12a-4baf-b1d4-cd0972b72e77
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-24a51d5d-746a-40bf-b766-c335e8cce01b ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-2e77996e-2cc1-46f3-a0f9-05371cd2c9e2 .
+
+oquo:observation-d8cafa51-af40-4a63-8fc0-b818014b0a4d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-298e2d28-b054-4ccf-8c33-88e3d021a3ee ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-ac6e863d-8c37-44d9-891d-d2aeb271ef80 .
+
+oquo:observation-a8dcbe1a-22b3-4fb4-ad7b-523e49f2abe8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-41c751c3-34d0-49b2-8776-94a75505536f ;
+        oboe:ofEntity        <http://bioontology.org/ontologies/BiomedicalResources.owl> ;
+        time:hasTime         oquo:instant-a7ca7fed-efb5-4f8a-9018-0b2ce703c1a1 .

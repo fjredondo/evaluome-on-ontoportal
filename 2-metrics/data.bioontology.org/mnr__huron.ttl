@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:observation-152eae1a-af46-446c-beb8-b86ba83776ee
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a6143c20-e8fb-451e-b060-936a36f961c3 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-f5df06e8-2e5e-4c96-b9f8-0dee7afdb58e .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-77c3534b-b2df-45fd-b0c1-8782057f751a
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-e2eb4897-bfcd-41bf-95fb-63c240071731 ;
+        oboe:measurementFor  oquo:observation-935b02ba-29fc-449a-97b2-7d324c5c1f46 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-57ba5520-5d05-4a8e-b282-77b1a5ca2e1b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-177f94a2-e798-4158-92e2-8601d26533f2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-aa23ef61-9d26-4f95-b296-a403b1020ccd .
+
+oquo:evaluation-c1524a89-13c5-460d-a486-e8412e4c6be9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-14fb7b65-02bb-4c6d-8f80-66a0ac7f4821 ;
+        time:hasTime              oquo:instant-2d4b06b6-00fe-4304-8b3f-0bdd24859c69 ;
+        oquo:hasObservation       oquo:observation-db140b7e-6ec0-48a8-ab9f-0f3f9c115762 .
+
+oquo:observation-f15b38cb-fe3b-41b4-b7ab-521c6a8ddbf9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-42add512-19b2-494f-a911-9d623f087d69 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-300f9845-31bc-4734-8b51-f21c29ed86d5 .
+
+oquo:instant-cb528b1c-1a63-4326-9836-fb7da60bb0b9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.416Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-7c373223-3a84-4830-bde2-f1d2647405e5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-34005ac5-e791-4367-8226-3398661b622f ;
+        time:hasTime              oquo:instant-594827f2-8273-4c78-b1c9-9ab498644d7d ;
+        oquo:hasObservation       oquo:observation-94448db4-2510-4546-97f7-45c5ec3bc694 .
+
+oquo:metric-34817ea9-e82a-418d-ac1b-4d7a8256ec31
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-d45055f5-bf3f-4eff-8a30-f00861441a3c ;
+        oboe:measurementFor  oquo:observation-2227f45b-022f-49b2-8d4d-49a6376d1136 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:observation-935b02ba-29fc-449a-97b2-7d324c5c1f46
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-77c3534b-b2df-45fd-b0c1-8782057f751a ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-4c567b09-3073-482a-8e50-a814a997b6d9 .
+
+oquo:evaluation-18ce264c-cc84-4cd5-beaa-f9c1a77f46fa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9e4695a0-73aa-4a52-8b0a-26e0e119884f ;
+        time:hasTime              oquo:instant-a7c5c1c3-3310-4ff0-9f17-25774a58d195 ;
+        oquo:hasObservation       oquo:observation-62f743bb-d1aa-479d-aa31-f9b59baac215 .
+
+oquo:evaluation-5dde64e7-ada8-4a09-af28-23632783abb4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-beca3265-4f84-4619-86fb-05c4327d0ffe ;
+        time:hasTime              oquo:instant-e051c028-cad1-4087-b9fe-4bde8e2a6ad0 ;
+        oquo:hasObservation       oquo:observation-b5884b40-e871-4fea-9f39-1e6ee3a582cc .
+
+oquo:evaluation-2f432eea-0123-4679-ad1c-dd14319f0988
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e7423f94-6d92-4d15-bbd2-bb3a43aad9e6 ;
+        time:hasTime              oquo:instant-e82252f5-eef1-4205-9072-63af62f0edcd ;
+        oquo:hasObservation       oquo:observation-5e7479c4-5dab-4db9-8910-9c8e33dac75e .
+
+oquo:instant-c3fbb7dc-33be-4766-a5ac-68ae5f36d687
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.504Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ed83da91-53b6-4ede-956f-0dda52395319
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-be2d6e0d-ef7f-4561-8f01-4033ffde4020 ;
+        oboe:measurementFor  oquo:observation-0d0c088d-f1d9-421d-b363-1879e2c23bc1 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-b599387c-fa5a-460d-8352-8dacb174bc52
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c3660c76-9842-46ff-863f-b274f5f8ca30 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-c7bb4281-6d25-48a5-ae0f-3151f720a760 .
+
+oquo:instant-9154f8b2-3737-4831-8700-0b6a64f18653
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.48Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a3a2bb0c-5f61-49f6-a2c4-b13584df256c
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-6c994772-8e0e-4e4e-8e2a-6852877a7bd4 ;
+        oboe:measurementFor  oquo:observation-e6011d02-2e5c-44b0-9d50-8ec9161db33c ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-46994224-1d08-4389-b733-53a88a63c890
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-62080a65-f23c-4eb5-a86e-485a1271b004 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0864dc1a-1a3f-4a2d-a2b3-bb496636ee99 .
+
+oquo:evaluation-336744c9-faca-4302-b186-25e4baf1fcb6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-be2d6e0d-ef7f-4561-8f01-4033ffde4020 ;
+        time:hasTime              oquo:instant-dab62996-30b7-4e28-98ed-6df6b981a2d3 ;
+        oquo:hasObservation       oquo:observation-0d0c088d-f1d9-421d-b363-1879e2c23bc1 .
+
+oquo:instant-90663e86-bc68-4c45-a78c-c6729c091d6a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.469Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-387db030-1b0c-437a-9325-adf558c80193
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:26.973Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-94448db4-2510-4546-97f7-45c5ec3bc694
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1da292af-43bd-4d3e-a4b7-05fc6f3b8246 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-594827f2-8273-4c78-b1c9-9ab498644d7d .
+
+oquo:observation-0928c502-1a8f-4d8c-a8bf-f161bf6c5fa1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-74ee0fbc-dde2-4a6e-9f30-5b3e05de89b5 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-dbf0c90f-24b5-494a-b38f-29613b3f090b .
+
+oquo:qualityValue-9743d149-5009-42d9-8403-07949c531768
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-839c2f9c-6d16-4f2c-94e9-bb1309c6928b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-86b9d156-b139-45b8-9c40-747fe1605014 .
+
+oquo:metric-b9a2a03c-741b-4a9b-abfa-3d442ab1b21b
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2bd2005b-e173-47cc-8712-86c7ef96972c ;
+        oboe:measurementFor  oquo:observation-65c8b928-e5a8-41af-8dbe-bbec1969a1c4 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-84226358-e504-468a-9d39-9642696ff033
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-504cbb87-f652-4c1e-a2e8-8ffdd760ddd1 ;
+        time:hasTime              oquo:instant-c7bb4281-6d25-48a5-ae0f-3151f720a760 ;
+        oquo:hasObservation       oquo:observation-b599387c-fa5a-460d-8352-8dacb174bc52 .
+
+<http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:instant-69ce59ba-fa09-4215-bfff-8a4e21ef27a0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.373Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-46ec7374-1cc5-4a62-91a9-934799100b1c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.427Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-e2eb4897-bfcd-41bf-95fb-63c240071731
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-77c3534b-b2df-45fd-b0c1-8782057f751a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ee687771-2c4a-4283-afd6-2212d8c127c4 .
+
+oquo:observation-788bf9be-fe67-44a9-afab-7e079db6aa18
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-62080a65-f23c-4eb5-a86e-485a1271b004 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-c3fbb7dc-33be-4766-a5ac-68ae5f36d687 .
+
+oquo:qualityValue-5c5f8dde-bc0d-4578-9b63-f48689249c90
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4dc3a26b-dc68-4091-8f05-8122cb03b3fd ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cefa210d-8e88-492c-94b4-23a4059319fe .
+
+oquo:qualityValue-34005ac5-e791-4367-8226-3398661b622f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1da292af-43bd-4d3e-a4b7-05fc6f3b8246 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7c373223-3a84-4830-bde2-f1d2647405e5 .
+
+oquo:observation-5e7479c4-5dab-4db9-8910-9c8e33dac75e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-922399aa-c012-4e02-a569-dd37bc8154c1 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-e82252f5-eef1-4205-9072-63af62f0edcd .
+
+oquo:instant-f5df06e8-2e5e-4c96-b9f8-0dee7afdb58e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.54Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-2d4b06b6-00fe-4304-8b3f-0bdd24859c69
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.389Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9e4695a0-73aa-4a52-8b0a-26e0e119884f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1d4b3abb-1d94-43c8-9f39-b778c7aac09d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-18ce264c-cc84-4cd5-beaa-f9c1a77f46fa .
+
+oquo:instant-a7c5c1c3-3310-4ff0-9f17-25774a58d195
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.536Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-3762a4e9-657b-4e4f-82e6-571c0704e951
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-d45055f5-bf3f-4eff-8a30-f00861441a3c ;
+        time:hasTime              oquo:instant-6d2ade42-2fb1-451c-9df9-417cb5279d82 ;
+        oquo:hasObservation       oquo:observation-2227f45b-022f-49b2-8d4d-49a6376d1136 .
+
+oquo:metric-9c7ec682-610a-4805-8fb5-d296cc62ab0b
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-ac4c3e67-8395-4e2c-8a35-825ada23cc0f ;
+        oboe:measurementFor  oquo:observation-97a5362f-f772-43fd-8d61-ad0d242013e6 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:instant-1d94eff5-6dda-4bea-8de3-912e22cb309d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:26.969Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-2bc3429c-8b52-4238-920c-1c9574fc97c8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.538Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f062a790-9314-498f-9f2e-bbf5edf8019e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dafb1afc-b0c2-409c-8ba9-c69f40429d22 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fa91c39d-955f-461f-8252-53c0374dc2cf .
+
+oquo:observation-db140b7e-6ec0-48a8-ab9f-0f3f9c115762
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9a73c91c-9808-475a-b666-cb91785fc3f5 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-2d4b06b6-00fe-4304-8b3f-0bdd24859c69 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-5d3ce8fc-2ebc-499a-b767-0dbf6cd9c0ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-15d1c8ca-6063-468c-86fc-9eceaaac808f ;
+        time:hasTime              oquo:instant-78b12cd2-e31e-4d50-b94c-b6eb3c3fab62 ;
+        oquo:hasObservation       oquo:observation-ad2146c7-d45d-4100-9cfd-89d5a4a00a9a .
+
+oquo:evaluation-fa91c39d-955f-461f-8252-53c0374dc2cf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f062a790-9314-498f-9f2e-bbf5edf8019e ;
+        time:hasTime              oquo:instant-338fcfdf-5495-4083-b96b-1c8cd02f1440 ;
+        oquo:hasObservation       oquo:observation-f2f504b9-7cf4-4304-ae16-042d770af85a .
+
+oquo:metric-177f94a2-e798-4158-92e2-8601d26533f2
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-57ba5520-5d05-4a8e-b282-77b1a5ca2e1b ;
+        oboe:measurementFor  oquo:observation-666594d2-b5e4-444d-b8a2-a1355e4be1ac ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-ee687771-2c4a-4283-afd6-2212d8c127c4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e2eb4897-bfcd-41bf-95fb-63c240071731 ;
+        time:hasTime              oquo:instant-4c567b09-3073-482a-8e50-a814a997b6d9 ;
+        oquo:hasObservation       oquo:observation-935b02ba-29fc-449a-97b2-7d324c5c1f46 .
+
+oquo:instant-4c567b09-3073-482a-8e50-a814a997b6d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.498Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-db622510-7e3c-4911-81e3-e43ace4c17da
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-7c17a27b-5685-4b14-bebb-c11f0065fcec ;
+        oboe:measurementFor  oquo:observation-146f9ec2-fdb0-4b79-85ca-36e8ec5025c3 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-b5884b40-e871-4fea-9f39-1e6ee3a582cc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-775828cf-f84e-4ec6-b3a0-d3b7b8852cd7 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-e051c028-cad1-4087-b9fe-4bde8e2a6ad0 .
+
+oquo:observation-97a5362f-f772-43fd-8d61-ad0d242013e6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9c7ec682-610a-4805-8fb5-d296cc62ab0b ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-69ce59ba-fa09-4215-bfff-8a4e21ef27a0 .
+
+oquo:instant-e82252f5-eef1-4205-9072-63af62f0edcd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.443Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-cdbc87c3-d921-474d-894e-5c93731e442c
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-918d711d-be65-472d-a9c8-aab81e463d50 ;
+        oboe:measurementFor  oquo:observation-1e414d29-00cc-4e61-a9c1-84c4cb7032b2 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-be2d6e0d-ef7f-4561-8f01-4033ffde4020
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ed83da91-53b6-4ede-956f-0dda52395319 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-336744c9-faca-4302-b186-25e4baf1fcb6 .
+
+oquo:evaluation-ea14d28d-974d-44db-88a8-99c2913526d9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1867a647-3495-4950-8fad-99aa9403b4ba ;
+        time:hasTime              oquo:instant-f672d023-ceb5-4569-9063-80465ede6b07 ;
+        oquo:hasObservation       oquo:observation-3bc45fc2-f914-4781-ab6d-b2e48d1ec2cf .
+
+oquo:observation-83eed73b-d7e0-4c61-ac8e-8b1d3f6db76a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4dc3a26b-dc68-4091-8f05-8122cb03b3fd ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-8d52eeb1-ac6c-483f-88a0-02905dee2837 .
+
+oquo:observation-146f9ec2-fdb0-4b79-85ca-36e8ec5025c3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-db622510-7e3c-4911-81e3-e43ace4c17da ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-ed5c0e28-31cc-4915-8c03-453bc308dbbb .
+
+oquo:qualityValue-8390a898-0b62-405c-8028-1f77672dd9b8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fcf20515-2c88-4afb-a8b8-dca03e131de2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1616fec1-b002-4e87-8c68-353ab17f1edf .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-44835a8a-67f5-4086-88c8-072518e78342
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7cd131e8-6dc6-4a45-a497-0d401522ba33 ;
+        time:hasTime              oquo:instant-4880b4b8-89f0-434c-b607-5f256c1566f2 ;
+        oquo:hasObservation       oquo:observation-006dd58c-05da-42ee-bd2c-1de43f0d403c .
+
+oquo:metric-cd90021e-d4e0-4f82-a3a7-e749b4aa1082
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-73232f69-e40b-40d2-991c-e901b0ec5157 ;
+        oboe:measurementFor  oquo:observation-38acd862-dffb-4796-a563-52fc1625c6c6 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-a35673fc-594e-4eec-bbb3-a2ff7f64ff27
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-715cbb8e-8af9-49fa-b60e-bbc2d2383c7f ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-7ee37233-82db-43c7-9524-294040c4aa3e .
+
+oquo:metric-1d4b3abb-1d94-43c8-9f39-b778c7aac09d
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-9e4695a0-73aa-4a52-8b0a-26e0e119884f ;
+        oboe:measurementFor  oquo:observation-62f743bb-d1aa-479d-aa31-f9b59baac215 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-145bfa34-9b7c-498d-b134-6ea68b300f6a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fcf20515-2c88-4afb-a8b8-dca03e131de2 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-b250854a-395d-4e47-b32e-46a37052d0a5 .
+
+oquo:qualityValue-7a5f8546-cc9b-4c25-98ed-bdf285ab270b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-75017b76-3cab-49ce-96ff-453776353b9d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ee9b44ee-2aab-4418-8aa5-56fe0e0bec09 .
+
+oquo:instant-ffe43382-9782-405b-b114-918876d6141c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.527Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-1867a647-3495-4950-8fad-99aa9403b4ba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-56705c5b-936c-44fe-8abc-a65ae209c80e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ea14d28d-974d-44db-88a8-99c2913526d9 .
+
+oquo:instant-4880b4b8-89f0-434c-b607-5f256c1566f2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.482Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-55fe617f-a0a0-4568-9674-865a42625fed
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-742ee3a6-c5c7-415f-8c3e-3110ce59b649 ;
+        time:hasTime              oquo:instant-dbf0c90f-24b5-494a-b38f-29613b3f090b ;
+        oquo:hasObservation       oquo:observation-0928c502-1a8f-4d8c-a8bf-f161bf6c5fa1 .
+
+oquo:observation-b3e53c13-7753-4f80-8bdf-6757cf623a52
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c5b8c927-dd44-4a2e-aae4-e31534104630 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-22c0b334-002d-4ec5-a366-3e1a6660ed54 .
+
+oquo:evaluation-1616fec1-b002-4e87-8c68-353ab17f1edf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8390a898-0b62-405c-8028-1f77672dd9b8 ;
+        time:hasTime              oquo:instant-b250854a-395d-4e47-b32e-46a37052d0a5 ;
+        oquo:hasObservation       oquo:observation-145bfa34-9b7c-498d-b134-6ea68b300f6a .
+
+oquo:metric-1d3c75a4-658c-4a8a-8c05-c7891d183ea7
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-15d1c8ca-6063-468c-86fc-9eceaaac808f ;
+        oboe:measurementFor  oquo:observation-ad2146c7-d45d-4100-9cfd-89d5a4a00a9a ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-83f74924-aca6-4496-a074-d4ccb0af8ba6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dc04f15e-a09b-493b-8df3-8817480256dc ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-46ec7374-1cc5-4a62-91a9-934799100b1c .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ad2146c7-d45d-4100-9cfd-89d5a4a00a9a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1d3c75a4-658c-4a8a-8c05-c7891d183ea7 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-78b12cd2-e31e-4d50-b94c-b6eb3c3fab62 .
+
+oquo:evaluation-aa23ef61-9d26-4f95-b296-a403b1020ccd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-57ba5520-5d05-4a8e-b282-77b1a5ca2e1b ;
+        time:hasTime              oquo:instant-174bf660-2057-45b6-92e6-d5ead8f5d32f ;
+        oquo:hasObservation       oquo:observation-666594d2-b5e4-444d-b8a2-a1355e4be1ac .
+
+oquo:instant-dab62996-30b7-4e28-98ed-6df6b981a2d3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.535Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-ac4c3e67-8395-4e2c-8a35-825ada23cc0f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9c7ec682-610a-4805-8fb5-d296cc62ab0b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2ab82f13-4005-46df-95e4-400055f0ac1a .
+
+oquo:evaluation-86b9d156-b139-45b8-9c40-747fe1605014
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9743d149-5009-42d9-8403-07949c531768 ;
+        time:hasTime              oquo:instant-90663e86-bc68-4c45-a78c-c6729c091d6a ;
+        oquo:hasObservation       oquo:observation-210b0534-4321-45d2-a18a-b96417a38040 .
+
+oquo:metric-c5b8c927-dd44-4a2e-aae4-e31534104630
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-feefe3a7-a93e-47bb-8fb5-dc3b0fac29aa ;
+        oboe:measurementFor  oquo:observation-b3e53c13-7753-4f80-8bdf-6757cf623a52 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-742ee3a6-c5c7-415f-8c3e-3110ce59b649
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-74ee0fbc-dde2-4a6e-9f30-5b3e05de89b5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-55fe617f-a0a0-4568-9674-865a42625fed .
+
+oquo:evaluation-317275a4-33ae-4c39-b76f-62f298e39588
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2bd2005b-e173-47cc-8712-86c7ef96972c ;
+        time:hasTime              oquo:instant-57c40637-36d9-49b2-b74a-55c46a8c6756 ;
+        oquo:hasObservation       oquo:observation-65c8b928-e5a8-41af-8dbe-bbec1969a1c4 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-210b0534-4321-45d2-a18a-b96417a38040
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-839c2f9c-6d16-4f2c-94e9-bb1309c6928b ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-90663e86-bc68-4c45-a78c-c6729c091d6a .
+
+oquo:metric-775828cf-f84e-4ec6-b3a0-d3b7b8852cd7
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-beca3265-4f84-4619-86fb-05c4327d0ffe ;
+        oboe:measurementFor  oquo:observation-b5884b40-e871-4fea-9f39-1e6ee3a582cc ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-f31c0bb3-09eb-4bd5-82ec-31282c45ab8e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2088d36b-ae4d-411a-863a-0eefd7552b22 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-30032cdf-7576-4cba-9ca5-f80f3c742ede .
+
+oquo:metric-9a73c91c-9808-475a-b666-cb91785fc3f5
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-14fb7b65-02bb-4c6d-8f80-66a0ac7f4821 ;
+        oboe:measurementFor  oquo:observation-db140b7e-6ec0-48a8-ab9f-0f3f9c115762 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:qualityValue-481c10f2-ffba-4d2a-a081-00535843b9d3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-42add512-19b2-494f-a911-9d623f087d69 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-be83e391-4d33-4a00-9949-ac3882b1d042 .
+
+oquo:qualityValue-7c17a27b-5685-4b14-bebb-c11f0065fcec
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-db622510-7e3c-4911-81e3-e43ace4c17da ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-321c845d-c4a1-4391-afdf-96c82c30639e .
+
+oquo:observation-2a1da262-ada1-4368-8cdd-b619dcca0786
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8f36d197-0e3d-4de8-b1e2-4feaa3fe7cfa ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-2bc3429c-8b52-4238-920c-1c9574fc97c8 .
+
+oquo:instant-594827f2-8273-4c78-b1c9-9ab498644d7d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.422Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-22bab2d9-8091-4f51-b2cb-cf1a7b4b38b0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dc04f15e-a09b-493b-8df3-8817480256dc ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d76f03bb-d3f5-44c8-a74f-d1f8fa0a071b .
+
+oquo:metric-a6143c20-e8fb-451e-b060-936a36f961c3
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-46b28a1d-94cc-4ab9-9e1b-796fa13ac421 ;
+        oboe:measurementFor  oquo:observation-152eae1a-af46-446c-beb8-b86ba83776ee ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-4dc3a26b-dc68-4091-8f05-8122cb03b3fd
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5c5f8dde-bc0d-4578-9b63-f48689249c90 ;
+        oboe:measurementFor  oquo:observation-83eed73b-d7e0-4c61-ac8e-8b1d3f6db76a ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-beca3265-4f84-4619-86fb-05c4327d0ffe
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-775828cf-f84e-4ec6-b3a0-d3b7b8852cd7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5dde64e7-ada8-4a09-af28-23632783abb4 .
+
+oquo:qualityValue-504cbb87-f652-4c1e-a2e8-8ffdd760ddd1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c3660c76-9842-46ff-863f-b274f5f8ca30 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-84226358-e504-468a-9d39-9642696ff033 .
+
+oquo:metric-56705c5b-936c-44fe-8abc-a65ae209c80e
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1867a647-3495-4950-8fad-99aa9403b4ba ;
+        oboe:measurementFor  oquo:observation-3bc45fc2-f914-4781-ab6d-b2e48d1ec2cf ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-78b12cd2-e31e-4d50-b94c-b6eb3c3fab62
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:26.981Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-38acd862-dffb-4796-a563-52fc1625c6c6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cd90021e-d4e0-4f82-a3a7-e749b4aa1082 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-ffe43382-9782-405b-b114-918876d6141c .
+
+oquo:observation-65c8b928-e5a8-41af-8dbe-bbec1969a1c4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9a2a03c-741b-4a9b-abfa-3d442ab1b21b ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-57c40637-36d9-49b2-b74a-55c46a8c6756 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-174bf660-2057-45b6-92e6-d5ead8f5d32f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.391Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-dc04f15e-a09b-493b-8df3-8817480256dc
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-22bab2d9-8091-4f51-b2cb-cf1a7b4b38b0 ;
+        oboe:measurementFor  oquo:observation-83f74924-aca6-4496-a074-d4ccb0af8ba6 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-d45055f5-bf3f-4eff-8a30-f00861441a3c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-34817ea9-e82a-418d-ac1b-4d7a8256ec31 ;
+        res:hasLiteralValue    "0.6956521739130435"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3762a4e9-657b-4e4f-82e6-571c0704e951 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:evaluation-5fbdc4b5-81be-44a5-922d-ea219f809235
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-918d711d-be65-472d-a9c8-aab81e463d50 ;
+        time:hasTime              oquo:instant-cb528b1c-1a63-4326-9836-fb7da60bb0b9 ;
+        oquo:hasObservation       oquo:observation-1e414d29-00cc-4e61-a9c1-84c4cb7032b2 .
+
+oquo:instant-57c40637-36d9-49b2-b74a-55c46a8c6756
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.456Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7ee37233-82db-43c7-9524-294040c4aa3e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.463Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-2227f45b-022f-49b2-8d4d-49a6376d1136
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-34817ea9-e82a-418d-ac1b-4d7a8256ec31 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-6d2ade42-2fb1-451c-9df9-417cb5279d82 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-922399aa-c012-4e02-a569-dd37bc8154c1
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e7423f94-6d92-4d15-bbd2-bb3a43aad9e6 ;
+        oboe:measurementFor  oquo:observation-5e7479c4-5dab-4db9-8910-9c8e33dac75e ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:observation-006dd58c-05da-42ee-bd2c-1de43f0d403c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ccc19612-44a5-4ee6-bb7d-7eff3c165055 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-4880b4b8-89f0-434c-b607-5f256c1566f2 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-f672d023-ceb5-4569-9063-80465ede6b07
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.403Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-839c2f9c-6d16-4f2c-94e9-bb1309c6928b
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9743d149-5009-42d9-8403-07949c531768 ;
+        oboe:measurementFor  oquo:observation-210b0534-4321-45d2-a18a-b96417a38040 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:evaluation-7daefd64-c667-48fc-b9a9-a79c4f664741
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-69bb0057-b06d-4992-a4b2-d7d270086979 ;
+        time:hasTime              oquo:instant-2bc3429c-8b52-4238-920c-1c9574fc97c8 ;
+        oquo:hasObservation       oquo:observation-2a1da262-ada1-4368-8cdd-b619dcca0786 .
+
+oquo:qualityValue-e7423f94-6d92-4d15-bbd2-bb3a43aad9e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-922399aa-c012-4e02-a569-dd37bc8154c1 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2f432eea-0123-4679-ad1c-dd14319f0988 .
+
+oquo:instant-6d2ade42-2fb1-451c-9df9-417cb5279d82
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.491Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-15d1c8ca-6063-468c-86fc-9eceaaac808f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1d3c75a4-658c-4a8a-8c05-c7891d183ea7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5d3ce8fc-2ebc-499a-b767-0dbf6cd9c0ce .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-300f9845-31bc-4734-8b51-f21c29ed86d5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.529Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-ed5c0e28-31cc-4915-8c03-453bc308dbbb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.507Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-b250854a-395d-4e47-b32e-46a37052d0a5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:26.884Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-be83e391-4d33-4a00-9949-ac3882b1d042
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-481c10f2-ffba-4d2a-a081-00535843b9d3 ;
+        time:hasTime              oquo:instant-300f9845-31bc-4734-8b51-f21c29ed86d5 ;
+        oquo:hasObservation       oquo:observation-f15b38cb-fe3b-41b4-b7ab-521c6a8ddbf9 .
+
+oquo:qualityValue-2bd2005b-e173-47cc-8712-86c7ef96972c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9a2a03c-741b-4a9b-abfa-3d442ab1b21b ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-317275a4-33ae-4c39-b76f-62f298e39588 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-75017b76-3cab-49ce-96ff-453776353b9d
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7a5f8546-cc9b-4c25-98ed-bdf285ab270b ;
+        oboe:measurementFor  oquo:observation-d3255252-61c2-4880-becc-71cbc5eb91c4 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:evaluation-9658c7a8-ad5e-4600-9642-fb00c6560f9d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-37cf05fa-6dd3-43cb-9973-7529bad97e3b ;
+        time:hasTime              oquo:instant-7ee37233-82db-43c7-9524-294040c4aa3e ;
+        oquo:hasObservation       oquo:observation-a35673fc-594e-4eec-bbb3-a2ff7f64ff27 .
+
+oquo:evaluation-cefa210d-8e88-492c-94b4-23a4059319fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5c5f8dde-bc0d-4578-9b63-f48689249c90 ;
+        time:hasTime              oquo:instant-8d52eeb1-ac6c-483f-88a0-02905dee2837 ;
+        oquo:hasObservation       oquo:observation-83eed73b-d7e0-4c61-ac8e-8b1d3f6db76a .
+
+oquo:qualityValue-52e78915-e4f4-4df8-852e-669d4f6820f7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-30b5bc85-b496-460f-996e-a73cf6e2da11 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1f129f67-b7b7-423a-a161-5f4f3486304e .
+
+oquo:evaluation-832b65da-e0fe-4980-aec0-8d3e57646af6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2ee9b952-69a0-43b6-950d-5ca6ae2a3d3d ;
+        time:hasTime              oquo:instant-30032cdf-7576-4cba-9ca5-f80f3c742ede ;
+        oquo:hasObservation       oquo:observation-f31c0bb3-09eb-4bd5-82ec-31282c45ab8e .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-dafb1afc-b0c2-409c-8ba9-c69f40429d22
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f062a790-9314-498f-9f2e-bbf5edf8019e ;
+        oboe:measurementFor  oquo:observation-f2f504b9-7cf4-4304-ae16-042d770af85a ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-69bb0057-b06d-4992-a4b2-d7d270086979
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8f36d197-0e3d-4de8-b1e2-4feaa3fe7cfa ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7daefd64-c667-48fc-b9a9-a79c4f664741 .
+
+oquo:qualityValue-6c994772-8e0e-4e4e-8e2a-6852877a7bd4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a3a2bb0c-5f61-49f6-a2c4-b13584df256c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-164d9622-2eac-42aa-8fe5-687e310557f9 .
+
+oquo:metric-2088d36b-ae4d-411a-863a-0eefd7552b22
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2ee9b952-69a0-43b6-950d-5ca6ae2a3d3d ;
+        oboe:measurementFor  oquo:observation-f31c0bb3-09eb-4bd5-82ec-31282c45ab8e ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:evaluation-2ab82f13-4005-46df-95e4-400055f0ac1a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ac4c3e67-8395-4e2c-8a35-825ada23cc0f ;
+        time:hasTime              oquo:instant-69ce59ba-fa09-4215-bfff-8a4e21ef27a0 ;
+        oquo:hasObservation       oquo:observation-97a5362f-f772-43fd-8d61-ad0d242013e6 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-0864dc1a-1a3f-4a2d-a2b3-bb496636ee99
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-46994224-1d08-4389-b733-53a88a63c890 ;
+        time:hasTime              oquo:instant-c3fbb7dc-33be-4766-a5ac-68ae5f36d687 ;
+        oquo:hasObservation       oquo:observation-788bf9be-fe67-44a9-afab-7e079db6aa18 .
+
+oquo:qualityValue-37cf05fa-6dd3-43cb-9973-7529bad97e3b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-715cbb8e-8af9-49fa-b60e-bbc2d2383c7f ;
+        res:hasLiteralValue    "0.30434782608695654"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9658c7a8-ad5e-4600-9642-fb00c6560f9d .
+
+oquo:instant-8d52eeb1-ac6c-483f-88a0-02905dee2837
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.41Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e051c028-cad1-4087-b9fe-4bde8e2a6ad0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:26.935Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-715cbb8e-8af9-49fa-b60e-bbc2d2383c7f
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-37cf05fa-6dd3-43cb-9973-7529bad97e3b ;
+        oboe:measurementFor  oquo:observation-a35673fc-594e-4eec-bbb3-a2ff7f64ff27 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:metric-8f36d197-0e3d-4de8-b1e2-4feaa3fe7cfa
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-69bb0057-b06d-4992-a4b2-d7d270086979 ;
+        oboe:measurementFor  oquo:observation-2a1da262-ada1-4368-8cdd-b619dcca0786 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-74ee0fbc-dde2-4a6e-9f30-5b3e05de89b5
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-742ee3a6-c5c7-415f-8c3e-3110ce59b649 ;
+        oboe:measurementFor  oquo:observation-0928c502-1a8f-4d8c-a8bf-f161bf6c5fa1 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-918d711d-be65-472d-a9c8-aab81e463d50
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cdbc87c3-d921-474d-894e-5c93731e442c ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5fbdc4b5-81be-44a5-922d-ea219f809235 .
+
+oquo:evaluation-d76f03bb-d3f5-44c8-a74f-d1f8fa0a071b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-22bab2d9-8091-4f51-b2cb-cf1a7b4b38b0 ;
+        time:hasTime              oquo:instant-46ec7374-1cc5-4a62-91a9-934799100b1c ;
+        oquo:hasObservation       oquo:observation-83f74924-aca6-4496-a074-d4ccb0af8ba6 .
+
+oquo:observation-3bc45fc2-f914-4781-ab6d-b2e48d1ec2cf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-56705c5b-936c-44fe-8abc-a65ae209c80e ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-f672d023-ceb5-4569-9063-80465ede6b07 .
+
+oquo:metric-30b5bc85-b496-460f-996e-a73cf6e2da11
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-52e78915-e4f4-4df8-852e-669d4f6820f7 ;
+        oboe:measurementFor  oquo:observation-5b1d21c3-c3c2-447d-81be-b92f2a26a655 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-fcf20515-2c88-4afb-a8b8-dca03e131de2
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-8390a898-0b62-405c-8028-1f77672dd9b8 ;
+        oboe:measurementFor  oquo:observation-145bfa34-9b7c-498d-b134-6ea68b300f6a ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-14fb7b65-02bb-4c6d-8f80-66a0ac7f4821
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9a73c91c-9808-475a-b666-cb91785fc3f5 ;
+        res:hasLiteralValue    "23.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c1524a89-13c5-460d-a486-e8412e4c6be9 .
+
+oquo:evaluation-1f129f67-b7b7-423a-a161-5f4f3486304e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-52e78915-e4f4-4df8-852e-669d4f6820f7 ;
+        time:hasTime              oquo:instant-1d94eff5-6dda-4bea-8de3-912e22cb309d ;
+        oquo:hasObservation       oquo:observation-5b1d21c3-c3c2-447d-81be-b92f2a26a655 .
+
+oquo:evaluation-321c845d-c4a1-4391-afdf-96c82c30639e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7c17a27b-5685-4b14-bebb-c11f0065fcec ;
+        time:hasTime              oquo:instant-ed5c0e28-31cc-4915-8c03-453bc308dbbb ;
+        oquo:hasObservation       oquo:observation-146f9ec2-fdb0-4b79-85ca-36e8ec5025c3 .
+
+oquo:observation-1e414d29-00cc-4e61-a9c1-84c4cb7032b2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cdbc87c3-d921-474d-894e-5c93731e442c ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-cb528b1c-1a63-4326-9836-fb7da60bb0b9 .
+
+oquo:qualityValue-7cd131e8-6dc6-4a45-a497-0d401522ba33
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ccc19612-44a5-4ee6-bb7d-7eff3c165055 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-44835a8a-67f5-4086-88c8-072518e78342 .
+
+oquo:observation-5b1d21c3-c3c2-447d-81be-b92f2a26a655
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-30b5bc85-b496-460f-996e-a73cf6e2da11 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-1d94eff5-6dda-4bea-8de3-912e22cb309d .
+
+oquo:evaluation-164d9622-2eac-42aa-8fe5-687e310557f9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-6c994772-8e0e-4e4e-8e2a-6852877a7bd4 ;
+        time:hasTime              oquo:instant-387db030-1b0c-437a-9325-adf558c80193 ;
+        oquo:hasObservation       oquo:observation-e6011d02-2e5c-44b0-9d50-8ec9161db33c .
+
+oquo:observation-e6011d02-2e5c-44b0-9d50-8ec9161db33c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a3a2bb0c-5f61-49f6-a2c4-b13584df256c ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-387db030-1b0c-437a-9325-adf558c80193 .
+
+oquo:observation-62f743bb-d1aa-479d-aa31-f9b59baac215
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1d4b3abb-1d94-43c8-9f39-b778c7aac09d ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-a7c5c1c3-3310-4ff0-9f17-25774a58d195 .
+
+oquo:metric-42add512-19b2-494f-a911-9d623f087d69
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-481c10f2-ffba-4d2a-a081-00535843b9d3 ;
+        oboe:measurementFor  oquo:observation-f15b38cb-fe3b-41b4-b7ab-521c6a8ddbf9 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-feefe3a7-a93e-47bb-8fb5-dc3b0fac29aa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c5b8c927-dd44-4a2e-aae4-e31534104630 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b9044566-4911-407c-af92-034bcb75ddca .
+
+oquo:instant-c7bb4281-6d25-48a5-ae0f-3151f720a760
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.466Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-22c0b334-002d-4ec5-a366-3e1a6660ed54
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.533Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-338fcfdf-5495-4083-b96b-1c8cd02f1440
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.449Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-dbf0c90f-24b5-494a-b38f-29613b3f090b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.468Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-30032cdf-7576-4cba-9ca5-f80f3c742ede
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-15T08:44:27.458Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ee9b44ee-2aab-4418-8aa5-56fe0e0bec09
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7a5f8546-cc9b-4c25-98ed-bdf285ab270b ;
+        time:hasTime              oquo:instant-9154f8b2-3737-4831-8700-0b6a64f18653 ;
+        oquo:hasObservation       oquo:observation-d3255252-61c2-4880-becc-71cbc5eb91c4 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-f2f504b9-7cf4-4304-ae16-042d770af85a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dafb1afc-b0c2-409c-8ba9-c69f40429d22 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-338fcfdf-5495-4083-b96b-1c8cd02f1440 .
+
+oquo:qualityValue-46b28a1d-94cc-4ab9-9e1b-796fa13ac421
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a6143c20-e8fb-451e-b060-936a36f961c3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d1cb773d-e79a-4a9d-b5dc-c58e379188c3 .
+
+oquo:metric-1da292af-43bd-4d3e-a4b7-05fc6f3b8246
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-34005ac5-e791-4367-8226-3398661b622f ;
+        oboe:measurementFor  oquo:observation-94448db4-2510-4546-97f7-45c5ec3bc694 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-d1cb773d-e79a-4a9d-b5dc-c58e379188c3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-46b28a1d-94cc-4ab9-9e1b-796fa13ac421 ;
+        time:hasTime              oquo:instant-f5df06e8-2e5e-4c96-b9f8-0dee7afdb58e ;
+        oquo:hasObservation       oquo:observation-152eae1a-af46-446c-beb8-b86ba83776ee .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-73232f69-e40b-40d2-991c-e901b0ec5157
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cd90021e-d4e0-4f82-a3a7-e749b4aa1082 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7c3a8a86-f732-410f-86e1-f31618fe2a78 .
+
+oquo:observation-666594d2-b5e4-444d-b8a2-a1355e4be1ac
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-177f94a2-e798-4158-92e2-8601d26533f2 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-174bf660-2057-45b6-92e6-d5ead8f5d32f .
+
+oquo:observation-d3255252-61c2-4880-becc-71cbc5eb91c4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-75017b76-3cab-49ce-96ff-453776353b9d ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-9154f8b2-3737-4831-8700-0b6a64f18653 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-0d0c088d-f1d9-421d-b363-1879e2c23bc1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ed83da91-53b6-4ede-956f-0dda52395319 ;
+        oboe:ofEntity        <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        time:hasTime         oquo:instant-dab62996-30b7-4e28-98ed-6df6b981a2d3 .
+
+oquo:qualityValue-2ee9b952-69a0-43b6-950d-5ca6ae2a3d3d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2088d36b-ae4d-411a-863a-0eefd7552b22 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-832b65da-e0fe-4980-aec0-8d3e57646af6 .
+
+oquo:evaluation-7c3a8a86-f732-410f-86e1-f31618fe2a78
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-73232f69-e40b-40d2-991c-e901b0ec5157 ;
+        time:hasTime              oquo:instant-ffe43382-9782-405b-b114-918876d6141c ;
+        oquo:hasObservation       oquo:observation-38acd862-dffb-4796-a563-52fc1625c6c6 .
+
+oquo:evaluation-b9044566-4911-407c-af92-034bcb75ddca
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:inputData             <http://sweet.jpl.nasa.gov/2.3/matrNaturalResource.owl> ;
+        res:producedQualityValue  oquo:qualityValue-feefe3a7-a93e-47bb-8fb5-dc3b0fac29aa ;
+        time:hasTime              oquo:instant-22c0b334-002d-4ec5-a366-3e1a6660ed54 ;
+        oquo:hasObservation       oquo:observation-b3e53c13-7753-4f80-8bdf-6757cf623a52 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-c3660c76-9842-46ff-863f-b274f5f8ca30
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-504cbb87-f652-4c1e-a2e8-8ffdd760ddd1 ;
+        oboe:measurementFor  oquo:observation-b599387c-fa5a-460d-8352-8dacb174bc52 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:metric-62080a65-f23c-4eb5-a86e-485a1271b004
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-46994224-1d08-4389-b733-53a88a63c890 ;
+        oboe:measurementFor  oquo:observation-788bf9be-fe67-44a9-afab-7e079db6aa18 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-ccc19612-44a5-4ee6-bb7d-7eff3c165055
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-7cd131e8-6dc6-4a45-a497-0d401522ba33 ;
+        oboe:measurementFor  oquo:observation-006dd58c-05da-42ee-bd2c-1de43f0d403c ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
