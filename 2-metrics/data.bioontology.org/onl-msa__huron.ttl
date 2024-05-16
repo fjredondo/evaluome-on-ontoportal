@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-60fe5f48-f1fc-4fe3-8a16-398ec40bd8dd
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-49730c89-2d28-4925-957a-a1c990562c04 ;
+        oboe:measurementFor  oquo:observation-79817a8c-b283-4f87-a5f4-be75ca499fa0 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:instant-cf98fd5f-5628-44d9-9c3f-81818668731e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:15.823Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fe9e665e-0855-4dc2-90e2-22a36a61c26b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-28654101-8370-47ca-8be1-c522c1aeafa4 ;
+        time:hasTime              oquo:instant-89b3eb7c-8e1a-414a-a259-f30de7c858ea ;
+        oquo:hasObservation       oquo:observation-07e648e5-f36d-4b98-9b88-69c0148ba5f2 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-bfed0af7-f1ed-43b7-81d5-fe1bff35d250
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-91fb8d70-87b0-4bbe-ab09-a5bcc70a0e0e ;
+        oboe:measurementFor  oquo:observation-49462bf1-a28a-43c9-b659-2c4a3da47d32 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:qualityValue-dd729bdb-44a2-4dfd-9274-b2538dbdc39f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5de7533a-fa0a-4560-b573-3022d0c6b1bd ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-20ef7e59-bcd8-41d3-9c3f-938466ae6537 .
+
+oquo:observation-6c8105f2-9a67-4bae-b524-fea291f6179b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8b53a40b-2ef7-47cb-8a1a-5740cf905b88 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-5584dc0a-596b-4ed2-812d-e2822ec876f0 .
+
+oquo:qualityValue-c28d05a4-7545-4d01-a04a-4a0e09a0edc3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-774528a8-ef3c-4963-9eff-55145c49e5a5 ;
+        res:hasLiteralValue    "0.967741935483871"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d1bc67de-1b8a-4279-aead-8fd265b32f2d .
+
+oquo:qualityValue-f6983cba-0f4a-42cd-8846-eed6e8ae0499
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-92cfe7d1-b2b2-4a60-8c96-5b4724a679e0 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cce4a72e-2bfd-46c8-b7ce-8600e40208d3 .
+
+oquo:metric-57a3c653-5ee0-46fb-876e-db61727d4900
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-28654101-8370-47ca-8be1-c522c1aeafa4 ;
+        oboe:measurementFor  oquo:observation-07e648e5-f36d-4b98-9b88-69c0148ba5f2 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:evaluation-35ce6e8e-9dde-4be9-9510-e3a14fd708fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-49730c89-2d28-4925-957a-a1c990562c04 ;
+        time:hasTime              oquo:instant-3064844f-a9b5-4647-9601-c9986e703985 ;
+        oquo:hasObservation       oquo:observation-79817a8c-b283-4f87-a5f4-be75ca499fa0 .
+
+oquo:instant-3ba42966-78de-449c-b05c-8387eedb977f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.768Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+<http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:qualityValue-6d27798d-bbad-4c39-8270-ae330350bf82
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-52898da6-1a59-40a2-a444-6c9a36c0e55e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1bb05dfa-7474-4791-b39c-6c2652050fe8 .
+
+oquo:observation-8aa11ef6-2bcd-4c6a-bf03-33a7a663710f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-608826e5-b3a6-4033-964d-48dee0b956f1 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-08406870-5eab-48d7-9df8-a11c23f95251 .
+
+oquo:instant-a7d1d3ea-1b53-4ed7-914b-83ef9f0b1632
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:15.983Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-eb6f1366-bed7-475c-8f81-cb9e59feaac5
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-a7a9d9cb-abf5-40cd-9373-dc3f3ef1e125 ;
+        oboe:measurementFor  oquo:observation-cfda9a68-44c1-4b79-879e-99fe65b976fa ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-cfd1c88c-f5c8-4daa-8e52-0f4097a1b809
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-927cc0cf-6941-44bd-840a-0396865e1195 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-81150c3f-0abe-4797-9559-a6fa844023af .
+
+oquo:observation-033ca2e7-2ef1-4439-91a8-3790fb4bf8b5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bf3deaeb-1f83-4400-b449-53d7be716803 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-82a49685-1f7f-43f3-a89f-0a7b2255a122 .
+
+oquo:observation-79817a8c-b283-4f87-a5f4-be75ca499fa0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-60fe5f48-f1fc-4fe3-8a16-398ec40bd8dd ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-3064844f-a9b5-4647-9601-c9986e703985 .
+
+oquo:instant-2d9bd505-a2f7-4b9e-a779-c6306ecf9637
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.799Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-34f4b31c-b294-4378-b978-2c65a7492488
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e616d8d8-b57e-4ba8-982c-d574d8fc8c90 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-b41f7f64-81f0-4104-bb3f-8fb55ffba072 .
+
+oquo:qualityValue-17f973cb-3165-4f2e-a222-4da368e5bb36
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-27bc0084-8402-46d9-9c9a-5ecad8b6d7a4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e0d3a70b-5231-4fd4-be79-a174e0ba059d .
+
+oquo:instant-08406870-5eab-48d7-9df8-a11c23f95251
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:16.048Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-100fbc8f-bb42-418b-acd1-4b1077096803
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-1eabb1cc-3a21-4ec8-889c-30a95416d396 ;
+        oboe:measurementFor  oquo:observation-237833e2-28e6-44cf-b103-578efbe07c10 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:evaluation-8b5a27c5-e8dd-414c-8415-51988bc46a1f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a7a9d9cb-abf5-40cd-9373-dc3f3ef1e125 ;
+        time:hasTime              oquo:instant-3b6d879e-b1dc-4f73-9a52-1ceaa9874e0b ;
+        oquo:hasObservation       oquo:observation-cfda9a68-44c1-4b79-879e-99fe65b976fa .
+
+oquo:observation-77b6f15a-dd02-4e89-aaf0-04f6bbb5a344
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8fd1f478-d630-4e79-95c2-7fde9b42f59a ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-560f4493-4dd3-464a-85d7-3bc380a429d1 .
+
+oquo:evaluation-e0d3a70b-5231-4fd4-be79-a174e0ba059d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-17f973cb-3165-4f2e-a222-4da368e5bb36 ;
+        time:hasTime              oquo:instant-6a4dfdc9-1ec9-45b0-a80d-e812141e4235 ;
+        oquo:hasObservation       oquo:observation-f1fa8d92-50e3-4c69-93af-00a7b0f7fb5c .
+
+oquo:instant-935f3b36-51a1-4ca3-a57d-877f8520cc16
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.889Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-528fd156-aee2-4f25-9a7c-62473a78a216
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-88396654-1ec6-4b89-9688-a38dc73ede6a ;
+        time:hasTime              oquo:instant-1a0161a0-5408-4a6d-9c23-2c5d75a9b99f ;
+        oquo:hasObservation       oquo:observation-c74f4ffc-5d8f-46f8-899e-174a64b527bd .
+
+oquo:observation-6f60f216-5727-44c5-be33-66850bea1f9f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a3248ef1-5446-4ab5-bed2-70b82ac663b2 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-10ad4ac4-6b7f-4a8e-83d7-5056e8e84830 .
+
+oquo:evaluation-1bb05dfa-7474-4791-b39c-6c2652050fe8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-6d27798d-bbad-4c39-8270-ae330350bf82 ;
+        time:hasTime              oquo:instant-49ad6f71-1916-48e8-94bd-e7f4a221f2b2 ;
+        oquo:hasObservation       oquo:observation-ab7e816d-8673-433e-9928-b3260476422c .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-703fb0c8-559d-443b-90fc-00ec427dd843
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-558a2c7d-0fb3-43fb-bf53-c90753518c86 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-d56c80b7-7320-4031-93e0-02aabb791696 .
+
+oquo:qualityValue-e1ad84ca-b737-4a01-bb00-f588bf7d4e9c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d8d3046f-462d-499a-a062-626952b1609f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4644708b-73e3-4d75-bc2d-57cf0ebf79b5 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-28654101-8370-47ca-8be1-c522c1aeafa4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-57a3c653-5ee0-46fb-876e-db61727d4900 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe9e665e-0855-4dc2-90e2-22a36a61c26b .
+
+oquo:observation-a9feadeb-4fb5-4101-930a-df30e9a6bfbe
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d8d3046f-462d-499a-a062-626952b1609f ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-f239c10a-4970-4657-8e0e-2cf33bebfcf2 .
+
+oquo:instant-1a0161a0-5408-4a6d-9c23-2c5d75a9b99f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.695Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-52dde076-2280-422c-97bd-fd9736154957
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c8bb76be-0e9c-4788-b64e-d30143337034 ;
+        oboe:measurementFor  oquo:observation-98ddc542-920b-403f-adf7-01929814c9bf ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:qualityValue-ab63e12b-4464-403d-8a54-054a9730489d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a3248ef1-5446-4ab5-bed2-70b82ac663b2 ;
+        res:hasLiteralValue    "0.7032258064516129"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b012e811-ef5f-4e82-9c9d-e131cc32feec .
+
+oquo:metric-a6ae4923-5bfc-4694-95ad-654a0ec00006
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7ab410d6-b9d7-4574-8d27-393086596eb4 ;
+        oboe:measurementFor  oquo:observation-64495e46-c83b-42ee-a8dc-314339c9c668 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:evaluation-9895f76c-5cd4-4737-8898-fa317b314d16
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bdd75f53-b6a8-4fad-9fc6-d38e01891c2a ;
+        time:hasTime              oquo:instant-a939f563-c38e-4c73-b206-40258b805cb3 ;
+        oquo:hasObservation       oquo:observation-c61e4930-2835-420e-b02d-502f8dc26f6c .
+
+oquo:instant-bedc1a1f-ccbb-4e5a-ae6c-851b7a331305
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.459Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-6e8df9c0-6a4c-4702-a79a-21cf74e9fc90
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-33236f60-334d-47ef-99fe-c6382ed05254 ;
+        oboe:measurementFor  oquo:observation-f1edf59e-6427-4d48-ba16-f0e73d7766f0 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:evaluation-b5390f00-ec6a-4615-8f76-d507becffe2f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ed18fc50-7d8e-42da-969a-ae1cbe3a6a97 ;
+        time:hasTime              oquo:instant-c61cb403-a26e-41b5-8c76-3d53995e2c51 ;
+        oquo:hasObservation       oquo:observation-16f3f438-077e-4eb5-95bb-6d063d12830b .
+
+oquo:evaluation-64803fe4-a3d7-4a76-a3fb-322550282396
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c8bb76be-0e9c-4788-b64e-d30143337034 ;
+        time:hasTime              oquo:instant-c2c3d33e-c373-4487-87b1-4ab8d6d2c6af ;
+        oquo:hasObservation       oquo:observation-98ddc542-920b-403f-adf7-01929814c9bf .
+
+oquo:evaluation-cce4a72e-2bfd-46c8-b7ce-8600e40208d3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f6983cba-0f4a-42cd-8846-eed6e8ae0499 ;
+        time:hasTime              oquo:instant-2d5b6f87-1b94-4254-899e-4dd134162227 ;
+        oquo:hasObservation       oquo:observation-a24f68ef-2456-4f9f-98e1-f290cdf64927 .
+
+oquo:observation-5dc8bd38-7a96-4cda-a021-e7a04ad6b6e2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-233cfc85-cacf-41de-ba2d-88d4fcd5ba3e ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-8b987820-9e2f-47d5-9508-2eb61b8a660c .
+
+oquo:qualityValue-25cead96-dd3f-47f0-a880-2450753d941d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2b5a722c-4185-4dcb-b9b9-106b19038bad ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9fb2597c-ea18-400b-9c07-9461104ac9d4 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-3064844f-a9b5-4647-9601-c9986e703985
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.071Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-447d20f4-54bb-4ab5-acd5-9b70f9c39bcd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fcc65514-d4ef-4859-9426-f2a8e5f9bce9 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-3ba42966-78de-449c-b05c-8387eedb977f .
+
+oquo:instant-339b05ff-9444-43c3-8869-9c5c7c28ce3c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.315Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-4d24537a-8242-4dd8-9728-9a5cc23867df
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-79b334b9-e3bd-4eb4-b7dd-46e98c97b371 ;
+        oboe:measurementFor  oquo:observation-eb6addd0-7b47-4e1d-b568-d24e84c64207 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:evaluation-81150c3f-0abe-4797-9559-a6fa844023af
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-cfd1c88c-f5c8-4daa-8e52-0f4097a1b809 ;
+        time:hasTime              oquo:instant-a7d1d3ea-1b53-4ed7-914b-83ef9f0b1632 ;
+        oquo:hasObservation       oquo:observation-f1577d1d-5e06-483b-b95c-877ff8aea43b .
+
+oquo:observation-237833e2-28e6-44cf-b103-578efbe07c10
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-100fbc8f-bb42-418b-acd1-4b1077096803 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-ab79fe76-32b6-44d7-9be3-eb3c518139dd .
+
+oquo:metric-f811b1a6-e30d-4706-8636-909b75899401
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-e6c8669e-cc3c-456d-a869-baa9d11bdb5e ;
+        oboe:measurementFor  oquo:observation-3933bfdc-e410-4302-93a0-af7ac71f49b9 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-54e091d3-82a4-4a38-84f1-9fc52a5c52f5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3514fde3-a321-4db7-846c-0d915d70e5cb ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-758b54e3-9243-4004-864d-7e6d85cbb36d .
+
+oquo:instant-6db2533a-08d0-4872-b8c0-74dd37dbcaef
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.746Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-e616d8d8-b57e-4ba8-982c-d574d8fc8c90
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e032b22d-22cf-4af4-a1d6-615144fc1c7d ;
+        oboe:measurementFor  oquo:observation-34f4b31c-b294-4378-b978-2c65a7492488 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-88c2fca7-0601-42dc-946f-85d1b3e9e9de
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-88396654-1ec6-4b89-9688-a38dc73ede6a ;
+        oboe:measurementFor  oquo:observation-c74f4ffc-5d8f-46f8-899e-174a64b527bd ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:evaluation-8933f502-5773-452c-8eef-311108b04b2d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-79b334b9-e3bd-4eb4-b7dd-46e98c97b371 ;
+        time:hasTime              oquo:instant-adf78ffe-2fdf-4441-a7f0-f31fbf1801d9 ;
+        oquo:hasObservation       oquo:observation-eb6addd0-7b47-4e1d-b568-d24e84c64207 .
+
+oquo:qualityValue-1eabb1cc-3a21-4ec8-889c-30a95416d396
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-100fbc8f-bb42-418b-acd1-4b1077096803 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-999ad674-f8d5-4366-8c6a-1cb0f3b10382 .
+
+oquo:instant-6a4dfdc9-1ec9-45b0-a80d-e812141e4235
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.692Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-3b6d879e-b1dc-4f73-9a52-1ceaa9874e0b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.594Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-4644708b-73e3-4d75-bc2d-57cf0ebf79b5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e1ad84ca-b737-4a01-bb00-f588bf7d4e9c ;
+        time:hasTime              oquo:instant-f239c10a-4970-4657-8e0e-2cf33bebfcf2 ;
+        oquo:hasObservation       oquo:observation-a9feadeb-4fb5-4101-930a-df30e9a6bfbe .
+
+oquo:metric-d8d3046f-462d-499a-a062-626952b1609f
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-e1ad84ca-b737-4a01-bb00-f588bf7d4e9c ;
+        oboe:measurementFor  oquo:observation-a9feadeb-4fb5-4101-930a-df30e9a6bfbe ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:observation-54e3eb87-06a6-420a-85bd-56202706b695
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5de7533a-fa0a-4560-b573-3022d0c6b1bd ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-cf98fd5f-5628-44d9-9c3f-81818668731e .
+
+oquo:observation-64495e46-c83b-42ee-a8dc-314339c9c668
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a6ae4923-5bfc-4694-95ad-654a0ec00006 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-bedc1a1f-ccbb-4e5a-ae6c-851b7a331305 .
+
+oquo:metric-8e150c0a-1887-4518-86b8-2c8a8ed51ed4
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-bdd75f53-b6a8-4fad-9fc6-d38e01891c2a ;
+        oboe:measurementFor  oquo:observation-c61e4930-2835-420e-b02d-502f8dc26f6c ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:metric-68796ed9-c5de-43b8-bcd1-22bc194b8469
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-067d6b78-1a47-4c04-acc7-6fb4c726f814 ;
+        oboe:measurementFor  oquo:observation-ef069233-5f5d-4d4d-92fb-70f378b52131 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-233cfc85-cacf-41de-ba2d-88d4fcd5ba3e
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6c4b843c-00fb-40cf-a264-b08322718840 ;
+        oboe:measurementFor  oquo:observation-5dc8bd38-7a96-4cda-a021-e7a04ad6b6e2 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:instant-2d5b6f87-1b94-4254-899e-4dd134162227
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.887Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c8bb76be-0e9c-4788-b64e-d30143337034
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-52dde076-2280-422c-97bd-fd9736154957 ;
+        res:hasLiteralValue    "0.46153846153846156"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-64803fe4-a3d7-4a76-a3fb-322550282396 .
+
+oquo:qualityValue-61cb7236-edae-47b2-a44d-a34c9516be67
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8fd1f478-d630-4e79-95c2-7fde9b42f59a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2feba713-507c-4729-8bb9-05f4bd7413d0 .
+
+oquo:evaluation-25c088c9-812d-45f0-8002-862a399e0ca5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-97bd399f-3a52-4ad9-b3df-1bd40eb1209a ;
+        time:hasTime              oquo:instant-08406870-5eab-48d7-9df8-a11c23f95251 ;
+        oquo:hasObservation       oquo:observation-8aa11ef6-2bcd-4c6a-bf03-33a7a663710f .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-560f4493-4dd3-464a-85d7-3bc380a429d1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.826Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-c74f4ffc-5d8f-46f8-899e-174a64b527bd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-88c2fca7-0601-42dc-946f-85d1b3e9e9de ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-1a0161a0-5408-4a6d-9c23-2c5d75a9b99f .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-89b3eb7c-8e1a-414a-a259-f30de7c858ea
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.598Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-8b987820-9e2f-47d5-9508-2eb61b8a660c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.465Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-9f2ccf05-2cd6-4eb6-a05d-fd9cf7b23b5b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e032b22d-22cf-4af4-a1d6-615144fc1c7d ;
+        time:hasTime              oquo:instant-b41f7f64-81f0-4104-bb3f-8fb55ffba072 ;
+        oquo:hasObservation       oquo:observation-34f4b31c-b294-4378-b978-2c65a7492488 .
+
+oquo:qualityValue-ae05c73c-01c2-41b7-a27f-fbe41aed5c9f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3514fde3-a321-4db7-846c-0d915d70e5cb ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b75a085f-04f1-4707-afa4-5c0560742beb .
+
+oquo:instant-adf78ffe-2fdf-4441-a7f0-f31fbf1801d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.575Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-9fb2597c-ea18-400b-9c07-9461104ac9d4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-25cead96-dd3f-47f0-a880-2450753d941d ;
+        time:hasTime              oquo:instant-6b503573-0a9c-41b6-969a-ecf01efa3b24 ;
+        oquo:hasObservation       oquo:observation-b2467857-1368-4673-841b-891cd9961552 .
+
+oquo:observation-f1fa8d92-50e3-4c69-93af-00a7b0f7fb5c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-27bc0084-8402-46d9-9c9a-5ecad8b6d7a4 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-6a4dfdc9-1ec9-45b0-a80d-e812141e4235 .
+
+oquo:metric-27bc0084-8402-46d9-9c9a-5ecad8b6d7a4
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-17f973cb-3165-4f2e-a222-4da368e5bb36 ;
+        oboe:measurementFor  oquo:observation-f1fa8d92-50e3-4c69-93af-00a7b0f7fb5c ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:qualityValue-ed18fc50-7d8e-42da-969a-ae1cbe3a6a97
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-92ec27a9-9a19-49fd-91b8-fdba68a639c1 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b5390f00-ec6a-4615-8f76-d507becffe2f .
+
+oquo:qualityValue-bdd75f53-b6a8-4fad-9fc6-d38e01891c2a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8e150c0a-1887-4518-86b8-2c8a8ed51ed4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9895f76c-5cd4-4737-8898-fa317b314d16 .
+
+oquo:instant-ab79fe76-32b6-44d7-9be3-eb3c518139dd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.877Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-fcc65514-d4ef-4859-9426-f2a8e5f9bce9
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-4251c597-28d6-4429-a672-584307d01d73 ;
+        oboe:measurementFor  oquo:observation-447d20f4-54bb-4ab5-acd5-9b70f9c39bcd ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-97bd399f-3a52-4ad9-b3df-1bd40eb1209a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-608826e5-b3a6-4033-964d-48dee0b956f1 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-25c088c9-812d-45f0-8002-862a399e0ca5 .
+
+oquo:evaluation-6bc00727-9b87-441f-a835-b30ba4c63328
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-91fb8d70-87b0-4bbe-ab09-a5bcc70a0e0e ;
+        time:hasTime              oquo:instant-2513a4f4-193f-4602-b7c6-f35e4430b3c3 ;
+        oquo:hasObservation       oquo:observation-49462bf1-a28a-43c9-b659-2c4a3da47d32 .
+
+oquo:qualityValue-6c4b843c-00fb-40cf-a264-b08322718840
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-233cfc85-cacf-41de-ba2d-88d4fcd5ba3e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7a0727f1-c2b6-4b81-8b1a-6231a093c311 .
+
+oquo:observation-f1577d1d-5e06-483b-b95c-877ff8aea43b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-927cc0cf-6941-44bd-840a-0396865e1195 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-a7d1d3ea-1b53-4ed7-914b-83ef9f0b1632 .
+
+oquo:qualityValue-3a95a083-b37d-4459-bb46-9a523b9b0b25
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-558a2c7d-0fb3-43fb-bf53-c90753518c86 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-94e7eb93-df6a-47ef-9b05-f8a1d46c8070 .
+
+oquo:qualityValue-79b334b9-e3bd-4eb4-b7dd-46e98c97b371
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4d24537a-8242-4dd8-9728-9a5cc23867df ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8933f502-5773-452c-8eef-311108b04b2d .
+
+oquo:observation-07e648e5-f36d-4b98-9b88-69c0148ba5f2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-57a3c653-5ee0-46fb-876e-db61727d4900 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-89b3eb7c-8e1a-414a-a259-f30de7c858ea .
+
+oquo:observation-a24f68ef-2456-4f9f-98e1-f290cdf64927
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-92cfe7d1-b2b2-4a60-8c96-5b4724a679e0 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-2d5b6f87-1b94-4254-899e-4dd134162227 .
+
+oquo:metric-92cfe7d1-b2b2-4a60-8c96-5b4724a679e0
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-f6983cba-0f4a-42cd-8846-eed6e8ae0499 ;
+        oboe:measurementFor  oquo:observation-a24f68ef-2456-4f9f-98e1-f290cdf64927 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-774528a8-ef3c-4963-9eff-55145c49e5a5
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c28d05a4-7545-4d01-a04a-4a0e09a0edc3 ;
+        oboe:measurementFor  oquo:observation-c6433bf2-d3d7-40cd-adaf-956a6b0bc10a ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-c2c3d33e-c373-4487-87b1-4ab8d6d2c6af
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.467Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-a730069e-a278-4450-af83-8480eb2aa7a2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.808Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-f1edf59e-6427-4d48-ba16-f0e73d7766f0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6e8df9c0-6a4c-4702-a79a-21cf74e9fc90 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-0ca5e904-4851-4c57-ad58-79fc233906d7 .
+
+oquo:evaluation-b75a085f-04f1-4707-afa4-5c0560742beb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ae05c73c-01c2-41b7-a27f-fbe41aed5c9f ;
+        time:hasTime              oquo:instant-758b54e3-9243-4004-864d-7e6d85cbb36d ;
+        oquo:hasObservation       oquo:observation-54e091d3-82a4-4a38-84f1-9fc52a5c52f5 .
+
+oquo:qualityValue-49730c89-2d28-4925-957a-a1c990562c04
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-60fe5f48-f1fc-4fe3-8a16-398ec40bd8dd ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-35ce6e8e-9dde-4be9-9510-e3a14fd708fe .
+
+oquo:evaluation-e7937b56-ddb3-4854-bc45-7f4a3c5eb55e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4251c597-28d6-4429-a672-584307d01d73 ;
+        time:hasTime              oquo:instant-3ba42966-78de-449c-b05c-8387eedb977f ;
+        oquo:hasObservation       oquo:observation-447d20f4-54bb-4ab5-acd5-9b70f9c39bcd .
+
+oquo:qualityValue-33236f60-334d-47ef-99fe-c6382ed05254
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6e8df9c0-6a4c-4702-a79a-21cf74e9fc90 ;
+        res:hasLiteralValue    "0.03225806451612903"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb9b4887-1d32-431f-a139-ac9ef40a130b .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-b2467857-1368-4673-841b-891cd9961552
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2b5a722c-4185-4dcb-b9b9-106b19038bad ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-6b503573-0a9c-41b6-969a-ecf01efa3b24 .
+
+oquo:metric-558a2c7d-0fb3-43fb-bf53-c90753518c86
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3a95a083-b37d-4459-bb46-9a523b9b0b25 ;
+        oboe:measurementFor  oquo:observation-703fb0c8-559d-443b-90fc-00ec427dd843 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-608826e5-b3a6-4033-964d-48dee0b956f1
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-97bd399f-3a52-4ad9-b3df-1bd40eb1209a ;
+        oboe:measurementFor  oquo:observation-8aa11ef6-2bcd-4c6a-bf03-33a7a663710f ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-f239c10a-4970-4657-8e0e-2cf33bebfcf2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.47Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-8fd1f478-d630-4e79-95c2-7fde9b42f59a
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-61cb7236-edae-47b2-a44d-a34c9516be67 ;
+        oboe:measurementFor  oquo:observation-77b6f15a-dd02-4e89-aaf0-04f6bbb5a344 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-a3248ef1-5446-4ab5-bed2-70b82ac663b2
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ab63e12b-4464-403d-8a54-054a9730489d ;
+        oboe:measurementFor  oquo:observation-6f60f216-5727-44c5-be33-66850bea1f9f ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:observation-3933bfdc-e410-4302-93a0-af7ac71f49b9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f811b1a6-e30d-4706-8636-909b75899401 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-a730069e-a278-4450-af83-8480eb2aa7a2 .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-8b53a40b-2ef7-47cb-8a1a-5740cf905b88
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-49c5d9db-1ca9-4d83-b916-c03215ef0edd ;
+        oboe:measurementFor  oquo:observation-6c8105f2-9a67-4bae-b524-fea291f6179b ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:instant-a939f563-c38e-4c73-b206-40258b805cb3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:16.035Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e9e50905-d01d-45f6-ab57-c05722cf8d7c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fc47c730-77d0-4dcd-93e7-d8c93901f132 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-2d9bd505-a2f7-4b9e-a779-c6306ecf9637 .
+
+oquo:metric-4613aaed-c7e1-474b-9c6a-b6e4187f1856
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-14ae598e-6db9-43fb-af2f-4ba25a2144ea ;
+        oboe:measurementFor  oquo:observation-131f79aa-4b1f-4046-b6e9-df57be21bb82 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-cfda9a68-44c1-4b79-879e-99fe65b976fa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-eb6f1366-bed7-475c-8f81-cb9e59feaac5 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-3b6d879e-b1dc-4f73-9a52-1ceaa9874e0b .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-aa1d98f3-10e6-4ffe-9399-ac3bee934eea
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e6c8669e-cc3c-456d-a869-baa9d11bdb5e ;
+        time:hasTime              oquo:instant-a730069e-a278-4450-af83-8480eb2aa7a2 ;
+        oquo:hasObservation       oquo:observation-3933bfdc-e410-4302-93a0-af7ac71f49b9 .
+
+oquo:qualityValue-47f909a2-74e2-411f-8e54-b89e5c527f01
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bf3deaeb-1f83-4400-b449-53d7be716803 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3b750bef-a5f4-4bc6-ba0c-899d275ec0a9 .
+
+oquo:observation-49462bf1-a28a-43c9-b659-2c4a3da47d32
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bfed0af7-f1ed-43b7-81d5-fe1bff35d250 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-2513a4f4-193f-4602-b7c6-f35e4430b3c3 .
+
+oquo:instant-0ca5e904-4851-4c57-ad58-79fc233906d7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.602Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-bf3deaeb-1f83-4400-b449-53d7be716803
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-47f909a2-74e2-411f-8e54-b89e5c527f01 ;
+        oboe:measurementFor  oquo:observation-033ca2e7-2ef1-4439-91a8-3790fb4bf8b5 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-88396654-1ec6-4b89-9688-a38dc73ede6a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-88c2fca7-0601-42dc-946f-85d1b3e9e9de ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-528fd156-aee2-4f25-9a7c-62473a78a216 .
+
+oquo:instant-6b503573-0a9c-41b6-969a-ecf01efa3b24
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.861Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-b41f7f64-81f0-4104-bb3f-8fb55ffba072
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.693Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-e6c8669e-cc3c-456d-a869-baa9d11bdb5e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f811b1a6-e30d-4706-8636-909b75899401 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-aa1d98f3-10e6-4ffe-9399-ac3bee934eea .
+
+oquo:evaluation-cb9b4887-1d32-431f-a139-ac9ef40a130b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-33236f60-334d-47ef-99fe-c6382ed05254 ;
+        time:hasTime              oquo:instant-0ca5e904-4851-4c57-ad58-79fc233906d7 ;
+        oquo:hasObservation       oquo:observation-f1edf59e-6427-4d48-ba16-f0e73d7766f0 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-999ad674-f8d5-4366-8c6a-1cb0f3b10382
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1eabb1cc-3a21-4ec8-889c-30a95416d396 ;
+        time:hasTime              oquo:instant-ab79fe76-32b6-44d7-9be3-eb3c518139dd ;
+        oquo:hasObservation       oquo:observation-237833e2-28e6-44cf-b103-578efbe07c10 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-5584dc0a-596b-4ed2-812d-e2822ec876f0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.318Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-5de7533a-fa0a-4560-b573-3022d0c6b1bd
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-dd729bdb-44a2-4dfd-9274-b2538dbdc39f ;
+        oboe:measurementFor  oquo:observation-54e3eb87-06a6-420a-85bd-56202706b695 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:instant-2513a4f4-193f-4602-b7c6-f35e4430b3c3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.696Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-131f79aa-4b1f-4046-b6e9-df57be21bb82
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4613aaed-c7e1-474b-9c6a-b6e4187f1856 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-339b05ff-9444-43c3-8869-9c5c7c28ce3c .
+
+oquo:observation-ab7e816d-8673-433e-9928-b3260476422c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-52898da6-1a59-40a2-a444-6c9a36c0e55e ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-49ad6f71-1916-48e8-94bd-e7f4a221f2b2 .
+
+oquo:evaluation-e3378f13-1bed-417a-bcbb-f19bec87b2c3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-067d6b78-1a47-4c04-acc7-6fb4c726f814 ;
+        time:hasTime              oquo:instant-935f3b36-51a1-4ca3-a57d-877f8520cc16 ;
+        oquo:hasObservation       oquo:observation-ef069233-5f5d-4d4d-92fb-70f378b52131 .
+
+oquo:qualityValue-49c5d9db-1ca9-4d83-b916-c03215ef0edd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8b53a40b-2ef7-47cb-8a1a-5740cf905b88 ;
+        res:hasLiteralValue    "0.3010752688172043"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-effa9d51-cf52-49f3-aa80-221af11da3c4 .
+
+oquo:instant-10ad4ac4-6b7f-4a8e-83d7-5056e8e84830
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.698Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-3514fde3-a321-4db7-846c-0d915d70e5cb
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ae05c73c-01c2-41b7-a27f-fbe41aed5c9f ;
+        oboe:measurementFor  oquo:observation-54e091d3-82a4-4a38-84f1-9fc52a5c52f5 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-82a49685-1f7f-43f3-a89f-0a7b2255a122
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:16.031Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-92ec27a9-9a19-49fd-91b8-fdba68a639c1
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ed18fc50-7d8e-42da-969a-ae1cbe3a6a97 ;
+        oboe:measurementFor  oquo:observation-16f3f438-077e-4eb5-95bb-6d063d12830b ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-c61e4930-2835-420e-b02d-502f8dc26f6c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8e150c0a-1887-4518-86b8-2c8a8ed51ed4 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-a939f563-c38e-4c73-b206-40258b805cb3 .
+
+oquo:observation-98ddc542-920b-403f-adf7-01929814c9bf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-52dde076-2280-422c-97bd-fd9736154957 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-c2c3d33e-c373-4487-87b1-4ab8d6d2c6af .
+
+oquo:evaluation-b012e811-ef5f-4e82-9c9d-e131cc32feec
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ab63e12b-4464-403d-8a54-054a9730489d ;
+        time:hasTime              oquo:instant-10ad4ac4-6b7f-4a8e-83d7-5056e8e84830 ;
+        oquo:hasObservation       oquo:observation-6f60f216-5727-44c5-be33-66850bea1f9f .
+
+oquo:qualityValue-14ae598e-6db9-43fb-af2f-4ba25a2144ea
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4613aaed-c7e1-474b-9c6a-b6e4187f1856 ;
+        res:hasLiteralValue    "466.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9d411e0a-49e5-4124-9721-a02b387c0cd5 .
+
+oquo:qualityValue-7ab410d6-b9d7-4574-8d27-393086596eb4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a6ae4923-5bfc-4694-95ad-654a0ec00006 ;
+        res:hasLiteralValue    "0.3"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9b2b98fe-b680-4f01-95af-c1b7577fbc28 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-20ef7e59-bcd8-41d3-9c3f-938466ae6537
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-dd729bdb-44a2-4dfd-9274-b2538dbdc39f ;
+        time:hasTime              oquo:instant-cf98fd5f-5628-44d9-9c3f-81818668731e ;
+        oquo:hasObservation       oquo:observation-54e3eb87-06a6-420a-85bd-56202706b695 .
+
+oquo:evaluation-3b750bef-a5f4-4bc6-ba0c-899d275ec0a9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-47f909a2-74e2-411f-8e54-b89e5c527f01 ;
+        time:hasTime              oquo:instant-82a49685-1f7f-43f3-a89f-0a7b2255a122 ;
+        oquo:hasObservation       oquo:observation-033ca2e7-2ef1-4439-91a8-3790fb4bf8b5 .
+
+oquo:observation-c6433bf2-d3d7-40cd-adaf-956a6b0bc10a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-774528a8-ef3c-4963-9eff-55145c49e5a5 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-6db2533a-08d0-4872-b8c0-74dd37dbcaef .
+
+oquo:evaluation-9d411e0a-49e5-4124-9721-a02b387c0cd5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-14ae598e-6db9-43fb-af2f-4ba25a2144ea ;
+        time:hasTime              oquo:instant-339b05ff-9444-43c3-8869-9c5c7c28ce3c ;
+        oquo:hasObservation       oquo:observation-131f79aa-4b1f-4046-b6e9-df57be21bb82 .
+
+oquo:evaluation-effa9d51-cf52-49f3-aa80-221af11da3c4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-49c5d9db-1ca9-4d83-b916-c03215ef0edd ;
+        time:hasTime              oquo:instant-5584dc0a-596b-4ed2-812d-e2822ec876f0 ;
+        oquo:hasObservation       oquo:observation-6c8105f2-9a67-4bae-b524-fea291f6179b .
+
+oquo:metric-52898da6-1a59-40a2-a444-6c9a36c0e55e
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6d27798d-bbad-4c39-8270-ae330350bf82 ;
+        oboe:measurementFor  oquo:observation-ab7e816d-8673-433e-9928-b3260476422c ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-4251c597-28d6-4429-a672-584307d01d73
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fcc65514-d4ef-4859-9426-f2a8e5f9bce9 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e7937b56-ddb3-4854-bc45-7f4a3c5eb55e .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-e032b22d-22cf-4af4-a1d6-615144fc1c7d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e616d8d8-b57e-4ba8-982c-d574d8fc8c90 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9f2ccf05-2cd6-4eb6-a05d-fd9cf7b23b5b .
+
+oquo:instant-d56c80b7-7320-4031-93e0-02aabb791696
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.596Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-aa694917-7741-400a-95ac-de96fdee9c2c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fc47c730-77d0-4dcd-93e7-d8c93901f132 ;
+        res:hasLiteralValue    "0.7692307692307693"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-77a02e82-c1cf-41d6-bac2-37c307f8b912 .
+
+oquo:qualityValue-067d6b78-1a47-4c04-acc7-6fb4c726f814
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-68796ed9-c5de-43b8-bcd1-22bc194b8469 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e3378f13-1bed-417a-bcbb-f19bec87b2c3 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-758b54e3-9243-4004-864d-7e6d85cbb36d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.838Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-927cc0cf-6941-44bd-840a-0396865e1195
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-cfd1c88c-f5c8-4daa-8e52-0f4097a1b809 ;
+        oboe:measurementFor  oquo:observation-f1577d1d-5e06-483b-b95c-877ff8aea43b ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-16f3f438-077e-4eb5-95bb-6d063d12830b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-92ec27a9-9a19-49fd-91b8-fdba68a639c1 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-c61cb403-a26e-41b5-8c76-3d53995e2c51 .
+
+oquo:instant-c61cb403-a26e-41b5-8c76-3d53995e2c51
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.874Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-7a0727f1-c2b6-4b81-8b1a-6231a093c311
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-6c4b843c-00fb-40cf-a264-b08322718840 ;
+        time:hasTime              oquo:instant-8b987820-9e2f-47d5-9508-2eb61b8a660c ;
+        oquo:hasObservation       oquo:observation-5dc8bd38-7a96-4cda-a021-e7a04ad6b6e2 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-9b2b98fe-b680-4f01-95af-c1b7577fbc28
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7ab410d6-b9d7-4574-8d27-393086596eb4 ;
+        time:hasTime              oquo:instant-bedc1a1f-ccbb-4e5a-ae6c-851b7a331305 ;
+        oquo:hasObservation       oquo:observation-64495e46-c83b-42ee-a8dc-314339c9c668 .
+
+oquo:metric-2b5a722c-4185-4dcb-b9b9-106b19038bad
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-25cead96-dd3f-47f0-a880-2450753d941d ;
+        oboe:measurementFor  oquo:observation-b2467857-1368-4673-841b-891cd9961552 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-77a02e82-c1cf-41d6-bac2-37c307f8b912
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-aa694917-7741-400a-95ac-de96fdee9c2c ;
+        time:hasTime              oquo:instant-2d9bd505-a2f7-4b9e-a779-c6306ecf9637 ;
+        oquo:hasObservation       oquo:observation-e9e50905-d01d-45f6-ab57-c05722cf8d7c .
+
+oquo:observation-ef069233-5f5d-4d4d-92fb-70f378b52131
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-68796ed9-c5de-43b8-bcd1-22bc194b8469 ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-935f3b36-51a1-4ca3-a57d-877f8520cc16 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-49ad6f71-1916-48e8-94bd-e7f4a221f2b2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:17.463Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-2feba713-507c-4729-8bb9-05f4bd7413d0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-61cb7236-edae-47b2-a44d-a34c9516be67 ;
+        time:hasTime              oquo:instant-560f4493-4dd3-464a-85d7-3bc380a429d1 ;
+        oquo:hasObservation       oquo:observation-77b6f15a-dd02-4e89-aaf0-04f6bbb5a344 .
+
+oquo:observation-eb6addd0-7b47-4e1d-b568-d24e84c64207
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4d24537a-8242-4dd8-9728-9a5cc23867df ;
+        oboe:ofEntity        <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        time:hasTime         oquo:instant-adf78ffe-2fdf-4441-a7f0-f31fbf1801d9 .
+
+oquo:metric-fc47c730-77d0-4dcd-93e7-d8c93901f132
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-aa694917-7741-400a-95ac-de96fdee9c2c ;
+        oboe:measurementFor  oquo:observation-e9e50905-d01d-45f6-ab57-c05722cf8d7c ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:evaluation-d1bc67de-1b8a-4279-aead-8fd265b32f2d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c28d05a4-7545-4d01-a04a-4a0e09a0edc3 ;
+        time:hasTime              oquo:instant-6db2533a-08d0-4872-b8c0-74dd37dbcaef ;
+        oquo:hasObservation       oquo:observation-c6433bf2-d3d7-40cd-adaf-956a6b0bc10a .
+
+oquo:qualityValue-91fb8d70-87b0-4bbe-ab09-a5bcc70a0e0e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bfed0af7-f1ed-43b7-81d5-fe1bff35d250 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6bc00727-9b87-441f-a835-b30ba4c63328 .
+
+oquo:evaluation-94e7eb93-df6a-47ef-9b05-f8a1d46c8070
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:inputData             <http://neurolog.unice.fr/ontoneurolog/v3.0/ontoneurolog-mental-state-assessment.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3a95a083-b37d-4459-bb46-9a523b9b0b25 ;
+        time:hasTime              oquo:instant-d56c80b7-7320-4031-93e0-02aabb791696 ;
+        oquo:hasObservation       oquo:observation-703fb0c8-559d-443b-90fc-00ec427dd843 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-a7a9d9cb-abf5-40cd-9373-dc3f3ef1e125
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-eb6f1366-bed7-475c-8f81-cb9e59feaac5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8b5a27c5-e8dd-414c-8415-51988bc46a1f .

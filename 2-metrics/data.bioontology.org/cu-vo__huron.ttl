@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:metric-cb01a3bf-9e7c-4d8b-981b-55578bc418b0
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-fe02ccce-7df9-4fc8-b867-1385d12408f8 ;
+        oboe:measurementFor  oquo:observation-e510f21b-11d4-4fb6-bb6f-a531a0848aaf ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-1e895f72-cef0-4120-a17d-d683f0e2a95c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-41814d94-c532-4dc1-a127-c2f721ebadad ;
+        time:hasTime              oquo:instant-3fcd7e8c-b4cb-4c28-9177-ba70c636a210 ;
+        oquo:hasObservation       oquo:observation-a47e91f5-bf8d-42a4-ad2e-62ca643c269f .
+
+oquo:instant-9fa15c68-5694-4db8-9a07-b63f9dbd82b7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:01.274Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4de6e95a-6a6e-4c75-9cb2-1e767cb34f71
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.831Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-41814d94-c532-4dc1-a127-c2f721ebadad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6b7d79ab-7aca-41f5-bdbe-bac6829d143a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1e895f72-cef0-4120-a17d-d683f0e2a95c .
+
+oquo:observation-57a2cb81-7118-42f9-9387-cb3b37916d5c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a8794a4d-0845-4453-81d3-3a41cd5186e9 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-46cbed73-d739-45fb-ac8c-af048aa40910 .
+
+oquo:evaluation-0bee4849-d1fb-4ea0-8ad9-8c64bc9c6d3c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-34793f56-ae6a-4c3a-bfd9-937f8b4db0d9 ;
+        time:hasTime              oquo:instant-e7b9162e-feef-4579-b50d-503908dd02f0 ;
+        oquo:hasObservation       oquo:observation-a145ddd7-018b-47ff-94c0-8bece33dc1b2 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-2edd852d-9e13-4994-a243-985addfd0387
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e014d780-0bf1-4d43-9729-8813421387a2 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cc051424-0547-4990-bf96-4635737e4016 .
+
+oquo:observation-a47e91f5-bf8d-42a4-ad2e-62ca643c269f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6b7d79ab-7aca-41f5-bdbe-bac6829d143a ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-3fcd7e8c-b4cb-4c28-9177-ba70c636a210 .
+
+oquo:metric-2090ecb5-c323-47f2-85e9-6b39894c0fd9
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-78f30199-bb65-4e71-8c42-9ce2159e776a ;
+        oboe:measurementFor  oquo:observation-c054f46e-4a41-4bb0-836c-fdc8930cd7aa ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-cf53e9e4-8662-479f-9493-e68dd306c645
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c2cec24-a423-48b2-8dcd-055b6c66902f ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-20a09666-bd15-4229-89b4-f11dafb0b008 .
+
+oquo:qualityValue-c73f0a7c-5467-4520-ae50-a1ec57a2c620
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5ce1b61a-47a4-4118-b2b0-22bf1564d715 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6aff2c0c-8971-4082-b2ea-87a26f83849f .
+
+oquo:qualityValue-035c329c-5094-4fda-9544-637029f83ac9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fdf45924-e1e0-4419-937b-aa9491b8b24e ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dd8d0d51-86f1-4044-b9a8-71a1823abcee .
+
+oquo:observation-35ad8f61-d886-46d7-9dcc-751ba0d9e100
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fd07c701-42a2-4b4b-ac2f-1673741a3c44 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-44872517-3209-4b09-9e9a-909215b3e32a .
+
+oquo:evaluation-f5ffdf7a-9e3a-4392-ae7f-59629cfb8693
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-b6baa073-a992-42f0-ba87-66cce678f994 ;
+        time:hasTime              oquo:instant-fb4a7605-e6c2-4caa-90aa-ff0ed32b83fb ;
+        oquo:hasObservation       oquo:observation-6e72709e-c49a-42b7-affe-1e5262ef428d .
+
+oquo:qualityValue-c461c2a6-6433-4cc6-9b56-ff95905b5a7e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-49d8af13-fde4-4723-bba5-7b63d93a57ab ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-af90d80e-ead7-4ddf-ac5d-ac9ed8869002 .
+
+oquo:observation-dbff82a9-f41b-40f1-ac1d-9a5cac6b1cad
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e014d780-0bf1-4d43-9729-8813421387a2 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-362d9aa9-79d4-4bd5-8410-26d2e39743b1 .
+
+oquo:observation-84606484-6e7d-4f27-b86f-4922d8fa9da6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8f5844a0-bde4-47a9-8735-65510263f869 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-9fa15c68-5694-4db8-9a07-b63f9dbd82b7 .
+
+oquo:evaluation-70c869c2-06fb-42c2-a9d3-94587c331b7e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-608ea652-fe59-41ee-8fee-b83dd2f3e48a ;
+        time:hasTime              oquo:instant-65b10034-3861-4026-a7c9-56464ad4f4d3 ;
+        oquo:hasObservation       oquo:observation-5ee914c1-907c-45c8-93fd-02508b9af4c9 .
+
+oquo:observation-403c4897-3424-4dc4-b661-da319106755f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0c7984bb-2c3e-40b5-937e-a9fb8af408c7 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-87e022fe-20eb-44f9-ad3b-bbf6f9731d58 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-fb4a7605-e6c2-4caa-90aa-ff0ed32b83fb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.689Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-6b7d79ab-7aca-41f5-bdbe-bac6829d143a
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-41814d94-c532-4dc1-a127-c2f721ebadad ;
+        oboe:measurementFor  oquo:observation-a47e91f5-bf8d-42a4-ad2e-62ca643c269f ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:observation-3df0b69e-999f-4191-8678-31e95761948e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bb03b0c4-fba6-4dff-9d67-c7b9ebb69c89 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-1f657eb9-b2da-4221-b93c-b531b34fbf80 .
+
+oquo:evaluation-2163dac8-4fe0-4cbc-a6ba-2b807c0ec8ed
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-8e1dcbf9-803e-43f1-9a30-af0c57c2fa1e ;
+        time:hasTime              oquo:instant-d8290b9a-f37a-4f5a-b5ea-315082dbb9c4 ;
+        oquo:hasObservation       oquo:observation-e4be6c7b-d776-4164-9a3d-9a5f34021258 .
+
+oquo:instant-1e28f8e0-6e29-470d-a932-3f3c805c0fe5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.713Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-91ddfdd0-87e8-4eab-a154-0ebdcd520986
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.767Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-754fba5a-3fac-4ffe-93ef-afcfcb01944e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.869Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-adf43e15-54e4-4ef2-83b3-d8b320957ffa
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-385e68d2-dbe1-4007-afda-4b6ceaccf27a ;
+        oboe:measurementFor  oquo:observation-5a6a6356-4b10-4c59-9744-9af1cdd4380b ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-34793f56-ae6a-4c3a-bfd9-937f8b4db0d9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1321c389-5045-4912-b75f-2192fb72ed37 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0bee4849-d1fb-4ea0-8ad9-8c64bc9c6d3c .
+
+oquo:metric-c36ef310-ab94-4dff-a957-362072b6e5e5
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-26db385f-70df-4ebc-8a9e-40228b8d6cad ;
+        oboe:measurementFor  oquo:observation-67189497-ceca-4a12-86f6-6beb121dd10e ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-1dea7bf9-7701-40f5-af7c-ec1b0771d529
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-18e8b052-7370-4cec-b0b5-04bade1c1501 ;
+        time:hasTime              oquo:instant-9fa15c68-5694-4db8-9a07-b63f9dbd82b7 ;
+        oquo:hasObservation       oquo:observation-84606484-6e7d-4f27-b86f-4922d8fa9da6 .
+
+oquo:evaluation-dd8d0d51-86f1-4044-b9a8-71a1823abcee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-035c329c-5094-4fda-9544-637029f83ac9 ;
+        time:hasTime              oquo:instant-07620bdc-620f-481f-82c2-983fb4fadeaa ;
+        oquo:hasObservation       oquo:observation-f98fa0c9-58be-44ab-a744-7265fe566984 .
+
+oquo:metric-07332abe-9d25-4f12-af99-b658924f572a
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-b6baa073-a992-42f0-ba87-66cce678f994 ;
+        oboe:measurementFor  oquo:observation-6e72709e-c49a-42b7-affe-1e5262ef428d ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:observation-92ecac9d-0b75-4a36-b82f-837dbeb31bfa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-403d6576-e941-4647-93de-93e32ca5832e ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-54c2894f-e303-461c-96bb-928ef4e4d581 .
+
+oquo:metric-06833e96-9494-4d35-af37-d9746dbc769b
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-61429dc9-3e06-4716-a92a-3c8f0e06d30e ;
+        oboe:measurementFor  oquo:observation-5a2189cb-08d9-4b72-a20a-93add28ff484 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:metric-1321c389-5045-4912-b75f-2192fb72ed37
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-34793f56-ae6a-4c3a-bfd9-937f8b4db0d9 ;
+        oboe:measurementFor  oquo:observation-a145ddd7-018b-47ff-94c0-8bece33dc1b2 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:instant-d8290b9a-f37a-4f5a-b5ea-315082dbb9c4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.728Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ad23e687-e2c8-4d42-963e-a61bd9b86fee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-8e98d076-829f-465a-8422-d3d4dda9c745 ;
+        time:hasTime              oquo:instant-87e022fe-20eb-44f9-ad3b-bbf6f9731d58 ;
+        oquo:hasObservation       oquo:observation-403c4897-3424-4dc4-b661-da319106755f .
+
+oquo:qualityValue-2931af40-1e0c-4f97-9cff-53fdec416c6c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d4a6bb35-c9d6-4a97-92d5-033a4c7cc011 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-21b87b81-113b-4535-a6c4-23ae177e6394 .
+
+oquo:observation-5a2189cb-08d9-4b72-a20a-93add28ff484
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-06833e96-9494-4d35-af37-d9746dbc769b ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-a5f4f5a9-4f98-4ba4-8681-b32ec10b9690 .
+
+oquo:instant-65b10034-3861-4026-a7c9-56464ad4f4d3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.642Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c054f46e-4a41-4bb0-836c-fdc8930cd7aa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2090ecb5-c323-47f2-85e9-6b39894c0fd9 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-d318475d-2258-4765-9a6b-b13aef5091c2 .
+
+oquo:metric-7c53eb60-ab6f-42d3-a99f-3480c8b4baf0
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-b6c5d1d1-ef4b-460d-a161-dd9c92da9cd5 ;
+        oboe:measurementFor  oquo:observation-fc52497f-e1e5-40e0-9d3f-6112fcdcdd4a ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:metric-0893092b-2a21-45c8-973a-5a18938e3666
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2e9b12ee-f67f-4929-9bed-21156574e654 ;
+        oboe:measurementFor  oquo:observation-73fcf4ba-70bc-43c5-bbe2-c1df2710f119 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:instant-2c12073d-941f-4f81-a38e-e1e8cea9d999
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.623Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-cf0ae478-b627-4421-a014-4e803f9ee7af
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-403d6576-e941-4647-93de-93e32ca5832e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-df3ec94d-4367-4150-a21b-d9c1726281c7 .
+
+oquo:observation-728c5e84-6c67-43b2-82f6-2c717ca4837f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-197bff5e-5156-4cb3-bb02-e16381007867 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-2cb6cf25-e6dc-4463-be36-cef8dc0284a7 .
+
+oquo:qualityValue-61429dc9-3e06-4716-a92a-3c8f0e06d30e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-06833e96-9494-4d35-af37-d9746dbc769b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c08cc7a4-a151-48c6-aa84-998f49524a5a .
+
+oquo:evaluation-93188c76-a308-4892-8fae-6935b7dfa81f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-e26d62e8-7056-45be-b32e-0ab5eab600ff ;
+        time:hasTime              oquo:instant-46cbed73-d739-45fb-ac8c-af048aa40910 ;
+        oquo:hasObservation       oquo:observation-57a2cb81-7118-42f9-9387-cb3b37916d5c .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-cc051424-0547-4990-bf96-4635737e4016
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-2edd852d-9e13-4994-a243-985addfd0387 ;
+        time:hasTime              oquo:instant-362d9aa9-79d4-4bd5-8410-26d2e39743b1 ;
+        oquo:hasObservation       oquo:observation-dbff82a9-f41b-40f1-ac1d-9a5cac6b1cad .
+
+oquo:evaluation-697bd291-e560-4b64-88e6-e1f07261cf26
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-87331124-6acd-4cd0-bf06-21d5bde24982 ;
+        time:hasTime              oquo:instant-754fba5a-3fac-4ffe-93ef-afcfcb01944e ;
+        oquo:hasObservation       oquo:observation-c2517b4d-256f-4caf-aba5-5aea654de775 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-d623705a-ea14-4706-84a7-c175ce132a55
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.79Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-8f5844a0-bde4-47a9-8735-65510263f869
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-18e8b052-7370-4cec-b0b5-04bade1c1501 ;
+        oboe:measurementFor  oquo:observation-84606484-6e7d-4f27-b86f-4922d8fa9da6 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:metric-5ce1b61a-47a4-4118-b2b0-22bf1564d715
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c73f0a7c-5467-4520-ae50-a1ec57a2c620 ;
+        oboe:measurementFor  oquo:observation-adf2f28e-4c31-44a7-afa8-4486d0f05bb6 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-25371130-335f-48d9-94f5-06a794eab368
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-af5683b5-0e50-4484-85b3-bdca1db5a435 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8bb90b8d-3374-4db5-b7e1-26724eb7358b .
+
+oquo:metric-1c2cec24-a423-48b2-8dcd-055b6c66902f
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-9c557056-64e2-4669-bd08-c27b5d011818 ;
+        oboe:measurementFor  oquo:observation-cf53e9e4-8662-479f-9493-e68dd306c645 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-b6c5d1d1-ef4b-460d-a161-dd9c92da9cd5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7c53eb60-ab6f-42d3-a99f-3480c8b4baf0 ;
+        res:hasLiteralValue    "11.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9fbbb94b-368a-4399-88a5-bfbad17ae9d3 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-86c54939-d315-4307-ada1-bf9c1d93ea52
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.866Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-95cd7859-22dc-4d12-a649-17f2475bdb10
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.658Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-df3ec94d-4367-4150-a21b-d9c1726281c7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-cf0ae478-b627-4421-a014-4e803f9ee7af ;
+        time:hasTime              oquo:instant-54c2894f-e303-461c-96bb-928ef4e4d581 ;
+        oquo:hasObservation       oquo:observation-92ecac9d-0b75-4a36-b82f-837dbeb31bfa .
+
+oquo:metric-343fa6f2-f241-4201-8eb1-9466a8aa7cd5
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-608ea652-fe59-41ee-8fee-b83dd2f3e48a ;
+        oboe:measurementFor  oquo:observation-5ee914c1-907c-45c8-93fd-02508b9af4c9 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-7926449e-6d2d-4b32-8c72-647720c70097
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-771dadb5-96af-46f3-96b7-59c74747da64 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-13b777cc-0fc0-499f-881f-99254d2d880d .
+
+oquo:instant-54c2894f-e303-461c-96bb-928ef4e4d581
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.672Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-fdf45924-e1e0-4419-937b-aa9491b8b24e
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-035c329c-5094-4fda-9544-637029f83ac9 ;
+        oboe:measurementFor  oquo:observation-f98fa0c9-58be-44ab-a744-7265fe566984 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:qualityValue-617db934-2e7c-4206-829e-f9adbd84d0b2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-863c1f0c-3c72-4eef-8306-f273b8c31b6c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3a46c45b-94b1-4469-b56f-62cbab0f3c13 .
+
+oquo:qualityValue-18e8b052-7370-4cec-b0b5-04bade1c1501
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8f5844a0-bde4-47a9-8735-65510263f869 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1dea7bf9-7701-40f5-af7c-ec1b0771d529 .
+
+oquo:observation-f9ee7baf-d982-4ab6-8aeb-04911f99bbc7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-863c1f0c-3c72-4eef-8306-f273b8c31b6c ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-86c54939-d315-4307-ada1-bf9c1d93ea52 .
+
+oquo:instant-e7b9162e-feef-4579-b50d-503908dd02f0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.631Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9c557056-64e2-4669-bd08-c27b5d011818
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c2cec24-a423-48b2-8dcd-055b6c66902f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9152963a-214b-450b-983b-aa761f7bad00 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-6aff2c0c-8971-4082-b2ea-87a26f83849f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-c73f0a7c-5467-4520-ae50-a1ec57a2c620 ;
+        time:hasTime              oquo:instant-9881e173-5223-4239-b41c-8f90fe890dff ;
+        oquo:hasObservation       oquo:observation-adf2f28e-4c31-44a7-afa8-4486d0f05bb6 .
+
+oquo:qualityValue-7526724e-ba41-4f0b-908d-0efe25518ffb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cdbd8ed1-e2ad-4aaa-a4c0-9d16017a8547 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-096805fa-cfdb-413b-aade-629708e8bb75 .
+
+oquo:observation-f98fa0c9-58be-44ab-a744-7265fe566984
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fdf45924-e1e0-4419-937b-aa9491b8b24e ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-07620bdc-620f-481f-82c2-983fb4fadeaa .
+
+oquo:evaluation-af90d80e-ead7-4ddf-ac5d-ac9ed8869002
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-c461c2a6-6433-4cc6-9b56-ff95905b5a7e ;
+        time:hasTime              oquo:instant-5963a9c6-d7fd-4834-a739-3f2b730f95e2 ;
+        oquo:hasObservation       oquo:observation-ce3485e9-b8fa-41aa-95ef-a0854cd6ae26 .
+
+oquo:qualityValue-e26d62e8-7056-45be-b32e-0ab5eab600ff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a8794a4d-0845-4453-81d3-3a41cd5186e9 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-93188c76-a308-4892-8fae-6935b7dfa81f .
+
+oquo:evaluation-87f056c7-063e-4ad6-ab34-3b61a2d39818
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-3fcd47cf-c48b-4088-8429-566ef0ecaf76 ;
+        time:hasTime              oquo:instant-2cb6cf25-e6dc-4463-be36-cef8dc0284a7 ;
+        oquo:hasObservation       oquo:observation-728c5e84-6c67-43b2-82f6-2c717ca4837f .
+
+oquo:instant-362d9aa9-79d4-4bd5-8410-26d2e39743b1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.773Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-60dcca72-8f39-4ffa-a25b-ad57ba39aae5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a49b409d-e705-499e-ac07-1b2b88132cc8 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-5ae90039-5469-4876-bdeb-20770392be3b .
+
+oquo:qualityValue-13ca09f7-5c01-4d5a-ad4b-63012b55aa7f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ae49a625-b3b6-4b80-8f0b-a21d73044aee ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cb1ec2fa-ef83-444d-99d4-55a05f0d29fc .
+
+oquo:qualityValue-3fcd47cf-c48b-4088-8429-566ef0ecaf76
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-197bff5e-5156-4cb3-bb02-e16381007867 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-87f056c7-063e-4ad6-ab34-3b61a2d39818 .
+
+oquo:observation-2a981eb1-7b1b-4fa8-b288-a54678f1c3ff
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ae49a625-b3b6-4b80-8f0b-a21d73044aee ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-91ddfdd0-87e8-4eab-a154-0ebdcd520986 .
+
+oquo:qualityValue-8e98d076-829f-465a-8422-d3d4dda9c745
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0c7984bb-2c3e-40b5-937e-a9fb8af408c7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ad23e687-e2c8-4d42-963e-a61bd9b86fee .
+
+oquo:qualityValue-b6baa073-a992-42f0-ba87-66cce678f994
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-07332abe-9d25-4f12-af99-b658924f572a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f5ffdf7a-9e3a-4392-ae7f-59629cfb8693 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-cb1ec2fa-ef83-444d-99d4-55a05f0d29fc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-13ca09f7-5c01-4d5a-ad4b-63012b55aa7f ;
+        time:hasTime              oquo:instant-91ddfdd0-87e8-4eab-a154-0ebdcd520986 ;
+        oquo:hasObservation       oquo:observation-2a981eb1-7b1b-4fa8-b288-a54678f1c3ff .
+
+oquo:instant-9881e173-5223-4239-b41c-8f90fe890dff
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.715Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ac0091b6-0640-4f68-948f-457ae22b7ca7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-385e68d2-dbe1-4007-afda-4b6ceaccf27a ;
+        time:hasTime              oquo:instant-5fc1e369-ae4f-47db-ab1d-1a4d984f9e9e ;
+        oquo:hasObservation       oquo:observation-5a6a6356-4b10-4c59-9744-9af1cdd4380b .
+
+oquo:metric-cdbd8ed1-e2ad-4aaa-a4c0-9d16017a8547
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7526724e-ba41-4f0b-908d-0efe25518ffb ;
+        oboe:measurementFor  oquo:observation-f3985383-0099-4a8b-977a-37d135417992 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-385e68d2-dbe1-4007-afda-4b6ceaccf27a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-adf43e15-54e4-4ef2-83b3-d8b320957ffa ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ac0091b6-0640-4f68-948f-457ae22b7ca7 .
+
+oquo:metric-a8794a4d-0845-4453-81d3-3a41cd5186e9
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-e26d62e8-7056-45be-b32e-0ab5eab600ff ;
+        oboe:measurementFor  oquo:observation-57a2cb81-7118-42f9-9387-cb3b37916d5c ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-87e022fe-20eb-44f9-ad3b-bbf6f9731d58
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.635Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5a16d33b-7495-455a-9071-eb1be93b51ae
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-26db385f-70df-4ebc-8a9e-40228b8d6cad ;
+        time:hasTime              oquo:instant-2218279f-2a67-47fe-a26f-b05706f81c75 ;
+        oquo:hasObservation       oquo:observation-67189497-ceca-4a12-86f6-6beb121dd10e .
+
+oquo:metric-fd07c701-42a2-4b4b-ac2f-1673741a3c44
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c3515c97-f7d5-4791-a200-006d0744f783 ;
+        oboe:measurementFor  oquo:observation-35ad8f61-d886-46d7-9dcc-751ba0d9e100 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:qualityValue-2e9b12ee-f67f-4929-9bed-21156574e654
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0893092b-2a21-45c8-973a-5a18938e3666 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-98953982-a57e-451b-b9c9-cf0541d393cc .
+
+oquo:observation-4aff5f83-2d86-4b72-9ffe-2775e99dfce5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0fc17523-4c1f-4618-bc8c-5951718fec96 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-95cd7859-22dc-4d12-a649-17f2475bdb10 .
+
+oquo:evaluation-9fbbb94b-368a-4399-88a5-bfbad17ae9d3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-b6c5d1d1-ef4b-460d-a161-dd9c92da9cd5 ;
+        time:hasTime              oquo:instant-2c12073d-941f-4f81-a38e-e1e8cea9d999 ;
+        oquo:hasObservation       oquo:observation-fc52497f-e1e5-40e0-9d3f-6112fcdcdd4a .
+
+oquo:instant-febb9588-1456-417a-8d78-0b1a3504ede0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.784Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-c08cc7a4-a151-48c6-aa84-998f49524a5a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-61429dc9-3e06-4716-a92a-3c8f0e06d30e ;
+        time:hasTime              oquo:instant-a5f4f5a9-4f98-4ba4-8681-b32ec10b9690 ;
+        oquo:hasObservation       oquo:observation-5a2189cb-08d9-4b72-a20a-93add28ff484 .
+
+oquo:qualityValue-87331124-6acd-4cd0-bf06-21d5bde24982
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-39c8af11-099e-4b15-a813-6415acdec97a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-697bd291-e560-4b64-88e6-e1f07261cf26 .
+
+oquo:evaluation-13b777cc-0fc0-499f-881f-99254d2d880d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-7926449e-6d2d-4b32-8c72-647720c70097 ;
+        time:hasTime              oquo:instant-a01ed50d-a3bf-434e-ab2c-8c5bce08fade ;
+        oquo:hasObservation       oquo:observation-90a76ec8-b8ce-4b20-b45d-33a50344c42e .
+
+oquo:instant-d318475d-2258-4765-9a6b-b13aef5091c2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:01.377Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-cbdc50c8-a170-48f1-b140-1e3337fac84e
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-c502307f-a9ed-466f-a909-ff62f5c5a386 ;
+        oboe:measurementFor  oquo:observation-ead2ff74-eba1-4b49-a087-d87f6e52b39d ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-c2517b4d-256f-4caf-aba5-5aea654de775
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-39c8af11-099e-4b15-a813-6415acdec97a ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-754fba5a-3fac-4ffe-93ef-afcfcb01944e .
+
+oquo:instant-e46fcd3e-17db-4a1f-b82c-b86f4cb1f0e6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:01.396Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-44872517-3209-4b09-9e9a-909215b3e32a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.706Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-9152963a-214b-450b-983b-aa761f7bad00
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-9c557056-64e2-4669-bd08-c27b5d011818 ;
+        time:hasTime              oquo:instant-20a09666-bd15-4229-89b4-f11dafb0b008 ;
+        oquo:hasObservation       oquo:observation-cf53e9e4-8662-479f-9493-e68dd306c645 .
+
+oquo:evaluation-c6c7c94d-e277-433e-a381-3d76eb709c85
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-78f30199-bb65-4e71-8c42-9ce2159e776a ;
+        time:hasTime              oquo:instant-d318475d-2258-4765-9a6b-b13aef5091c2 ;
+        oquo:hasObservation       oquo:observation-c054f46e-4a41-4bb0-836c-fdc8930cd7aa .
+
+oquo:metric-0c7984bb-2c3e-40b5-937e-a9fb8af408c7
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8e98d076-829f-465a-8422-d3d4dda9c745 ;
+        oboe:measurementFor  oquo:observation-403c4897-3424-4dc4-b661-da319106755f ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:observation-73fcf4ba-70bc-43c5-bbe2-c1df2710f119
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0893092b-2a21-45c8-973a-5a18938e3666 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-e5c8a5f0-a072-4319-9216-41a4051438ea .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:instant-5ae90039-5469-4876-bdeb-20770392be3b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.72Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-a145ddd7-018b-47ff-94c0-8bece33dc1b2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1321c389-5045-4912-b75f-2192fb72ed37 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-e7b9162e-feef-4579-b50d-503908dd02f0 .
+
+oquo:observation-5ee914c1-907c-45c8-93fd-02508b9af4c9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-343fa6f2-f241-4201-8eb1-9466a8aa7cd5 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-65b10034-3861-4026-a7c9-56464ad4f4d3 .
+
+oquo:evaluation-98953982-a57e-451b-b9c9-cf0541d393cc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-2e9b12ee-f67f-4929-9bed-21156574e654 ;
+        time:hasTime              oquo:instant-e5c8a5f0-a072-4319-9216-41a4051438ea ;
+        oquo:hasObservation       oquo:observation-73fcf4ba-70bc-43c5-bbe2-c1df2710f119 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-bb03b0c4-fba6-4dff-9d67-c7b9ebb69c89
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-beab2008-54fe-44ca-9fe2-d155bde08dce ;
+        oboe:measurementFor  oquo:observation-3df0b69e-999f-4191-8678-31e95761948e ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:metric-403d6576-e941-4647-93de-93e32ca5832e
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-cf0ae478-b627-4421-a014-4e803f9ee7af ;
+        oboe:measurementFor  oquo:observation-92ecac9d-0b75-4a36-b82f-837dbeb31bfa ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:metric-d518ae22-cdea-40c3-b6e5-022aba1dd0c1
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-8e1dcbf9-803e-43f1-9a30-af0c57c2fa1e ;
+        oboe:measurementFor  oquo:observation-e4be6c7b-d776-4164-9a3d-9a5f34021258 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-67189497-ceca-4a12-86f6-6beb121dd10e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c36ef310-ab94-4dff-a957-362072b6e5e5 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-2218279f-2a67-47fe-a26f-b05706f81c75 .
+
+oquo:instant-e5c8a5f0-a072-4319-9216-41a4051438ea
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.684Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-fe02ccce-7df9-4fc8-b867-1385d12408f8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cb01a3bf-9e7c-4d8b-981b-55578bc418b0 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-92bd559a-b29b-4588-bcfc-e9ffffddbda2 .
+
+oquo:qualityValue-beab2008-54fe-44ca-9fe2-d155bde08dce
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bb03b0c4-fba6-4dff-9d67-c7b9ebb69c89 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8a606c0a-ef15-4f87-9100-31c0d9ed2e7a .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-5fc1e369-ae4f-47db-ab1d-1a4d984f9e9e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:01.387Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-39c8af11-099e-4b15-a813-6415acdec97a
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-87331124-6acd-4cd0-bf06-21d5bde24982 ;
+        oboe:measurementFor  oquo:observation-c2517b4d-256f-4caf-aba5-5aea654de775 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-771dadb5-96af-46f3-96b7-59c74747da64
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7926449e-6d2d-4b32-8c72-647720c70097 ;
+        oboe:measurementFor  oquo:observation-90a76ec8-b8ce-4b20-b45d-33a50344c42e ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-92bd559a-b29b-4588-bcfc-e9ffffddbda2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-fe02ccce-7df9-4fc8-b867-1385d12408f8 ;
+        time:hasTime              oquo:instant-febb9588-1456-417a-8d78-0b1a3504ede0 ;
+        oquo:hasObservation       oquo:observation-e510f21b-11d4-4fb6-bb6f-a531a0848aaf .
+
+oquo:metric-af5683b5-0e50-4484-85b3-bdca1db5a435
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-25371130-335f-48d9-94f5-06a794eab368 ;
+        oboe:measurementFor  oquo:observation-d03514d5-d060-4bda-b68f-2fa28e54b9c0 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-8bb90b8d-3374-4db5-b7e1-26724eb7358b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-25371130-335f-48d9-94f5-06a794eab368 ;
+        time:hasTime              oquo:instant-4de6e95a-6a6e-4c75-9cb2-1e767cb34f71 ;
+        oquo:hasObservation       oquo:observation-d03514d5-d060-4bda-b68f-2fa28e54b9c0 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-a49b409d-e705-499e-ac07-1b2b88132cc8
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8d2f05ce-915d-477f-95c8-8c85319bc02f ;
+        oboe:measurementFor  oquo:observation-60dcca72-8f39-4ffa-a25b-ad57ba39aae5 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:metric-197bff5e-5156-4cb3-bb02-e16381007867
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-3fcd47cf-c48b-4088-8429-566ef0ecaf76 ;
+        oboe:measurementFor  oquo:observation-728c5e84-6c67-43b2-82f6-2c717ca4837f ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:observation-e4be6c7b-d776-4164-9a3d-9a5f34021258
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d518ae22-cdea-40c3-b6e5-022aba1dd0c1 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-d8290b9a-f37a-4f5a-b5ea-315082dbb9c4 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-e510f21b-11d4-4fb6-bb6f-a531a0848aaf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cb01a3bf-9e7c-4d8b-981b-55578bc418b0 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-febb9588-1456-417a-8d78-0b1a3504ede0 .
+
+oquo:qualityValue-78f30199-bb65-4e71-8c42-9ce2159e776a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2090ecb5-c323-47f2-85e9-6b39894c0fd9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c6c7c94d-e277-433e-a381-3d76eb709c85 .
+
+oquo:metric-e014d780-0bf1-4d43-9729-8813421387a2
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-2edd852d-9e13-4994-a243-985addfd0387 ;
+        oboe:measurementFor  oquo:observation-dbff82a9-f41b-40f1-ac1d-9a5cac6b1cad ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-ae49a625-b3b6-4b80-8f0b-a21d73044aee
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-13ca09f7-5c01-4d5a-ad4b-63012b55aa7f ;
+        oboe:measurementFor  oquo:observation-2a981eb1-7b1b-4fa8-b288-a54678f1c3ff ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:observation-f3985383-0099-4a8b-977a-37d135417992
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cdbd8ed1-e2ad-4aaa-a4c0-9d16017a8547 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-1e28f8e0-6e29-470d-a932-3f3c805c0fe5 .
+
+oquo:qualityValue-608ea652-fe59-41ee-8fee-b83dd2f3e48a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-343fa6f2-f241-4201-8eb1-9466a8aa7cd5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-70c869c2-06fb-42c2-a9d3-94587c331b7e .
+
+oquo:instant-1f657eb9-b2da-4221-b93c-b531b34fbf80
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.645Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-343a4f64-0fc2-4661-95e8-95d4d82403b2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-1204ce9d-0217-4aad-950f-ac72524f29f7 ;
+        time:hasTime              oquo:instant-95cd7859-22dc-4d12-a649-17f2475bdb10 ;
+        oquo:hasObservation       oquo:observation-4aff5f83-2d86-4b72-9ffe-2775e99dfce5 .
+
+oquo:evaluation-28f3286a-61ed-4094-853f-6fbd3e1fe5ee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-c3515c97-f7d5-4791-a200-006d0744f783 ;
+        time:hasTime              oquo:instant-44872517-3209-4b09-9e9a-909215b3e32a ;
+        oquo:hasObservation       oquo:observation-35ad8f61-d886-46d7-9dcc-751ba0d9e100 .
+
+oquo:qualityValue-26db385f-70df-4ebc-8a9e-40228b8d6cad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c36ef310-ab94-4dff-a957-362072b6e5e5 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5a16d33b-7495-455a-9071-eb1be93b51ae .
+
+oquo:observation-6e72709e-c49a-42b7-affe-1e5262ef428d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-07332abe-9d25-4f12-af99-b658924f572a ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-fb4a7605-e6c2-4caa-90aa-ff0ed32b83fb .
+
+oquo:evaluation-8a606c0a-ef15-4f87-9100-31c0d9ed2e7a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-beab2008-54fe-44ca-9fe2-d155bde08dce ;
+        time:hasTime              oquo:instant-1f657eb9-b2da-4221-b93c-b531b34fbf80 ;
+        oquo:hasObservation       oquo:observation-3df0b69e-999f-4191-8678-31e95761948e .
+
+oquo:metric-d4a6bb35-c9d6-4a97-92d5-033a4c7cc011
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-2931af40-1e0c-4f97-9cff-53fdec416c6c ;
+        oboe:measurementFor  oquo:observation-4fc7b55e-5686-4e7e-a8c6-70114e546052 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-a01ed50d-a3bf-434e-ab2c-8c5bce08fade
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.681Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-20a09666-bd15-4229-89b4-f11dafb0b008
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:01.391Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-d03514d5-d060-4bda-b68f-2fa28e54b9c0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-af5683b5-0e50-4484-85b3-bdca1db5a435 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-4de6e95a-6a6e-4c75-9cb2-1e767cb34f71 .
+
+oquo:instant-a5f4f5a9-4f98-4ba4-8681-b32ec10b9690
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.687Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-bf309f1c-edd8-4452-aae2-d639b597c789
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-c502307f-a9ed-466f-a909-ff62f5c5a386 ;
+        time:hasTime              oquo:instant-d623705a-ea14-4706-84a7-c175ce132a55 ;
+        oquo:hasObservation       oquo:observation-ead2ff74-eba1-4b49-a087-d87f6e52b39d .
+
+oquo:observation-adf2f28e-4c31-44a7-afa8-4486d0f05bb6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5ce1b61a-47a4-4118-b2b0-22bf1564d715 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-9881e173-5223-4239-b41c-8f90fe890dff .
+
+oquo:observation-5a6a6356-4b10-4c59-9744-9af1cdd4380b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-adf43e15-54e4-4ef2-83b3-d8b320957ffa ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-5fc1e369-ae4f-47db-ab1d-1a4d984f9e9e .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ce3485e9-b8fa-41aa-95ef-a0854cd6ae26
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-49d8af13-fde4-4723-bba5-7b63d93a57ab ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-5963a9c6-d7fd-4834-a739-3f2b730f95e2 .
+
+oquo:instant-3fcd7e8c-b4cb-4c28-9177-ba70c636a210
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.649Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-863c1f0c-3c72-4eef-8306-f273b8c31b6c
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-617db934-2e7c-4206-829e-f9adbd84d0b2 ;
+        oboe:measurementFor  oquo:observation-f9ee7baf-d982-4ab6-8aeb-04911f99bbc7 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-fc52497f-e1e5-40e0-9d3f-6112fcdcdd4a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7c53eb60-ab6f-42d3-a99f-3480c8b4baf0 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-2c12073d-941f-4f81-a38e-e1e8cea9d999 .
+
+oquo:observation-4fc7b55e-5686-4e7e-a8c6-70114e546052
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d4a6bb35-c9d6-4a97-92d5-033a4c7cc011 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-e46fcd3e-17db-4a1f-b82c-b86f4cb1f0e6 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-49d8af13-fde4-4723-bba5-7b63d93a57ab
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-c461c2a6-6433-4cc6-9b56-ff95905b5a7e ;
+        oboe:measurementFor  oquo:observation-ce3485e9-b8fa-41aa-95ef-a0854cd6ae26 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-07620bdc-620f-481f-82c2-983fb4fadeaa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.725Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3a46c45b-94b1-4469-b56f-62cbab0f3c13
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-617db934-2e7c-4206-829e-f9adbd84d0b2 ;
+        time:hasTime              oquo:instant-86c54939-d315-4307-ada1-bf9c1d93ea52 ;
+        oquo:hasObservation       oquo:observation-f9ee7baf-d982-4ab6-8aeb-04911f99bbc7 .
+
+oquo:instant-46cbed73-d739-45fb-ac8c-af048aa40910
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.867Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8d2f05ce-915d-477f-95c8-8c85319bc02f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a49b409d-e705-499e-ac07-1b2b88132cc8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f18d5546-ea29-4707-8d07-479866d528f5 .
+
+<http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:metric-0fc17523-4c1f-4618-bc8c-5951718fec96
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-1204ce9d-0217-4aad-950f-ac72524f29f7 ;
+        oboe:measurementFor  oquo:observation-4aff5f83-2d86-4b72-9ffe-2775e99dfce5 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:observation-90a76ec8-b8ce-4b20-b45d-33a50344c42e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-771dadb5-96af-46f3-96b7-59c74747da64 ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-a01ed50d-a3bf-434e-ab2c-8c5bce08fade .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-21b87b81-113b-4535-a6c4-23ae177e6394
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-2931af40-1e0c-4f97-9cff-53fdec416c6c ;
+        time:hasTime              oquo:instant-e46fcd3e-17db-4a1f-b82c-b86f4cb1f0e6 ;
+        oquo:hasObservation       oquo:observation-4fc7b55e-5686-4e7e-a8c6-70114e546052 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-1204ce9d-0217-4aad-950f-ac72524f29f7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0fc17523-4c1f-4618-bc8c-5951718fec96 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-343a4f64-0fc2-4661-95e8-95d4d82403b2 .
+
+oquo:observation-ead2ff74-eba1-4b49-a087-d87f6e52b39d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cbdc50c8-a170-48f1-b140-1e3337fac84e ;
+        oboe:ofEntity        <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        time:hasTime         oquo:instant-d623705a-ea14-4706-84a7-c175ce132a55 .
+
+oquo:instant-2218279f-2a67-47fe-a26f-b05706f81c75
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.8Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8e1dcbf9-803e-43f1-9a30-af0c57c2fa1e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d518ae22-cdea-40c3-b6e5-022aba1dd0c1 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2163dac8-4fe0-4cbc-a6ba-2b807c0ec8ed .
+
+oquo:qualityValue-c3515c97-f7d5-4791-a200-006d0744f783
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fd07c701-42a2-4b4b-ac2f-1673741a3c44 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-28f3286a-61ed-4094-853f-6fbd3e1fe5ee .
+
+oquo:instant-5963a9c6-d7fd-4834-a739-3f2b730f95e2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:04.864Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-c502307f-a9ed-466f-a909-ff62f5c5a386
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cbdc50c8-a170-48f1-b140-1e3337fac84e ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bf309f1c-edd8-4452-aae2-d639b597c789 .
+
+oquo:evaluation-f18d5546-ea29-4707-8d07-479866d528f5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-8d2f05ce-915d-477f-95c8-8c85319bc02f ;
+        time:hasTime              oquo:instant-5ae90039-5469-4876-bdeb-20770392be3b ;
+        oquo:hasObservation       oquo:observation-60dcca72-8f39-4ffa-a25b-ad57ba39aae5 .
+
+oquo:evaluation-096805fa-cfdb-413b-aade-629708e8bb75
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:inputData             <http://www.semanticweb.org/jdr2160/ontologies/2015/5/venom_ontology> ;
+        res:producedQualityValue  oquo:qualityValue-7526724e-ba41-4f0b-908d-0efe25518ffb ;
+        time:hasTime              oquo:instant-1e28f8e0-6e29-470d-a932-3f3c805c0fe5 ;
+        oquo:hasObservation       oquo:observation-f3985383-0099-4a8b-977a-37d135417992 .
+
+oquo:instant-2cb6cf25-e6dc-4463-be36-cef8dc0284a7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T17:31:03.49Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

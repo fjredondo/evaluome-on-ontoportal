@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:metric-4d33e342-6009-4e74-8838-5a1df1d10970
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ea213d16-5107-4aaa-967d-6be2eb6e21dd ;
+        oboe:measurementFor  oquo:observation-b4a68b8d-71cf-48df-a923-cab7f4299276 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-a6c4a1fd-7875-46fd-9184-1c5d3a290872
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1356db63-2680-4f47-b584-fa0bc57e68c1 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-358cd2f9-df70-48f5-a050-591f2f0cc0e1 .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-1418b08a-ce4f-4f91-88dd-922a2d8cfcc5
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bea00b39-9dcf-4571-9327-7a1300ece787 ;
+        oboe:measurementFor  oquo:observation-5cd8c9a6-7010-460d-b004-eb5548634da5 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-7e0376e0-dc9d-4b64-bbe0-e5d227aad99b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4560edc0-5baf-49f6-b863-de09773eaf37 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-2eb1e639-f69c-4e88-8a61-e28f74cf5760 .
+
+oquo:evaluation-0d3e940a-25bf-4b0a-929f-b508592fb544
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-9e0b7707-082a-406b-9d10-87f1d8e6ea7c ;
+        time:hasTime              oquo:instant-1f4083bd-8356-4239-a65e-fff9cc030f82 ;
+        oquo:hasObservation       oquo:observation-ea932fc1-b3d3-4e29-95e5-44c031d4d8a4 .
+
+oquo:instant-e243cfb7-3d1a-4449-b5ba-78da8b77b4a5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.277Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-80988ea8-0e99-415f-9a7a-1b770f2a0704
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0f777d9f-452f-4a10-a29b-daab3e589004 ;
+        oboe:measurementFor  oquo:observation-cd16873c-0c3b-46b7-8624-83db6bb0373f ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:qualityValue-9f31aa6f-e390-40b6-9565-9f7153a346c7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ece5237e-8374-43b3-9f73-97e5a2edc79f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3de9b48a-209a-4db1-91a0-b72fa2aab7b0 .
+
+oquo:evaluation-3f8f24ab-ddee-4c18-8c42-abff6c37cc46
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-66d4efc9-dc94-4528-b68a-e3b02b8c70f7 ;
+        time:hasTime              oquo:instant-ee5b8c42-237d-487c-aef8-1e0ec7f51fd6 ;
+        oquo:hasObservation       oquo:observation-63c255eb-3a3b-473d-91ef-1a795acf49bf .
+
+oquo:observation-41d3610e-f52e-48ba-ad5a-c6c6920d31ad
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7eb737bb-368d-4051-a9aa-b93017bb661d ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-29ace9f9-830c-4878-a5d5-453d855fd735 .
+
+oquo:metric-c8e3876e-3f3b-424b-b49f-3bbc0b65968a
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-a1554146-aeb9-416f-b986-a3ac21085e11 ;
+        oboe:measurementFor  oquo:observation-71cbb580-0581-47c5-996b-4ffee5e7334c ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-27d7d273-924b-4caa-9aff-f53207c9399d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.167Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1f4083bd-8356-4239-a65e-fff9cc030f82
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.087Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1c4fc61c-4dc0-45b1-8cd4-2e33b9090558
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-a5fe164f-22c0-4bd8-9477-800376cf430b ;
+        oboe:measurementFor  oquo:observation-e3e5145c-d6b5-48c5-8bc2-e338b8de23c6 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:evaluation-f2d11205-7e4c-41ef-a4bf-9db16f4f9f82
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-b58a37d7-99a0-4785-b887-4b10ceac4f70 ;
+        time:hasTime              oquo:instant-192bd92e-322b-4bab-ab36-0496aefd2ede ;
+        oquo:hasObservation       oquo:observation-0c6dc780-0908-47d8-9c07-ccebbc3040a8 .
+
+oquo:qualityValue-b58a37d7-99a0-4785-b887-4b10ceac4f70
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-08872fb0-8441-4a4d-98f5-1a75184b1c64 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f2d11205-7e4c-41ef-a4bf-9db16f4f9f82 .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-3713e3f8-e05b-40ef-82ea-28086a6d4316
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fe043ec0-ce82-4dfe-8656-50996345ac7e ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-d99d65db-0a48-4c2a-9b2c-c13a2a90ea43 .
+
+oquo:instant-4c1825de-ee19-4ba5-aef9-62cad9112009
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.247Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-452d219f-e26f-45b5-83f0-293a2e8848f2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-484f197a-f25c-4bdf-a9b3-f56d8128571b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c6873278-17b6-4098-bd32-96907de6cd8a .
+
+oquo:observation-9123cc71-46c4-4974-b2ca-de45ab511754
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dc45c6e5-b6d4-4761-a3c1-db17d9c206f9 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-4b27896b-30d7-4597-b03a-66b78b40d9cf .
+
+oquo:instant-0a5dd752-0035-4d09-bb7c-f4f51dbfd6a5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:49.952Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4a556889-88ec-4cd9-b010-86667693edac
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.083Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-2b30312e-c4d5-49b7-8ed5-c1ae60538826
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-484f197a-f25c-4bdf-a9b3-f56d8128571b ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-0a5dd752-0035-4d09-bb7c-f4f51dbfd6a5 .
+
+oquo:observation-1b93e729-1656-4c78-b63f-3c7f7ef82e54
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-84f193a0-baf5-4bc5-bd8e-efe2eb41d3e7 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-df6ac2fe-8981-446e-83c5-aa5628df9009 .
+
+oquo:instant-06f98a3c-3e81-4afd-aa0f-85a8b247677d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.283Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-7e9f7cda-b823-4655-8318-39ebcce934f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-cbd40ec5-f0a7-43dc-b622-ced86eecb920 ;
+        time:hasTime              oquo:instant-d99d65db-0a48-4c2a-9b2c-c13a2a90ea43 ;
+        oquo:hasObservation       oquo:observation-3713e3f8-e05b-40ef-82ea-28086a6d4316 .
+
+oquo:evaluation-1f4361f2-c4a0-476d-9615-818ff94e397a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-5e666c9e-dbd2-4647-a621-4f2d80d568d6 ;
+        time:hasTime              oquo:instant-05fb0a3a-6729-4fc3-8cdf-93aaa6622895 ;
+        oquo:hasObservation       oquo:observation-9073108a-6e2b-42ac-8d39-fb87546ef9fb .
+
+oquo:metric-ad49bd53-2a79-40fb-91f8-b8146ba0c919
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e3a0bec1-7a64-4d3d-b0e6-ba32a43f18a8 ;
+        oboe:measurementFor  oquo:observation-1d736b7c-e570-475e-8f99-8abb73714159 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:observation-00690673-1a5d-4532-804e-0970c057ee08
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-33a610e4-ea36-46ae-b16b-c3c97644f8be ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-fbbe247b-9b42-4b55-a017-4ae243495e4e .
+
+oquo:observation-cd16873c-0c3b-46b7-8624-83db6bb0373f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-80988ea8-0e99-415f-9a7a-1b770f2a0704 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-ab53a693-d562-4075-9ef6-9ad037c41cbe .
+
+oquo:instant-0a7aafe1-a6d5-46ef-8ba6-0172274e960a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.245Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-40579b4d-ecf8-4dad-bdd6-29ee421e0eba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:50.192Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-37524889-f82f-43d9-b175-afcf477ccd93
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-726ba93e-af7c-4c16-b751-5ea3519de9ff ;
+        oboe:measurementFor  oquo:observation-4c97409f-8061-4053-b6d0-41803abd3ebd ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-066c5eb5-e8ea-44ea-aa51-268f06103bab
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-0f777d9f-452f-4a10-a29b-daab3e589004 ;
+        time:hasTime              oquo:instant-ab53a693-d562-4075-9ef6-9ad037c41cbe ;
+        oquo:hasObservation       oquo:observation-cd16873c-0c3b-46b7-8624-83db6bb0373f .
+
+oquo:instant-a94ad84b-cceb-4931-b525-76ce3708e72e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.169Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-72cbe237-55ce-4297-881d-4c2a0699f94c
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-be1dc823-25a9-48a3-9df1-9c9491819ff2 ;
+        oboe:measurementFor  oquo:observation-7cdd928f-662f-41a5-a592-a9f7e8a12f2c ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-3f9aa6cb-c53b-4f5a-bf40-a44e640620cc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b263459c-e262-42fd-a919-1cff2ada4cb6 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-df18b5d6-e9d8-4654-885c-1858259b9477 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-52488f77-9271-4802-b846-cfff3c3fdb08
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-60e9c2fe-d995-4036-b011-2d15b0de3c77 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-0a7aafe1-a6d5-46ef-8ba6-0172274e960a .
+
+oquo:metric-86bb9e96-12d7-4b20-b105-da5dbc49fe72
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-efc95e2c-2201-4e4a-8895-c194bad618cf ;
+        oboe:measurementFor  oquo:observation-be626cef-e62a-477a-a3d4-e919fa0d420c ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-efc95e2c-2201-4e4a-8895-c194bad618cf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-86bb9e96-12d7-4b20-b105-da5dbc49fe72 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6e40753f-90d2-4e8e-9d8a-3c59041a5d1c .
+
+oquo:observation-ea932fc1-b3d3-4e29-95e5-44c031d4d8a4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-68f32d98-5e76-4499-9ab8-ca2b2bb856fa ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-1f4083bd-8356-4239-a65e-fff9cc030f82 .
+
+oquo:instant-a47f009e-6cce-4503-8d9b-03f25ca268ee
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.141Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+<http://www.ontodm.com/OntoDT>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:metric-fe043ec0-ce82-4dfe-8656-50996345ac7e
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-cbd40ec5-f0a7-43dc-b622-ced86eecb920 ;
+        oboe:measurementFor  oquo:observation-3713e3f8-e05b-40ef-82ea-28086a6d4316 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-5daf05ba-b863-428b-9dbe-78f1e57b2f9b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.165Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-92fefdff-d7a0-4567-8c72-172e310f934b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.282Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-70936472-8a68-4502-bf6d-885c19c991f9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-ed157094-cb03-499f-a5ef-7d6fbdb79565 ;
+        time:hasTime              oquo:instant-a47f009e-6cce-4503-8d9b-03f25ca268ee ;
+        oquo:hasObservation       oquo:observation-43d30236-b0e6-49a6-87f7-af217b51ae0b .
+
+oquo:metric-68f32d98-5e76-4499-9ab8-ca2b2bb856fa
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-9e0b7707-082a-406b-9d10-87f1d8e6ea7c ;
+        oboe:measurementFor  oquo:observation-ea932fc1-b3d3-4e29-95e5-44c031d4d8a4 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-0f777d9f-452f-4a10-a29b-daab3e589004
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-80988ea8-0e99-415f-9a7a-1b770f2a0704 ;
+        res:hasLiteralValue    "0.5641025641025641"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-066c5eb5-e8ea-44ea-aa51-268f06103bab .
+
+oquo:metric-1356db63-2680-4f47-b584-fa0bc57e68c1
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a6c4a1fd-7875-46fd-9184-1c5d3a290872 ;
+        oboe:measurementFor  oquo:observation-8c13501c-6e0d-4a2a-873b-327f0eea963d ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-e1001754-db9e-4ec2-ad02-02772d32d51a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-3ac11582-b844-4e00-aee4-da78e0c302c4 ;
+        time:hasTime              oquo:instant-2eb1e639-f69c-4e88-8a61-e28f74cf5760 ;
+        oquo:hasObservation       oquo:observation-7e0376e0-dc9d-4b64-bbe0-e5d227aad99b .
+
+oquo:metric-64996cbe-3ff6-4cc3-b861-780d08a073c0
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d4b5ec21-883f-4f89-858d-bef34361aff9 ;
+        oboe:measurementFor  oquo:observation-503d898d-d132-47c7-9b27-0bc5b57593d0 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-3ac11582-b844-4e00-aee4-da78e0c302c4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4560edc0-5baf-49f6-b863-de09773eaf37 ;
+        res:hasLiteralValue    "0.0026595744680851063"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e1001754-db9e-4ec2-ad02-02772d32d51a .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-71cbb580-0581-47c5-996b-4ffee5e7334c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c8e3876e-3f3b-424b-b49f-3bbc0b65968a ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-40579b4d-ecf8-4dad-bdd6-29ee421e0eba .
+
+oquo:evaluation-6e40753f-90d2-4e8e-9d8a-3c59041a5d1c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-efc95e2c-2201-4e4a-8895-c194bad618cf ;
+        time:hasTime              oquo:instant-ea0e1c19-96e7-4bf1-a43d-590e3b2ba378 ;
+        oquo:hasObservation       oquo:observation-be626cef-e62a-477a-a3d4-e919fa0d420c .
+
+oquo:metric-ece5237e-8374-43b3-9f73-97e5a2edc79f
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9f31aa6f-e390-40b6-9565-9f7153a346c7 ;
+        oboe:measurementFor  oquo:observation-2de0babe-9e65-429f-b8f8-d3b106a5a36c ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:instant-d99d65db-0a48-4c2a-9b2c-c13a2a90ea43
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:50.283Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-b7364f78-ff19-4683-b1ec-2476db31931b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.192Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-9073108a-6e2b-42ac-8d39-fb87546ef9fb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f8698c69-5066-40cb-8866-7532e9a3109b ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-05fb0a3a-6729-4fc3-8cdf-93aaa6622895 .
+
+oquo:metric-8d385563-68d8-44b9-803a-5566a7c934e9
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-66d4efc9-dc94-4528-b68a-e3b02b8c70f7 ;
+        oboe:measurementFor  oquo:observation-63c255eb-3a3b-473d-91ef-1a795acf49bf ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:metric-d5bb7588-05f6-4115-8546-da3786ece61b
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-67d5e5b2-eba0-4af1-8838-23f1c2d96399 ;
+        oboe:measurementFor  oquo:observation-c4a25f29-d0cd-4cab-80db-74f68143768c ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:evaluation-39c09305-c784-46c5-8220-a730dc40ecbe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-f1835321-a41b-461a-8188-2f0c390fc396 ;
+        time:hasTime              oquo:instant-1cd0a2a8-80ab-4bb3-a049-c9d00064a73d ;
+        oquo:hasObservation       oquo:observation-d6defb6f-e9b7-4a32-8f9e-4befd1e89cfb .
+
+oquo:instant-4b27896b-30d7-4597-b03a-66b78b40d9cf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.269Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fd3b4643-9de5-42e8-a4e6-889bc951ee52
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-65e3676f-fa9a-4894-8a8e-cdc723de4a70 ;
+        time:hasTime              oquo:instant-29ace9f9-830c-4878-a5d5-453d855fd735 ;
+        oquo:hasObservation       oquo:observation-41d3610e-f52e-48ba-ad5a-c6c6920d31ad .
+
+oquo:evaluation-3b658a10-45bf-48df-bfaa-919d5f9d82f9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-e3a0bec1-7a64-4d3d-b0e6-ba32a43f18a8 ;
+        time:hasTime              oquo:instant-27d7d273-924b-4caa-9aff-f53207c9399d ;
+        oquo:hasObservation       oquo:observation-1d736b7c-e570-475e-8f99-8abb73714159 .
+
+oquo:metric-f8698c69-5066-40cb-8866-7532e9a3109b
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5e666c9e-dbd2-4647-a621-4f2d80d568d6 ;
+        oboe:measurementFor  oquo:observation-9073108a-6e2b-42ac-8d39-fb87546ef9fb ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-8aedc87a-7bc8-42d9-a5de-56001b536605
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-c3dbcc5c-072f-48c1-9229-969a6046fb69 ;
+        time:hasTime              oquo:instant-a94ad84b-cceb-4931-b525-76ce3708e72e ;
+        oquo:hasObservation       oquo:observation-170d5b28-3f31-4827-90a3-da24ccc8fbdd .
+
+oquo:observation-b760518d-3698-4ee7-b007-aca6ead6a37f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1958262c-ff8d-4074-b692-9f1513b8c173 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-7bbfc5c8-d3a3-4970-b638-f53fbf64df16 .
+
+oquo:qualityValue-be1dc823-25a9-48a3-9df1-9c9491819ff2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-72cbe237-55ce-4297-881d-4c2a0699f94c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ab6c3937-32c3-4917-98c6-72ea05dc7d4c .
+
+oquo:qualityValue-5e666c9e-dbd2-4647-a621-4f2d80d568d6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f8698c69-5066-40cb-8866-7532e9a3109b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1f4361f2-c4a0-476d-9615-818ff94e397a .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-66a47606-cd61-463f-a6a0-fe7161b7d9a8
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-07959b39-8829-4dd3-9455-13f7840dfe76 ;
+        oboe:measurementFor  oquo:observation-489da200-62e4-4f1f-a981-485d4790771c ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:qualityValue-62c873fc-4f8b-4ec6-ae74-b08ce0cae91a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-38e5bae2-34ca-45aa-9fda-d73cfc182434 ;
+        res:hasLiteralValue    "0.14627659574468085"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-95903951-ddfc-477a-85ee-8cf647e82750 .
+
+oquo:observation-7cdd928f-662f-41a5-a592-a9f7e8a12f2c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-72cbe237-55ce-4297-881d-4c2a0699f94c ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-e476b52a-0844-40d1-815a-bdd82012670d .
+
+oquo:instant-794940d4-4784-4c66-a7a5-0bc73bff3f61
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.149Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b263459c-e262-42fd-a919-1cff2ada4cb6
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-3f9aa6cb-c53b-4f5a-bf40-a44e640620cc ;
+        oboe:measurementFor  oquo:observation-9c516092-16be-41bb-a8a0-90c58247c135 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-170d5b28-3f31-4827-90a3-da24ccc8fbdd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7ac97b6e-4263-4897-ad90-4d6db8d3e77d ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-a94ad84b-cceb-4931-b525-76ce3708e72e .
+
+oquo:observation-1d736b7c-e570-475e-8f99-8abb73714159
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ad49bd53-2a79-40fb-91f8-b8146ba0c919 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-27d7d273-924b-4caa-9aff-f53207c9399d .
+
+oquo:instant-56a18346-5a53-44ec-ab79-34be70e68eb3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:49.965Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-be626cef-e62a-477a-a3d4-e919fa0d420c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-86bb9e96-12d7-4b20-b105-da5dbc49fe72 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-ea0e1c19-96e7-4bf1-a43d-590e3b2ba378 .
+
+oquo:instant-f3e37a1f-21f7-4aeb-9491-5e6a1a9d188e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:51.994Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-84f193a0-baf5-4bc5-bd8e-efe2eb41d3e7
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-da2418d9-4452-4cf6-aba5-72444ea730a7 ;
+        oboe:measurementFor  oquo:observation-1b93e729-1656-4c78-b63f-3c7f7ef82e54 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:observation-8c13501c-6e0d-4a2a-873b-327f0eea963d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1356db63-2680-4f47-b584-fa0bc57e68c1 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-06f98a3c-3e81-4afd-aa0f-85a8b247677d .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-94b444a1-66d0-4719-afeb-11c5f523637a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-33a610e4-ea36-46ae-b16b-c3c97644f8be ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2987a93b-f67f-4c0d-9014-fa36fbf5aa3a .
+
+oquo:qualityValue-ed157094-cb03-499f-a5ef-7d6fbdb79565
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-53cba250-d44d-4183-9458-1951365de071 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-70936472-8a68-4502-bf6d-885c19c991f9 .
+
+oquo:metric-2f681851-d2be-4ffe-bb58-82371051704a
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-50be4779-0ad3-422a-9a36-012379330226 ;
+        oboe:measurementFor  oquo:observation-829b730f-e8c9-4a33-a5f7-58fab52c862b ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:instant-2eb1e639-f69c-4e88-8a61-e28f74cf5760
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:50.217Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-c6873278-17b6-4098-bd32-96907de6cd8a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-452d219f-e26f-45b5-83f0-293a2e8848f2 ;
+        time:hasTime              oquo:instant-0a5dd752-0035-4d09-bb7c-f4f51dbfd6a5 ;
+        oquo:hasObservation       oquo:observation-2b30312e-c4d5-49b7-8ed5-c1ae60538826 .
+
+oquo:evaluation-4bbbe157-e1d8-46f3-b67f-eeed38bb798d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-3721840a-9072-4cc8-973e-e63d2190cd39 ;
+        time:hasTime              oquo:instant-7bbfc5c8-d3a3-4970-b638-f53fbf64df16 ;
+        oquo:hasObservation       oquo:observation-b760518d-3698-4ee7-b007-aca6ead6a37f .
+
+oquo:qualityValue-9e0b7707-082a-406b-9d10-87f1d8e6ea7c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-68f32d98-5e76-4499-9ab8-ca2b2bb856fa ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0d3e940a-25bf-4b0a-929f-b508592fb544 .
+
+oquo:qualityValue-cbd40ec5-f0a7-43dc-b622-ced86eecb920
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fe043ec0-ce82-4dfe-8656-50996345ac7e ;
+        res:hasLiteralValue    "0.984375"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7e9f7cda-b823-4655-8318-39ebcce934f1 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-4c369be4-95b3-4a25-91d9-5ea149def0a6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-02b25ac4-bcd3-4d53-bb1a-e090e83a9856 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-65e52a75-df84-44b3-b3cc-ae49e001de0e .
+
+oquo:evaluation-358cd2f9-df70-48f5-a050-591f2f0cc0e1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-a6c4a1fd-7875-46fd-9184-1c5d3a290872 ;
+        time:hasTime              oquo:instant-06f98a3c-3e81-4afd-aa0f-85a8b247677d ;
+        oquo:hasObservation       oquo:observation-8c13501c-6e0d-4a2a-873b-327f0eea963d .
+
+oquo:observation-829b730f-e8c9-4a33-a5f7-58fab52c862b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2f681851-d2be-4ffe-bb58-82371051704a ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-5daf05ba-b863-428b-9dbe-78f1e57b2f9b .
+
+oquo:evaluation-c0f53731-c54b-4596-b175-eb6e6e7ab2f5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-726ba93e-af7c-4c16-b751-5ea3519de9ff ;
+        time:hasTime              oquo:instant-b7364f78-ff19-4683-b1ec-2476db31931b ;
+        oquo:hasObservation       oquo:observation-4c97409f-8061-4053-b6d0-41803abd3ebd .
+
+oquo:observation-c4a25f29-d0cd-4cab-80db-74f68143768c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d5bb7588-05f6-4115-8546-da3786ece61b ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-56a18346-5a53-44ec-ab79-34be70e68eb3 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-489da200-62e4-4f1f-a981-485d4790771c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-66a47606-cd61-463f-a6a0-fe7161b7d9a8 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-1be38471-f1fc-43f2-9957-6cf0f248f4f4 .
+
+oquo:observation-b4a68b8d-71cf-48df-a923-cab7f4299276
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4d33e342-6009-4e74-8838-5a1df1d10970 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-4c1825de-ee19-4ba5-aef9-62cad9112009 .
+
+oquo:evaluation-f5de4240-ffff-4530-83f2-ead8099aa56a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-ea213d16-5107-4aaa-967d-6be2eb6e21dd ;
+        time:hasTime              oquo:instant-4c1825de-ee19-4ba5-aef9-62cad9112009 ;
+        oquo:hasObservation       oquo:observation-b4a68b8d-71cf-48df-a923-cab7f4299276 .
+
+oquo:qualityValue-726ba93e-af7c-4c16-b751-5ea3519de9ff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-37524889-f82f-43d9-b175-afcf477ccd93 ;
+        res:hasLiteralValue    "0.8696808510638298"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c0f53731-c54b-4596-b175-eb6e6e7ab2f5 .
+
+oquo:metric-1958262c-ff8d-4074-b692-9f1513b8c173
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3721840a-9072-4cc8-973e-e63d2190cd39 ;
+        oboe:measurementFor  oquo:observation-b760518d-3698-4ee7-b007-aca6ead6a37f ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:instant-7bbfc5c8-d3a3-4970-b638-f53fbf64df16
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.159Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-7ac97b6e-4263-4897-ad90-4d6db8d3e77d
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-c3dbcc5c-072f-48c1-9229-969a6046fb69 ;
+        oboe:measurementFor  oquo:observation-170d5b28-3f31-4827-90a3-da24ccc8fbdd ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-7eb737bb-368d-4051-a9aa-b93017bb661d
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-65e3676f-fa9a-4894-8a8e-cdc723de4a70 ;
+        oboe:measurementFor  oquo:observation-41d3610e-f52e-48ba-ad5a-c6c6920d31ad ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-503d898d-d132-47c7-9b27-0bc5b57593d0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-64996cbe-3ff6-4cc3-b861-780d08a073c0 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-4a556889-88ec-4cd9-b010-86667693edac .
+
+oquo:metric-4560edc0-5baf-49f6-b863-de09773eaf37
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-3ac11582-b844-4e00-aee4-da78e0c302c4 ;
+        oboe:measurementFor  oquo:observation-7e0376e0-dc9d-4b64-bbe0-e5d227aad99b ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-2de0babe-9e65-429f-b8f8-d3b106a5a36c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ece5237e-8374-43b3-9f73-97e5a2edc79f ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-794940d4-4784-4c66-a7a5-0bc73bff3f61 .
+
+oquo:instant-192bd92e-322b-4bab-ab36-0496aefd2ede
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.224Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-ea0e1c19-96e7-4bf1-a43d-590e3b2ba378
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.161Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-ab53a693-d562-4075-9ef6-9ad037c41cbe
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.046Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-01773c30-a6e4-48d5-b1c3-1907b5383690
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-da2418d9-4452-4cf6-aba5-72444ea730a7 ;
+        time:hasTime              oquo:instant-df6ac2fe-8981-446e-83c5-aa5628df9009 ;
+        oquo:hasObservation       oquo:observation-1b93e729-1656-4c78-b63f-3c7f7ef82e54 .
+
+oquo:evaluation-df18b5d6-e9d8-4654-885c-1858259b9477
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-3f9aa6cb-c53b-4f5a-bf40-a44e640620cc ;
+        time:hasTime              oquo:instant-e243cfb7-3d1a-4449-b5ba-78da8b77b4a5 ;
+        oquo:hasObservation       oquo:observation-9c516092-16be-41bb-a8a0-90c58247c135 .
+
+oquo:evaluation-95903951-ddfc-477a-85ee-8cf647e82750
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-62c873fc-4f8b-4ec6-ae74-b08ce0cae91a ;
+        time:hasTime              oquo:instant-18c143f3-4a0d-4836-af24-886cbf738c03 ;
+        oquo:hasObservation       oquo:observation-37695f10-6ed4-4906-8f1b-e42caa3b7a33 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-3721840a-9072-4cc8-973e-e63d2190cd39
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1958262c-ff8d-4074-b692-9f1513b8c173 ;
+        res:hasLiteralValue    "0.15384615384615385"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4bbbe157-e1d8-46f3-b67f-eeed38bb798d .
+
+oquo:qualityValue-8de4edfd-06fc-44c4-8abc-57e44a27a674
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-60e9c2fe-d995-4036-b011-2d15b0de3c77 ;
+        res:hasLiteralValue    "0.7142857142857143"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-90b207b9-bea0-443b-9510-9f5357cea9a2 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-d6defb6f-e9b7-4a32-8f9e-4befd1e89cfb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bd404364-ba83-420e-a403-be05d9d213db ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-1cd0a2a8-80ab-4bb3-a049-c9d00064a73d .
+
+oquo:evaluation-ab6c3937-32c3-4917-98c6-72ea05dc7d4c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-be1dc823-25a9-48a3-9df1-9c9491819ff2 ;
+        time:hasTime              oquo:instant-e476b52a-0844-40d1-815a-bdd82012670d ;
+        oquo:hasObservation       oquo:observation-7cdd928f-662f-41a5-a592-a9f7e8a12f2c .
+
+oquo:qualityValue-50be4779-0ad3-422a-9a36-012379330226
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2f681851-d2be-4ffe-bb58-82371051704a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d7ec7102-4010-4f46-b0bb-8a4a2c15f7ee .
+
+oquo:observation-9c516092-16be-41bb-a8a0-90c58247c135
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b263459c-e262-42fd-a919-1cff2ada4cb6 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-e243cfb7-3d1a-4449-b5ba-78da8b77b4a5 .
+
+oquo:instant-df6ac2fe-8981-446e-83c5-aa5628df9009
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.067Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-43d30236-b0e6-49a6-87f7-af217b51ae0b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-53cba250-d44d-4183-9458-1951365de071 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-a47f009e-6cce-4503-8d9b-03f25ca268ee .
+
+oquo:instant-bdbeb916-ca1d-4b76-a69b-15ea58b7c0b8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.152Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-dc45c6e5-b6d4-4761-a3c1-db17d9c206f9
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-3fd3ee36-ca33-4a7c-8a47-2d7fa49a1618 ;
+        oboe:measurementFor  oquo:observation-9123cc71-46c4-4974-b2ca-de45ab511754 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-3d2a2400-fcdd-4607-a488-7b56efc5318e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-07959b39-8829-4dd3-9455-13f7840dfe76 ;
+        time:hasTime              oquo:instant-1be38471-f1fc-43f2-9957-6cf0f248f4f4 ;
+        oquo:hasObservation       oquo:observation-489da200-62e4-4f1f-a981-485d4790771c .
+
+oquo:qualityValue-f1835321-a41b-461a-8188-2f0c390fc396
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bd404364-ba83-420e-a403-be05d9d213db ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-39c09305-c784-46c5-8220-a730dc40ecbe .
+
+oquo:instant-fbbe247b-9b42-4b55-a017-4ae243495e4e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:51.996Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-da2418d9-4452-4cf6-aba5-72444ea730a7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-84f193a0-baf5-4bc5-bd8e-efe2eb41d3e7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-01773c30-a6e4-48d5-b1c3-1907b5383690 .
+
+oquo:evaluation-d7ec7102-4010-4f46-b0bb-8a4a2c15f7ee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-50be4779-0ad3-422a-9a36-012379330226 ;
+        time:hasTime              oquo:instant-5daf05ba-b863-428b-9dbe-78f1e57b2f9b ;
+        oquo:hasObservation       oquo:observation-829b730f-e8c9-4a33-a5f7-58fab52c862b .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-6c486351-776f-440b-a8df-b0dc643cccdf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-67d5e5b2-eba0-4af1-8838-23f1c2d96399 ;
+        time:hasTime              oquo:instant-56a18346-5a53-44ec-ab79-34be70e68eb3 ;
+        oquo:hasObservation       oquo:observation-c4a25f29-d0cd-4cab-80db-74f68143768c .
+
+oquo:metric-53cba250-d44d-4183-9458-1951365de071
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ed157094-cb03-499f-a5ef-7d6fbdb79565 ;
+        oboe:measurementFor  oquo:observation-43d30236-b0e6-49a6-87f7-af217b51ae0b ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:qualityValue-a1554146-aeb9-416f-b986-a3ac21085e11
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c8e3876e-3f3b-424b-b49f-3bbc0b65968a ;
+        res:hasLiteralValue    "0.0026595744680851063"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e001f6bc-28bd-497a-a17c-23b8e1ce065d .
+
+oquo:evaluation-2987a93b-f67f-4c0d-9014-fa36fbf5aa3a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-94b444a1-66d0-4719-afeb-11c5f523637a ;
+        time:hasTime              oquo:instant-fbbe247b-9b42-4b55-a017-4ae243495e4e ;
+        oquo:hasObservation       oquo:observation-00690673-1a5d-4532-804e-0970c057ee08 .
+
+oquo:metric-bd404364-ba83-420e-a403-be05d9d213db
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-f1835321-a41b-461a-8188-2f0c390fc396 ;
+        oboe:measurementFor  oquo:observation-d6defb6f-e9b7-4a32-8f9e-4befd1e89cfb ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-60e9c2fe-d995-4036-b011-2d15b0de3c77
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-8de4edfd-06fc-44c4-8abc-57e44a27a674 ;
+        oboe:measurementFor  oquo:observation-52488f77-9271-4802-b846-cfff3c3fdb08 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-c3dbcc5c-072f-48c1-9229-969a6046fb69
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7ac97b6e-4263-4897-ad90-4d6db8d3e77d ;
+        res:hasLiteralValue    "0.0026595744680851063"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8aedc87a-7bc8-42d9-a5de-56001b536605 .
+
+oquo:qualityValue-66d4efc9-dc94-4528-b68a-e3b02b8c70f7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8d385563-68d8-44b9-803a-5566a7c934e9 ;
+        res:hasLiteralValue    "0.8387096774193549"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3f8f24ab-ddee-4c18-8c42-abff6c37cc46 .
+
+oquo:evaluation-90b207b9-bea0-443b-9510-9f5357cea9a2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-8de4edfd-06fc-44c4-8abc-57e44a27a674 ;
+        time:hasTime              oquo:instant-0a7aafe1-a6d5-46ef-8ba6-0172274e960a ;
+        oquo:hasObservation       oquo:observation-52488f77-9271-4802-b846-cfff3c3fdb08 .
+
+oquo:evaluation-65e52a75-df84-44b3-b3cc-ae49e001de0e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-4c369be4-95b3-4a25-91d9-5ea149def0a6 ;
+        time:hasTime              oquo:instant-92fefdff-d7a0-4567-8c72-172e310f934b ;
+        oquo:hasObservation       oquo:observation-ca8079ed-b26b-48cf-af5b-462acd9a90dd .
+
+oquo:observation-ca8079ed-b26b-48cf-af5b-462acd9a90dd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-02b25ac4-bcd3-4d53-bb1a-e090e83a9856 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-92fefdff-d7a0-4567-8c72-172e310f934b .
+
+oquo:instant-ee5b8c42-237d-487c-aef8-1e0ec7f51fd6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:51.718Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-3fd3ee36-ca33-4a7c-8a47-2d7fa49a1618
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dc45c6e5-b6d4-4761-a3c1-db17d9c206f9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-29d625b1-ade7-41cd-a62e-ab068e67ea8b .
+
+oquo:evaluation-e50c7bf0-b81e-4c51-bdbb-899fe8b73500
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-d4b5ec21-883f-4f89-858d-bef34361aff9 ;
+        time:hasTime              oquo:instant-4a556889-88ec-4cd9-b010-86667693edac ;
+        oquo:hasObservation       oquo:observation-503d898d-d132-47c7-9b27-0bc5b57593d0 .
+
+oquo:instant-e476b52a-0844-40d1-815a-bdd82012670d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.273Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-e001f6bc-28bd-497a-a17c-23b8e1ce065d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-a1554146-aeb9-416f-b986-a3ac21085e11 ;
+        time:hasTime              oquo:instant-40579b4d-ecf8-4dad-bdd6-29ee421e0eba ;
+        oquo:hasObservation       oquo:observation-71cbb580-0581-47c5-996b-4ffee5e7334c .
+
+oquo:metric-484f197a-f25c-4bdf-a9b3-f56d8128571b
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-452d219f-e26f-45b5-83f0-293a2e8848f2 ;
+        oboe:measurementFor  oquo:observation-2b30312e-c4d5-49b7-8ed5-c1ae60538826 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:metric-08872fb0-8441-4a4d-98f5-1a75184b1c64
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-b58a37d7-99a0-4785-b887-4b10ceac4f70 ;
+        oboe:measurementFor  oquo:observation-0c6dc780-0908-47d8-9c07-ccebbc3040a8 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:metric-38e5bae2-34ca-45aa-9fda-d73cfc182434
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-62c873fc-4f8b-4ec6-ae74-b08ce0cae91a ;
+        oboe:measurementFor  oquo:observation-37695f10-6ed4-4906-8f1b-e42caa3b7a33 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-e3a0bec1-7a64-4d3d-b0e6-ba32a43f18a8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ad49bd53-2a79-40fb-91f8-b8146ba0c919 ;
+        res:hasLiteralValue    "0.2857142857142857"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3b658a10-45bf-48df-bfaa-919d5f9d82f9 .
+
+oquo:qualityValue-07959b39-8829-4dd3-9455-13f7840dfe76
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-66a47606-cd61-463f-a6a0-fe7161b7d9a8 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3d2a2400-fcdd-4607-a488-7b56efc5318e .
+
+oquo:qualityValue-d4b5ec21-883f-4f89-858d-bef34361aff9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-64996cbe-3ff6-4cc3-b861-780d08a073c0 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e50c7bf0-b81e-4c51-bdbb-899fe8b73500 .
+
+oquo:qualityValue-ea213d16-5107-4aaa-967d-6be2eb6e21dd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4d33e342-6009-4e74-8838-5a1df1d10970 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f5de4240-ffff-4530-83f2-ead8099aa56a .
+
+oquo:observation-63c255eb-3a3b-473d-91ef-1a795acf49bf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8d385563-68d8-44b9-803a-5566a7c934e9 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-ee5b8c42-237d-487c-aef8-1e0ec7f51fd6 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-4c97409f-8061-4053-b6d0-41803abd3ebd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-37524889-f82f-43d9-b175-afcf477ccd93 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-b7364f78-ff19-4683-b1ec-2476db31931b .
+
+oquo:instant-1cd0a2a8-80ab-4bb3-a049-c9d00064a73d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.275Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1be38471-f1fc-43f2-9957-6cf0f248f4f4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.085Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8f97e984-8d5a-4fa8-a621-16a341fcea0f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-bea00b39-9dcf-4571-9327-7a1300ece787 ;
+        time:hasTime              oquo:instant-bdbeb916-ca1d-4b76-a69b-15ea58b7c0b8 ;
+        oquo:hasObservation       oquo:observation-5cd8c9a6-7010-460d-b004-eb5548634da5 .
+
+oquo:observation-e3e5145c-d6b5-48c5-8bc2-e338b8de23c6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c4fc61c-4dc0-45b1-8cd4-2e33b9090558 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-f3e37a1f-21f7-4aeb-9491-5e6a1a9d188e .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-5cd8c9a6-7010-460d-b004-eb5548634da5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1418b08a-ce4f-4f91-88dd-922a2d8cfcc5 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-bdbeb916-ca1d-4b76-a69b-15ea58b7c0b8 .
+
+oquo:instant-05fb0a3a-6729-4fc3-8cdf-93aaa6622895
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.15Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-0c6dc780-0908-47d8-9c07-ccebbc3040a8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-08872fb0-8441-4a4d-98f5-1a75184b1c64 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-192bd92e-322b-4bab-ab36-0496aefd2ede .
+
+oquo:qualityValue-a5fe164f-22c0-4bd8-9477-800376cf430b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c4fc61c-4dc0-45b1-8cd4-2e33b9090558 ;
+        res:hasLiteralValue    "377.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-afecacf4-75a7-4f97-83eb-42656173310c .
+
+oquo:observation-37695f10-6ed4-4906-8f1b-e42caa3b7a33
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-38e5bae2-34ca-45aa-9fda-d73cfc182434 ;
+        oboe:ofEntity        <http://www.ontodm.com/OntoDT> ;
+        time:hasTime         oquo:instant-18c143f3-4a0d-4836-af24-886cbf738c03 .
+
+oquo:instant-18c143f3-4a0d-4836-af24-886cbf738c03
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.153Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-02b25ac4-bcd3-4d53-bb1a-e090e83a9856
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4c369be4-95b3-4a25-91d9-5ea149def0a6 ;
+        oboe:measurementFor  oquo:observation-ca8079ed-b26b-48cf-af5b-462acd9a90dd ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-65e3676f-fa9a-4894-8a8e-cdc723de4a70
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7eb737bb-368d-4051-a9aa-b93017bb661d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fd3b4643-9de5-42e8-a4e6-889bc951ee52 .
+
+oquo:qualityValue-67d5e5b2-eba0-4af1-8838-23f1c2d96399
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d5bb7588-05f6-4115-8546-da3786ece61b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6c486351-776f-440b-a8df-b0dc643cccdf .
+
+oquo:qualityValue-bea00b39-9dcf-4571-9327-7a1300ece787
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1418b08a-ce4f-4f91-88dd-922a2d8cfcc5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8f97e984-8d5a-4fa8-a621-16a341fcea0f .
+
+oquo:evaluation-29d625b1-ade7-41cd-a62e-ab068e67ea8b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-3fd3ee36-ca33-4a7c-8a47-2d7fa49a1618 ;
+        time:hasTime              oquo:instant-4b27896b-30d7-4597-b03a-66b78b40d9cf ;
+        oquo:hasObservation       oquo:observation-9123cc71-46c4-4974-b2ca-de45ab511754 .
+
+oquo:evaluation-3de9b48a-209a-4db1-91a0-b72fa2aab7b0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-9f31aa6f-e390-40b6-9565-9f7153a346c7 ;
+        time:hasTime              oquo:instant-794940d4-4784-4c66-a7a5-0bc73bff3f61 ;
+        oquo:hasObservation       oquo:observation-2de0babe-9e65-429f-b8f8-d3b106a5a36c .
+
+oquo:evaluation-afecacf4-75a7-4f97-83eb-42656173310c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ontodm.com/OntoDT> ;
+        res:inputData             <http://www.ontodm.com/OntoDT> ;
+        res:producedQualityValue  oquo:qualityValue-a5fe164f-22c0-4bd8-9477-800376cf430b ;
+        time:hasTime              oquo:instant-f3e37a1f-21f7-4aeb-9491-5e6a1a9d188e ;
+        oquo:hasObservation       oquo:observation-e3e5145c-d6b5-48c5-8bc2-e338b8de23c6 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-33a610e4-ea36-46ae-b16b-c3c97644f8be
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-94b444a1-66d0-4719-afeb-11c5f523637a ;
+        oboe:measurementFor  oquo:observation-00690673-1a5d-4532-804e-0970c057ee08 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:instant-29ace9f9-830c-4878-a5d5-453d855fd735
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T01:04:52.241Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

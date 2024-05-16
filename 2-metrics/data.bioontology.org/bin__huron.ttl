@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-bbd7ade3-2726-4bdc-be69-a159d24d36af
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c5dfd028-9643-4a5f-9c95-3224f39bbc80 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-21a3086b-2876-4ad1-9160-7d050109c8fd .
+
+oquo:metric-2b4cdcb0-3dc8-4672-a6d7-147367789d8d
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-4f1598c7-83c4-4590-ab1a-6999850f09d5 ;
+        oboe:measurementFor  oquo:observation-f6b3c512-4cd1-4300-b8a3-ed8320185f75 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-2145a6aa-9006-44fe-8b5e-27757d805b9d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7d30ce02-a6e6-42ed-99bd-502e5f0706db ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-86b03ec1-5576-40a0-a6fc-508736b5648e .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-c5614af6-b083-46d1-af68-f56be394f613
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6ff2dc7f-a63e-4bca-bd25-6a50f6cbdfb7 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-a51f83a6-6708-4c08-9c50-639ed72ce6b4 .
+
+oquo:qualityValue-530e2174-ed10-4bde-9c08-8ecc0865c36c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b02c42f3-42ec-4480-a8f9-1e4271ea6542 ;
+        res:hasLiteralValue    "0.14705882352941177"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-61c1cdaa-cffe-46f6-be4b-3a9a187c0eba .
+
+oquo:metric-f66ac6b3-37d5-4e09-b27d-5e761c7840b6
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-d8468abd-d41f-48eb-b8be-68a471df5e1b ;
+        oboe:measurementFor  oquo:observation-180597f6-5984-4440-9516-be0df4e14e5d ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:metric-5569bf8c-c5b4-4561-93b0-c3b7876c3c6f
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-67c02653-1064-4809-b87c-099c05ffdba7 ;
+        oboe:measurementFor  oquo:observation-0989be92-ecf8-4249-b974-f353a4dc017b ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:evaluation-96154807-cf54-4c69-84b4-d8d12eb9a437
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-02954f7a-8cb7-436e-ac62-6bc9cc1f62b8 ;
+        time:hasTime              oquo:instant-e51840e3-9fb4-43c5-83db-94ab3f42a4d2 ;
+        oquo:hasObservation       oquo:observation-e3863022-042e-4c88-abe8-109e2e5f8eb7 .
+
+oquo:qualityValue-1eead63b-0e28-4b52-a262-8147022fd9da
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-19960766-da23-401d-b0f1-618fc5daf540 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5bc27c36-34d3-4148-b180-8b80cb533aa0 .
+
+oquo:evaluation-249f21a9-3383-45d1-a95c-10d8058993db
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-e33f57af-b9ba-42a2-9c2e-82958c6f6107 ;
+        time:hasTime              oquo:instant-e3e08e06-df86-47d0-9735-b3768192ba60 ;
+        oquo:hasObservation       oquo:observation-f26edf18-59f8-4138-8b92-cc606fc56142 .
+
+oquo:instant-7fde3e3a-6e0e-4ceb-97e6-99d577296957
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.148Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-bb038eb7-dd84-4a70-91a9-670e0e0d66c7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-470fea08-9806-444b-806c-a22213d5d6e2 ;
+        time:hasTime              oquo:instant-3bfdbb56-7905-47ca-af34-2ea5e31963c8 ;
+        oquo:hasObservation       oquo:observation-eaf6f607-7344-4484-bb4c-e056e8f4e6e6 .
+
+oquo:observation-180597f6-5984-4440-9516-be0df4e14e5d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f66ac6b3-37d5-4e09-b27d-5e761c7840b6 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-01e70d7f-d337-4ae2-8101-d7b0abdbed37 .
+
+oquo:instant-e3417a71-f4ac-4c28-929e-500a3dbd9a9d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.199Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-19960766-da23-401d-b0f1-618fc5daf540
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1eead63b-0e28-4b52-a262-8147022fd9da ;
+        oboe:measurementFor  oquo:observation-bb76f791-af95-4a63-a89c-c0836570422e ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-e0bd562a-46d4-48cc-a64f-ce5810541d7f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.2Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d7a89fb1-fbdd-4ab6-a82c-660afea3f3ee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-f64d736f-6c8c-4aa4-b39b-7eb2f8fb0665 ;
+        time:hasTime              oquo:instant-99098068-3baf-422a-ac39-7d0c5c5c2ed0 ;
+        oquo:hasObservation       oquo:observation-7df3d175-a311-4be3-b137-64a17c0c466e .
+
+oquo:qualityValue-e33f57af-b9ba-42a2-9c2e-82958c6f6107
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e091d9d5-8795-4c91-bee4-69262e40184f ;
+        res:hasLiteralValue    "1.2608695652173914"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-249f21a9-3383-45d1-a95c-10d8058993db .
+
+oquo:qualityValue-f64d736f-6c8c-4aa4-b39b-7eb2f8fb0665
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0b7838fe-92c1-4f3f-8424-fb15cbd03c58 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d7a89fb1-fbdd-4ab6-a82c-660afea3f3ee .
+
+oquo:observation-5c60df6c-5305-458d-b577-5481ffb8469c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-18dae393-fda6-42fe-a682-da24f0b21eeb ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-76a651db-74e4-465b-a157-b329a6601b0c .
+
+oquo:instant-2256c7fb-b77e-4ddb-8bdb-43eaac39fc83
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.019Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fda95b9c-0ea6-464b-b772-db81176a1220
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-549cdceb-c6b8-448a-bd2c-c9c8c3f27eab ;
+        time:hasTime              oquo:instant-1d1dac0b-f028-4de1-be67-405546eb312d ;
+        oquo:hasObservation       oquo:observation-47a92efe-11b6-4474-b387-e635599074df .
+
+oquo:evaluation-c8e62474-8b6b-404f-95cf-90c9ae473740
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-31c11ca2-2efc-4a77-855b-3b5e712cfb43 ;
+        time:hasTime              oquo:instant-0d3a550c-aee6-468e-bf69-0017e67369ed ;
+        oquo:hasObservation       oquo:observation-8b0b797b-0af9-4fc5-833f-670e8ef7e2f8 .
+
+oquo:observation-d0a7a3ab-6ad2-43b8-ad48-8da0fd711728
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5e1a4c5a-2a85-4c65-91af-407887b83bcb ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-27e41ace-3566-4bbc-8f7e-2e74f0eb5e19 .
+
+oquo:observation-d5d27638-a022-4d3d-9d03-9beb60bcb38a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-14d6aead-c0af-4ad6-8404-15e8f0ba7083 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-18a7b6a5-fabe-46cc-9b4b-5f447427dd22 .
+
+oquo:metric-6ff2dc7f-a63e-4bca-bd25-6a50f6cbdfb7
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-c68b16e4-f0d7-4e30-b498-ba119d56c878 ;
+        oboe:measurementFor  oquo:observation-c5614af6-b083-46d1-af68-f56be394f613 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-1fc0127c-3bc8-4daf-999d-77606a03a3ce
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6927e662-5dd2-4ee8-b366-88f29b89642e ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-620cbb6e-5f99-4b5f-be12-e34621685787 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-99098068-3baf-422a-ac39-7d0c5c5c2ed0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.147Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-4b80a1bd-22c7-4396-8862-07c234e78023
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.165Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c68b16e4-f0d7-4e30-b498-ba119d56c878
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6ff2dc7f-a63e-4bca-bd25-6a50f6cbdfb7 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dd1e5a4f-2227-44d2-8f57-44f6c1e94c77 .
+
+oquo:qualityValue-5cf06519-1b83-40ce-af4a-2e2d78a74fc5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-18dae393-fda6-42fe-a682-da24f0b21eeb ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d40cf12e-8889-4052-a074-2ce91661acdf .
+
+oquo:evaluation-99e98867-67dc-440b-84b1-aa0906abb91e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-d8468abd-d41f-48eb-b8be-68a471df5e1b ;
+        time:hasTime              oquo:instant-01e70d7f-d337-4ae2-8101-d7b0abdbed37 ;
+        oquo:hasObservation       oquo:observation-180597f6-5984-4440-9516-be0df4e14e5d .
+
+oquo:qualityValue-ba56a006-252b-46e7-8b19-529f7acda88f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-aaa25baf-0ca2-46d5-944c-331b61f24073 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-66ae1efe-f73c-495e-9143-ea2905befdb2 .
+
+oquo:qualityValue-6f55f0f8-7cfa-4a4e-9384-4c2ec943a9d2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7d30ce02-a6e6-42ed-99bd-502e5f0706db ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-aae5959f-6398-429f-b20d-0cbe5d80602a .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-b6726032-4957-4478-bb15-98e7aa8c915f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3abb43a1-fee9-48a4-a20f-6f6d3e00288e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c0f1f1f9-9d04-4fa3-b855-1dd0429cb664 .
+
+oquo:metric-19b71c97-235c-41f8-b749-32446c926144
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-84f79e64-41d8-435a-a21a-bb993ec6a63d ;
+        oboe:measurementFor  oquo:observation-4748304f-860d-43fc-bc5b-7c431b6533bb ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:qualityValue-6ead51ff-bf15-40df-8a87-f474fdd2f3c2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-808d3cef-937b-4cc1-ad98-1436209e50f7 ;
+        res:hasLiteralValue    "0.8235294117647058"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-36345e81-64d8-4a00-9186-e62f76c8847f .
+
+oquo:observation-4e25c126-6df2-40cc-bf64-c9055f00e934
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-94d4c669-9db4-4eec-a9e0-f477d917691d ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-2ec125a9-bc60-4a98-bff0-c1225f7a999a .
+
+oquo:observation-a855e5af-98af-461e-80b0-0e684e371273
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cdf70e59-08af-44e2-b62f-814370e6b277 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-174846d4-7c1a-483e-8ead-18aca324e1df .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-21a3086b-2876-4ad1-9160-7d050109c8fd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-bbd7ade3-2726-4bdc-be69-a159d24d36af ;
+        time:hasTime              oquo:instant-95694474-35ce-42d0-8b52-b10e890f0c79 ;
+        oquo:hasObservation       oquo:observation-0a79a16a-db9a-4aa3-9a71-cc86ce394fcc .
+
+oquo:observation-8b063280-69d3-4db2-855b-fc74b0eff018
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-34cce853-1be6-4ead-a59d-fb9ded652a45 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-e0bd562a-46d4-48cc-a64f-ce5810541d7f .
+
+oquo:observation-7384bfc6-adfa-4509-998a-8c79ead9ec4b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-22734567-555e-4a73-bd90-685cf4c81754 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-85035178-22eb-47f4-8ca7-f6b6ebda746a .
+
+oquo:instant-0a7461ca-4cd8-44d9-8022-07ad01d88a89
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.109Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-e091d9d5-8795-4c91-bee4-69262e40184f
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-e33f57af-b9ba-42a2-9c2e-82958c6f6107 ;
+        oboe:measurementFor  oquo:observation-f26edf18-59f8-4138-8b92-cc606fc56142 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:qualityValue-9c92f9c7-19c4-42cf-9a44-8e38e6399ba7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-22c021d4-5487-4074-bafa-3e94cae80fc9 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8ffd61bc-071b-4f7a-a923-bcbd1dc533f7 .
+
+oquo:observation-7d7cc415-ad85-4c1b-926e-c933a57018cf
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-56aa06d0-a8f6-45e0-bf84-5819182d3753 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-4b80a1bd-22c7-4396-8862-07c234e78023 .
+
+oquo:observation-e3863022-042e-4c88-abe8-109e2e5f8eb7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ea2f64e9-1b77-4eb7-a968-252c5630edd2 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-e51840e3-9fb4-43c5-83db-94ab3f42a4d2 .
+
+oquo:evaluation-4f56dcf6-f99e-4123-9ea1-abff997c3177
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-75e7732c-b93c-4385-9288-d52581501789 ;
+        time:hasTime              oquo:instant-174846d4-7c1a-483e-8ead-18aca324e1df ;
+        oquo:hasObservation       oquo:observation-a855e5af-98af-461e-80b0-0e684e371273 .
+
+oquo:qualityValue-13bb9c7b-0824-4a6a-82fa-3c738feb3259
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-880da049-82de-439b-b712-480309775c14 ;
+        res:hasLiteralValue    "0.4117647058823529"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3a90c588-c9ce-4578-9e25-08f510f236ce .
+
+oquo:qualityValue-549cdceb-c6b8-448a-bd2c-c9c8c3f27eab
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a864b961-16a0-4812-9b20-f5331a4629a9 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fda95b9c-0ea6-464b-b772-db81176a1220 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:instant-3bfdbb56-7905-47ca-af34-2ea5e31963c8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.018Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-56aa06d0-a8f6-45e0-bf84-5819182d3753
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-fa2d4385-3903-49ed-a558-55a1a853fecf ;
+        oboe:measurementFor  oquo:observation-7d7cc415-ad85-4c1b-926e-c933a57018cf ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-47a92efe-11b6-4474-b387-e635599074df
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a864b961-16a0-4812-9b20-f5331a4629a9 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-1d1dac0b-f028-4de1-be67-405546eb312d .
+
+oquo:metric-8020314b-6716-4006-8fa0-26be2fa551c2
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-31c11ca2-2efc-4a77-855b-3b5e712cfb43 ;
+        oboe:measurementFor  oquo:observation-8b0b797b-0af9-4fc5-833f-670e8ef7e2f8 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-624e0b47-8e0d-4870-a853-5316212da4b2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-af2e7aea-334b-4556-9ec8-db5d5e1e4bde ;
+        time:hasTime              oquo:instant-b75398b6-8dcc-45b7-a558-466a0a3c0368 ;
+        oquo:hasObservation       oquo:observation-ab8148fc-03c8-43fe-b2a9-d174970905b2 .
+
+oquo:qualityValue-02954f7a-8cb7-436e-ac62-6bc9cc1f62b8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ea2f64e9-1b77-4eb7-a968-252c5630edd2 ;
+        res:hasLiteralValue    "0.16666666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-96154807-cf54-4c69-84b4-d8d12eb9a437 .
+
+oquo:instant-a51f83a6-6708-4c08-9c50-639ed72ce6b4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.205Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-65617f87-69ee-4f2e-9326-959135cebc91
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-3265607f-bc35-43e8-862b-de5e20fa0db2 ;
+        time:hasTime              oquo:instant-27e41ace-3566-4bbc-8f7e-2e74f0eb5e19 ;
+        oquo:hasObservation       oquo:observation-d0a7a3ab-6ad2-43b8-ad48-8da0fd711728 .
+
+oquo:metric-8cb04446-89b3-41e2-a7fd-cc8986693098
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-cb1a66a4-b963-4480-81d4-59beca0f5a09 ;
+        oboe:measurementFor  oquo:observation-c2fd1d6e-cf61-47f5-b266-b1bc95f5bdb6 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-453d208c-bb04-491d-ae5f-5d41dc76aedc
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-470fea08-9806-444b-806c-a22213d5d6e2 ;
+        oboe:measurementFor  oquo:observation-eaf6f607-7344-4484-bb4c-e056e8f4e6e6 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:metric-c5dfd028-9643-4a5f-9c95-3224f39bbc80
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bbd7ade3-2726-4bdc-be69-a159d24d36af ;
+        oboe:measurementFor  oquo:observation-0a79a16a-db9a-4aa3-9a71-cc86ce394fcc ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-c0f1f1f9-9d04-4fa3-b855-1dd0429cb664
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-b6726032-4957-4478-bb15-98e7aa8c915f ;
+        time:hasTime              oquo:instant-2429f9f0-e7ac-4857-8352-4be41cddb63b ;
+        oquo:hasObservation       oquo:observation-92c68805-7499-482b-81c7-5d95ad637651 .
+
+oquo:instant-620cbb6e-5f99-4b5f-be12-e34621685787
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.081Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d20be438-0326-400a-b05b-4b652be07d9a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.182Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c2fd1d6e-cf61-47f5-b266-b1bc95f5bdb6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8cb04446-89b3-41e2-a7fd-cc8986693098 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-99dd5820-2e80-473c-bc1e-254506b12f3b .
+
+oquo:metric-94d4c669-9db4-4eec-a9e0-f477d917691d
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1ede8516-9d3e-4a8b-bfef-b023c6f8606d ;
+        oboe:measurementFor  oquo:observation-4e25c126-6df2-40cc-bf64-c9055f00e934 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-99dd5820-2e80-473c-bc1e-254506b12f3b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.177Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8ad1b7de-7cf0-4add-975a-eab188f6ad2b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-7153ade5-d294-40a8-80b4-10dca1a69e99 ;
+        time:hasTime              oquo:instant-18a7b6a5-fabe-46cc-9b4b-5f447427dd22 ;
+        oquo:hasObservation       oquo:observation-d5d27638-a022-4d3d-9d03-9beb60bcb38a .
+
+oquo:metric-14d6aead-c0af-4ad6-8404-15e8f0ba7083
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-7153ade5-d294-40a8-80b4-10dca1a69e99 ;
+        oboe:measurementFor  oquo:observation-d5d27638-a022-4d3d-9d03-9beb60bcb38a ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-3f22d09c-b12c-4ae6-8488-ec00544f45e1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.952Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-66ae1efe-f73c-495e-9143-ea2905befdb2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-ba56a006-252b-46e7-8b19-529f7acda88f ;
+        time:hasTime              oquo:instant-3f22d09c-b12c-4ae6-8488-ec00544f45e1 ;
+        oquo:hasObservation       oquo:observation-bac93319-3d96-4954-ae9d-1511da5dd1ec .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-efe5233c-a0f5-4e5f-8165-6ce35d03881a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-22734567-555e-4a73-bd90-685cf4c81754 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0f85c23f-0db4-42cc-a763-68407428bc78 .
+
+oquo:metric-aaa25baf-0ca2-46d5-944c-331b61f24073
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ba56a006-252b-46e7-8b19-529f7acda88f ;
+        oboe:measurementFor  oquo:observation-bac93319-3d96-4954-ae9d-1511da5dd1ec ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-03d27e5f-8aff-4853-a199-fa03fccc92a0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-67c02653-1064-4809-b87c-099c05ffdba7 ;
+        time:hasTime              oquo:instant-0a7461ca-4cd8-44d9-8022-07ad01d88a89 ;
+        oquo:hasObservation       oquo:observation-0989be92-ecf8-4249-b974-f353a4dc017b .
+
+oquo:instant-2ec125a9-bc60-4a98-bff0-c1225f7a999a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-474d5499-4298-4b7e-af46-da097e45f533
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-880da049-82de-439b-b712-480309775c14 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-3b70fcce-612b-4117-bc68-94555c5c162a .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-e254bd48-2e93-4f7f-9fbe-ec2890d222d4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.95Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-86b03ec1-5576-40a0-a6fc-508736b5648e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.051Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-76ab06da-516a-4929-8404-d5dbc5d5fcca
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4fe33888-a44a-4e17-ba79-4ffef46a06e6 ;
+        oboe:measurementFor  oquo:observation-3a1efcec-1757-41d8-a3bc-807f0dbd4289 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:qualityValue-75e7732c-b93c-4385-9288-d52581501789
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cdf70e59-08af-44e2-b62f-814370e6b277 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4f56dcf6-f99e-4123-9ea1-abff997c3177 .
+
+oquo:instant-2429f9f0-e7ac-4857-8352-4be41cddb63b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.149Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-723573ad-cf94-483b-b645-b5f7837d40f7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.04Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-7153ade5-d294-40a8-80b4-10dca1a69e99
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-14d6aead-c0af-4ad6-8404-15e8f0ba7083 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8ad1b7de-7cf0-4add-975a-eab188f6ad2b .
+
+oquo:qualityValue-cb1a66a4-b963-4480-81d4-59beca0f5a09
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8cb04446-89b3-41e2-a7fd-cc8986693098 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c78ce42c-408b-4b2f-ae43-203d02308d2a .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-aebfd7e0-d210-4050-9319-854b01b513fa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6927e662-5dd2-4ee8-b366-88f29b89642e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bb223407-5790-432a-b4ef-b8c4467fdce6 .
+
+oquo:instant-3b70fcce-612b-4117-bc68-94555c5c162a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.203Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-22734567-555e-4a73-bd90-685cf4c81754
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-efe5233c-a0f5-4e5f-8165-6ce35d03881a ;
+        oboe:measurementFor  oquo:observation-7384bfc6-adfa-4509-998a-8c79ead9ec4b ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-1d1dac0b-f028-4de1-be67-405546eb312d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.083Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-af2e7aea-334b-4556-9ec8-db5d5e1e4bde
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bf30b0a4-2151-4f6f-8661-81f0c602a267 ;
+        res:hasLiteralValue    "1.3623188405797102"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-624e0b47-8e0d-4870-a853-5316212da4b2 .
+
+oquo:evaluation-bb223407-5790-432a-b4ef-b8c4467fdce6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-aebfd7e0-d210-4050-9319-854b01b513fa ;
+        time:hasTime              oquo:instant-620cbb6e-5f99-4b5f-be12-e34621685787 ;
+        oquo:hasObservation       oquo:observation-1fc0127c-3bc8-4daf-999d-77606a03a3ce .
+
+oquo:observation-f6b3c512-4cd1-4300-b8a3-ed8320185f75
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2b4cdcb0-3dc8-4672-a6d7-147367789d8d ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-e254bd48-2e93-4f7f-9fbe-ec2890d222d4 .
+
+oquo:instant-174846d4-7c1a-483e-8ead-18aca324e1df
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.154Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-c78ce42c-408b-4b2f-ae43-203d02308d2a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-cb1a66a4-b963-4480-81d4-59beca0f5a09 ;
+        time:hasTime              oquo:instant-99dd5820-2e80-473c-bc1e-254506b12f3b ;
+        oquo:hasObservation       oquo:observation-c2fd1d6e-cf61-47f5-b266-b1bc95f5bdb6 .
+
+oquo:observation-8b0b797b-0af9-4fc5-833f-670e8ef7e2f8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8020314b-6716-4006-8fa0-26be2fa551c2 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-0d3a550c-aee6-468e-bf69-0017e67369ed .
+
+oquo:metric-6927e662-5dd2-4ee8-b366-88f29b89642e
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-aebfd7e0-d210-4050-9319-854b01b513fa ;
+        oboe:measurementFor  oquo:observation-1fc0127c-3bc8-4daf-999d-77606a03a3ce ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-22c021d4-5487-4074-bafa-3e94cae80fc9
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-9c92f9c7-19c4-42cf-9a44-8e38e6399ba7 ;
+        oboe:measurementFor  oquo:observation-1375637a-bf05-42c3-9a2c-a8c97463235e ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-bda9a4be-982c-47dd-86a9-242589425b51
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b02c42f3-42ec-4480-a8f9-1e4271ea6542 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-38795b69-fbee-410d-84c6-3c626f6a416b .
+
+oquo:metric-cdf70e59-08af-44e2-b62f-814370e6b277
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-75e7732c-b93c-4385-9288-d52581501789 ;
+        oboe:measurementFor  oquo:observation-a855e5af-98af-461e-80b0-0e684e371273 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-3c24187d-864b-45ad-a666-358e3aec29ec
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-1ede8516-9d3e-4a8b-bfef-b023c6f8606d ;
+        time:hasTime              oquo:instant-2ec125a9-bc60-4a98-bff0-c1225f7a999a ;
+        oquo:hasObservation       oquo:observation-4e25c126-6df2-40cc-bf64-c9055f00e934 .
+
+oquo:observation-0989be92-ecf8-4249-b974-f353a4dc017b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5569bf8c-c5b4-4561-93b0-c3b7876c3c6f ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-0a7461ca-4cd8-44d9-8022-07ad01d88a89 .
+
+oquo:observation-1375637a-bf05-42c3-9a2c-a8c97463235e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-22c021d4-5487-4074-bafa-3e94cae80fc9 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-d20be438-0326-400a-b05b-4b652be07d9a .
+
+oquo:qualityValue-ad84a1db-33bc-439c-aa6d-dc987ebacbbc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-09ca16bd-27ef-461d-a7ca-3bcfb887b49f ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e6cf9f8f-1879-4857-91a7-9fcd1148b6a9 .
+
+oquo:qualityValue-67c02653-1064-4809-b87c-099c05ffdba7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5569bf8c-c5b4-4561-93b0-c3b7876c3c6f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-03d27e5f-8aff-4853-a199-fa03fccc92a0 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-bd54fb91-256a-498e-8e6a-aeade87e9ce6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9493b9cf-f5ba-4964-b77e-25a42600f7d3 ;
+        res:hasLiteralValue    "0.8235294117647058"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-35e564ce-f5ff-45db-bc9b-f5ba75e825ab .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-4748304f-860d-43fc-bc5b-7c431b6533bb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-19b71c97-235c-41f8-b749-32446c926144 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-723573ad-cf94-483b-b645-b5f7837d40f7 .
+
+oquo:observation-7df3d175-a311-4be3-b137-64a17c0c466e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0b7838fe-92c1-4f3f-8424-fb15cbd03c58 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-99098068-3baf-422a-ac39-7d0c5c5c2ed0 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-b75398b6-8dcc-45b7-a558-466a0a3c0368
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.021Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-dd1e5a4f-2227-44d2-8f57-44f6c1e94c77
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-c68b16e4-f0d7-4e30-b498-ba119d56c878 ;
+        time:hasTime              oquo:instant-a51f83a6-6708-4c08-9c50-639ed72ce6b4 ;
+        oquo:hasObservation       oquo:observation-c5614af6-b083-46d1-af68-f56be394f613 .
+
+oquo:metric-34cce853-1be6-4ead-a59d-fb9ded652a45
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-bf4b2417-7b56-4dd0-9ced-188f292a8ae1 ;
+        oboe:measurementFor  oquo:observation-8b063280-69d3-4db2-855b-fc74b0eff018 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-5bc27c36-34d3-4148-b180-8b80cb533aa0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-1eead63b-0e28-4b52-a262-8147022fd9da ;
+        time:hasTime              oquo:instant-7fde3e3a-6e0e-4ceb-97e6-99d577296957 ;
+        oquo:hasObservation       oquo:observation-bb76f791-af95-4a63-a89c-c0836570422e .
+
+oquo:instant-0d3a550c-aee6-468e-bf69-0017e67369ed
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.009Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-92c68805-7499-482b-81c7-5d95ad637651
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3abb43a1-fee9-48a4-a20f-6f6d3e00288e ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-2429f9f0-e7ac-4857-8352-4be41cddb63b .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-ea2f64e9-1b77-4eb7-a968-252c5630edd2
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-02954f7a-8cb7-436e-ac62-6bc9cc1f62b8 ;
+        oboe:measurementFor  oquo:observation-e3863022-042e-4c88-abe8-109e2e5f8eb7 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-4fe33888-a44a-4e17-ba79-4ffef46a06e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-76ab06da-516a-4929-8404-d5dbc5d5fcca ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-315325bc-6c5e-47e0-b91f-669f338552a1 .
+
+oquo:instant-38795b69-fbee-410d-84c6-3c626f6a416b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.201Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-eaf6f607-7344-4484-bb4c-e056e8f4e6e6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-453d208c-bb04-491d-ae5f-5d41dc76aedc ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-3bfdbb56-7905-47ca-af34-2ea5e31963c8 .
+
+oquo:instant-27e41ace-3566-4bbc-8f7e-2e74f0eb5e19
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.144Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-31c11ca2-2efc-4a77-855b-3b5e712cfb43
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8020314b-6716-4006-8fa0-26be2fa551c2 ;
+        res:hasLiteralValue    "1.1470588235294117"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c8e62474-8b6b-404f-95cf-90c9ae473740 .
+
+oquo:metric-bf30b0a4-2151-4f6f-8661-81f0c602a267
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-af2e7aea-334b-4556-9ec8-db5d5e1e4bde ;
+        oboe:measurementFor  oquo:observation-ab8148fc-03c8-43fe-b2a9-d174970905b2 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:observation-bb76f791-af95-4a63-a89c-c0836570422e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-19960766-da23-401d-b0f1-618fc5daf540 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-7fde3e3a-6e0e-4ceb-97e6-99d577296957 .
+
+oquo:evaluation-61c1cdaa-cffe-46f6-be4b-3a9a187c0eba
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-530e2174-ed10-4bde-9c08-8ecc0865c36c ;
+        time:hasTime              oquo:instant-38795b69-fbee-410d-84c6-3c626f6a416b ;
+        oquo:hasObservation       oquo:observation-bda9a4be-982c-47dd-86a9-242589425b51 .
+
+oquo:evaluation-35e564ce-f5ff-45db-bc9b-f5ba75e825ab
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-bd54fb91-256a-498e-8e6a-aeade87e9ce6 ;
+        time:hasTime              oquo:instant-634c17d6-8f04-4273-a887-fb2caefa82cd ;
+        oquo:hasObservation       oquo:observation-ad9dbb6d-be9d-4e12-bf67-8fafdb5ec53a .
+
+oquo:instant-85035178-22eb-47f4-8ca7-f6b6ebda746a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.167Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-4f1598c7-83c4-4590-ab1a-6999850f09d5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2b4cdcb0-3dc8-4672-a6d7-147367789d8d ;
+        res:hasLiteralValue    "138.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-841b3faa-4d24-438a-9522-0c729d09b52f .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-95694474-35ce-42d0-8b52-b10e890f0c79
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.076Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-18dae393-fda6-42fe-a682-da24f0b21eeb
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5cf06519-1b83-40ce-af4a-2e2d78a74fc5 ;
+        oboe:measurementFor  oquo:observation-5c60df6c-5305-458d-b577-5481ffb8469c ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-bac93319-3d96-4954-ae9d-1511da5dd1ec
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-aaa25baf-0ca2-46d5-944c-331b61f24073 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-3f22d09c-b12c-4ae6-8488-ec00544f45e1 .
+
+oquo:evaluation-aae5959f-6398-429f-b20d-0cbe5d80602a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-6f55f0f8-7cfa-4a4e-9384-4c2ec943a9d2 ;
+        time:hasTime              oquo:instant-86b03ec1-5576-40a0-a6fc-508736b5648e ;
+        oquo:hasObservation       oquo:observation-2145a6aa-9006-44fe-8b5e-27757d805b9d .
+
+oquo:qualityValue-fa2d4385-3903-49ed-a558-55a1a853fecf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-56aa06d0-a8f6-45e0-bf84-5819182d3753 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-92938cc9-b296-4c1b-b459-831ceee901f7 .
+
+oquo:qualityValue-1ede8516-9d3e-4a8b-bfef-b023c6f8606d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-94d4c669-9db4-4eec-a9e0-f477d917691d ;
+        res:hasLiteralValue    "1.1470588235294117"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3c24187d-864b-45ad-a666-358e3aec29ec .
+
+oquo:observation-f26edf18-59f8-4138-8b92-cc606fc56142
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e091d9d5-8795-4c91-bee4-69262e40184f ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-e3e08e06-df86-47d0-9735-b3768192ba60 .
+
+oquo:evaluation-085cad1e-6e76-4744-b00a-021281c973cd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-bf4b2417-7b56-4dd0-9ced-188f292a8ae1 ;
+        time:hasTime              oquo:instant-e0bd562a-46d4-48cc-a64f-ce5810541d7f ;
+        oquo:hasObservation       oquo:observation-8b063280-69d3-4db2-855b-fc74b0eff018 .
+
+oquo:observation-ab8148fc-03c8-43fe-b2a9-d174970905b2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bf30b0a4-2151-4f6f-8661-81f0c602a267 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-b75398b6-8dcc-45b7-a558-466a0a3c0368 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-315325bc-6c5e-47e0-b91f-669f338552a1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-4fe33888-a44a-4e17-ba79-4ffef46a06e6 ;
+        time:hasTime              oquo:instant-2256c7fb-b77e-4ddb-8bdb-43eaac39fc83 ;
+        oquo:hasObservation       oquo:observation-3a1efcec-1757-41d8-a3bc-807f0dbd4289 .
+
+oquo:qualityValue-3265607f-bc35-43e8-862b-de5e20fa0db2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5e1a4c5a-2a85-4c65-91af-407887b83bcb ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-65617f87-69ee-4f2e-9326-959135cebc91 .
+
+oquo:evaluation-92938cc9-b296-4c1b-b459-831ceee901f7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-fa2d4385-3903-49ed-a558-55a1a853fecf ;
+        time:hasTime              oquo:instant-4b80a1bd-22c7-4396-8862-07c234e78023 ;
+        oquo:hasObservation       oquo:observation-7d7cc415-ad85-4c1b-926e-c933a57018cf .
+
+oquo:instant-e3e08e06-df86-47d0-9735-b3768192ba60
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.1Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://purl.bioontology.org/ontology/BIN>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:instant-634c17d6-8f04-4273-a887-fb2caefa82cd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.144Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-808d3cef-937b-4cc1-ad98-1436209e50f7
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6ead51ff-bf15-40df-8a87-f474fdd2f3c2 ;
+        oboe:measurementFor  oquo:observation-b55897ab-3c10-40a2-aa1b-2e1a25b47fa0 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-09ca16bd-27ef-461d-a7ca-3bcfb887b49f
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-ad84a1db-33bc-439c-aa6d-dc987ebacbbc ;
+        oboe:measurementFor  oquo:observation-e8e144ea-8caf-4b90-8175-3c0ec851cbba ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-b55897ab-3c10-40a2-aa1b-2e1a25b47fa0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-808d3cef-937b-4cc1-ad98-1436209e50f7 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-cb95e0d6-0fa4-41ea-af93-09789d52139a .
+
+oquo:instant-76a651db-74e4-465b-a157-b329a6601b0c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.032Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-841b3faa-4d24-438a-9522-0c729d09b52f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-4f1598c7-83c4-4590-ab1a-6999850f09d5 ;
+        time:hasTime              oquo:instant-e254bd48-2e93-4f7f-9fbe-ec2890d222d4 ;
+        oquo:hasObservation       oquo:observation-f6b3c512-4cd1-4300-b8a3-ed8320185f75 .
+
+oquo:metric-3abb43a1-fee9-48a4-a20f-6f6d3e00288e
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b6726032-4957-4478-bb15-98e7aa8c915f ;
+        oboe:measurementFor  oquo:observation-92c68805-7499-482b-81c7-5d95ad637651 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:observation-0a79a16a-db9a-4aa3-9a71-cc86ce394fcc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c5dfd028-9643-4a5f-9c95-3224f39bbc80 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-95694474-35ce-42d0-8b52-b10e890f0c79 .
+
+oquo:qualityValue-d8468abd-d41f-48eb-b8be-68a471df5e1b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f66ac6b3-37d5-4e09-b27d-5e761c7840b6 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-99e98867-67dc-440b-84b1-aa0906abb91e .
+
+oquo:metric-7d30ce02-a6e6-42ed-99bd-502e5f0706db
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-6f55f0f8-7cfa-4a4e-9384-4c2ec943a9d2 ;
+        oboe:measurementFor  oquo:observation-2145a6aa-9006-44fe-8b5e-27757d805b9d ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:qualityValue-84f79e64-41d8-435a-a21a-bb993ec6a63d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-19b71c97-235c-41f8-b749-32446c926144 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e536bba0-8235-45d2-ae1f-13f9aea306ea .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-bf4b2417-7b56-4dd0-9ced-188f292a8ae1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-34cce853-1be6-4ead-a59d-fb9ded652a45 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-085cad1e-6e76-4744-b00a-021281c973cd .
+
+oquo:metric-0b7838fe-92c1-4f3f-8424-fb15cbd03c58
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f64d736f-6c8c-4aa4-b39b-7eb2f8fb0665 ;
+        oboe:measurementFor  oquo:observation-7df3d175-a311-4be3-b137-64a17c0c466e ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:instant-18a7b6a5-fabe-46cc-9b4b-5f447427dd22
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.107Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e8e144ea-8caf-4b90-8175-3c0ec851cbba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-09ca16bd-27ef-461d-a7ca-3bcfb887b49f ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-e3417a71-f4ac-4c28-929e-500a3dbd9a9d .
+
+oquo:evaluation-d40cf12e-8889-4052-a074-2ce91661acdf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-5cf06519-1b83-40ce-af4a-2e2d78a74fc5 ;
+        time:hasTime              oquo:instant-76a651db-74e4-465b-a157-b329a6601b0c ;
+        oquo:hasObservation       oquo:observation-5c60df6c-5305-458d-b577-5481ffb8469c .
+
+oquo:qualityValue-470fea08-9806-444b-806c-a22213d5d6e2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-453d208c-bb04-491d-ae5f-5d41dc76aedc ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bb038eb7-dd84-4a70-91a9-670e0e0d66c7 .
+
+oquo:evaluation-3a90c588-c9ce-4578-9e25-08f510f236ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-13bb9c7b-0824-4a6a-82fa-3c738feb3259 ;
+        time:hasTime              oquo:instant-3b70fcce-612b-4117-bc68-94555c5c162a ;
+        oquo:hasObservation       oquo:observation-474d5499-4298-4b7e-af46-da097e45f533 .
+
+oquo:metric-5e1a4c5a-2a85-4c65-91af-407887b83bcb
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-3265607f-bc35-43e8-862b-de5e20fa0db2 ;
+        oboe:measurementFor  oquo:observation-d0a7a3ab-6ad2-43b8-ad48-8da0fd711728 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-cb95e0d6-0fa4-41ea-af93-09789d52139a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.137Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-3a1efcec-1757-41d8-a3bc-807f0dbd4289
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-76ab06da-516a-4929-8404-d5dbc5d5fcca ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-2256c7fb-b77e-4ddb-8bdb-43eaac39fc83 .
+
+oquo:evaluation-8ffd61bc-071b-4f7a-a923-bcbd1dc533f7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-9c92f9c7-19c4-42cf-9a44-8e38e6399ba7 ;
+        time:hasTime              oquo:instant-d20be438-0326-400a-b05b-4b652be07d9a ;
+        oquo:hasObservation       oquo:observation-1375637a-bf05-42c3-9a2c-a8c97463235e .
+
+oquo:metric-880da049-82de-439b-b712-480309775c14
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-13bb9c7b-0824-4a6a-82fa-3c738feb3259 ;
+        oboe:measurementFor  oquo:observation-474d5499-4298-4b7e-af46-da097e45f533 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-e51840e3-9fb4-43c5-83db-94ab3f42a4d2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:50.16Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-0f85c23f-0db4-42cc-a763-68407428bc78
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-efe5233c-a0f5-4e5f-8165-6ce35d03881a ;
+        time:hasTime              oquo:instant-85035178-22eb-47f4-8ca7-f6b6ebda746a ;
+        oquo:hasObservation       oquo:observation-7384bfc6-adfa-4509-998a-8c79ead9ec4b .
+
+oquo:observation-ad9dbb6d-be9d-4e12-bf67-8fafdb5ec53a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9493b9cf-f5ba-4964-b77e-25a42600f7d3 ;
+        oboe:ofEntity        <http://purl.bioontology.org/ontology/BIN> ;
+        time:hasTime         oquo:instant-634c17d6-8f04-4273-a887-fb2caefa82cd .
+
+oquo:evaluation-e536bba0-8235-45d2-ae1f-13f9aea306ea
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-84f79e64-41d8-435a-a21a-bb993ec6a63d ;
+        time:hasTime              oquo:instant-723573ad-cf94-483b-b645-b5f7837d40f7 ;
+        oquo:hasObservation       oquo:observation-4748304f-860d-43fc-bc5b-7c431b6533bb .
+
+oquo:metric-a864b961-16a0-4812-9b20-f5331a4629a9
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-549cdceb-c6b8-448a-bd2c-c9c8c3f27eab ;
+        oboe:measurementFor  oquo:observation-47a92efe-11b6-4474-b387-e635599074df ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-36345e81-64d8-4a00-9186-e62f76c8847f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-6ead51ff-bf15-40df-8a87-f474fdd2f3c2 ;
+        time:hasTime              oquo:instant-cb95e0d6-0fa4-41ea-af93-09789d52139a ;
+        oquo:hasObservation       oquo:observation-b55897ab-3c10-40a2-aa1b-2e1a25b47fa0 .
+
+oquo:instant-01e70d7f-d337-4ae2-8101-d7b0abdbed37
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T16:28:49.857Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9493b9cf-f5ba-4964-b77e-25a42600f7d3
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bd54fb91-256a-498e-8e6a-aeade87e9ce6 ;
+        oboe:measurementFor  oquo:observation-ad9dbb6d-be9d-4e12-bf67-8fafdb5ec53a ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-e6cf9f8f-1879-4857-91a7-9fcd1148b6a9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.bioontology.org/ontology/BIN> ;
+        res:inputData             <http://purl.bioontology.org/ontology/BIN> ;
+        res:producedQualityValue  oquo:qualityValue-ad84a1db-33bc-439c-aa6d-dc987ebacbbc ;
+        time:hasTime              oquo:instant-e3417a71-f4ac-4c28-929e-500a3dbd9a9d ;
+        oquo:hasObservation       oquo:observation-e8e144ea-8caf-4b90-8175-3c0ec851cbba .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b02c42f3-42ec-4480-a8f9-1e4271ea6542
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-530e2174-ed10-4bde-9c08-8ecc0865c36c ;
+        oboe:measurementFor  oquo:observation-bda9a4be-982c-47dd-86a9-242589425b51 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .

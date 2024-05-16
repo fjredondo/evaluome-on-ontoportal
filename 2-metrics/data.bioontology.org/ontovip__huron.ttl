@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:observation-4b00e6c1-efa1-4c5a-a760-6e5e9620ce9a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cb4d5ca7-b6e3-48cd-9056-ac17e88ebd4e ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-b976cd6d-08a5-4b1d-81ac-f38edab4c8a9 .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-fcda826c-44ef-4137-96dc-4825426faef1
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8da7814e-c4b9-4c0d-80e2-efe63ad371d2 ;
+        oboe:measurementFor  oquo:observation-4bcc4368-48be-48ee-8315-6beffc95831a ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:observation-8a6a6779-39d8-4315-a5b6-e9ee0857eef9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ed6d2665-5c30-4dd6-a9dd-93e3410281e7 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-fd29ab04-ee85-4939-84a4-2135ab81a233 .
+
+oquo:evaluation-09c7e67b-2955-481f-9c0b-41ab96fa90d8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ba9ca4b8-30f8-4fad-b435-141907138e84 ;
+        time:hasTime              oquo:instant-6ca74d89-ad57-42a0-89ae-60342e8caa86 ;
+        oquo:hasObservation       oquo:observation-7ab5c517-469b-40a2-83cb-a420e2ba1e78 .
+
+oquo:observation-aca0d713-4046-41a9-b2a5-d8cde7ea34a2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a504292c-5b4a-4c1f-82f5-cd9201443c28 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-863a8213-8ec6-48a1-99e8-10fbebfcdee3 .
+
+oquo:instant-ee5b6daa-8c3d-49fe-9f2f-d64261809d0a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.552Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-da3e36d3-308e-4d81-aef4-16fc62f12308
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-940ecfa1-2258-4043-bb10-46e5ad86580a ;
+        oboe:measurementFor  oquo:observation-ec823455-5a23-4ecf-ae0c-6199b75933bc ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-d305b63e-d3dc-4e85-b32c-5da5d291f84d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-940ecfa1-2258-4043-bb10-46e5ad86580a ;
+        time:hasTime              oquo:instant-59b2033e-8396-406d-91f1-214ea4e5b618 ;
+        oquo:hasObservation       oquo:observation-ec823455-5a23-4ecf-ae0c-6199b75933bc .
+
+oquo:qualityValue-0ae1f8f6-74fe-4651-9e83-5c4a905c6c56
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fc541ea6-b5e6-43f3-aad5-cb2432623c33 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bf0ec18e-beb1-4dc0-b08a-58459ca74489 .
+
+oquo:qualityValue-3d86be7e-e15d-41b0-bfc5-2e2f130de268
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bec752fe-3045-4c99-91ee-8ab1908b7f26 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-435a48e2-c126-4fa1-8050-284f24e9fa47 .
+
+oquo:metric-fc541ea6-b5e6-43f3-aad5-cb2432623c33
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-0ae1f8f6-74fe-4651-9e83-5c4a905c6c56 ;
+        oboe:measurementFor  oquo:observation-bd0fb471-ce05-489e-bb2f-2537a9e684e8 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:evaluation-1912a5c7-2f86-418b-8a7b-f072a65c5e08
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-81d8e1e0-3258-4d21-baed-04accad58f92 ;
+        time:hasTime              oquo:instant-7cba358b-870c-4caf-bfe7-89bdff07aec7 ;
+        oquo:hasObservation       oquo:observation-c065f0e9-badb-437c-af73-9f6a3b20cebe .
+
+oquo:observation-6e1e84fe-89fa-410f-9a6c-c551c4be950f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1efebbfe-0dc5-4f84-a611-c8e9833f3400 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-dc069393-2c26-4601-a8e9-7d8c7c375f37 .
+
+oquo:qualityValue-4c3b53c8-b73b-4474-95d6-9c6d7f41f515
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-07dcfbc7-b979-4e30-8c07-b0b832b7a6e8 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b3f7ae5e-f4f5-498d-bcc5-55545243eabd .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-990ebda3-6237-49f7-99de-47167fc0ecc9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c40176b7-166d-444b-ad08-c11112c75b7c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9ec4cd5d-56ed-4823-b83f-bb03b1017981 .
+
+oquo:instant-7cba358b-870c-4caf-bfe7-89bdff07aec7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.524Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e71da7d4-ba36-463e-900e-7276097bde69
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.543Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-fb56c1a8-f63b-4b3b-a232-039ec56e045d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.578Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-c40176b7-166d-444b-ad08-c11112c75b7c
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-990ebda3-6237-49f7-99de-47167fc0ecc9 ;
+        oboe:measurementFor  oquo:observation-63aebbbc-38bb-4c20-959d-77cd4835c012 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:metric-47f5cae1-d32b-49a4-9e58-70a1a2299eee
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-8bed24e1-96d9-4782-a01a-cfc547c096b7 ;
+        oboe:measurementFor  oquo:observation-7276e3bc-cd1c-4f18-9895-837b02c15113 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-1d6e1b8a-cefb-46bc-8021-0edab1c91eba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7b54b884-5f3b-462b-823b-bc12ed92b157 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a56c897b-7ec7-42a6-88f1-a6486e8bdd2b .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-863a8213-8ec6-48a1-99e8-10fbebfcdee3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.528Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-8d2f8542-959f-4bb7-b007-85725f487efc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1ecfa2c9-9a9f-43c3-b42e-f7e52dd9ff0f ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3ddec562-34c5-4771-af4c-43035388040e .
+
+oquo:observation-7276e3bc-cd1c-4f18-9895-837b02c15113
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-47f5cae1-d32b-49a4-9e58-70a1a2299eee ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-2261f50b-a611-4f7d-90d2-e2abc81228ac .
+
+oquo:metric-69f86e97-536b-434b-a68b-81718adca2d7
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-be1f23d6-18ab-42d7-b442-88c4f61eddb4 ;
+        oboe:measurementFor  oquo:observation-b79213b0-bdc3-44ce-b22e-3298b9231c64 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:observation-6e49da82-97c6-487b-9a43-4ed20c6290d0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cfb21153-f833-4d10-a172-84d1b78713cf ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-c33dd259-ddd4-4298-9b92-473c4e317fcf .
+
+oquo:metric-f05a477f-0e08-4f65-abb8-f8aa131336e8
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0128a850-253b-44dc-9870-6eb077b8ee85 ;
+        oboe:measurementFor  oquo:observation-cb8a50dc-ac1e-4ea7-87e0-ae9240abb495 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:qualityValue-35dde7e2-23fd-4de8-ad1d-01d1c2429410
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ed6d2665-5c30-4dd6-a9dd-93e3410281e7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7b97082a-e203-499c-ae2f-cab487062afd .
+
+oquo:metric-485ce118-7e35-4b64-89ee-9682db420238
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-23045245-c911-41e6-84e1-9cff8266ce34 ;
+        oboe:measurementFor  oquo:observation-21aa1c34-c733-4e8a-95fb-23e13787a072 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:evaluation-a2754980-b4d1-49af-8f34-b320515efc07
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c4fdfb3f-025b-4478-a967-a3755fd0c74b ;
+        time:hasTime              oquo:instant-b976cd6d-08a5-4b1d-81ac-f38edab4c8a9 ;
+        oquo:hasObservation       oquo:observation-4b00e6c1-efa1-4c5a-a760-6e5e9620ce9a .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-37b7fdbe-ae62-46d7-b37b-bbe52cf32da1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a00f01a8-208d-43f2-b391-f31a59ce73b9 ;
+        time:hasTime              oquo:instant-f7baefbb-fca2-45cd-bbd9-3e22279408a6 ;
+        oquo:hasObservation       oquo:observation-a4fdc9c4-af1e-4565-aaf9-426a641587e4 .
+
+oquo:qualityValue-8da7814e-c4b9-4c0d-80e2-efe63ad371d2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fcda826c-44ef-4137-96dc-4825426faef1 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dc5a7dbf-582e-4fc4-8042-1e1c501ac39e .
+
+oquo:qualityValue-027c3692-88c9-4126-8ca7-c97906233898
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-df1338a4-068d-45e8-aaa8-1d2b09375525 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e53d5f51-e828-4f5a-8f34-bad7062efe53 .
+
+oquo:observation-c065f0e9-badb-437c-af73-9f6a3b20cebe
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-41bb9d2d-8739-454e-88c9-222edf4c6d80 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-7cba358b-870c-4caf-bfe7-89bdff07aec7 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-ee640b63-236c-4f67-93cc-aededd7040dc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3581634b-4a27-4a29-902f-7a3a14b38667 ;
+        time:hasTime              oquo:instant-f1df1cfe-1ab2-42b0-89d0-4d06cc7fd646 ;
+        oquo:hasObservation       oquo:observation-f9366606-f615-43c4-9b19-61a8b4ef0999 .
+
+oquo:metric-4fede806-7d6f-4d13-8074-986f3b1231e0
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b674e59f-6345-424c-823b-01419279c37c ;
+        oboe:measurementFor  oquo:observation-ac8a797e-1934-4ee6-891b-6d78a2f7c421 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-b976cd6d-08a5-4b1d-81ac-f38edab4c8a9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.567Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-a92745d2-efc6-442e-9104-37e6ff5a5a8a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-23045245-c911-41e6-84e1-9cff8266ce34 ;
+        time:hasTime              oquo:instant-1226ea03-76ff-4fdc-bdba-1ec7de4021c3 ;
+        oquo:hasObservation       oquo:observation-21aa1c34-c733-4e8a-95fb-23e13787a072 .
+
+oquo:metric-41bb9d2d-8739-454e-88c9-222edf4c6d80
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-81d8e1e0-3258-4d21-baed-04accad58f92 ;
+        oboe:measurementFor  oquo:observation-c065f0e9-badb-437c-af73-9f6a3b20cebe ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-07dcfbc7-b979-4e30-8c07-b0b832b7a6e8
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4c3b53c8-b73b-4474-95d6-9c6d7f41f515 ;
+        oboe:measurementFor  oquo:observation-2f6249fc-0ab3-47d4-9693-3701ff322791 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-9c6b1ed4-cbd6-4e3c-ba34-1e8e52b3f167
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bec752fe-3045-4c99-91ee-8ab1908b7f26 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-0dc2501a-4538-407f-9fef-fa37f84208f8 .
+
+oquo:evaluation-797c54d5-865f-45d1-963e-70ff3be93b48
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7162880d-1dd0-4f5a-8408-cacc9bf31072 ;
+        time:hasTime              oquo:instant-863a8213-8ec6-48a1-99e8-10fbebfcdee3 ;
+        oquo:hasObservation       oquo:observation-aca0d713-4046-41a9-b2a5-d8cde7ea34a2 .
+
+oquo:metric-cfb21153-f833-4d10-a172-84d1b78713cf
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-20f5abe3-2646-40fe-bc8a-316eb28aece3 ;
+        oboe:measurementFor  oquo:observation-6e49da82-97c6-487b-9a43-4ed20c6290d0 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:evaluation-dc5a7dbf-582e-4fc4-8042-1e1c501ac39e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8da7814e-c4b9-4c0d-80e2-efe63ad371d2 ;
+        time:hasTime              oquo:instant-725d9c16-60a9-4b16-bb78-8bed590c30e9 ;
+        oquo:hasObservation       oquo:observation-4bcc4368-48be-48ee-8315-6beffc95831a .
+
+oquo:evaluation-9dd92871-3048-4b5e-99a0-8927e110a140
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4b0fb6a7-c6d1-4604-858a-3ee096ff81c9 ;
+        time:hasTime              oquo:instant-fb56c1a8-f63b-4b3b-a232-039ec56e045d ;
+        oquo:hasObservation       oquo:observation-61d934fa-0c2c-43ce-9cfa-1d3e4f58a1f7 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:observation-aaac0c5b-bf24-471b-abbe-6788fd06a00c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ce0598ee-ba8a-4b01-9663-7bc0679a4938 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-4b6b337e-77e1-4490-9782-53e2584ecf48 .
+
+oquo:evaluation-3ddec562-34c5-4771-af4c-43035388040e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8d2f8542-959f-4bb7-b007-85725f487efc ;
+        time:hasTime              oquo:instant-6c999567-5b44-4d1d-b1ba-3f8e7c6ab667 ;
+        oquo:hasObservation       oquo:observation-32c2d9e5-d358-42c4-bbb6-68e6c0eac867 .
+
+oquo:instant-80d8d361-e7c0-4e4a-8b9a-3714ba526f22
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:00.322Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-f1df1cfe-1ab2-42b0-89d0-4d06cc7fd646
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.553Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-cca945f2-9f13-465c-b73a-15fb7562fe91
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-82a20a53-ba99-4cee-aef1-666885230622 ;
+        time:hasTime              oquo:instant-edae726e-8bcf-4547-80c2-460f6e1021ff ;
+        oquo:hasObservation       oquo:observation-d395f70f-409e-4135-aa2c-2a2c527a20e6 .
+
+oquo:metric-cb4d5ca7-b6e3-48cd-9056-ac17e88ebd4e
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c4fdfb3f-025b-4478-a967-a3755fd0c74b ;
+        oboe:measurementFor  oquo:observation-4b00e6c1-efa1-4c5a-a760-6e5e9620ce9a ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-be1f23d6-18ab-42d7-b442-88c4f61eddb4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-69f86e97-536b-434b-a68b-81718adca2d7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-acb267e7-f3fa-4188-ad47-893ffaf2fc26 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-6c999567-5b44-4d1d-b1ba-3f8e7c6ab667
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.545Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e3231e8e-ad98-4aa9-86e4-62b96d4bec8f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5a3f465e-56f7-43af-8767-89d873907e24 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-9e12b0c1-6701-4de7-a779-329e62333724 .
+
+oquo:metric-4bbac2ff-5877-4e04-9da5-28e28653526e
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f93bbcd2-42fb-4e6b-91ca-da67c606e22c ;
+        oboe:measurementFor  oquo:observation-cc1fd186-8981-40ea-913c-3cf2c3113cf2 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-fd29ab04-ee85-4939-84a4-2135ab81a233
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.394Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-20f5abe3-2646-40fe-bc8a-316eb28aece3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cfb21153-f833-4d10-a172-84d1b78713cf ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2a8a2800-c75c-4754-8d67-1b8963fdea3c .
+
+oquo:evaluation-bf0ec18e-beb1-4dc0-b08a-58459ca74489
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0ae1f8f6-74fe-4651-9e83-5c4a905c6c56 ;
+        time:hasTime              oquo:instant-6754ed4e-4014-4fa3-ab1b-8b127a71ec32 ;
+        oquo:hasObservation       oquo:observation-bd0fb471-ce05-489e-bb2f-2537a9e684e8 .
+
+oquo:instant-1226ea03-76ff-4fdc-bdba-1ec7de4021c3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.508Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e50c1f5d-2d56-41e7-9990-3a7235275511
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:00.196Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-0dc2501a-4538-407f-9fef-fa37f84208f8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.483Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-7d6ed219-cd85-4782-96a3-c2cda4b67d56
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4b6d3d6f-311d-43b7-9054-54815163e9a8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-96fe3b35-4864-437f-b4e7-eb27c5b469d4 .
+
+oquo:metric-d949e341-ae2d-45bb-a2cd-03ec671c8248
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-35644ec3-2418-4a3c-ab77-e62688d3e47f ;
+        oboe:measurementFor  oquo:observation-118d2dbc-4dcb-46be-b1c7-75ab530ebe62 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-6ca74d89-ad57-42a0-89ae-60342e8caa86
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.551Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-ba9ca4b8-30f8-4fad-b435-141907138e84
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c0c127be-293c-4871-bbc6-5648b85ef458 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-09c7e67b-2955-481f-9c0b-41ab96fa90d8 .
+
+oquo:instant-d5e7798e-2c31-4215-8679-2e3284185755
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.554Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1efebbfe-0dc5-4f84-a611-c8e9833f3400
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-10c04549-f345-4a30-a12c-994044fb6c0d ;
+        oboe:measurementFor  oquo:observation-6e1e84fe-89fa-410f-9a6c-c551c4be950f ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:instant-d28544e0-e9a2-49b2-94f9-722b82c0ae70
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.57Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b9ca9549-d2d9-421a-a5fc-2b8f2b92164f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c03254e4-8d1b-4e25-9c30-ccd0a3f91298 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0077d82a-5fdd-41bc-940a-dec116a57098 .
+
+oquo:qualityValue-82a20a53-ba99-4cee-aef1-666885230622
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d88395f4-ffce-4ef6-86a9-25ef0d6b4c74 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cca945f2-9f13-465c-b73a-15fb7562fe91 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-b3f7ae5e-f4f5-498d-bcc5-55545243eabd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4c3b53c8-b73b-4474-95d6-9c6d7f41f515 ;
+        time:hasTime              oquo:instant-09276e8e-0d35-4554-b427-f975fd78573d ;
+        oquo:hasObservation       oquo:observation-2f6249fc-0ab3-47d4-9693-3701ff322791 .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-4c94602a-9f59-40fd-ae8a-63c620ff51ce
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-10c04549-f345-4a30-a12c-994044fb6c0d ;
+        time:hasTime              oquo:instant-dc069393-2c26-4601-a8e9-7d8c7c375f37 ;
+        oquo:hasObservation       oquo:observation-6e1e84fe-89fa-410f-9a6c-c551c4be950f .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-bec752fe-3045-4c99-91ee-8ab1908b7f26
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-3d86be7e-e15d-41b0-bfc5-2e2f130de268 ;
+        oboe:measurementFor  oquo:observation-9c6b1ed4-cbd6-4e3c-ba34-1e8e52b3f167 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:evaluation-ed74fc5d-5395-4e4f-a06f-a6318dbb5ebd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b674e59f-6345-424c-823b-01419279c37c ;
+        time:hasTime              oquo:instant-e71da7d4-ba36-463e-900e-7276097bde69 ;
+        oquo:hasObservation       oquo:observation-ac8a797e-1934-4ee6-891b-6d78a2f7c421 .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-cc1fd186-8981-40ea-913c-3cf2c3113cf2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4bbac2ff-5877-4e04-9da5-28e28653526e ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-0fd3eaa7-f31f-452c-98c4-db6c277de3c9 .
+
+oquo:observation-81203bbe-c392-4e50-b58c-907524dc3710
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4b6d3d6f-311d-43b7-9054-54815163e9a8 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-310004f1-8534-466d-99ef-ae12e1f271aa .
+
+oquo:metric-d88395f4-ffce-4ef6-86a9-25ef0d6b4c74
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-82a20a53-ba99-4cee-aef1-666885230622 ;
+        oboe:measurementFor  oquo:observation-d395f70f-409e-4135-aa2c-2a2c527a20e6 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:evaluation-9721dbe3-ac18-4b26-8d5c-9032a4a61f49
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4bd0a991-766c-48e4-8481-23f2437b71b2 ;
+        time:hasTime              oquo:instant-9e12b0c1-6701-4de7-a779-329e62333724 ;
+        oquo:hasObservation       oquo:observation-e3231e8e-ad98-4aa9-86e4-62b96d4bec8f .
+
+oquo:metric-5add7aff-dccf-4e9a-87d0-46db5e3ae448
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-11a997fd-f6cb-4348-bd6d-76c8722eabd6 ;
+        oboe:measurementFor  oquo:observation-c4fdb6fc-55d5-4df5-916a-56362bd6616a ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:observation-3487a3ac-366e-45a3-aa2b-b010790b3b28
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c03254e4-8d1b-4e25-9c30-ccd0a3f91298 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-7c987d7f-87e0-412c-9a13-228f21cd2228 .
+
+oquo:qualityValue-940ecfa1-2258-4043-bb10-46e5ad86580a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-da3e36d3-308e-4d81-aef4-16fc62f12308 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d305b63e-d3dc-4e85-b32c-5da5d291f84d .
+
+oquo:instant-f7baefbb-fca2-45cd-bbd9-3e22279408a6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:00.325Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-446ddda2-5020-4d53-95fc-a43bf94ad4d2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-11a997fd-f6cb-4348-bd6d-76c8722eabd6 ;
+        time:hasTime              oquo:instant-80d8d361-e7c0-4e4a-8b9a-3714ba526f22 ;
+        oquo:hasObservation       oquo:observation-c4fdb6fc-55d5-4df5-916a-56362bd6616a .
+
+oquo:instant-0fd3eaa7-f31f-452c-98c4-db6c277de3c9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.549Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-5a3f465e-56f7-43af-8767-89d873907e24
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-4bd0a991-766c-48e4-8481-23f2437b71b2 ;
+        oboe:measurementFor  oquo:observation-e3231e8e-ad98-4aa9-86e4-62b96d4bec8f ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-dc069393-2c26-4601-a8e9-7d8c7c375f37
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.53Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5fa90315-df9d-47e5-99fe-b0b1b6316ac7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0128a850-253b-44dc-9870-6eb077b8ee85 ;
+        time:hasTime              oquo:instant-96e0edfd-d3f3-497b-be35-e12037f9b9a2 ;
+        oquo:hasObservation       oquo:observation-cb8a50dc-ac1e-4ea7-87e0-ae9240abb495 .
+
+oquo:observation-32c2d9e5-d358-42c4-bbb6-68e6c0eac867
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1ecfa2c9-9a9f-43c3-b42e-f7e52dd9ff0f ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-6c999567-5b44-4d1d-b1ba-3f8e7c6ab667 .
+
+oquo:qualityValue-8bed24e1-96d9-4782-a01a-cfc547c096b7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-47f5cae1-d32b-49a4-9e58-70a1a2299eee ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b7f18f08-4cdf-4244-a168-124e0cea41ef .
+
+oquo:qualityValue-7cf07f11-0f86-47a5-85d2-da2614c7124b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c8bb39ad-6c6d-45b2-8a2f-2a8a48bc6ddf ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e32b6b55-656e-4c60-a8d4-341ef8f2f73d .
+
+oquo:instant-2261f50b-a611-4f7d-90d2-e2abc81228ac
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.569Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-7b54b884-5f3b-462b-823b-bc12ed92b157
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-1d6e1b8a-cefb-46bc-8021-0edab1c91eba ;
+        oboe:measurementFor  oquo:observation-36524947-3705-4a8b-b597-187700077067 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-725d9c16-60a9-4b16-bb78-8bed590c30e9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.541Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-4b6d3d6f-311d-43b7-9054-54815163e9a8
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7d6ed219-cd85-4782-96a3-c2cda4b67d56 ;
+        oboe:measurementFor  oquo:observation-81203bbe-c392-4e50-b58c-907524dc3710 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-acb267e7-f3fa-4188-ad47-893ffaf2fc26
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-be1f23d6-18ab-42d7-b442-88c4f61eddb4 ;
+        time:hasTime              oquo:instant-f484b1ef-bfe9-4618-bdb1-39c7c504091c ;
+        oquo:hasObservation       oquo:observation-b79213b0-bdc3-44ce-b22e-3298b9231c64 .
+
+oquo:metric-72bab464-5c5f-4be7-832c-95db49e4bd87
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-d4730cd7-cb84-481a-9df0-579bcc043ee7 ;
+        oboe:measurementFor  oquo:observation-ef76dde7-56c8-40d2-9c90-ed10dbc802c6 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:observation-ec823455-5a23-4ecf-ae0c-6199b75933bc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-da3e36d3-308e-4d81-aef4-16fc62f12308 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-59b2033e-8396-406d-91f1-214ea4e5b618 .
+
+oquo:observation-61d934fa-0c2c-43ce-9cfa-1d3e4f58a1f7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fe30e425-ba4c-4fc3-8b23-081ebc9d1abc ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-fb56c1a8-f63b-4b3b-a232-039ec56e045d .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-7ab5c517-469b-40a2-83cb-a420e2ba1e78
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c0c127be-293c-4871-bbc6-5648b85ef458 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-6ca74d89-ad57-42a0-89ae-60342e8caa86 .
+
+oquo:metric-d2bef1ad-d472-4cba-a8f1-9272b499eb29
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-a00f01a8-208d-43f2-b391-f31a59ce73b9 ;
+        oboe:measurementFor  oquo:observation-a4fdc9c4-af1e-4565-aaf9-426a641587e4 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:metric-ed6d2665-5c30-4dd6-a9dd-93e3410281e7
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-35dde7e2-23fd-4de8-ad1d-01d1c2429410 ;
+        oboe:measurementFor  oquo:observation-8a6a6779-39d8-4315-a5b6-e9ee0857eef9 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-d4730cd7-cb84-481a-9df0-579bcc043ee7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-72bab464-5c5f-4be7-832c-95db49e4bd87 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-03717ba6-3da2-433c-a841-7aad9997e454 .
+
+oquo:qualityValue-7162880d-1dd0-4f5a-8408-cacc9bf31072
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a504292c-5b4a-4c1f-82f5-cd9201443c28 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-797c54d5-865f-45d1-963e-70ff3be93b48 .
+
+oquo:observation-d395f70f-409e-4135-aa2c-2a2c527a20e6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d88395f4-ffce-4ef6-86a9-25ef0d6b4c74 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-edae726e-8bcf-4547-80c2-460f6e1021ff .
+
+oquo:instant-c33dd259-ddd4-4298-9b92-473c4e317fcf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.556Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-8c447076-7c30-4d2b-a58b-ae8713890d8b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-df1338a4-068d-45e8-aaa8-1d2b09375525 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-ee5b6daa-8c3d-49fe-9f2f-d64261809d0a .
+
+oquo:qualityValue-a00f01a8-208d-43f2-b391-f31a59ce73b9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d2bef1ad-d472-4cba-a8f1-9272b499eb29 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-37b7fdbe-ae62-46d7-b37b-bbe52cf32da1 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-bd0fb471-ce05-489e-bb2f-2537a9e684e8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fc541ea6-b5e6-43f3-aad5-cb2432623c33 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-6754ed4e-4014-4fa3-ab1b-8b127a71ec32 .
+
+oquo:observation-118d2dbc-4dcb-46be-b1c7-75ab530ebe62
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d949e341-ae2d-45bb-a2cd-03ec671c8248 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-b1ccc1be-4f4a-4167-886b-04f194dd1aba .
+
+oquo:observation-a4fdc9c4-af1e-4565-aaf9-426a641587e4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d2bef1ad-d472-4cba-a8f1-9272b499eb29 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-f7baefbb-fca2-45cd-bbd9-3e22279408a6 .
+
+oquo:metric-df1338a4-068d-45e8-aaa8-1d2b09375525
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-027c3692-88c9-4126-8ca7-c97906233898 ;
+        oboe:measurementFor  oquo:observation-8c447076-7c30-4d2b-a58b-ae8713890d8b ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:metric-fe30e425-ba4c-4fc3-8b23-081ebc9d1abc
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4b0fb6a7-c6d1-4604-858a-3ee096ff81c9 ;
+        oboe:measurementFor  oquo:observation-61d934fa-0c2c-43ce-9cfa-1d3e4f58a1f7 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-a2c71e7b-7e21-42aa-a8bd-4566088e179a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f93bbcd2-42fb-4e6b-91ca-da67c606e22c ;
+        time:hasTime              oquo:instant-0fd3eaa7-f31f-452c-98c4-db6c277de3c9 ;
+        oquo:hasObservation       oquo:observation-cc1fd186-8981-40ea-913c-3cf2c3113cf2 .
+
+<http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:metric-c03254e4-8d1b-4e25-9c30-ccd0a3f91298
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b9ca9549-d2d9-421a-a5fc-2b8f2b92164f ;
+        oboe:measurementFor  oquo:observation-3487a3ac-366e-45a3-aa2b-b010790b3b28 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-21aa1c34-c733-4e8a-95fb-23e13787a072
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-485ce118-7e35-4b64-89ee-9682db420238 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-1226ea03-76ff-4fdc-bdba-1ec7de4021c3 .
+
+oquo:metric-c0c127be-293c-4871-bbc6-5648b85ef458
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ba9ca4b8-30f8-4fad-b435-141907138e84 ;
+        oboe:measurementFor  oquo:observation-7ab5c517-469b-40a2-83cb-a420e2ba1e78 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-35644ec3-2418-4a3c-ab77-e62688d3e47f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d949e341-ae2d-45bb-a2cd-03ec671c8248 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d08adcf1-b277-4022-a6bd-5bddff08fa54 .
+
+oquo:observation-8382b1c1-3f14-43f7-a347-598b584a3454
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c8bb39ad-6c6d-45b2-8a2f-2a8a48bc6ddf ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-07f5ea0f-f3f2-4ed7-aea0-0b790704a78a .
+
+oquo:evaluation-9ec4cd5d-56ed-4823-b83f-bb03b1017981
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-990ebda3-6237-49f7-99de-47167fc0ecc9 ;
+        time:hasTime              oquo:instant-d28544e0-e9a2-49b2-94f9-722b82c0ae70 ;
+        oquo:hasObservation       oquo:observation-63aebbbc-38bb-4c20-959d-77cd4835c012 .
+
+oquo:metric-a504292c-5b4a-4c1f-82f5-cd9201443c28
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7162880d-1dd0-4f5a-8408-cacc9bf31072 ;
+        oboe:measurementFor  oquo:observation-aca0d713-4046-41a9-b2a5-d8cde7ea34a2 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:evaluation-e32b6b55-656e-4c60-a8d4-341ef8f2f73d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7cf07f11-0f86-47a5-85d2-da2614c7124b ;
+        time:hasTime              oquo:instant-07f5ea0f-f3f2-4ed7-aea0-0b790704a78a ;
+        oquo:hasObservation       oquo:observation-8382b1c1-3f14-43f7-a347-598b584a3454 .
+
+oquo:observation-ac8a797e-1934-4ee6-891b-6d78a2f7c421
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4fede806-7d6f-4d13-8074-986f3b1231e0 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-e71da7d4-ba36-463e-900e-7276097bde69 .
+
+oquo:qualityValue-f93bbcd2-42fb-4e6b-91ca-da67c606e22c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4bbac2ff-5877-4e04-9da5-28e28653526e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a2c71e7b-7e21-42aa-a8bd-4566088e179a .
+
+oquo:instant-edae726e-8bcf-4547-80c2-460f6e1021ff
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.532Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-4bcc4368-48be-48ee-8315-6beffc95831a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fcda826c-44ef-4137-96dc-4825426faef1 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-725d9c16-60a9-4b16-bb78-8bed590c30e9 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7b97082a-e203-499c-ae2f-cab487062afd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-35dde7e2-23fd-4de8-ad1d-01d1c2429410 ;
+        time:hasTime              oquo:instant-fd29ab04-ee85-4939-84a4-2135ab81a233 ;
+        oquo:hasObservation       oquo:observation-8a6a6779-39d8-4315-a5b6-e9ee0857eef9 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-03717ba6-3da2-433c-a841-7aad9997e454
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-d4730cd7-cb84-481a-9df0-579bcc043ee7 ;
+        time:hasTime              oquo:instant-d5e7798e-2c31-4215-8679-2e3284185755 ;
+        oquo:hasObservation       oquo:observation-ef76dde7-56c8-40d2-9c90-ed10dbc802c6 .
+
+oquo:instant-f484b1ef-bfe9-4618-bdb1-39c7c504091c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.563Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-2a8a2800-c75c-4754-8d67-1b8963fdea3c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-20f5abe3-2646-40fe-bc8a-316eb28aece3 ;
+        time:hasTime              oquo:instant-c33dd259-ddd4-4298-9b92-473c4e317fcf ;
+        oquo:hasObservation       oquo:observation-6e49da82-97c6-487b-9a43-4ed20c6290d0 .
+
+oquo:instant-310004f1-8534-466d-99ef-ae12e1f271aa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.546Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-4b0fb6a7-c6d1-4604-858a-3ee096ff81c9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fe30e425-ba4c-4fc3-8b23-081ebc9d1abc ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9dd92871-3048-4b5e-99a0-8927e110a140 .
+
+oquo:observation-c4fdb6fc-55d5-4df5-916a-56362bd6616a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5add7aff-dccf-4e9a-87d0-46db5e3ae448 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-80d8d361-e7c0-4e4a-8b9a-3714ba526f22 .
+
+oquo:qualityValue-305121f3-59a1-4f74-89a8-762c3a3230ba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ce0598ee-ba8a-4b01-9663-7bc0679a4938 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-045d0d48-f96c-4239-9d96-7b1cf5c00520 .
+
+oquo:evaluation-b7f18f08-4cdf-4244-a168-124e0cea41ef
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8bed24e1-96d9-4782-a01a-cfc547c096b7 ;
+        time:hasTime              oquo:instant-2261f50b-a611-4f7d-90d2-e2abc81228ac ;
+        oquo:hasObservation       oquo:observation-7276e3bc-cd1c-4f18-9895-837b02c15113 .
+
+oquo:metric-ce0598ee-ba8a-4b01-9663-7bc0679a4938
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-305121f3-59a1-4f74-89a8-762c3a3230ba ;
+        oboe:measurementFor  oquo:observation-aaac0c5b-bf24-471b-abbe-6788fd06a00c ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-2f6249fc-0ab3-47d4-9693-3701ff322791
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-07dcfbc7-b979-4e30-8c07-b0b832b7a6e8 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-09276e8e-0d35-4554-b427-f975fd78573d .
+
+oquo:evaluation-045d0d48-f96c-4239-9d96-7b1cf5c00520
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-305121f3-59a1-4f74-89a8-762c3a3230ba ;
+        time:hasTime              oquo:instant-4b6b337e-77e1-4490-9782-53e2584ecf48 ;
+        oquo:hasObservation       oquo:observation-aaac0c5b-bf24-471b-abbe-6788fd06a00c .
+
+oquo:instant-9e12b0c1-6701-4de7-a779-329e62333724
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.561Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7c987d7f-87e0-412c-9a13-228f21cd2228
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.558Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-09276e8e-0d35-4554-b427-f975fd78573d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.56Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-acd09440-ffb1-4a29-95a0-086935751caf
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-3581634b-4a27-4a29-902f-7a3a14b38667 ;
+        oboe:measurementFor  oquo:observation-f9366606-f615-43c4-9b19-61a8b4ef0999 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:qualityValue-23045245-c911-41e6-84e1-9cff8266ce34
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-485ce118-7e35-4b64-89ee-9682db420238 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a92745d2-efc6-442e-9104-37e6ff5a5a8a .
+
+oquo:observation-b79213b0-bdc3-44ce-b22e-3298b9231c64
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-69f86e97-536b-434b-a68b-81718adca2d7 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-f484b1ef-bfe9-4618-bdb1-39c7c504091c .
+
+oquo:evaluation-e53d5f51-e828-4f5a-8f34-bad7062efe53
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-027c3692-88c9-4126-8ca7-c97906233898 ;
+        time:hasTime              oquo:instant-ee5b6daa-8c3d-49fe-9f2f-d64261809d0a ;
+        oquo:hasObservation       oquo:observation-8c447076-7c30-4d2b-a58b-ae8713890d8b .
+
+oquo:metric-1ecfa2c9-9a9f-43c3-b42e-f7e52dd9ff0f
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8d2f8542-959f-4bb7-b007-85725f487efc ;
+        oboe:measurementFor  oquo:observation-32c2d9e5-d358-42c4-bbb6-68e6c0eac867 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:qualityValue-c4fdfb3f-025b-4478-a967-a3755fd0c74b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cb4d5ca7-b6e3-48cd-9056-ac17e88ebd4e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a2754980-b4d1-49af-8f34-b320515efc07 .
+
+oquo:observation-63aebbbc-38bb-4c20-959d-77cd4835c012
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c40176b7-166d-444b-ad08-c11112c75b7c ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-d28544e0-e9a2-49b2-94f9-722b82c0ae70 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-435a48e2-c126-4fa1-8050-284f24e9fa47
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3d86be7e-e15d-41b0-bfc5-2e2f130de268 ;
+        time:hasTime              oquo:instant-0dc2501a-4538-407f-9fef-fa37f84208f8 ;
+        oquo:hasObservation       oquo:observation-9c6b1ed4-cbd6-4e3c-ba34-1e8e52b3f167 .
+
+oquo:observation-cb8a50dc-ac1e-4ea7-87e0-ae9240abb495
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f05a477f-0e08-4f65-abb8-f8aa131336e8 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-96e0edfd-d3f3-497b-be35-e12037f9b9a2 .
+
+oquo:qualityValue-4bd0a991-766c-48e4-8481-23f2437b71b2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5a3f465e-56f7-43af-8767-89d873907e24 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9721dbe3-ac18-4b26-8d5c-9032a4a61f49 .
+
+oquo:observation-36524947-3705-4a8b-b597-187700077067
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7b54b884-5f3b-462b-823b-bc12ed92b157 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-e50c1f5d-2d56-41e7-9990-3a7235275511 .
+
+oquo:observation-ef76dde7-56c8-40d2-9c90-ed10dbc802c6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-72bab464-5c5f-4be7-832c-95db49e4bd87 ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-d5e7798e-2c31-4215-8679-2e3284185755 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-81d8e1e0-3258-4d21-baed-04accad58f92
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-41bb9d2d-8739-454e-88c9-222edf4c6d80 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1912a5c7-2f86-418b-8a7b-f072a65c5e08 .
+
+oquo:instant-6754ed4e-4014-4fa3-ab1b-8b127a71ec32
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:00.324Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-96e0edfd-d3f3-497b-be35-e12037f9b9a2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.534Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-3581634b-4a27-4a29-902f-7a3a14b38667
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-acd09440-ffb1-4a29-95a0-086935751caf ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ee640b63-236c-4f67-93cc-aededd7040dc .
+
+oquo:qualityValue-10c04549-f345-4a30-a12c-994044fb6c0d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1efebbfe-0dc5-4f84-a611-c8e9833f3400 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4c94602a-9f59-40fd-ae8a-63c620ff51ce .
+
+oquo:evaluation-96fe3b35-4864-437f-b4e7-eb27c5b469d4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7d6ed219-cd85-4782-96a3-c2cda4b67d56 ;
+        time:hasTime              oquo:instant-310004f1-8534-466d-99ef-ae12e1f271aa ;
+        oquo:hasObservation       oquo:observation-81203bbe-c392-4e50-b58c-907524dc3710 .
+
+oquo:evaluation-a56c897b-7ec7-42a6-88f1-a6486e8bdd2b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1d6e1b8a-cefb-46bc-8021-0edab1c91eba ;
+        time:hasTime              oquo:instant-e50c1f5d-2d56-41e7-9990-3a7235275511 ;
+        oquo:hasObservation       oquo:observation-36524947-3705-4a8b-b597-187700077067 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-b1ccc1be-4f4a-4167-886b-04f194dd1aba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.537Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-59b2033e-8396-406d-91f1-214ea4e5b618
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.491Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d08adcf1-b277-4022-a6bd-5bddff08fa54
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-35644ec3-2418-4a3c-ab77-e62688d3e47f ;
+        time:hasTime              oquo:instant-b1ccc1be-4f4a-4167-886b-04f194dd1aba ;
+        oquo:hasObservation       oquo:observation-118d2dbc-4dcb-46be-b1c7-75ab530ebe62 .
+
+oquo:qualityValue-b674e59f-6345-424c-823b-01419279c37c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4fede806-7d6f-4d13-8074-986f3b1231e0 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ed74fc5d-5395-4e4f-a06f-a6318dbb5ebd .
+
+oquo:metric-c8bb39ad-6c6d-45b2-8a2f-2a8a48bc6ddf
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-7cf07f11-0f86-47a5-85d2-da2614c7124b ;
+        oboe:measurementFor  oquo:observation-8382b1c1-3f14-43f7-a347-598b584a3454 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-4b6b337e-77e1-4490-9782-53e2584ecf48
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:00.318Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-0128a850-253b-44dc-9870-6eb077b8ee85
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f05a477f-0e08-4f65-abb8-f8aa131336e8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5fa90315-df9d-47e5-99fe-b0b1b6316ac7 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-07f5ea0f-f3f2-4ed7-aea0-0b790704a78a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:41:01.58Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-0077d82a-5fdd-41bc-940a-dec116a57098
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:inputData             <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b9ca9549-d2d9-421a-a5fc-2b8f2b92164f ;
+        time:hasTime              oquo:instant-7c987d7f-87e0-412c-9a13-228f21cd2228 ;
+        oquo:hasObservation       oquo:observation-3487a3ac-366e-45a3-aa2b-b010790b3b28 .
+
+oquo:observation-f9366606-f615-43c4-9b19-61a8b4ef0999
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-acd09440-ffb1-4a29-95a0-086935751caf ;
+        oboe:ofEntity        <http://vip.creatis.insa-lyon.fr/ontovip/v1.0/ontovip.owl> ;
+        time:hasTime         oquo:instant-f1df1cfe-1ab2-42b0-89d0-4d06cc7fd646 .
+
+oquo:qualityValue-11a997fd-f6cb-4348-bd6d-76c8722eabd6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5add7aff-dccf-4e9a-87d0-46db5e3ae448 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-446ddda2-5020-4d53-95fc-a43bf94ad4d2 .

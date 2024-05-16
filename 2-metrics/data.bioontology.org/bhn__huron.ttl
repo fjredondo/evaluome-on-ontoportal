@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-97ed00e9-0b60-4a3a-8f69-71d76222b400
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2c7b7573-c606-46bb-953d-c716e2f910e0 ;
+        oboe:measurementFor  oquo:observation-73c05621-395c-4982-98e1-b02420623d7a ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:metric-ec6ad896-e11c-4308-a701-d647026570d1
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-f00a1db2-ae70-4971-9003-7af78c5a1800 ;
+        oboe:measurementFor  oquo:observation-cb2924c9-826e-455f-b0b0-633156e673eb ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-d349b29a-f538-4dcc-8701-0bafdc1630d0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-3e777ee3-61dd-4f2d-b5b1-ba8d66a0407c ;
+        time:hasTime              oquo:instant-f62e4b42-0b29-40f0-a4ea-6c0dfb4a06e6 ;
+        oquo:hasObservation       oquo:observation-a887acf8-29be-4011-b99d-d157240af386 .
+
+oquo:qualityValue-36ad0a83-c8a1-45d8-8446-7dd4d25441fd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a618692d-7729-4ce6-a3b9-30267cab6d74 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b38dc92f-3aa6-469f-9231-5f5591355e4a .
+
+oquo:qualityValue-fdc875fa-9d03-4d49-8b2c-f479b2581274
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-96ea7656-f66a-43a2-ac38-0463ee1f7863 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6affabec-9289-49ca-b7dc-6367970850f0 .
+
+oquo:qualityValue-60ab43cf-5ad6-4712-bb2e-8719f421e228
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-611b2f95-2783-44a8-a849-cbcd047996b1 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe641f5e-04a8-48ba-a3fa-21df5f231d92 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-a887acf8-29be-4011-b99d-d157240af386
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4bdcf854-eebf-4d58-8553-636ab3b9c731 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-f62e4b42-0b29-40f0-a4ea-6c0dfb4a06e6 .
+
+oquo:observation-0e40e9c6-a808-4282-90d1-167bfe3b256e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-59c24f40-6b1d-42ec-a2dc-0c426c89d557 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-f495f782-23b4-46fa-9dfe-cb31dede9063 .
+
+oquo:evaluation-8f2aaa81-d750-4a94-95b5-4a50ef32d57c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-39d648c8-abfd-4edc-81cb-03180d349e2f ;
+        time:hasTime              oquo:instant-e9ce6de4-d475-4272-a2ea-9307fb9e235d ;
+        oquo:hasObservation       oquo:observation-6bcb814a-6ea6-49a8-9ee8-6891b14ee442 .
+
+oquo:qualityValue-39d648c8-abfd-4edc-81cb-03180d349e2f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2430f66a-e2e3-46df-813d-4def11c0ea26 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8f2aaa81-d750-4a94-95b5-4a50ef32d57c .
+
+oquo:instant-1458703c-ab56-4497-b821-4d90992ae665
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.668Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-160c2660-264f-48df-bd27-313412263de5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bf0b930d-01b7-4b4a-b613-f84fb530da0a ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1a446ae2-964a-4ebb-bde1-9de627e12891 .
+
+oquo:instant-b31631a5-e86d-4ee2-a456-e6fefbf8ed59
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.225Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b9bc8b06-392d-4b80-8005-337c07a868a3
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-7534d370-54ea-4581-b8e3-afea439fe96b ;
+        oboe:measurementFor  oquo:observation-5898ffee-5a37-4723-ba60-87bedcad0a59 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:metric-827d4008-6d43-4dda-86fb-7faf83ca3ccf
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c7a7fe8a-b384-41af-87ba-0389c8d25f51 ;
+        oboe:measurementFor  oquo:observation-46e477b0-b3f6-4aeb-8820-35d65f7417b9 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:instant-7d4b5117-4504-4d47-95b6-015cf3dc9d8a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.972Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-50b514cb-6fac-4abf-8481-f7665ecdaabe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-2c7b7573-c606-46bb-953d-c716e2f910e0 ;
+        time:hasTime              oquo:instant-e84f4e9b-0899-4086-a703-d41d1b72ed21 ;
+        oquo:hasObservation       oquo:observation-73c05621-395c-4982-98e1-b02420623d7a .
+
+oquo:metric-bd7b3fb3-0ac7-4535-96b7-34740160b293
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-67298e09-8f00-4818-9964-f6ec67e08c03 ;
+        oboe:measurementFor  oquo:observation-be53f04e-4b29-458f-b587-b7cc97aafba1 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-3d9dbffc-0034-46f0-8dc0-482cb50a0dea
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.552Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a37ed3ff-15c6-435e-b559-d17ca30904a2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a0f4edce-3ac2-4e90-84ed-c6b301bd219d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-72bafa64-1141-42cd-a377-4b22b8aa9fc7 .
+
+oquo:observation-5cc8eab0-b8bf-48f9-8b5f-60ddcb140bba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-96ea7656-f66a-43a2-ac38-0463ee1f7863 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-693caf18-bd2c-4573-a7c2-510988ad1c7c .
+
+oquo:metric-fcf1247b-6808-4343-bb4c-f32b433b4061
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-2bbff6c9-57d6-4bfa-b345-29c67c090f9d ;
+        oboe:measurementFor  oquo:observation-799c1835-48cd-4ec8-975c-3b4ed1f04d03 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:evaluation-5a6f8e72-8d06-42be-b14d-e829708ca441
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-bc7586c6-c06a-46cc-a43b-7865f08ecc19 ;
+        time:hasTime              oquo:instant-8e2f6270-ef55-497a-8847-557c66321c79 ;
+        oquo:hasObservation       oquo:observation-ba5869b1-204d-4b06-815f-c4d418664130 .
+
+oquo:instant-5f91bfc5-3028-4d2a-9fb1-75017a96ac79
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.977Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6685f414-0ab0-4059-bc50-f1121c979e81
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-95eec71b-9cec-48cf-a828-c765f8388100 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-3106b327-09b3-4d9a-8f64-67ba31e4a3d1 .
+
+oquo:observation-ba5869b1-204d-4b06-815f-c4d418664130
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9c989f45-de19-44cb-8746-96549f56efae ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-8e2f6270-ef55-497a-8847-557c66321c79 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-9bba9ef1-2ddb-4e82-9b7e-4153df8f17e9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-2328c3c0-a1b1-45c8-8171-4b65f6afa486 ;
+        time:hasTime              oquo:instant-627342dc-f5e6-46ef-99ea-62f928d7b10a ;
+        oquo:hasObservation       oquo:observation-6875cb37-7884-49d0-affe-18602dd5fb64 .
+
+oquo:evaluation-fe641f5e-04a8-48ba-a3fa-21df5f231d92
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-60ab43cf-5ad6-4712-bb2e-8719f421e228 ;
+        time:hasTime              oquo:instant-7d4b5117-4504-4d47-95b6-015cf3dc9d8a ;
+        oquo:hasObservation       oquo:observation-7f8afec8-b185-486c-8610-52737605cf8c .
+
+oquo:metric-9c989f45-de19-44cb-8746-96549f56efae
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bc7586c6-c06a-46cc-a43b-7865f08ecc19 ;
+        oboe:measurementFor  oquo:observation-ba5869b1-204d-4b06-815f-c4d418664130 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:instant-7156121e-b279-49e3-9e02-d8d53cbb58c4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.953Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-67298e09-8f00-4818-9964-f6ec67e08c03
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bd7b3fb3-0ac7-4535-96b7-34740160b293 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-75df1218-4592-4fb7-86df-063198197b95 .
+
+oquo:instant-693caf18-bd2c-4573-a7c2-510988ad1c7c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.888Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6bcb814a-6ea6-49a8-9ee8-6891b14ee442
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2430f66a-e2e3-46df-813d-4def11c0ea26 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-e9ce6de4-d475-4272-a2ea-9307fb9e235d .
+
+oquo:qualityValue-d17a1d62-f26b-417c-8cb7-db92a736c5ee
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b6636e79-4db3-4c3d-88ba-dae5ece582e4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-595686d0-a080-4bdb-9b00-d90593841acb .
+
+oquo:observation-6875cb37-7884-49d0-affe-18602dd5fb64
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-37362971-5668-4d17-8504-f6e5380810ca ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-627342dc-f5e6-46ef-99ea-62f928d7b10a .
+
+oquo:qualityValue-7cc149ff-67fa-4190-9003-c609504cdfdb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-95eec71b-9cec-48cf-a828-c765f8388100 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a62febfc-5737-4bc9-99d7-ac6b096a6aca .
+
+oquo:metric-1bc7f9c4-e2dc-49ea-b347-8ec1d452fabb
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-73dbe77c-5f14-4b3a-ac38-df29d7b5867e ;
+        oboe:measurementFor  oquo:observation-89762ffd-6335-451b-9ba6-aa81cff1dd02 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:qualityValue-2c7b7573-c606-46bb-953d-c716e2f910e0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-97ed00e9-0b60-4a3a-8f69-71d76222b400 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-50b514cb-6fac-4abf-8481-f7665ecdaabe .
+
+oquo:instant-f495f782-23b4-46fa-9dfe-cb31dede9063
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.551Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f00a1db2-ae70-4971-9003-7af78c5a1800
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ec6ad896-e11c-4308-a701-d647026570d1 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b8febc34-9253-474c-889d-7c7b0c756a9a .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-37266760-7266-4929-8a97-fdb9603f62e4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.549Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-e331fc61-8588-46a4-98f6-5e8d2b1d6681
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-0f7a11fe-2e48-4cf7-8d40-81d864df200f ;
+        time:hasTime              oquo:instant-37266760-7266-4929-8a97-fdb9603f62e4 ;
+        oquo:hasObservation       oquo:observation-68805b72-9175-4b88-b363-2f34d531fc46 .
+
+oquo:observation-6755469a-cd88-44e2-ac27-0402d844009f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3795a8bf-b9a9-4f5a-907c-0c5ce86a1227 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-5f91bfc5-3028-4d2a-9fb1-75017a96ac79 .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-7edf5fe1-2f3d-49e5-9a91-b90568632d2e
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-32aba271-1286-4488-9a33-555b9deff842 ;
+        oboe:measurementFor  oquo:observation-d8ac517f-bcce-4f70-969b-8c30ead1c927 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-f62e4b42-0b29-40f0-a4ea-6c0dfb4a06e6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.22Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-46e477b0-b3f6-4aeb-8820-35d65f7417b9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-827d4008-6d43-4dda-86fb-7faf83ca3ccf ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-1458703c-ab56-4497-b821-4d90992ae665 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-34703cb6-b0da-41ff-a9ac-a1b396d9be0e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-7b446cc7-ee03-4435-93b8-e862993faebc ;
+        time:hasTime              oquo:instant-238c2c2c-57f2-4cbe-84c6-ee22bf51c9cf ;
+        oquo:hasObservation       oquo:observation-fea4a3d7-faf9-4b4e-8ef2-6f1c331bd621 .
+
+oquo:metric-3fc70e28-eac3-4254-b026-15aaed33d67f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-2807a5d4-c3a7-48d6-aabc-5046036b2b9e ;
+        oboe:measurementFor  oquo:observation-549596e2-c90d-4b3d-bb23-2edba364a84a ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:observation-7385ca6f-5e90-4e81-a4d6-0c72d0789227
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-34e00cc6-ed03-460e-bea4-47c6bc3d4fdd ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-86468f48-930f-414a-903e-1aec73ec5e94 .
+
+oquo:qualityValue-206f4676-bbf4-46fa-9500-485a00c849f9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-59c24f40-6b1d-42ec-a2dc-0c426c89d557 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-225a7692-172f-4c2f-a167-821d73062759 .
+
+oquo:evaluation-225a7692-172f-4c2f-a167-821d73062759
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-206f4676-bbf4-46fa-9500-485a00c849f9 ;
+        time:hasTime              oquo:instant-f495f782-23b4-46fa-9dfe-cb31dede9063 ;
+        oquo:hasObservation       oquo:observation-0e40e9c6-a808-4282-90d1-167bfe3b256e .
+
+oquo:instant-192bffcd-56cb-4343-9fd6-df6a3bf0fa62
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:12.758Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-2430f66a-e2e3-46df-813d-4def11c0ea26
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-39d648c8-abfd-4edc-81cb-03180d349e2f ;
+        oboe:measurementFor  oquo:observation-6bcb814a-6ea6-49a8-9ee8-6891b14ee442 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:evaluation-72bafa64-1141-42cd-a377-4b22b8aa9fc7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-a37ed3ff-15c6-435e-b559-d17ca30904a2 ;
+        time:hasTime              oquo:instant-192bffcd-56cb-4343-9fd6-df6a3bf0fa62 ;
+        oquo:hasObservation       oquo:observation-f4704263-254f-4268-9469-336d85da6473 .
+
+oquo:observation-f4704263-254f-4268-9469-336d85da6473
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a0f4edce-3ac2-4e90-84ed-c6b301bd219d ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-192bffcd-56cb-4343-9fd6-df6a3bf0fa62 .
+
+oquo:observation-adf19ade-6b4b-49fb-9ca6-4a145a73076d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-91909300-c0c1-488e-b5dd-fc51e383465e ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-ad84e824-fa4c-4a86-84a4-9a2ea6968340 .
+
+oquo:evaluation-75df1218-4592-4fb7-86df-063198197b95
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-67298e09-8f00-4818-9964-f6ec67e08c03 ;
+        time:hasTime              oquo:instant-77820852-58f0-4996-8420-dc9ed641ea6b ;
+        oquo:hasObservation       oquo:observation-be53f04e-4b29-458f-b587-b7cc97aafba1 .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-2328c3c0-a1b1-45c8-8171-4b65f6afa486
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-37362971-5668-4d17-8504-f6e5380810ca ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9bba9ef1-2ddb-4e82-9b7e-4153df8f17e9 .
+
+oquo:qualityValue-c7a7fe8a-b384-41af-87ba-0389c8d25f51
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-827d4008-6d43-4dda-86fb-7faf83ca3ccf ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9d0f2d09-cb4d-44dc-a242-e88284ca913c .
+
+oquo:metric-b6636e79-4db3-4c3d-88ba-dae5ece582e4
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-d17a1d62-f26b-417c-8cb7-db92a736c5ee ;
+        oboe:measurementFor  oquo:observation-84d8dc49-8895-438c-8c86-7e6e711f8306 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:qualityValue-1ec3671c-2797-486c-868a-085b7b28cc42
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-34e00cc6-ed03-460e-bea4-47c6bc3d4fdd ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67850448-3b7a-424a-b8b3-d954a031a812 .
+
+oquo:instant-6833c177-ff8e-4455-aa37-6355675f6d5d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.625Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-0a809301-12b9-438f-805d-49b715e7e986
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-958ef95a-503a-4cc7-b900-8809b59363b7 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-f97e3d3b-3b33-4167-9b7b-00c149475e48 .
+
+oquo:qualityValue-3e777ee3-61dd-4f2d-b5b1-ba8d66a0407c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4bdcf854-eebf-4d58-8553-636ab3b9c731 ;
+        res:hasLiteralValue    "2534.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d349b29a-f538-4dcc-8701-0bafdc1630d0 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-94304b79-98eb-42a4-af9b-58a233698988
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2dbe259a-8c0e-4c6e-bf9e-982b990f4df0 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-9f929983-d1b2-48e9-8622-7997df1e0764 .
+
+oquo:evaluation-b8febc34-9253-474c-889d-7c7b0c756a9a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-f00a1db2-ae70-4971-9003-7af78c5a1800 ;
+        time:hasTime              oquo:instant-b31631a5-e86d-4ee2-a456-e6fefbf8ed59 ;
+        oquo:hasObservation       oquo:observation-cb2924c9-826e-455f-b0b0-633156e673eb .
+
+oquo:instant-3106b327-09b3-4d9a-8f64-67ba31e4a3d1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:13.105Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-be53f04e-4b29-458f-b587-b7cc97aafba1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bd7b3fb3-0ac7-4535-96b7-34740160b293 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-77820852-58f0-4996-8420-dc9ed641ea6b .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-91909300-c0c1-488e-b5dd-fc51e383465e
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5219fd08-a2d3-4b07-bd5f-6d7efacf5c98 ;
+        oboe:measurementFor  oquo:observation-adf19ade-6b4b-49fb-9ca6-4a145a73076d ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:instant-12dce775-d6b2-4c1d-be08-710cdb4b496b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.53Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-1c8d56fd-62d9-4d49-ad05-5e46e8556c08
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-09cf5355-a668-4b38-91ef-11ddff351d19 ;
+        oboe:measurementFor  oquo:observation-974bd6a0-84da-43cb-adeb-d1c71a53f07f ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:metric-59c24f40-6b1d-42ec-a2dc-0c426c89d557
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-206f4676-bbf4-46fa-9500-485a00c849f9 ;
+        oboe:measurementFor  oquo:observation-0e40e9c6-a808-4282-90d1-167bfe3b256e ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:observation-fea4a3d7-faf9-4b4e-8ef2-6f1c331bd621
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a44229ca-9a6d-4ad3-ac1c-60d827d4b0e0 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-238c2c2c-57f2-4cbe-84c6-ee22bf51c9cf .
+
+oquo:qualityValue-bc7586c6-c06a-46cc-a43b-7865f08ecc19
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9c989f45-de19-44cb-8746-96549f56efae ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5a6f8e72-8d06-42be-b14d-e829708ca441 .
+
+oquo:evaluation-8ef76565-7f2b-4a2a-bf52-f66e1614327a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-09cf5355-a668-4b38-91ef-11ddff351d19 ;
+        time:hasTime              oquo:instant-6833c177-ff8e-4455-aa37-6355675f6d5d ;
+        oquo:hasObservation       oquo:observation-974bd6a0-84da-43cb-adeb-d1c71a53f07f .
+
+oquo:instant-ad84e824-fa4c-4a86-84a4-9a2ea6968340
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.802Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e3c041cc-a827-4141-98bb-958ba8d4c061
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a618692d-7729-4ce6-a3b9-30267cab6d74 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-3f338445-d5d0-483f-900d-c22a56ce0b92 .
+
+oquo:qualityValue-edb8567a-a635-49bf-a29c-ff2678c18a1a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-958ef95a-503a-4cc7-b900-8809b59363b7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-639fae04-a988-47e9-910e-47f5aca7f148 .
+
+oquo:observation-50efcc50-cc06-45fb-ad87-bffceeceb0a3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-908f5e79-43a5-4c80-8c08-c879348565a5 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-95e80afa-2b50-45ef-82f0-8c1e7ed98dd1 .
+
+oquo:metric-b579bb4e-8470-429b-98ff-8b31c9d7074c
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-bef236ae-a865-4399-839e-05556cfb24a6 ;
+        oboe:measurementFor  oquo:observation-2fd05cd3-e6c9-413e-8ad6-0a5a2a63716b ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:instant-238c2c2c-57f2-4cbe-84c6-ee22bf51c9cf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:13.173Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-7849e4d5-0616-41d9-a59f-849cb05b062f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-ead9fa78-7534-4d09-a7fc-136457866200 ;
+        time:hasTime              oquo:instant-95e80afa-2b50-45ef-82f0-8c1e7ed98dd1 ;
+        oquo:hasObservation       oquo:observation-50efcc50-cc06-45fb-ad87-bffceeceb0a3 .
+
+oquo:instant-77820852-58f0-4996-8420-dc9ed641ea6b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.958Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a0f4edce-3ac2-4e90-84ed-c6b301bd219d
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-a37ed3ff-15c6-435e-b559-d17ca30904a2 ;
+        oboe:measurementFor  oquo:observation-f4704263-254f-4268-9469-336d85da6473 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-ead9fa78-7534-4d09-a7fc-136457866200
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-908f5e79-43a5-4c80-8c08-c879348565a5 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7849e4d5-0616-41d9-a59f-849cb05b062f .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-34e00cc6-ed03-460e-bea4-47c6bc3d4fdd
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-1ec3671c-2797-486c-868a-085b7b28cc42 ;
+        oboe:measurementFor  oquo:observation-7385ca6f-5e90-4e81-a4d6-0c72d0789227 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:metric-3795a8bf-b9a9-4f5a-907c-0c5ce86a1227
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-63fbe241-cc21-4a9f-bb85-04660e515ab2 ;
+        oboe:measurementFor  oquo:observation-6755469a-cd88-44e2-ac27-0402d844009f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-2807a5d4-c3a7-48d6-aabc-5046036b2b9e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3fc70e28-eac3-4254-b026-15aaed33d67f ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9efac0a0-e149-4240-9abc-aff769526cd2 .
+
+oquo:metric-2dbe259a-8c0e-4c6e-bf9e-982b990f4df0
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-dda4f3ec-3fa8-4a63-88d5-81ab5caf762d ;
+        oboe:measurementFor  oquo:observation-94304b79-98eb-42a4-af9b-58a233698988 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-7f8afec8-b185-486c-8610-52737605cf8c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-611b2f95-2783-44a8-a849-cbcd047996b1 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-7d4b5117-4504-4d47-95b6-015cf3dc9d8a .
+
+oquo:metric-37362971-5668-4d17-8504-f6e5380810ca
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2328c3c0-a1b1-45c8-8171-4b65f6afa486 ;
+        oboe:measurementFor  oquo:observation-6875cb37-7884-49d0-affe-18602dd5fb64 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-88580d4e-6b8a-40d2-9f54-9db54ed112fd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-bef236ae-a865-4399-839e-05556cfb24a6 ;
+        time:hasTime              oquo:instant-7156121e-b279-49e3-9e02-d8d53cbb58c4 ;
+        oquo:hasObservation       oquo:observation-2fd05cd3-e6c9-413e-8ad6-0a5a2a63716b .
+
+oquo:evaluation-639fae04-a988-47e9-910e-47f5aca7f148
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-edb8567a-a635-49bf-a29c-ff2678c18a1a ;
+        time:hasTime              oquo:instant-f97e3d3b-3b33-4167-9b7b-00c149475e48 ;
+        oquo:hasObservation       oquo:observation-0a809301-12b9-438f-805d-49b715e7e986 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:evaluation-2f3e2dda-9d0e-459c-9be0-fbdc2382f7ff
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-1f549b55-07bc-438a-a5b7-0c7d3ea0aca3 ;
+        time:hasTime              oquo:instant-4dc473f3-08fa-4251-acd9-f7183d6a1ccd ;
+        oquo:hasObservation       oquo:observation-c4f3c5f3-5c1c-4f70-a735-fe47fefbd95f .
+
+oquo:qualityValue-dda4f3ec-3fa8-4a63-88d5-81ab5caf762d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2dbe259a-8c0e-4c6e-bf9e-982b990f4df0 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-eee27b1b-d5f6-487b-9206-5c0f04df6997 .
+
+oquo:metric-a44229ca-9a6d-4ad3-ac1c-60d827d4b0e0
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-7b446cc7-ee03-4435-93b8-e862993faebc ;
+        oboe:measurementFor  oquo:observation-fea4a3d7-faf9-4b4e-8ef2-6f1c331bd621 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:qualityValue-7b446cc7-ee03-4435-93b8-e862993faebc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a44229ca-9a6d-4ad3-ac1c-60d827d4b0e0 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-34703cb6-b0da-41ff-a9ac-a1b396d9be0e .
+
+oquo:instant-f97e3d3b-3b33-4167-9b7b-00c149475e48
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.711Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-63fbe241-cc21-4a9f-bb85-04660e515ab2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3795a8bf-b9a9-4f5a-907c-0c5ce86a1227 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-821504ad-5a57-4b5e-929a-2d8a00a348fe .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-0f7a11fe-2e48-4cf7-8d40-81d864df200f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0cb41adb-34b0-464b-b1a0-6051eba432a7 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e331fc61-8588-46a4-98f6-5e8d2b1d6681 .
+
+oquo:metric-0cb41adb-34b0-464b-b1a0-6051eba432a7
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-0f7a11fe-2e48-4cf7-8d40-81d864df200f ;
+        oboe:measurementFor  oquo:observation-68805b72-9175-4b88-b363-2f34d531fc46 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-57182afd-7d11-4e5e-90ec-8d68812f164d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-81aa104b-0874-40a7-9d9e-6949865c9490 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-12dce775-d6b2-4c1d-be08-710cdb4b496b .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-abee55c9-4fde-4588-9976-b0dd0b00f952
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-1f549b55-07bc-438a-a5b7-0c7d3ea0aca3 ;
+        oboe:measurementFor  oquo:observation-c4f3c5f3-5c1c-4f70-a735-fe47fefbd95f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-4d9bce23-3d8f-4a61-a209-bd9a28563b83
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.48Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c4f3c5f3-5c1c-4f70-a735-fe47fefbd95f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-abee55c9-4fde-4588-9976-b0dd0b00f952 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-4dc473f3-08fa-4251-acd9-f7183d6a1ccd .
+
+oquo:metric-908f5e79-43a5-4c80-8c08-c879348565a5
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-ead9fa78-7534-4d09-a7fc-136457866200 ;
+        oboe:measurementFor  oquo:observation-50efcc50-cc06-45fb-ad87-bffceeceb0a3 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-627b9b64-af23-41b8-9fe2-821c37903e01
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-32aba271-1286-4488-9a33-555b9deff842 ;
+        time:hasTime              oquo:instant-4d9bce23-3d8f-4a61-a209-bd9a28563b83 ;
+        oquo:hasObservation       oquo:observation-d8ac517f-bcce-4f70-969b-8c30ead1c927 .
+
+oquo:instant-627342dc-f5e6-46ef-99ea-62f928d7b10a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.633Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e9797b07-01d9-4c73-ba9e-5f64779887ed
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:13.11Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-3f338445-d5d0-483f-900d-c22a56ce0b92
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.797Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-5898ffee-5a37-4723-ba60-87bedcad0a59
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b9bc8b06-392d-4b80-8005-337c07a868a3 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-0c3441b4-9512-473d-bc23-b90b41e1f7d4 .
+
+oquo:observation-84d8dc49-8895-438c-8c86-7e6e711f8306
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b6636e79-4db3-4c3d-88ba-dae5ece582e4 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-3d9dbffc-0034-46f0-8dc0-482cb50a0dea .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-d86fb44b-f2ea-41bb-a343-8318078018e9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bf0b930d-01b7-4b4a-b613-f84fb530da0a ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-283368a5-a7f0-4b67-8340-f673f9c918ee .
+
+oquo:qualityValue-2bbff6c9-57d6-4bfa-b345-29c67c090f9d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fcf1247b-6808-4343-bb4c-f32b433b4061 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-92ba6b6a-0410-4f9d-8a41-1b5fffd711f1 .
+
+oquo:qualityValue-7534d370-54ea-4581-b8e3-afea439fe96b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b9bc8b06-392d-4b80-8005-337c07a868a3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-190537b3-d408-467f-946f-bc2ddd6c13e0 .
+
+oquo:evaluation-9d0f2d09-cb4d-44dc-a242-e88284ca913c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-c7a7fe8a-b384-41af-87ba-0389c8d25f51 ;
+        time:hasTime              oquo:instant-1458703c-ab56-4497-b821-4d90992ae665 ;
+        oquo:hasObservation       oquo:observation-46e477b0-b3f6-4aeb-8820-35d65f7417b9 .
+
+oquo:evaluation-67850448-3b7a-424a-b8b3-d954a031a812
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-1ec3671c-2797-486c-868a-085b7b28cc42 ;
+        time:hasTime              oquo:instant-86468f48-930f-414a-903e-1aec73ec5e94 ;
+        oquo:hasObservation       oquo:observation-7385ca6f-5e90-4e81-a4d6-0c72d0789227 .
+
+oquo:instant-e9ce6de4-d475-4272-a2ea-9307fb9e235d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.974Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-bf0b930d-01b7-4b4a-b613-f84fb530da0a
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-160c2660-264f-48df-bd27-313412263de5 ;
+        oboe:measurementFor  oquo:observation-d86fb44b-f2ea-41bb-a343-8318078018e9 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-9efac0a0-e149-4240-9abc-aff769526cd2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-2807a5d4-c3a7-48d6-aabc-5046036b2b9e ;
+        time:hasTime              oquo:instant-848e7211-7353-4ecf-ab90-f303abbf3f3c ;
+        oquo:hasObservation       oquo:observation-549596e2-c90d-4b3d-bb23-2edba364a84a .
+
+oquo:qualityValue-5219fd08-a2d3-4b07-bd5f-6d7efacf5c98
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-91909300-c0c1-488e-b5dd-fc51e383465e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b37e42a3-b46f-48da-8e7f-43f560c32e5d .
+
+oquo:observation-d8ac517f-bcce-4f70-969b-8c30ead1c927
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7edf5fe1-2f3d-49e5-9a91-b90568632d2e ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-4d9bce23-3d8f-4a61-a209-bd9a28563b83 .
+
+oquo:evaluation-ec87ae24-885e-4916-ae7a-7411d7b3a064
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-6126066f-ca81-47a8-8635-a59d5b336303 ;
+        time:hasTime              oquo:instant-12dce775-d6b2-4c1d-be08-710cdb4b496b ;
+        oquo:hasObservation       oquo:observation-57182afd-7d11-4e5e-90ec-8d68812f164d .
+
+oquo:evaluation-190537b3-d408-467f-946f-bc2ddd6c13e0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-7534d370-54ea-4581-b8e3-afea439fe96b ;
+        time:hasTime              oquo:instant-0c3441b4-9512-473d-bc23-b90b41e1f7d4 ;
+        oquo:hasObservation       oquo:observation-5898ffee-5a37-4723-ba60-87bedcad0a59 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-b5c236b4-3b63-431c-8066-29150b68742f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.97Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fe02ca3c-6c63-41ef-8710-de69d91ff2f3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-c0629a23-e5a2-412a-b943-5e604fff6ea4 ;
+        time:hasTime              oquo:instant-b5c236b4-3b63-431c-8066-29150b68742f ;
+        oquo:hasObservation       oquo:observation-c0f82552-e834-4439-917a-968e45a9eec6 .
+
+oquo:observation-549596e2-c90d-4b3d-bb23-2edba364a84a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3fc70e28-eac3-4254-b026-15aaed33d67f ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-848e7211-7353-4ecf-ab90-f303abbf3f3c .
+
+oquo:instant-283368a5-a7f0-4b67-8340-f673f9c918ee
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.823Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-958ef95a-503a-4cc7-b900-8809b59363b7
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-edb8567a-a635-49bf-a29c-ff2678c18a1a ;
+        oboe:measurementFor  oquo:observation-0a809301-12b9-438f-805d-49b715e7e986 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:evaluation-eee27b1b-d5f6-487b-9206-5c0f04df6997
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-dda4f3ec-3fa8-4a63-88d5-81ab5caf762d ;
+        time:hasTime              oquo:instant-9f929983-d1b2-48e9-8622-7997df1e0764 ;
+        oquo:hasObservation       oquo:observation-94304b79-98eb-42a4-af9b-58a233698988 .
+
+oquo:qualityValue-bef236ae-a865-4399-839e-05556cfb24a6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b579bb4e-8470-429b-98ff-8b31c9d7074c ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-88580d4e-6b8a-40d2-9f54-9db54ed112fd .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-2390a393-6089-4077-86a3-8a126ff9bc1e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-73dbe77c-5f14-4b3a-ac38-df29d7b5867e ;
+        time:hasTime              oquo:instant-bf3810d5-34f8-422d-aa03-79c92645d653 ;
+        oquo:hasObservation       oquo:observation-89762ffd-6335-451b-9ba6-aa81cff1dd02 .
+
+oquo:metric-05cb7b8d-ebb1-40f8-99f9-84392a427afb
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c0629a23-e5a2-412a-b943-5e604fff6ea4 ;
+        oboe:measurementFor  oquo:observation-c0f82552-e834-4439-917a-968e45a9eec6 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-8e2f6270-ef55-497a-8847-557c66321c79
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.8Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c0629a23-e5a2-412a-b943-5e604fff6ea4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-05cb7b8d-ebb1-40f8-99f9-84392a427afb ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe02ca3c-6c63-41ef-8710-de69d91ff2f3 .
+
+oquo:observation-974bd6a0-84da-43cb-adeb-d1c71a53f07f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c8d56fd-62d9-4d49-ad05-5e46e8556c08 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-6833c177-ff8e-4455-aa37-6355675f6d5d .
+
+oquo:metric-81aa104b-0874-40a7-9d9e-6949865c9490
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6126066f-ca81-47a8-8635-a59d5b336303 ;
+        oboe:measurementFor  oquo:observation-57182afd-7d11-4e5e-90ec-8d68812f164d ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-bf3810d5-34f8-422d-aa03-79c92645d653
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.804Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-821504ad-5a57-4b5e-929a-2d8a00a348fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-63fbe241-cc21-4a9f-bb85-04660e515ab2 ;
+        time:hasTime              oquo:instant-5f91bfc5-3028-4d2a-9fb1-75017a96ac79 ;
+        oquo:hasObservation       oquo:observation-6755469a-cd88-44e2-ac27-0402d844009f .
+
+oquo:instant-0c3441b4-9512-473d-bc23-b90b41e1f7d4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:12.91Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-6126066f-ca81-47a8-8635-a59d5b336303
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-81aa104b-0874-40a7-9d9e-6949865c9490 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ec87ae24-885e-4916-ae7a-7411d7b3a064 .
+
+oquo:metric-95eec71b-9cec-48cf-a828-c765f8388100
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-7cc149ff-67fa-4190-9003-c609504cdfdb ;
+        oboe:measurementFor  oquo:observation-6685f414-0ab0-4059-bc50-f1121c979e81 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-4dc473f3-08fa-4251-acd9-f7183d6a1ccd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.98Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-799c1835-48cd-4ec8-975c-3b4ed1f04d03
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fcf1247b-6808-4343-bb4c-f32b433b4061 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-e9797b07-01d9-4c73-ba9e-5f64779887ed .
+
+oquo:observation-68805b72-9175-4b88-b363-2f34d531fc46
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0cb41adb-34b0-464b-b1a0-6051eba432a7 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-37266760-7266-4929-8a97-fdb9603f62e4 .
+
+oquo:observation-89762ffd-6335-451b-9ba6-aa81cff1dd02
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1bc7f9c4-e2dc-49ea-b347-8ec1d452fabb ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-bf3810d5-34f8-422d-aa03-79c92645d653 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-9f929983-d1b2-48e9-8622-7997df1e0764
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.691Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-6affabec-9289-49ca-b7dc-6367970850f0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-fdc875fa-9d03-4d49-8b2c-f479b2581274 ;
+        time:hasTime              oquo:instant-693caf18-bd2c-4573-a7c2-510988ad1c7c ;
+        oquo:hasObservation       oquo:observation-5cc8eab0-b8bf-48f9-8b5f-60ddcb140bba .
+
+oquo:metric-611b2f95-2783-44a8-a849-cbcd047996b1
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-60ab43cf-5ad6-4712-bb2e-8719f421e228 ;
+        oboe:measurementFor  oquo:observation-7f8afec8-b185-486c-8610-52737605cf8c ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-595686d0-a080-4bdb-9b00-d90593841acb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-d17a1d62-f26b-417c-8cb7-db92a736c5ee ;
+        time:hasTime              oquo:instant-3d9dbffc-0034-46f0-8dc0-482cb50a0dea ;
+        oquo:hasObservation       oquo:observation-84d8dc49-8895-438c-8c86-7e6e711f8306 .
+
+oquo:observation-2fd05cd3-e6c9-413e-8ad6-0a5a2a63716b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b579bb4e-8470-429b-98ff-8b31c9d7074c ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-7156121e-b279-49e3-9e02-d8d53cbb58c4 .
+
+oquo:metric-96ea7656-f66a-43a2-ac38-0463ee1f7863
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-fdc875fa-9d03-4d49-8b2c-f479b2581274 ;
+        oboe:measurementFor  oquo:observation-5cc8eab0-b8bf-48f9-8b5f-60ddcb140bba ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-1f549b55-07bc-438a-a5b7-0c7d3ea0aca3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-abee55c9-4fde-4588-9976-b0dd0b00f952 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2f3e2dda-9d0e-459c-9be0-fbdc2382f7ff .
+
+oquo:evaluation-a62febfc-5737-4bc9-99d7-ac6b096a6aca
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-7cc149ff-67fa-4190-9003-c609504cdfdb ;
+        time:hasTime              oquo:instant-3106b327-09b3-4d9a-8f64-67ba31e4a3d1 ;
+        oquo:hasObservation       oquo:observation-6685f414-0ab0-4059-bc50-f1121c979e81 .
+
+oquo:instant-848e7211-7353-4ecf-ab90-f303abbf3f3c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.955Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://chu-rouen.fr/cismef/BHN>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-a618692d-7729-4ce6-a3b9-30267cab6d74
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-36ad0a83-c8a1-45d8-8446-7dd4d25441fd ;
+        oboe:measurementFor  oquo:observation-e3c041cc-a827-4141-98bb-958ba8d4c061 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-73dbe77c-5f14-4b3a-ac38-df29d7b5867e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1bc7f9c4-e2dc-49ea-b347-8ec1d452fabb ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2390a393-6089-4077-86a3-8a126ff9bc1e .
+
+oquo:instant-e84f4e9b-0899-4086-a703-d41d1b72ed21
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.789Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b37e42a3-b46f-48da-8e7f-43f560c32e5d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-5219fd08-a2d3-4b07-bd5f-6d7efacf5c98 ;
+        time:hasTime              oquo:instant-ad84e824-fa4c-4a86-84a4-9a2ea6968340 ;
+        oquo:hasObservation       oquo:observation-adf19ade-6b4b-49fb-9ca6-4a145a73076d .
+
+oquo:qualityValue-32aba271-1286-4488-9a33-555b9deff842
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7edf5fe1-2f3d-49e5-9a91-b90568632d2e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-627b9b64-af23-41b8-9fe2-821c37903e01 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-09cf5355-a668-4b38-91ef-11ddff351d19
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c8d56fd-62d9-4d49-ad05-5e46e8556c08 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8ef76565-7f2b-4a2a-bf52-f66e1614327a .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-b38dc92f-3aa6-469f-9231-5f5591355e4a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-36ad0a83-c8a1-45d8-8446-7dd4d25441fd ;
+        time:hasTime              oquo:instant-3f338445-d5d0-483f-900d-c22a56ce0b92 ;
+        oquo:hasObservation       oquo:observation-e3c041cc-a827-4141-98bb-958ba8d4c061 .
+
+oquo:instant-95e80afa-2b50-45ef-82f0-8c1e7ed98dd1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.011Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-86468f48-930f-414a-903e-1aec73ec5e94
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-16T00:47:14.961Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c0f82552-e834-4439-917a-968e45a9eec6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-05cb7b8d-ebb1-40f8-99f9-84392a427afb ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-b5c236b4-3b63-431c-8066-29150b68742f .
+
+oquo:evaluation-1a446ae2-964a-4ebb-bde1-9de627e12891
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-160c2660-264f-48df-bd27-313412263de5 ;
+        time:hasTime              oquo:instant-283368a5-a7f0-4b67-8340-f673f9c918ee ;
+        oquo:hasObservation       oquo:observation-d86fb44b-f2ea-41bb-a343-8318078018e9 .
+
+oquo:observation-cb2924c9-826e-455f-b0b0-633156e673eb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ec6ad896-e11c-4308-a701-d647026570d1 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-b31631a5-e86d-4ee2-a456-e6fefbf8ed59 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-92ba6b6a-0410-4f9d-8a41-1b5fffd711f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://chu-rouen.fr/cismef/BHN> ;
+        res:inputData             <http://chu-rouen.fr/cismef/BHN> ;
+        res:producedQualityValue  oquo:qualityValue-2bbff6c9-57d6-4bfa-b345-29c67c090f9d ;
+        time:hasTime              oquo:instant-e9797b07-01d9-4c73-ba9e-5f64779887ed ;
+        oquo:hasObservation       oquo:observation-799c1835-48cd-4ec8-975c-3b4ed1f04d03 .
+
+oquo:metric-4bdcf854-eebf-4d58-8553-636ab3b9c731
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-3e777ee3-61dd-4f2d-b5b1-ba8d66a0407c ;
+        oboe:measurementFor  oquo:observation-a887acf8-29be-4011-b99d-d157240af386 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-73c05621-395c-4982-98e1-b02420623d7a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-97ed00e9-0b60-4a3a-8f69-71d76222b400 ;
+        oboe:ofEntity        <http://chu-rouen.fr/cismef/BHN> ;
+        time:hasTime         oquo:instant-e84f4e9b-0899-4086-a703-d41d1b72ed21 .
