@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-6ea70b89-045d-4ea0-b263-391dd338d13c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.878Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-d4be2974-186e-447c-b13a-f43387e39e48
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-742e45ed-4698-46c3-a000-5e2551a3db28 ;
+        oboe:measurementFor  oquo:observation-338693cf-7316-4ea2-bdbb-1466a654c58f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-93db20a7-5360-4026-9f04-b7930b3d408a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-84bde25c-e60b-4608-9a20-7b5a3d4c4751 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-67d53abf-eb93-4c55-b476-78f1d75ce1e5 .
+
+oquo:evaluation-3d5fbf16-0aec-4887-ba70-374f54b018e3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a3709a7f-c872-40a6-a941-579974becf31 ;
+        time:hasTime              oquo:instant-d361424e-ac33-4cb8-991d-319454fac5a1 ;
+        oquo:hasObservation       oquo:observation-dda177e4-9a33-4ac3-b5ad-b0ae4e3ebf35 .
+
+oquo:qualityValue-b7b89466-4616-4b75-b87f-3c111e7e595d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1c3f8e26-79dc-4f00-a791-8ec74cb3ae0a ;
+        res:hasLiteralValue    "0.9473684210526315"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1cc2e966-6d0f-43a1-8d6a-76bab0d43254 .
+
+oquo:evaluation-c8c7a727-576b-49f3-b330-1bbd6920c674
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7c0d8c5a-547c-4193-aeb5-120e430cb9a5 ;
+        time:hasTime              oquo:instant-96e1a857-9bab-435c-a3f3-0158ea8fe4dc ;
+        oquo:hasObservation       oquo:observation-02d0269b-4bb9-4a13-9809-8035578ed7e4 .
+
+oquo:qualityValue-54466dbe-0f3e-4c72-8592-59a77b6ce507
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1301cddb-c048-40ab-b6e2-dda626e307cf ;
+        res:hasLiteralValue    "0.014705882352941176"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7ebc9ac5-73c5-4f10-871f-c87ecd02e3ae .
+
+oquo:instant-d3cb7677-bbaf-43a6-b644-eac233071ad6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:30.231Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-4a56eccb-c225-48c8-9037-80f35f9d10b5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-21f12095-7671-4a2a-a772-169bbe90e198 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-648cdba2-7736-42d2-bc85-6f1aedccdf48 .
+
+oquo:observation-386a7075-d555-49a7-9445-cfedb428e360
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b01e3b2c-9ffe-419d-8bac-5f5006c69d28 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-d091437d-b95b-48ff-a29d-e176f134fe0f .
+
+oquo:evaluation-87a07f86-d3e0-4d37-ae7f-6de1b39bb6b0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f51a7ac1-cb71-4782-8d58-3e02c6a23992 ;
+        time:hasTime              oquo:instant-22dfdb82-0d84-4847-a0f5-68f9556b57c6 ;
+        oquo:hasObservation       oquo:observation-a6a02262-d0f0-4334-8fc8-ab8a281e0427 .
+
+oquo:metric-39305027-bd15-4ee9-872b-e2110503fb9c
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-a3709a7f-c872-40a6-a941-579974becf31 ;
+        oboe:measurementFor  oquo:observation-dda177e4-9a33-4ac3-b5ad-b0ae4e3ebf35 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:metric-b01e3b2c-9ffe-419d-8bac-5f5006c69d28
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-2bc9fecd-c73a-4e3a-a3c3-461431104d80 ;
+        oboe:measurementFor  oquo:observation-386a7075-d555-49a7-9445-cfedb428e360 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-338693cf-7316-4ea2-bdbb-1466a654c58f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d4be2974-186e-447c-b13a-f43387e39e48 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-186b639f-59c7-4244-a69e-aca4b1214982 .
+
+oquo:evaluation-74fd493c-4dbe-4f56-93ab-f84492c70551
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-79f8654a-e016-4a8e-af3a-f6dc6c6a4b76 ;
+        time:hasTime              oquo:instant-c9b00c68-f148-4a87-9538-d4d098a6b49b ;
+        oquo:hasObservation       oquo:observation-b907984f-918d-40a4-8fe3-df431a2275ab .
+
+oquo:qualityValue-8ff821b2-2a06-4d83-8301-90573462d13e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dc86950d-c595-4642-8118-85aafda04d78 ;
+        res:hasLiteralValue    "0.9743589743589743"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1b2ca7f6-2dc8-4476-9a33-2a266e4269af .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-504484f9-a7c1-4e69-a043-6d98706f2606
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-466da984-45d7-422a-9c36-c57fd7fcd31b ;
+        res:hasLiteralValue    "205.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-27fa419c-3b83-4a83-8d91-7508835b09aa .
+
+oquo:evaluation-ce7c8757-af95-496f-ba92-c0315b2e2455
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-62f8d1bd-b484-4cd9-864d-dedda5229afd ;
+        time:hasTime              oquo:instant-67d53abf-eb93-4c55-b476-78f1d75ce1e5 ;
+        oquo:hasObservation       oquo:observation-93db20a7-5360-4026-9f04-b7930b3d408a .
+
+oquo:qualityValue-081d7cd1-ff2e-4e53-8c7b-51ba7a4dd861
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-17067cd6-76fd-4252-85bc-f75ea0445876 ;
+        res:hasLiteralValue    "0.32608695652173914"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9f8faf0e-ccbc-4b6a-afb0-b6758f5df5fd .
+
+oquo:observation-a6a02262-d0f0-4334-8fc8-ab8a281e0427
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9e3ad265-503a-4a3e-9dac-f664e1552d7e ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-22dfdb82-0d84-4847-a0f5-68f9556b57c6 .
+
+oquo:metric-998a9dfe-5d16-4446-aa73-c12955dafac9
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-9123006f-f846-430a-b652-b849041a03f1 ;
+        oboe:measurementFor  oquo:observation-69e59889-99fe-4ccf-b3a3-f45b847929a7 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-8ac23778-8df6-4489-806d-04740bc00dda
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0c03d30e-f3b7-4789-9372-a04e2a84cef3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-139cb5f6-1030-4e54-bded-7dd046dcc2e2 .
+
+oquo:observation-3abd054b-303a-4d6d-9bb3-4fb850a253d2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-41374d5e-0b0e-40f7-9a79-9302b1ba079c ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-4e4cba06-32be-4a8a-940b-0167918beb9f .
+
+oquo:instant-84709521-21e7-4c2b-a627-871010ac1734
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.712Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a3709a7f-c872-40a6-a941-579974becf31
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-39305027-bd15-4ee9-872b-e2110503fb9c ;
+        res:hasLiteralValue    "0.6421568627450981"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3d5fbf16-0aec-4887-ba70-374f54b018e3 .
+
+oquo:metric-ec1efbdd-5b81-4736-b33c-e342557a1238
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-77ce9948-d982-4a31-8847-165bcd15e88c ;
+        oboe:measurementFor  oquo:observation-da55c0d8-674c-407d-9946-5f721be309a8 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:qualityValue-ce5df8e8-ee3c-4f80-8b61-8af06ae5d6a5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d138d3d2-f2c5-4376-9405-d01ba1135aca ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-17b8a357-dab3-4c8d-8243-79d408aa2003 .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-cc8f1364-c6d5-45ba-8e04-1ddc3ac91770
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2bc9fecd-c73a-4e3a-a3c3-461431104d80 ;
+        time:hasTime              oquo:instant-d091437d-b95b-48ff-a29d-e176f134fe0f ;
+        oquo:hasObservation       oquo:observation-386a7075-d555-49a7-9445-cfedb428e360 .
+
+oquo:metric-79ca41b9-87dd-4ac1-a39a-b3671a40cee6
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-0f96b27f-62ba-4ed4-ae50-64438d391fa5 ;
+        oboe:measurementFor  oquo:observation-b96a9f11-2b02-4d5d-8ccb-573ef17e8fd8 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:observation-02d0269b-4bb9-4a13-9809-8035578ed7e4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3f14c971-c91f-4198-89f2-d5ffeb585e74 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-96e1a857-9bab-435c-a3f3-0158ea8fe4dc .
+
+oquo:metric-de03de67-b686-4856-8a93-a2eee104aeab
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bd55def4-2bb4-4641-bf6d-158833b3018f ;
+        oboe:measurementFor  oquo:observation-30daa7f8-f11d-45df-979b-6bc6aefedf07 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:metric-3f14c971-c91f-4198-89f2-d5ffeb585e74
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-7c0d8c5a-547c-4193-aeb5-120e430cb9a5 ;
+        oboe:measurementFor  oquo:observation-02d0269b-4bb9-4a13-9809-8035578ed7e4 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:instant-24b554fb-ae58-4851-884c-400f553d7a86
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:30.119Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-27fa419c-3b83-4a83-8d91-7508835b09aa
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-504484f9-a7c1-4e69-a043-6d98706f2606 ;
+        time:hasTime              oquo:instant-69c80e1a-b5b6-4c0c-a6ff-ad6c57f28a20 ;
+        oquo:hasObservation       oquo:observation-89201101-f996-4ee8-9b6d-f5973d9f9837 .
+
+oquo:evaluation-955d3239-f746-47f7-b751-ec558f1c363c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-77ce9948-d982-4a31-8847-165bcd15e88c ;
+        time:hasTime              oquo:instant-59126074-0256-463a-9ff0-e452a0c545d3 ;
+        oquo:hasObservation       oquo:observation-da55c0d8-674c-407d-9946-5f721be309a8 .
+
+oquo:observation-da55c0d8-674c-407d-9946-5f721be309a8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ec1efbdd-5b81-4736-b33c-e342557a1238 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-59126074-0256-463a-9ff0-e452a0c545d3 .
+
+oquo:observation-64cff166-3b9b-44c9-9c07-f7b6ff2dfc53
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4ff87973-6e46-4b2a-80aa-ef9033dc59ca ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-3eb43a8c-9c08-40dd-90bc-ca25b0a576e5 .
+
+oquo:observation-e364e0f5-eb17-4397-9783-50ae0a47fbea
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0c03d30e-f3b7-4789-9372-a04e2a84cef3 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-bd602742-d56c-48a0-a851-1a6f03e43d2a .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-4e4cba06-32be-4a8a-940b-0167918beb9f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.735Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-5c2280f1-e2bb-47e6-a032-d9a0df6c1e54
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-41374d5e-0b0e-40f7-9a79-9302b1ba079c ;
+        res:hasLiteralValue    "0.02631578947368421"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f492ece3-dd75-4ace-ad00-c2ce134ef1c5 .
+
+oquo:metric-746334fd-3c52-4226-a3a9-fa5f016fced3
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1b07c5d4-4fc3-4d00-84b7-a3d001ac83f4 ;
+        oboe:measurementFor  oquo:observation-0e4789d4-39ca-4200-987d-c6bec9c82082 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-3eb43a8c-9c08-40dd-90bc-ca25b0a576e5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.688Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-e5c4e41e-7eac-4f32-8c8b-f34e31849647
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.698Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:instant-ba1b65f0-908e-47c3-a8c2-4e4adb93b5b8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.79Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-0899b330-dd17-4600-8908-ef08b7e1c17f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-abd46a85-76ae-4292-8707-4bdb749997fe ;
+        time:hasTime              oquo:instant-e5c4e41e-7eac-4f32-8c8b-f34e31849647 ;
+        oquo:hasObservation       oquo:observation-a272124f-cd03-4042-9931-7c63d340bc9e .
+
+<http://purl.obolibrary.obo/cao.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:metric-9e3ad265-503a-4a3e-9dac-f664e1552d7e
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-f51a7ac1-cb71-4782-8d58-3e02c6a23992 ;
+        oboe:measurementFor  oquo:observation-a6a02262-d0f0-4334-8fc8-ab8a281e0427 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-80bfab6d-b16d-4a14-a4e6-cf78c09a3fe4
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-5d8a1943-5054-4411-a087-732042a40890 ;
+        oboe:measurementFor  oquo:observation-84d796d9-6113-44e8-a659-1a376cd6433c ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-c655ee64-d8bf-437a-8c6d-f208d719bf48
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.705Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-80d4b4f3-1e19-461f-8d3b-314199a41e00
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-0f96b27f-62ba-4ed4-ae50-64438d391fa5 ;
+        time:hasTime              oquo:instant-84709521-21e7-4c2b-a627-871010ac1734 ;
+        oquo:hasObservation       oquo:observation-b96a9f11-2b02-4d5d-8ccb-573ef17e8fd8 .
+
+oquo:instant-b6ae2205-d633-4d32-a2f8-da1f7ef7b1a6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.774Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-22dfdb82-0d84-4847-a0f5-68f9556b57c6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.794Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-f492ece3-dd75-4ace-ad00-c2ce134ef1c5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5c2280f1-e2bb-47e6-a032-d9a0df6c1e54 ;
+        time:hasTime              oquo:instant-4e4cba06-32be-4a8a-940b-0167918beb9f ;
+        oquo:hasObservation       oquo:observation-3abd054b-303a-4d6d-9bb3-4fb850a253d2 .
+
+oquo:observation-26e463b0-b7a0-49b9-ac7a-0fc9dcb821a8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1369f095-2cb3-44c9-b6d7-c58a5eb9fb46 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-6ea70b89-045d-4ea0-b263-391dd338d13c .
+
+oquo:metric-466da984-45d7-422a-9c36-c57fd7fcd31b
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-504484f9-a7c1-4e69-a043-6d98706f2606 ;
+        oboe:measurementFor  oquo:observation-89201101-f996-4ee8-9b6d-f5973d9f9837 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:instant-9a58e897-7812-4f39-9d8e-0be194af2ea4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.708Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a629982c-f683-4b72-a746-17064fd12c37
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.895Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-7c0d8c5a-547c-4193-aeb5-120e430cb9a5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3f14c971-c91f-4198-89f2-d5ffeb585e74 ;
+        res:hasLiteralValue    "3.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c8c7a727-576b-49f3-b330-1bbd6920c674 .
+
+oquo:observation-b907984f-918d-40a4-8fe3-df431a2275ab
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6d8a4c40-8bcb-4c83-a3d9-9b69fc6acb0f ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-c9b00c68-f148-4a87-9538-d4d098a6b49b .
+
+oquo:observation-3da74aa5-0756-45d8-a275-1ab39a0bb54b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d138d3d2-f2c5-4376-9405-d01ba1135aca ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-62028364-66b2-44ab-9682-77ca68c1693a .
+
+oquo:observation-21f46de4-85a6-4857-b7d7-544baf9b4038
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8b542ad3-77b7-4ef8-bd3c-bebe2ed0712a ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-96899cb7-c42c-4c70-91a5-a5229ff8e742 .
+
+oquo:evaluation-3e8a97ff-989e-4cf2-befb-29c08221e0f6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c4eca5e8-d80a-4d4a-8367-7518cf1079b0 ;
+        time:hasTime              oquo:instant-4509d6f5-f489-4fd1-8931-6a1a6bf158ef ;
+        oquo:hasObservation       oquo:observation-63349392-538e-4a9f-9063-f40b8772a033 .
+
+oquo:observation-78f82116-c1d8-402f-a955-885c788b40d9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-057d3a7c-8b89-411d-a528-836f08add046 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-3382f90e-fe98-4d13-ae6f-69f0b92893f8 .
+
+oquo:observation-be4e11f6-b57a-4c2c-affe-27b103617c7e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b66c0777-74dd-4d4a-afc0-93de3dace87d ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-9a58e897-7812-4f39-9d8e-0be194af2ea4 .
+
+oquo:metric-f7ddb364-ffb7-47d1-9c1c-b69bb3ebab59
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-322bb593-eccf-4f58-af09-dffc34d68117 ;
+        oboe:measurementFor  oquo:observation-289afe75-eca2-40f0-b8bf-cd5c465aa08c ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-63349392-538e-4a9f-9063-f40b8772a033
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-75c24554-3f1b-46d0-a1a1-72fff7097f89 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-4509d6f5-f489-4fd1-8931-6a1a6bf158ef .
+
+oquo:instant-9ee7d02d-049c-4f42-b802-286b36c0f656
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.885Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-dda177e4-9a33-4ac3-b5ad-b0ae4e3ebf35
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-39305027-bd15-4ee9-872b-e2110503fb9c ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-d361424e-ac33-4cb8-991d-319454fac5a1 .
+
+oquo:evaluation-63d71f6a-95af-4759-aea5-f17b0332e89e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-17e31d5e-c348-453a-944b-86de4cb61f68 ;
+        time:hasTime              oquo:instant-6ea70b89-045d-4ea0-b263-391dd338d13c ;
+        oquo:hasObservation       oquo:observation-26e463b0-b7a0-49b9-ac7a-0fc9dcb821a8 .
+
+oquo:instant-186b639f-59c7-4244-a69e-aca4b1214982
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.898Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-916e036b-e6f1-4325-b13c-ee2300a48158
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-03680f3a-cbf1-42b3-b3bf-586cf31adcee ;
+        time:hasTime              oquo:instant-3382f90e-fe98-4d13-ae6f-69f0b92893f8 ;
+        oquo:hasObservation       oquo:observation-78f82116-c1d8-402f-a955-885c788b40d9 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-84d796d9-6113-44e8-a659-1a376cd6433c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-80bfab6d-b16d-4a14-a4e6-cf78c09a3fe4 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-d3cb7677-bbaf-43a6-b644-eac233071ad6 .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-d0bb7fd3-3a5e-453f-a96d-e28873c9e2b6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-1b07c5d4-4fc3-4d00-84b7-a3d001ac83f4 ;
+        time:hasTime              oquo:instant-35cb6b36-fd84-46b0-9d29-08abad341739 ;
+        oquo:hasObservation       oquo:observation-0e4789d4-39ca-4200-987d-c6bec9c82082 .
+
+oquo:metric-0c03d30e-f3b7-4789-9372-a04e2a84cef3
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8ac23778-8df6-4489-806d-04740bc00dda ;
+        oboe:measurementFor  oquo:observation-e364e0f5-eb17-4397-9783-50ae0a47fbea ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-c577b127-9ebd-40ba-a9dd-3af8adf8e3b0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c8a25883-9d4d-434b-9399-82dbf39dd94d ;
+        time:hasTime              oquo:instant-e93f381d-135d-4aed-a864-9ad212f2764b ;
+        oquo:hasObservation       oquo:observation-e2c54703-53b4-410b-a728-41b78bf28ddc .
+
+oquo:qualityValue-7bc37f95-2434-41e9-ae2c-bf56b4b261ca
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d4635391-b4e8-4d4c-b473-8b731b3df11e ;
+        res:hasLiteralValue    "0.3684210526315789"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-db00a616-97be-453a-9a06-8f3a077694d6 .
+
+oquo:instant-96899cb7-c42c-4c70-91a5-a5229ff8e742
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.769Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-c4eca5e8-d80a-4d4a-8367-7518cf1079b0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-75c24554-3f1b-46d0-a1a1-72fff7097f89 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e8a97ff-989e-4cf2-befb-29c08221e0f6 .
+
+oquo:metric-6d8a4c40-8bcb-4c83-a3d9-9b69fc6acb0f
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-79f8654a-e016-4a8e-af3a-f6dc6c6a4b76 ;
+        oboe:measurementFor  oquo:observation-b907984f-918d-40a4-8fe3-df431a2275ab ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-8429b4a8-fd15-45d0-8746-cce6ce67baef
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4ff87973-6e46-4b2a-80aa-ef9033dc59ca ;
+        res:hasLiteralValue    "1.1127450980392157"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-da89b2a8-7f3e-4087-845e-e4851efb86b9 .
+
+oquo:instant-648cdba2-7736-42d2-bc85-6f1aedccdf48
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.788Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f51a7ac1-cb71-4782-8d58-3e02c6a23992
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9e3ad265-503a-4a3e-9dac-f664e1552d7e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-87a07f86-d3e0-4d37-ae7f-6de1b39bb6b0 .
+
+oquo:observation-30daa7f8-f11d-45df-979b-6bc6aefedf07
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-de03de67-b686-4856-8a93-a2eee104aeab ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-ba1b65f0-908e-47c3-a8c2-4e4adb93b5b8 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-057d3a7c-8b89-411d-a528-836f08add046
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-03680f3a-cbf1-42b3-b3bf-586cf31adcee ;
+        oboe:measurementFor  oquo:observation-78f82116-c1d8-402f-a955-885c788b40d9 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:observation-d9c9a580-9737-4a65-a017-8b1a34f0e46e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-17067cd6-76fd-4252-85bc-f75ea0445876 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-b6ae2205-d633-4d32-a2f8-da1f7ef7b1a6 .
+
+oquo:instant-62028364-66b2-44ab-9682-77ca68c1693a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.893Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-03680f3a-cbf1-42b3-b3bf-586cf31adcee
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-057d3a7c-8b89-411d-a528-836f08add046 ;
+        res:hasLiteralValue    "0.9411764705882353"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-916e036b-e6f1-4325-b13c-ee2300a48158 .
+
+oquo:metric-17067cd6-76fd-4252-85bc-f75ea0445876
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-081d7cd1-ff2e-4e53-8c7b-51ba7a4dd861 ;
+        oboe:measurementFor  oquo:observation-d9c9a580-9737-4a65-a017-8b1a34f0e46e ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:qualityValue-c8a25883-9d4d-434b-9399-82dbf39dd94d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a74aca62-f93f-4b0d-ad7c-793e68d7df8c ;
+        res:hasLiteralValue    "0.010869565217391304"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c577b127-9ebd-40ba-a9dd-3af8adf8e3b0 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-27aa9a82-c895-41c1-a220-61ecf2c34ad5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e4267d0c-09ab-4250-a535-1b31859fc7b5 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-4c4ee377-879c-46b2-b44b-45c88d624e5e .
+
+oquo:qualityValue-30853192-9ea1-4ccc-812d-3376052791c2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8b542ad3-77b7-4ef8-bd3c-bebe2ed0712a ;
+        res:hasLiteralValue    "0.6617647058823529"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-10d397f7-0288-4ca9-b663-8b5ac47cae7c .
+
+oquo:evaluation-17b8a357-dab3-4c8d-8243-79d408aa2003
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ce5df8e8-ee3c-4f80-8b61-8af06ae5d6a5 ;
+        time:hasTime              oquo:instant-62028364-66b2-44ab-9682-77ca68c1693a ;
+        oquo:hasObservation       oquo:observation-3da74aa5-0756-45d8-a275-1ab39a0bb54b .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-56bce6ca-5b67-497a-a7ec-8d1e82ce3d38
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.792Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-3c95bfb2-cca5-4406-8530-9ef1215e1218
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.71Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-dc86950d-c595-4642-8118-85aafda04d78
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-8ff821b2-2a06-4d83-8301-90573462d13e ;
+        oboe:measurementFor  oquo:observation-b98758ad-c342-4eb1-9b71-93c252093cf9 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:instant-69c80e1a-b5b6-4c0c-a6ff-ad6c57f28a20
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.682Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-35cb6b36-fd84-46b0-9d29-08abad341739
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.719Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-4ff87973-6e46-4b2a-80aa-ef9033dc59ca
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8429b4a8-fd15-45d0-8746-cce6ce67baef ;
+        oboe:measurementFor  oquo:observation-64cff166-3b9b-44c9-9c07-f7b6ff2dfc53 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:metric-d138d3d2-f2c5-4376-9405-d01ba1135aca
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ce5df8e8-ee3c-4f80-8b61-8af06ae5d6a5 ;
+        oboe:measurementFor  oquo:observation-3da74aa5-0756-45d8-a275-1ab39a0bb54b ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:metric-e4267d0c-09ab-4250-a535-1b31859fc7b5
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-3bc22a05-275b-48c9-9299-62bd2942bfda ;
+        oboe:measurementFor  oquo:observation-27aa9a82-c895-41c1-a220-61ecf2c34ad5 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-1369f095-2cb3-44c9-b6d7-c58a5eb9fb46
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-17e31d5e-c348-453a-944b-86de4cb61f68 ;
+        oboe:measurementFor  oquo:observation-26e463b0-b7a0-49b9-ac7a-0fc9dcb821a8 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-5ca14a76-8366-47f4-bc46-92cab5c9dab9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1c3f8e26-79dc-4f00-a791-8ec74cb3ae0a ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-3c95bfb2-cca5-4406-8530-9ef1215e1218 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-f9224f84-b0d5-4e2c-8069-7a05ac040d14
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d4635391-b4e8-4d4c-b473-8b731b3df11e ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-56bce6ca-5b67-497a-a7ec-8d1e82ce3d38 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-3382f90e-fe98-4d13-ae6f-69f0b92893f8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.848Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-40e0e388-6d4f-46b5-887e-7fd834e5a6b8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5d8a1943-5054-4411-a087-732042a40890 ;
+        time:hasTime              oquo:instant-d3cb7677-bbaf-43a6-b644-eac233071ad6 ;
+        oquo:hasObservation       oquo:observation-84d796d9-6113-44e8-a659-1a376cd6433c .
+
+oquo:evaluation-f54af7ef-5cbc-43aa-901e-dafead3d6803
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-fa27463b-d2f8-4eb9-a55a-79f23dc091b0 ;
+        time:hasTime              oquo:instant-9a58e897-7812-4f39-9d8e-0be194af2ea4 ;
+        oquo:hasObservation       oquo:observation-be4e11f6-b57a-4c2c-affe-27b103617c7e .
+
+oquo:evaluation-67fa7f44-5026-4515-90f2-e2a9e1d77590
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bd55def4-2bb4-4641-bf6d-158833b3018f ;
+        time:hasTime              oquo:instant-ba1b65f0-908e-47c3-a8c2-4e4adb93b5b8 ;
+        oquo:hasObservation       oquo:observation-30daa7f8-f11d-45df-979b-6bc6aefedf07 .
+
+oquo:metric-1301cddb-c048-40ab-b6e2-dda626e307cf
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-54466dbe-0f3e-4c72-8592-59a77b6ce507 ;
+        oboe:measurementFor  oquo:observation-c43b8007-3baa-4b33-aa09-4dd031a0baa6 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7ebc9ac5-73c5-4f10-871f-c87ecd02e3ae
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-54466dbe-0f3e-4c72-8592-59a77b6ce507 ;
+        time:hasTime              oquo:instant-24b554fb-ae58-4851-884c-400f553d7a86 ;
+        oquo:hasObservation       oquo:observation-c43b8007-3baa-4b33-aa09-4dd031a0baa6 .
+
+oquo:qualityValue-16f3500a-9ac3-4d88-ab20-09495945089b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-21f12095-7671-4a2a-a772-169bbe90e198 ;
+        res:hasLiteralValue    "0.17777777777777778"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7babc505-048c-4810-8d06-ee900cc4680f .
+
+oquo:metric-a74aca62-f93f-4b0d-ad7c-793e68d7df8c
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c8a25883-9d4d-434b-9399-82dbf39dd94d ;
+        oboe:measurementFor  oquo:observation-e2c54703-53b4-410b-a728-41b78bf28ddc ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:metric-21f12095-7671-4a2a-a772-169bbe90e198
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-16f3500a-9ac3-4d88-ab20-09495945089b ;
+        oboe:measurementFor  oquo:observation-4a56eccb-c225-48c8-9037-80f35f9d10b5 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-db00a616-97be-453a-9a06-8f3a077694d6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7bc37f95-2434-41e9-ae2c-bf56b4b261ca ;
+        time:hasTime              oquo:instant-56bce6ca-5b67-497a-a7ec-8d1e82ce3d38 ;
+        oquo:hasObservation       oquo:observation-f9224f84-b0d5-4e2c-8069-7a05ac040d14 .
+
+oquo:qualityValue-79f8654a-e016-4a8e-af3a-f6dc6c6a4b76
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6d8a4c40-8bcb-4c83-a3d9-9b69fc6acb0f ;
+        res:hasLiteralValue    "0.27450980392156865"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-74fd493c-4dbe-4f56-93ab-f84492c70551 .
+
+oquo:metric-2f0a2fea-ae5f-4ab2-82af-f029645a94a0
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-abd46a85-76ae-4292-8707-4bdb749997fe ;
+        oboe:measurementFor  oquo:observation-a272124f-cd03-4042-9931-7c63d340bc9e ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-9c19487c-1c65-47aa-95d3-0f2ceeaa26a9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.367Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-77ce9948-d982-4a31-8847-165bcd15e88c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ec1efbdd-5b81-4736-b33c-e342557a1238 ;
+        res:hasLiteralValue    "56.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-955d3239-f746-47f7-b751-ec558f1c363c .
+
+oquo:qualityValue-fa27463b-d2f8-4eb9-a55a-79f23dc091b0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b66c0777-74dd-4d4a-afc0-93de3dace87d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f54af7ef-5cbc-43aa-901e-dafead3d6803 .
+
+oquo:observation-b96a9f11-2b02-4d5d-8ccb-573ef17e8fd8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-79ca41b9-87dd-4ac1-a39a-b3671a40cee6 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-84709521-21e7-4c2b-a627-871010ac1734 .
+
+oquo:qualityValue-9123006f-f846-430a-b652-b849041a03f1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-998a9dfe-5d16-4446-aa73-c12955dafac9 ;
+        res:hasLiteralValue    "0.631578947368421"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b6931ff9-ae41-4633-8761-b0457e9c96be .
+
+oquo:evaluation-cf66a5ab-7e99-43cc-8352-31def2620774
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-742e45ed-4698-46c3-a000-5e2551a3db28 ;
+        time:hasTime              oquo:instant-186b639f-59c7-4244-a69e-aca4b1214982 ;
+        oquo:hasObservation       oquo:observation-338693cf-7316-4ea2-bdbb-1466a654c58f .
+
+oquo:evaluation-10d397f7-0288-4ca9-b663-8b5ac47cae7c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-30853192-9ea1-4ccc-812d-3376052791c2 ;
+        time:hasTime              oquo:instant-96899cb7-c42c-4c70-91a5-a5229ff8e742 ;
+        oquo:hasObservation       oquo:observation-21f46de4-85a6-4857-b7d7-544baf9b4038 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-bd55def4-2bb4-4641-bf6d-158833b3018f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-de03de67-b686-4856-8a93-a2eee104aeab ;
+        res:hasLiteralValue    "0.8888888888888888"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67fa7f44-5026-4515-90f2-e2a9e1d77590 .
+
+oquo:qualityValue-2bc9fecd-c73a-4e3a-a3c3-461431104d80
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b01e3b2c-9ffe-419d-8bac-5f5006c69d28 ;
+        res:hasLiteralValue    "0.9736842105263158"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cc8f1364-c6d5-45ba-8e04-1ddc3ac91770 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-e2c54703-53b4-410b-a728-41b78bf28ddc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a74aca62-f93f-4b0d-ad7c-793e68d7df8c ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-e93f381d-135d-4aed-a864-9ad212f2764b .
+
+oquo:qualityValue-62f8d1bd-b484-4cd9-864d-dedda5229afd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-84bde25c-e60b-4608-9a20-7b5a3d4c4751 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ce7c8757-af95-496f-ba92-c0315b2e2455 .
+
+oquo:qualityValue-17e31d5e-c348-453a-944b-86de4cb61f68
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1369f095-2cb3-44c9-b6d7-c58a5eb9fb46 ;
+        res:hasLiteralValue    "0.05263157894736842"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-63d71f6a-95af-4759-aea5-f17b0332e89e .
+
+oquo:observation-a272124f-cd03-4042-9931-7c63d340bc9e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2f0a2fea-ae5f-4ab2-82af-f029645a94a0 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-e5c4e41e-7eac-4f32-8c8b-f34e31849647 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-742e45ed-4698-46c3-a000-5e2551a3db28
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d4be2974-186e-447c-b13a-f43387e39e48 ;
+        res:hasLiteralValue    "0.7555555555555555"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cf66a5ab-7e99-43cc-8352-31def2620774 .
+
+oquo:metric-c0b7d6a7-917d-4b95-b261-4e25442304b9
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-856e533c-b38d-4659-8848-327fe7f90055 ;
+        oboe:measurementFor  oquo:observation-7b4d0bfa-7274-47a0-a685-ca477ad1b946 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-9f8faf0e-ccbc-4b6a-afb0-b6758f5df5fd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-081d7cd1-ff2e-4e53-8c7b-51ba7a4dd861 ;
+        time:hasTime              oquo:instant-b6ae2205-d633-4d32-a2f8-da1f7ef7b1a6 ;
+        oquo:hasObservation       oquo:observation-d9c9a580-9737-4a65-a017-8b1a34f0e46e .
+
+oquo:evaluation-798714f2-5d8e-4f96-876a-d8a91c6a8c30
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-322bb593-eccf-4f58-af09-dffc34d68117 ;
+        time:hasTime              oquo:instant-c655ee64-d8bf-437a-8c6d-f208d719bf48 ;
+        oquo:hasObservation       oquo:observation-289afe75-eca2-40f0-b8bf-cd5c465aa08c .
+
+oquo:observation-69e59889-99fe-4ccf-b3a3-f45b847929a7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-998a9dfe-5d16-4446-aa73-c12955dafac9 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-9ee7d02d-049c-4f42-b802-286b36c0f656 .
+
+oquo:instant-bd602742-d56c-48a0-a851-1a6f03e43d2a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.72Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-139cb5f6-1030-4e54-bded-7dd046dcc2e2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8ac23778-8df6-4489-806d-04740bc00dda ;
+        time:hasTime              oquo:instant-bd602742-d56c-48a0-a851-1a6f03e43d2a ;
+        oquo:hasObservation       oquo:observation-e364e0f5-eb17-4397-9783-50ae0a47fbea .
+
+oquo:instant-d361424e-ac33-4cb8-991d-319454fac5a1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.82Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-1b07c5d4-4fc3-4d00-84b7-a3d001ac83f4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-746334fd-3c52-4226-a3a9-fa5f016fced3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d0bb7fd3-3a5e-453f-a96d-e28873c9e2b6 .
+
+oquo:observation-89201101-f996-4ee8-9b6d-f5973d9f9837
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-466da984-45d7-422a-9c36-c57fd7fcd31b ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-69c80e1a-b5b6-4c0c-a6ff-ad6c57f28a20 .
+
+oquo:qualityValue-abd46a85-76ae-4292-8707-4bdb749997fe
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2f0a2fea-ae5f-4ab2-82af-f029645a94a0 ;
+        res:hasLiteralValue    "0.6086956521739131"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0899b330-dd17-4600-8908-ef08b7e1c17f .
+
+oquo:qualityValue-3bc22a05-275b-48c9-9299-62bd2942bfda
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e4267d0c-09ab-4250-a535-1b31859fc7b5 ;
+        res:hasLiteralValue    "0.8222222222222222"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9da2ad9f-ca95-4c6e-8354-f5778ac828f3 .
+
+oquo:metric-b66c0777-74dd-4d4a-afc0-93de3dace87d
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fa27463b-d2f8-4eb9-a55a-79f23dc091b0 ;
+        oboe:measurementFor  oquo:observation-be4e11f6-b57a-4c2c-affe-27b103617c7e ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:metric-8b542ad3-77b7-4ef8-bd3c-bebe2ed0712a
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-30853192-9ea1-4ccc-812d-3376052791c2 ;
+        oboe:measurementFor  oquo:observation-21f46de4-85a6-4857-b7d7-544baf9b4038 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:instant-d091437d-b95b-48ff-a29d-e176f134fe0f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.891Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-7babc505-048c-4810-8d06-ee900cc4680f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-16f3500a-9ac3-4d88-ab20-09495945089b ;
+        time:hasTime              oquo:instant-648cdba2-7736-42d2-bc85-6f1aedccdf48 ;
+        oquo:hasObservation       oquo:observation-4a56eccb-c225-48c8-9037-80f35f9d10b5 .
+
+oquo:qualityValue-0f96b27f-62ba-4ed4-ae50-64438d391fa5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-79ca41b9-87dd-4ac1-a39a-b3671a40cee6 ;
+        res:hasLiteralValue    "0.3627450980392157"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-80d4b4f3-1e19-461f-8d3b-314199a41e00 .
+
+oquo:observation-0e4789d4-39ca-4200-987d-c6bec9c82082
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-746334fd-3c52-4226-a3a9-fa5f016fced3 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-35cb6b36-fd84-46b0-9d29-08abad341739 .
+
+oquo:evaluation-67fce4e5-7697-414b-950b-0e9c39636e3d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-856e533c-b38d-4659-8848-327fe7f90055 ;
+        time:hasTime              oquo:instant-a629982c-f683-4b72-a746-17064fd12c37 ;
+        oquo:hasObservation       oquo:observation-7b4d0bfa-7274-47a0-a685-ca477ad1b946 .
+
+oquo:qualityValue-322bb593-eccf-4f58-af09-dffc34d68117
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f7ddb364-ffb7-47d1-9c1c-b69bb3ebab59 ;
+        res:hasLiteralValue    "0.24444444444444444"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-798714f2-5d8e-4f96-876a-d8a91c6a8c30 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-856e533c-b38d-4659-8848-327fe7f90055
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c0b7d6a7-917d-4b95-b261-4e25442304b9 ;
+        res:hasLiteralValue    "0.1111111111111111"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67fce4e5-7697-414b-950b-0e9c39636e3d .
+
+oquo:evaluation-1b2ca7f6-2dc8-4476-9a33-2a266e4269af
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8ff821b2-2a06-4d83-8301-90573462d13e ;
+        time:hasTime              oquo:instant-9c19487c-1c65-47aa-95d3-0f2ceeaa26a9 ;
+        oquo:hasObservation       oquo:observation-b98758ad-c342-4eb1-9b71-93c252093cf9 .
+
+oquo:metric-41374d5e-0b0e-40f7-9a79-9302b1ba079c
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5c2280f1-e2bb-47e6-a032-d9a0df6c1e54 ;
+        oboe:measurementFor  oquo:observation-3abd054b-303a-4d6d-9bb3-4fb850a253d2 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:metric-1c3f8e26-79dc-4f00-a791-8ec74cb3ae0a
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b7b89466-4616-4b75-b87f-3c111e7e595d ;
+        oboe:measurementFor  oquo:observation-5ca14a76-8366-47f4-bc46-92cab5c9dab9 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:observation-b98758ad-c342-4eb1-9b71-93c252093cf9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dc86950d-c595-4642-8118-85aafda04d78 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-9c19487c-1c65-47aa-95d3-0f2ceeaa26a9 .
+
+oquo:instant-67d53abf-eb93-4c55-b476-78f1d75ce1e5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.902Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4c4ee377-879c-46b2-b44b-45c88d624e5e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.9Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-b6931ff9-ae41-4633-8761-b0457e9c96be
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9123006f-f846-430a-b652-b849041a03f1 ;
+        time:hasTime              oquo:instant-9ee7d02d-049c-4f42-b802-286b36c0f656 ;
+        oquo:hasObservation       oquo:observation-69e59889-99fe-4ccf-b3a3-f45b847929a7 .
+
+oquo:instant-59126074-0256-463a-9ff0-e452a0c545d3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:29.755Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-1cc2e966-6d0f-43a1-8d6a-76bab0d43254
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b7b89466-4616-4b75-b87f-3c111e7e595d ;
+        time:hasTime              oquo:instant-3c95bfb2-cca5-4406-8530-9ef1215e1218 ;
+        oquo:hasObservation       oquo:observation-5ca14a76-8366-47f4-bc46-92cab5c9dab9 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-e93f381d-135d-4aed-a864-9ad212f2764b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.716Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-75c24554-3f1b-46d0-a1a1-72fff7097f89
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-c4eca5e8-d80a-4d4a-8367-7518cf1079b0 ;
+        oboe:measurementFor  oquo:observation-63349392-538e-4a9f-9063-f40b8772a033 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-4509d6f5-f489-4fd1-8931-6a1a6bf158ef
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:31.896Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c43b8007-3baa-4b33-aa09-4dd031a0baa6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1301cddb-c048-40ab-b6e2-dda626e307cf ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-24b554fb-ae58-4851-884c-400f553d7a86 .
+
+oquo:metric-d4635391-b4e8-4d4c-b473-8b731b3df11e
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7bc37f95-2434-41e9-ae2c-bf56b4b261ca ;
+        oboe:measurementFor  oquo:observation-f9224f84-b0d5-4e2c-8069-7a05ac040d14 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:instant-96e1a857-9bab-435c-a3f3-0158ea8fe4dc
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:29.831Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-5d8a1943-5054-4411-a087-732042a40890
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-80bfab6d-b16d-4a14-a4e6-cf78c09a3fe4 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-40e0e388-6d4f-46b5-887e-7fd834e5a6b8 .
+
+oquo:evaluation-9da2ad9f-ca95-4c6e-8354-f5778ac828f3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3bc22a05-275b-48c9-9299-62bd2942bfda ;
+        time:hasTime              oquo:instant-4c4ee377-879c-46b2-b44b-45c88d624e5e ;
+        oquo:hasObservation       oquo:observation-27aa9a82-c895-41c1-a220-61ecf2c34ad5 .
+
+oquo:evaluation-da89b2a8-7f3e-4087-845e-e4851efb86b9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://purl.obolibrary.obo/cao.owl> ;
+        res:inputData             <http://purl.obolibrary.obo/cao.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8429b4a8-fd15-45d0-8746-cce6ce67baef ;
+        time:hasTime              oquo:instant-3eb43a8c-9c08-40dd-90bc-ca25b0a576e5 ;
+        oquo:hasObservation       oquo:observation-64cff166-3b9b-44c9-9c07-f7b6ff2dfc53 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-c9b00c68-f148-4a87-9538-d4d098a6b49b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:30.11Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-7b4d0bfa-7274-47a0-a685-ca477ad1b946
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c0b7d6a7-917d-4b95-b261-4e25442304b9 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-a629982c-f683-4b72-a746-17064fd12c37 .
+
+oquo:observation-289afe75-eca2-40f0-b8bf-cd5c465aa08c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f7ddb364-ffb7-47d1-9c1c-b69bb3ebab59 ;
+        oboe:ofEntity        <http://purl.obolibrary.obo/cao.owl> ;
+        time:hasTime         oquo:instant-c655ee64-d8bf-437a-8c6d-f208d719bf48 .
+
+oquo:metric-84bde25c-e60b-4608-9a20-7b5a3d4c4751
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-62f8d1bd-b484-4cd9-864d-dedda5229afd ;
+        oboe:measurementFor  oquo:observation-93db20a7-5360-4026-9f04-b7930b3d408a ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .

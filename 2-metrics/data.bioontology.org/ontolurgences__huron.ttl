@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:metric-50b17d47-2182-432a-b758-f1832eb2f979
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-5bac4643-e07a-46be-bd85-88767d00a88a ;
+        oboe:measurementFor  oquo:observation-70c53332-0603-45ae-bdbb-08687a1befc4 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-9d7bdc04-790d-45f9-8fc6-5958a45c7d73
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-74e86b0e-76ff-41e5-b77f-f4a1d594bf48 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e47e8f0b-c30a-4d30-8c67-aef37bd1e9a0 .
+
+oquo:observation-db914440-19a2-478d-9e8e-c4ad72dc57e7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-23fbed98-6b4f-4175-a5a6-b69c1c15cf94 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-80a444d0-480e-4084-bfb8-d54caf4b4630 .
+
+oquo:qualityValue-5dd21b06-dbbe-43ae-aa8c-3ad93bdf7b8f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d0f0c016-9897-4341-866f-17a68c7e23e2 ;
+        res:hasLiteralValue    "0.2"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c7e9b60b-5287-4908-b495-f0511c4436e4 .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-21a15c08-2c41-4f26-a2a0-593b155ec7df
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.422Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-326763ab-b28d-4b05-a316-055ea529653b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.461Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-60dddfca-fc91-4650-b48c-08ecc11dd1f9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-71315af9-638c-4c29-ab63-4060518d7298 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-1682c7e2-6c4c-4c57-837c-a512014cc11a .
+
+oquo:observation-da8b8b26-ba25-499b-8592-6c58570c818c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-74e86b0e-76ff-41e5-b77f-f4a1d594bf48 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-5ba1f004-ddee-43c0-a80c-4a3fccab11e0 .
+
+oquo:evaluation-e47e8f0b-c30a-4d30-8c67-aef37bd1e9a0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-9d7bdc04-790d-45f9-8fc6-5958a45c7d73 ;
+        time:hasTime              oquo:instant-5ba1f004-ddee-43c0-a80c-4a3fccab11e0 ;
+        oquo:hasObservation       oquo:observation-da8b8b26-ba25-499b-8592-6c58570c818c .
+
+oquo:qualityValue-eee6cf37-ecb3-41f5-a1f9-c7cd6fb68b0b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ec4560e8-fd7b-40c8-b3ad-e702c61b2ac8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b41b63b7-4ef8-4fb3-a108-de6e18e650bd .
+
+oquo:evaluation-77fba296-59ee-4529-9979-5252f9c42f5d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-fa13beff-6d4d-4aa4-8d15-d5bcae99f090 ;
+        time:hasTime              oquo:instant-a4543edd-c2ae-49d8-987c-b903f3f7f3ba ;
+        oquo:hasObservation       oquo:observation-50c3d381-c66c-4dc3-b19f-8986a972e6b8 .
+
+oquo:instant-76464425-3993-4a29-aa5b-18e1fa17b6f5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.481Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-02dcc834-d220-48e7-a9fd-f5744e0b1698
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-4b99fa53-3a5b-4499-afaf-60df9c7cb576 ;
+        oboe:measurementFor  oquo:observation-12beaad1-3c72-47aa-8887-1ae3ee47015a ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:instant-23d4faf3-820e-4daf-aa08-5029d32f4d98
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.988Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-5b5d63c0-c84b-42b5-9bae-bbfe1b77a2f1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cd57ff80-b04b-413d-810b-efb7751f95e0 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-161bad02-246f-4565-87ac-fb207c781f1d .
+
+oquo:qualityValue-b8af9de6-bdff-41eb-99b0-2b2f455b2bc5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5f9ec3d5-53ab-4f72-8bdd-68919c2daac3 ;
+        res:hasLiteralValue    "0.7702891326021934"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f6effad1-80f9-4d5c-80ff-ce576334ec36 .
+
+oquo:metric-fcdbcb69-74a9-4f9f-8d79-c1a41a2963d9
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6c1bb52a-00af-4253-923e-57ac439305e3 ;
+        oboe:measurementFor  oquo:observation-4f2dee6f-1444-4b68-b4be-85e17289e83c ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:metric-315411e8-395d-4831-b919-efe26e5630fb
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f206fc1a-2482-4745-bb64-74c03cd81ed2 ;
+        oboe:measurementFor  oquo:observation-785c2627-daa4-4ea8-8ccb-4bea794f3ad9 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-f1eb9efd-d2cd-429d-845c-35846a434126
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.675Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b41b63b7-4ef8-4fb3-a108-de6e18e650bd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-eee6cf37-ecb3-41f5-a1f9-c7cd6fb68b0b ;
+        time:hasTime              oquo:instant-dbba28c3-530e-4fb7-8c4a-c19950e33692 ;
+        oquo:hasObservation       oquo:observation-c830116f-11b3-4a5d-9f9b-ed3f83ab0bd3 .
+
+oquo:evaluation-78fc4c8b-aea4-40f0-9907-4dc301ccddf0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-287b916d-08f8-4108-9ad0-c0330a373fab ;
+        time:hasTime              oquo:instant-15e9adbb-26f0-4362-baff-5ca7343660d4 ;
+        oquo:hasObservation       oquo:observation-c0aa97c4-1a0d-42bb-9509-2e4df1d8b541 .
+
+oquo:metric-9df73dc2-c8d6-4379-aff5-d9f2c2b2be39
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-0628d5a3-b15e-4e4b-a632-8c1afba1d716 ;
+        oboe:measurementFor  oquo:observation-9348e2eb-6c8d-4b8c-97fe-01cbafa1f6f5 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:instant-80a444d0-480e-4084-bfb8-d54caf4b4630
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:48.321Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-2418c5a0-176a-4080-ae72-4b5e7ac1e780
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-54dd7a68-6eed-4213-8168-489797724b67 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-465ba90a-9dc5-4ca5-baa7-39735988686b .
+
+oquo:qualityValue-f206fc1a-2482-4745-bb64-74c03cd81ed2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-315411e8-395d-4831-b919-efe26e5630fb ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-22fe29cf-da9b-4a1b-8900-5a8628a50942 .
+
+oquo:evaluation-c8dcb027-9c4d-458b-a11e-48a1ba9ecaf0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-69014dcf-7bc5-4c2c-ab16-9f75862d0add ;
+        time:hasTime              oquo:instant-b3a425c8-1d44-4cb3-b83f-1c0a35b2f6bf ;
+        oquo:hasObservation       oquo:observation-a3fd382c-5e8f-4d42-88af-d4387feec8ee .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-12beaad1-3c72-47aa-8887-1ae3ee47015a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-02dcc834-d220-48e7-a9fd-f5744e0b1698 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-768ab418-3da0-4325-84b1-26083f00e310 .
+
+oquo:metric-dac12aa6-d5b8-426c-a0cf-31721249227a
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4abe8449-6ec9-45f8-99b3-40fdb282e639 ;
+        oboe:measurementFor  oquo:observation-dd66c563-f33d-48a1-8dad-e3bf2fb45c29 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:metric-54dd7a68-6eed-4213-8168-489797724b67
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-2418c5a0-176a-4080-ae72-4b5e7ac1e780 ;
+        oboe:measurementFor  oquo:observation-f7635dec-8c94-44bc-88b0-6c1d3f247c05 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-dcf94ebb-a021-48e6-94d4-0888896c15aa
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-e810ae4a-5dc6-4f03-8c09-ed3e6158c948 ;
+        oboe:measurementFor  oquo:observation-b7b87876-d457-423b-b1dc-09eafc03657d ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-4cc5d25d-b4ac-4ee2-a234-4988c957832b
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-2687e80d-c905-48c2-b198-f89bf72c1180 ;
+        oboe:measurementFor  oquo:observation-f4130ba4-b2ec-45a2-973f-06f7781e264f ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-c0aa97c4-1a0d-42bb-9509-2e4df1d8b541
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3c5a899d-ee43-442c-8423-ef43082082b8 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-15e9adbb-26f0-4362-baff-5ca7343660d4 .
+
+oquo:observation-f7635dec-8c94-44bc-88b0-6c1d3f247c05
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-54dd7a68-6eed-4213-8168-489797724b67 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-6ff9c670-ffb8-4c82-a4f9-ca366274325a .
+
+oquo:metric-c2920457-e99e-4ed8-948c-9b2fc3b11173
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-fa13beff-6d4d-4aa4-8d15-d5bcae99f090 ;
+        oboe:measurementFor  oquo:observation-50c3d381-c66c-4dc3-b19f-8986a972e6b8 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:observation-c830116f-11b3-4a5d-9f9b-ed3f83ab0bd3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ec4560e8-fd7b-40c8-b3ad-e702c61b2ac8 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-dbba28c3-530e-4fb7-8c4a-c19950e33692 .
+
+oquo:evaluation-465ba90a-9dc5-4ca5-baa7-39735988686b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-2418c5a0-176a-4080-ae72-4b5e7ac1e780 ;
+        time:hasTime              oquo:instant-6ff9c670-ffb8-4c82-a4f9-ca366274325a ;
+        oquo:hasObservation       oquo:observation-f7635dec-8c94-44bc-88b0-6c1d3f247c05 .
+
+oquo:evaluation-dcd08851-a90c-4b85-b623-9ce66df7ffd5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-d1312b15-b7ef-46ca-8289-a9fe646f0733 ;
+        time:hasTime              oquo:instant-23d4faf3-820e-4daf-aa08-5029d32f4d98 ;
+        oquo:hasObservation       oquo:observation-f5470837-83bf-408a-8cc3-dd9e2bde9ba0 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-0c2ad548-3062-44f2-b87a-5fa5af49d7b7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-d79be242-b375-40b8-bb2f-fa5a60800bd9 ;
+        time:hasTime              oquo:instant-1682c7e2-6c4c-4c57-837c-a512014cc11a ;
+        oquo:hasObservation       oquo:observation-60dddfca-fc91-4650-b48c-08ecc11dd1f9 .
+
+oquo:evaluation-2d19231c-700e-4bf3-91d4-3f9dceaa7d21
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-4b99fa53-3a5b-4499-afaf-60df9c7cb576 ;
+        time:hasTime              oquo:instant-768ab418-3da0-4325-84b1-26083f00e310 ;
+        oquo:hasObservation       oquo:observation-12beaad1-3c72-47aa-8887-1ae3ee47015a .
+
+oquo:qualityValue-f79a84e1-4506-4abb-82df-fee0144562e0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3434dc72-4a15-4cf2-9622-4db50c0f06e2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0a834ccd-c19f-4b90-811c-761afa05e6db .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-3f3286ee-89f6-4400-95da-51e9632756f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-f6b1eb48-801f-4c57-93c0-1c145aad93c1 ;
+        time:hasTime              oquo:instant-814884ed-e810-4af4-9827-563ea144903d ;
+        oquo:hasObservation       oquo:observation-7644d4f1-6035-44f0-891f-84c0794977bd .
+
+oquo:qualityValue-7c223018-6851-4d8d-9f3b-f3c31b6cff03
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fb3dd761-ba0e-4986-8add-9cbded4b73c0 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6c853f5a-3d33-430c-9164-1d755eb93f2a .
+
+oquo:evaluation-4d897158-5e30-48b3-bc2a-6a87718843ca
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-4fc2b22c-f3df-4481-a01f-dda4001f6ac9 ;
+        time:hasTime              oquo:instant-2b5f8dab-1f9a-48d2-84e6-7eadf637f3c8 ;
+        oquo:hasObservation       oquo:observation-2ec51e87-9a99-4762-8ef2-f81946255ec4 .
+
+oquo:evaluation-99bc5657-6def-43bc-9f87-b3f5c02091cb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-b8e2999f-9236-4702-9d5d-5cbadc3670f0 ;
+        time:hasTime              oquo:instant-130e73cd-29b4-4d65-a604-a25089bb6e71 ;
+        oquo:hasObservation       oquo:observation-f7338d3f-d2de-4da0-8a3e-77e4fdd64e6a .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-44b72b9a-91e2-4db5-ab9a-7b019718e560
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2a4ffef5-244a-48d7-8d6c-6a36411c84e4 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-f4a1ad39-ac57-403e-bc95-f706802c3641 .
+
+oquo:observation-ede3020b-6e74-4451-a028-8e9fdbce1f10
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a4fe0440-7a47-4274-9fdf-b5b12c0e336e ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-c3abd424-c0b2-46ea-a274-af6d89a1c883 .
+
+oquo:evaluation-c7e9b60b-5287-4908-b495-f0511c4436e4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-5dd21b06-dbbe-43ae-aa8c-3ad93bdf7b8f ;
+        time:hasTime              oquo:instant-21a15c08-2c41-4f26-a2a0-593b155ec7df ;
+        oquo:hasObservation       oquo:observation-9574e017-0969-4948-93ff-5a36982ec90b .
+
+oquo:observation-832cf12c-ee5a-46bb-8e78-f5ccb92956cb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3b48aaaa-4406-46f8-9c07-f7a28a1d8534 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-76464425-3993-4a29-aa5b-18e1fa17b6f5 .
+
+oquo:qualityValue-0628d5a3-b15e-4e4b-a632-8c1afba1d716
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9df73dc2-c8d6-4379-aff5-d9f2c2b2be39 ;
+        res:hasLiteralValue    "0.8"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-77a35a61-83cb-475c-a249-1158724e1f7f .
+
+oquo:evaluation-646efb86-6384-4afc-a3a5-a60d57cc97d6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-0c2a870c-e2f9-4182-b921-bb6f6c029752 ;
+        time:hasTime              oquo:instant-c3abd424-c0b2-46ea-a274-af6d89a1c883 ;
+        oquo:hasObservation       oquo:observation-ede3020b-6e74-4451-a028-8e9fdbce1f10 .
+
+oquo:qualityValue-e810ae4a-5dc6-4f03-8c09-ed3e6158c948
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dcf94ebb-a021-48e6-94d4-0888896c15aa ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-138a20dc-ff3f-4a5d-be4e-7f5591ca327d .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:instant-f67657ac-db3e-441a-809e-797aa3c5c267
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.476Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a4543edd-c2ae-49d8-987c-b903f3f7f3ba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:49.638Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-23fbed98-6b4f-4175-a5a6-b69c1c15cf94
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-7be02f0c-9bd4-4348-a181-1016e9f70d5e ;
+        oboe:measurementFor  oquo:observation-db914440-19a2-478d-9e8e-c4ad72dc57e7 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-814884ed-e810-4af4-9827-563ea144903d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.408Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-bfeb79cf-703c-46ab-a5f1-c243db179976
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a00a6ab8-9f20-46a4-bc0b-0e24a2d2eff4 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-f71f4121-5e36-4720-bfe7-d9e9ea8faf2c .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-70c53332-0603-45ae-bdbb-08687a1befc4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-50b17d47-2182-432a-b758-f1832eb2f979 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-9a36950d-8693-4306-a66e-aaac1ecc5ca2 .
+
+oquo:evaluation-58575cbb-a5dd-495e-b5d7-28fc0e4f5e27
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-e88b4ded-526a-4a34-b33b-500fb5d6d907 ;
+        time:hasTime              oquo:instant-541fb21f-37e5-4bf0-b10d-bf30cc03fc64 ;
+        oquo:hasObservation       oquo:observation-5ab011b4-f60b-4e69-9528-6876d27ed4b2 .
+
+oquo:metric-cd57ff80-b04b-413d-810b-efb7751f95e0
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-5b5d63c0-c84b-42b5-9bae-bbfe1b77a2f1 ;
+        oboe:measurementFor  oquo:observation-7498b25e-781c-4757-8843-a86df224b103 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:metric-71315af9-638c-4c29-ab63-4060518d7298
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d79be242-b375-40b8-bb2f-fa5a60800bd9 ;
+        oboe:measurementFor  oquo:observation-60dddfca-fc91-4650-b48c-08ecc11dd1f9 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:instant-9a36950d-8693-4306-a66e-aaac1ecc5ca2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.473Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-49ede6c0-e4f5-4259-b1cd-5305791a7b36
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.698Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-4da79022-0a7c-4daa-9d0f-b11992bc6fda
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-6c1bb52a-00af-4253-923e-57ac439305e3 ;
+        time:hasTime              oquo:instant-f1eb9efd-d2cd-429d-845c-35846a434126 ;
+        oquo:hasObservation       oquo:observation-4f2dee6f-1444-4b68-b4be-85e17289e83c .
+
+oquo:evaluation-80029aea-d549-46be-86c9-2f89495af860
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-7be02f0c-9bd4-4348-a181-1016e9f70d5e ;
+        time:hasTime              oquo:instant-80a444d0-480e-4084-bfb8-d54caf4b4630 ;
+        oquo:hasObservation       oquo:observation-db914440-19a2-478d-9e8e-c4ad72dc57e7 .
+
+oquo:instant-cb27f13e-08be-41ff-a12c-c19163d9f57d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.226Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-4ab682be-445a-4a85-af0d-03597bc48f28
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-9d104e8a-e776-4c58-80f9-0de0f7bf2220 ;
+        time:hasTime              oquo:instant-f4a1ad39-ac57-403e-bc95-f706802c3641 ;
+        oquo:hasObservation       oquo:observation-44b72b9a-91e2-4db5-ab9a-7b019718e560 .
+
+oquo:qualityValue-fa13beff-6d4d-4aa4-8d15-d5bcae99f090
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c2920457-e99e-4ed8-948c-9b2fc3b11173 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-77fba296-59ee-4529-9979-5252f9c42f5d .
+
+oquo:qualityValue-0c2a870c-e2f9-4182-b921-bb6f6c029752
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a4fe0440-7a47-4274-9fdf-b5b12c0e336e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-646efb86-6384-4afc-a3a5-a60d57cc97d6 .
+
+oquo:qualityValue-5bac4643-e07a-46be-bd85-88767d00a88a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-50b17d47-2182-432a-b758-f1832eb2f979 ;
+        res:hasLiteralValue    "0.43333333333333335"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-76bcf4d8-65b2-4a60-88d6-0c9d6e0f50bd .
+
+oquo:metric-3c5a899d-ee43-442c-8423-ef43082082b8
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-287b916d-08f8-4108-9ad0-c0330a373fab ;
+        oboe:measurementFor  oquo:observation-c0aa97c4-1a0d-42bb-9509-2e4df1d8b541 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-2b175de1-a40f-4857-93aa-1fb5846646a3
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-b8e2999f-9236-4702-9d5d-5cbadc3670f0 ;
+        oboe:measurementFor  oquo:observation-f7338d3f-d2de-4da0-8a3e-77e4fdd64e6a ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-6c1bb52a-00af-4253-923e-57ac439305e3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fcdbcb69-74a9-4f9f-8d79-c1a41a2963d9 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4da79022-0a7c-4daa-9d0f-b11992bc6fda .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-287b916d-08f8-4108-9ad0-c0330a373fab
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3c5a899d-ee43-442c-8423-ef43082082b8 ;
+        res:hasLiteralValue    "0.0415752741774676"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-78fc4c8b-aea4-40f0-9907-4dc301ccddf0 .
+
+oquo:instant-768ab418-3da0-4325-84b1-26083f00e310
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.228Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-f4a1ad39-ac57-403e-bc95-f706802c3641
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.475Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-a7ece089-76c8-4e0e-b7d6-bd0f37831cad
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:47.806Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-f34b04c5-cc7e-4d03-9ad0-47d534c5e47b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.295Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-f6effad1-80f9-4d5c-80ff-ce576334ec36
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-b8af9de6-bdff-41eb-99b0-2b2f455b2bc5 ;
+        time:hasTime              oquo:instant-cd73ca01-ff30-4a3e-a5cd-846fbc9b007d ;
+        oquo:hasObservation       oquo:observation-6d4794e5-01df-46ad-b81f-e3292648b419 .
+
+oquo:instant-1682c7e2-6c4c-4c57-837c-a512014cc11a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.864Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-9574e017-0969-4948-93ff-5a36982ec90b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d0f0c016-9897-4341-866f-17a68c7e23e2 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-21a15c08-2c41-4f26-a2a0-593b155ec7df .
+
+oquo:qualityValue-4b99fa53-3a5b-4499-afaf-60df9c7cb576
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-02dcc834-d220-48e7-a9fd-f5744e0b1698 ;
+        res:hasLiteralValue    "1.2799601196410768"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2d19231c-700e-4bf3-91d4-3f9dceaa7d21 .
+
+oquo:qualityValue-2c319200-b567-4e54-bd09-168e649ed7d7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3b48aaaa-4406-46f8-9c07-f7a28a1d8534 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0fb3e346-b691-4864-be0c-5a3580169035 .
+
+oquo:evaluation-6c853f5a-3d33-430c-9164-1d755eb93f2a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-7c223018-6851-4d8d-9f3b-f3c31b6cff03 ;
+        time:hasTime              oquo:instant-666186c9-3f82-4458-a4dc-cf6029ada3c0 ;
+        oquo:hasObservation       oquo:observation-6c1f7660-53c0-488a-b227-d1771c6ebcad .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-3434dc72-4a15-4cf2-9622-4db50c0f06e2
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f79a84e1-4506-4abb-82df-fee0144562e0 ;
+        oboe:measurementFor  oquo:observation-b51975a4-77aa-4aab-8d23-5478afedc90f ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-f4130ba4-b2ec-45a2-973f-06f7781e264f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4cc5d25d-b4ac-4ee2-a234-4988c957832b ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-a7ece089-76c8-4e0e-b7d6-bd0f37831cad .
+
+oquo:metric-d0f0c016-9897-4341-866f-17a68c7e23e2
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-5dd21b06-dbbe-43ae-aa8c-3ad93bdf7b8f ;
+        oboe:measurementFor  oquo:observation-9574e017-0969-4948-93ff-5a36982ec90b ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:metric-58a2ec9e-8c35-444f-a762-22ccac6784aa
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f6b1eb48-801f-4c57-93c0-1c145aad93c1 ;
+        oboe:measurementFor  oquo:observation-7644d4f1-6035-44f0-891f-84c0794977bd ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:evaluation-462624f8-feb8-4f2b-8f51-6e9a3a19c162
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-4abe8449-6ec9-45f8-99b3-40fdb282e639 ;
+        time:hasTime              oquo:instant-e8aa1a0b-bf07-4091-9971-5d48011c050d ;
+        oquo:hasObservation       oquo:observation-dd66c563-f33d-48a1-8dad-e3bf2fb45c29 .
+
+oquo:observation-dd66c563-f33d-48a1-8dad-e3bf2fb45c29
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dac12aa6-d5b8-426c-a0cf-31721249227a ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-e8aa1a0b-bf07-4091-9971-5d48011c050d .
+
+oquo:metric-21aec7e0-d993-4548-958d-72354b9ec293
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ed722a9d-0a68-45e9-aeee-fc3eab12ca97 ;
+        oboe:measurementFor  oquo:observation-d3bc6e2f-75c9-45bf-8f2e-d3e6c9a616f6 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-d1312b15-b7ef-46ca-8289-a9fe646f0733
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6d60a730-9430-4bcc-a4b2-84262105df95 ;
+        res:hasLiteralValue    "0.9585244267198405"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dcd08851-a90c-4b85-b623-9ce66df7ffd5 .
+
+oquo:evaluation-0a834ccd-c19f-4b90-811c-761afa05e6db
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-f79a84e1-4506-4abb-82df-fee0144562e0 ;
+        time:hasTime              oquo:instant-4a857546-e6ea-4ffd-a044-285856a2707a ;
+        oquo:hasObservation       oquo:observation-b51975a4-77aa-4aab-8d23-5478afedc90f .
+
+oquo:evaluation-1d8cdb08-6856-4c57-8182-625bc50d6216
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-2687e80d-c905-48c2-b198-f89bf72c1180 ;
+        time:hasTime              oquo:instant-a7ece089-76c8-4e0e-b7d6-bd0f37831cad ;
+        oquo:hasObservation       oquo:observation-f4130ba4-b2ec-45a2-973f-06f7781e264f .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-b847efc3-68c9-4357-9332-157a2953f867
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-69014dcf-7bc5-4c2c-ab16-9f75862d0add ;
+        oboe:measurementFor  oquo:observation-a3fd382c-5e8f-4d42-88af-d4387feec8ee ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-2687e80d-c905-48c2-b198-f89bf72c1180
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4cc5d25d-b4ac-4ee2-a234-4988c957832b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1d8cdb08-6856-4c57-8182-625bc50d6216 .
+
+oquo:observation-2ec51e87-9a99-4762-8ef2-f81946255ec4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6f416e58-7457-4c51-bceb-5469abef946f ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-2b5f8dab-1f9a-48d2-84e6-7eadf637f3c8 .
+
+oquo:metric-6f416e58-7457-4c51-bceb-5469abef946f
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4fc2b22c-f3df-4481-a01f-dda4001f6ac9 ;
+        oboe:measurementFor  oquo:observation-2ec51e87-9a99-4762-8ef2-f81946255ec4 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-112f0b27-2e6a-4db6-a436-4918802781f1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1796630d-aa1a-41e5-ad5c-49031c52e367 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-1e91e90b-2a76-49e7-80f6-1e498d2cd725 .
+
+oquo:qualityValue-b8e2999f-9236-4702-9d5d-5cbadc3670f0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2b175de1-a40f-4857-93aa-1fb5846646a3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-99bc5657-6def-43bc-9f87-b3f5c02091cb .
+
+oquo:evaluation-138a20dc-ff3f-4a5d-be4e-7f5591ca327d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-e810ae4a-5dc6-4f03-8c09-ed3e6158c948 ;
+        time:hasTime              oquo:instant-09785ff3-58b5-423c-8578-ed5487946065 ;
+        oquo:hasObservation       oquo:observation-b7b87876-d457-423b-b1dc-09eafc03657d .
+
+oquo:instant-4a857546-e6ea-4ffd-a044-285856a2707a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.421Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:qualityValue-4fc2b22c-f3df-4481-a01f-dda4001f6ac9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6f416e58-7457-4c51-bceb-5469abef946f ;
+        res:hasLiteralValue    "0.6"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4d897158-5e30-48b3-bc2a-6a87718843ca .
+
+<http://www.limics.fr/ontologies/ontolurgences>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:evaluation-76bcf4d8-65b2-4a60-88d6-0c9d6e0f50bd
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-5bac4643-e07a-46be-bd85-88767d00a88a ;
+        time:hasTime              oquo:instant-9a36950d-8693-4306-a66e-aaac1ecc5ca2 ;
+        oquo:hasObservation       oquo:observation-70c53332-0603-45ae-bdbb-08687a1befc4 .
+
+oquo:observation-b7b87876-d457-423b-b1dc-09eafc03657d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dcf94ebb-a021-48e6-94d4-0888896c15aa ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-09785ff3-58b5-423c-8578-ed5487946065 .
+
+oquo:observation-785c2627-daa4-4ea8-8ccb-4bea794f3ad9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-315411e8-395d-4831-b919-efe26e5630fb ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-49ede6c0-e4f5-4259-b1cd-5305791a7b36 .
+
+oquo:observation-d3bc6e2f-75c9-45bf-8f2e-d3e6c9a616f6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-21aec7e0-d993-4548-958d-72354b9ec293 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-f34b04c5-cc7e-4d03-9ad0-47d534c5e47b .
+
+oquo:observation-9348e2eb-6c8d-4b8c-97fe-01cbafa1f6f5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9df73dc2-c8d6-4379-aff5-d9f2c2b2be39 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-326763ab-b28d-4b05-a316-055ea529653b .
+
+oquo:metric-f7d52648-f658-41e1-b5ea-9e166db05f50
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e88b4ded-526a-4a34-b33b-500fb5d6d907 ;
+        oboe:measurementFor  oquo:observation-5ab011b4-f60b-4e69-9528-6876d27ed4b2 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:metric-79b3d3da-439f-414d-a4bd-34ca0b8ccca8
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-72a96a7e-736a-45b4-b724-fc1d7dde1e92 ;
+        oboe:measurementFor  oquo:observation-92e6f999-d1b7-4f62-b2b5-975d80173b16 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-a00a6ab8-9f20-46a4-bc0b-0e24a2d2eff4
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-7bf39b14-e989-497f-a37e-a2b6047a8415 ;
+        oboe:measurementFor  oquo:observation-bfeb79cf-703c-46ab-a5f1-c243db179976 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-72a96a7e-736a-45b4-b724-fc1d7dde1e92
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-79b3d3da-439f-414d-a4bd-34ca0b8ccca8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9e0fc73a-f693-4e00-ad29-abf47ec13f5e .
+
+oquo:observation-7498b25e-781c-4757-8843-a86df224b103
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cd57ff80-b04b-413d-810b-efb7751f95e0 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-f67657ac-db3e-441a-809e-797aa3c5c267 .
+
+oquo:instant-2b5f8dab-1f9a-48d2-84e6-7eadf637f3c8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.862Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-4abe8449-6ec9-45f8-99b3-40fdb282e639
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dac12aa6-d5b8-426c-a0cf-31721249227a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-462624f8-feb8-4f2b-8f51-6e9a3a19c162 .
+
+oquo:instant-e8aa1a0b-bf07-4091-9971-5d48011c050d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.669Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-2a4ffef5-244a-48d7-8d6c-6a36411c84e4
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-9d104e8a-e776-4c58-80f9-0de0f7bf2220 ;
+        oboe:measurementFor  oquo:observation-44b72b9a-91e2-4db5-ab9a-7b019718e560 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-d79be242-b375-40b8-bb2f-fa5a60800bd9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-71315af9-638c-4c29-ab63-4060518d7298 ;
+        res:hasLiteralValue    "0.005982053838484547"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0c2ad548-3062-44f2-b87a-5fa5af49d7b7 .
+
+oquo:evaluation-0fb3e346-b691-4864-be0c-5a3580169035
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-2c319200-b567-4e54-bd09-168e649ed7d7 ;
+        time:hasTime              oquo:instant-76464425-3993-4a29-aa5b-18e1fa17b6f5 ;
+        oquo:hasObservation       oquo:observation-832cf12c-ee5a-46bb-8e78-f5ccb92956cb .
+
+oquo:instant-6ff9c670-ffb8-4c82-a4f9-ca366274325a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:48.104Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-5f9ec3d5-53ab-4f72-8bdd-68919c2daac3
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-b8af9de6-bdff-41eb-99b0-2b2f455b2bc5 ;
+        oboe:measurementFor  oquo:observation-6d4794e5-01df-46ad-b81f-e3292648b419 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:instant-c3abd424-c0b2-46ea-a274-af6d89a1c883
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:47.74Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-22fe29cf-da9b-4a1b-8900-5a8628a50942
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-f206fc1a-2482-4745-bb64-74c03cd81ed2 ;
+        time:hasTime              oquo:instant-49ede6c0-e4f5-4259-b1cd-5305791a7b36 ;
+        oquo:hasObservation       oquo:observation-785c2627-daa4-4ea8-8ccb-4bea794f3ad9 .
+
+oquo:observation-4f2dee6f-1444-4b68-b4be-85e17289e83c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fcdbcb69-74a9-4f9f-8d79-c1a41a2963d9 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-f1eb9efd-d2cd-429d-845c-35846a434126 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-9d104e8a-e776-4c58-80f9-0de0f7bf2220
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2a4ffef5-244a-48d7-8d6c-6a36411c84e4 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4ab682be-445a-4a85-af0d-03597bc48f28 .
+
+oquo:instant-130e73cd-29b4-4d65-a604-a25089bb6e71
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.478Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-74e86b0e-76ff-41e5-b77f-f4a1d594bf48
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-9d7bdc04-790d-45f9-8fc6-5958a45c7d73 ;
+        oboe:measurementFor  oquo:observation-da8b8b26-ba25-499b-8592-6c58570c818c ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:qualityValue-69014dcf-7bc5-4c2c-ab16-9f75862d0add
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b847efc3-68c9-4357-9332-157a2953f867 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c8dcb027-9c4d-458b-a11e-48a1ba9ecaf0 .
+
+oquo:evaluation-3aeb6c43-5402-447d-9bb7-024cded5ea6e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-7bf39b14-e989-497f-a37e-a2b6047a8415 ;
+        time:hasTime              oquo:instant-f71f4121-5e36-4720-bfe7-d9e9ea8faf2c ;
+        oquo:hasObservation       oquo:observation-bfeb79cf-703c-46ab-a5f1-c243db179976 .
+
+oquo:instant-5ba1f004-ddee-43c0-a80c-4a3fccab11e0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:48.107Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-41423933-585d-4ba0-8f8d-71cfc43df43c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.86Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-fb3dd761-ba0e-4986-8add-9cbded4b73c0
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-7c223018-6851-4d8d-9f3b-f3c31b6cff03 ;
+        oboe:measurementFor  oquo:observation-6c1f7660-53c0-488a-b227-d1771c6ebcad ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-77a35a61-83cb-475c-a249-1158724e1f7f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-0628d5a3-b15e-4e4b-a632-8c1afba1d716 ;
+        time:hasTime              oquo:instant-326763ab-b28d-4b05-a316-055ea529653b ;
+        oquo:hasObservation       oquo:observation-9348e2eb-6c8d-4b8c-97fe-01cbafa1f6f5 .
+
+oquo:observation-574092ca-99da-4fcb-8d23-3a80a95ec699
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d4ae15df-5d7a-44bd-b3e3-0e6be221e96b ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-cb27f13e-08be-41ff-a12c-c19163d9f57d .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-7be02f0c-9bd4-4348-a181-1016e9f70d5e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-23fbed98-6b4f-4175-a5a6-b69c1c15cf94 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-80029aea-d549-46be-86c9-2f89495af860 .
+
+oquo:observation-7644d4f1-6035-44f0-891f-84c0794977bd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-58a2ec9e-8c35-444f-a762-22ccac6784aa ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-814884ed-e810-4af4-9827-563ea144903d .
+
+oquo:instant-15e9adbb-26f0-4362-baff-5ca7343660d4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.702Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-161bad02-246f-4565-87ac-fb207c781f1d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-5b5d63c0-c84b-42b5-9bae-bbfe1b77a2f1 ;
+        time:hasTime              oquo:instant-f67657ac-db3e-441a-809e-797aa3c5c267 ;
+        oquo:hasObservation       oquo:observation-7498b25e-781c-4757-8843-a86df224b103 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-130890d9-45bc-4caa-918d-e68999347365
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d4ae15df-5d7a-44bd-b3e3-0e6be221e96b ;
+        res:hasLiteralValue    "10031.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-acd815a1-0180-433a-bd7c-be0c1045e475 .
+
+oquo:instant-541fb21f-37e5-4bf0-b10d-bf30cc03fc64
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.857Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-5ab011b4-f60b-4e69-9528-6876d27ed4b2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f7d52648-f658-41e1-b5ea-9e166db05f50 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-541fb21f-37e5-4bf0-b10d-bf30cc03fc64 .
+
+oquo:observation-a3fd382c-5e8f-4d42-88af-d4387feec8ee
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b847efc3-68c9-4357-9332-157a2953f867 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-b3a425c8-1d44-4cb3-b83f-1c0a35b2f6bf .
+
+oquo:instant-09785ff3-58b5-423c-8578-ed5487946065
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.48Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6c1f7660-53c0-488a-b227-d1771c6ebcad
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fb3dd761-ba0e-4986-8add-9cbded4b73c0 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-666186c9-3f82-4458-a4dc-cf6029ada3c0 .
+
+oquo:metric-d4ae15df-5d7a-44bd-b3e3-0e6be221e96b
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-130890d9-45bc-4caa-918d-e68999347365 ;
+        oboe:measurementFor  oquo:observation-574092ca-99da-4fcb-8d23-3a80a95ec699 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:instant-666186c9-3f82-4458-a4dc-cf6029ada3c0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.477Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1e91e90b-2a76-49e7-80f6-1e498d2cd725
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.418Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-33e9c2bb-a1b4-40f0-a0c7-c0f3107cbdcc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1796630d-aa1a-41e5-ad5c-49031c52e367 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2108e40b-6850-429f-9536-23ea8fe75b03 .
+
+oquo:evaluation-acd815a1-0180-433a-bd7c-be0c1045e475
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-130890d9-45bc-4caa-918d-e68999347365 ;
+        time:hasTime              oquo:instant-cb27f13e-08be-41ff-a12c-c19163d9f57d ;
+        oquo:hasObservation       oquo:observation-574092ca-99da-4fcb-8d23-3a80a95ec699 .
+
+oquo:observation-f5470837-83bf-408a-8cc3-dd9e2bde9ba0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6d60a730-9430-4bcc-a4b2-84262105df95 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-23d4faf3-820e-4daf-aa08-5029d32f4d98 .
+
+oquo:metric-a4fe0440-7a47-4274-9fdf-b5b12c0e336e
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-0c2a870c-e2f9-4182-b921-bb6f6c029752 ;
+        oboe:measurementFor  oquo:observation-ede3020b-6e74-4451-a028-8e9fdbce1f10 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-1796630d-aa1a-41e5-ad5c-49031c52e367
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-33e9c2bb-a1b4-40f0-a0c7-c0f3107cbdcc ;
+        oboe:measurementFor  oquo:observation-112f0b27-2e6a-4db6-a436-4918802781f1 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-6d60a730-9430-4bcc-a4b2-84262105df95
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-d1312b15-b7ef-46ca-8289-a9fe646f0733 ;
+        oboe:measurementFor  oquo:observation-f5470837-83bf-408a-8cc3-dd9e2bde9ba0 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:observation-92e6f999-d1b7-4f62-b2b5-975d80173b16
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-79b3d3da-439f-414d-a4bd-34ca0b8ccca8 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-41423933-585d-4ba0-8f8d-71cfc43df43c .
+
+oquo:instant-cd73ca01-ff30-4a3e-a5cd-846fbc9b007d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.424Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-dbba28c3-530e-4fb7-8c4a-c19950e33692
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.681Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3582fcb1-240d-4039-83e6-d692799cf42e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-ed722a9d-0a68-45e9-aeee-fc3eab12ca97 ;
+        time:hasTime              oquo:instant-f34b04c5-cc7e-4d03-9ad0-47d534c5e47b ;
+        oquo:hasObservation       oquo:observation-d3bc6e2f-75c9-45bf-8f2e-d3e6c9a616f6 .
+
+oquo:evaluation-2108e40b-6850-429f-9536-23ea8fe75b03
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-33e9c2bb-a1b4-40f0-a0c7-c0f3107cbdcc ;
+        time:hasTime              oquo:instant-1e91e90b-2a76-49e7-80f6-1e498d2cd725 ;
+        oquo:hasObservation       oquo:observation-112f0b27-2e6a-4db6-a436-4918802781f1 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-b3a425c8-1d44-4cb3-b83f-1c0a35b2f6bf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:50.861Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-9e0fc73a-f693-4e00-ad29-abf47ec13f5e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:inputData             <http://www.limics.fr/ontologies/ontolurgences> ;
+        res:producedQualityValue  oquo:qualityValue-72a96a7e-736a-45b4-b724-fc1d7dde1e92 ;
+        time:hasTime              oquo:instant-41423933-585d-4ba0-8f8d-71cfc43df43c ;
+        oquo:hasObservation       oquo:observation-92e6f999-d1b7-4f62-b2b5-975d80173b16 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-ed722a9d-0a68-45e9-aeee-fc3eab12ca97
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-21aec7e0-d993-4548-958d-72354b9ec293 ;
+        res:hasLiteralValue    "0.5182452642073778"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3582fcb1-240d-4039-83e6-d692799cf42e .
+
+oquo:qualityValue-f6b1eb48-801f-4c57-93c0-1c145aad93c1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-58a2ec9e-8c35-444f-a762-22ccac6784aa ;
+        res:hasLiteralValue    "0.13793103448275862"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3f3286ee-89f6-4400-95da-51e9632756f1 .
+
+oquo:qualityValue-7bf39b14-e989-497f-a37e-a2b6047a8415
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a00a6ab8-9f20-46a4-bc0b-0e24a2d2eff4 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3aeb6c43-5402-447d-9bb7-024cded5ea6e .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-6d4794e5-01df-46ad-b81f-e3292648b419
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5f9ec3d5-53ab-4f72-8bdd-68919c2daac3 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-cd73ca01-ff30-4a3e-a5cd-846fbc9b007d .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-3b48aaaa-4406-46f8-9c07-f7a28a1d8534
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-2c319200-b567-4e54-bd09-168e649ed7d7 ;
+        oboe:measurementFor  oquo:observation-832cf12c-ee5a-46bb-8e78-f5ccb92956cb ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-e88b4ded-526a-4a34-b33b-500fb5d6d907
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f7d52648-f658-41e1-b5ea-9e166db05f50 ;
+        res:hasLiteralValue    "0.41379310344827586"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-58575cbb-a5dd-495e-b5d7-28fc0e4f5e27 .
+
+oquo:metric-ec4560e8-fd7b-40c8-b3ad-e702c61b2ac8
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-eee6cf37-ecb3-41f5-a1f9-c7cd6fb68b0b ;
+        oboe:measurementFor  oquo:observation-c830116f-11b3-4a5d-9f9b-ed3f83ab0bd3 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:instant-f71f4121-5e36-4720-bfe7-d9e9ea8faf2c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:22:51.479Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-f7338d3f-d2de-4da0-8a3e-77e4fdd64e6a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2b175de1-a40f-4857-93aa-1fb5846646a3 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-130e73cd-29b4-4d65-a604-a25089bb6e71 .
+
+oquo:observation-b51975a4-77aa-4aab-8d23-5478afedc90f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3434dc72-4a15-4cf2-9622-4db50c0f06e2 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-4a857546-e6ea-4ffd-a044-285856a2707a .
+
+oquo:observation-50c3d381-c66c-4dc3-b19f-8986a972e6b8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c2920457-e99e-4ed8-948c-9b2fc3b11173 ;
+        oboe:ofEntity        <http://www.limics.fr/ontologies/ontolurgences> ;
+        time:hasTime         oquo:instant-a4543edd-c2ae-49d8-987c-b903f3f7f3ba .

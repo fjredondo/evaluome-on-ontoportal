@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:qualityValue-c7ca2eaa-a88f-44f7-a82c-738fc104522b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-46630df9-ac94-42b2-b519-48e0c5c9e1bf ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-52a01475-d87f-46e0-a256-810444f9fa90 .
+
+oquo:observation-f38a398a-ccf8-4193-a291-c6a0f4230906
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-449522d0-c48e-4b94-9fef-8c9cf7aca16e ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-6abf0300-39a4-4ff7-a5e8-19565e555011 .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-2e2234a8-6889-4154-941d-0f9b25306dd2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.748Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-83e9e9e4-1feb-432c-a6f3-42266ebdded6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e4e6860e-b7c2-4c3a-936a-ea32b584e7ab ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-52a131b7-d2f9-48f7-afaa-3bd9850d9675 .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-449522d0-c48e-4b94-9fef-8c9cf7aca16e
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-be84e692-37b1-4cef-8b8c-0daa4c9cf859 ;
+        oboe:measurementFor  oquo:observation-f38a398a-ccf8-4193-a291-c6a0f4230906 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:evaluation-2e42d4d1-9816-471e-977b-95087272d2f6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4a4d6866-1c3a-4af0-8ea5-23b18b4e052b ;
+        time:hasTime              oquo:instant-4d15f8e8-4a42-4183-92a2-8d534ca92bb1 ;
+        oquo:hasObservation       oquo:observation-8cbd31be-8f2a-46cb-b402-e7827acfe3cc .
+
+oquo:instant-bca8edc4-6bc4-4117-977e-656e6f846a94
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:38.518Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b8206832-c22c-4147-af2e-b4699547f739
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-57cafd25-e243-442d-966c-cbcda64bfcec ;
+        oboe:measurementFor  oquo:observation-5d672471-f70b-419a-a4d1-039d01b201ae ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-04631835-d079-4ac6-b522-7e33c822fd02
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3bca14d6-73d8-41a6-816a-0ab385d8bc23 ;
+        time:hasTime              oquo:instant-dd32dca2-499b-4797-93d0-bb9223af9ef8 ;
+        oquo:hasObservation       oquo:observation-5430e81a-ba87-45a0-b598-4434c01d3436 .
+
+oquo:metric-7e8f503d-9867-42b9-aeb7-81589beb1c96
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-660773fe-c15c-4bd0-9051-e9ed29e74cef ;
+        oboe:measurementFor  oquo:observation-a5c3a771-033e-4ae9-b3ac-d3ff37ed1b1d ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-3b373e62-9b19-4eaa-978f-c427db9495de
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-28e76a12-a81f-4407-9aca-d7a016d743b2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bd01ae9b-33db-4fda-817f-97b84d9c594e .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-bcbbcfda-89b8-4a41-8288-05b4852cf20b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7b99072b-4bcb-47d0-8a90-c43dfcee990b ;
+        res:hasLiteralValue    "61426.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cfba2ef4-78a1-4a5d-be7b-6e481f27ea97 .
+
+oquo:evaluation-b326a58c-695b-460b-83b1-1fdd7d5d3900
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ff15fbb7-9763-41f1-9e22-3d22a8f4d0f5 ;
+        time:hasTime              oquo:instant-b3b5e306-3d37-4fbe-b782-abe1ea75111a ;
+        oquo:hasObservation       oquo:observation-79d67968-7043-419c-ad42-24fab9f7d118 .
+
+oquo:instant-f2eed146-8c10-46fb-ac7c-742b2068167d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.129Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b90f6ef5-6601-4cd6-89e4-89a0ce51fa18
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6f2b922e-09e5-4ace-b0b2-255f0e78b677 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3c73f3f8-0b32-407e-866b-baef58688733 .
+
+oquo:instant-c94d531b-b607-4b82-bb62-1f847c60623c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:11.708Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-c6bfd3c1-3560-45ab-8d67-69f1aefafe7f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ac88b631-1157-456d-8503-b342f68d9d22 ;
+        oboe:measurementFor  oquo:observation-b87b8ddd-dff6-4b77-9229-690a6004750f ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-75dd7d99-8b62-4463-9f0f-934e02e19d16
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3bca14d6-73d8-41a6-816a-0ab385d8bc23 ;
+        oboe:measurementFor  oquo:observation-5430e81a-ba87-45a0-b598-4434c01d3436 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:observation-79d67968-7043-419c-ad42-24fab9f7d118
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-50cd1506-2a30-47ed-9677-95ea259457bd ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-b3b5e306-3d37-4fbe-b782-abe1ea75111a .
+
+oquo:metric-f1768f8f-725e-4490-ab94-886b6dad17a3
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-2a50e6a1-b7b8-4f2f-98d6-af5ea8c4ff6b ;
+        oboe:measurementFor  oquo:observation-78f0aea0-233d-47e9-b1e7-04779e2b3e4c ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-c8ef1aec-3838-4799-a8d1-a79581331f7e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:01:33.811Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-3bca14d6-73d8-41a6-816a-0ab385d8bc23
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-75dd7d99-8b62-4463-9f0f-934e02e19d16 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-04631835-d079-4ac6-b522-7e33c822fd02 .
+
+oquo:evaluation-52a01475-d87f-46e0-a256-810444f9fa90
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c7ca2eaa-a88f-44f7-a82c-738fc104522b ;
+        time:hasTime              oquo:instant-8f519f68-da85-47c5-8eec-d791b99c62bd ;
+        oquo:hasObservation       oquo:observation-59298efe-8e39-494b-9e0f-a76e1c76925c .
+
+oquo:observation-979b1bfc-5b10-458a-9ae5-455d3fcff695
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7b99072b-4bcb-47d0-8a90-c43dfcee990b ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-4194103c-3112-4fa2-9a3b-8322637c55e8 .
+
+oquo:observation-c3f3a2e7-1f7f-4b29-b1ef-eed332f8d7d3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6e086c90-8f35-408b-bd55-0d2e3a9e939d ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-3837f34c-c5b9-4d6a-8b67-28ef301be82e .
+
+oquo:observation-9d24a5d5-4c90-4450-93dd-0ed0f9756d7a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-63ce8eda-5cfd-488f-a181-9060bbb56d9e ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-76d7feef-e159-4fe0-8195-d7716bb65653 .
+
+oquo:instant-df0ba8a1-010a-4aee-a63a-943f972eac55
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:02:18.396Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-22bf5731-1466-4a78-84ce-80b1b9549ad4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fbb5b160-e8de-4648-950c-660a41ef7231 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-cb1f8bb9-df0f-4ff6-bab2-2d1d0108f20e .
+
+oquo:observation-98ce7e7e-9b4d-4fe7-a61a-8208bd24e195
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a89f481f-ed5d-454b-a541-faf7dc842971 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-dd2e8020-0fa3-4f7d-8b37-1baf9cc479c5 .
+
+oquo:evaluation-1dd1a53b-da1b-4a03-8f32-a04a986dd7ee
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-d06ce250-e2ee-4ec9-8451-4f1bebc086e3 ;
+        time:hasTime              oquo:instant-2e2234a8-6889-4154-941d-0f9b25306dd2 ;
+        oquo:hasObservation       oquo:observation-2aa84c85-3544-4bb6-9a88-554e2375e34e .
+
+oquo:instant-6abf0300-39a4-4ff7-a5e8-19565e555011
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.753Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1463ef7f-1462-4300-a787-c95ce6e2ea91
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:37.811Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a3e3f54f-85be-492f-8bc5-ea7b9dbf18a4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-54b9c893-6dd5-40c9-8828-ae704d58ad5f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1c753ebd-43e2-4d7c-80e0-47fbf8f53323 .
+
+oquo:metric-97e3b35c-978a-4504-947a-7078f28a9d0b
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-58f57d26-67e0-4a75-94d0-6ad957cb3433 ;
+        oboe:measurementFor  oquo:observation-7445fe93-d48e-44ff-bb41-95cb0f00cc2e ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-dcf141d4-ad16-4ac9-bb40-f49216882294
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0f9ea998-abea-485b-8692-a8b72022249b ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-b2b41ac3-abf4-4aaa-ae92-3b11e330fc19 .
+
+oquo:evaluation-5bd88733-d8d2-47ea-95ce-9df31aff058f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b799c48d-6e22-4311-91c7-17b4764a3252 ;
+        time:hasTime              oquo:instant-bca8edc4-6bc4-4117-977e-656e6f846a94 ;
+        oquo:hasObservation       oquo:observation-2ecbf7bc-6c76-4008-8ade-59d462ce1f85 .
+
+oquo:observation-90d5ec4d-8bbb-4ccc-8e4f-a5a29f582d27
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f03fdbbc-64d7-4f1d-9f30-6ba6ce86851a ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-df0ba8a1-010a-4aee-a63a-943f972eac55 .
+
+<http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:observation-244e4c28-beb8-4363-8abf-76d844f626bb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-28e76a12-a81f-4407-9aca-d7a016d743b2 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-ae789440-f0d2-4e69-88fc-4c3d8d6a2438 .
+
+oquo:metric-a89f481f-ed5d-454b-a541-faf7dc842971
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ffd1a931-6dfb-40b3-a2e3-ad74f6c5e289 ;
+        oboe:measurementFor  oquo:observation-98ce7e7e-9b4d-4fe7-a61a-8208bd24e195 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:evaluation-cfba2ef4-78a1-4a5d-be7b-6e481f27ea97
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bcbbcfda-89b8-4a41-8288-05b4852cf20b ;
+        time:hasTime              oquo:instant-4194103c-3112-4fa2-9a3b-8322637c55e8 ;
+        oquo:hasObservation       oquo:observation-979b1bfc-5b10-458a-9ae5-455d3fcff695 .
+
+oquo:qualityValue-ee7ea08c-ee16-4480-91ae-17a23c301ac4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d3b837c3-2a1d-4886-8692-dee5c1734e43 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b0017cd1-9993-41f1-b916-25df1681ded8 .
+
+oquo:evaluation-c1932b22-638f-487a-b6ca-38e068c73802
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-660773fe-c15c-4bd0-9051-e9ed29e74cef ;
+        time:hasTime              oquo:instant-9210d527-54b6-4de5-9572-da0c3e64a809 ;
+        oquo:hasObservation       oquo:observation-a5c3a771-033e-4ae9-b3ac-d3ff37ed1b1d .
+
+oquo:qualityValue-e7452e64-87a3-49cf-8155-e23d3f4983ba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ba6cfc8b-32a4-4988-8c7d-8d5703cf8da8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9c20c663-d7fe-414b-82f0-af690fa02615 .
+
+oquo:metric-606bc1a6-6560-4acd-a687-150c508db2af
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-aef2377b-1b13-42d4-abaa-2b7fca92bda5 ;
+        oboe:measurementFor  oquo:observation-cc69b817-8896-495d-8255-095c3adb4c07 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:evaluation-a7278926-c470-4b84-9c20-c0a3e87f6ed5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-303062c9-e2f4-426b-aa54-1d39d8a1b5d2 ;
+        time:hasTime              oquo:instant-515a70b3-36f5-41b9-aa62-7da3f4ed312d ;
+        oquo:hasObservation       oquo:observation-680a741a-bd92-442f-94a4-c36a81720994 .
+
+oquo:qualityValue-408cae3f-6014-47e8-8600-60ded94f1258
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-63ce8eda-5cfd-488f-a181-9060bbb56d9e ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4fb710cf-7599-4cf2-9670-c9eb1dff8f8c .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-ed787a74-22a2-40cb-abc4-4e20e7db2347
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0f9ea998-abea-485b-8692-a8b72022249b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-23e9c1d8-0fc8-4e99-840b-4605b8544657 .
+
+oquo:observation-8021eff1-2db3-4dda-86f1-3cb99c287e1a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-17ea5787-0a49-4e10-8cb9-184aec182d19 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-c94d531b-b607-4b82-bb62-1f847c60623c .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-ba6cfc8b-32a4-4988-8c7d-8d5703cf8da8
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e7452e64-87a3-49cf-8155-e23d3f4983ba ;
+        oboe:measurementFor  oquo:observation-1d740493-b50b-4721-ab8f-4dc13dc0d745 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:observation-a8a807c3-5f72-4674-bad5-d0031b56e34a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6f2b922e-09e5-4ace-b0b2-255f0e78b677 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-e551bc09-2786-4840-ae44-e11af4b4cc1b .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-e00b5c35-e363-4f93-9bad-b350868c782c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fbb5b160-e8de-4648-950c-660a41ef7231 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f29e4e9e-5678-4012-8318-98dcecfce15b .
+
+oquo:qualityValue-ff15fbb7-9763-41f1-9e22-3d22a8f4d0f5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-50cd1506-2a30-47ed-9677-95ea259457bd ;
+        res:hasLiteralValue    "0.6133007733007733"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b326a58c-695b-460b-83b1-1fdd7d5d3900 .
+
+oquo:qualityValue-58f57d26-67e0-4a75-94d0-6ad957cb3433
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-97e3b35c-978a-4504-947a-7078f28a9d0b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5f6d904b-1f76-49e5-beee-de9530069d32 .
+
+oquo:metric-f03fdbbc-64d7-4f1d-9f30-6ba6ce86851a
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-7091120e-613c-402f-9ae6-dfc7e9bfc6c4 ;
+        oboe:measurementFor  oquo:observation-90d5ec4d-8bbb-4ccc-8e4f-a5a29f582d27 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:qualityValue-be84e692-37b1-4cef-8b8c-0daa4c9cf859
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-449522d0-c48e-4b94-9fef-8c9cf7aca16e ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-285dc831-4cae-4d19-8f31-cbef7ef274ea .
+
+oquo:observation-2aa84c85-3544-4bb6-9a88-554e2375e34e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8702d7ec-86eb-4a7a-a80f-89e0c57bdebe ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-2e2234a8-6889-4154-941d-0f9b25306dd2 .
+
+oquo:evaluation-2ed7a842-b1ce-4f24-8961-6cde62722e3c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-53b1cfe4-3c22-41a9-96a0-2b17c8465e9c ;
+        time:hasTime              oquo:instant-33e6384b-4c60-4dac-a05f-2a669cdcbcc1 ;
+        oquo:hasObservation       oquo:observation-c86278aa-f5a4-447e-b10e-6de5b28572c1 .
+
+oquo:metric-0f9ea998-abea-485b-8692-a8b72022249b
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ed787a74-22a2-40cb-abc4-4e20e7db2347 ;
+        oboe:measurementFor  oquo:observation-dcf141d4-ad16-4ac9-bb40-f49216882294 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:metric-63ce8eda-5cfd-488f-a181-9060bbb56d9e
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-408cae3f-6014-47e8-8600-60ded94f1258 ;
+        oboe:measurementFor  oquo:observation-9d24a5d5-4c90-4450-93dd-0ed0f9756d7a ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-a948feef-af2b-41f4-8394-80b3514f8d91
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e4e6860e-b7c2-4c3a-936a-ea32b584e7ab ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-d5c4e763-4bde-4eae-8bc3-7257462aa479 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:instant-10d882fe-8249-4a47-8fd7-9501a586b9a4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.647Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-9210d527-54b6-4de5-9572-da0c3e64a809
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.621Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-d06ce250-e2ee-4ec9-8451-4f1bebc086e3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8702d7ec-86eb-4a7a-a80f-89e0c57bdebe ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1dd1a53b-da1b-4a03-8f32-a04a986dd7ee .
+
+oquo:evaluation-e0cc947c-88fe-42fb-8bb1-1ce6223fb9cf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b98a2f08-278c-4df4-b064-3aca62be704c ;
+        time:hasTime              oquo:instant-c8ef1aec-3838-4799-a8d1-a79581331f7e ;
+        oquo:hasObservation       oquo:observation-d2f4063d-6519-43a0-98c9-38250a665b1a .
+
+oquo:metric-54b9c893-6dd5-40c9-8828-ae704d58ad5f
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-a3e3f54f-85be-492f-8bc5-ea7b9dbf18a4 ;
+        oboe:measurementFor  oquo:observation-9cab4954-03b6-4f24-b0ea-3aaf23e953b8 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:observation-c86278aa-f5a4-447e-b10e-6de5b28572c1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d29429da-6517-4e2f-abab-8b15e88a085c ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-33e6384b-4c60-4dac-a05f-2a669cdcbcc1 .
+
+oquo:observation-cc69b817-8896-495d-8255-095c3adb4c07
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-606bc1a6-6560-4acd-a687-150c508db2af ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-1fcb8b38-6843-41f9-829b-018073282f4b .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-edf208d8-ed87-415a-9773-f24eb9f19b89
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.135Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-d3b837c3-2a1d-4886-8692-dee5c1734e43
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ee7ea08c-ee16-4480-91ae-17a23c301ac4 ;
+        oboe:measurementFor  oquo:observation-c090c929-976b-4397-9afd-e9a1303a883f ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-17ea5787-0a49-4e10-8cb9-184aec182d19
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-7a1af80c-134c-4707-ba4c-52b75c49f837 ;
+        oboe:measurementFor  oquo:observation-8021eff1-2db3-4dda-86f1-3cb99c287e1a ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:instant-b2b41ac3-abf4-4aaa-ae92-3b11e330fc19
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.65Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-23e9c1d8-0fc8-4e99-840b-4605b8544657
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ed787a74-22a2-40cb-abc4-4e20e7db2347 ;
+        time:hasTime              oquo:instant-b2b41ac3-abf4-4aaa-ae92-3b11e330fc19 ;
+        oquo:hasObservation       oquo:observation-dcf141d4-ad16-4ac9-bb40-f49216882294 .
+
+oquo:instant-1fcb8b38-6843-41f9-829b-018073282f4b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.755Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-53e907ef-6483-454d-84ac-c68a35a0d9eb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.649Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b0017cd1-9993-41f1-b916-25df1681ded8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ee7ea08c-ee16-4480-91ae-17a23c301ac4 ;
+        time:hasTime              oquo:instant-fd7bb34c-f382-43b3-8e31-f76d9fe34e2f ;
+        oquo:hasObservation       oquo:observation-c090c929-976b-4397-9afd-e9a1303a883f .
+
+oquo:qualityValue-7091120e-613c-402f-9ae6-dfc7e9bfc6c4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f03fdbbc-64d7-4f1d-9f30-6ba6ce86851a ;
+        res:hasLiteralValue    8.14000814000814E-5 ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9172855e-312f-46e2-8e71-cec169a2f2a8 .
+
+oquo:evaluation-98d728cc-1175-4def-a52c-872a21ad2474
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8cb5d439-110e-4c06-b194-858b57b6ec47 ;
+        time:hasTime              oquo:instant-aa58d5a1-9982-435c-98e0-31872fbb59eb ;
+        oquo:hasObservation       oquo:observation-a40fe034-105d-43aa-bd31-9308d8094a7a .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-46630df9-ac94-42b2-b519-48e0c5c9e1bf
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c7ca2eaa-a88f-44f7-a82c-738fc104522b ;
+        oboe:measurementFor  oquo:observation-59298efe-8e39-494b-9e0f-a76e1c76925c ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-cb1f8bb9-df0f-4ff6-bab2-2d1d0108f20e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:38.558Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-da93a589-4a2d-4bfe-89d6-b0e128151d93
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.742Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-fd7bb34c-f382-43b3-8e31-f76d9fe34e2f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.132Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-8cbd31be-8f2a-46cb-b402-e7827acfe3cc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4ca20d80-29ae-4eda-86e4-52c53a8b2b6f ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-4d15f8e8-4a42-4183-92a2-8d534ca92bb1 .
+
+oquo:observation-59298efe-8e39-494b-9e0f-a76e1c76925c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-46630df9-ac94-42b2-b519-48e0c5c9e1bf ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-8f519f68-da85-47c5-8eec-d791b99c62bd .
+
+oquo:metric-6e086c90-8f35-408b-bd55-0d2e3a9e939d
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-864ad515-0e5f-4ac9-8aaa-fa3a177830c9 ;
+        oboe:measurementFor  oquo:observation-c3f3a2e7-1f7f-4b29-b1ef-eed332f8d7d3 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-7a1af80c-134c-4707-ba4c-52b75c49f837
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-17ea5787-0a49-4e10-8cb9-184aec182d19 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a168e9bb-c31a-4b9b-a320-195ed999a538 .
+
+oquo:metric-fbb5b160-e8de-4648-950c-660a41ef7231
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e00b5c35-e363-4f93-9bad-b350868c782c ;
+        oboe:measurementFor  oquo:observation-22bf5731-1466-4a78-84ce-80b1b9549ad4 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:instant-ad4eec03-30f5-4818-883d-06268d837eba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:40.945Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-33e6384b-4c60-4dac-a05f-2a669cdcbcc1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:02:18.4Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-28e76a12-a81f-4407-9aca-d7a016d743b2
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-3b373e62-9b19-4eaa-978f-c427db9495de ;
+        oboe:measurementFor  oquo:observation-244e4c28-beb8-4363-8abf-76d844f626bb ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-0404c7b2-5e07-42d9-8b3f-a09dfaeffd8a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ac88b631-1157-456d-8503-b342f68d9d22 ;
+        time:hasTime              oquo:instant-95d3428d-4e94-4f5d-ae38-17222b2df461 ;
+        oquo:hasObservation       oquo:observation-b87b8ddd-dff6-4b77-9229-690a6004750f .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7b99072b-4bcb-47d0-8a90-c43dfcee990b
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-bcbbcfda-89b8-4a41-8288-05b4852cf20b ;
+        oboe:measurementFor  oquo:observation-979b1bfc-5b10-458a-9ae5-455d3fcff695 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:metric-8702d7ec-86eb-4a7a-a80f-89e0c57bdebe
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d06ce250-e2ee-4ec9-8451-4f1bebc086e3 ;
+        oboe:measurementFor  oquo:observation-2aa84c85-3544-4bb6-9a88-554e2375e34e ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:evaluation-bd01ae9b-33db-4fda-817f-97b84d9c594e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3b373e62-9b19-4eaa-978f-c427db9495de ;
+        time:hasTime              oquo:instant-ae789440-f0d2-4e69-88fc-4c3d8d6a2438 ;
+        oquo:hasObservation       oquo:observation-244e4c28-beb8-4363-8abf-76d844f626bb .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-5d672471-f70b-419a-a4d1-039d01b201ae
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b8206832-c22c-4147-af2e-b4699547f739 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-53e907ef-6483-454d-84ac-c68a35a0d9eb .
+
+oquo:metric-4ca20d80-29ae-4eda-86e4-52c53a8b2b6f
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-4a4d6866-1c3a-4af0-8ea5-23b18b4e052b ;
+        oboe:measurementFor  oquo:observation-8cbd31be-8f2a-46cb-b402-e7827acfe3cc ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:metric-e37b4676-c3b2-40d7-a93c-827a02cc2e98
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-77da32e2-20cd-4e06-9165-dbceefca7131 ;
+        oboe:measurementFor  oquo:observation-e20b4404-3652-44f0-99b4-17286d1e6d0a ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-e551bc09-2786-4840-ae44-e11af4b4cc1b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.61Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-8f519f68-da85-47c5-8eec-d791b99c62bd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.746Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-e6a33ae8-1005-42bd-968e-6aab921bb512
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-57cafd25-e243-442d-966c-cbcda64bfcec ;
+        time:hasTime              oquo:instant-53e907ef-6483-454d-84ac-c68a35a0d9eb ;
+        oquo:hasObservation       oquo:observation-5d672471-f70b-419a-a4d1-039d01b201ae .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-1c753ebd-43e2-4d7c-80e0-47fbf8f53323
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a3e3f54f-85be-492f-8bc5-ea7b9dbf18a4 ;
+        time:hasTime              oquo:instant-1463ef7f-1462-4300-a787-c95ce6e2ea91 ;
+        oquo:hasObservation       oquo:observation-9cab4954-03b6-4f24-b0ea-3aaf23e953b8 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:observation-6b65e15c-13ae-4aa9-99c1-7d83a0b25286
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c6cd9f3e-34de-40c8-a7e0-86342a61f19b ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-8b7c427e-5fa6-4119-8e4b-cd753136aaa4 .
+
+oquo:instant-aa58d5a1-9982-435c-98e0-31872fbb59eb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.139Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d5c4e763-4bde-4eae-8bc3-7257462aa479
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:38.56Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6826dc6b-543e-4bb8-9f53-b4c1ba3a9f8a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5d4ea8b2-461d-4cbd-9c1a-b205dfb6fb60 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-da93a589-4a2d-4bfe-89d6-b0e128151d93 .
+
+oquo:instant-dd32dca2-499b-4797-93d0-bb9223af9ef8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:38.55Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-a5c3a771-033e-4ae9-b3ac-d3ff37ed1b1d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7e8f503d-9867-42b9-aeb7-81589beb1c96 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-9210d527-54b6-4de5-9572-da0c3e64a809 .
+
+oquo:metric-c6cd9f3e-34de-40c8-a7e0-86342a61f19b
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-56f6fe00-8f39-48e2-bfcd-c6715bd32482 ;
+        oboe:measurementFor  oquo:observation-6b65e15c-13ae-4aa9-99c1-7d83a0b25286 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-56f6fe00-8f39-48e2-bfcd-c6715bd32482
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c6cd9f3e-34de-40c8-a7e0-86342a61f19b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3b468680-a7b5-49a5-b4ca-f5eb6b3ddf1c .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-aef2377b-1b13-42d4-abaa-2b7fca92bda5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-606bc1a6-6560-4acd-a687-150c508db2af ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7a90efbe-ddfc-4942-9f4b-748476659670 .
+
+oquo:qualityValue-4fc74ad1-4514-4d86-9ec7-d6076487e69e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5d4ea8b2-461d-4cbd-9c1a-b205dfb6fb60 ;
+        res:hasLiteralValue    "0.8333333333333334"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-435d309b-9af1-45b5-a14c-903880425945 .
+
+oquo:metric-6f2b922e-09e5-4ace-b0b2-255f0e78b677
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b90f6ef5-6601-4cd6-89e4-89a0ce51fa18 ;
+        oboe:measurementFor  oquo:observation-a8a807c3-5f72-4674-bad5-d0031b56e34a ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-e20b4404-3652-44f0-99b4-17286d1e6d0a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e37b4676-c3b2-40d7-a93c-827a02cc2e98 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-edf208d8-ed87-415a-9773-f24eb9f19b89 .
+
+oquo:qualityValue-660773fe-c15c-4bd0-9051-e9ed29e74cef
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7e8f503d-9867-42b9-aeb7-81589beb1c96 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c1932b22-638f-487a-b6ca-38e068c73802 .
+
+oquo:instant-8b7c427e-5fa6-4119-8e4b-cd753136aaa4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.653Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b98a2f08-278c-4df4-b064-3aca62be704c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-69c692ec-620d-4894-a772-45710805907a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e0cc947c-88fe-42fb-8bb1-1ce6223fb9cf .
+
+oquo:instant-95d3428d-4e94-4f5d-ae38-17222b2df461
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.619Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-52a131b7-d2f9-48f7-afaa-3bd9850d9675
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-83e9e9e4-1feb-432c-a6f3-42266ebdded6 ;
+        time:hasTime              oquo:instant-d5c4e763-4bde-4eae-8bc3-7257462aa479 ;
+        oquo:hasObservation       oquo:observation-a948feef-af2b-41f4-8394-80b3514f8d91 .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4194103c-3112-4fa2-9a3b-8322637c55e8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:37.806Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-4a4d6866-1c3a-4af0-8ea5-23b18b4e052b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4ca20d80-29ae-4eda-86e4-52c53a8b2b6f ;
+        res:hasLiteralValue    "5.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2e42d4d1-9816-471e-977b-95087272d2f6 .
+
+oquo:qualityValue-77da32e2-20cd-4e06-9165-dbceefca7131
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e37b4676-c3b2-40d7-a93c-827a02cc2e98 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b94dd114-6bdf-4cfe-a788-e155b29a0ca7 .
+
+oquo:qualityValue-b799c48d-6e22-4311-91c7-17b4764a3252
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-833787b1-2f03-428f-8234-0d53e3621b9f ;
+        res:hasLiteralValue    "0.8333333333333334"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5bd88733-d8d2-47ea-95ce-9df31aff058f .
+
+oquo:qualityValue-8cb5d439-110e-4c06-b194-858b57b6ec47
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-90f90993-62cf-464c-ab1c-eb22826b8d5e ;
+        res:hasLiteralValue    "0.3866992266992267"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-98d728cc-1175-4def-a52c-872a21ad2474 .
+
+oquo:metric-50cd1506-2a30-47ed-9677-95ea259457bd
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-ff15fbb7-9763-41f1-9e22-3d22a8f4d0f5 ;
+        oboe:measurementFor  oquo:observation-79d67968-7043-419c-ad42-24fab9f7d118 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-7259502f-4d17-4d3e-981d-b56fa19df6ef
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-864ad515-0e5f-4ac9-8aaa-fa3a177830c9 ;
+        time:hasTime              oquo:instant-3837f34c-c5b9-4d6a-8b67-28ef301be82e ;
+        oquo:hasObservation       oquo:observation-c3f3a2e7-1f7f-4b29-b1ef-eed332f8d7d3 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-dd2e8020-0fa3-4f7d-8b37-1baf9cc479c5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:39.127Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-f29e4e9e-5678-4012-8318-98dcecfce15b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e00b5c35-e363-4f93-9bad-b350868c782c ;
+        time:hasTime              oquo:instant-cb1f8bb9-df0f-4ff6-bab2-2d1d0108f20e ;
+        oquo:hasObservation       oquo:observation-22bf5731-1466-4a78-84ce-80b1b9549ad4 .
+
+oquo:metric-d29429da-6517-4e2f-abab-8b15e88a085c
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-53b1cfe4-3c22-41a9-96a0-2b17c8465e9c ;
+        oboe:measurementFor  oquo:observation-c86278aa-f5a4-447e-b10e-6de5b28572c1 ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:observation-5430e81a-ba87-45a0-b598-4434c01d3436
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-75dd7d99-8b62-4463-9f0f-934e02e19d16 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-dd32dca2-499b-4797-93d0-bb9223af9ef8 .
+
+oquo:metric-833787b1-2f03-428f-8234-0d53e3621b9f
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b799c48d-6e22-4311-91c7-17b4764a3252 ;
+        oboe:measurementFor  oquo:observation-2ecbf7bc-6c76-4008-8ade-59d462ce1f85 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:metric-90f90993-62cf-464c-ab1c-eb22826b8d5e
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8cb5d439-110e-4c06-b194-858b57b6ec47 ;
+        oboe:measurementFor  oquo:observation-a40fe034-105d-43aa-bd31-9308d8094a7a ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:observation-9cab4954-03b6-4f24-b0ea-3aaf23e953b8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-54b9c893-6dd5-40c9-8828-ae704d58ad5f ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-1463ef7f-1462-4300-a787-c95ce6e2ea91 .
+
+oquo:observation-78f0aea0-233d-47e9-b1e7-04779e2b3e4c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f1768f8f-725e-4490-ab94-886b6dad17a3 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-10d882fe-8249-4a47-8fd7-9501a586b9a4 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-ac88b631-1157-456d-8503-b342f68d9d22
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c6bfd3c1-3560-45ab-8d67-69f1aefafe7f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0404c7b2-5e07-42d9-8b3f-a09dfaeffd8a .
+
+oquo:metric-5d4ea8b2-461d-4cbd-9c1a-b205dfb6fb60
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-4fc74ad1-4514-4d86-9ec7-d6076487e69e ;
+        oboe:measurementFor  oquo:observation-6826dc6b-543e-4bb8-9f53-b4c1ba3a9f8a ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:evaluation-3c73f3f8-0b32-407e-866b-baef58688733
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b90f6ef5-6601-4cd6-89e4-89a0ce51fa18 ;
+        time:hasTime              oquo:instant-e551bc09-2786-4840-ae44-e11af4b4cc1b ;
+        oquo:hasObservation       oquo:observation-a8a807c3-5f72-4674-bad5-d0031b56e34a .
+
+oquo:metric-69c692ec-620d-4894-a772-45710805907a
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-b98a2f08-278c-4df4-b064-3aca62be704c ;
+        oboe:measurementFor  oquo:observation-d2f4063d-6519-43a0-98c9-38250a665b1a ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:evaluation-97ee1aa9-f2a8-4a45-a4de-85aa04d8b2c1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2a50e6a1-b7b8-4f2f-98d6-af5ea8c4ff6b ;
+        time:hasTime              oquo:instant-10d882fe-8249-4a47-8fd7-9501a586b9a4 ;
+        oquo:hasObservation       oquo:observation-78f0aea0-233d-47e9-b1e7-04779e2b3e4c .
+
+oquo:evaluation-4fb710cf-7599-4cf2-9670-c9eb1dff8f8c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-408cae3f-6014-47e8-8600-60ded94f1258 ;
+        time:hasTime              oquo:instant-76d7feef-e159-4fe0-8195-d7716bb65653 ;
+        oquo:hasObservation       oquo:observation-9d24a5d5-4c90-4450-93dd-0ed0f9756d7a .
+
+oquo:observation-1d740493-b50b-4721-ab8f-4dc13dc0d745
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ba6cfc8b-32a4-4988-8c7d-8d5703cf8da8 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-f2eed146-8c10-46fb-ac7c-742b2068167d .
+
+oquo:instant-4d15f8e8-4a42-4183-92a2-8d534ca92bb1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:01:33.697Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-2a50e6a1-b7b8-4f2f-98d6-af5ea8c4ff6b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f1768f8f-725e-4490-ab94-886b6dad17a3 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-97ee1aa9-f2a8-4a45-a4de-85aa04d8b2c1 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-57cafd25-e243-442d-966c-cbcda64bfcec
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b8206832-c22c-4147-af2e-b4699547f739 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e6a33ae8-1005-42bd-968e-6aab921bb512 .
+
+oquo:evaluation-3b468680-a7b5-49a5-b4ca-f5eb6b3ddf1c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-56f6fe00-8f39-48e2-bfcd-c6715bd32482 ;
+        time:hasTime              oquo:instant-8b7c427e-5fa6-4119-8e4b-cd753136aaa4 ;
+        oquo:hasObservation       oquo:observation-6b65e15c-13ae-4aa9-99c1-7d83a0b25286 .
+
+oquo:evaluation-9172855e-312f-46e2-8e71-cec169a2f2a8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7091120e-613c-402f-9ae6-dfc7e9bfc6c4 ;
+        time:hasTime              oquo:instant-df0ba8a1-010a-4aee-a63a-943f972eac55 ;
+        oquo:hasObservation       oquo:observation-90d5ec4d-8bbb-4ccc-8e4f-a5a29f582d27 .
+
+oquo:metric-515ad0ea-2b5a-46c9-982d-631f29055269
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-303062c9-e2f4-426b-aa54-1d39d8a1b5d2 ;
+        oboe:measurementFor  oquo:observation-680a741a-bd92-442f-94a4-c36a81720994 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:observation-d2f4063d-6519-43a0-98c9-38250a665b1a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-69c692ec-620d-4894-a772-45710805907a ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-c8ef1aec-3838-4799-a8d1-a79581331f7e .
+
+oquo:observation-b87b8ddd-dff6-4b77-9229-690a6004750f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c6bfd3c1-3560-45ab-8d67-69f1aefafe7f ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-95d3428d-4e94-4f5d-ae38-17222b2df461 .
+
+oquo:observation-c090c929-976b-4397-9afd-e9a1303a883f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d3b837c3-2a1d-4886-8692-dee5c1734e43 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-fd7bb34c-f382-43b3-8e31-f76d9fe34e2f .
+
+oquo:instant-ae789440-f0d2-4e69-88fc-4c3d8d6a2438
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.614Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-76d7feef-e159-4fe0-8195-d7716bb65653
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:02:41.566Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5f6d904b-1f76-49e5-beee-de9530069d32
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-58f57d26-67e0-4a75-94d0-6ad957cb3433 ;
+        time:hasTime              oquo:instant-ad4eec03-30f5-4818-883d-06268d837eba ;
+        oquo:hasObservation       oquo:observation-7445fe93-d48e-44ff-bb41-95cb0f00cc2e .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-ffd1a931-6dfb-40b3-a2e3-ad74f6c5e289
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a89f481f-ed5d-454b-a541-faf7dc842971 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-530210e6-0256-4a72-b46e-acc0aa343ccf .
+
+oquo:evaluation-285dc831-4cae-4d19-8f31-cbef7ef274ea
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-be84e692-37b1-4cef-8b8c-0daa4c9cf859 ;
+        time:hasTime              oquo:instant-6abf0300-39a4-4ff7-a5e8-19565e555011 ;
+        oquo:hasObservation       oquo:observation-f38a398a-ccf8-4193-a291-c6a0f4230906 .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-a40fe034-105d-43aa-bd31-9308d8094a7a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-90f90993-62cf-464c-ab1c-eb22826b8d5e ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-aa58d5a1-9982-435c-98e0-31872fbb59eb .
+
+oquo:instant-515a70b3-36f5-41b9-aa62-7da3f4ed312d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:38.536Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-b3b5e306-3d37-4fbe-b782-abe1ea75111a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:40.259Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-303062c9-e2f4-426b-aa54-1d39d8a1b5d2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-515ad0ea-2b5a-46c9-982d-631f29055269 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a7278926-c470-4b84-9c20-c0a3e87f6ed5 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-2ecbf7bc-6c76-4008-8ade-59d462ce1f85
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-833787b1-2f03-428f-8234-0d53e3621b9f ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-bca8edc4-6bc4-4117-977e-656e6f846a94 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-a168e9bb-c31a-4b9b-a320-195ed999a538
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7a1af80c-134c-4707-ba4c-52b75c49f837 ;
+        time:hasTime              oquo:instant-c94d531b-b607-4b82-bb62-1f847c60623c ;
+        oquo:hasObservation       oquo:observation-8021eff1-2db3-4dda-86f1-3cb99c287e1a .
+
+oquo:evaluation-435d309b-9af1-45b5-a14c-903880425945
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4fc74ad1-4514-4d86-9ec7-d6076487e69e ;
+        time:hasTime              oquo:instant-da93a589-4a2d-4bfe-89d6-b0e128151d93 ;
+        oquo:hasObservation       oquo:observation-6826dc6b-543e-4bb8-9f53-b4c1ba3a9f8a .
+
+oquo:qualityValue-864ad515-0e5f-4ac9-8aaa-fa3a177830c9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6e086c90-8f35-408b-bd55-0d2e3a9e939d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7259502f-4d17-4d3e-981d-b56fa19df6ef .
+
+oquo:evaluation-530210e6-0256-4a72-b46e-acc0aa343ccf
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ffd1a931-6dfb-40b3-a2e3-ad74f6c5e289 ;
+        time:hasTime              oquo:instant-dd2e8020-0fa3-4f7d-8b37-1baf9cc479c5 ;
+        oquo:hasObservation       oquo:observation-98ce7e7e-9b4d-4fe7-a61a-8208bd24e195 .
+
+oquo:observation-680a741a-bd92-442f-94a4-c36a81720994
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-515ad0ea-2b5a-46c9-982d-631f29055269 ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-515a70b3-36f5-41b9-aa62-7da3f4ed312d .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-7445fe93-d48e-44ff-bb41-95cb0f00cc2e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-97e3b35c-978a-4504-947a-7078f28a9d0b ;
+        oboe:ofEntity        <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        time:hasTime         oquo:instant-ad4eec03-30f5-4818-883d-06268d837eba .
+
+oquo:evaluation-7a90efbe-ddfc-4942-9f4b-748476659670
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-aef2377b-1b13-42d4-abaa-2b7fca92bda5 ;
+        time:hasTime              oquo:instant-1fcb8b38-6843-41f9-829b-018073282f4b ;
+        oquo:hasObservation       oquo:observation-cc69b817-8896-495d-8255-095c3adb4c07 .
+
+oquo:instant-3837f34c-c5b9-4d6a-8b67-28ef301be82e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T15:03:41.652Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-53b1cfe4-3c22-41a9-96a0-2b17c8465e9c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d29429da-6517-4e2f-abab-8b15e88a085c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2ed7a842-b1ce-4f24-8961-6cde62722e3c .
+
+oquo:metric-e4e6860e-b7c2-4c3a-936a-ea32b584e7ab
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-83e9e9e4-1feb-432c-a6f3-42266ebdded6 ;
+        oboe:measurementFor  oquo:observation-a948feef-af2b-41f4-8394-80b3514f8d91 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:evaluation-b94dd114-6bdf-4cfe-a788-e155b29a0ca7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-77da32e2-20cd-4e06-9165-dbceefca7131 ;
+        time:hasTime              oquo:instant-edf208d8-ed87-415a-9773-f24eb9f19b89 ;
+        oquo:hasObservation       oquo:observation-e20b4404-3652-44f0-99b4-17286d1e6d0a .
+
+oquo:evaluation-9c20c663-d7fe-414b-82f0-af690fa02615
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:inputData             <http://www.ebi.ac.uk/chembl/ftc/ftc-kb-full.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e7452e64-87a3-49cf-8155-e23d3f4983ba ;
+        time:hasTime              oquo:instant-f2eed146-8c10-46fb-ac7c-742b2068167d ;
+        oquo:hasObservation       oquo:observation-1d740493-b50b-4721-ab8f-4dc13dc0d745 .

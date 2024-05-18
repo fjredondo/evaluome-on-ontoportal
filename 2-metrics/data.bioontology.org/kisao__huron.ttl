@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:evaluation-1bab92f9-513c-43cc-95fa-3e133935df07
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-02025dcb-e85f-4789-b32d-81b77acd6e3c ;
+        time:hasTime              oquo:instant-8a6b7eb6-c813-4cab-8072-2beec9c292bd ;
+        oquo:hasObservation       oquo:observation-009ebfb3-1a43-492b-abf1-e8a73675a79e .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-bd28a57f-fdb4-4429-b8ca-b972b540b673
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-512a1615-be8b-4b68-bca0-d5d04d7578f7 ;
+        time:hasTime              oquo:instant-46f5288b-8007-47bb-924c-1d8c54e9856f ;
+        oquo:hasObservation       oquo:observation-7dbcc2b9-d51f-4670-9977-50ff8233758d .
+
+oquo:metric-c68addb8-e80c-4c61-a068-a0903a984666
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-cfded815-6273-43c0-8341-5c86aa1e2e90 ;
+        oboe:measurementFor  oquo:observation-9d157f8d-a2c6-44cf-9ef6-1bec26477f3b ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:qualityValue-85691184-a5d3-4b01-bfe9-b8d7be9e3a41
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-822f096d-544b-40ce-947e-9f23c56000fc ;
+        res:hasLiteralValue    "525.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a8391fec-3055-4d77-b253-b5f7f5d50195 .
+
+oquo:observation-ae9e20c5-e407-4f73-8632-912830955648
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-86115a8a-a8cc-40ca-a674-40b8b0c7c783 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-e1466fb0-7118-4378-8a7e-07ce9a0d1bf0 .
+
+oquo:qualityValue-d3a7e978-cdfe-43ea-b5e4-9f29e8dbd753
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e278ec86-70df-4bfd-a06f-96c1579097ec ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-224d6e48-0330-470f-9e13-071141615e45 .
+
+<http://www.biomodels.net/kisao/KISAO#>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-fc91a646-0bb8-44e3-ad53-cc859b2190b3
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-41a86112-f0df-4291-8336-29689653a569 ;
+        oboe:measurementFor  oquo:observation-912ca087-9726-42d4-8695-a0098ec70585 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:instant-a9018c49-3be4-4f60-a074-8aba4f11ce64
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.372Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-5daaa0a4-8128-4247-a717-5447d78f55b1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.216Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b3539587-e3fd-44ac-b453-ed0e98b8e723
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-eb35afde-0f35-4a74-b67d-938778388941 ;
+        time:hasTime              oquo:instant-52fce11f-0f4a-4569-810d-f04a2d736f16 ;
+        oquo:hasObservation       oquo:observation-5b0694c9-df3a-4cd2-b1cc-6069495906aa .
+
+oquo:qualityValue-493c81fe-ff77-4350-8024-984baf19c026
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-69ee489b-236a-4f47-b82d-85ae0d694662 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5fcb2382-f916-415a-9db6-10083e007567 .
+
+oquo:qualityValue-02025dcb-e85f-4789-b32d-81b77acd6e3c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d25c98c1-e7cc-4c92-b557-3f3fb49fdc4b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1bab92f9-513c-43cc-95fa-3e133935df07 .
+
+oquo:observation-d2307167-7e75-4f95-ad3d-a4179aa8077a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-40b5aea7-3b08-4906-a6a6-8129cd07eedf ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-6b84bb76-10ea-4479-bfc5-1a829ce324aa .
+
+oquo:instant-06aaac82-3bef-44b9-a011-078764126f69
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.364Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-6160d2dc-67f1-4956-b361-a3e83e45816e
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-5a9e668f-7940-4db4-868c-d987c39259ca ;
+        oboe:measurementFor  oquo:observation-ca4256dc-6192-4a68-8f4d-e3ee5a8c4271 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-3968384a-16e5-4a7d-a5ee-829d41bcd4ff
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.31Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-a4142444-c0d9-4eaa-a7a8-5a60ac4c2a24
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a0b05bfe-f37e-4a15-9cc5-088c2d26f733 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-39724530-0c43-4392-9c7e-4e242ae66e87 .
+
+oquo:metric-ccf186d3-1d4d-40bf-a25d-db018af63c08
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-13f337fd-981c-4db4-a8bc-c93030f61408 ;
+        oboe:measurementFor  oquo:observation-cb872498-69f1-439b-8b22-c010850e23ce ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:qualityValue-8212c423-caeb-4435-8489-092641ab0978
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-58c75e40-a3ea-4485-a09b-ad57ebfc15ee ;
+        res:hasLiteralValue    "1.0019047619047619"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fc488ed2-2445-4bbe-b73a-8395c323e292 .
+
+oquo:qualityValue-e4243912-395f-4e55-95ef-e509609c39c9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-40b5aea7-3b08-4906-a6a6-8129cd07eedf ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ec1bdf90-be60-46bc-b998-6be2999a65c1 .
+
+oquo:metric-a0b05bfe-f37e-4a15-9cc5-088c2d26f733
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-6df9cc91-532b-45b0-a5c3-877350845da5 ;
+        oboe:measurementFor  oquo:observation-a4142444-c0d9-4eaa-a7a8-5a60ac4c2a24 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:metric-86115a8a-a8cc-40ca-a674-40b8b0c7c783
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-47f96be9-50d2-481a-afe9-3a5d39a6983f ;
+        oboe:measurementFor  oquo:observation-ae9e20c5-e407-4f73-8632-912830955648 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-090cddcb-5e18-45ec-adbc-b96ff4bf6f1a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-63853fa4-90e2-4f4f-af10-ac45595affc1 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-79c1cafc-f987-4a41-993a-fafc97bc8a46 .
+
+oquo:metric-45395105-9f0c-4d83-ba16-870999a52b4d
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-73d1d6e0-e91e-432f-9490-d6ce06667bb9 ;
+        oboe:measurementFor  oquo:observation-e2e7550a-3e52-4d79-8dab-2bc4c8cd0174 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-3a0e0005-8583-44f2-9154-d99af5ce326e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-8f2834c5-bf87-46eb-ad56-73ae19966ac6 ;
+        time:hasTime              oquo:instant-b5c28a45-01e3-4f55-99a7-546a9ee072c2 ;
+        oquo:hasObservation       oquo:observation-6b2a2eeb-7080-44c9-83dc-71fe8de595c3 .
+
+oquo:observation-18083a12-52ee-40de-a2cc-47e05ad9a158
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-58c75e40-a3ea-4485-a09b-ad57ebfc15ee ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-2fe76fdd-4a4e-49bb-9d79-64c1495177b0 .
+
+oquo:observation-0b225e46-70f0-47d9-b657-b9eb90847e15
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-83a67686-6839-47cd-9b21-2cf4ba55688d ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-abd5240c-08a3-4f04-8a2e-bc3f284449bd .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-44183bb0-980a-46ef-b471-76bb48973218
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.331Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5f8c16e6-0856-47ba-930c-2e1a7dbb2d19
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-cfded815-6273-43c0-8341-5c86aa1e2e90 ;
+        time:hasTime              oquo:instant-545b6c85-4790-4cf4-a905-1597744946f1 ;
+        oquo:hasObservation       oquo:observation-9d157f8d-a2c6-44cf-9ef6-1bec26477f3b .
+
+oquo:metric-7392be72-5cba-42f8-bd47-074a1efcc7d8
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-eb35afde-0f35-4a74-b67d-938778388941 ;
+        oboe:measurementFor  oquo:observation-5b0694c9-df3a-4cd2-b1cc-6069495906aa ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-1ccacd74-8445-481d-86f8-b7ad3c16e0a5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.363Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-15664414-73e5-4b62-8f8e-f4587aa94190
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-054f3a79-c57e-4c9b-8a88-ae383e82d441 ;
+        oboe:measurementFor  oquo:observation-754f3132-a57b-4050-92af-ebda27d845fd ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:qualityValue-41a86112-f0df-4291-8336-29689653a569
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fc91a646-0bb8-44e3-ad53-cc859b2190b3 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d27cfa57-795a-40b6-90c6-da8df39f969d .
+
+oquo:qualityValue-054f3a79-c57e-4c9b-8a88-ae383e82d441
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-15664414-73e5-4b62-8f8e-f4587aa94190 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-93bc70d3-c34e-474c-8289-27e21e3eee1c .
+
+oquo:qualityValue-ad6d026f-ce17-443a-b160-3814776d2be5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-3a0635b2-d163-4ce8-93a4-dc2ae17a212e ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bc1b90b1-e466-4eb2-8f46-52287c0e1121 .
+
+oquo:qualityValue-1bfef223-6c22-455f-af73-7fde346e63e5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-47abc928-86b5-4590-a524-69cbad28d421 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-221a0343-be64-417b-9c86-4c820e6c18d2 .
+
+oquo:metric-3a0635b2-d163-4ce8-93a4-dc2ae17a212e
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ad6d026f-ce17-443a-b160-3814776d2be5 ;
+        oboe:measurementFor  oquo:observation-9d5af23f-dedd-407a-bd0a-efe0cab9213b ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-290da77c-b311-4ba8-a9c4-fc36dbecebe6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-835b30d5-8c60-4c74-bc37-769d2c2f9ce1 ;
+        res:hasLiteralValue    "0.0019047619047619048"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d06a1ea2-98f6-48a3-b1ec-45a62abcd3e8 .
+
+oquo:observation-4f9314c0-075d-4dd8-b5d0-e9b0b4671f14
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-822f096d-544b-40ce-947e-9f23c56000fc ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-78bd9c90-3660-4c24-913e-52852dbf12ba .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-e2514b62-0324-4fd0-ae85-b948fdd48cfd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-79237eee-0b9a-4523-acab-bbaea1ce8815 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-85ad4f7d-6741-499e-a0a2-4688c9175fef .
+
+oquo:observation-e89d4262-f682-4776-bbd3-d0d7340e578f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d16dbb77-2594-4837-abf6-af4dae45793f ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-f157bb60-da9f-4e01-9dab-87d8fac40b51 .
+
+oquo:instant-8a6b7eb6-c813-4cab-8072-2beec9c292bd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:03.963Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-c691c3ff-b131-495e-a2ea-e2e3b46a5326
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9fc6daf4-0852-4b55-8442-4a13408ffd28 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4fc49158-f694-469b-9cbf-e0a963a4847a .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-13f337fd-981c-4db4-a8bc-c93030f61408
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ccf186d3-1d4d-40bf-a25d-db018af63c08 ;
+        res:hasLiteralValue    "0.08761904761904762"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a2043ddb-b2e0-4e14-9734-2db78bdcc404 .
+
+oquo:metric-d1bf13e0-3001-4fcd-853b-8c55c461321c
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8f2834c5-bf87-46eb-ad56-73ae19966ac6 ;
+        oboe:measurementFor  oquo:observation-6b2a2eeb-7080-44c9-83dc-71fe8de595c3 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-221a0343-be64-417b-9c86-4c820e6c18d2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-1bfef223-6c22-455f-af73-7fde346e63e5 ;
+        time:hasTime              oquo:instant-3968384a-16e5-4a7d-a5ee-829d41bcd4ff ;
+        oquo:hasObservation       oquo:observation-e92368d2-ccaa-4b65-9c7f-90c8fd9ba47c .
+
+oquo:observation-e2e7550a-3e52-4d79-8dab-2bc4c8cd0174
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-45395105-9f0c-4d83-ba16-870999a52b4d ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-1a9d162e-5367-4c43-95d5-75f94c9e5806 .
+
+oquo:observation-6b2a2eeb-7080-44c9-83dc-71fe8de595c3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d1bf13e0-3001-4fcd-853b-8c55c461321c ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-b5c28a45-01e3-4f55-99a7-546a9ee072c2 .
+
+oquo:instant-92b7a890-494a-4db7-8767-83de393429fa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.249Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-85ad4f7d-6741-499e-a0a2-4688c9175fef
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-e2514b62-0324-4fd0-ae85-b948fdd48cfd ;
+        time:hasTime              oquo:instant-06aaac82-3bef-44b9-a011-078764126f69 ;
+        oquo:hasObservation       oquo:observation-3390a674-9e9d-4daa-af22-70ab5c6337df .
+
+oquo:metric-d25c98c1-e7cc-4c92-b557-3f3fb49fdc4b
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-02025dcb-e85f-4789-b32d-81b77acd6e3c ;
+        oboe:measurementFor  oquo:observation-009ebfb3-1a43-492b-abf1-e8a73675a79e ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:instant-b5c28a45-01e3-4f55-99a7-546a9ee072c2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.236Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-1de76f67-889b-4a45-91b7-addfb9fa00c2
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d16dbb77-2594-4837-abf6-af4dae45793f ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-47b00a8b-21a6-4f5a-bbda-cca5c2af4158 .
+
+oquo:instant-78bd9c90-3660-4c24-913e-52852dbf12ba
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.062Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fc488ed2-2445-4bbe-b73a-8395c323e292
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-8212c423-caeb-4435-8489-092641ab0978 ;
+        time:hasTime              oquo:instant-2fe76fdd-4a4e-49bb-9d79-64c1495177b0 ;
+        oquo:hasObservation       oquo:observation-18083a12-52ee-40de-a2cc-47e05ad9a158 .
+
+oquo:metric-79237eee-0b9a-4523-acab-bbaea1ce8815
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-e2514b62-0324-4fd0-ae85-b948fdd48cfd ;
+        oboe:measurementFor  oquo:observation-3390a674-9e9d-4daa-af22-70ab5c6337df ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-c24456fc-5a12-4648-addb-7975ed46bf4c
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-d6718004-b599-4d52-ba64-a516628ce5f3 ;
+        oboe:measurementFor  oquo:observation-f3a2ca59-c2b2-4cdb-97e5-2ad3185c998a ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-d06a1ea2-98f6-48a3-b1ec-45a62abcd3e8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-290da77c-b311-4ba8-a9c4-fc36dbecebe6 ;
+        time:hasTime              oquo:instant-fb61ff2f-d217-4f7f-b611-f19c5a508838 ;
+        oquo:hasObservation       oquo:observation-ccb54c1b-15e7-46ad-94ac-0eafe1744b20 .
+
+oquo:instant-46f5288b-8007-47bb-924c-1d8c54e9856f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.152Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-79c1cafc-f987-4a41-993a-fafc97bc8a46
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-090cddcb-5e18-45ec-adbc-b96ff4bf6f1a ;
+        time:hasTime              oquo:instant-ad498446-9a02-4553-b85c-c74459d029da ;
+        oquo:hasObservation       oquo:observation-c950f333-bf80-4be0-9eef-14538c379b61 .
+
+oquo:instant-1a11568c-7547-4eb8-8f00-1a850b2c4bb4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.373Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-e92368d2-ccaa-4b65-9c7f-90c8fd9ba47c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-47abc928-86b5-4590-a524-69cbad28d421 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-3968384a-16e5-4a7d-a5ee-829d41bcd4ff .
+
+oquo:metric-e50dbc78-6aed-45e3-b0cb-55f0e4ea63ee
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-a7224de2-6842-46f1-af61-41438869849c ;
+        oboe:measurementFor  oquo:observation-51396809-95a3-4a11-a9a5-5119292f93f4 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:instant-d05ed17d-3c5b-479c-b715-13d1485f7a68
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.302Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-fb61ff2f-d217-4f7f-b611-f19c5a508838
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:03.941Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f3a2ca59-c2b2-4cdb-97e5-2ad3185c998a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c24456fc-5a12-4648-addb-7975ed46bf4c ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-92b7a890-494a-4db7-8767-83de393429fa .
+
+oquo:evaluation-d27cfa57-795a-40b6-90c6-da8df39f969d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-41a86112-f0df-4291-8336-29689653a569 ;
+        time:hasTime              oquo:instant-ff802dae-f780-4f11-b3fe-718405402b66 ;
+        oquo:hasObservation       oquo:observation-912ca087-9726-42d4-8695-a0098ec70585 .
+
+oquo:qualityValue-8b77dd5f-6e8f-4c47-97f0-05e2028e149a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d6fbcbd8-2059-4e8a-8363-f8f36ee7a1c7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0e6f9a4c-dc2e-43c0-b242-a23579665f11 .
+
+oquo:qualityValue-a8305800-7c33-4a23-a81b-f2e62f69a5bd
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-83a67686-6839-47cd-9b21-2cf4ba55688d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9e23773f-9742-46b7-afa7-83a7e0e5fb05 .
+
+oquo:evaluation-4fc49158-f694-469b-9cbf-e0a963a4847a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-c691c3ff-b131-495e-a2ea-e2e3b46a5326 ;
+        time:hasTime              oquo:instant-451b518a-e645-492e-88d4-9c7f6a1fadc4 ;
+        oquo:hasObservation       oquo:observation-ec732069-7a6d-4702-b267-552696f67540 .
+
+oquo:observation-94c3a5da-9b28-4ce0-92e6-8c255ca8afb9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9e1c8c31-5ebd-406e-aeb3-873cd81c6fe5 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-1a11568c-7547-4eb8-8f00-1a850b2c4bb4 .
+
+oquo:observation-82430b91-d1ed-4cc4-a99d-948fca792b48
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-69ee489b-236a-4f47-b82d-85ae0d694662 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-a9018c49-3be4-4f60-a074-8aba4f11ce64 .
+
+oquo:evaluation-d7f7f73c-7ba1-4091-9499-961c80811db8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-203f06f8-c6f2-462a-aec8-2856c8462ea5 ;
+        time:hasTime              oquo:instant-2a998f6c-ec37-4fa8-b951-63a9c7c96d08 ;
+        oquo:hasObservation       oquo:observation-942a5300-7e36-461d-94bb-9cb61e1975b3 .
+
+oquo:qualityValue-eec66390-1cac-47d7-8d68-a1ff53dc3cf8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-277c855a-931f-49a0-8a52-3b248076f6cd ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-32fc0736-0e9e-4d59-aedb-cf01e9315771 .
+
+oquo:observation-9d157f8d-a2c6-44cf-9ef6-1bec26477f3b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c68addb8-e80c-4c61-a068-a0903a984666 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-545b6c85-4790-4cf4-a905-1597744946f1 .
+
+oquo:observation-912ca087-9726-42d4-8695-a0098ec70585
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fc91a646-0bb8-44e3-ad53-cc859b2190b3 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-ff802dae-f780-4f11-b3fe-718405402b66 .
+
+oquo:qualityValue-203f06f8-c6f2-462a-aec8-2856c8462ea5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-1b8d842f-e700-4fb4-8253-fb6bcf8bbb15 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d7f7f73c-7ba1-4091-9499-961c80811db8 .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-39724530-0c43-4392-9c7e-4e242ae66e87
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.212Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-9e23773f-9742-46b7-afa7-83a7e0e5fb05
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-a8305800-7c33-4a23-a81b-f2e62f69a5bd ;
+        time:hasTime              oquo:instant-abd5240c-08a3-4f04-8a2e-bc3f284449bd ;
+        oquo:hasObservation       oquo:observation-0b225e46-70f0-47d9-b657-b9eb90847e15 .
+
+oquo:evaluation-5fcb2382-f916-415a-9db6-10083e007567
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-493c81fe-ff77-4350-8024-984baf19c026 ;
+        time:hasTime              oquo:instant-a9018c49-3be4-4f60-a074-8aba4f11ce64 ;
+        oquo:hasObservation       oquo:observation-82430b91-d1ed-4cc4-a99d-948fca792b48 .
+
+oquo:observation-0f298c3c-ab1f-46cd-807e-0d4e852bff12
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d6fbcbd8-2059-4e8a-8363-f8f36ee7a1c7 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-127ceb9f-f664-40ca-8296-5d4548c73ed8 .
+
+oquo:evaluation-5be10bab-0b2f-41ba-b4e9-56066f4ebc7b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-13cb9776-778b-400d-8881-1d456dfd2c61 ;
+        time:hasTime              oquo:instant-1a11568c-7547-4eb8-8f00-1a850b2c4bb4 ;
+        oquo:hasObservation       oquo:observation-94c3a5da-9b28-4ce0-92e6-8c255ca8afb9 .
+
+oquo:observation-ccb54c1b-15e7-46ad-94ac-0eafe1744b20
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-835b30d5-8c60-4c74-bc37-769d2c2f9ce1 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-fb61ff2f-d217-4f7f-b611-f19c5a508838 .
+
+oquo:metric-e278ec86-70df-4bfd-a06f-96c1579097ec
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d3a7e978-cdfe-43ea-b5e4-9f29e8dbd753 ;
+        oboe:measurementFor  oquo:observation-6daf36b4-c3b0-47fe-be60-9881c4361560 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:metric-8363ac93-9d4a-4194-8f86-d527379958cf
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-c172caba-7a10-496b-ae0c-bcd552d9de7f ;
+        oboe:measurementFor  oquo:observation-42810b90-8808-4542-88d2-fb7e955e6d33 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-2fe76fdd-4a4e-49bb-9d79-64c1495177b0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.064Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-da742bc8-66b7-4a93-a78c-62c33ad04333
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-5a9e668f-7940-4db4-868c-d987c39259ca ;
+        time:hasTime              oquo:instant-1ccacd74-8445-481d-86f8-b7ad3c16e0a5 ;
+        oquo:hasObservation       oquo:observation-ca4256dc-6192-4a68-8f4d-e3ee5a8c4271 .
+
+oquo:metric-40b5aea7-3b08-4906-a6a6-8129cd07eedf
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e4243912-395f-4e55-95ef-e509609c39c9 ;
+        oboe:measurementFor  oquo:observation-d2307167-7e75-4f95-ad3d-a4179aa8077a ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-abd5240c-08a3-4f04-8a2e-bc3f284449bd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.378Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-f157bb60-da9f-4e01-9dab-87d8fac40b51
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.144Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-1a9d162e-5367-4c43-95d5-75f94c9e5806
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.149Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-5a9e668f-7940-4db4-868c-d987c39259ca
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-6160d2dc-67f1-4956-b361-a3e83e45816e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-da742bc8-66b7-4a93-a78c-62c33ad04333 .
+
+oquo:instant-6b84bb76-10ea-4479-bfc5-1a829ce324aa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.147Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-127ceb9f-f664-40ca-8296-5d4548c73ed8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.362Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ec1bdf90-be60-46bc-b998-6be2999a65c1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-e4243912-395f-4e55-95ef-e509609c39c9 ;
+        time:hasTime              oquo:instant-6b84bb76-10ea-4479-bfc5-1a829ce324aa ;
+        oquo:hasObservation       oquo:observation-d2307167-7e75-4f95-ad3d-a4179aa8077a .
+
+oquo:qualityValue-6df9cc91-532b-45b0-a5c3-877350845da5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a0b05bfe-f37e-4a15-9cc5-088c2d26f733 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6a747b12-02a0-45c7-933c-44bf1865f6d7 .
+
+oquo:observation-754f3132-a57b-4050-92af-ebda27d845fd
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-15664414-73e5-4b62-8f8e-f4587aa94190 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-5daaa0a4-8128-4247-a717-5447d78f55b1 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-d6718004-b599-4d52-ba64-a516628ce5f3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c24456fc-5a12-4648-addb-7975ed46bf4c ;
+        res:hasLiteralValue    "0.9542857142857143"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7de46536-f5f4-4d9f-ad47-9eb9b0fbcc79 .
+
+oquo:instant-52fce11f-0f4a-4569-810d-f04a2d736f16
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.134Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9e1c8c31-5ebd-406e-aeb3-873cd81c6fe5
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-13cb9776-778b-400d-8881-1d456dfd2c61 ;
+        oboe:measurementFor  oquo:observation-94c3a5da-9b28-4ce0-92e6-8c255ca8afb9 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-c950f333-bf80-4be0-9eef-14538c379b61
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-63853fa4-90e2-4f4f-af10-ac45595affc1 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-ad498446-9a02-4553-b85c-c74459d029da .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-a2043ddb-b2e0-4e14-9734-2db78bdcc404
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-13f337fd-981c-4db4-a8bc-c93030f61408 ;
+        time:hasTime              oquo:instant-44183bb0-980a-46ef-b471-76bb48973218 ;
+        oquo:hasObservation       oquo:observation-cb872498-69f1-439b-8b22-c010850e23ce .
+
+oquo:qualityValue-a7224de2-6842-46f1-af61-41438869849c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e50dbc78-6aed-45e3-b0cb-55f0e4ea63ee ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6bfeef1d-6000-4b9b-8398-b57ca06ae39d .
+
+oquo:instant-24badfab-4eb4-4d40-8809-ec5825af8c6a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.365Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-0b919010-d819-4c7e-8466-303d40dc2966
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-8fc76f27-7a2d-4615-a6c2-d6bfeadd852d ;
+        time:hasTime              oquo:instant-8f034ee8-e1fd-4248-a6a6-8b13bbae15c6 ;
+        oquo:hasObservation       oquo:observation-a9bb1630-4504-490e-9729-118fff0f8444 .
+
+oquo:observation-009ebfb3-1a43-492b-abf1-e8a73675a79e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d25c98c1-e7cc-4c92-b557-3f3fb49fdc4b ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-8a6b7eb6-c813-4cab-8072-2beec9c292bd .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:evaluation-6bfeef1d-6000-4b9b-8398-b57ca06ae39d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-a7224de2-6842-46f1-af61-41438869849c ;
+        time:hasTime              oquo:instant-71518551-e9aa-43de-beb4-3c5bbafacd61 ;
+        oquo:hasObservation       oquo:observation-51396809-95a3-4a11-a9a5-5119292f93f4 .
+
+oquo:observation-ca4256dc-6192-4a68-8f4d-e3ee5a8c4271
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-6160d2dc-67f1-4956-b361-a3e83e45816e ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-1ccacd74-8445-481d-86f8-b7ad3c16e0a5 .
+
+oquo:evaluation-6a747b12-02a0-45c7-933c-44bf1865f6d7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-6df9cc91-532b-45b0-a5c3-877350845da5 ;
+        time:hasTime              oquo:instant-39724530-0c43-4392-9c7e-4e242ae66e87 ;
+        oquo:hasObservation       oquo:observation-a4142444-c0d9-4eaa-a7a8-5a60ac4c2a24 .
+
+oquo:observation-9d5af23f-dedd-407a-bd0a-efe0cab9213b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-3a0635b2-d163-4ce8-93a4-dc2ae17a212e ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-db1560f5-a460-44f9-b1db-e12880edd47d .
+
+oquo:metric-d16dbb77-2594-4837-abf6-af4dae45793f
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1de76f67-889b-4a45-91b7-addfb9fa00c2 ;
+        oboe:measurementFor  oquo:observation-e89d4262-f682-4776-bbd3-d0d7340e578f ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-0488ccef-e9a1-47dc-9c26-a1ad90560f51
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-47f96be9-50d2-481a-afe9-3a5d39a6983f ;
+        time:hasTime              oquo:instant-e1466fb0-7118-4378-8a7e-07ce9a0d1bf0 ;
+        oquo:hasObservation       oquo:observation-ae9e20c5-e407-4f73-8632-912830955648 .
+
+oquo:metric-47abc928-86b5-4590-a524-69cbad28d421
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1bfef223-6c22-455f-af73-7fde346e63e5 ;
+        oboe:measurementFor  oquo:observation-e92368d2-ccaa-4b65-9c7f-90c8fd9ba47c ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:instant-db1560f5-a460-44f9-b1db-e12880edd47d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.305Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ec732069-7a6d-4702-b267-552696f67540
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9fc6daf4-0852-4b55-8442-4a13408ffd28 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-451b518a-e645-492e-88d4-9c7f6a1fadc4 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-54093285-86b2-459c-b0a6-b4f23d1c1267
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-c172caba-7a10-496b-ae0c-bcd552d9de7f ;
+        time:hasTime              oquo:instant-24badfab-4eb4-4d40-8809-ec5825af8c6a ;
+        oquo:hasObservation       oquo:observation-42810b90-8808-4542-88d2-fb7e955e6d33 .
+
+oquo:qualityValue-eb35afde-0f35-4a74-b67d-938778388941
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7392be72-5cba-42f8-bd47-074a1efcc7d8 ;
+        res:hasLiteralValue    "0.4782608695652174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b3539587-e3fd-44ac-b453-ed0e98b8e723 .
+
+oquo:evaluation-a8391fec-3055-4d77-b253-b5f7f5d50195
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-85691184-a5d3-4b01-bfe9-b8d7be9e3a41 ;
+        time:hasTime              oquo:instant-78bd9c90-3660-4c24-913e-52852dbf12ba ;
+        oquo:hasObservation       oquo:observation-4f9314c0-075d-4dd8-b5d0-e9b0b4671f14 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-afbf72e1-8938-45b4-9168-9e9d282a529a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-916bd231-ab03-42bb-b1af-954ac555b769 ;
+        time:hasTime              oquo:instant-7bb2fae2-424b-4654-b470-820940fbe2f1 ;
+        oquo:hasObservation       oquo:observation-909b8651-b62a-4546-95f5-8ab2b66b4b5b .
+
+oquo:observation-cb872498-69f1-439b-8b22-c010850e23ce
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ccf186d3-1d4d-40bf-a25d-db018af63c08 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-44183bb0-980a-46ef-b471-76bb48973218 .
+
+oquo:instant-ad498446-9a02-4553-b85c-c74459d029da
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:04.914Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-bc1b90b1-e466-4eb2-8f46-52287c0e1121
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-ad6d026f-ce17-443a-b160-3814776d2be5 ;
+        time:hasTime              oquo:instant-db1560f5-a460-44f9-b1db-e12880edd47d ;
+        oquo:hasObservation       oquo:observation-9d5af23f-dedd-407a-bd0a-efe0cab9213b .
+
+oquo:qualityValue-8fc76f27-7a2d-4615-a6c2-d6bfeadd852d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-95ada507-e27c-42c2-aead-0bcbee73dd2c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0b919010-d819-4c7e-8466-303d40dc2966 .
+
+oquo:qualityValue-47f96be9-50d2-481a-afe9-3a5d39a6983f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-86115a8a-a8cc-40ca-a674-40b8b0c7c783 ;
+        res:hasLiteralValue    "0.5961904761904762"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0488ccef-e9a1-47dc-9c26-a1ad90560f51 .
+
+oquo:metric-7d671373-4042-401c-bda1-4e25c2201d4f
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-512a1615-be8b-4b68-bca0-d5d04d7578f7 ;
+        oboe:measurementFor  oquo:observation-7dbcc2b9-d51f-4670-9977-50ff8233758d ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-d9e49c32-51a5-47ff-b1b6-3785f2a645e2
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-916bd231-ab03-42bb-b1af-954ac555b769 ;
+        oboe:measurementFor  oquo:observation-909b8651-b62a-4546-95f5-8ab2b66b4b5b ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:instant-545b6c85-4790-4cf4-a905-1597744946f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.314Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9fc6daf4-0852-4b55-8442-4a13408ffd28
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c691c3ff-b131-495e-a2ea-e2e3b46a5326 ;
+        oboe:measurementFor  oquo:observation-ec732069-7a6d-4702-b267-552696f67540 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-822f096d-544b-40ce-947e-9f23c56000fc
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-85691184-a5d3-4b01-bfe9-b8d7be9e3a41 ;
+        oboe:measurementFor  oquo:observation-4f9314c0-075d-4dd8-b5d0-e9b0b4671f14 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-277c855a-931f-49a0-8a52-3b248076f6cd
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-eec66390-1cac-47d7-8d68-a1ff53dc3cf8 ;
+        oboe:measurementFor  oquo:observation-6b8dc68f-57ef-4ae4-90b0-7a76f06193c0 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:qualityValue-cfded815-6273-43c0-8341-5c86aa1e2e90
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c68addb8-e80c-4c61-a068-a0903a984666 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5f8c16e6-0856-47ba-930c-2e1a7dbb2d19 .
+
+oquo:observation-42810b90-8808-4542-88d2-fb7e955e6d33
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-8363ac93-9d4a-4194-8f86-d527379958cf ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-24badfab-4eb4-4d40-8809-ec5825af8c6a .
+
+oquo:instant-50b36c36-4d58-42aa-803a-350c0cc561f3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:03.328Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-0e6f9a4c-dc2e-43c0-b242-a23579665f11
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-8b77dd5f-6e8f-4c47-97f0-05e2028e149a ;
+        time:hasTime              oquo:instant-127ceb9f-f664-40ca-8296-5d4548c73ed8 ;
+        oquo:hasObservation       oquo:observation-0f298c3c-ab1f-46cd-807e-0d4e852bff12 .
+
+oquo:qualityValue-73d1d6e0-e91e-432f-9490-d6ce06667bb9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-45395105-9f0c-4d83-ba16-870999a52b4d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9a33633f-d62e-4ac9-85ae-3a8cc75a24a3 .
+
+oquo:evaluation-47b00a8b-21a6-4f5a-bbda-cca5c2af4158
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-1de76f67-889b-4a45-91b7-addfb9fa00c2 ;
+        time:hasTime              oquo:instant-f157bb60-da9f-4e01-9dab-87d8fac40b51 ;
+        oquo:hasObservation       oquo:observation-e89d4262-f682-4776-bbd3-d0d7340e578f .
+
+oquo:instant-8f034ee8-e1fd-4248-a6a6-8b13bbae15c6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.245Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-71518551-e9aa-43de-beb4-3c5bbafacd61
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.371Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-7dbcc2b9-d51f-4670-9977-50ff8233758d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7d671373-4042-401c-bda1-4e25c2201d4f ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-46f5288b-8007-47bb-924c-1d8c54e9856f .
+
+oquo:evaluation-32fc0736-0e9e-4d59-aedb-cf01e9315771
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-eec66390-1cac-47d7-8d68-a1ff53dc3cf8 ;
+        time:hasTime              oquo:instant-50b36c36-4d58-42aa-803a-350c0cc561f3 ;
+        oquo:hasObservation       oquo:observation-6b8dc68f-57ef-4ae4-90b0-7a76f06193c0 .
+
+oquo:metric-95ada507-e27c-42c2-aead-0bcbee73dd2c
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8fc76f27-7a2d-4615-a6c2-d6bfeadd852d ;
+        oboe:measurementFor  oquo:observation-a9bb1630-4504-490e-9729-118fff0f8444 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:metric-835b30d5-8c60-4c74-bc37-769d2c2f9ce1
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-290da77c-b311-4ba8-a9c4-fc36dbecebe6 ;
+        oboe:measurementFor  oquo:observation-ccb54c1b-15e7-46ad-94ac-0eafe1744b20 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-ff802dae-f780-4f11-b3fe-718405402b66
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:04.09Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-13cb9776-778b-400d-8881-1d456dfd2c61
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9e1c8c31-5ebd-406e-aeb3-873cd81c6fe5 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5be10bab-0b2f-41ba-b4e9-56066f4ebc7b .
+
+oquo:metric-d6fbcbd8-2059-4e8a-8363-f8f36ee7a1c7
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-8b77dd5f-6e8f-4c47-97f0-05e2028e149a ;
+        oboe:measurementFor  oquo:observation-0f298c3c-ab1f-46cd-807e-0d4e852bff12 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:metric-63853fa4-90e2-4f4f-af10-ac45595affc1
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-090cddcb-5e18-45ec-adbc-b96ff4bf6f1a ;
+        oboe:measurementFor  oquo:observation-c950f333-bf80-4be0-9eef-14538c379b61 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:observation-942a5300-7e36-461d-94bb-9cb61e1975b3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-1b8d842f-e700-4fb4-8253-fb6bcf8bbb15 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-2a998f6c-ec37-4fa8-b951-63a9c7c96d08 .
+
+oquo:metric-69ee489b-236a-4f47-b82d-85ae0d694662
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-493c81fe-ff77-4350-8024-984baf19c026 ;
+        oboe:measurementFor  oquo:observation-82430b91-d1ed-4cc4-a99d-948fca792b48 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-3390a674-9e9d-4daa-af22-70ab5c6337df
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-79237eee-0b9a-4523-acab-bbaea1ce8815 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-06aaac82-3bef-44b9-a011-078764126f69 .
+
+oquo:instant-e1466fb0-7118-4378-8a7e-07ce9a0d1bf0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.354Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6daf36b4-c3b0-47fe-be60-9881c4361560
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e278ec86-70df-4bfd-a06f-96c1579097ec ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-d05ed17d-3c5b-479c-b715-13d1485f7a68 .
+
+oquo:observation-5b0694c9-df3a-4cd2-b1cc-6069495906aa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7392be72-5cba-42f8-bd47-074a1efcc7d8 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-52fce11f-0f4a-4569-810d-f04a2d736f16 .
+
+oquo:evaluation-93bc70d3-c34e-474c-8289-27e21e3eee1c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-054f3a79-c57e-4c9b-8a88-ae383e82d441 ;
+        time:hasTime              oquo:instant-5daaa0a4-8128-4247-a717-5447d78f55b1 ;
+        oquo:hasObservation       oquo:observation-754f3132-a57b-4050-92af-ebda27d845fd .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-1b8d842f-e700-4fb4-8253-fb6bcf8bbb15
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-203f06f8-c6f2-462a-aec8-2856c8462ea5 ;
+        oboe:measurementFor  oquo:observation-942a5300-7e36-461d-94bb-9cb61e1975b3 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:qualityValue-c172caba-7a10-496b-ae0c-bcd552d9de7f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-8363ac93-9d4a-4194-8f86-d527379958cf ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-54093285-86b2-459c-b0a6-b4f23d1c1267 .
+
+oquo:instant-2a998f6c-ec37-4fa8-b951-63a9c7c96d08
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:03.462Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-a9bb1630-4504-490e-9729-118fff0f8444
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-95ada507-e27c-42c2-aead-0bcbee73dd2c ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-8f034ee8-e1fd-4248-a6a6-8b13bbae15c6 .
+
+oquo:observation-909b8651-b62a-4546-95f5-8ab2b66b4b5b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d9e49c32-51a5-47ff-b1b6-3785f2a645e2 ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-7bb2fae2-424b-4654-b470-820940fbe2f1 .
+
+oquo:qualityValue-8f2834c5-bf87-46eb-ad56-73ae19966ac6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d1bf13e0-3001-4fcd-853b-8c55c461321c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3a0e0005-8583-44f2-9154-d99af5ce326e .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-512a1615-be8b-4b68-bca0-d5d04d7578f7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7d671373-4042-401c-bda1-4e25c2201d4f ;
+        res:hasLiteralValue    "0.6647619047619048"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bd28a57f-fdb4-4429-b8ca-b972b540b673 .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-83a67686-6839-47cd-9b21-2cf4ba55688d
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-a8305800-7c33-4a23-a81b-f2e62f69a5bd ;
+        oboe:measurementFor  oquo:observation-0b225e46-70f0-47d9-b657-b9eb90847e15 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-58c75e40-a3ea-4485-a09b-ad57ebfc15ee
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-8212c423-caeb-4435-8489-092641ab0978 ;
+        oboe:measurementFor  oquo:observation-18083a12-52ee-40de-a2cc-47e05ad9a158 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:observation-51396809-95a3-4a11-a9a5-5119292f93f4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e50dbc78-6aed-45e3-b0cb-55f0e4ea63ee ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-71518551-e9aa-43de-beb4-3c5bbafacd61 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-916bd231-ab03-42bb-b1af-954ac555b769
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d9e49c32-51a5-47ff-b1b6-3785f2a645e2 ;
+        res:hasLiteralValue    "0.4782608695652174"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-afbf72e1-8938-45b4-9168-9e9d282a529a .
+
+oquo:evaluation-7de46536-f5f4-4d9f-ad47-9eb9b0fbcc79
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-d6718004-b599-4d52-ba64-a516628ce5f3 ;
+        time:hasTime              oquo:instant-92b7a890-494a-4db7-8767-83de393429fa ;
+        oquo:hasObservation       oquo:observation-f3a2ca59-c2b2-4cdb-97e5-2ad3185c998a .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-451b518a-e645-492e-88d4-9c7f6a1fadc4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.374Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7bb2fae2-424b-4654-b470-820940fbe2f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-17T21:57:05.296Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-224d6e48-0330-470f-9e13-071141615e45
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-d3a7e978-cdfe-43ea-b5e4-9f29e8dbd753 ;
+        time:hasTime              oquo:instant-d05ed17d-3c5b-479c-b715-13d1485f7a68 ;
+        oquo:hasObservation       oquo:observation-6daf36b4-c3b0-47fe-be60-9881c4361560 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-9a33633f-d62e-4ac9-85ae-3a8cc75a24a3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.biomodels.net/kisao/KISAO#> ;
+        res:inputData             <http://www.biomodels.net/kisao/KISAO#> ;
+        res:producedQualityValue  oquo:qualityValue-73d1d6e0-e91e-432f-9490-d6ce06667bb9 ;
+        time:hasTime              oquo:instant-1a9d162e-5367-4c43-95d5-75f94c9e5806 ;
+        oquo:hasObservation       oquo:observation-e2e7550a-3e52-4d79-8dab-2bc4c8cd0174 .
+
+oquo:observation-6b8dc68f-57ef-4ae4-90b0-7a76f06193c0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-277c855a-931f-49a0-8a52-3b248076f6cd ;
+        oboe:ofEntity        <http://www.biomodels.net/kisao/KISAO#> ;
+        time:hasTime         oquo:instant-50b36c36-4d58-42aa-803a-350c0cc561f3 .
