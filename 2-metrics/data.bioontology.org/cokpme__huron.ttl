@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-246c7c69-9936-4571-90b2-d92235db7770
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a8534252-79da-4789-9ffd-26889a5d89b2 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-e4489480-8d8a-4539-8e4b-27e8a5bc9d7f .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-67a6230f-72c8-466a-8785-166a7b7014b5
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-3f4616e4-f5a9-409d-835a-69e89420ef93 ;
+        oboe:measurementFor  oquo:observation-d3acb3a7-c916-48ef-a9df-6dcedf937bf9 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:metric-75987540-555f-4ad5-b7f7-2ce3b411ba81
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b0ce0937-9415-472c-b86b-960f00588a69 ;
+        oboe:measurementFor  oquo:observation-565d518e-5a97-494a-93a2-6797fd8ea729 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:metric-c4640053-3f27-4e7f-bb9d-59b808c04245
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-64ca5311-3ebc-4a3b-9643-873783d3ecf8 ;
+        oboe:measurementFor  oquo:observation-39f90336-85be-4e25-8357-6733170947a5 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:observation-565d518e-5a97-494a-93a2-6797fd8ea729
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-75987540-555f-4ad5-b7f7-2ce3b411ba81 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-12e93e3e-69e8-499c-a4dd-d3e22b80ab4d .
+
+oquo:instant-4c7659ed-0f7e-4f1c-a9b8-f588ca664e48
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.954Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-33c86340-abdd-4bdd-bb0e-a8392cd5a3d4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.963Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-38e1deab-050c-4a1c-afbb-34cf602b77a0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.027Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-b99e1dec-7c32-47bb-a9f8-ce3c5792d49c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cae9ec63-a75b-4138-aaec-6025e1b60914 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-09151819-77fa-441c-a396-5411f274f4ad .
+
+oquo:evaluation-c61a1e1c-b0e6-4df0-809b-20c334fad5e5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-092dfa86-f1aa-4dcf-9b0b-cbbac5a97ddc ;
+        time:hasTime              oquo:instant-852f4520-93e4-4b36-b55e-212b1d9570af ;
+        oquo:hasObservation       oquo:observation-f5d95657-9b88-44c7-aadf-79bc3b6ca06e .
+
+oquo:observation-ba30e5b6-24a2-4d16-8c6e-7070d9e9d26d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e601f4cb-5dd9-47fd-be9b-b00c1f8b9219 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-ab8cdfc5-c758-43fe-b7cd-af43d98bb035 .
+
+oquo:qualityValue-d11da07b-1385-4b78-b9f7-14aba446e19c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-be37971b-5bb9-4b86-aec7-be73c66e8669 ;
+        res:hasLiteralValue    "0.3888888888888889"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ba515aed-728a-4acd-80b4-33d356e32000 .
+
+oquo:qualityValue-49c2672d-4862-4da7-a8cd-c212154db7d1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f1121cc8-406f-4a13-9e47-ebb8f62a83d8 ;
+        res:hasLiteralValue    "0.88"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-82681d25-1acd-4876-872b-a70558f0a5dc .
+
+oquo:qualityValue-6216e223-53ab-4c81-be37-2efe1bc779c5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a36b3df1-5731-479b-bd04-fdf138c929e1 ;
+        res:hasLiteralValue    "0.2777777777777778"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-35901196-d966-4672-b790-25a77c255612 .
+
+oquo:observation-50198ab8-18e3-492c-aa9a-b14d4b20061c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-20c84b76-4ea8-4aed-8b54-ed2141dc6c32 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-7e073cfd-2ba4-42fd-94b9-b703935c844c .
+
+oquo:evaluation-13d3e029-3bfe-4bab-8184-b6a91ab15ca0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-3f4616e4-f5a9-409d-835a-69e89420ef93 ;
+        time:hasTime              oquo:instant-db9cc9dc-3614-4f83-842a-bae0fe76e31f ;
+        oquo:hasObservation       oquo:observation-d3acb3a7-c916-48ef-a9df-6dcedf937bf9 .
+
+oquo:metric-7f3fa1f0-6195-4f21-a8dd-6ebc18659906
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-f5bcf166-97db-41cd-932a-c8d85bfe46a5 ;
+        oboe:measurementFor  oquo:observation-884505eb-7b2a-45de-8be8-efd3284ad507 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-9bdd057b-666e-48e2-a7e5-2bb0d053962a
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-088f435d-7063-42a0-9c6d-4eb20e98881f ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-d768dbf8-4a22-4c5b-a135-32a6cf971e6c .
+
+oquo:observation-7cabadd0-2839-4230-8758-1dad422330f8
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2e424be1-9974-4141-8cb1-093866426e0d ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-b17b6f32-cd73-4bc4-9f71-958ee9c7d8be .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-c00f9b2e-4a4e-46f2-b69e-694e6efb5417
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dd424dea-94e6-4fcd-95c7-f2ea3ae8eb5c ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-e5e37da2-ece9-49fc-8512-6a21b785f2d9 .
+
+oquo:metric-41a3c2c1-88c3-45f1-8672-d2d129c9d246
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-b81acddf-d345-4ee4-a0ce-29625808bdcf ;
+        oboe:measurementFor  oquo:observation-410b4b96-4ba8-4ebe-95f1-f8b47ba05bb9 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-d569f6e1-c09d-4b4c-a59d-335d40c8a986
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-4e717bde-0b0c-4b04-9dc2-5c5b257c3021 ;
+        time:hasTime              oquo:instant-947b5e76-00bf-4abf-b118-62c40afe24aa ;
+        oquo:hasObservation       oquo:observation-da84dd66-20f2-4c78-8baa-7d733f1d8273 .
+
+oquo:instant-db9cc9dc-3614-4f83-842a-bae0fe76e31f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.51Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3fed7725-f4c3-4242-9e90-c6e0b2484750
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-1ded6dd9-31cf-43e2-9a8a-d426a4f5100e ;
+        time:hasTime              oquo:instant-33c86340-abdd-4bdd-bb0e-a8392cd5a3d4 ;
+        oquo:hasObservation       oquo:observation-ee80a4e2-4251-4a2a-b7e0-bf1bdcbacb20 .
+
+oquo:qualityValue-e17886cf-2e68-446d-be26-d3e540b8dcc8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ade5cf34-0b09-49da-b200-ec8ac568f345 ;
+        res:hasLiteralValue    "0.6111111111111112"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-92140e77-eebd-43df-8977-93238b74ad32 .
+
+oquo:qualityValue-092dfa86-f1aa-4dcf-9b0b-cbbac5a97ddc
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2d6eca60-790f-4449-ac3b-e47f26758b4e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c61a1e1c-b0e6-4df0-809b-20c334fad5e5 .
+
+oquo:observation-81d5d1a6-6119-4ca1-bc82-fe345ec3d395
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-97939441-8091-40af-86f1-8f5651df2ab1 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-b5cab15c-71ec-42cb-a76a-868ad46d9403 .
+
+oquo:instant-b17b6f32-cd73-4bc4-9f71-958ee9c7d8be
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.968Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-dd424dea-94e6-4fcd-95c7-f2ea3ae8eb5c
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-d3a3ce89-2e30-4be6-863f-374b0e2f46e6 ;
+        oboe:measurementFor  oquo:observation-c00f9b2e-4a4e-46f2-b69e-694e6efb5417 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-80cdc726-8612-4385-af44-c54cca93db69
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-3da7b184-228a-4047-92e9-0870ac485f76 ;
+        oboe:measurementFor  oquo:observation-db00bd20-c8ce-4dd2-85ad-e97e835cd8f0 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:instant-b5cab15c-71ec-42cb-a76a-868ad46d9403
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.948Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-204d4e4e-7133-4dde-b783-7c3ce77299aa
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cae9ec63-a75b-4138-aaec-6025e1b60914 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dacf0997-1911-45f4-a1a8-4ee7c8813dbc .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-12e93e3e-69e8-499c-a4dd-d3e22b80ab4d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.981Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7f247b19-bb69-493c-b7c8-253dca31b88e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.923Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-32a690f5-d161-406d-b8d5-e0c343e16611
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-20c84b76-4ea8-4aed-8b54-ed2141dc6c32 ;
+        res:hasLiteralValue    "0.7222222222222222"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-eea95745-32f8-42f0-9d66-3f37d9d021fb .
+
+oquo:metric-01b6038b-b711-4371-bf1a-da5517d0d0e2
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-87f7ac5f-f2e4-4a49-8ba4-655ca9eee317 ;
+        oboe:measurementFor  oquo:observation-ffb3157c-6649-49c7-949e-cc09c4488226 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-309d06f7-3642-4606-a5ae-87076bea7cc7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.927Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a8534252-79da-4789-9ffd-26889a5d89b2
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fbeb8a23-9587-493d-9913-72bb060b3bec ;
+        oboe:measurementFor  oquo:observation-246c7c69-9936-4571-90b2-d92235db7770 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:evaluation-dacf0997-1911-45f4-a1a8-4ee7c8813dbc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-204d4e4e-7133-4dde-b783-7c3ce77299aa ;
+        time:hasTime              oquo:instant-09151819-77fa-441c-a396-5411f274f4ad ;
+        oquo:hasObservation       oquo:observation-b99e1dec-7c32-47bb-a9f8-ce3c5792d49c .
+
+oquo:qualityValue-ca1c6d9c-9526-4edd-86f7-397d8b798aa7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a9148529-6e9c-4fbc-801d-fed0b353cf1b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6589345c-ba91-4d17-8f5c-04b892a1ab55 .
+
+oquo:qualityValue-fbfd8df2-53dc-4f35-82ff-5d8d07682cf9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d3ea6a91-6268-4cbb-b8b8-6201a9109b2c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ef1f5640-3551-4910-89f0-9b99249dd96d .
+
+oquo:metric-5df590dc-5542-4f6d-be79-6742be4a02f3
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-4e717bde-0b0c-4b04-9dc2-5c5b257c3021 ;
+        oboe:measurementFor  oquo:observation-da84dd66-20f2-4c78-8baa-7d733f1d8273 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-d7b17ae6-cb89-4639-958a-fea329749fc8
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-a43855db-762b-424d-8044-9e83fed32353 ;
+        time:hasTime              oquo:instant-b20c026c-57eb-4c85-804a-dbccbfa7342d ;
+        oquo:hasObservation       oquo:observation-5a0f4254-b375-46c1-9873-13d461003558 .
+
+oquo:instant-8d14aea7-614c-40f9-9754-a08f5de148b8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.979Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-2a79d105-1fcc-4122-b029-4f77e8567b57
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a9148529-6e9c-4fbc-801d-fed0b353cf1b ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-38e1deab-050c-4a1c-afbb-34cf602b77a0 .
+
+oquo:evaluation-79026b45-7f74-4925-ae28-8895ed3276fe
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-52c8cadf-3d4b-4903-8424-af2e577e0ec1 ;
+        time:hasTime              oquo:instant-4c7659ed-0f7e-4f1c-a9b8-f588ca664e48 ;
+        oquo:hasObservation       oquo:observation-e04c20d2-5a91-4d9d-a1bc-22bb20fd5166 .
+
+oquo:evaluation-bdb9231f-a4b6-4066-a95d-e3916b3e9511
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-bd37c8cb-1bbc-4fa6-8e71-fb3545423a75 ;
+        time:hasTime              oquo:instant-e9d9ee08-0cf0-43a6-9c92-1a7ef8fc5bc9 ;
+        oquo:hasObservation       oquo:observation-9f6d61d1-2aa2-480d-a989-2861270cdd21 .
+
+<http://www.iiitdwd.ac.in/ACB/COKPME>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:qualityValue-b81acddf-d345-4ee4-a0ce-29625808bdcf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-41a3c2c1-88c3-45f1-8672-d2d129c9d246 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ee0c5fae-bf14-4444-95ac-61e52f887e81 .
+
+oquo:evaluation-bc3ed275-ed9e-4f06-a51e-30af18e75e38
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-3da7b184-228a-4047-92e9-0870ac485f76 ;
+        time:hasTime              oquo:instant-67603d61-3c1d-4841-b81f-f64c38fed1f8 ;
+        oquo:hasObservation       oquo:observation-db00bd20-c8ce-4dd2-85ad-e97e835cd8f0 .
+
+oquo:observation-11f6208e-6194-4c9f-9d61-82700d09bec1
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b78ef843-1cbb-4aba-a64c-20a88f0320a1 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-8d14aea7-614c-40f9-9754-a08f5de148b8 .
+
+oquo:instant-d768dbf8-4a22-4c5b-a135-32a6cf971e6c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.97Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-52c8cadf-3d4b-4903-8424-af2e577e0ec1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b611b04c-4cf4-4361-bce5-11c79880fec7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-79026b45-7f74-4925-ae28-8895ed3276fe .
+
+oquo:qualityValue-fbeb8a23-9587-493d-9913-72bb060b3bec
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a8534252-79da-4789-9ffd-26889a5d89b2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-da625a2c-4ae0-442c-8054-598a1ff07212 .
+
+oquo:observation-fade9e3d-1219-4ce0-b9f5-1ada2b4da5ec
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a36b3df1-5731-479b-bd04-fdf138c929e1 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-e53c1252-b9d7-4543-a879-38b854f1d090 .
+
+oquo:observation-ec102075-7a8f-4ec7-8214-0cfb3d22588d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d3ea6a91-6268-4cbb-b8b8-6201a9109b2c ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-d97e344b-8d1c-4354-828c-f4d8abf78be4 .
+
+oquo:observation-9a4de1ab-f11e-488e-9172-b2397a075078
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-df4c22ef-e680-419f-aada-f100d4b17a0e ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-db032c53-20fe-44b7-8d45-a1a9dc2a9fdd .
+
+oquo:instant-59f89874-ccb3-4c96-9cc1-cb121cce0c9e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.028Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-d3acb3a7-c916-48ef-a9df-6dcedf937bf9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-67a6230f-72c8-466a-8785-166a7b7014b5 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-db9cc9dc-3614-4f83-842a-bae0fe76e31f .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-da84dd66-20f2-4c78-8baa-7d733f1d8273
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5df590dc-5542-4f6d-be79-6742be4a02f3 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-947b5e76-00bf-4abf-b118-62c40afe24aa .
+
+oquo:evaluation-82681d25-1acd-4876-872b-a70558f0a5dc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-49c2672d-4862-4da7-a8cd-c212154db7d1 ;
+        time:hasTime              oquo:instant-309d06f7-3642-4606-a5ae-87076bea7cc7 ;
+        oquo:hasObservation       oquo:observation-d3c39d06-5277-468b-8a38-8280549cb166 .
+
+oquo:observation-e7dab187-7c6a-4a2e-9a15-0021a1d6efe9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-916a8060-4d10-41fb-9e65-3a986c091685 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-3a8bd8ba-3e2a-487d-a65e-42287c16989a .
+
+oquo:evaluation-ee0c5fae-bf14-4444-95ac-61e52f887e81
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-b81acddf-d345-4ee4-a0ce-29625808bdcf ;
+        time:hasTime              oquo:instant-59f89874-ccb3-4c96-9cc1-cb121cce0c9e ;
+        oquo:hasObservation       oquo:observation-410b4b96-4ba8-4ebe-95f1-f8b47ba05bb9 .
+
+oquo:observation-d3c39d06-5277-468b-8a38-8280549cb166
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f1121cc8-406f-4a13-9e47-ebb8f62a83d8 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-309d06f7-3642-4606-a5ae-87076bea7cc7 .
+
+oquo:metric-cae9ec63-a75b-4138-aaec-6025e1b60914
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-204d4e4e-7133-4dde-b783-7c3ce77299aa ;
+        oboe:measurementFor  oquo:observation-b99e1dec-7c32-47bb-a9f8-ce3c5792d49c ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-ba515aed-728a-4acd-80b4-33d356e32000
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-d11da07b-1385-4b78-b9f7-14aba446e19c ;
+        time:hasTime              oquo:instant-9fa91f43-49b7-4fcf-9376-01fc13ca98de ;
+        oquo:hasObservation       oquo:observation-97785ab9-1a0e-46c7-b1ff-320844441157 .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-947b5e76-00bf-4abf-b118-62c40afe24aa
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.987Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-19b62e12-6e70-4cbd-afa9-93361aa33cbe
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bd2e8ce4-7ec6-4c7e-a6de-b366b9704e1a ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-b41263a3-03d9-47b4-8608-1d1085ed2bd6 .
+
+oquo:evaluation-efbf4488-5af7-41c6-a716-1bc2a28b92cc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-287e6473-dcdc-4252-922d-6ffb4f444c49 ;
+        time:hasTime              oquo:instant-b17b6f32-cd73-4bc4-9f71-958ee9c7d8be ;
+        oquo:hasObservation       oquo:observation-7cabadd0-2839-4230-8758-1dad422330f8 .
+
+oquo:instant-e5e37da2-ece9-49fc-8512-6a21b785f2d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.441Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b94c73a4-eb58-45f5-83e0-0cdce3c2b187
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e601f4cb-5dd9-47fd-be9b-b00c1f8b9219 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-cbbb1489-ca88-45ba-9109-8c939cfd7cd0 .
+
+oquo:qualityValue-37bfe86c-0820-446f-a917-515f4106d89d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-45246ca6-02fc-413a-a768-da69b17815a4 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b6d34533-a468-4762-9dac-863636b0d15c .
+
+oquo:instant-b41263a3-03d9-47b4-8608-1d1085ed2bd6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.498Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d0f2bdc8-32f4-4bb2-b50f-3681da8d7a60
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-f825b53c-696f-4979-bc64-8d176d79cf26 ;
+        time:hasTime              oquo:instant-5bcc8064-908d-4852-8465-c90f4b594603 ;
+        oquo:hasObservation       oquo:observation-e3661aa0-eda4-4013-a6ef-8a440b184f08 .
+
+oquo:instant-852f4520-93e4-4b36-b55e-212b1d9570af
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.452Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f5bcf166-97db-41cd-932a-c8d85bfe46a5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7f3fa1f0-6195-4f21-a8dd-6ebc18659906 ;
+        res:hasLiteralValue    "25.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f261d5f4-a08d-498d-bd6f-9836cb9d3e56 .
+
+oquo:evaluation-2d756aaa-c15f-4089-9e49-38ab2513c690
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-87f7ac5f-f2e4-4a49-8ba4-655ca9eee317 ;
+        time:hasTime              oquo:instant-a1c5f28d-4fef-4df9-a3af-d8ccff283aa0 ;
+        oquo:hasObservation       oquo:observation-ffb3157c-6649-49c7-949e-cc09c4488226 .
+
+oquo:qualityValue-a43855db-762b-424d-8044-9e83fed32353
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b546f6f7-4cd3-47b7-9957-723b22261f4d ;
+        res:hasLiteralValue    "0.5434782608695652"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d7b17ae6-cb89-4639-958a-fea329749fc8 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-a1c5f28d-4fef-4df9-a3af-d8ccff283aa0
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.999Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-db00bd20-c8ce-4dd2-85ad-e97e835cd8f0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-80cdc726-8612-4385-af44-c54cca93db69 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-67603d61-3c1d-4841-b81f-f64c38fed1f8 .
+
+oquo:qualityValue-ee33aee9-4ea8-4256-bf06-026ace83d14e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e17ec763-a831-4737-9ace-1fbaa283fb5f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe5edeac-11f3-4874-a3e8-53688a4657ad .
+
+oquo:observation-97785ab9-1a0e-46c7-b1ff-320844441157
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-be37971b-5bb9-4b86-aec7-be73c66e8669 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-9fa91f43-49b7-4fcf-9376-01fc13ca98de .
+
+oquo:metric-df4c22ef-e680-419f-aada-f100d4b17a0e
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-823d0900-b83c-46d7-b027-829942d215b7 ;
+        oboe:measurementFor  oquo:observation-9a4de1ab-f11e-488e-9172-b2397a075078 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:qualityValue-87f7ac5f-f2e4-4a49-8ba4-655ca9eee317
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-01b6038b-b711-4371-bf1a-da5517d0d0e2 ;
+        res:hasLiteralValue    "0.2222222222222222"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2d756aaa-c15f-4089-9e49-38ab2513c690 .
+
+oquo:qualityValue-ef88ddf2-4956-40af-a80f-0555b0a37ad9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-088f435d-7063-42a0-9c6d-4eb20e98881f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0a8f66a1-0d9c-495f-ac6e-4732f5b9360e .
+
+oquo:instant-ab8cdfc5-c758-43fe-b7cd-af43d98bb035
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.976Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-09151819-77fa-441c-a396-5411f274f4ad
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.956Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a9148529-6e9c-4fbc-801d-fed0b353cf1b
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-ca1c6d9c-9526-4edd-86f7-397d8b798aa7 ;
+        oboe:measurementFor  oquo:observation-2a79d105-1fcc-4122-b029-4f77e8567b57 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:observation-410b4b96-4ba8-4ebe-95f1-f8b47ba05bb9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-41a3c2c1-88c3-45f1-8672-d2d129c9d246 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-59f89874-ccb3-4c96-9cc1-cb121cce0c9e .
+
+oquo:evaluation-da625a2c-4ae0-442c-8054-598a1ff07212
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-fbeb8a23-9587-493d-9913-72bb060b3bec ;
+        time:hasTime              oquo:instant-e4489480-8d8a-4539-8e4b-27e8a5bc9d7f ;
+        oquo:hasObservation       oquo:observation-246c7c69-9936-4571-90b2-d92235db7770 .
+
+oquo:observation-9f6d61d1-2aa2-480d-a989-2861270cdd21
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7ce63849-d11e-4430-ac30-0d4f4ed745dc ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-e9d9ee08-0cf0-43a6-9c92-1a7ef8fc5bc9 .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-387aea63-307a-4d4b-9297-8e181c15ba7e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-b0ce0937-9415-472c-b86b-960f00588a69 ;
+        time:hasTime              oquo:instant-12e93e3e-69e8-499c-a4dd-d3e22b80ab4d ;
+        oquo:hasObservation       oquo:observation-565d518e-5a97-494a-93a2-6797fd8ea729 .
+
+oquo:evaluation-0a8f66a1-0d9c-495f-ac6e-4732f5b9360e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-ef88ddf2-4956-40af-a80f-0555b0a37ad9 ;
+        time:hasTime              oquo:instant-d768dbf8-4a22-4c5b-a135-32a6cf971e6c ;
+        oquo:hasObservation       oquo:observation-9bdd057b-666e-48e2-a7e5-2bb0d053962a .
+
+oquo:evaluation-f261d5f4-a08d-498d-bd6f-9836cb9d3e56
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-f5bcf166-97db-41cd-932a-c8d85bfe46a5 ;
+        time:hasTime              oquo:instant-7f247b19-bb69-493c-b7c8-253dca31b88e ;
+        oquo:hasObservation       oquo:observation-884505eb-7b2a-45de-8be8-efd3284ad507 .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-e9d9ee08-0cf0-43a6-9c92-1a7ef8fc5bc9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.483Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:instant-2862c822-45b0-4d7e-8844-29793b00ae15
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.891Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b611b04c-4cf4-4361-bce5-11c79880fec7
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-52c8cadf-3d4b-4903-8424-af2e577e0ec1 ;
+        oboe:measurementFor  oquo:observation-e04c20d2-5a91-4d9d-a1bc-22bb20fd5166 ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:metric-ade5cf34-0b09-49da-b200-ec8ac568f345
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e17886cf-2e68-446d-be26-d3e540b8dcc8 ;
+        oboe:measurementFor  oquo:observation-1df213ff-b2d6-4edc-92ad-204e703277e4 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:qualityValue-4126e6f0-d7b7-4c11-9036-169e4d822eb3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-916a8060-4d10-41fb-9e65-3a986c091685 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ae013d22-2054-48f1-ac6a-9c30dbc6d42a .
+
+oquo:metric-b546f6f7-4cd3-47b7-9957-723b22261f4d
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-a43855db-762b-424d-8044-9e83fed32353 ;
+        oboe:measurementFor  oquo:observation-5a0f4254-b375-46c1-9873-13d461003558 ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:instant-67603d61-3c1d-4841-b81f-f64c38fed1f8
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.025Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-f825b53c-696f-4979-bc64-8d176d79cf26
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-36736c44-0748-4788-ad4c-e42b060e9324 ;
+        res:hasLiteralValue    "0.3333333333333333"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d0f2bdc8-32f4-4bb2-b50f-3681da8d7a60 .
+
+oquo:evaluation-ac6376d1-9aac-4b0a-a810-f37bf4ce28a3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-ea0a845b-a4f8-43c5-a544-ff26fdb767ce ;
+        time:hasTime              oquo:instant-b5cab15c-71ec-42cb-a76a-868ad46d9403 ;
+        oquo:hasObservation       oquo:observation-81d5d1a6-6119-4ca1-bc82-fe345ec3d395 .
+
+oquo:observation-884505eb-7b2a-45de-8be8-efd3284ad507
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7f3fa1f0-6195-4f21-a8dd-6ebc18659906 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-7f247b19-bb69-493c-b7c8-253dca31b88e .
+
+oquo:instant-c930585c-d325-4b8a-8fee-c107ed8e5e5c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.001Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b0ce0937-9415-472c-b86b-960f00588a69
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-75987540-555f-4ad5-b7f7-2ce3b411ba81 ;
+        res:hasLiteralValue    "0.12"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-387aea63-307a-4d4b-9297-8e181c15ba7e .
+
+oquo:evaluation-eea95745-32f8-42f0-9d66-3f37d9d021fb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-32a690f5-d161-406d-b8d5-e0c343e16611 ;
+        time:hasTime              oquo:instant-7e073cfd-2ba4-42fd-94b9-b703935c844c ;
+        oquo:hasObservation       oquo:observation-50198ab8-18e3-492c-aa9a-b14d4b20061c .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-b78ef843-1cbb-4aba-a64c-20a88f0320a1
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d45f38d8-df46-4d7c-a2ca-d9e8e4677732 ;
+        oboe:measurementFor  oquo:observation-11f6208e-6194-4c9f-9d61-82700d09bec1 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-1df213ff-b2d6-4edc-92ad-204e703277e4
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ade5cf34-0b09-49da-b200-ec8ac568f345 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-6dc4d40a-27fa-4f6a-8e8e-d26ff92663fe .
+
+oquo:evaluation-792ba6b0-943e-4bcc-b966-3923641ff382
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-d3a3ce89-2e30-4be6-863f-374b0e2f46e6 ;
+        time:hasTime              oquo:instant-e5e37da2-ece9-49fc-8512-6a21b785f2d9 ;
+        oquo:hasObservation       oquo:observation-c00f9b2e-4a4e-46f2-b69e-694e6efb5417 .
+
+oquo:metric-e601f4cb-5dd9-47fd-be9b-b00c1f8b9219
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b94c73a4-eb58-45f5-83e0-0cdce3c2b187 ;
+        oboe:measurementFor  oquo:observation-ba30e5b6-24a2-4d16-8c6e-7070d9e9d26d ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-b20c026c-57eb-4c85-804a-dbccbfa7342d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.937Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-f5d95657-9b88-44c7-aadf-79bc3b6ca06e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2d6eca60-790f-4449-ac3b-e47f26758b4e ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-852f4520-93e4-4b36-b55e-212b1d9570af .
+
+oquo:evaluation-fe5edeac-11f3-4874-a3e8-53688a4657ad
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-ee33aee9-4ea8-4256-bf06-026ace83d14e ;
+        time:hasTime              oquo:instant-c930585c-d325-4b8a-8fee-c107ed8e5e5c ;
+        oquo:hasObservation       oquo:observation-0dcd048e-2e17-4ac6-b846-d51e5d2ca68c .
+
+oquo:evaluation-28618b18-b197-4310-b1d0-2cf00e618315
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-823d0900-b83c-46d7-b027-829942d215b7 ;
+        time:hasTime              oquo:instant-db032c53-20fe-44b7-8d45-a1a9dc2a9fdd ;
+        oquo:hasObservation       oquo:observation-9a4de1ab-f11e-488e-9172-b2397a075078 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-d45f38d8-df46-4d7c-a2ca-d9e8e4677732
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b78ef843-1cbb-4aba-a64c-20a88f0320a1 ;
+        res:hasLiteralValue    "0.7777777777777778"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d2389f07-1af2-4a2a-b4f3-2ecb12c6c92e .
+
+oquo:instant-3a8bd8ba-3e2a-487d-a65e-42287c16989a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.992Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-ae013d22-2054-48f1-ac6a-9c30dbc6d42a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-4126e6f0-d7b7-4c11-9036-169e4d822eb3 ;
+        time:hasTime              oquo:instant-3a8bd8ba-3e2a-487d-a65e-42287c16989a ;
+        oquo:hasObservation       oquo:observation-e7dab187-7c6a-4a2e-9a15-0021a1d6efe9 .
+
+oquo:metric-f1121cc8-406f-4a13-9e47-ebb8f62a83d8
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-49c2672d-4862-4da7-a8cd-c212154db7d1 ;
+        oboe:measurementFor  oquo:observation-d3c39d06-5277-468b-8a38-8280549cb166 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:observation-e3661aa0-eda4-4013-a6ef-8a440b184f08
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-36736c44-0748-4788-ad4c-e42b060e9324 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-5bcc8064-908d-4852-8465-c90f4b594603 .
+
+oquo:qualityValue-3da7b184-228a-4047-92e9-0870ac485f76
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-80cdc726-8612-4385-af44-c54cca93db69 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bc3ed275-ed9e-4f06-a51e-30af18e75e38 .
+
+oquo:observation-0dcd048e-2e17-4ac6-b846-d51e5d2ca68c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e17ec763-a831-4737-9ace-1fbaa283fb5f ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-c930585c-d325-4b8a-8fee-c107ed8e5e5c .
+
+oquo:metric-20c84b76-4ea8-4aed-8b54-ed2141dc6c32
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-32a690f5-d161-406d-b8d5-e0c343e16611 ;
+        oboe:measurementFor  oquo:observation-50198ab8-18e3-492c-aa9a-b14d4b20061c ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-ef1f5640-3551-4910-89f0-9b99249dd96d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-fbfd8df2-53dc-4f35-82ff-5d8d07682cf9 ;
+        time:hasTime              oquo:instant-d97e344b-8d1c-4354-828c-f4d8abf78be4 ;
+        oquo:hasObservation       oquo:observation-ec102075-7a8f-4ec7-8214-0cfb3d22588d .
+
+oquo:observation-5a0f4254-b375-46c1-9873-13d461003558
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b546f6f7-4cd3-47b7-9957-723b22261f4d ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-b20c026c-57eb-4c85-804a-dbccbfa7342d .
+
+oquo:metric-bd2e8ce4-7ec6-4c7e-a6de-b366b9704e1a
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-e988dbbb-8d6d-496a-a22f-1827b56cac74 ;
+        oboe:measurementFor  oquo:observation-19b62e12-6e70-4cbd-afa9-93361aa33cbe ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-a36b3df1-5731-479b-bd04-fdf138c929e1
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-6216e223-53ab-4c81-be37-2efe1bc779c5 ;
+        oboe:measurementFor  oquo:observation-fade9e3d-1219-4ce0-b9f5-1ada2b4da5ec ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:evaluation-b1e46a40-6354-4ff6-b456-088c5f261fbc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-e988dbbb-8d6d-496a-a22f-1827b56cac74 ;
+        time:hasTime              oquo:instant-b41263a3-03d9-47b4-8608-1d1085ed2bd6 ;
+        oquo:hasObservation       oquo:observation-19b62e12-6e70-4cbd-afa9-93361aa33cbe .
+
+oquo:observation-91b4a447-04e2-4f75-b06a-ed008c69bf04
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-45246ca6-02fc-413a-a768-da69b17815a4 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-ff5f909b-da0e-4160-9ed5-7348fa076b23 .
+
+oquo:evaluation-6589345c-ba91-4d17-8f5c-04b892a1ab55
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-ca1c6d9c-9526-4edd-86f7-397d8b798aa7 ;
+        time:hasTime              oquo:instant-38e1deab-050c-4a1c-afbb-34cf602b77a0 ;
+        oquo:hasObservation       oquo:observation-2a79d105-1fcc-4122-b029-4f77e8567b57 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-db032c53-20fe-44b7-8d45-a1a9dc2a9fdd
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.973Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-9fa91f43-49b7-4fcf-9376-01fc13ca98de
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.017Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-ee80a4e2-4251-4a2a-b7e0-bf1bdcbacb20
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4cf5eb46-e66d-4e64-b9da-6c69de0aa7da ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-33c86340-abdd-4bdd-bb0e-a8392cd5a3d4 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-35901196-d966-4672-b790-25a77c255612
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-6216e223-53ab-4c81-be37-2efe1bc779c5 ;
+        time:hasTime              oquo:instant-e53c1252-b9d7-4543-a879-38b854f1d090 ;
+        oquo:hasObservation       oquo:observation-fade9e3d-1219-4ce0-b9f5-1ada2b4da5ec .
+
+oquo:metric-be37971b-5bb9-4b86-aec7-be73c66e8669
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-d11da07b-1385-4b78-b9f7-14aba446e19c ;
+        oboe:measurementFor  oquo:observation-97785ab9-1a0e-46c7-b1ff-320844441157 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-4cf5eb46-e66d-4e64-b9da-6c69de0aa7da
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1ded6dd9-31cf-43e2-9a8a-d426a4f5100e ;
+        oboe:measurementFor  oquo:observation-ee80a4e2-4251-4a2a-b7e0-bf1bdcbacb20 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:metric-2e424be1-9974-4141-8cb1-093866426e0d
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-287e6473-dcdc-4252-922d-6ffb4f444c49 ;
+        oboe:measurementFor  oquo:observation-7cabadd0-2839-4230-8758-1dad422330f8 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-e4489480-8d8a-4539-8e4b-27e8a5bc9d7f
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.966Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-4e717bde-0b0c-4b04-9dc2-5c5b257c3021
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5df590dc-5542-4f6d-be79-6742be4a02f3 ;
+        res:hasLiteralValue    "0.08"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d569f6e1-c09d-4b4c-a59d-335d40c8a986 .
+
+oquo:instant-6dc4d40a-27fa-4f6a-8e8e-d26ff92663fe
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.977Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-ffb3157c-6649-49c7-949e-cc09c4488226
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-01b6038b-b711-4371-bf1a-da5517d0d0e2 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-a1c5f28d-4fef-4df9-a3af-d8ccff283aa0 .
+
+oquo:metric-088f435d-7063-42a0-9c6d-4eb20e98881f
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-ef88ddf2-4956-40af-a80f-0555b0a37ad9 ;
+        oboe:measurementFor  oquo:observation-9bdd057b-666e-48e2-a7e5-2bb0d053962a ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:evaluation-3a58b6f2-b2e6-4c7a-9edd-b7c2c060e1f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-64ca5311-3ebc-4a3b-9643-873783d3ecf8 ;
+        time:hasTime              oquo:instant-2862c822-45b0-4d7e-8844-29793b00ae15 ;
+        oquo:hasObservation       oquo:observation-39f90336-85be-4e25-8357-6733170947a5 .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-97939441-8091-40af-86f1-8f5651df2ab1
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ea0a845b-a4f8-43c5-a544-ff26fdb767ce ;
+        oboe:measurementFor  oquo:observation-81d5d1a6-6119-4ca1-bc82-fe345ec3d395 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:qualityValue-823d0900-b83c-46d7-b027-829942d215b7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-df4c22ef-e680-419f-aada-f100d4b17a0e ;
+        res:hasLiteralValue    "0.5434782608695652"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-28618b18-b197-4310-b1d0-2cf00e618315 .
+
+oquo:observation-e04c20d2-5a91-4d9d-a1bc-22bb20fd5166
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b611b04c-4cf4-4361-bce5-11c79880fec7 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-4c7659ed-0f7e-4f1c-a9b8-f588ca664e48 .
+
+oquo:metric-2d6eca60-790f-4449-ac3b-e47f26758b4e
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-092dfa86-f1aa-4dcf-9b0b-cbbac5a97ddc ;
+        oboe:measurementFor  oquo:observation-f5d95657-9b88-44c7-aadf-79bc3b6ca06e ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:instant-d97e344b-8d1c-4354-828c-f4d8abf78be4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.03Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-92140e77-eebd-43df-8977-93238b74ad32
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-e17886cf-2e68-446d-be26-d3e540b8dcc8 ;
+        time:hasTime              oquo:instant-6dc4d40a-27fa-4f6a-8e8e-d26ff92663fe ;
+        oquo:hasObservation       oquo:observation-1df213ff-b2d6-4edc-92ad-204e703277e4 .
+
+oquo:instant-e53c1252-b9d7-4543-a879-38b854f1d090
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.995Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-cbbb1489-ca88-45ba-9109-8c939cfd7cd0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-b94c73a4-eb58-45f5-83e0-0cdce3c2b187 ;
+        time:hasTime              oquo:instant-ab8cdfc5-c758-43fe-b7cd-af43d98bb035 ;
+        oquo:hasObservation       oquo:observation-ba30e5b6-24a2-4d16-8c6e-7070d9e9d26d .
+
+oquo:qualityValue-3f4616e4-f5a9-409d-835a-69e89420ef93
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-67a6230f-72c8-466a-8785-166a7b7014b5 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-13d3e029-3bfe-4bab-8184-b6a91ab15ca0 .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-e17ec763-a831-4737-9ace-1fbaa283fb5f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-ee33aee9-4ea8-4256-bf06-026ace83d14e ;
+        oboe:measurementFor  oquo:observation-0dcd048e-2e17-4ac6-b846-d51e5d2ca68c ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-1ded6dd9-31cf-43e2-9a8a-d426a4f5100e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4cf5eb46-e66d-4e64-b9da-6c69de0aa7da ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3fed7725-f4c3-4242-9e90-c6e0b2484750 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-916a8060-4d10-41fb-9e65-3a986c091685
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-4126e6f0-d7b7-4c11-9036-169e4d822eb3 ;
+        oboe:measurementFor  oquo:observation-e7dab187-7c6a-4a2e-9a15-0021a1d6efe9 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:qualityValue-64ca5311-3ebc-4a3b-9643-873783d3ecf8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-c4640053-3f27-4e7f-bb9d-59b808c04245 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3a58b6f2-b2e6-4c7a-9edd-b7c2c060e1f1 .
+
+oquo:metric-45246ca6-02fc-413a-a768-da69b17815a4
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-37bfe86c-0820-446f-a917-515f4106d89d ;
+        oboe:measurementFor  oquo:observation-91b4a447-04e2-4f75-b06a-ed008c69bf04 ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-5bcc8064-908d-4852-8465-c90f4b594603
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:48.005Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-b6d34533-a468-4762-9dac-863636b0d15c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-37bfe86c-0820-446f-a917-515f4106d89d ;
+        time:hasTime              oquo:instant-ff5f909b-da0e-4160-9ed5-7348fa076b23 ;
+        oquo:hasObservation       oquo:observation-91b4a447-04e2-4f75-b06a-ed008c69bf04 .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-d3ea6a91-6268-4cbb-b8b8-6201a9109b2c
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-fbfd8df2-53dc-4f35-82ff-5d8d07682cf9 ;
+        oboe:measurementFor  oquo:observation-ec102075-7a8f-4ec7-8214-0cfb3d22588d ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-bd37c8cb-1bbc-4fa6-8e71-fb3545423a75
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7ce63849-d11e-4430-ac30-0d4f4ed745dc ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-bdb9231f-a4b6-4066-a95d-e3916b3e9511 .
+
+oquo:instant-ff5f909b-da0e-4160-9ed5-7348fa076b23
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.946Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-ea0a845b-a4f8-43c5-a544-ff26fdb767ce
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-97939441-8091-40af-86f1-8f5651df2ab1 ;
+        res:hasLiteralValue    "0.6666666666666666"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ac6376d1-9aac-4b0a-a810-f37bf4ce28a3 .
+
+oquo:metric-36736c44-0748-4788-ad4c-e42b060e9324
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-f825b53c-696f-4979-bc64-8d176d79cf26 ;
+        oboe:measurementFor  oquo:observation-e3661aa0-eda4-4013-a6ef-8a440b184f08 ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:instant-7e073cfd-2ba4-42fd-94b9-b703935c844c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T08:46:47.951Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-d3a3ce89-2e30-4be6-863f-374b0e2f46e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dd424dea-94e6-4fcd-95c7-f2ea3ae8eb5c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-792ba6b0-943e-4bcc-b966-3923641ff382 .
+
+oquo:qualityValue-e988dbbb-8d6d-496a-a22f-1827b56cac74
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bd2e8ce4-7ec6-4c7e-a6de-b366b9704e1a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b1e46a40-6354-4ff6-b456-088c5f261fbc .
+
+oquo:qualityValue-287e6473-dcdc-4252-922d-6ffb4f444c49
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2e424be1-9974-4141-8cb1-093866426e0d ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-efbf4488-5af7-41c6-a716-1bc2a28b92cc .
+
+oquo:observation-39f90336-85be-4e25-8357-6733170947a5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-c4640053-3f27-4e7f-bb9d-59b808c04245 ;
+        oboe:ofEntity        <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        time:hasTime         oquo:instant-2862c822-45b0-4d7e-8844-29793b00ae15 .
+
+oquo:metric-7ce63849-d11e-4430-ac30-0d4f4ed745dc
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-bd37c8cb-1bbc-4fa6-8e71-fb3545423a75 ;
+        oboe:measurementFor  oquo:observation-9f6d61d1-2aa2-480d-a989-2861270cdd21 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:evaluation-d2389f07-1af2-4a2a-b4f3-2ecb12c6c92e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:inputData             <http://www.iiitdwd.ac.in/ACB/COKPME> ;
+        res:producedQualityValue  oquo:qualityValue-d45f38d8-df46-4d7c-a2ca-d9e8e4677732 ;
+        time:hasTime              oquo:instant-8d14aea7-614c-40f9-9754-a08f5de148b8 ;
+        oquo:hasObservation       oquo:observation-11f6208e-6194-4c9f-9d61-82700d09bec1 .

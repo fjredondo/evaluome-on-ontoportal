@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:instant-f4cadb7f-884f-42fc-af55-696b90ebdd51
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.188Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-550db674-fce9-460f-a708-3f2f94b5924d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fbe670bb-b786-42f0-98b0-7916a6cd090a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-30075d27-2941-4efa-b21b-0c339af54ff7 .
+
+oquo:metric-aa7927ff-de5c-4eb1-9ac9-dd1f69f82eac
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-e1fc1b59-7b23-4fcd-9427-9dc3ecfc0968 ;
+        oboe:measurementFor  oquo:observation-297b2d5c-b528-4c73-970a-c6772566712e ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-2fa88788-a229-4127-a1c6-29f42ccd30b3
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.391Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-04cf1ae4-295d-4557-9e36-e9f8fb7f312d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.486Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-aecf1476-5886-46ee-94a7-0aca1f8e0402
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-683037e3-db84-4be7-a216-a8594adeabe4 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-86de57cf-97f4-4205-8407-24c26160a9dc .
+
+oquo:observation-00dd2acf-5a6a-4f48-bd47-9ac9acc94e31
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-65308370-0a8e-4b15-9525-9c35dace4e72 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-44c212f8-b924-46ee-9cb9-101bf6ed9d50 .
+
+oquo:qualityValue-e1fc1b59-7b23-4fcd-9427-9dc3ecfc0968
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-aa7927ff-de5c-4eb1-9ac9-dd1f69f82eac ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e937b501-d64d-4e1c-9c50-a9bd12d37f8b .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-dbc4c231-8459-47ad-905c-07c4e2522d1b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.32Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-af4076b6-508f-4a17-8eed-e261e4c3a370
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-a9fce684-912d-475e-b44f-094b18406d9a ;
+        time:hasTime              oquo:instant-fd395b3b-ddd8-49b7-8983-8b4a02264d7e ;
+        oquo:hasObservation       oquo:observation-c9fe4f2d-0faa-4697-b384-c705b98aa834 .
+
+oquo:observation-a5a094a8-bff3-42bb-8d16-e7d1a8f93ad3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-0ae5c04e-3072-44f3-879f-84053a91257b ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-1520c491-3dcd-40ba-8bba-fda9991b896a .
+
+oquo:metric-aaaf3bbf-53d7-44bb-aa89-9b5ec8f31852
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b07210b4-faab-4fcf-94ac-24ac0a637cf0 ;
+        oboe:measurementFor  oquo:observation-f360a8f0-eb85-4a7b-8c3f-0c61ddf7993b ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:qualityValue-c34b6b8c-d7ee-462f-9390-08f941e933e4
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b8391907-203a-4c54-87d1-9ca5f0c75ba7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1cd00ef9-a18b-44eb-9a58-a3ff7fce8250 .
+
+oquo:observation-46533b44-e6a3-49a3-891c-d73647c290c9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-580acda4-9416-488d-9e3d-e8c4d3e153e6 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-7e1990ea-96d1-4bf1-ac78-928c735e25ce .
+
+oquo:qualityValue-9338761f-af83-46a9-883d-9c29e794e5c9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b2754133-4ae7-4352-a9fd-85525bb452de ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6d3e1ed0-957a-4ac2-be8c-679c4a80d011 .
+
+oquo:instant-2be2b6d5-bb6e-4fbd-ba17-85193b7b0702
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.485Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-30075d27-2941-4efa-b21b-0c339af54ff7
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-550db674-fce9-460f-a708-3f2f94b5924d ;
+        time:hasTime              oquo:instant-55858535-d867-4359-ba82-8a8eb66eb3eb ;
+        oquo:hasObservation       oquo:observation-0fb4d628-28d8-4091-af58-631cb07c8e03 .
+
+oquo:observation-d0ae461f-077a-4095-9024-6872f2214090
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-60901ed0-1838-4f66-865d-2a475a745dfa ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-c3f70f36-6e87-42e4-818f-2cf825604904 .
+
+oquo:observation-ef491745-dbfb-4399-b628-919e159725c3
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-dec0f822-fbff-41b4-8aac-9d6275b23f94 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-8bcebfeb-ace4-466f-9284-4ce95ebd674d .
+
+oquo:instant-8bcebfeb-ace4-466f-9284-4ce95ebd674d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:35.705Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b07210b4-faab-4fcf-94ac-24ac0a637cf0
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-aaaf3bbf-53d7-44bb-aa89-9b5ec8f31852 ;
+        res:hasLiteralValue    "0.9494163424124513"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9be0371a-4238-4e21-84c0-cb411ea0749f .
+
+oquo:instant-2071859a-d3de-406e-b226-2353ad1f75c6
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.481Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-2b7505e3-a780-4869-a507-92555daf8cf3
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-0eb3d2f1-fc45-4a87-94ee-9ab5a8e2f1e8 ;
+        oboe:measurementFor  oquo:observation-ada1d4ae-fc86-4ef0-bfe4-3034a8046bef ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-ec4cbca6-7555-4d58-8d5b-202ac275ff3f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-22d0cc1e-b647-4738-9d7b-d244c6c707aa ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-04cf1ae4-295d-4557-9e36-e9f8fb7f312d .
+
+oquo:instant-e1711add-7372-492c-9748-d452a865fdff
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.272Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-e5cced37-9157-4c2d-969a-be324f4d1f40
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-0c3d732d-69df-4ca9-a32e-8d561d104f4e ;
+        time:hasTime              oquo:instant-2fa88788-a229-4127-a1c6-29f42ccd30b3 ;
+        oquo:hasObservation       oquo:observation-590dc7e0-fe59-447b-81c6-1464a2eb8296 .
+
+oquo:metric-f326d18a-416c-4edb-bdb0-08186c94476d
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-1252decd-2242-4088-8868-2121a4d52291 ;
+        oboe:measurementFor  oquo:observation-535a6ff9-546c-47e5-8019-83e1dd5c71f9 ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:instant-c88e9935-72ea-407b-adf2-9dee0c58f899
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.408Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-769cd913-e74f-449d-afe1-8cb803e98e78
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-2089da06-0c67-4395-8331-ef4f17577b19 ;
+        oboe:measurementFor  oquo:observation-16eec2ab-28d9-4de7-988a-82f92ec2348e ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:observation-0fb4d628-28d8-4091-af58-631cb07c8e03
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fbe670bb-b786-42f0-98b0-7916a6cd090a ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-55858535-d867-4359-ba82-8a8eb66eb3eb .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-dec0f822-fbff-41b4-8aac-9d6275b23f94
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-9b933583-5896-4429-9e2e-6596931505a7 ;
+        oboe:measurementFor  oquo:observation-ef491745-dbfb-4399-b628-919e159725c3 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-a7eb6ec5-6ab0-46df-8223-c92adde7c39d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-4e6d5c82-3238-45c6-a5cd-71811e121207 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-7ef0ee26-3c93-4ab3-b990-c9d90d4ae3d9 .
+
+oquo:observation-391852da-8a84-474f-92f1-e72e2069c0aa
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e9f51402-63a4-4230-8a30-af900e9fcf90 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-948844ec-40f3-4445-ae47-ee2798e947c9 .
+
+oquo:instant-ddd7f052-fdeb-4ece-afb4-a5887114f667
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.483Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-cbae1537-703a-4dd3-8012-5d6dff821a49
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-cb76376c-c0a4-48b5-944e-780bcd686bab ;
+        oboe:measurementFor  oquo:observation-7a90d600-8392-4e39-93ff-ad4701a6b966 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+<http://id.loc.gov/ontologies/bibframe-2-3-0/>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:qualityValue-9e70915a-86de-4b57-a1d9-8776103e3f17
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-0ae5c04e-3072-44f3-879f-84053a91257b ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-015f519a-8b6c-4a02-8dc7-4aa55d0ff244 .
+
+oquo:observation-a6e334b3-7dc8-4e41-af3d-ef61bae70ee0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a409250f-8c60-4f7f-a92e-71a0b7b43fd7 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-8f6f5efc-694b-4a90-b323-f31fc80973f9 .
+
+oquo:qualityValue-9837b571-7b6f-4e6c-85f2-8067c7e3ad0d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e9f51402-63a4-4230-8a30-af900e9fcf90 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b39f9ec8-c5e4-421b-8e81-88feaff57a65 .
+
+oquo:instant-c3f70f36-6e87-42e4-818f-2cf825604904
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.427Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-9b05e894-5071-4588-938c-78f9d46356db
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d73d7580-05e9-496d-83ff-67457375eced ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-93742dc5-6b3a-4f85-8c6e-7b125dec552b .
+
+oquo:observation-89b63665-3d80-43e1-9d6b-fa7ee35bd061
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e02e4f4b-1a01-4f42-bb59-94331df3b07e ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-f59b9f23-dfbd-4d44-a3f6-c07b8e907ea2 .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-3a2d8f18-23c2-4f0c-80c4-5436b35fc9ba
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-cad18e78-dc0b-47c4-9e8d-2345c586f60e ;
+        time:hasTime              oquo:instant-f4cadb7f-884f-42fc-af55-696b90ebdd51 ;
+        oquo:hasObservation       oquo:observation-8cf4d013-532e-4f0e-ae31-3e51ffc3c157 .
+
+oquo:instant-93742dc5-6b3a-4f85-8c6e-7b125dec552b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.446Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-7017f243-806e-464d-ab27-209ff9af941c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-67ae0f51-a572-43cc-bdf5-6d701fade860 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-d9793c86-6427-49de-9004-95f729f4342e .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-590dc7e0-fe59-447b-81c6-1464a2eb8296
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-338dad09-c343-433b-8568-e1c9125bf4b5 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-2fa88788-a229-4127-a1c6-29f42ccd30b3 .
+
+oquo:metric-65308370-0a8e-4b15-9525-9c35dace4e72
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-93453c99-3a6f-436f-a6bf-12b7c589cd4b ;
+        oboe:measurementFor  oquo:observation-00dd2acf-5a6a-4f48-bd47-9ac9acc94e31 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-cf870d21-29cd-40fc-af50-5dc986d1dd0b
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-a9fce684-912d-475e-b44f-094b18406d9a ;
+        oboe:measurementFor  oquo:observation-c9fe4f2d-0faa-4697-b384-c705b98aa834 ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:evaluation-86de57cf-97f4-4205-8407-24c26160a9dc
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-aecf1476-5886-46ee-94a7-0aca1f8e0402 ;
+        time:hasTime              oquo:instant-2071859a-d3de-406e-b226-2353ad1f75c6 ;
+        oquo:hasObservation       oquo:observation-8278fb87-f6f7-4e2f-a945-f237feab8401 .
+
+oquo:evaluation-1cd00ef9-a18b-44eb-9a58-a3ff7fce8250
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-c34b6b8c-d7ee-462f-9390-08f941e933e4 ;
+        time:hasTime              oquo:instant-95c62707-cc04-4156-a725-03b556406a84 ;
+        oquo:hasObservation       oquo:observation-1ef4a736-8492-4ca4-970b-100263de6b5b .
+
+oquo:metric-d73d7580-05e9-496d-83ff-67457375eced
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-d2ad9cc2-6cd2-48cf-825c-9ed6bcd38cca ;
+        oboe:measurementFor  oquo:observation-9b05e894-5071-4588-938c-78f9d46356db ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-84c70300-249b-442d-b384-712739fbdd4b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b65c1560-accc-4181-9e30-d7df5bd4ec6a ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-58d56812-6369-4331-bf91-3ddf60601648 .
+
+oquo:metric-e9f51402-63a4-4230-8a30-af900e9fcf90
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9837b571-7b6f-4e6c-85f2-8067c7e3ad0d ;
+        oboe:measurementFor  oquo:observation-391852da-8a84-474f-92f1-e72e2069c0aa ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:evaluation-9cb218e3-01cf-443c-a86e-3c2d7401f596
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-a438d6fe-de66-48f0-83d3-5e147ecb27ba ;
+        time:hasTime              oquo:instant-daa596a6-4f83-4d0b-8d8c-7bc9295c392e ;
+        oquo:hasObservation       oquo:observation-4400af63-bbd2-4275-bb83-57b2a24efe53 .
+
+oquo:observation-535a6ff9-546c-47e5-8019-83e1dd5c71f9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f326d18a-416c-4edb-bdb0-08186c94476d ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-a3710c51-eb7a-4b9e-abe5-fad50fd2c2e5 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:metric-60901ed0-1838-4f66-865d-2a475a745dfa
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-444326b5-d6fb-4db4-aeb2-fdb4542b4828 ;
+        oboe:measurementFor  oquo:observation-d0ae461f-077a-4095-9024-6872f2214090 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-93779eba-3e85-4540-b4d9-467c874dae3c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5865bd6f-554b-4df7-8fd7-b26989e274a3 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-dbc4c231-8459-47ad-905c-07c4e2522d1b .
+
+oquo:metric-b8391907-203a-4c54-87d1-9ca5f0c75ba7
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-c34b6b8c-d7ee-462f-9390-08f941e933e4 ;
+        oboe:measurementFor  oquo:observation-1ef4a736-8492-4ca4-970b-100263de6b5b ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:evaluation-6d3e1ed0-957a-4ac2-be8c-679c4a80d011
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-9338761f-af83-46a9-883d-9c29e794e5c9 ;
+        time:hasTime              oquo:instant-74838b51-98d5-4383-a3ef-f75193add4d7 ;
+        oquo:hasObservation       oquo:observation-9a4abfce-3fd2-4df6-a818-695dadda1a82 .
+
+oquo:evaluation-a3241de9-36b6-4f61-bd8c-235bf064ef3d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-33baae9e-2831-4ee7-ad2c-5d733926d3a1 ;
+        time:hasTime              oquo:instant-04cf1ae4-295d-4557-9e36-e9f8fb7f312d ;
+        oquo:hasObservation       oquo:observation-ec4cbca6-7555-4d58-8d5b-202ac275ff3f .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-d9793c86-6427-49de-9004-95f729f4342e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.189Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-0c3d732d-69df-4ca9-a32e-8d561d104f4e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-338dad09-c343-433b-8568-e1c9125bf4b5 ;
+        res:hasLiteralValue    "0.014218009478672985"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e5cced37-9157-4c2d-969a-be324f4d1f40 .
+
+oquo:metric-580acda4-9416-488d-9e3d-e8c4d3e153e6
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-fac3cbf7-acb0-4359-befa-16b0d54892e1 ;
+        oboe:measurementFor  oquo:observation-46533b44-e6a3-49a3-891c-d73647c290c9 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:instant-1520c491-3dcd-40ba-8bba-fda9991b896a
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.399Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-a3eb7b53-47cd-434e-b245-ea58f242caa1
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b349595d-46b3-4a0c-bab7-04ffa93ba4e6 ;
+        oboe:measurementFor  oquo:observation-fb231ea6-968d-4dd8-b7ad-708b2513ce4c ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:observation-749501f6-e8c4-4c46-9bf9-90a086f56fc9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-95f1f533-b854-4acb-aad5-9814ae70d8fb ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-dfd19753-60f1-44f9-a42f-c48d5bdb71da .
+
+oquo:instant-a3710c51-eb7a-4b9e-abe5-fad50fd2c2e5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.365Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-c9fe4f2d-0faa-4697-b384-c705b98aa834
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cf870d21-29cd-40fc-af50-5dc986d1dd0b ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-fd395b3b-ddd8-49b7-8983-8b4a02264d7e .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-abd17a25-1e8e-4f85-b9f3-67622f4b6604
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-74ee646e-dfc4-4d37-873c-d369c430289d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-358e306f-6dec-45ad-b767-c13d3eb3b8c0 .
+
+oquo:observation-297b2d5c-b528-4c73-970a-c6772566712e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-aa7927ff-de5c-4eb1-9ac9-dd1f69f82eac ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-61312cce-a648-43eb-ad0f-2511489b4b37 .
+
+oquo:qualityValue-444326b5-d6fb-4db4-aeb2-fdb4542b4828
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-60901ed0-1838-4f66-865d-2a475a745dfa ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9aab02d5-5314-4403-b75c-3923ca20a334 .
+
+oquo:evaluation-dde7541e-3ba7-4444-97d2-e91881a26858
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-585c58cb-36e3-4f75-89b1-fbbbac3cdd9f ;
+        time:hasTime              oquo:instant-dfd19753-60f1-44f9-a42f-c48d5bdb71da ;
+        oquo:hasObservation       oquo:observation-749501f6-e8c4-4c46-9bf9-90a086f56fc9 .
+
+oquo:evaluation-9be0371a-4238-4e21-84c0-cb411ea0749f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-b07210b4-faab-4fcf-94ac-24ac0a637cf0 ;
+        time:hasTime              oquo:instant-e1711add-7372-492c-9748-d452a865fdff ;
+        oquo:hasObservation       oquo:observation-f360a8f0-eb85-4a7b-8c3f-0c61ddf7993b .
+
+oquo:qualityValue-3d9b0738-2f4c-407c-8d0f-6e3d3a24d866
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-67ae0f51-a572-43cc-bdf5-6d701fade860 ;
+        res:hasLiteralValue    "0.985781990521327"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-1c1ad07d-2607-46bd-b390-ee22d369435b .
+
+oquo:instant-55858535-d867-4359-ba82-8a8eb66eb3eb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.34Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-96d95c36-f066-4b5e-8e91-97855e11fc1b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-cb76376c-c0a4-48b5-944e-780bcd686bab ;
+        time:hasTime              oquo:instant-eec8caa0-9c02-4ff2-8f37-c61884266cd1 ;
+        oquo:hasObservation       oquo:observation-7a90d600-8392-4e39-93ff-ad4701a6b966 .
+
+oquo:observation-3154711f-ea9d-4b98-aff3-cd363c163ee0
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-74ee646e-dfc4-4d37-873c-d369c430289d ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-ddd7f052-fdeb-4ece-afb4-a5887114f667 .
+
+oquo:evaluation-9aab02d5-5314-4403-b75c-3923ca20a334
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-444326b5-d6fb-4db4-aeb2-fdb4542b4828 ;
+        time:hasTime              oquo:instant-c3f70f36-6e87-42e4-818f-2cf825604904 ;
+        oquo:hasObservation       oquo:observation-d0ae461f-077a-4095-9024-6872f2214090 .
+
+oquo:observation-7a90d600-8392-4e39-93ff-ad4701a6b966
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-cbae1537-703a-4dd3-8012-5d6dff821a49 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-eec8caa0-9c02-4ff2-8f37-c61884266cd1 .
+
+oquo:instant-8bb375ac-d4e5-40b7-bb1e-5846d72b4192
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:35.681Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a438d6fe-de66-48f0-83d3-5e147ecb27ba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d4a1a10f-bb62-429d-8843-f6fa4cffd9e2 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-9cb218e3-01cf-443c-a86e-3c2d7401f596 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-d4a1a10f-bb62-429d-8843-f6fa4cffd9e2
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-a438d6fe-de66-48f0-83d3-5e147ecb27ba ;
+        oboe:measurementFor  oquo:observation-4400af63-bbd2-4275-bb83-57b2a24efe53 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-8cf4d013-532e-4f0e-ae31-3e51ffc3c157
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-01af5923-1878-4574-8a7e-19c1518461b0 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-f4cadb7f-884f-42fc-af55-696b90ebdd51 .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-93453c99-3a6f-436f-a6bf-12b7c589cd4b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-65308370-0a8e-4b15-9525-9c35dace4e72 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2ca83bba-18e2-4911-a044-d9f7cd78cb7b .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-44c212f8-b924-46ee-9cb9-101bf6ed9d50
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.471Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-5d9a43f9-feb5-42b2-a265-4d287a4db7d1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-1252decd-2242-4088-8868-2121a4d52291 ;
+        time:hasTime              oquo:instant-a3710c51-eb7a-4b9e-abe5-fad50fd2c2e5 ;
+        oquo:hasObservation       oquo:observation-535a6ff9-546c-47e5-8019-83e1dd5c71f9 .
+
+oquo:evaluation-58d56812-6369-4331-bf91-3ddf60601648
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-84c70300-249b-442d-b384-712739fbdd4b ;
+        time:hasTime              oquo:instant-8bb375ac-d4e5-40b7-bb1e-5846d72b4192 ;
+        oquo:hasObservation       oquo:observation-a44e15c1-2151-493a-999c-fe6f3f24c7cc .
+
+oquo:qualityValue-2089da06-0c67-4395-8331-ef4f17577b19
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-769cd913-e74f-449d-afe1-8cb803e98e78 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d3f4810e-27fb-46b1-b387-62a93c57c550 .
+
+oquo:observation-f360a8f0-eb85-4a7b-8c3f-0c61ddf7993b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-aaaf3bbf-53d7-44bb-aa89-9b5ec8f31852 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-e1711add-7372-492c-9748-d452a865fdff .
+
+oquo:metric-01af5923-1878-4574-8a7e-19c1518461b0
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-cad18e78-dc0b-47c4-9e8d-2345c586f60e ;
+        oboe:measurementFor  oquo:observation-8cf4d013-532e-4f0e-ae31-3e51ffc3c157 ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:evaluation-2ca83bba-18e2-4911-a044-d9f7cd78cb7b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-93453c99-3a6f-436f-a6bf-12b7c589cd4b ;
+        time:hasTime              oquo:instant-44c212f8-b924-46ee-9cb9-101bf6ed9d50 ;
+        oquo:hasObservation       oquo:observation-00dd2acf-5a6a-4f48-bd47-9ac9acc94e31 .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-ada1d4ae-fc86-4ef0-bfe4-3034a8046bef
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2b7505e3-a780-4869-a507-92555daf8cf3 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-1c2b9841-bf06-4aa4-bf01-f5a31782b4bb .
+
+oquo:evaluation-e937b501-d64d-4e1c-9c50-a9bd12d37f8b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-e1fc1b59-7b23-4fcd-9427-9dc3ecfc0968 ;
+        time:hasTime              oquo:instant-61312cce-a648-43eb-ad0f-2511489b4b37 ;
+        oquo:hasObservation       oquo:observation-297b2d5c-b528-4c73-970a-c6772566712e .
+
+oquo:metric-683037e3-db84-4be7-a216-a8594adeabe4
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-aecf1476-5886-46ee-94a7-0aca1f8e0402 ;
+        oboe:measurementFor  oquo:observation-8278fb87-f6f7-4e2f-a945-f237feab8401 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:metric-67ae0f51-a572-43cc-bdf5-6d701fade860
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-3d9b0738-2f4c-407c-8d0f-6e3d3a24d866 ;
+        oboe:measurementFor  oquo:observation-7017f243-806e-464d-ab27-209ff9af941c ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:evaluation-ddc05ca7-10c3-4fc0-89f5-6b443cc028f1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-b599ba76-1fd4-414a-a8f2-b72974e51336 ;
+        time:hasTime              oquo:instant-c88e9935-72ea-407b-adf2-9dee0c58f899 ;
+        oquo:hasObservation       oquo:observation-d9b65885-fe4c-4466-9803-1f79aa2095e2 .
+
+oquo:evaluation-18a2c309-701e-4d2d-9a83-826d789cc232
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-568d905d-a5df-4035-a28b-b5e4b408e99b ;
+        time:hasTime              oquo:instant-2be2b6d5-bb6e-4fbd-ba17-85193b7b0702 ;
+        oquo:hasObservation       oquo:observation-03ce70b8-0ef8-41d6-9e3d-329737ec99fc .
+
+oquo:evaluation-d70bd1c0-19db-4163-aaf4-a6b265bb8efb
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-0eb3d2f1-fc45-4a87-94ee-9ab5a8e2f1e8 ;
+        time:hasTime              oquo:instant-1c2b9841-bf06-4aa4-bf01-f5a31782b4bb ;
+        oquo:hasObservation       oquo:observation-ada1d4ae-fc86-4ef0-bfe4-3034a8046bef .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-568d905d-a5df-4035-a28b-b5e4b408e99b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7d9cd5e1-b9ab-4337-877a-4485d365943b ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-18a2c309-701e-4d2d-9a83-826d789cc232 .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-d2ad9cc2-6cd2-48cf-825c-9ed6bcd38cca
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d73d7580-05e9-496d-83ff-67457375eced ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-480ceabb-c98c-433f-8e15-cafed713cc42 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:metric-95f1f533-b854-4acb-aad5-9814ae70d8fb
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-585c58cb-36e3-4f75-89b1-fbbbac3cdd9f ;
+        oboe:measurementFor  oquo:observation-749501f6-e8c4-4c46-9bf9-90a086f56fc9 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:metric-338dad09-c343-433b-8568-e1c9125bf4b5
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-0c3d732d-69df-4ca9-a32e-8d561d104f4e ;
+        oboe:measurementFor  oquo:observation-590dc7e0-fe59-447b-81c6-1464a2eb8296 ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-d3f4810e-27fb-46b1-b387-62a93c57c550
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-2089da06-0c67-4395-8331-ef4f17577b19 ;
+        time:hasTime              oquo:instant-34de2595-ff04-430f-b088-013e478c61a1 ;
+        oquo:hasObservation       oquo:observation-16eec2ab-28d9-4de7-988a-82f92ec2348e .
+
+oquo:qualityValue-b368e2e6-54e5-4e10-902c-03d52927fe00
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a409250f-8c60-4f7f-a92e-71a0b7b43fd7 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-26ae8ddd-1eba-46d5-b1f0-c18ce344c17c .
+
+oquo:qualityValue-b349595d-46b3-4a0c-bab7-04ffa93ba4e6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a3eb7b53-47cd-434e-b245-ea58f242caa1 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-0b4d0760-4fd7-425f-b11d-e13b2b475da5 .
+
+oquo:metric-17b480de-db86-4094-95ea-a0b4b6a600d5
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-b599ba76-1fd4-414a-a8f2-b72974e51336 ;
+        oboe:measurementFor  oquo:observation-d9b65885-fe4c-4466-9803-1f79aa2095e2 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-e02e4f4b-1a01-4f42-bb59-94331df3b07e
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-ea1fbd1b-3f65-4ef7-87d1-8523eda653b6 ;
+        oboe:measurementFor  oquo:observation-89b63665-3d80-43e1-9d6b-fa7ee35bd061 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:qualityValue-ea1fbd1b-3f65-4ef7-87d1-8523eda653b6
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e02e4f4b-1a01-4f42-bb59-94331df3b07e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-27f6f681-4f5d-4a92-8991-73d0572ee705 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-b599ba76-1fd4-414a-a8f2-b72974e51336
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-17b480de-db86-4094-95ea-a0b4b6a600d5 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ddc05ca7-10c3-4fc0-89f5-6b443cc028f1 .
+
+oquo:instant-948844ec-40f3-4445-ae47-ee2798e947c9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.323Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-c94ff1dd-8c10-443c-8d75-f4bb7540794d
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-4b611cb7-e449-47f0-8499-314b6383235c ;
+        time:hasTime              oquo:instant-c9b14ed1-0ff9-4d88-be19-23d1739e2d1e ;
+        oquo:hasObservation       oquo:observation-7579e247-ee18-470b-b58f-fe808ba6451b .
+
+oquo:evaluation-26ae8ddd-1eba-46d5-b1f0-c18ce344c17c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-b368e2e6-54e5-4e10-902c-03d52927fe00 ;
+        time:hasTime              oquo:instant-8f6f5efc-694b-4a90-b323-f31fc80973f9 ;
+        oquo:hasObservation       oquo:observation-a6e334b3-7dc8-4e41-af3d-ef61bae70ee0 .
+
+oquo:qualityValue-fac3cbf7-acb0-4359-befa-16b0d54892e1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-580acda4-9416-488d-9e3d-e8c4d3e153e6 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3702c739-efcb-437f-8ed6-972dd5df7ae2 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-585c58cb-36e3-4f75-89b1-fbbbac3cdd9f
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-95f1f533-b854-4acb-aad5-9814ae70d8fb ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dde7541e-3ba7-4444-97d2-e91881a26858 .
+
+oquo:metric-fbe670bb-b786-42f0-98b0-7916a6cd090a
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-550db674-fce9-460f-a708-3f2f94b5924d ;
+        oboe:measurementFor  oquo:observation-0fb4d628-28d8-4091-af58-631cb07c8e03 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:instant-daa596a6-4f83-4d0b-8d8c-7bc9295c392e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:35.623Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-1ef4a736-8492-4ca4-970b-100263de6b5b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b8391907-203a-4c54-87d1-9ca5f0c75ba7 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-95c62707-cc04-4156-a725-03b556406a84 .
+
+oquo:qualityValue-4b611cb7-e449-47f0-8499-314b6383235c
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a28f9090-2446-4880-8738-be5ee63ff25a ;
+        res:hasLiteralValue    "0.014218009478672985"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-c94ff1dd-8c10-443c-8d75-f4bb7540794d .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-fb231ea6-968d-4dd8-b7ad-708b2513ce4c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a3eb7b53-47cd-434e-b245-ea58f242caa1 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-02564f83-250b-4385-9716-13e724c7d565 .
+
+oquo:observation-d9b65885-fe4c-4466-9803-1f79aa2095e2
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-17b480de-db86-4094-95ea-a0b4b6a600d5 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-c88e9935-72ea-407b-adf2-9dee0c58f899 .
+
+oquo:evaluation-480ceabb-c98c-433f-8e15-cafed713cc42
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-d2ad9cc2-6cd2-48cf-825c-9ed6bcd38cca ;
+        time:hasTime              oquo:instant-93742dc5-6b3a-4f85-8c6e-7b125dec552b ;
+        oquo:hasObservation       oquo:observation-9b05e894-5071-4588-938c-78f9d46356db .
+
+oquo:metric-0ae5c04e-3072-44f3-879f-84053a91257b
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-9e70915a-86de-4b57-a1d9-8776103e3f17 ;
+        oboe:measurementFor  oquo:observation-a5a094a8-bff3-42bb-8d16-e7d1a8f93ad3 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:observation-03ce70b8-0ef8-41d6-9e3d-329737ec99fc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7d9cd5e1-b9ab-4337-877a-4485d365943b ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-2be2b6d5-bb6e-4fbd-ba17-85193b7b0702 .
+
+oquo:evaluation-fe081821-0190-4c79-aa02-b28066142d85
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-91651154-9bf8-4f37-a800-bd637aadcef3 ;
+        time:hasTime              oquo:instant-dbc4c231-8459-47ad-905c-07c4e2522d1b ;
+        oquo:hasObservation       oquo:observation-93779eba-3e85-4540-b4d9-467c874dae3c .
+
+oquo:instant-34de2595-ff04-430f-b088-013e478c61a1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:35.683Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-8278fb87-f6f7-4e2f-a945-f237feab8401
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-683037e3-db84-4be7-a216-a8594adeabe4 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-2071859a-d3de-406e-b226-2353ad1f75c6 .
+
+oquo:qualityValue-0eb3d2f1-fc45-4a87-94ee-9ab5a8e2f1e8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2b7505e3-a780-4869-a507-92555daf8cf3 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d70bd1c0-19db-4163-aaf4-a6b265bb8efb .
+
+oquo:evaluation-358e306f-6dec-45ad-b767-c13d3eb3b8c0
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-abd17a25-1e8e-4f85-b9f3-67622f4b6604 ;
+        time:hasTime              oquo:instant-ddd7f052-fdeb-4ece-afb4-a5887114f667 ;
+        oquo:hasObservation       oquo:observation-3154711f-ea9d-4b98-aff3-cd363c163ee0 .
+
+oquo:metric-5865bd6f-554b-4df7-8fd7-b26989e274a3
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-91651154-9bf8-4f37-a800-bd637aadcef3 ;
+        oboe:measurementFor  oquo:observation-93779eba-3e85-4540-b4d9-467c874dae3c ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:instant-61312cce-a648-43eb-ad0f-2511489b4b37
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.363Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-74838b51-98d5-4383-a3ef-f75193add4d7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.152Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-02564f83-250b-4385-9716-13e724c7d565
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.315Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-74ee646e-dfc4-4d37-873c-d369c430289d
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-abd17a25-1e8e-4f85-b9f3-67622f4b6604 ;
+        oboe:measurementFor  oquo:observation-3154711f-ea9d-4b98-aff3-cd363c163ee0 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-91651154-9bf8-4f37-a800-bd637aadcef3
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5865bd6f-554b-4df7-8fd7-b26989e274a3 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe081821-0190-4c79-aa02-b28066142d85 .
+
+oquo:observation-9a4abfce-3fd2-4df6-a818-695dadda1a82
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b2754133-4ae7-4352-a9fd-85525bb452de ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-74838b51-98d5-4383-a3ef-f75193add4d7 .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-b2754133-4ae7-4352-a9fd-85525bb452de
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-9338761f-af83-46a9-883d-9c29e794e5c9 ;
+        oboe:measurementFor  oquo:observation-9a4abfce-3fd2-4df6-a818-695dadda1a82 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:instant-c9b14ed1-0ff9-4d88-be19-23d1739e2d1e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.388Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-3068edf6-f959-4ded-9ceb-d992f3f38de5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-9b933583-5896-4429-9e2e-6596931505a7 ;
+        time:hasTime              oquo:instant-8bcebfeb-ace4-466f-9284-4ce95ebd674d ;
+        oquo:hasObservation       oquo:observation-ef491745-dbfb-4399-b628-919e159725c3 .
+
+oquo:qualityValue-f2154fe5-d0a8-4717-b5c4-c0aadfcd6af8
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-4e6d5c82-3238-45c6-a5cd-71811e121207 ;
+        res:hasLiteralValue    "1.4980544747081712"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7ed40474-b710-4446-ac57-c782b52cbed5 .
+
+oquo:evaluation-b39f9ec8-c5e4-421b-8e81-88feaff57a65
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-9837b571-7b6f-4e6c-85f2-8067c7e3ad0d ;
+        time:hasTime              oquo:instant-948844ec-40f3-4445-ae47-ee2798e947c9 ;
+        oquo:hasObservation       oquo:observation-391852da-8a84-474f-92f1-e72e2069c0aa .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-22d0cc1e-b647-4738-9d7b-d244c6c707aa
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-33baae9e-2831-4ee7-ad2c-5d733926d3a1 ;
+        oboe:measurementFor  oquo:observation-ec4cbca6-7555-4d58-8d5b-202ac275ff3f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-7ed40474-b710-4446-ac57-c782b52cbed5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-f2154fe5-d0a8-4717-b5c4-c0aadfcd6af8 ;
+        time:hasTime              oquo:instant-7ef0ee26-3c93-4ab3-b990-c9d90d4ae3d9 ;
+        oquo:hasObservation       oquo:observation-a7eb6ec5-6ab0-46df-8223-c92adde7c39d .
+
+oquo:evaluation-015f519a-8b6c-4a02-8dc7-4aa55d0ff244
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-9e70915a-86de-4b57-a1d9-8776103e3f17 ;
+        time:hasTime              oquo:instant-1520c491-3dcd-40ba-8bba-fda9991b896a ;
+        oquo:hasObservation       oquo:observation-a5a094a8-bff3-42bb-8d16-e7d1a8f93ad3 .
+
+oquo:metric-a28f9090-2446-4880-8738-be5ee63ff25a
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-4b611cb7-e449-47f0-8499-314b6383235c ;
+        oboe:measurementFor  oquo:observation-7579e247-ee18-470b-b58f-fe808ba6451b ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:qualityValue-a9fce684-912d-475e-b44f-094b18406d9a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cf870d21-29cd-40fc-af50-5dc986d1dd0b ;
+        res:hasLiteralValue    "1.82"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-af4076b6-508f-4a17-8eed-e261e4c3a370 .
+
+oquo:evaluation-0b4d0760-4fd7-425f-b11d-e13b2b475da5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-b349595d-46b3-4a0c-bab7-04ffa93ba4e6 ;
+        time:hasTime              oquo:instant-02564f83-250b-4385-9716-13e724c7d565 ;
+        oquo:hasObservation       oquo:observation-fb231ea6-968d-4dd8-b7ad-708b2513ce4c .
+
+oquo:instant-7ef0ee26-3c93-4ab3-b990-c9d90d4ae3d9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.349Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-cb76376c-c0a4-48b5-944e-780bcd686bab
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-cbae1537-703a-4dd3-8012-5d6dff821a49 ;
+        res:hasLiteralValue    "0.985781990521327"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-96d95c36-f066-4b5e-8e91-97855e11fc1b .
+
+oquo:metric-a409250f-8c60-4f7f-a92e-71a0b7b43fd7
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b368e2e6-54e5-4e10-902c-03d52927fe00 ;
+        oboe:measurementFor  oquo:observation-a6e334b3-7dc8-4e41-af3d-ef61bae70ee0 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:qualityValue-cad18e78-dc0b-47c4-9e8d-2345c586f60e
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-01af5923-1878-4574-8a7e-19c1518461b0 ;
+        res:hasLiteralValue    "211.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3a2d8f18-23c2-4f0c-80c4-5436b35fc9ba .
+
+oquo:instant-f59b9f23-dfbd-4d44-a3f6-c07b8e907ea2
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.338Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-7e1990ea-96d1-4bf1-ac78-928c735e25ce
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.336Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9b933583-5896-4429-9e2e-6596931505a7
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-dec0f822-fbff-41b4-8aac-9d6275b23f94 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3068edf6-f959-4ded-9ceb-d992f3f38de5 .
+
+oquo:instant-95c62707-cc04-4156-a725-03b556406a84
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.328Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-16eec2ab-28d9-4de7-988a-82f92ec2348e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-769cd913-e74f-449d-afe1-8cb803e98e78 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-34de2595-ff04-430f-b088-013e478c61a1 .
+
+oquo:observation-4400af63-bbd2-4275-bb83-57b2a24efe53
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d4a1a10f-bb62-429d-8843-f6fa4cffd9e2 ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-daa596a6-4f83-4d0b-8d8c-7bc9295c392e .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-7579e247-ee18-470b-b58f-fe808ba6451b
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a28f9090-2446-4880-8738-be5ee63ff25a ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-c9b14ed1-0ff9-4d88-be19-23d1739e2d1e .
+
+oquo:evaluation-1c1ad07d-2607-46bd-b390-ee22d369435b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-3d9b0738-2f4c-407c-8d0f-6e3d3a24d866 ;
+        time:hasTime              oquo:instant-d9793c86-6427-49de-9004-95f729f4342e ;
+        oquo:hasObservation       oquo:observation-7017f243-806e-464d-ab27-209ff9af941c .
+
+oquo:qualityValue-1252decd-2242-4088-8868-2121a4d52291
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f326d18a-416c-4edb-bdb0-08186c94476d ;
+        res:hasLiteralValue    "1.1914893617021276"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5d9a43f9-feb5-42b2-a265-4d287a4db7d1 .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7d9cd5e1-b9ab-4337-877a-4485d365943b
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-568d905d-a5df-4035-a28b-b5e4b408e99b ;
+        oboe:measurementFor  oquo:observation-03ce70b8-0ef8-41d6-9e3d-329737ec99fc ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-4e6d5c82-3238-45c6-a5cd-71811e121207
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-f2154fe5-d0a8-4717-b5c4-c0aadfcd6af8 ;
+        oboe:measurementFor  oquo:observation-a7eb6ec5-6ab0-46df-8223-c92adde7c39d ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-3702c739-efcb-437f-8ed6-972dd5df7ae2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-fac3cbf7-acb0-4359-befa-16b0d54892e1 ;
+        time:hasTime              oquo:instant-7e1990ea-96d1-4bf1-ac78-928c735e25ce ;
+        oquo:hasObservation       oquo:observation-46533b44-e6a3-49a3-891c-d73647c290c9 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-eec8caa0-9c02-4ff2-8f37-c61884266cd1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.344Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-fd395b3b-ddd8-49b7-8983-8b4a02264d7e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.384Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-8f6f5efc-694b-4a90-b323-f31fc80973f9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.332Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-27f6f681-4f5d-4a92-8991-73d0572ee705
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:inputData             <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        res:producedQualityValue  oquo:qualityValue-ea1fbd1b-3f65-4ef7-87d1-8523eda653b6 ;
+        time:hasTime              oquo:instant-f59b9f23-dfbd-4d44-a3f6-c07b8e907ea2 ;
+        oquo:hasObservation       oquo:observation-89b63665-3d80-43e1-9d6b-fa7ee35bd061 .
+
+oquo:observation-a44e15c1-2151-493a-999c-fe6f3f24c7cc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b65c1560-accc-4181-9e30-d7df5bd4ec6a ;
+        oboe:ofEntity        <http://id.loc.gov/ontologies/bibframe-2-3-0/> ;
+        time:hasTime         oquo:instant-8bb375ac-d4e5-40b7-bb1e-5846d72b4192 .
+
+oquo:instant-1c2b9841-bf06-4aa4-bf01-f5a31782b4bb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:35.575Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-33baae9e-2831-4ee7-ad2c-5d733926d3a1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-22d0cc1e-b647-4738-9d7b-d244c6c707aa ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-a3241de9-36b6-4f61-bd8c-235bf064ef3d .
+
+oquo:metric-b65c1560-accc-4181-9e30-d7df5bd4ec6a
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-84c70300-249b-442d-b384-712739fbdd4b ;
+        oboe:measurementFor  oquo:observation-a44e15c1-2151-493a-999c-fe6f3f24c7cc ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:instant-dfd19753-60f1-44f9-a42f-c48d5bdb71da
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-19T03:54:36.394Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

@@ -1,0 +1,1205 @@
+@prefix res:   <http://purl.org/net/EvaluationResult#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix btl2:  <http://purl.org/biotop/btl2.owl#> .
+@prefix oquo:  <https://purl.archive.org/oquo#> .
+@prefix ipo:   <http://purl.org/ipo/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboe:  <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix cmnstxt: <https://www.omg.org/spec/Commons/TextDatatype/> .
+@prefix qm:    <http://purl.org/net/QualityModel#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+
+oquo:SynonymsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NamesPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-67e3ae36-bfcb-4c28-b5f6-5ca478a8cbcb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-be3e4778-7444-4db6-8be9-a965c5c736b6 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-ffdfaf0b-e935-4329-a93f-dade0a89d64b .
+
+oquo:instant-ca91c8c8-4e13-4322-8d37-61ae13306287
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.438Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-8e9e35cc-cb4c-4bbb-8727-5cec4f28195c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-ad29b7ec-c00f-4608-97d4-9ec8f8ed43f5 ;
+        time:hasTime              oquo:instant-eefad7a4-be25-48fa-aea5-99e8a44c8bef ;
+        oquo:hasObservation       oquo:observation-74716d2f-78e8-4ed0-8746-2ce72428ba9d .
+
+oquo:ObjectPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:qualityValue-8cf584d5-2ca8-4d9c-9e2a-4fbc5c5b1249
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fb4a42b4-d803-4716-8de2-a0916c3b7c7a ;
+        res:hasLiteralValue    "0.4951366373320982"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-50a5dc49-a0d7-4de1-bd61-db84c65e04c9 .
+
+oquo:instant-b930cc2b-b911-407b-a866-67ec4952b6b9
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.134Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-ec210b69-8b0d-4f2d-be0d-0559675267f1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.447Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-71256d28-96fe-414b-ad99-ab3383aea1b5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.051Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-08e3c9cf-ded5-4ee0-9038-635fbf56f40e
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-4caa68c8-82c8-4f59-9f58-bc2d0066b014 ;
+        time:hasTime              oquo:instant-dcdc405e-66c0-4201-9355-c5ec305b9b8c ;
+        oquo:hasObservation       oquo:observation-a3b66077-69f6-4248-9931-a1b549241f06 .
+
+oquo:observation-393a241e-49a9-4079-a601-75c2c82bdbeb
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ba61f34c-ae22-4946-8e01-fc9aaa23a867 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-ca91c8c8-4e13-4322-8d37-61ae13306287 .
+
+oquo:metric-b35f6748-9776-46cc-a333-6a2263376213
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularitiesMetric ;
+        oboe:hasValue        oquo:qualityValue-a5499cea-564f-4a18-8591-75e390ea83f9 ;
+        oboe:measurementFor  oquo:observation-1ed8bfbc-6977-40af-9701-c59792ce72ec ;
+        qm:hasScale          oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:observation-9ef7bd0b-21ec-47a4-9b0c-4f0e335f47fc
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-588fa272-a876-4bfb-908c-939f4fe69c1f ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-ab4ac345-2dbd-4d8f-bd71-bdbb357fce35 .
+
+oquo:metric-9691a76c-5c98-4b29-9f8e-815944f9322b
+        a                    oboe:Measurement , oquo:ClassesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-5c3ae705-fc17-4d63-858c-222686804787 ;
+        oboe:measurementFor  oquo:observation-b1e790de-5804-4385-b8ff-ea8dd0ac778e ;
+        qm:hasScale          oquo:ClassesWithNoDescriptionMetricScale .
+
+oquo:evaluation-df3a25dc-869d-4c14-874b-eed5d8050c2c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b8f041aa-7d94-4fc8-b18f-38dd3a6550ba ;
+        time:hasTime              oquo:instant-4b349b7e-8708-4c1a-9b74-94cda2223db4 ;
+        oquo:hasObservation       oquo:observation-49082807-f337-4de5-b4ac-6d79d5c3ce36 .
+
+oquo:evaluation-e020b7a6-d43c-408b-9a7d-f997205519b6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b620df4f-114a-4cd2-bd98-76a1f32f9e5b ;
+        time:hasTime              oquo:instant-8abaf15c-0d72-447b-9dae-f2931264da32 ;
+        oquo:hasObservation       oquo:observation-448eb6da-e6fa-4b2f-8a18-9a546242519f .
+
+oquo:LexicallySuggestLogicallyDefineMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-41697cb6-42db-4aab-869e-ef17b052251a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a008c6a6-fec8-4c2d-9740-e0cc0d2241ad ;
+        time:hasTime              oquo:instant-612ee18a-8808-4a91-bec3-1699576930b5 ;
+        oquo:hasObservation       oquo:observation-4a4d63cb-d45c-4168-81d3-498ae721b266 .
+
+oquo:qualityValue-a008c6a6-fec8-4c2d-9740-e0cc0d2241ad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9a49ba83-d448-4074-818e-1594da2e7702 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicallySuggestLogicallyDefineMetricScale ;
+        res:obtainedFrom       oquo:evaluation-41697cb6-42db-4aab-869e-ef17b052251a .
+
+oquo:evaluation-b0708d81-cebe-4d41-8bff-f64b7149a715
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-18689609-54b7-4dc5-b38b-9d79b7380870 ;
+        time:hasTime              oquo:instant-ca91c8c8-4e13-4322-8d37-61ae13306287 ;
+        oquo:hasObservation       oquo:observation-393a241e-49a9-4079-a601-75c2c82bdbeb .
+
+oquo:instant-fe2b5f83-31f2-4bc8-906b-a73ea561cb83
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:23.759Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:ObjectPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-fb274555-6411-4b97-b8fa-c42543e49c5a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-332de6c7-45ff-4305-a8e8-37fc2f0b3ef9 ;
+        time:hasTime              oquo:instant-7dc5f562-3256-4817-8a39-8051f2967484 ;
+        oquo:hasObservation       oquo:observation-f7e26c74-1b71-4042-84ac-56d304c9f2e9 .
+
+oquo:evaluation-ca91a591-9be2-4151-97f8-24a603b319c4
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-7fa02cf2-1aec-440d-8c9c-b59c94b60e6d ;
+        time:hasTime              oquo:instant-efb1458c-dad3-44e3-8ab7-59ebf0acefdf ;
+        oquo:hasObservation       oquo:observation-36430bf7-561a-42e0-85a1-23127bba009c .
+
+oquo:instant-efb1458c-dad3-44e3-8ab7-59ebf0acefdf
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.334Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-0b85697f-e308-473e-a865-d90947df6155
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ea199a78-713d-4eab-b904-f50eba266379 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-fe2b5f83-31f2-4bc8-906b-a73ea561cb83 .
+
+oquo:qualityValue-5c3ae705-fc17-4d63-858c-222686804787
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9691a76c-5c98-4b29-9f8e-815944f9322b ;
+        res:hasLiteralValue    "0.7656322371468273"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-05abe7dc-daa5-4a84-9b93-77108bdfa285 .
+
+oquo:qualityValue-67bba490-db59-4675-a3e4-eaab0996f9ea
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-5e4501e0-d313-463f-876b-ce0de5af4dfd ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-d902b90c-5868-406f-be7a-75e36cbc2647 .
+
+oquo:metric-687516bd-4f6a-4437-b9cb-3bddb9998813
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-91ad78f2-6756-4cad-8e08-ddaf340aabeb ;
+        oboe:measurementFor  oquo:observation-6db168ce-1ea9-4297-b487-5f8671b18249 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoSynonymMetricScale .
+
+oquo:qualityValue-bbe2d799-e08c-45e8-80d7-032d6bfec7ec
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ccc4e79d-f551-4b10-8ee8-9e0439fe1894 ;
+        res:hasLiteralValue    "0.3006021306160259"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-52f1a3d9-5fa2-475c-93ca-8fa497d1de63 .
+
+oquo:qualityValue-8f972ea7-b494-464d-9cfa-59a2b2f3ab49
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-be3e4778-7444-4db6-8be9-a965c5c736b6 ;
+        res:hasLiteralValue    "0.046153846153846156"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dbb027c8-97e4-477e-9f2f-a04e6d480e63 .
+
+oquo:metric-a9a0f390-f69c-41ee-8a55-5b39715c093e
+        a                    oboe:Measurement , oquo:SynonymsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-b8f041aa-7d94-4fc8-b18f-38dd3a6550ba ;
+        oboe:measurementFor  oquo:observation-49082807-f337-4de5-b4ac-6d79d5c3ce36 ;
+        qm:hasScale          oquo:SynonymsPerPropertyMetricScale .
+
+oquo:qualityValue-18689609-54b7-4dc5-b38b-9d79b7380870
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ba61f34c-ae22-4946-8e01-fc9aaa23a867 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b0708d81-cebe-4d41-8bff-f64b7149a715 .
+
+oquo:metric-9ec86628-24f7-44bd-850f-67417b5f761d
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-3fd3244e-0bc7-41c4-aeaa-3b89049910ad ;
+        oboe:measurementFor  oquo:observation-120ad409-946d-452f-8710-2c9f993b4c37 ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoNameMetricScale .
+
+oquo:ClassesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-108ca1fd-4355-4bfe-aa59-b4977f6ad5c5
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-d3dabbed-7000-45bb-9859-c539157fe731 ;
+        time:hasTime              oquo:instant-2648e91c-549f-45c5-b37d-a43283ecdf9d ;
+        oquo:hasObservation       oquo:observation-fd65814d-8ac9-4d23-a65c-64640f739a59 .
+
+oquo:qualityValue-c69c050e-12a0-4953-89fa-8670ac75f81d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-588fa272-a876-4bfb-908c-939f4fe69c1f ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-130c088a-3587-4d29-9f95-a18804f54254 .
+
+oquo:observation-922c3665-6932-4766-8d5c-4d506c4e9bb5
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ccc4e79d-f551-4b10-8ee8-9e0439fe1894 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-7c406810-d8bf-4de9-a5e6-5f59bfe20d0e .
+
+oquo:metric-588fa272-a876-4bfb-908c-939f4fe69c1f
+        a                    oboe:Measurement , oquo:ObjectPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-c69c050e-12a0-4953-89fa-8670ac75f81d ;
+        oboe:measurementFor  oquo:observation-9ef7bd0b-21ec-47a4-9b0c-4f0e335f47fc ;
+        qm:hasScale          oquo:ObjectPropertiesWithNoDescriptionMetricScale .
+
+oquo:metric-af5b82a0-54ba-437a-9a3b-a66f6d17654e
+        a                    oboe:Measurement , oquo:DescriptionsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-7fa02cf2-1aec-440d-8c9c-b59c94b60e6d ;
+        oboe:measurementFor  oquo:observation-36430bf7-561a-42e0-85a1-23127bba009c ;
+        qm:hasScale          oquo:DescriptionsPerDataPropertyMetricScale .
+
+oquo:ClassesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-b8fea36f-7497-4e98-b085-d702df48cd09
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b18e991d-11ff-4ea2-8c09-10d51cfadc86 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-063bf7a1-74c0-4eb2-bdea-db1345475837 .
+
+oquo:NamesPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-4caa68c8-82c8-4f59-9f58-bc2d0066b014
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b4e83172-3a63-4c6a-a1bc-c9571510b195 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularitiesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-08e3c9cf-ded5-4ee0-9038-635fbf56f40e .
+
+oquo:observation-f644e2a2-6deb-47e6-9d17-06feae413714
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-7667418d-52f8-4d45-8bba-30489ae7ad5c ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-17146294-18eb-47ba-aa42-76ef7dc4ba8c .
+
+oquo:evaluation-3e863e5e-3c44-4317-b35d-21b9c471c482
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-e07f2093-4e64-4d78-bfd2-7ffa26198218 ;
+        time:hasTime              oquo:instant-17146294-18eb-47ba-aa42-76ef7dc4ba8c ;
+        oquo:hasObservation       oquo:observation-f644e2a2-6deb-47e6-9d17-06feae413714 .
+
+oquo:metric-5e4501e0-d313-463f-876b-ce0de5af4dfd
+        a                    oboe:Measurement , oquo:SynonymsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-67bba490-db59-4675-a3e4-eaab0996f9ea ;
+        oboe:measurementFor  oquo:observation-22fd0e75-b91e-4ae8-ae5a-1f6e93aa6bba ;
+        qm:hasScale          oquo:SynonymsPerClassMetricScale .
+
+oquo:metric-ecc29f6f-d8e6-440a-90cc-9ea34a362152
+        a                    oboe:Measurement , oquo:SynonymsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-72ad0759-367c-48ff-b57e-1e02df321dbf ;
+        oboe:measurementFor  oquo:observation-33bb9c97-a155-4c28-9693-6825da5fe500 ;
+        qm:hasScale          oquo:SynonymsPerAnnotationPropertyMetricScale .
+
+oquo:evaluation-b46ce7d6-cbbe-4bc0-8e41-0424ac7ead23
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9b5a121d-e1f7-46de-bf14-1c3746c629c5 ;
+        time:hasTime              oquo:instant-8c904f97-122a-4cf1-820c-c740fe084838 ;
+        oquo:hasObservation       oquo:observation-8cafe652-ec39-46a7-b325-710225891a7c .
+
+oquo:evaluation-5dbc27a6-6c92-487e-872b-ec4ee56fdd99
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-a5499cea-564f-4a18-8591-75e390ea83f9 ;
+        time:hasTime              oquo:instant-80f812ea-a6b5-4358-ab8a-938f667c5b99 ;
+        oquo:hasObservation       oquo:observation-1ed8bfbc-6977-40af-9701-c59792ce72ec .
+
+oquo:instant-d639ea19-a02d-4b45-81e6-22f12dcefe0d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.208Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-17146294-18eb-47ba-aa42-76ef7dc4ba8c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.405Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ba61f34c-ae22-4946-8e01-fc9aaa23a867
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-18689609-54b7-4dc5-b38b-9d79b7380870 ;
+        oboe:measurementFor  oquo:observation-393a241e-49a9-4079-a601-75c2c82bdbeb ;
+        qm:hasScale          oquo:DataPropertiesWithNoNameMetricScale .
+
+oquo:qualityValue-fd342ec3-ed90-4385-b574-e7bc2e0ef032
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ea199a78-713d-4eab-b904-f50eba266379 ;
+        res:hasLiteralValue    "NaN"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SystematicNamingMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7e0573f7-53e3-42a3-8f91-b2613c9a5498 .
+
+qm:HigherBest  a  qm:RankingFunction .
+
+oquo:observation-5e59b98f-5807-4798-9d4e-7e46b72dc183
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-98943d09-98e9-451c-ba18-19f556a24f36 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-ec210b69-8b0d-4f2d-be0d-0559675267f1 .
+
+oquo:observation-a3b66077-69f6-4248-9931-a1b549241f06
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b4e83172-3a63-4c6a-a1bc-c9571510b195 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-dcdc405e-66c0-4201-9355-c5ec305b9b8c .
+
+<http://www.case.edu/EpilepsyOntology.owl>
+        a       oboe:Entity , oquo:EvaluationInputData , res:EvaluationData , owl:Ontology , res:EvaluationSubject .
+
+oquo:metric-d512d6e9-f814-4c15-9d8c-0bbb1b0c346c
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-b620df4f-114a-4cd2-bd98-76a1f32f9e5b ;
+        oboe:measurementFor  oquo:observation-448eb6da-e6fa-4b2f-8a18-9a546242519f ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoSynonymMetricScale .
+
+oquo:evaluation-7e0573f7-53e3-42a3-8f91-b2613c9a5498
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-fd342ec3-ed90-4385-b574-e7bc2e0ef032 ;
+        time:hasTime              oquo:instant-fe2b5f83-31f2-4bc8-906b-a73ea561cb83 ;
+        oquo:hasObservation       oquo:observation-0b85697f-e308-473e-a865-d90947df6155 .
+
+oquo:instant-ffdfaf0b-e935-4329-a93f-dade0a89d64b
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.121Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b8f041aa-7d94-4fc8-b18f-38dd3a6550ba
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a9a0f390-f69c-41ee-8a55-5b39715c093e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-df3a25dc-869d-4c14-874b-eed5d8050c2c .
+
+oquo:metric-98943d09-98e9-451c-ba18-19f556a24f36
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-b173fa5d-e005-41a3-9f9d-327b2758feff ;
+        oboe:measurementFor  oquo:observation-5e59b98f-5807-4798-9d4e-7e46b72dc183 ;
+        qm:hasScale          oquo:DataPropertiesWithNoDescriptionMetricScale .
+
+oquo:LexicalRegularitiesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-24b107ff-32fd-49ab-9efa-05e1c5e28bb6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3622a765-78e6-4dc0-9ea5-5aa4a300a4e5 ;
+        time:hasTime              oquo:instant-372db32a-10c5-42eb-a82a-04bc963bae98 ;
+        oquo:hasObservation       oquo:observation-782adce3-8c6e-4421-a724-f4241140f90d .
+
+oquo:metric-e44fd68b-6ad4-4aaf-9b0f-78c05c637623
+        a                    oboe:Measurement , oquo:DescriptionsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9ccab3d2-8522-43bd-b51c-ed6502fced61 ;
+        oboe:measurementFor  oquo:observation-14b2f823-0425-46d2-acd2-1b009cccfbee ;
+        qm:hasScale          oquo:DescriptionsPerObjectPropertyMetricScale .
+
+oquo:observation-eac50e53-230b-40ae-a8db-5c1da6f509df
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b35543b5-9620-4c2a-b203-84943c0ffad2 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-6872d1f6-3171-40c8-899a-981a359014bb .
+
+oquo:evaluation-05abe7dc-daa5-4a84-9b93-77108bdfa285
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-5c3ae705-fc17-4d63-858c-222686804787 ;
+        time:hasTime              oquo:instant-ea1f7777-a265-4640-8eeb-287695c4f460 ;
+        oquo:hasObservation       oquo:observation-b1e790de-5804-4385-b8ff-ea8dd0ac778e .
+
+oquo:instant-6872d1f6-3171-40c8-899a-981a359014bb
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.452Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-f0d40c34-a2d0-4144-8171-8db52b657a85
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b18e991d-11ff-4ea2-8c09-10d51cfadc86 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2e1fafe5-bab8-4f11-b92b-e0cd88afaa16 .
+
+oquo:observation-14b2f823-0425-46d2-acd2-1b009cccfbee
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-e44fd68b-6ad4-4aaf-9b0f-78c05c637623 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-6f355bed-7bc6-44ec-bde6-09bdece25299 .
+
+oquo:qualityValue-9b5a121d-e1f7-46de-bf14-1c3746c629c5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-914bb7a4-a618-4a62-b213-37a8bd3e6b10 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:LexicalRegularityClassPercentageMetricScale ;
+        res:obtainedFrom       oquo:evaluation-b46ce7d6-cbbe-4bc0-8e41-0424ac7ead23 .
+
+oquo:metric-ccc4e79d-f551-4b10-8ee8-9e0439fe1894
+        a                    oboe:Measurement , oquo:DescriptionsPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-bbe2d799-e08c-45e8-80d7-032d6bfec7ec ;
+        oboe:measurementFor  oquo:observation-922c3665-6932-4766-8d5c-4d506c4e9bb5 ;
+        qm:hasScale          oquo:DescriptionsPerClassMetricScale .
+
+oquo:instant-dcdc405e-66c0-4201-9355-c5ec305b9b8c
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:22.232Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-9a49ba83-d448-4074-818e-1594da2e7702
+        a                    oboe:Measurement , oquo:LexicallySuggestLogicallyDefineMetric ;
+        oboe:hasValue        oquo:qualityValue-a008c6a6-fec8-4c2d-9740-e0cc0d2241ad ;
+        oboe:measurementFor  oquo:observation-4a4d63cb-d45c-4168-81d3-498ae721b266 ;
+        qm:hasScale          oquo:LexicallySuggestLogicallyDefineMetricScale .
+
+oquo:observation-4a4d63cb-d45c-4168-81d3-498ae721b266
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9a49ba83-d448-4074-818e-1594da2e7702 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-612ee18a-8808-4a91-bec3-1699576930b5 .
+
+oquo:instant-eefad7a4-be25-48fa-aea5-99e8a44c8bef
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:LexicalRegularityClassPercentageMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-be3e4778-7444-4db6-8be9-a965c5c736b6
+        a                    oboe:Measurement , oquo:NamesPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-8f972ea7-b494-464d-9cfa-59a2b2f3ab49 ;
+        oboe:measurementFor  oquo:observation-67e3ae36-bfcb-4c28-b5f6-5ca478a8cbcb ;
+        qm:hasScale          oquo:NamesPerPropertyMetricScale .
+
+oquo:metric-b4e83172-3a63-4c6a-a1bc-c9571510b195
+        a                    oboe:Measurement , oquo:LexicalRegularitiesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-4caa68c8-82c8-4f59-9f58-bc2d0066b014 ;
+        oboe:measurementFor  oquo:observation-a3b66077-69f6-4248-9931-a1b549241f06 ;
+        qm:hasScale          oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-2838b46a-291c-44a6-bd36-40b8ca5115b7
+        a                    oboe:Measurement , oquo:NamesPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-332de6c7-45ff-4305-a8e8-37fc2f0b3ef9 ;
+        oboe:measurementFor  oquo:observation-f7e26c74-1b71-4042-84ac-56d304c9f2e9 ;
+        qm:hasScale          oquo:NamesPerObjectPropertyMetricScale .
+
+oquo:qualityValue-7fa02cf2-1aec-440d-8c9c-b59c94b60e6d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-af5b82a0-54ba-437a-9a3b-a66f6d17654e ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-ca91a591-9be2-4151-97f8-24a603b319c4 .
+
+oquo:SystematicNamingMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:NumberOfClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:DataPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:SynonymsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-8abaf15c-0d72-447b-9dae-f2931264da32
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.454Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-d3df072b-f438-4d21-a1da-d569054bb9b5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.451Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-9f946394-348e-4891-a326-11fb5f0be006
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-f95e92c5-83df-434c-9ea5-836e6e6cf1d0 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-9244c6d4-65d0-4a08-8319-dcc7ed883351 .
+
+oquo:evaluation-6592afd6-1593-43e5-bea4-19bc5f052a7f
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bf561f0c-f0ba-468d-8fa9-29266e4e900a ;
+        time:hasTime              oquo:instant-b930cc2b-b911-407b-a866-67ec4952b6b9 ;
+        oquo:hasObservation       oquo:observation-f33af36f-0eb3-45ff-ba76-0af3a778705e .
+
+oquo:qualityValue-725114a4-acf2-40e1-8c26-8a98aed52e0d
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-bb30ebf3-f6a3-4c48-a7a7-78fef2ca301d ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-dc356f1e-967d-4825-9936-6a09df9d8843 .
+
+oquo:qualityValue-b173fa5d-e005-41a3-9f9d-327b2758feff
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-98943d09-98e9-451c-ba18-19f556a24f36 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DataPropertiesWithNoDescriptionMetricScale ;
+        res:obtainedFrom       oquo:evaluation-2cb86420-4d4e-4955-9165-bce2b6fa898b .
+
+oquo:qualityValue-ad29b7ec-c00f-4608-97d4-9ec8f8ed43f5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-74cfe671-3773-47f3-b03f-ca1c6eb40881 ;
+        res:hasLiteralValue    "2160.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8e9e35cc-cb4c-4bbb-8727-5cec4f28195c .
+
+oquo:qualityValue-bf561f0c-f0ba-468d-8fa9-29266e4e900a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-35e6b0ac-d936-4f46-a836-fb819e85a2bc ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6592afd6-1593-43e5-bea4-19bc5f052a7f .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:ObjectPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-36430bf7-561a-42e0-85a1-23127bba009c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-af5b82a0-54ba-437a-9a3b-a66f6d17654e ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-efb1458c-dad3-44e3-8ab7-59ebf0acefdf .
+
+oquo:instant-80f812ea-a6b5-4358-ab8a-938f667c5b99
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:21.658Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-b620df4f-114a-4cd2-bd98-76a1f32f9e5b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-d512d6e9-f814-4c15-9d8c-0bbb1b0c346c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-e020b7a6-d43c-408b-9a7d-f997205519b6 .
+
+oquo:evaluation-35e8f02e-f30c-4732-b848-50cd9e241ae3
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c7445a99-9130-419d-a341-427567861fc1 ;
+        time:hasTime              oquo:instant-9244c6d4-65d0-4a08-8319-dcc7ed883351 ;
+        oquo:hasObservation       oquo:observation-9f946394-348e-4891-a326-11fb5f0be006 .
+
+oquo:qualityValue-72ad0759-367c-48ff-b57e-1e02df321dbf
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-ecc29f6f-d8e6-440a-90cc-9ea34a362152 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fe69dbe0-bc3c-44b0-ae71-5248c08bdf86 .
+
+oquo:evaluation-6e8e2f4f-4ff9-437c-8dd3-5d7c04e4957a
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b2260a1e-e14a-4ecc-8e92-628b341abd6a ;
+        time:hasTime              oquo:instant-6872d1f6-3171-40c8-899a-981a359014bb ;
+        oquo:hasObservation       oquo:observation-eac50e53-230b-40ae-a8db-5c1da6f509df .
+
+oquo:observation-120ad409-946d-452f-8710-2c9f993b4c37
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9ec86628-24f7-44bd-850f-67417b5f761d ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-8ea3a162-7811-44fc-8f4d-cd48866ca151 .
+
+oquo:instant-ea1f7777-a265-4640-8eeb-287695c4f460
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.387Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-fee2a012-cf74-4df6-bfa6-62eb5719b32c
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-3622a765-78e6-4dc0-9ea5-5aa4a300a4e5 ;
+        oboe:measurementFor  oquo:observation-782adce3-8c6e-4421-a724-f4241140f90d ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:observation-bb868372-a235-4a23-9dab-004e224f9ca7
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-87c11889-6bda-46e3-92c4-4def8481f0cf ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-ebad64db-3e0d-4bf2-8b20-83a8c7e83f24 .
+
+oquo:instant-ab4ac345-2dbd-4d8f-bd71-bdbb357fce35
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.432Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:AnnotationPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:AnnotationPropertiesWithNoNameMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:observation-70eca757-2b25-4685-807f-0bbd4e9df520
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fb4a42b4-d803-4716-8de2-a0916c3b7c7a ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-105382ed-174c-4a1a-b254-04684517fb17 .
+
+qm:LowerBest  a  qm:RankingFunction .
+
+oquo:evaluation-7345ca9c-d4f7-4808-b30f-6abc94f1c9e2
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-dde4049d-4e8d-458f-b69e-9db0177f6f19 ;
+        time:hasTime              oquo:instant-71256d28-96fe-414b-ad99-ab3383aea1b5 ;
+        oquo:hasObservation       oquo:observation-f6cf302e-21e9-4ece-993d-a396cfadec71 .
+
+oquo:metric-2c4e2f11-4353-4a44-87db-46d35b5668e8
+        a                    oboe:Measurement , oquo:NamesPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-d3dabbed-7000-45bb-9859-c539157fe731 ;
+        oboe:measurementFor  oquo:observation-fd65814d-8ac9-4d23-a65c-64640f739a59 ;
+        qm:hasScale          oquo:NamesPerDataPropertyMetricScale .
+
+oquo:instant-8ea3a162-7811-44fc-8f4d-cd48866ca151
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.429Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-a5499cea-564f-4a18-8591-75e390ea83f9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b35f6748-9776-46cc-a333-6a2263376213 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularitiesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5dbc27a6-6c92-487e-872b-ec4ee56fdd99 .
+
+oquo:SynonymsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-93a26b67-05b3-4392-bbdd-0fef3c2ebbd1
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9ef77bd4-2d4c-4eba-b824-c03a960cf659 ;
+        time:hasTime              oquo:instant-141f2ffe-76c1-4693-b8e5-8c73c44d5081 ;
+        oquo:hasObservation       oquo:observation-822f0b04-7e0f-493c-b010-fcc4a5b2eb76 .
+
+oquo:DataPropertiesWithNoSynonymMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-141f2ffe-76c1-4693-b8e5-8c73c44d5081
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.332Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-9ccab3d2-8522-43bd-b51c-ed6502fced61
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-e44fd68b-6ad4-4aaf-9b0f-78c05c637623 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-8eb1c30a-638c-45de-85ef-5bcd128d568b .
+
+oquo:qualityValue-332de6c7-45ff-4305-a8e8-37fc2f0b3ef9
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2838b46a-291c-44a6-bd36-40b8ca5115b7 ;
+        res:hasLiteralValue    "0.05660377358490566"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-fb274555-6411-4b97-b8fa-c42543e49c5a .
+
+oquo:qualityValue-e07f2093-4e64-4d78-bfd2-7ffa26198218
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-7667418d-52f8-4d45-8bba-30489ae7ad5c ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ClassesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-3e863e5e-3c44-4317-b35d-21b9c471c482 .
+
+oquo:ClassesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:metric-a4bfeb72-d9f4-40ee-ba38-3cd34cc939a3
+        a                    oboe:Measurement , oquo:NamesPerClassMetric ;
+        oboe:hasValue        oquo:qualityValue-dde4049d-4e8d-458f-b69e-9db0177f6f19 ;
+        oboe:measurementFor  oquo:observation-f6cf302e-21e9-4ece-993d-a396cfadec71 ;
+        qm:hasScale          oquo:NamesPerClassMetricScale .
+
+oquo:NamesPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-6f355bed-7bc6-44ec-bde6-09bdece25299
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.335Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:instant-9244c6d4-65d0-4a08-8319-dcc7ed883351
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.243Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-f375faf3-4696-4e02-be17-7a339f388e92
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bf723cff-a97a-462e-a86c-03aee6190488 ;
+        time:hasTime              oquo:instant-7c07ca08-3fdd-47f5-b816-4b1438600181 ;
+        oquo:hasObservation       oquo:observation-476ba6d6-a69e-4129-8027-f36b2a5ac5a6 .
+
+oquo:observation-2b67768c-7c64-4d6b-a8b6-3b4f0e840926
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-bb30ebf3-f6a3-4c48-a7a7-78fef2ca301d ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-d3df072b-f438-4d21-a1da-d569054bb9b5 .
+
+oquo:SynonymsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-7dc5f562-3256-4817-8a39-8051f2967484
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.137Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-fe69dbe0-bc3c-44b0-ae71-5248c08bdf86
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-72ad0759-367c-48ff-b57e-1e02df321dbf ;
+        time:hasTime              oquo:instant-d639ea19-a02d-4b45-81e6-22f12dcefe0d ;
+        oquo:hasObservation       oquo:observation-33bb9c97-a155-4c28-9693-6825da5fe500 .
+
+oquo:qualityValue-dde4049d-4e8d-458f-b69e-9db0177f6f19
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-a4bfeb72-d9f4-40ee-ba38-3cd34cc939a3 ;
+        res:hasLiteralValue    "0.6141732283464567"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerClassMetricScale ;
+        res:obtainedFrom       oquo:evaluation-7345ca9c-d4f7-4808-b30f-6abc94f1c9e2 .
+
+oquo:observation-49082807-f337-4de5-b4ac-6d79d5c3ce36
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a9a0f390-f69c-41ee-8a55-5b39715c093e ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-4b349b7e-8708-4c1a-9b74-94cda2223db4 .
+
+oquo:observation-8cafe652-ec39-46a7-b325-710225891a7c
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-914bb7a4-a618-4a62-b213-37a8bd3e6b10 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-8c904f97-122a-4cf1-820c-c740fe084838 .
+
+oquo:observation-782adce3-8c6e-4421-a724-f4241140f90d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-fee2a012-cf74-4df6-bfa6-62eb5719b32c ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-372db32a-10c5-42eb-a82a-04bc963bae98 .
+
+oquo:instant-8c904f97-122a-4cf1-820c-c740fe084838
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:22.235Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerDataPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-7667418d-52f8-4d45-8bba-30489ae7ad5c
+        a                    oboe:Measurement , oquo:ClassesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-e07f2093-4e64-4d78-bfd2-7ffa26198218 ;
+        oboe:measurementFor  oquo:observation-f644e2a2-6deb-47e6-9d17-06feae413714 ;
+        qm:hasScale          oquo:ClassesWithNoSynonymMetricScale .
+
+oquo:evaluation-67fd77e4-d34a-4218-94ea-791c42571610
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-91ad78f2-6756-4cad-8e08-ddaf340aabeb ;
+        time:hasTime              oquo:instant-9239f77c-3c35-42b4-9cdd-86e7ac5130b1 ;
+        oquo:hasObservation       oquo:observation-6db168ce-1ea9-4297-b487-5f8671b18249 .
+
+oquo:qualityValue-9ef77bd4-2d4c-4eba-b824-c03a960cf659
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b3e17ff6-f9de-4741-8b26-e8a47016a124 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-93a26b67-05b3-4392-bbdd-0fef3c2ebbd1 .
+
+oquo:metric-87c11889-6bda-46e3-92c4-4def8481f0cf
+        a                    oboe:Measurement , oquo:SynonymsPerDataPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-2e5edfdc-5f7d-4142-b5ed-bb033da6c38b ;
+        oboe:measurementFor  oquo:observation-bb868372-a235-4a23-9dab-004e224f9ca7 ;
+        qm:hasScale          oquo:SynonymsPerDataPropertyMetricScale .
+
+oquo:metric-914bb7a4-a618-4a62-b213-37a8bd3e6b10
+        a                    oboe:Measurement , oquo:LexicalRegularityClassPercentageMetric ;
+        oboe:hasValue        oquo:qualityValue-9b5a121d-e1f7-46de-bf14-1c3746c629c5 ;
+        oboe:measurementFor  oquo:observation-8cafe652-ec39-46a7-b325-710225891a7c ;
+        qm:hasScale          oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:SynonymsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:metric-74cfe671-3773-47f3-b03f-ca1c6eb40881
+        a                    oboe:Measurement , oquo:NumberOfClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-ad29b7ec-c00f-4608-97d4-9ec8f8ed43f5 ;
+        oboe:measurementFor  oquo:observation-74716d2f-78e8-4ed0-8746-2ce72428ba9d ;
+        qm:hasScale          oquo:NumberOfClassesMetricScale .
+
+oquo:observation-33bb9c97-a155-4c28-9693-6825da5fe500
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-ecc29f6f-d8e6-440a-90cc-9ea34a362152 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-d639ea19-a02d-4b45-81e6-22f12dcefe0d .
+
+oquo:qualityValue-d3dabbed-7000-45bb-9859-c539157fe731
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-2c4e2f11-4353-4a44-87db-46d35b5668e8 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NamesPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-108ca1fd-4355-4bfe-aa59-b4977f6ad5c5 .
+
+oquo:observation-448eb6da-e6fa-4b2f-8a18-9a546242519f
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-d512d6e9-f814-4c15-9d8c-0bbb1b0c346c ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-8abaf15c-0d72-447b-9dae-f2931264da32 .
+
+oquo:observation-f33af36f-0eb3-45ff-ba76-0af3a778705e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-35e6b0ac-d936-4f46-a836-fb819e85a2bc ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-b930cc2b-b911-407b-a866-67ec4952b6b9 .
+
+oquo:qualityValue-3622a765-78e6-4dc0-9ea5-5aa4a300a4e5
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-fee2a012-cf74-4df6-bfa6-62eb5719b32c ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:DescriptionsPerAnnotationPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-24b107ff-32fd-49ab-9efa-05e1c5e28bb6 .
+
+oquo:instant-2648e91c-549f-45c5-b37d-a43283ecdf9d
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.136Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:qualityValue-91ad78f2-6756-4cad-8e08-ddaf340aabeb
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-687516bd-4f6a-4437-b9cb-3bddb9998813 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoSynonymMetricScale ;
+        res:obtainedFrom       oquo:evaluation-67fd77e4-d34a-4218-94ea-791c42571610 .
+
+oquo:metric-b18e991d-11ff-4ea2-8c09-10d51cfadc86
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoDescriptionMetric ;
+        oboe:hasValue        oquo:qualityValue-f0d40c34-a2d0-4144-8171-8db52b657a85 ;
+        oboe:measurementFor  oquo:observation-b8fea36f-7497-4e98-b085-d702df48cd09 ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoDescriptionMetricScale .
+
+oquo:evaluation-5be22325-57ce-44a5-b221-1130f0bf853c
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-2e5edfdc-5f7d-4142-b5ed-bb033da6c38b ;
+        time:hasTime              oquo:instant-ebad64db-3e0d-4bf2-8b20-83a8c7e83f24 ;
+        oquo:hasObservation       oquo:observation-bb868372-a235-4a23-9dab-004e224f9ca7 .
+
+oquo:DescriptionsPerAnnotationPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-4b349b7e-8708-4c1a-9b74-94cda2223db4
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.203Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-6db168ce-1ea9-4297-b487-5f8671b18249
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-687516bd-4f6a-4437-b9cb-3bddb9998813 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-9239f77c-3c35-42b4-9cdd-86e7ac5130b1 .
+
+oquo:observation-822f0b04-7e0f-493c-b010-fcc4a5b2eb76
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b3e17ff6-f9de-4741-8b26-e8a47016a124 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-141f2ffe-76c1-4693-b8e5-8c73c44d5081 .
+
+oquo:metric-b3e17ff6-f9de-4741-8b26-e8a47016a124
+        a                    oboe:Measurement , oquo:DescriptionsPerPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-9ef77bd4-2d4c-4eba-b824-c03a960cf659 ;
+        oboe:measurementFor  oquo:observation-822f0b04-7e0f-493c-b010-fcc4a5b2eb76 ;
+        qm:hasScale          oquo:DescriptionsPerPropertyMetricScale .
+
+oquo:qualityValue-3fd3244e-0bc7-41c4-aeaa-3b89049910ad
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-9ec86628-24f7-44bd-850f-67417b5f761d ;
+        res:hasLiteralValue    "0.9433962264150944"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:ObjectPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-4755c71b-9e20-4ef9-b5f6-463319202ab6 .
+
+oquo:evaluation-130c088a-3587-4d29-9f95-a18804f54254
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-c69c050e-12a0-4953-89fa-8670ac75f81d ;
+        time:hasTime              oquo:instant-ab4ac345-2dbd-4d8f-bd71-bdbb357fce35 ;
+        oquo:hasObservation       oquo:observation-9ef7bd0b-21ec-47a4-9b0c-4f0e335f47fc .
+
+oquo:observation-74716d2f-78e8-4ed0-8746-2ce72428ba9d
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-74cfe671-3773-47f3-b03f-ca1c6eb40881 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-eefad7a4-be25-48fa-aea5-99e8a44c8bef .
+
+oquo:instant-105382ed-174c-4a1a-b254-04684517fb17
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.336Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-35e6b0ac-d936-4f46-a836-fb819e85a2bc
+        a                    oboe:Measurement , oquo:DescriptionsPerAnnotationPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-bf561f0c-f0ba-468d-8fa9-29266e4e900a ;
+        oboe:measurementFor  oquo:observation-f33af36f-0eb3-45ff-ba76-0af3a778705e ;
+        qm:hasScale          oquo:DescriptionsPerAnnotationPropertyMetricScale .
+
+oquo:instant-7c07ca08-3fdd-47f5-b816-4b1438600181
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:21.724Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-b35543b5-9620-4c2a-b203-84943c0ffad2
+        a                    oboe:Measurement , oquo:AnnotationPropertiesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-b2260a1e-e14a-4ecc-8e92-628b341abd6a ;
+        oboe:measurementFor  oquo:observation-eac50e53-230b-40ae-a8db-5c1da6f509df ;
+        qm:hasScale          oquo:AnnotationPropertiesWithNoNameMetricScale .
+
+oquo:DescriptionsPerPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-612ee18a-8808-4a91-bec3-1699576930b5
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:22.607Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-ea199a78-713d-4eab-b904-f50eba266379
+        a                    oboe:Measurement , oquo:SystematicNamingMetric ;
+        oboe:hasValue        oquo:qualityValue-fd342ec3-ed90-4385-b574-e7bc2e0ef032 ;
+        oboe:measurementFor  oquo:observation-0b85697f-e308-473e-a865-d90947df6155 ;
+        qm:hasScale          oquo:SystematicNamingMetricScale .
+
+oquo:qualityValue-2e5edfdc-5f7d-4142-b5ed-bb033da6c38b
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-87c11889-6bda-46e3-92c4-4def8481f0cf ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerDataPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-5be22325-57ce-44a5-b221-1130f0bf853c .
+
+oquo:evaluation-50a5dc49-a0d7-4de1-bd61-db84c65e04c9
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8cf584d5-2ca8-4d9c-9e2a-4fbc5c5b1249 ;
+        time:hasTime              oquo:instant-105382ed-174c-4a1a-b254-04684517fb17 ;
+        oquo:hasObservation       oquo:observation-70eca757-2b25-4685-807f-0bbd4e9df520 .
+
+oquo:qualityValue-b2260a1e-e14a-4ecc-8e92-628b341abd6a
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-b35543b5-9620-4c2a-b203-84943c0ffad2 ;
+        res:hasLiteralValue    "1.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:AnnotationPropertiesWithNoNameMetricScale ;
+        res:obtainedFrom       oquo:evaluation-6e8e2f4f-4ff9-437c-8dd3-5d7c04e4957a .
+
+oquo:observation-f6cf302e-21e9-4ece-993d-a396cfadec71
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-a4bfeb72-d9f4-40ee-ba38-3cd34cc939a3 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-71256d28-96fe-414b-ad99-ab3383aea1b5 .
+
+oquo:observation-f7e26c74-1b71-4042-84ac-56d304c9f2e9
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2838b46a-291c-44a6-bd36-40b8ca5115b7 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-7dc5f562-3256-4817-8a39-8051f2967484 .
+
+oquo:instant-0d88fca8-b2cf-48bb-84f9-ee1f7f210cb7
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.139Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-d902b90c-5868-406f-be7a-75e36cbc2647
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-67bba490-db59-4675-a3e4-eaab0996f9ea ;
+        time:hasTime              oquo:instant-0d88fca8-b2cf-48bb-84f9-ee1f7f210cb7 ;
+        oquo:hasObservation       oquo:observation-22fd0e75-b91e-4ae8-ae5a-1f6e93aa6bba .
+
+oquo:metric-fb4a42b4-d803-4716-8de2-a0916c3b7c7a
+        a                    oboe:Measurement , oquo:ClassesWithNoNameMetric ;
+        oboe:hasValue        oquo:qualityValue-8cf584d5-2ca8-4d9c-9e2a-4fbc5c5b1249 ;
+        oboe:measurementFor  oquo:observation-70eca757-2b25-4685-807f-0bbd4e9df520 ;
+        qm:hasScale          oquo:ClassesWithNoNameMetricScale .
+
+oquo:observation-fd65814d-8ac9-4d23-a65c-64640f739a59
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-2c4e2f11-4353-4a44-87db-46d35b5668e8 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-2648e91c-549f-45c5-b37d-a43283ecdf9d .
+
+oquo:instant-ebad64db-3e0d-4bf2-8b20-83a8c7e83f24
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.221Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:DescriptionsPerObjectPropertyMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:evaluation-52f1a3d9-5fa2-475c-93ca-8fa497d1de63
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-bbe2d799-e08c-45e8-80d7-032d6bfec7ec ;
+        time:hasTime              oquo:instant-7c406810-d8bf-4de9-a5e6-5f59bfe20d0e ;
+        oquo:hasObservation       oquo:observation-922c3665-6932-4766-8d5c-4d506c4e9bb5 .
+
+oquo:instant-9239f77c-3c35-42b4-9cdd-86e7ac5130b1
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.435Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:evaluation-dbb027c8-97e4-477e-9f2f-a04e6d480e63
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-8f972ea7-b494-464d-9cfa-59a2b2f3ab49 ;
+        time:hasTime              oquo:instant-ffdfaf0b-e935-4329-a93f-dade0a89d64b ;
+        oquo:hasObservation       oquo:observation-67e3ae36-bfcb-4c28-b5f6-5ca478a8cbcb .
+
+oquo:evaluation-2e1fafe5-bab8-4f11-b92b-e0cd88afaa16
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-f0d40c34-a2d0-4144-8171-8db52b657a85 ;
+        time:hasTime              oquo:instant-063bf7a1-74c0-4eb2-bdea-db1345475837 ;
+        oquo:hasObservation       oquo:observation-b8fea36f-7497-4e98-b085-d702df48cd09 .
+
+oquo:evaluation-2cb86420-4d4e-4955-9165-bce2b6fa898b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-b173fa5d-e005-41a3-9f9d-327b2758feff ;
+        time:hasTime              oquo:instant-ec210b69-8b0d-4f2d-be0d-0559675267f1 ;
+        oquo:hasObservation       oquo:observation-5e59b98f-5807-4798-9d4e-7e46b72dc183 .
+
+oquo:evaluation-8eb1c30a-638c-45de-85ef-5bcd128d568b
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-9ccab3d2-8522-43bd-b51c-ed6502fced61 ;
+        time:hasTime              oquo:instant-6f355bed-7bc6-44ec-bde6-09bdece25299 ;
+        oquo:hasObservation       oquo:observation-14b2f823-0425-46d2-acd2-1b009cccfbee .
+
+oquo:NamesPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:instant-7c406810-d8bf-4de9-a5e6-5f59bfe20d0e
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.256Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:NumberOfLexicalRegularitiesMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:observation-b1e790de-5804-4385-b8ff-ea8dd0ac778e
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-9691a76c-5c98-4b29-9f8e-815944f9322b ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-ea1f7777-a265-4640-8eeb-287695c4f460 .
+
+oquo:DataPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:evaluation-dc356f1e-967d-4825-9936-6a09df9d8843
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-725114a4-acf2-40e1-8c26-8a98aed52e0d ;
+        time:hasTime              oquo:instant-d3df072b-f438-4d21-a1da-d569054bb9b5 ;
+        oquo:hasObservation       oquo:observation-2b67768c-7c64-4d6b-a8b6-3b4f0e840926 .
+
+oquo:metric-37d03266-08d0-4aad-847c-3df384c25f10
+        a                    oboe:Measurement , oquo:NumberOfLexicalRegularityClassesMetric ;
+        oboe:hasValue        oquo:qualityValue-bf723cff-a97a-462e-a86c-03aee6190488 ;
+        oboe:measurementFor  oquo:observation-476ba6d6-a69e-4129-8027-f36b2a5ac5a6 ;
+        qm:hasScale          oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:AnnotationPropertiesWithNoDescriptionMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:LowerBest .
+
+oquo:instant-063bf7a1-74c0-4eb2-bdea-db1345475837
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.453Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:observation-1ed8bfbc-6977-40af-9701-c59792ce72ec
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-b35f6748-9776-46cc-a333-6a2263376213 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-80f812ea-a6b5-4358-ab8a-938f667c5b99 .
+
+oquo:metric-f95e92c5-83df-434c-9ea5-836e6e6cf1d0
+        a                    oboe:Measurement , oquo:SynonymsPerObjectPropertyMetric ;
+        oboe:hasValue        oquo:qualityValue-c7445a99-9130-419d-a341-427567861fc1 ;
+        oboe:measurementFor  oquo:observation-9f946394-348e-4891-a326-11fb5f0be006 ;
+        qm:hasScale          oquo:SynonymsPerObjectPropertyMetricScale .
+
+oquo:observation-476ba6d6-a69e-4129-8027-f36b2a5ac5a6
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-37d03266-08d0-4aad-847c-3df384c25f10 ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-7c07ca08-3fdd-47f5-b816-4b1438600181 .
+
+oquo:evaluation-4755c71b-9e20-4ef9-b5f6-463319202ab6
+        a                         res:Evaluation ;
+        res:evaluatedSubject      <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:inputData             <http://www.case.edu/EpilepsyOntology.owl> ;
+        res:producedQualityValue  oquo:qualityValue-3fd3244e-0bc7-41c4-aeaa-3b89049910ad ;
+        time:hasTime              oquo:instant-8ea3a162-7811-44fc-8f4d-cd48866ca151 ;
+        oquo:hasObservation       oquo:observation-120ad409-946d-452f-8710-2c9f993b4c37 .
+
+oquo:qualityValue-bf723cff-a97a-462e-a86c-03aee6190488
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-37d03266-08d0-4aad-847c-3df384c25f10 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:NumberOfLexicalRegularityClassesMetricScale ;
+        res:obtainedFrom       oquo:evaluation-f375faf3-4696-4e02-be17-7a339f388e92 .
+
+oquo:instant-372db32a-10c5-42eb-a82a-04bc963bae98
+        a                   time:Instant ;
+        time:inXSDDateTime  "2024-05-18T20:26:24.333Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+oquo:metric-bb30ebf3-f6a3-4c48-a7a7-78fef2ca301d
+        a                    oboe:Measurement , oquo:DataPropertiesWithNoSynonymMetric ;
+        oboe:hasValue        oquo:qualityValue-725114a4-acf2-40e1-8c26-8a98aed52e0d ;
+        oboe:measurementFor  oquo:observation-2b67768c-7c64-4d6b-a8b6-3b4f0e840926 ;
+        qm:hasScale          oquo:DataPropertiesWithNoSynonymMetricScale .
+
+oquo:observation-22fd0e75-b91e-4ae8-ae5a-1f6e93aa6bba
+        a                    oboe:Observation ;
+        oboe:hasMeasurement  oquo:metric-5e4501e0-d313-463f-876b-ce0de5af4dfd ;
+        oboe:ofEntity        <http://www.case.edu/EpilepsyOntology.owl> ;
+        time:hasTime         oquo:instant-0d88fca8-b2cf-48bb-84f9-ee1f7f210cb7 .
+
+oquo:DescriptionsPerClassMetricScale
+        a                     oquo:RawScale ;
+        qm:hasRankigFunction  qm:HigherBest .
+
+oquo:qualityValue-c7445a99-9130-419d-a341-427567861fc1
+        a                      oboe:MeasuredValue , res:QualityValue ;
+        res:forMeasure         oquo:metric-f95e92c5-83df-434c-9ea5-836e6e6cf1d0 ;
+        res:hasLiteralValue    "0.0"^^<http://www.w3.org/2001/XMLSchema#double> ;
+        res:isMeasuredOnScale  oquo:SynonymsPerObjectPropertyMetricScale ;
+        res:obtainedFrom       oquo:evaluation-35e8f02e-f30c-4732-b848-50cd9e241ae3 .
