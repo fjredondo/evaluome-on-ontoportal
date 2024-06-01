@@ -1,0 +1,43 @@
+PREFIX qcoquo:<http://qc.um.es/oquo>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboe: <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#>
+PREFIX res: <http://purl.org/net/EvaluationResult#>
+PREFIX qm: <http://purl.org/net/QualityModel#>
+PREFIX oquo: <https://purl.archive.org/oquo#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf1: <http://www.cropontology.org/rdf/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?ontologyAcronym ?metricAcronym ?metricName ?result
+FROM NAMED qcoquo:
+FROM NAMED <http://qc.um.es/ontoportal/ecoportal>
+{
+    
+    GRAPH qcoquo: {
+
+	?metric rdfs:subClassOf qm:DerivedMeasure .
+	?metric rdf1:acronym ?metricAcronym .
+	?metric rdfs:label  ?metricName .
+	?qmrf rdfs:label ?rankingFunction . 
+
+    } 
+
+    GRAPH ?repositorio {
+
+	?ontology a owl:Ontology .
+	?ontology rdf1:acronym ?ontologyAcronym .
+	?e res:evaluatedSubject ?ontology .
+	?e oquo:hasObservation ?o .
+	?m rdf:type ?metric .
+	?o oboe:hasMeasurement ?m .
+	?qmrf a qm:RankingFunction .
+	?co qm:hasRankigFunction ?qmrf .
+	?m qm:hasScale ?co .
+	?m oboe:hasValue ?qv .  
+	?qv res:hasLiteralValue ?result .  
+	FILTER (?ontologyAcronym NOT IN ("ACFORMAT", "ACTRIS_VOCAB", "BIODIVTHES", "CPMETA", "DWCEM", "EUROSCIVOC", "EUROVOC", "MRPTCODELIST", "STY")).
+	FILTER (?metricAcronym NOT IN ("DxAP")).
+    }
+}
+ORDER BY ?ontologyAcronym ?metricAcronym

@@ -1,0 +1,142 @@
+@prefix ns1: <http://www.cropontology.org/rdf/> .
+@prefix oboe: <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix oquo: <https://purl.archive.org/oquo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qm: <http://purl.org/net/QualityModel#> .
+@prefix res: <http://purl.org/net/EvaluationResult#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oquo:evaluation-1ef7b27e-e32f-44e7-9246-9d98be52bc49 a res:Evaluation ;
+    res:evaluatedSubject <http://aims.fao.org/aos/agrovoc/> ;
+    res:inputData <http://aims.fao.org/aos/agrovoc/> ;
+    res:producedQualityValue oquo:qualityValue-07ff9567-6dfe-40b9-b4d3-a4777ea736d3 ;
+    time:hasTime oquo:instant-c7cb6fe3-fd1f-46b8-9d39-248f34d4d1ee ;
+    oquo:hasObservation oquo:observation-b495b574-3589-4cc2-ae58-e7a02b5142f3 .
+
+oquo:evaluation-33f57f6e-2887-47d5-ba81-38779e5db302 a res:Evaluation ;
+    res:evaluatedSubject <http://aims.fao.org/aos/agrovoc/> ;
+    res:inputData <http://aims.fao.org/aos/agrovoc/> ;
+    res:producedQualityValue oquo:qualityValue-4cd68873-ec22-4247-8fce-5d1078bde5b1 ;
+    time:hasTime oquo:instant-a4d36b4b-0729-4a09-8dc5-c50297f2e65e ;
+    oquo:hasObservation oquo:observation-af44845c-7ae9-4ccf-99b9-65bdad835f37 .
+
+oquo:evaluation-38c81bf8-5b85-4447-945c-0d2f5ff6a06d a res:Evaluation ;
+    res:evaluatedSubject <http://aims.fao.org/aos/agrovoc/> ;
+    res:inputData <http://aims.fao.org/aos/agrovoc/> ;
+    res:producedQualityValue oquo:qualityValue-93b8e9f9-172d-444b-969c-342ac2703eec ;
+    time:hasTime oquo:instant-0cab32dd-b757-4ad0-b4f6-836ba6828439 ;
+    oquo:hasObservation oquo:observation-af366f2e-c6ce-4f06-a3aa-6edefcf9ff85 .
+
+oquo:evaluation-4a733148-62ea-409d-ad9f-6be7cd1f97bf a res:Evaluation ;
+    res:evaluatedSubject <http://aims.fao.org/aos/agrovoc/> ;
+    res:inputData <http://aims.fao.org/aos/agrovoc/> ;
+    res:producedQualityValue oquo:qualityValue-36a7efe3-e95b-449e-8124-a22e99adbe7e ;
+    time:hasTime oquo:instant-1a7057e6-8aaf-41e3-8268-d89857a33e23 ;
+    oquo:hasObservation oquo:observation-55f429d6-78bc-4855-9114-85afd67769d6 .
+
+oquo:LexicalRegularitiesPerClassMetricScale a oquo:RawScale ;
+    qm:hasRankigFunction qm:HigherBest .
+
+oquo:LexicalRegularityClassPercentageMetricScale a oquo:RawScale ;
+    qm:hasRankigFunction qm:HigherBest .
+
+oquo:NumberOfLexicalRegularitiesMetricScale a oquo:RawScale ;
+    qm:hasRankigFunction qm:HigherBest .
+
+oquo:NumberOfLexicalRegularityClassesMetricScale a oquo:RawScale ;
+    qm:hasRankigFunction qm:HigherBest .
+
+oquo:instant-0cab32dd-b757-4ad0-b4f6-836ba6828439 a time:Instant ;
+    time:inXSDDateTime "2024-05-15T13:19:24.971000+00:00"^^xsd:dateTime .
+
+oquo:instant-1a7057e6-8aaf-41e3-8268-d89857a33e23 a time:Instant ;
+    time:inXSDDateTime "2024-05-15T13:19:24.973000+00:00"^^xsd:dateTime .
+
+oquo:instant-a4d36b4b-0729-4a09-8dc5-c50297f2e65e a time:Instant ;
+    time:inXSDDateTime "2024-05-15T13:19:24.956000+00:00"^^xsd:dateTime .
+
+oquo:instant-c7cb6fe3-fd1f-46b8-9d39-248f34d4d1ee a time:Instant ;
+    time:inXSDDateTime "2024-05-15T13:19:24.968000+00:00"^^xsd:dateTime .
+
+oquo:metric-4079fb03-8a5e-4019-a9da-088201d816ce a oboe:Measurement,
+        oquo:LexicalRegularitiesPerClassMetric ;
+    oboe:hasValue oquo:qualityValue-93b8e9f9-172d-444b-969c-342ac2703eec ;
+    oboe:measurementFor oquo:observation-af366f2e-c6ce-4f06-a3aa-6edefcf9ff85 ;
+    qm:hasScale oquo:LexicalRegularitiesPerClassMetricScale .
+
+oquo:metric-4f0da6bf-7d78-4901-94e7-59100720ed88 a oboe:Measurement,
+        oquo:NumberOfLexicalRegularitiesMetric ;
+    oboe:hasValue oquo:qualityValue-4cd68873-ec22-4247-8fce-5d1078bde5b1 ;
+    oboe:measurementFor oquo:observation-af44845c-7ae9-4ccf-99b9-65bdad835f37 ;
+    qm:hasScale oquo:NumberOfLexicalRegularitiesMetricScale .
+
+oquo:metric-5b043dd7-53de-49a9-be82-287f227759f5 a oboe:Measurement,
+        oquo:LexicalRegularityClassPercentageMetric ;
+    oboe:hasValue oquo:qualityValue-36a7efe3-e95b-449e-8124-a22e99adbe7e ;
+    oboe:measurementFor oquo:observation-55f429d6-78bc-4855-9114-85afd67769d6 ;
+    qm:hasScale oquo:LexicalRegularityClassPercentageMetricScale .
+
+oquo:metric-88044db3-ed46-4ff8-9fc1-2011dfea765a a oboe:Measurement,
+        oquo:NumberOfLexicalRegularityClassesMetric ;
+    oboe:hasValue oquo:qualityValue-07ff9567-6dfe-40b9-b4d3-a4777ea736d3 ;
+    oboe:measurementFor oquo:observation-b495b574-3589-4cc2-ae58-e7a02b5142f3 ;
+    qm:hasScale oquo:NumberOfLexicalRegularityClassesMetricScale .
+
+oquo:observation-55f429d6-78bc-4855-9114-85afd67769d6 a oboe:Observation ;
+    oboe:hasMeasurement oquo:metric-5b043dd7-53de-49a9-be82-287f227759f5 ;
+    oboe:ofEntity <http://aims.fao.org/aos/agrovoc/> ;
+    time:hasTime oquo:instant-1a7057e6-8aaf-41e3-8268-d89857a33e23 .
+
+oquo:observation-af366f2e-c6ce-4f06-a3aa-6edefcf9ff85 a oboe:Observation ;
+    oboe:hasMeasurement oquo:metric-4079fb03-8a5e-4019-a9da-088201d816ce ;
+    oboe:ofEntity <http://aims.fao.org/aos/agrovoc/> ;
+    time:hasTime oquo:instant-0cab32dd-b757-4ad0-b4f6-836ba6828439 .
+
+oquo:observation-af44845c-7ae9-4ccf-99b9-65bdad835f37 a oboe:Observation ;
+    oboe:hasMeasurement oquo:metric-4f0da6bf-7d78-4901-94e7-59100720ed88 ;
+    oboe:ofEntity <http://aims.fao.org/aos/agrovoc/> ;
+    time:hasTime oquo:instant-a4d36b4b-0729-4a09-8dc5-c50297f2e65e .
+
+oquo:observation-b495b574-3589-4cc2-ae58-e7a02b5142f3 a oboe:Observation ;
+    oboe:hasMeasurement oquo:metric-88044db3-ed46-4ff8-9fc1-2011dfea765a ;
+    oboe:ofEntity <http://aims.fao.org/aos/agrovoc/> ;
+    time:hasTime oquo:instant-c7cb6fe3-fd1f-46b8-9d39-248f34d4d1ee .
+
+oquo:qualityValue-07ff9567-6dfe-40b9-b4d3-a4777ea736d3 a oboe:MeasuredValue,
+        res:QualityValue ;
+    res:forMeasure oquo:metric-88044db3-ed46-4ff8-9fc1-2011dfea765a ;
+    res:hasLiteralValue 0e+00 ;
+    res:isMeasuredOnScale oquo:NumberOfLexicalRegularityClassesMetricScale ;
+    res:obtainedFrom oquo:evaluation-1ef7b27e-e32f-44e7-9246-9d98be52bc49 .
+
+oquo:qualityValue-36a7efe3-e95b-449e-8124-a22e99adbe7e a oboe:MeasuredValue,
+        res:QualityValue ;
+    res:forMeasure oquo:metric-5b043dd7-53de-49a9-be82-287f227759f5 ;
+    res:hasLiteralValue 0e+00 ;
+    res:isMeasuredOnScale oquo:LexicalRegularityClassPercentageMetricScale ;
+    res:obtainedFrom oquo:evaluation-4a733148-62ea-409d-ad9f-6be7cd1f97bf .
+
+oquo:qualityValue-4cd68873-ec22-4247-8fce-5d1078bde5b1 a oboe:MeasuredValue,
+        res:QualityValue ;
+    res:forMeasure oquo:metric-4f0da6bf-7d78-4901-94e7-59100720ed88 ;
+    res:hasLiteralValue 0e+00 ;
+    res:isMeasuredOnScale oquo:NumberOfLexicalRegularitiesMetricScale ;
+    res:obtainedFrom oquo:evaluation-33f57f6e-2887-47d5-ba81-38779e5db302 .
+
+oquo:qualityValue-93b8e9f9-172d-444b-969c-342ac2703eec a oboe:MeasuredValue,
+        res:QualityValue ;
+    res:forMeasure oquo:metric-4079fb03-8a5e-4019-a9da-088201d816ce ;
+    res:hasLiteralValue 0e+00 ;
+    res:isMeasuredOnScale oquo:LexicalRegularitiesPerClassMetricScale ;
+    res:obtainedFrom oquo:evaluation-38c81bf8-5b85-4447-945c-0d2f5ff6a06d .
+
+qm:HigherBest a qm:RankingFunction .
+
+<http://aims.fao.org/aos/agrovoc/> a oboe:Entity,
+        res:EvaluationData,
+        res:EvaluationSubject,
+        owl:Ontology,
+        oquo:EvaluationInputData ;
+    ns1:acronym "AGROVOC" .
+
