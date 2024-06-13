@@ -2,7 +2,25 @@ library(readr)
 library(dplyr)
 library(tidyr)
 
-
+# Maximises the number of rows and columns after carrying out a complete removal of NAs
+removeAllNA <- function(df) {
+  #Check if there is NAs en el dataframe.
+  while (!sum(is.na(df))==0){
+    print (sum(is.na(df)))
+    colMaxNA = max(apply(X = is.na(df), MARGIN = 2, FUN = mean))
+    rowMaxNA = max(apply(X = is.na(df), MARGIN = 1, FUN = mean))
+    
+    if (colMaxNA > rowMaxNA){
+      #There is high percentage of NAs in column
+      print (which.max(colSums(is.na(df))))
+      df = df[,-which.max(colSums(is.na(df)))]
+    }else{
+      print (which.max(rowSums(is.na(df))))
+      df = df[-which.max(rowSums(is.na(df))),]
+    }
+  }
+  return(df)
+}
 
 
 # ontoportal_all_repositories <- read_csv(paste(input_path,"ontoportal_all_repositories.csv", sep=""), na = "NaN",show_col_types = FALSE)
@@ -33,7 +51,9 @@ graphDBToEvaluomeETL <- function(inputPath, outputPath, repoAcronym) {
   ontoportal_repo_wide_na <- ontoportal_repo_long_na %>% spread(metricAcronym, result)
   names(ontoportal_repo_wide_na)[1] <- "Description"
 
-  ontoportal_repo_wide <- ontoportal_repo_wide_na[ , apply(ontoportal_repo_wide_na, 2, function(x) !any(is.na(x)))]
+  #ontoportal_repo_wide <- ontoportal_repo_wide_na[ , apply(ontoportal_repo_wide_na, 2, function(x) !any(is.na(x)))]
+  ontoportal_repo_wide <- removeAllNA(ontoportal_repo_wide_na)
+  
   str(names(ontoportal_repo_wide))
   
   outputWideNaFile <- paste0(outputPath,"/ontoportal_", repoAcronym,"_wide_na.csv")
@@ -45,15 +65,17 @@ graphDBToEvaluomeETL <- function(inputPath, outputPath, repoAcronym) {
   write.csv(ontoportal_repo_wide_na, outputWideNaFile, row.names=FALSE)
 }
 
+
+
+
 input_path = "~/tfm/production/3-graphdb/4-output/"
 output_path = "~/tfm/production/4-evaluome/"
 
-
+graphDBToEvaluomeETL(input_path,output_path, "bio")
 graphDBToEvaluomeETL(input_path,output_path, "agro")
-# graphDBToEvaluomeETL(input_path,output_path, "bio")
 graphDBToEvaluomeETL(input_path,output_path, "biodiv")
 graphDBToEvaluomeETL(input_path,output_path, "earth")
-# graphDBToEvaluomeETL(input_path,output_path, "eco")
+graphDBToEvaluomeETL(input_path,output_path, "eco")
 graphDBToEvaluomeETL(input_path,output_path, "ind")
 
 
