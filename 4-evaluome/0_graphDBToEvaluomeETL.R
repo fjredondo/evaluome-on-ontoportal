@@ -79,3 +79,7 @@ graphDBToEvaluomeETL(input_path,output_path, "eco")
 graphDBToEvaluomeETL(input_path,output_path, "ind")
 
 
+
+
+
+
