@@ -1,5 +1,19 @@
 #! /bin/bash
 
+
+## USAGE
+#./ontoportal_download.sh ./repo_list.csv DOWNLOAD_FOLDER
+#
+# Where
+# ontoportal_download.sh : script that makes use of the REST web services API in each OntoPortal repository to download the latest version of each ontology. The ontology is renamed using the repository metadata and the HTTP response data from the server.
+# repo_list.csv : 	List of repositories (domain of the URL to access the API of the REST web service) with the keys to access it (APIKey).
+# DOWNLOAD_FOLDER : 	Destination directory of the outputs of the process.
+# 	- folders with the ontologies (latest versions) downloaded.
+# 	- ontology_err.csv: 	list of ontologies not downloaded indicating the error produced.
+# 	- ontology_list.csv: 	list of downloaded ontologies.
+# 	- output.log: 		allows you to track the process.
+
+
 if [[ $# -ne 2 ]]; then
 	echo "Please provide two arguments a csv file path and download folder path."
 	exit 1
