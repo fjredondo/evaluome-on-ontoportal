@@ -1,6 +1,8 @@
 # evaluome-on-ontoportal
 Bioinformatics - Semantic interoperability: Metric-based ontology analysis
 
+The ontologies used in this analysis are available at https://doi.org/10.5281/zenodo.12682450
+
 Goals:
 
 <ol type="1">
